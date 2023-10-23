@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/about/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">About</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title">Articles</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Electromagnetics">
+				<span class="name">Electromagnetics</span>
+				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+		</div>
+		<div class="content">
+			<article class="post">
+	<header class="post-header home">
+		<div class="post-title"><span id='category-name'></span></div>
+	</header>
+
+	<div class="post-content"><ul class="post-list"><li class="post-list-item post-category-Electromagnetics">
+				<!----><span class="post-date">2023/10/02</span>
+				<a class="post-link" href="/electromagnetics/2023/10/02/Electromagnetics-1.html">
+					Electromagnetics (1) : Vector Calculus
+				</a></li></ul></div>
+</article>
+
+<script src="/public/js/jquery-3.4.1.slim.min.js"></script>
+<script>
+	function removeCategory() {
+		if (window.location.hash) {
+			let hash = window.location.hash.substring(1);
+			$('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
+			let category_class = '.post-category-' + hash;
+			let items = $('.post-list-item').each((i, e) => {
+				if (!$(e).hasClass('post-category-' + hash)) {
+					$(e).hide();
+				} else {
+					$(e).show();
+				}
+			});
+		}
+	}
+	$(window).on('hashchange', () => {
+		removeCategory();
+	});
+	$(document).ready(() => {
+		removeCategory();	
+	})
+	
+</script>
+
+		</div>
+	</div>
+  </body>
+</html>
