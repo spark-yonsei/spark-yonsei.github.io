@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">About</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">2</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics_Kr">
-				<span class="name">Electromagnetics_Kr</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			전자기학 (1)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-24T19:31:29+09:00" itemprop="datePublished">2023/10/24
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>고급마이크로파공학 내용 정리<br />
+I"H)<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -198,35 +128,6 @@ i) \(\triangledown \times \bar{E}=-\frac{\partial \bar{B}}{\partial t}\)<br />
 이때, 이 상수는 우리 맘대로 정하면 된다. 그러니 계산이 쉽도록, \(\triangledown \cdot \bar{B}=0\)으로 놓는다.<br />
 다른 상수로 놔도 상관은 없는데, 아무 의미 없이 그냥 그 수치만큼 답이 차이날 것이다.<br />
 <br />
-ii) \(\triangledown \times \bar{H}=\bar{J}+\frac{\partial \bar{D}}{\partial t}\)<br />
-여기서도 양 변에 \(\triangledown \cdot\)를 씌운다. \(\triangledown \cdot \left (\triangledown \times \bar{H}  \right )=\triangledown \cdot \left (\bar{J}+\frac{\partial \bar{D}}{\partial t}  \right )\)<br />
-<br />
-여기서도 Vector identity에 의해 \(\triangledown \cdot \left (  \triangledown \times \bar{H}\right )=0\)이 되고,<br />
-우변은 공간 미분(\(\triangledown \cdot\))과 시간 미분\(\left (\frac{\partial }{\partial t}\right )\)의 순서를 바꿔 \(\triangledown \cdot \bar{J}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )\)이라 적을 수 있다.<br />
-여기에 continuity equation\(\left (\triangledown \cdot \bar{J}=-\frac{\partial \rho }{\partial t}  \right )\)을 적용하면 \(-\frac{\partial \rho }{\partial t}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )\)이 나온다.<br />
-이 식이\(\triangledown \cdot \left (  \triangledown \times \bar{H}\right )\)랑 같은 거니까, \(-\frac{\partial \rho }{\partial t}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )=0\)이다.<br />
-<br />
-정리하면 \(\frac{\partial }{\partial t}\left (\rho- \triangledown \cdot \bar{D} \right )=0\). 따라서 \(\rho- \triangledown \cdot \bar{D}\)는 시간에 대한 상수다. 얘도 아무 값으로나 두면 되는데, 계산의 편의를 위해 \(\rho- \triangledown \cdot \bar{D}=0\)으로 놓자.<br />
-결과적으로, \(\triangledown \cdot \bar{D}=\rho\)<br />
-<br />
-정리하면:<br />
-\(\triangledown \times \bar{E}=-\frac{\partial \bar{B}}{\partial t},\;\triangledown \times \bar{H}=\bar{J}+\frac{\partial \bar{D}}{\partial t}\;:\;Independent\;Equations\)<br />
-<br />
-\(\triangledown \cdot \bar{B}=0,\;\triangledown \cdot \bar{D}=\rho\;:\;Dependent\;Equations\)<br />
-<br />
-\(\triangledown \cdot \bar{J}=-\frac{\partial \rho }{\partial t}\;:\;Charge\;Conservation\;/\;Continuity\;Equation\)<br />
-<br />
-이 식들을 통해 \(\bar{E}\), \(\bar{D}\), \(\bar{B}\), \(\bar{H}\), \(\bar{J}\), \(\rho\)를 구하면 된다.<br />
-<br />
-근데, \(\bar{E}\), \(\bar{D}\), \(\bar{B}\), \(\bar{H}\), \(\bar{J}\), \(\rho\)를 모두 구해야 하면, 미지수 총 몇개를 구해야 하는 것인가?<br />
-3차원 공간이니, 벡터 하나당 x,y,z 성분 총 3개 성분을 구해줘야 한다.<br />
-지금 벡터5개, 스칼라1개를 구하려 하고 있으니 미지수는 총 \(3\times 5+1=16\)개다.<br />
-그럼, 우린 16개 식을 갖고 있나?<br />
-<br /></p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+ii) \(\triangledown \times \bar{H}=\bar{J}+\frac{\partial \bar{D}}{\partial t}=0\)<br />
+여기서도 양 변에 \(\triangledown \cdot\)를 씌운다.</p>
+:ET
