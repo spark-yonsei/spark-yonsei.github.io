@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">About</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">2</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics_Kr">
-				<span class="name">Electromagnetics_Kr</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			전자기학 (1)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-24T19:31:29+09:00" itemprop="datePublished">2023/10/24
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>고급마이크로파공학 내용 정리<br />
+I"�B<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -269,30 +199,5 @@ Note. Chiral Medium:<br />
 <br />
 이제 여기다가 가정을 몇가지 더해보려고 한다.<br />
 i) Isotropic Medium:<br />
-\(\bar{B}=\bar{\bar{\mu}}\bar{H}\rightarrow \bar{B}=\mu\bar{H}\)<br />
-\(\bar{D}=\bar{\bar{\varepsilon}}\bar{E}\rightarrow \bar{D}=\varepsilon\bar{E}\)<br />
-\(\bar{J}=\bar{\bar{\sigma}}\bar{E}\rightarrow \bar{J}=\sigma\bar{E}\)<br />
-이때 \(\mu,\varepsilon,\sigma\)는 모두 scalar function이다.<br />
-<br />
-ii) Homogeneous Medium:<br />
-Homogeneous medium에서는 \(\mu,\varepsilon,\sigma\)가 모두 위치에 상관 없이 같은 값을 갖는다.<br />
-즉, \(\mu,\varepsilon,\sigma\)가 모두 상수가 된다.<br />
-<br />
-위에서 언급한 가정들이 모두 적용되어 \(\mu,\varepsilon,\sigma\)가 모두 상수인 medium을 ‘simple medium’이라 부른다.<br />
-<br />
-Free space에서는:<br />
-\(\mu=\mu_{o}=4\pi\cdot 10^{-7}\)[H/m]<br />
-\(\varepsilon=\varepsilon_{o}=8.854\cdot 10^{-12}\)[F/m]<br />
-\(\sigma=0\)<br />
-<br />
-\(\sigma\)가 큰 medium을 ‘conductor’라 부른다.<br />
-\(\sigma\)가 작은 medium을 옛날에는 ‘Insulator’라 불렀는데, 어느 순간부터 ‘Dielectric’이라 부른다.<br />
-<br />
-Relative permittivity:</p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+\(\bar{B}=\bar{\bar{\mu}}\bar{H}\Rightarrow \bar{B}=\mu\bar{H}\)</p>
+:ET

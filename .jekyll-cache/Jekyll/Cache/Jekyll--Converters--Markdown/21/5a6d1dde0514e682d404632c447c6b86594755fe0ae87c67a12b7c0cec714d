@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">About</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">2</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics_Kr">
-				<span class="name">Electromagnetics_Kr</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			전자기학 (1)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-24T19:31:29+09:00" itemprop="datePublished">2023/10/24
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>고급마이크로파공학 내용 정리<br />
+I"<<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -237,12 +167,13 @@ Constitutive Relations:<br />
 \(\bar{J}=\bar{F_{3}}\left (\cdots \right )\)<br />
 이건 너무 복잡하니까, 적절히 몇가지 가정을 해보자.<br />
 <br />
-Assume:<br />
-i) Stationary medium.<br />
+Assume:<br /></p>
+<ol>
+  <li>Stationary medium.<br />
 날씨가 바뀌면 공기의 특성이 바뀌고, 대기권 전리층 전하 분포 또한 계속해서 바뀐다.<br />
 이런 영향은 없다고 가정하자. 즉 시간에 대해 independent한 매질을 가정하고, 식으로 표현하면 \(\dfrac{\partial \left ( \cdot  \right )}{\partial t}\)를 모두 0으로 보자는 거다.<br />
-<br />
-ii) Linear medium.<br />
+<br /></li>
+  <li>Linear medium.<br />
 Avalanche photodiode에서 전기장에 의해 전류가 생기는데, 이 경우에는 전기장과 전류의 관계가 nonlinear하다.<br />
 유전 파괴가 일어나는 경우도 전류가 전기장에 대해 nonlinear한 상황이 된다.<br />
 우리는 linear한 매질을 가정해서, 이런 현상들이 없다고 가정할 것이다.<br />
@@ -251,48 +182,6 @@ Avalanche photodiode에서 전기장에 의해 전류가 생기는데, 이 경�
 Then:<br />
 \(\bar{B}=\bar{\bar{\mu}}\bar{H}\), \(\bar{\bar{\mu}}\): Permeability[H/m]<br />
 \(\bar{D}=\bar{\bar{\varepsilon}}\bar{E}\), \(\bar{\bar{\varepsilon}}\): Permittivity[F/m]<br />
-\(\bar{J}=\bar{\bar{\sigma}}\bar{E}\), \(\bar{\bar{\sigma}}\): Conductivity[S/m]<br />
-<br />
-이때 위에 선 두개 그어놓은 것은 tensor라는 뜻이다.<br />
-매질에 대한 가정을 2가지(Stationary, Linear)했는데, 여기에 isotropic(등방성)이 추가되면 그때는 tensor 대신 scalar function을 사용할 수 있다.<br />
-왜 scalar ‘function’이나면, 공간에 대한 함수니까. \(\mu(x,y,z)\)이런 식으로, isotropic을 가정해도 다 scalar가 아니라 scalar function이다.<br />
-<br />
-하여간, 이렇게 나온 벡터식 3개 \(\left ( \bar{B}=\bar{\bar{\mu}}\bar{H}, \bar{D}=\bar{\bar{\varepsilon}}\bar{E}, \bar{J}=\bar{\bar{\sigma}}\bar{E} \right )\)면 스칼라 식 9개니까, 앞의 스칼라 식 7개와 함께 보면 스칼라 식 16개라 \(\bar{E}\), \(\bar{D}\), \(\bar{B}\), \(\bar{H}\), \(\bar{J}\), \(\rho\)를 모두 구할 수 있다.<br />
-<br />
-근데 이건 constitutive relation에서 Stationary, Linear medium을 가정한거다. 이런 가정을 쓰지 못하는 medium들도 많다.<br />
-이런 가정을 쓰지 못하는 medium으로는 chiral medium, metamaterial 등이 있다.<br />
-<br />
-Note. Chiral Medium:<br />
-\(\bar{B}=\mu \left ( \bar{H}+\beta \triangledown \times \bar{H} \right )\)<br />
-\(\bar{D}=\mu \left ( \bar{E}+\beta \triangledown \times \bar{E} \right )\)<br />
-이게 Chiral medium의 constitutive relation이다. 이걸 적용해서 \(\bar{E}\), \(\bar{D}\), \(\bar{B}\), \(\bar{H}\), \(\bar{J}\), \(\rho\)를 모두 구하는 것은 상당히 복잡한 일이 된다. 그래서 Chiral medium은 계산이 어렵다.<br />
-<br />
-이제 여기다가 가정을 몇가지 더해보려고 한다.<br />
-i) Isotropic Medium:<br />
-\(\bar{B}=\bar{\bar{\mu}}\bar{H}\rightarrow \bar{B}=\mu\bar{H}\)<br />
-\(\bar{D}=\bar{\bar{\varepsilon}}\bar{E}\rightarrow \bar{D}=\varepsilon\bar{E}\)<br />
-\(\bar{J}=\bar{\bar{\sigma}}\bar{E}\rightarrow \bar{J}=\sigma\bar{E}\)<br />
-이때 \(\mu,\varepsilon,\sigma\)는 모두 scalar function이다.<br />
-<br />
-ii) Homogeneous Medium:<br />
-Homogeneous medium에서는 \(\mu,\varepsilon,\sigma\)가 모두 위치에 상관 없이 같은 값을 갖는다.<br />
-즉, \(\mu,\varepsilon,\sigma\)가 모두 상수가 된다.<br />
-<br />
-위에서 언급한 가정들이 모두 적용되어 \(\mu,\varepsilon,\sigma\)가 모두 상수인 medium을 ‘simple medium’이라 부른다.<br />
-<br />
-Free space에서는:<br />
-\(\mu=\mu_{o}=4\pi\cdot 10^{-7}\)[H/m]<br />
-\(\varepsilon=\varepsilon_{o}=8.854\cdot 10^{-12}\)[F/m]<br />
-\(\sigma=0\)<br />
-<br />
-\(\sigma\)가 큰 medium을 ‘conductor’라 부른다.<br />
-\(\sigma\)가 작은 medium을 옛날에는 ‘Insulator’라 불렀는데, 어느 순간부터 ‘Dielectric’이라 부른다.<br />
-<br />
-Relative permittivity:</p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+\(\bar{J}=\bar{\bar{\sigma}}\bar{E}\), \(\bar{\bar{\sigma}}\): Conductivity[S/m]<br /></li>
+</ol>
+:ET
