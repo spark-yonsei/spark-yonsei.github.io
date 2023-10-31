@@ -44,7 +44,7 @@ $$ \bar{E} $$는 Electric field, $$ \bar{H} $$ : Magnetic field라고 자주 부
 Faraday's Law:<br>
 <br>
 어떤 폐곡선(Closed Contour) c가 있다고 해보자. 이 폐곡선에 대해:<br>
-$$ \oint_{c}^{}\bar{E}\cdot d\bar{l}=-\frac{d}{dt}\iint_{S}^{}\bar{B}\cdot \hat{n}dS $$<br>
+$$ \oint_{c}^{}\bar{E}\cdot d\bar{l}=-\dfrac{d}{dt}\iint_{S}^{}\bar{B}\cdot \hat{n}dS $$<br>
 라는게 Faraday's Law다.<br>
 
 이때 S는 평면일 필요는 없고, Boundary가 폐곡선 c인 임의의 곡면이면 된다.<br>
@@ -55,7 +55,7 @@ $$ \bar{E} $$의 단위가 [V/m], $$ d\bar{l} $$의 단위가 [m]이라 $$ \oint
 <br>
 Maxwell-Ampère's Law:<br>
 $$\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS$$ : Ampère's Law<br>
-$$\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS+\frac{\partial }{\partial t}\iint_{S}^{}\bar{D}\cdot \hat{n}dS$$ : Maxwell-Ampère's Law<br>
+$$\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS+\dfrac{\partial }{\partial t}\iint_{S}^{}\bar{D}\cdot \hat{n}dS$$ : Maxwell-Ampère's Law<br>
 <br>
 우변 두번째 항이 중요하다. 이게 없으면 Ampère's Law, 있으면 Maxwell-Ampère's Law다.<br>
 이 항이 표현하는건 'displacement current'다. 왜 displacement냐면, 이 곳이 아닌 다른 곳에서 전류가 생긴다는 뜻으로 생각하면 된다.<br>
@@ -81,7 +81,7 @@ Marconi라는 이탈리아 사람은 이걸 1900년대에 상업화했다.<br>
 참고로 맥스웰, 헤르츠 모두 50살 전에 죽었지만 마르코니는 63살까지 살았다.<br>
 <br>
 Charge Conservation Equation / Continuity Equation:<br>
-$$\oiint \bar{J}\cdot d\bar{S}=\frac{\mathrm{d} }{\mathrm{d} t}\iiint_{V}\rho dV$$<br>
+$$\oiint \bar{J}\cdot d\bar{S}=\dfrac{\mathrm{d} }{\mathrm{d} t}\iiint_{V}\rho dV$$<br>
 여기서 확인할 수 있는 점은, charge가 안 움직이면 전류가 생기지 않는다는 것이다.<br>
 <br>
 Stokes' Theorem:<br>
@@ -98,66 +98,78 @@ Van Bladel의 책을 보면 온갖 Variation들을 다 정리해놨다고 하는
 <br>
 Maxwell's Equation in differential form:<br>
 Faraday's Law를 가져온다.<br>
-$$ \oint_{c}\bar{E}\cdot d\bar{l}=-\frac{d}{dt}\iint_{S}\bar{B}\cdot \hat{n}dS$$<br>
-여기서, Surface S가 시간에 따라 바뀌지 않는다면 $$-\frac{d}{dt}\iint_{S}\bar{B}\cdot \hat{n}dS =-\iint_{S}\frac{\partial \bar{B}}{\partial t}\cdot \hat{n}dS$$라고 적을 수 있다.<br>
+$$ \oint_{c}\bar{E}\cdot d\bar{l}=-\dfrac{d}{dt}\iint_{S}\bar{B}\cdot \hat{n}dS$$<br>
+여기서, Surface S가 시간에 따라 바뀌지 않는다면 $$-\dfrac{d}{dt}\iint_{S}\bar{B}\cdot \hat{n}dS =-\iint_{S}\dfrac{\partial \bar{B}}{\partial t}\cdot \hat{n}dS$$라고 적을 수 있다.<br>
 그리고 $$ \oint_{c}\bar{E}\cdot d\bar{l}$$에 Stokes' Theorem을 적용하면 $$ \oint_{c}\bar{E}\cdot d\bar{l}=\iint_{S}\triangledown \times \bar{E}\cdot \hat{n}dS$$가 된다.<br>
-따라서, $$-\iint_{S}\frac{\partial \bar{B}}{\partial t}\cdot \hat{n}dS=\iint_{S}\triangledown \times \bar{E}\cdot \hat{n}dS$$,<br>
-정리하면 $$\iint_{S}\left (\triangledown \times \bar{E}+\frac{\partial \bar{B}}{\partial t}  \right )\cdot \hat{n}dS=0$$<br>
+따라서, $$-\iint_{S}\dfrac{\partial \bar{B}}{\partial t}\cdot \hat{n}dS=\iint_{S}\triangledown \times \bar{E}\cdot \hat{n}dS$$,<br>
+정리하면 $$\iint_{S}\left (\triangledown \times \bar{E}+\dfrac{\partial \bar{B}}{\partial t}  \right )\cdot \hat{n}dS=0$$<br>
 <br>
-이때, S는 c를 Boundary로 하는 임의의 surface다. 즉 surface를 내 맘대로 잡아도 $$\iint_{S}\left (\triangledown \times \bar{E}+\frac{\partial \bar{B}}{\partial t}  \right )\cdot \hat{n}dS$$는 0이 된다는 이야기다.<br>
+이때, S는 c를 Boundary로 하는 임의의 surface다. 즉 surface를 내 맘대로 잡아도 $$\iint_{S}\left (\triangledown \times \bar{E}+\dfrac{\partial \bar{B}}{\partial t}  \right )\cdot \hat{n}dS$$는 0이 된다는 이야기다.<br>
 <br>
 적분 범위를 아무렇게나 잡아도 적분 값이 0이라면, 피적분함수가 0이어야 할 것이다.<br>
-따라서 $$\triangledown \times \bar{E}+\frac{\partial \bar{B}}{\partial t}=0$$.<br>
+따라서 $$\triangledown \times \bar{E}+\dfrac{\partial \bar{B}}{\partial t}=0$$.<br>
 <br>
-비슷한 방식으로, Maxwell-Ampère's Law : $$\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS+\frac{\partial }{\partial t}\iint_{S}^{}\bar{D}\cdot \hat{n}dS$$를 정리해서<br>
-$$\triangledown \times \bar{H}=\bar{J}+\frac{\partial \bar{D}}{\partial t}=0$$라고 적을 수 있다.<br>
+비슷한 방식으로, Maxwell-Ampère's Law : $$\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS+\dfrac{\partial }{\partial t}\iint_{S}^{}\bar{D}\cdot \hat{n}dS$$를 정리해서<br>
+$$\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}=0$$라고 적을 수 있다.<br>
 <br>
-Charge conservation : $$\oiint \bar{J}\cdot d\bar{S}=\frac{\mathrm{d} }{\mathrm{d} t}\iiint_{V}\rho dV$$에서도 divergence theorem을 사용해서<br>
-$$\triangledown \cdot \bar{J}=-\frac{\partial \rho }{\partial t}$$로 적을 수 있다.<br>
+Charge conservation : $$\oiint \bar{J}\cdot d\bar{S}=\dfrac{\mathrm{d} }{\mathrm{d} t}\iiint_{V}\rho dV$$에서도 divergence theorem을 사용해서<br>
+$$\triangledown \cdot \bar{J}=-\dfrac{\partial \rho }{\partial t}$$로 적을 수 있다.<br>
 <br>
 이렇게 정리한 식들을 differential form 또는 point form이라 부른다.<br>
 $$\triangledown$$이 공간 미분이라 differential form이라고 부르기도 하고,<br>
 공간 내 한 점에서만 사용 가능한 식이라는 의미로 point form이라고도 부른다.<br>
 <br>
 이 form의 가정은 함수들이 모두 미분 가능하다는거다.<br>
-field가 공간 내 어딘가에서 특정 방향으로 미분 불가능하게 변하면, 그 점에서는 $$\frac{\partial }{\partial x}$$같은 연산이 불가능해서 이 form을 쓸 수 없다.<br>
+field가 공간 내 어딘가에서 특정 방향으로 미분 불가능하게 변하면, 그 점에서는 $$\dfrac{\partial }{\partial x}$$같은 연산이 불가능해서 이 form을 쓸 수 없다.<br>
 그래서 boundary condition을 유도할때 항상 Integral form을 쓰는 것이다.<br>
 <br>
 Derived Equations:<br>
 Independent한 식들은 위 식이 다고, 이제는 위 식에서 나오는 dependent 식들을 보려고 한다.<br>
 <br>
-i) $$\triangledown \times \bar{E}=-\frac{\partial \bar{B}}{\partial t}$$<br>
-양 변에 $$\triangledown \cdot $$를 씌운다. $$\triangledown \cdot \left (  \triangledown \times \bar{E}\right )=\triangledown \cdot \left (  -\frac{\partial \bar{B}}{\partial t}\right )$$<br>
+i) $$\triangledown \times \bar{E}=-\dfrac{\partial \bar{B}}{\partial t}$$<br>
+양 변에 $$\triangledown \cdot $$를 씌운다. $$\triangledown \cdot \left (  \triangledown \times \bar{E}\right )=\triangledown \cdot \left (  -\dfrac{\partial \bar{B}}{\partial t}\right )$$<br>
 <br>
 이때 $$\triangledown \cdot \left (  \triangledown \times \bar{E}\right )$$는 Vector identity에 의해 $$\triangledown \cdot \left (  \triangledown \times \bar{E}\right )=0$$.<br>
-그리고 공간 미분($$\triangledown \cdot $$)과 시간 미분$$\left (\frac{\partial }{\partial t}\right )$$은 독립이니까 순서를 바꿀 수 있다.<br>
-따라서 $$\triangledown \cdot \left (  -\frac{\partial \bar{B}}{\partial t}\right )=-\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{B} \right )$$<br>
-정리하면 $$-\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{B} \right )=0$$이다. 따라서, $$\triangledown \cdot \bar{B}$$는 시간에 대한 상수다. 시간으로 미분했을때 0이 되니까.<br>
+그리고 공간 미분($$\triangledown \cdot $$)과 시간 미분$$\left (\dfrac{\partial }{\partial t}\right )$$은 독립이니까 순서를 바꿀 수 있다.<br>
+따라서 $$\triangledown \cdot \left (  -\dfrac{\partial \bar{B}}{\partial t}\right )=-\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{B} \right )$$<br>
+정리하면 $$-\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{B} \right )=0$$이다. 따라서, $$\triangledown \cdot \bar{B}$$는 시간에 대한 상수다. 시간으로 미분했을때 0이 되니까.<br>
 이때, 이 상수는 우리 맘대로 정하면 된다. 그러니 계산이 쉽도록, $$\triangledown \cdot \bar{B}=0$$으로 놓는다.<br>
 다른 상수로 놔도 상관은 없는데, 아무 의미 없이 그냥 그 수치만큼 답이 차이날 것이다.<br>
 <br>
-ii) $$\triangledown \times \bar{H}=\bar{J}+\frac{\partial \bar{D}}{\partial t}$$<br>
-여기서도 양 변에 $$\triangledown \cdot $$를 씌운다. $$\triangledown \cdot \left (\triangledown \times \bar{H}  \right )=\triangledown \cdot \left (\bar{J}+\frac{\partial \bar{D}}{\partial t}  \right )$$<br>
+ii) $$\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}$$<br>
+여기서도 양 변에 $$\triangledown \cdot $$를 씌운다. $$\triangledown \cdot \left (\triangledown \times \bar{H}  \right )=\triangledown \cdot \left (\bar{J}+\dfrac{\partial \bar{D}}{\partial t}  \right )$$<br>
 <br>
 여기서도 Vector identity에 의해 $$\triangledown \cdot \left (  \triangledown \times \bar{H}\right )=0$$이 되고,<br>
-우변은 공간 미분($$\triangledown \cdot $$)과 시간 미분$$\left (\frac{\partial }{\partial t}\right )$$의 순서를 바꿔 $$\triangledown \cdot \bar{J}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )$$이라 적을 수 있다.<br>
-여기에 continuity equation$$\left (\triangledown \cdot \bar{J}=-\frac{\partial \rho }{\partial t}  \right )$$을 적용하면 $$-\frac{\partial \rho }{\partial t}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )$$이 나온다.<br>
-이 식이$$\triangledown \cdot \left (  \triangledown \times \bar{H}\right )$$랑 같은 거니까, $$-\frac{\partial \rho }{\partial t}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )=0$$이다.<br>
+우변은 공간 미분($$\triangledown \cdot $$)과 시간 미분$$\left (\dfrac{\partial }{\partial t}\right )$$의 순서를 바꿔 $$\triangledown \cdot \bar{J}+\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )$$이라 적을 수 있다.<br>
+여기에 continuity equation$$\left (\triangledown \cdot \bar{J}=-\dfrac{\partial \rho }{\partial t}  \right )$$을 적용하면 $$-\dfrac{\partial \rho }{\partial t}+\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )$$이 나온다.<br>
+이 식이$$\triangledown \cdot \left (  \triangledown \times \bar{H}\right )$$랑 같은 거니까, $$-\dfrac{\partial \rho }{\partial t}+\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )=0$$이다.<br>
 <br>
-정리하면 $$\frac{\partial }{\partial t}\left (\rho- \triangledown \cdot \bar{D} \right )=0$$. 따라서 $$\rho- \triangledown \cdot \bar{D}$$는 시간에 대한 상수다. 얘도 아무 값으로나 두면 되는데, 계산의 편의를 위해 $$\rho- \triangledown \cdot \bar{D}=0$$으로 놓자.<br>
+정리하면 $$\dfrac{\partial }{\partial t}\left (\rho- \triangledown \cdot \bar{D} \right )=0$$. 따라서 $$\rho- \triangledown \cdot \bar{D}$$는 시간에 대한 상수다. 얘도 아무 값으로나 두면 되는데, 계산의 편의를 위해 $$\rho- \triangledown \cdot \bar{D}=0$$으로 놓자.<br>
 결과적으로, $$\triangledown \cdot \bar{D}=\rho$$<br>
 <br>
 정리하면:<br>
-$$\triangledown \times \bar{E}=-\frac{\partial \bar{B}}{\partial t},\;\triangledown \times \bar{H}=\bar{J}+\frac{\partial \bar{D}}{\partial t}\;:\;Independent\;Equations$$<br>
+$$\triangledown \times \bar{E}=-\dfrac{\partial \bar{B}}{\partial t},\;\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}\;:\;Independent\;Equations$$<br>
 <br>
 $$\triangledown \cdot \bar{B}=0,\;\triangledown \cdot \bar{D}=\rho\;:\;Dependent\;Equations$$<br>
 <br>
-$$\triangledown \cdot \bar{J}=-\frac{\partial \rho }{\partial t}\;:\;Charge\;Conservation\;/\;Continuity\;Equation$$<br>
+$$\triangledown \cdot \bar{J}=-\dfrac{\partial \rho }{\partial t}\;:\;Charge\;Conservation\;/\;Continuity\;Equation$$<br>
 <br>
 이 식들을 통해 $$ \bar{E} $$, $$ \bar{D} $$, $$ \bar{B} $$, $$ \bar{H} $$, $$ \bar{J} $$, $$ \rho $$를 구하면 된다.<br>
 <br>
 근데, $$ \bar{E} $$, $$ \bar{D} $$, $$ \bar{B} $$, $$ \bar{H} $$, $$ \bar{J} $$, $$ \rho $$를 모두 구해야 하면, 미지수 총 몇개를 구해야 하는 것인가?<br>
-3차원 공간이니, 벡터 하나당 x,y,z 성분 총 3개 성분을 구해줘야 한다.<br>
+3차원 공간이니, 벡터 하나당 x,y,z 성분 총 3개 스칼라 성분을 구해줘야 한다.<br>
 지금 벡터5개, 스칼라1개를 구하려 하고 있으니 미지수는 총 $$3\times 5+1=16$$개다.<br>
 그럼, 우린 16개 식을 갖고 있나?<br>
 <br>
+Dependent 식들은 새로운 정보를 주지 못하니까,<br>
+$$\triangledown \times \bar{E}=-\dfrac{\partial \bar{B}}{\partial t}$$에서 3개,<br>
+$$\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}$$에서 3개,<br>
+$$\triangledown \cdot \bar{J}=-\dfrac{\partial \rho }{\partial t}$$에서 1개로 총 7개 식 뿐이다.<br>
+<br>
+그래서, $$ \bar{E} $$, $$ \bar{D} $$, $$ \bar{B} $$, $$ \bar{H} $$, $$ \bar{J} $$, $$ \rho $$를 모두 구하려면 식이 더 필요하다.<br>
+<br>
+Constitutive Relations:<br>
+일반적으로 $$\bar{B}$$,$$\bar{D}$$,$$\bar{J}$$는 $$\bar{E}$$와 $$\bar{H}$$에 대한, 상당히 복잡한 함수다.<br>
+$$ \bar{B}=\bar{F_{1}}\left ( \bar{E},\frac{\partial \bar{E}}{\partial t},\cdots ,\bar{H},\frac{\partial \bar{H}}{\partial t},\cdots,\left| \bar{E}\right|^{2},\left| \bar{E}\right|^{3},\cdots  \right )$$<br>
+$$\bar{D}=f$$<br>
+$$\bar{J}=f$$<br>

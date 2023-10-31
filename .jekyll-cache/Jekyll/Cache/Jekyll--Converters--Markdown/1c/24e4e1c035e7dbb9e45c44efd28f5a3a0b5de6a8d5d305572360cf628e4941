@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">About</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">2</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics_Kr">
-				<span class="name">Electromagnetics_Kr</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			전자기학 (1)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-24T19:31:29+09:00" itemprop="datePublished">2023/10/24
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>고급마이크로파공학 내용 정리<br />
+I"�2<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -106,7 +36,7 @@ Field Quantities:<br />
 Faraday’s Law:<br />
 <br />
 어떤 폐곡선(Closed Contour) c가 있다고 해보자. 이 폐곡선에 대해:<br />
-\(\oint_{c}^{}\bar{E}\cdot d\bar{l}=-\dfrac{d}{dt}\iint_{S}^{}\bar{B}\cdot \hat{n}dS\)<br />
+\(\oint_{c}^{}\bar{E}\cdot d\bar{l}=-\frac{d}{dt}\iint_{S}^{}\bar{B}\cdot \hat{n}dS\)<br />
 라는게 Faraday’s Law다.<br /></p>
 
 <p>이때 S는 평면일 필요는 없고, Boundary가 폐곡선 c인 임의의 곡면이면 된다.<br />
@@ -117,7 +47,7 @@ Faraday’s Law:<br />
 <br />
 Maxwell-Ampère’s Law:<br />
 \(\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS\) : Ampère’s Law<br />
-\(\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS+\dfrac{\partial }{\partial t}\iint_{S}^{}\bar{D}\cdot \hat{n}dS\) : Maxwell-Ampère’s Law<br />
+\(\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS+\frac{\partial }{\partial t}\iint_{S}^{}\bar{D}\cdot \hat{n}dS\) : Maxwell-Ampère’s Law<br />
 <br />
 우변 두번째 항이 중요하다. 이게 없으면 Ampère’s Law, 있으면 Maxwell-Ampère’s Law다.<br />
 이 항이 표현하는건 ‘displacement current’다. 왜 displacement냐면, 이 곳이 아닌 다른 곳에서 전류가 생긴다는 뜻으로 생각하면 된다.<br />
@@ -143,7 +73,7 @@ Marconi라는 이탈리아 사람은 이걸 1900년대에 상업화했다.<br />
 참고로 맥스웰, 헤르츠 모두 50살 전에 죽었지만 마르코니는 63살까지 살았다.<br />
 <br />
 Charge Conservation Equation / Continuity Equation:<br />
-\(\oiint \bar{J}\cdot d\bar{S}=\dfrac{\mathrm{d} }{\mathrm{d} t}\iiint_{V}\rho dV\)<br />
+\(\oiint \bar{J}\cdot d\bar{S}=\frac{\mathrm{d} }{\mathrm{d} t}\iiint_{V}\rho dV\)<br />
 여기서 확인할 수 있는 점은, charge가 안 움직이면 전류가 생기지 않는다는 것이다.<br />
 <br />
 Stokes’ Theorem:<br />
@@ -160,53 +90,53 @@ Van Bladel의 책을 보면 온갖 Variation들을 다 정리해놨다고 하는
 <br />
 Maxwell’s Equation in differential form:<br />
 Faraday’s Law를 가져온다.<br />
-\(\oint_{c}\bar{E}\cdot d\bar{l}=-\dfrac{d}{dt}\iint_{S}\bar{B}\cdot \hat{n}dS\)<br />
-여기서, Surface S가 시간에 따라 바뀌지 않는다면 \(-\dfrac{d}{dt}\iint_{S}\bar{B}\cdot \hat{n}dS =-\iint_{S}\dfrac{\partial \bar{B}}{\partial t}\cdot \hat{n}dS\)라고 적을 수 있다.<br />
+\(\oint_{c}\bar{E}\cdot d\bar{l}=-\frac{d}{dt}\iint_{S}\bar{B}\cdot \hat{n}dS\)<br />
+여기서, Surface S가 시간에 따라 바뀌지 않는다면 \(-\frac{d}{dt}\iint_{S}\bar{B}\cdot \hat{n}dS =-\iint_{S}\frac{\partial \bar{B}}{\partial t}\cdot \hat{n}dS\)라고 적을 수 있다.<br />
 그리고 \(\oint_{c}\bar{E}\cdot d\bar{l}\)에 Stokes’ Theorem을 적용하면 \(\oint_{c}\bar{E}\cdot d\bar{l}=\iint_{S}\triangledown \times \bar{E}\cdot \hat{n}dS\)가 된다.<br />
-따라서, \(-\iint_{S}\dfrac{\partial \bar{B}}{\partial t}\cdot \hat{n}dS=\iint_{S}\triangledown \times \bar{E}\cdot \hat{n}dS\),<br />
-정리하면 \(\iint_{S}\left (\triangledown \times \bar{E}+\dfrac{\partial \bar{B}}{\partial t}  \right )\cdot \hat{n}dS=0\)<br />
+따라서, \(-\iint_{S}\frac{\partial \bar{B}}{\partial t}\cdot \hat{n}dS=\iint_{S}\triangledown \times \bar{E}\cdot \hat{n}dS\),<br />
+정리하면 \(\iint_{S}\left (\triangledown \times \bar{E}+\frac{\partial \bar{B}}{\partial t}  \right )\cdot \hat{n}dS=0\)<br />
 <br />
-이때, S는 c를 Boundary로 하는 임의의 surface다. 즉 surface를 내 맘대로 잡아도 \(\iint_{S}\left (\triangledown \times \bar{E}+\dfrac{\partial \bar{B}}{\partial t}  \right )\cdot \hat{n}dS\)는 0이 된다는 이야기다.<br />
+이때, S는 c를 Boundary로 하는 임의의 surface다. 즉 surface를 내 맘대로 잡아도 \(\iint_{S}\left (\triangledown \times \bar{E}+\frac{\partial \bar{B}}{\partial t}  \right )\cdot \hat{n}dS\)는 0이 된다는 이야기다.<br />
 <br />
 적분 범위를 아무렇게나 잡아도 적분 값이 0이라면, 피적분함수가 0이어야 할 것이다.<br />
-따라서 \(\triangledown \times \bar{E}+\dfrac{\partial \bar{B}}{\partial t}=0\).<br />
+따라서 \(\triangledown \times \bar{E}+\frac{\partial \bar{B}}{\partial t}=0\).<br />
 <br />
-비슷한 방식으로, Maxwell-Ampère’s Law : \(\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS+\dfrac{\partial }{\partial t}\iint_{S}^{}\bar{D}\cdot \hat{n}dS\)를 정리해서<br />
-\(\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}=0\)라고 적을 수 있다.<br />
+비슷한 방식으로, Maxwell-Ampère’s Law : \(\oint_{c}^{}\bar{H}\cdot d\bar{l}=\iint_{S}^{}\bar{J}\cdot \hat{n}dS+\frac{\partial }{\partial t}\iint_{S}^{}\bar{D}\cdot \hat{n}dS\)를 정리해서<br />
+\(\triangledown \times \bar{H}=\bar{J}+\frac{\partial \bar{D}}{\partial t}=0\)라고 적을 수 있다.<br />
 <br />
-Charge conservation : \(\oiint \bar{J}\cdot d\bar{S}=\dfrac{\mathrm{d} }{\mathrm{d} t}\iiint_{V}\rho dV\)에서도 divergence theorem을 사용해서<br />
-\(\triangledown \cdot \bar{J}=-\dfrac{\partial \rho }{\partial t}\)로 적을 수 있다.<br />
+Charge conservation : \(\oiint \bar{J}\cdot d\bar{S}=\frac{\mathrm{d} }{\mathrm{d} t}\iiint_{V}\rho dV\)에서도 divergence theorem을 사용해서<br />
+\(\triangledown \cdot \bar{J}=-\frac{\partial \rho }{\partial t}\)로 적을 수 있다.<br />
 <br />
 이렇게 정리한 식들을 differential form 또는 point form이라 부른다.<br />
 \(\triangledown\)이 공간 미분이라 differential form이라고 부르기도 하고,<br />
 공간 내 한 점에서만 사용 가능한 식이라는 의미로 point form이라고도 부른다.<br />
 <br />
 이 form의 가정은 함수들이 모두 미분 가능하다는거다.<br />
-field가 공간 내 어딘가에서 특정 방향으로 미분 불가능하게 변하면, 그 점에서는 \(\dfrac{\partial }{\partial x}\)같은 연산이 불가능해서 이 form을 쓸 수 없다.<br />
+field가 공간 내 어딘가에서 특정 방향으로 미분 불가능하게 변하면, 그 점에서는 \(\frac{\partial }{\partial x}\)같은 연산이 불가능해서 이 form을 쓸 수 없다.<br />
 그래서 boundary condition을 유도할때 항상 Integral form을 쓰는 것이다.<br />
 <br />
 Derived Equations:<br />
 Independent한 식들은 위 식이 다고, 이제는 위 식에서 나오는 dependent 식들을 보려고 한다.<br />
 <br />
-i) \(\triangledown \times \bar{E}=-\dfrac{\partial \bar{B}}{\partial t}\)<br />
-양 변에 \(\triangledown \cdot\)를 씌운다. \(\triangledown \cdot \left (  \triangledown \times \bar{E}\right )=\triangledown \cdot \left (  -\dfrac{\partial \bar{B}}{\partial t}\right )\)<br />
+i) \(\triangledown \times \bar{E}=-\frac{\partial \bar{B}}{\partial t}\)<br />
+양 변에 \(\triangledown \cdot\)를 씌운다. \(\triangledown \cdot \left (  \triangledown \times \bar{E}\right )=\triangledown \cdot \left (  -\frac{\partial \bar{B}}{\partial t}\right )\)<br />
 <br />
 이때 \(\triangledown \cdot \left (  \triangledown \times \bar{E}\right )\)는 Vector identity에 의해 \(\triangledown \cdot \left (  \triangledown \times \bar{E}\right )=0\).<br />
-그리고 공간 미분(\(\triangledown \cdot\))과 시간 미분\(\left (\dfrac{\partial }{\partial t}\right )\)은 독립이니까 순서를 바꿀 수 있다.<br />
-따라서 \(\triangledown \cdot \left (  -\dfrac{\partial \bar{B}}{\partial t}\right )=-\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{B} \right )\)<br />
-정리하면 \(-\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{B} \right )=0\)이다. 따라서, \(\triangledown \cdot \bar{B}\)는 시간에 대한 상수다. 시간으로 미분했을때 0이 되니까.<br />
+그리고 공간 미분(\(\triangledown \cdot\))과 시간 미분\(\left (\frac{\partial }{\partial t}\right )\)은 독립이니까 순서를 바꿀 수 있다.<br />
+따라서 \(\triangledown \cdot \left (  -\frac{\partial \bar{B}}{\partial t}\right )=-\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{B} \right )\)<br />
+정리하면 \(-\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{B} \right )=0\)이다. 따라서, \(\triangledown \cdot \bar{B}\)는 시간에 대한 상수다. 시간으로 미분했을때 0이 되니까.<br />
 이때, 이 상수는 우리 맘대로 정하면 된다. 그러니 계산이 쉽도록, \(\triangledown \cdot \bar{B}=0\)으로 놓는다.<br />
 다른 상수로 놔도 상관은 없는데, 아무 의미 없이 그냥 그 수치만큼 답이 차이날 것이다.<br />
 <br />
-ii) \(\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}\)<br />
-여기서도 양 변에 \(\triangledown \cdot\)를 씌운다. \(\triangledown \cdot \left (\triangledown \times \bar{H}  \right )=\triangledown \cdot \left (\bar{J}+\dfrac{\partial \bar{D}}{\partial t}  \right )\)<br />
+ii) \(\triangledown \times \bar{H}=\bar{J}+\frac{\partial \bar{D}}{\partial t}\)<br />
+여기서도 양 변에 \(\triangledown \cdot\)를 씌운다. \(\triangledown \cdot \left (\triangledown \times \bar{H}  \right )=\triangledown \cdot \left (\bar{J}+\frac{\partial \bar{D}}{\partial t}  \right )\)<br />
 <br />
 여기서도 Vector identity에 의해 \(\triangledown \cdot \left (  \triangledown \times \bar{H}\right )=0\)이 되고,<br />
-우변은 공간 미분(\(\triangledown \cdot\))과 시간 미분\(\left (\dfrac{\partial }{\partial t}\right )\)의 순서를 바꿔 \(\triangledown \cdot \bar{J}+\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )\)이라 적을 수 있다.<br />
-여기에 continuity equation\(\left (\triangledown \cdot \bar{J}=-\dfrac{\partial \rho }{\partial t}  \right )\)을 적용하면 \(-\dfrac{\partial \rho }{\partial t}+\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )\)이 나온다.<br />
-이 식이\(\triangledown \cdot \left (  \triangledown \times \bar{H}\right )\)랑 같은 거니까, \(-\dfrac{\partial \rho }{\partial t}+\dfrac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )=0\)이다.<br />
+우변은 공간 미분(\(\triangledown \cdot\))과 시간 미분\(\left (\frac{\partial }{\partial t}\right )\)의 순서를 바꿔 \(\triangledown \cdot \bar{J}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )\)이라 적을 수 있다.<br />
+여기에 continuity equation\(\left (\triangledown \cdot \bar{J}=-\frac{\partial \rho }{\partial t}  \right )\)을 적용하면 \(-\frac{\partial \rho }{\partial t}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )\)이 나온다.<br />
+이 식이\(\triangledown \cdot \left (  \triangledown \times \bar{H}\right )\)랑 같은 거니까, \(-\frac{\partial \rho }{\partial t}+\frac{\partial }{\partial t}\left ( \triangledown \cdot \bar{D} \right )=0\)이다.<br />
 <br />
-정리하면 \(\dfrac{\partial }{\partial t}\left (\rho- \triangledown \cdot \bar{D} \right )=0\). 따라서 \(\rho- \triangledown \cdot \bar{D}\)는 시간에 대한 상수다. 얘도 아무 값으로나 두면 되는데, 계산의 편의를 위해 \(\rho- \triangledown \cdot \bar{D}=0\)으로 놓자.<br />
+정리하면 \(\frac{\partial }{\partial t}\left (\rho- \triangledown \cdot \bar{D} \right )=0\). 따라서 \(\rho- \triangledown \cdot \bar{D}\)는 시간에 대한 상수다. 얘도 아무 값으로나 두면 되는데, 계산의 편의를 위해 \(\rho- \triangledown \cdot \bar{D}=0\)으로 놓자.<br />
 결과적으로, \(\triangledown \cdot \bar{D}=\rho\)<br />
 <br />
 정리하면:<br />
@@ -223,10 +153,4 @@ ii) \(\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}\
 지금 벡터5개, 스칼라1개를 구하려 하고 있으니 미지수는 총 \(3\times 5+1=16\)개다.<br />
 그럼, 우린 16개 식을 갖고 있나?<br />
 <br /></p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET
