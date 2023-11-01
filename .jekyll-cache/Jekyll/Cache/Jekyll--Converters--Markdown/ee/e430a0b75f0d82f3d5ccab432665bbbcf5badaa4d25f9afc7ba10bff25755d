@@ -1,4 +1,4 @@
-I"<<p>고급마이크로파공학 내용 정리<br />
+I"�L<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -167,13 +167,12 @@ Constitutive Relations:<br />
 \(\bar{J}=\bar{F_{3}}\left (\cdots \right )\)<br />
 이건 너무 복잡하니까, 적절히 몇가지 가정을 해보자.<br />
 <br />
-Assume:<br /></p>
-<ol>
-  <li>Stationary medium.<br />
+Assume:<br />
+i) Stationary medium.<br />
 날씨가 바뀌면 공기의 특성이 바뀌고, 대기권 전리층 전하 분포 또한 계속해서 바뀐다.<br />
 이런 영향은 없다고 가정하자. 즉 시간에 대해 independent한 매질을 가정하고, 식으로 표현하면 \(\dfrac{\partial \left ( \cdot  \right )}{\partial t}\)를 모두 0으로 보자는 거다.<br />
-<br /></li>
-  <li>Linear medium.<br />
+<br />
+ii) Linear medium.<br />
 Avalanche photodiode에서 전기장에 의해 전류가 생기는데, 이 경우에는 전기장과 전류의 관계가 nonlinear하다.<br />
 유전 파괴가 일어나는 경우도 전류가 전기장에 대해 nonlinear한 상황이 된다.<br />
 우리는 linear한 매질을 가정해서, 이런 현상들이 없다고 가정할 것이다.<br />
@@ -182,6 +181,62 @@ Avalanche photodiode에서 전기장에 의해 전류가 생기는데, 이 경�
 Then:<br />
 \(\bar{B}=\bar{\bar{\mu}}\bar{H}\), \(\bar{\bar{\mu}}\): Permeability[H/m]<br />
 \(\bar{D}=\bar{\bar{\varepsilon}}\bar{E}\), \(\bar{\bar{\varepsilon}}\): Permittivity[F/m]<br />
-\(\bar{J}=\bar{\bar{\sigma}}\bar{E}\), \(\bar{\bar{\sigma}}\): Conductivity[S/m]<br /></li>
-</ol>
+\(\bar{J}=\bar{\bar{\sigma}}\bar{E}\), \(\bar{\bar{\sigma}}\): Conductivity[S/m]<br />
+<br />
+이때 위에 선 두개 그어놓은 것은 tensor라는 뜻이다.<br />
+매질에 대한 가정을 2가지(Stationary, Linear)했는데, 여기에 isotropic(등방성)이 추가되면 그때는 tensor 대신 scalar function을 사용할 수 있다.<br />
+왜 scalar ‘function’이나면, 공간에 대한 함수니까. \(\mu(x,y,z)\)이런 식으로, isotropic을 가정해도 다 scalar가 아니라 scalar function이다.<br />
+<br />
+하여간, 이렇게 나온 벡터식 3개 \(\left ( \bar{B}=\bar{\bar{\mu}}\bar{H}, \bar{D}=\bar{\bar{\varepsilon}}\bar{E}, \bar{J}=\bar{\bar{\sigma}}\bar{E} \right )\)면 스칼라 식 9개니까, 앞의 스칼라 식 7개와 함께 보면 스칼라 식 16개라 \(\bar{E}\), \(\bar{D}\), \(\bar{B}\), \(\bar{H}\), \(\bar{J}\), \(\rho\)를 모두 구할 수 있다.<br />
+<br />
+근데 이건 constitutive relation에서 Stationary, Linear medium을 가정한거다. 이런 가정을 쓰지 못하는 medium들도 많다.<br />
+이런 가정을 쓰지 못하는 medium으로는 chiral medium, metamaterial 등이 있다.<br />
+<br />
+Note. Chiral Medium:<br />
+\(\bar{B}=\mu \left ( \bar{H}+\beta \triangledown \times \bar{H} \right )\)<br />
+\(\bar{D}=\mu \left ( \bar{E}+\beta \triangledown \times \bar{E} \right )\)<br />
+이게 Chiral medium의 constitutive relation이다. 이걸 적용해서 \(\bar{E}\), \(\bar{D}\), \(\bar{B}\), \(\bar{H}\), \(\bar{J}\), \(\rho\)를 모두 구하는 것은 상당히 복잡한 일이 된다. 그래서 Chiral medium은 계산이 어렵다.<br />
+<br />
+이제 여기다가 가정을 몇가지 더해보려고 한다.<br />
+i) Isotropic Medium:<br />
+\(\bar{B}=\bar{\bar{\mu}}\bar{H}\rightarrow \bar{B}=\mu\bar{H}\)<br />
+\(\bar{D}=\bar{\bar{\varepsilon}}\bar{E}\rightarrow \bar{D}=\varepsilon\bar{E}\)<br />
+\(\bar{J}=\bar{\bar{\sigma}}\bar{E}\rightarrow \bar{J}=\sigma\bar{E}\)<br />
+이때 \(\mu,\varepsilon,\sigma\)는 모두 scalar function이다.<br />
+<br />
+ii) Homogeneous Medium:<br />
+Homogeneous medium에서는 \(\mu,\varepsilon,\sigma\)가 모두 위치에 상관 없이 같은 값을 갖는다.<br />
+즉, \(\mu,\varepsilon,\sigma\)가 모두 상수가 된다.<br />
+<br />
+위에서 언급한 가정들이 모두 적용되어 \(\mu,\varepsilon,\sigma\)가 모두 상수인 medium을 ‘simple medium’이라 부른다.<br />
+<br />
+Free space에서는:<br />
+\(\mu=\mu_{o}=4\pi\cdot 10^{-7}\)[H/m]<br />
+\(\varepsilon=\varepsilon_{o}=8.854\cdot 10^{-12}\)[F/m]<br />
+\(\sigma=0\)<br />
+<br />
+\(\sigma\)가 큰 medium을 ‘conductor’라 부른다.<br />
+\(\sigma\)가 작은 medium을 옛날에는 ‘Insulator’라 불렀는데, 어느 순간부터 ‘Dielectric’이라 부른다.<br />
+<br />
+Relative permittivity(비유전율): \(\varepsilon_{r}=\dfrac{\varepsilon}{\varepsilon_{o}}\)<br />
+Relative permeability(비투자율): \(\mu_{r}=\dfrac{\mu}{\mu_{o}}\)<br />
+<br />
+문장 내에서 ‘유전율’,’투자율’이라 하면 그게 relative 수치인지 아니면 절대 수치인지 문맥상 파악해야 한다.<br />
+<br />
+비유전율은 언제나 1보다 작다고 배우긴 하는데,<br />
+플라즈마 또는 메타물질을 쓰면 비유전율이 1보다 작은, 또는 0보다 작은 물질도 만들 수 있다.<br />
+<br />
+비투자율은 좀 다양하다.<br />
+\(\mu_{r}&lt;1\): Diamagnetic(반자성). 0.999, 0.9999 정도 값을 갖는다. 1보다 크게 작지는 않다.<br />
+\(\mu_{r}&gt;1\): Paramagnetic(상자성). 1.001, 1.0001 정도 값을 갖는다.<br />
+\(\mu_{r}&gt;&gt;1\): Ferromagnetic(강자성). 1000, 10000 정도 값을 갖는다.<br />
+<br />
+희토류를 쓰면 비투자율을 수만, 수십만까지도 올릴 수 있다.<br />
+<br />
+여기서, 이런 생각을 해보자. 투명하다는게 뭔가?<br />
+어떤 유전체에 전기장이 걸리면 그 유전체 안의 dipole들이 전기장 방향대로 정렬한다.<br />
+이때 정렬이 잘 될수록 전기장의 영향을 크게 받는다고 해석할 수 있고,<br />
+정렬이 잘 안될수록 전기장의 영향을 적게 받는다고, 즉 전기장에 대해 투명하다고 볼 수 있다.<br />
+<br />
+이때 dielectric 내에서 정리된 field와 원래 있던 field를 더해서: \(\bar{D}=\varepsilon_{o}\bar{E}+\bar{P}\)라고 쓰도록 하자.<br /></p>
 :ET

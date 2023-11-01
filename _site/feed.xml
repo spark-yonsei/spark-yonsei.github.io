@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-01T00:09:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">전자기학 (1)</title><link href="http://localhost:4000/electromagnetics_kr/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html" rel="alternate" type="text/html" title="전자기학 (1)" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics_kr/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics_kr/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html"><![CDATA[<p>고급마이크로파공학 내용 정리<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-02T00:15:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">전자기학 (1)</title><link href="http://localhost:4000/electromagnetics_kr/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html" rel="alternate" type="text/html" title="전자기학 (1)" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics_kr/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics_kr/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html"><![CDATA[<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -218,7 +218,48 @@ Free space에서는:<br />
 \(\sigma\)가 큰 medium을 ‘conductor’라 부른다.<br />
 \(\sigma\)가 작은 medium을 옛날에는 ‘Insulator’라 불렀는데, 어느 순간부터 ‘Dielectric’이라 부른다.<br />
 <br />
-Relative permittivity:</p>]]></content><author><name></name></author><category term="Electromagnetics_Kr" /><summary type="html"><![CDATA[고급마이크로파공학 내용 정리 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다. 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다. 전기전자공학과 대학원은 이 책을 많이 쓰고, 물리학과 대학원은 Jackson의 ‘Classical Electrodynamics’를 많이 쓴다. 우리 책은 mks 단위계, Jackson 책은 cgs단위계를 사용한다. 유럽은 Linguistic notation : Curl \(\bar{E}\) 미국은 Gibbs notation : \(\triangledown \times \bar{E}\) 이 과목은 고급마이크로파공학 보다는 고급전자장론, 또는 고급전자기학 정도가 어울리는 과목이다. 고급마이크로파공학이란 이름은 30년전에 지어진 이름이라 그냥 쓰는거다. Electromagnetics Theory. 현대물리, 양자역학이 들어오면서 고전역학은 상당 부분 수정되어야 했다. 그런데 전자기학은 전혀 바뀌지 않았다! 그만큼 수학적으로 정교한 이론이다. Microscopic Theory: 원자, 분자 한개의 특성. 슈뢰딩거 방정식 Macroscopic Theory: 통계적인 특성. 맥스웰 방정식. 원자,분자 단위에서는 적용 불가 원자, 분자가 아보가드로 수 수준으로 많은 경우부터 Macroscopic model을 사용할 수 있다. 우리가 배울 내용은 Macroscopic theory다. Field Quantities: \(\bar{E}\) : Electric field intensity [V/m] \(\bar{H}\) : Magnetic field intensity \(\bar{D}\) : Electric flux density \(\bar{B}\) : Magnetic flux density \(\bar{J}\) : Electric current density \(\rho\) : Electric charge density \(\bar{E}\)는 Electric field, \(\bar{H}\) : Magnetic field라고 자주 부르지만, 엄밀한 명칭은 intensity까지 붙여줘야 한다. 이 물리량들은 모두 시간과 공간에 대한 함수다. \(f(x,y,z,t)\) Faraday’s Law: 어떤 폐곡선(Closed Contour) c가 있다고 해보자. 이 폐곡선에 대해: \(\oint_{c}^{}\bar{E}\cdot d\bar{l}=-\dfrac{d}{dt}\iint_{S}^{}\bar{B}\cdot \hat{n}dS\) 라는게 Faraday’s Law다.]]></summary></entry><entry><title type="html">Electromagnetics (1)</title><link href="http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics-1.html" rel="alternate" type="text/html" title="Electromagnetics (1)" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics-1.html"><![CDATA[<p>Under test
+Relative permittivity(비유전율): \(\varepsilon_{r}=\dfrac{\varepsilon}{\varepsilon_{o}}\)<br />
+Relative permeability(비투자율): \(\mu_{r}=\dfrac{\mu}{\mu_{o}}\)<br />
+<br />
+문장 내에서 ‘유전율’,’투자율’이라 하면 그게 relative 수치인지 아니면 절대 수치인지 문맥상 파악해야 한다.<br />
+<br />
+비유전율은 언제나 1보다 작다고 배우긴 하는데,<br />
+플라즈마 또는 메타물질을 쓰면 비유전율이 1보다 작은, 또는 0보다 작은 물질도 만들 수 있다.<br />
+<br />
+비투자율은 좀 다양하다.<br />
+\(\mu_{r}&lt;1\): Diamagnetic(반자성). 0.999, 0.9999 정도 값을 갖는다. 1보다 크게 작지는 않다.<br />
+\(\mu_{r}&gt;1\): Paramagnetic(상자성). 1.001, 1.0001 정도 값을 갖는다.<br />
+\(\mu_{r}&gt;&gt;1\): Ferromagnetic(강자성). 1000, 10000 정도 값을 갖는다.<br />
+<br />
+희토류를 쓰면 비투자율을 수만, 수십만까지도 올릴 수 있다.<br />
+<br />
+여기서, 이런 생각을 해보자. 투명하다는게 뭔가?<br />
+어떤 유전체에 전기장이 걸리면 그 유전체 안의 dipole들이 전기장 방향대로 정렬한다.<br />
+이때 정렬이 잘 될수록 전기장의 영향을 크게 받는다고 해석할 수 있고,<br />
+정렬이 잘 안될수록 전기장의 영향을 적게 받는다고, 즉 전기장에 대해 투명하다고 볼 수 있다.<br />
+<br />
+이때 dielectric 내에서 정리된 field와 원래 있던 field를 더해서: \(\bar{D}=\varepsilon_{o}\bar{E}+\bar{P}\)라고 쓰도록 하자.<br />
+이때 \(\bar{P}\)는 Electric Polarization Vector로서, secondary field다.<br />
+수식상으로나 직관적으로나, \(\bar{P}=0\)인 공간은 \(\bar{E}\) 입장에서 free space와 동일할 것이다.<br />
+<br />
+이때 \(\bar{P}\)의 크기는 \(\bar{E}\)에 의해 결정되는, \(\bar{P}\)에 대한 함수다.<br />
+\(\bar{P}=\varepsilon_{o}\chi_{e}\bar{E}\)라고 적는다. 이때 \(\chi_{e}\): Electric susceptibility.<br />
+Susceptibility가 클수록 그 system은 주변 환경 변화에 민감하게 반응한다.<br />
+<br />
+susceptibility를 써서 표현하면:<br />
+\(\bar{D}=\varepsilon_{o}\bar{E}+\bar{P}=\varepsilon_{o}\left ( 1+\chi_{e} \right )\bar{E}=\varepsilon_{r}\varepsilon_{o}\bar{E}=\varepsilon\bar{E}\),<br />
+\(\varepsilon_{r}=1+\chi_{e}\)<br />
+<br />
+\(\bar{H}\)에 의한 반응도 비슷하다. \(\bar{B}=\mu_{o}\bar{H}+\bar{M}\),<br />
+\(\bar{M}\): Magnetic Polarization Vector,<br />
+\(\chi_{m}\): Magnetic susceptibility,<br />
+\(\bar{M}=\mu_{o}\chi_{m}\bar{H}\),<br />
+\(\bar{B}=\mu_{o}\bar{H}+\bar{M}=\mu_{o}\left ( 1+\chi_{m} \right )\bar{H}=\mu_{r}\mu_{o}\bar{H}=\mu\bar{H}\),<br />
+\(\mu_{r}=1+\chi_{m}\)<br />
+<br />
+이렇게 투명하다는 개념과 susceptibility로 \(\mu\), \(\varepsilon\) 변화를 생각할 수 있다.<br />
+<br />
+Wave equation in a simple medium:<br /></p>]]></content><author><name></name></author><category term="Electromagnetics_Kr" /><summary type="html"><![CDATA[고급마이크로파공학 내용 정리 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다. 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다. 전기전자공학과 대학원은 이 책을 많이 쓰고, 물리학과 대학원은 Jackson의 ‘Classical Electrodynamics’를 많이 쓴다. 우리 책은 mks 단위계, Jackson 책은 cgs단위계를 사용한다. 유럽은 Linguistic notation : Curl \(\bar{E}\) 미국은 Gibbs notation : \(\triangledown \times \bar{E}\) 이 과목은 고급마이크로파공학 보다는 고급전자장론, 또는 고급전자기학 정도가 어울리는 과목이다. 고급마이크로파공학이란 이름은 30년전에 지어진 이름이라 그냥 쓰는거다. Electromagnetics Theory. 현대물리, 양자역학이 들어오면서 고전역학은 상당 부분 수정되어야 했다. 그런데 전자기학은 전혀 바뀌지 않았다! 그만큼 수학적으로 정교한 이론이다. Microscopic Theory: 원자, 분자 한개의 특성. 슈뢰딩거 방정식 Macroscopic Theory: 통계적인 특성. 맥스웰 방정식. 원자,분자 단위에서는 적용 불가 원자, 분자가 아보가드로 수 수준으로 많은 경우부터 Macroscopic model을 사용할 수 있다. 우리가 배울 내용은 Macroscopic theory다. Field Quantities: \(\bar{E}\) : Electric field intensity [V/m] \(\bar{H}\) : Magnetic field intensity \(\bar{D}\) : Electric flux density \(\bar{B}\) : Magnetic flux density \(\bar{J}\) : Electric current density \(\rho\) : Electric charge density \(\bar{E}\)는 Electric field, \(\bar{H}\) : Magnetic field라고 자주 부르지만, 엄밀한 명칭은 intensity까지 붙여줘야 한다. 이 물리량들은 모두 시간과 공간에 대한 함수다. \(f(x,y,z,t)\) Faraday’s Law: 어떤 폐곡선(Closed Contour) c가 있다고 해보자. 이 폐곡선에 대해: \(\oint_{c}^{}\bar{E}\cdot d\bar{l}=-\dfrac{d}{dt}\iint_{S}^{}\bar{B}\cdot \hat{n}dS\) 라는게 Faraday’s Law다.]]></summary></entry><entry><title type="html">Electromagnetics (1)</title><link href="http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics-1.html" rel="alternate" type="text/html" title="Electromagnetics (1)" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics-1.html"><![CDATA[<p>Under test
 \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)<br />
 \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\) \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)]]></summary></entry><entry><title type="html">Electromagnetics (2)</title><link href="http://localhost:4000/electromagnetics/2023/10/03/Electromagnetics-2.html" rel="alternate" type="text/html" title="Electromagnetics (2)" /><published>2023-10-03T19:31:29+09:00</published><updated>2023-10-03T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/03/Electromagnetics%20-%202</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/03/Electromagnetics-2.html"><![CDATA[<p>Under test
 \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)]]></summary></entry></feed>

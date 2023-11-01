@@ -226,4 +226,45 @@ $$\sigma=0$$<br>
 $$\sigma$$가 큰 medium을 'conductor'라 부른다.<br>
 $$\sigma$$가 작은 medium을 옛날에는 'Insulator'라 불렀는데, 어느 순간부터 'Dielectric'이라 부른다.<br>
 <br>
-Relative permittivity: 
+Relative permittivity(비유전율): $$\varepsilon_{r}=\dfrac{\varepsilon}{\varepsilon_{o}}$$<br>
+Relative permeability(비투자율): $$\mu_{r}=\dfrac{\mu}{\mu_{o}}$$<br>
+<br>
+문장 내에서 '유전율','투자율'이라 하면 그게 relative 수치인지 아니면 절대 수치인지 문맥상 파악해야 한다.<br>
+<br>
+비유전율은 언제나 1보다 작다고 배우긴 하는데,<br>
+플라즈마 또는 메타물질을 쓰면 비유전율이 1보다 작은, 또는 0보다 작은 물질도 만들 수 있다.<br>
+<br>
+비투자율은 좀 다양하다.<br>
+$$\mu_{r}<1$$: Diamagnetic(반자성). 0.999, 0.9999 정도 값을 갖는다. 1보다 크게 작지는 않다.<br>
+$$\mu_{r}>1$$: Paramagnetic(상자성). 1.001, 1.0001 정도 값을 갖는다.<br>
+$$\mu_{r}>>1$$: Ferromagnetic(강자성). 1000, 10000 정도 값을 갖는다.<br>
+<br>
+희토류를 쓰면 비투자율을 수만, 수십만까지도 올릴 수 있다.<br>
+<br>
+여기서, 이런 생각을 해보자. 투명하다는게 뭔가?<br>
+어떤 유전체에 전기장이 걸리면 그 유전체 안의 dipole들이 전기장 방향대로 정렬한다.<br>
+이때 정렬이 잘 될수록 전기장의 영향을 크게 받는다고 해석할 수 있고,<br>
+정렬이 잘 안될수록 전기장의 영향을 적게 받는다고, 즉 전기장에 대해 투명하다고 볼 수 있다.<br>
+<br>
+이때 dielectric 내에서 정리된 field와 원래 있던 field를 더해서: $$\bar{D}=\varepsilon_{o}\bar{E}+\bar{P}$$라고 쓰도록 하자.<br>
+이때 $$\bar{P}$$는 Electric Polarization Vector로서, secondary field다.<br>
+수식상으로나 직관적으로나, $$\bar{P}=0$$인 공간은 $$\bar{E}$$ 입장에서 free space와 동일할 것이다.<br>
+<br>
+이때 $$\bar{P}$$의 크기는 $$\bar{E}$$에 의해 결정되는, $$\bar{P}$$에 대한 함수다.<br>
+$$\bar{P}=\varepsilon_{o}\chi_{e}\bar{E}$$라고 적는다. 이때 $$\chi_{e}$$: Electric susceptibility.<br>
+Susceptibility가 클수록 그 system은 주변 환경 변화에 민감하게 반응한다.<br>
+<br>
+susceptibility를 써서 표현하면:<br>
+$$\bar{D}=\varepsilon_{o}\bar{E}+\bar{P}=\varepsilon_{o}\left ( 1+\chi_{e} \right )\bar{E}=\varepsilon_{r}\varepsilon_{o}\bar{E}=\varepsilon\bar{E}$$,<br>
+$$\varepsilon_{r}=1+\chi_{e}$$<br>
+<br>
+$$\bar{H}$$에 의한 반응도 비슷하다. $$\bar{B}=\mu_{o}\bar{H}+\bar{M}$$,<br>
+$$\bar{M}$$: Magnetic Polarization Vector,<br>
+$$\chi_{m}$$: Magnetic susceptibility,<br>
+$$\bar{M}=\mu_{o}\chi_{m}\bar{H}$$,<br>
+$$\bar{B}=\mu_{o}\bar{H}+\bar{M}=\mu_{o}\left ( 1+\chi_{m} \right )\bar{H}=\mu_{r}\mu_{o}\bar{H}=\mu\bar{H}$$,<br>
+$$\mu_{r}=1+\chi_{m}$$<br>
+<br>
+이렇게 투명하다는 개념과 susceptibility로 $$\mu$$, $$\varepsilon$$ 변화를 생각할 수 있다.<br>
+<br>
+Wave equation in a simple medium:<br>
