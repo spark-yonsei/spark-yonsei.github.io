@@ -268,3 +268,45 @@ $$\mu_{r}=1+\chi_{m}$$<br>
 이렇게 투명하다는 개념과 susceptibility로 $$\mu$$, $$\varepsilon$$ 변화를 생각할 수 있다.<br>
 <br>
 Wave equation in a simple medium:<br>
+앞에서 말했듯, simple medium은 $$\mu, \varepsilon, \sigma$$ 모두가 상수인 medium<br>
+$$\triangledown \times \bar{E}=-\dfrac{\partial \bar{B}}{\partial t}$$,<br>
+$$\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}=\left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\bar{E}$$가 우리가 갖고 있는 2개 식이고,<br>
+<br>
+Derived equation들은 다음과 같다.<br>
+$$\triangledown \cdot \bar{B}=0$$<br>
+$$\triangledown \cdot \bar{E}=\dfrac{\rho}{\varepsilon}$$<br>
+<br>
+$$\triangledown \times \bar{H}=\left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\bar{E}$$에서 양변에 Div를 하면:<br>
+$$\triangledown \cdot \left ( \triangledown \times \bar{H} \right )=\triangledown \cdot \left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\bar{E}=\left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\left ( \triangledown \cdot \bar{E}\right )$$<br>
+<br>
+여기에 $$\triangledown \cdot \bar{E}=\dfrac{\partial \rho}{\partial \varepsilon}$$를 적용하면,<br>
+$$\left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\left ( \triangledown \cdot \bar{E}\right )=\left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\left ( \dfrac{\rho}{\varepsilon} \right )$$<br>
+<br>
+따라서 $$\triangledown \cdot \left ( \triangledown \times \bar{H} \right )=\left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\left ( \dfrac{\rho}{\varepsilon} \right )$$인데,<br>
+Vector identity에 의해 $$\triangledown \cdot \left ( \triangledown \times \bar{H} \right )=0$$이다.<br>
+<br>
+따라서 $$\left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\left ( \dfrac{\rho}{\varepsilon} \right )=0$$<br>
+근데 simple medium이니까, $$\varepsilon, \sigma$$는 상수고 $$\rho$$만 함수다.<br>
+<br>
+사실 $$\rho$$는 시간과 공간에 대한 함수다. $$\triangledown \cdot \bar{E}=\dfrac{\rho}{\varepsilon}$$의 $$\triangledown \times \bar{E}$$부터 일단 공간에 대한 함수니까.<br>
+<br>
+$$\rho$$가 함수니까 $$\rho$$를 $$\rho(t)$$로 적으면:<br>
+$$\left ( \sigma+\varepsilon\dfrac{\partial }{\partial t} \right )\left ( \dfrac{\rho(t)}{\varepsilon} \right )=\dfrac{\partial \rho(t) }{\partial t}+\dfrac{\sigma }{\varepsilon}\cdot\rho(t)=0$$<br>
+<br>
+위 식을 정리하면:<br>
+$$\rho(t)=\rho(0) \cdot e^{-\frac{\sigma}{\varepsilon}t}$$<br>
+<br>
+ex) Fresh water: $$\varepsilon=81\varepsilon_{o}$$, $$\sigma=10^{-3}[S/m]$$ (유전율 엄청 높은 물질)<br>
+$$\tau = \dfrac{\rho}{\varepsilon} = 7 \cdot 10^{-7}[s]$$.<br>
+따라서, 물에 전하를 던지면 decay constant가 $$7 \cdot 10^{-7}[s]$$다.<br>
+<br>
+ex) Metal: $$\varepsilon=\varepsilon_{o}$$, $$\sigma=10^{7}[S/m]$$<br>
+$$\tau = \dfrac{\rho}{\varepsilon} = 8 \cdot 10^{-21}[s]$$.<br>
+물에서보다 훨씬 빠르게 사라지는걸 확인할 수 있다.<br>
+<br>
+이번에는 Div 대신 Curl을 해볼거다.<br>
+식도 바꿔서, $$\triangledown \times \bar{H}=\bar{J}+\dfrac{\partial \bar{D}}{\partial t}$$ 말고 $$\triangledown \times \bar{E}=-\dfrac{\partial \bar{B}}{\partial t}$$에 Curl을 해볼거다.<br>
+<br>
+$$\triangledown \times \left ( \triangledown \times \bar{E} \right )=\triangledown \times \left ( -\dfrac{\partial \bar{B}}{\partial t} \right )=-\mu\dfrac{\partial}{\partial t}\left ( \triangledown \times \bar{H} \right )$$<br>
+<br>
+여기서 $$\triangledown \times \left ( \triangledown \times \bar{E} \right )=$$
