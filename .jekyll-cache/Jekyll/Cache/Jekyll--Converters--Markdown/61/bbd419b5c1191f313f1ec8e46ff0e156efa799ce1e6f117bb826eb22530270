@@ -1,95 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">About</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">3</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Circuits">
-				<span class="name">Circuits</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#History">
-				<span class="name">History</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">3</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Time-Frequency">
-				<span class="name">Time-Frequency</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			전자기학 (1)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-24T19:31:29+09:00" itemprop="datePublished">2023/10/24
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>고급마이크로파공학 내용 정리<br />
+I"�x<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -453,13 +362,7 @@ Try a solution : \(\bar{E} \left( x,t \right) = \bar{E}_{o} \cdot f\left(x,t \ri
 이게 0이 되어야 맥스웰 방정식을 만족하는건데, 얘가 0이 되려면 \(\bar{E}_{o} \cdot \hat{x} = 0\)이 되어야 한다. 즉, \(\bar{E}_{o} \perp \hat{x}\)가 되어야 한다.<br />
 <br />
 결론적으로, 맥스웰 방정식에 의해, simple medium 내에서 진행하는 electromagnetic wave의 \(\bar{E}\)는 진행방향과 수직이다.<br />
-Simple medium이라는 조건이 붙는 이유는, 일반적으로는 \(\triangledown \cdot \bar{D}=0\)인데 simple medium이어야 \(\bar{D}=\varepsilon\bar{E}\) (\(\varepsilon\)은 상수) 라서 \(\triangledown \cdot \bar{E}=0\)이 된다.<br />
+Simple medium이라는 조건이 붙는 이유는, 일반적으로는 \(\triangledown \cdot \bar{D}=0\)인데 simple medium이어야 \(\bar{D}=\varepsilon\bar{E}\) (\(\varepsilon은 상수) 라서\)\triangledown \cdot \bar{E}=0$$이 된다.<br />
 <br />
 그럼 magnetic field는 진행 방향과 어떤 관계가 있을까?<br /></p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET
