@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">About</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Electromagnetics">
+				<span class="name">Electromagnetics</span>
+				<span class="badge">3</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Circuits">
+				<span class="name">Circuits</span>
+				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#History">
+				<span class="name">History</span>
+				<span class="badge">3</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Miscellaneous">
+				<span class="name">Miscellaneous</span>
+				<span class="badge">5</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Process">
+				<span class="name">Process</span>
+				<span class="badge">11</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Time-Frequency">
+				<span class="name">Time-Frequency</span>
+				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			햅틱 ToF
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>Haptic:<br />
+터치했을 때 진동이 오면 그걸 햅틱이라 부른다. 알람이나 전화로 울리는 진동도 넓게 보면 햅틱일 수는 있겠지만, 우리가 말하는 햅틱은 아니다.<br />
+<br />
+햅틱이란 단어는 2009년에 나온 연아의 햅틱 시절부터 계속 등장해 왔다. 그렇게 언급만 되다가, 아이폰 7부터 홈버튼이 없어지며 햅틱이 들어갔고, 그때부터 시장이 활성화됐다.<br />
+<br />
+애플 트랙패드에도 햅틱이 들어가고, 삼성, LG 제품에도 다 들어간다.<br />
+<br />
+햅틱의 진동 주파수는 300Hz정도 되는데, 햅틱도 소리랑 비슷하게 나이들면 잘 못느끼게 된다.<br />
+<br />
+아이폰 15부터는 잠금버튼도 진짜 버튼 말고 햅틱으로 만들 예정이다. 라고 적혀있는데, 어떻게 나왔는지 확인 필요<br />
+<br />
+햅틱의 원천특허는 이머전(Immersion)이라는 미국 회사가 갖고 있다. 그래서 햅틱 만드는 회사들 모두가 이머전한테 돈을 내고 있다. 햅틱의 원리는, 터치하면 그게 Driver로 전달돼 액추에이터를 동작시켜서 진동이 발생하는거다.<br />
+<br />
+하이엔드 LG폰들에는 동운아나텍 햅틱이 많이 들어갔었고, 그 외에 ASUS ROG2폰에도 들어갔다.<br />
+<br />
+맥북은 터치패드가 실제로 누르는게 아니라 햅틱이다.<br />
+<br />
+햅틱 이야기가 가장 많이 나오고 있는 곳은 자동차 전장 분야다. 요즘은 차에 있는 버튼들 다 햅틱으로 대체하려 하고 있다. 국산 제네시스에 들어가는 햅틱 드라이버 IC는 다 동운아나텍꺼다.<br />
+<br />
+동운아나텍이 만드는건 햅틱 드라이버 IC지만, 이게 제어하는 대상이 액추에이터라 액추에이터 업체들과 많은 협력을 한다. 협력에서 무엇을 하냐면, 액추에이터로 어떻게 진동을 만들어야 진짜 버튼 눌렀을때랑 비슷한 느낌이 날 지 연구한다. 그걸 위해, 진짜 버튼 눌렀을 때 생기는 가속도를 기록해서 그거대로 느낌나게 설계한다.<br />
+<br />
+애플 액추에이터는 150Hz -&gt; 300Hz -&gt; 180Hz로 진동 주파수가 바뀌며 나오게 되어 있다. 전압은 8~10V다. 애플 액추에이터는 만원정도 하고, 다른 회사 액추에이터들은 1~2천원 정도 한다.<br />
+<br />
+액추에이터는 그네랑 비슷하다. 그네를 한번 밀면 진동하다가 멈추듯이, 액추에이터도 그냥 동작만 시키면 뒤에 진동이 잠시 남아서 느낌이 이상해진다. 그래서 남은 진동을 잘 잡아줘야 한다. 애플은 이걸 잘 잡는데, 삼성전자는 조금 부족하다.<br />
+<br />
+햅틱 분야에서 애플은 독보적이다. 다른 회사들은 노트북에 큰 배터리랑 작은 액추에이터를 넣는데, 맥북은 돈을 더 써서 배터리를 나눠놓고 그 공간에 두꺼운 액추에이터를 넣었다.<br />
+<br />
+테슬라 차에는 햅틱이 없다. 터치스크린은 있는데, 진동 없는 그냥 태블릿이다.<br />
+<br />
+근데 차에 햅틱이 왜 필요한가? 버튼 눌린거 확인시켜주려고 필요하다.<br />
+차에서는 운전하면서 앞만 보면서 화면을 터치해야 하기 때문에, 버튼이 눌렸으면 햅틱으로 그걸 확인시켜주면 좋다.<br />
+<br />
+당연히, 차에서는 핸드폰보다 진동이 더 강해야 한다. 그래서 차에 쓰이는 액추에이터는 핸드폰에 들어가는 액추에이터보다 훨씬 크고, 가격도 4달러정도 한다.<br />
+<br />
+아우디 A8에 들어간 햅틱이 좀 좋은게 들어갔고, 메르세데스 벤츠 햅틱은 쓰레기다.<br />
+<br />
+태블릿 펜, 전자담배에도 햅틱이 들어간다. 모든 햅틱의 목표는 아이폰 같은 느낌이다. 그냥 햅틱은 애플 따라가면 된다.<br />
+<br />
+햅틱 평가요소: 진동력, 소음, 진동시간<br />
+진동력은 적당하면 되고, 소음은 적어야 하고, 진동시간은 짧아야 한다. 이게 아까 얘기한 잔진동 없애야 한다는 이야기다.<br />
+<br />
+삼성전자 햅틱은 2G, 3G, 5G로 약~강 진동을 선택할 수 있다.<br />
+햅틱 원리는 오디오 앰프랑 비슷하다. 그래서 많은 회사들이 한다. 국내만 해도 2~3개 업체가 있고, 중국도 많이 한다. 애플에 들어가는 햅틱은 시러스로직(Cirrus Logic)꺼다.<br />
+<br />
+애플 안면인식은 ToF 센서로 3D 센싱을 하는 방식이다.<br />
+3D 센싱에는 3가지 방식이 있다.<br />
+1. Stereo Vision: 카메라 2개면 거리 재기 가능<br />
+2. Structured Light: 패턴 있는 빛을 뿌려서 반사 패턴을 본다.<br />
+3. ToF<br />
+dToF: 아이폰, 로봇청소기, 3D지도 만드는 차 위에 있는거<br />
+iToF: 아이폰 외 모든 핸드폰<br />
+<br />
+다른 카메라들은 광원이 없는데, ToF 카메라는 광원에서 빛을 쏜다. 우리가 하는건 거기 들어가는 VCSEL(Vertical Cavity Surface Emitting Laser, 웨이퍼 수직 방향으로 레이저 쏘는 다이오드) 구동 장치다.<br />
+<br />
+ToF 카메라 결과로 amplitude, depth 정보가 나온다.<br />
+ToF 스위칭 주파수가 100MHz라서 RF Radiation noise가 심하다.<br />
+<br />
+iToF: 약하게 여러 개 point에 뿌린다. 멀리는 못가지만, 뿌리는 범위가 넓어서 해상도가 높다. 멀리 못간다는게, 5m도 못가는 수준이다. 삼성전자 iToF는 4500개 point를 뿌린다.<br />
+<br />
+dToF: 강하게 몇 개 point에 뿌린다. 멀리 갈 수 있지만, 중간에 비는 부분들은 알고리즘으로 채워넣어야 한다. 애플 dToF는 600개 point를 뿌린다.<br />
+<br />
+iToF, dToF 쏘는건 물총이랑 비슷하게 생각하면 된다. 분무기가 iToF, 물총이 dToF다.<br />
+ToF에서 빈 곳 채우는 기술이 삼성이 많이 딸려서, ToF 파워는 삼성꺼가 더 센데도 애플꺼가 더 멀리간다.<br />
+<br />
+iToF 센서와 dToF 센서는 다르게 생겼는데, 이 중 dToF 센서는 작게 만들기 어렵다.<br />
+dToF 센서는 소니에서 만드는데 애플과 독점 계약이 되어 있다.<br />
+dToF 센서는 위에서 말했듯 빈칸을 채워야 해서 소프트웨어 처리가 많이 필요하다. 그래서 이게 되는 애플만 dToF, 나머지는 iToF를 쓴다.<br />
+<br />
+아까 iToF는 5m도 못간다고 했는데, AR, VR을 하고 싶다면 sensing 가능한 거리가 5m는 넘어야 할 것이다. 그래서 요즘은 많이들 dToF를 검토한다고 한다.<br />
+<br />
+옛날에, 5G 활성화되면 AR, VR 떡상한다는 얘기가 있었지만 아니었다. 그래서 삼성전자도 관심을 껐었는데, 아이폰 13프로부터 dToF센서가 들어가서 다시 관심을 갖고 있다고 한다. 그래도 일단 S24까지는 들어갈 계획 없다고 한다.<br />
+<br />
+애플이 안경을 곧 출시한다는데, 그러면 삼성 글래스가 나오고 거기 동운아나텍 제품이 들어갈 수도 있다.<br />
+<br />
+dToF는 아이폰 외에도 형체 인식하는 곳에 쓰인다. 매장 들어가는 사람 세는 곳 등. 이러면 보안상 좋다. 형체만 보이고 사람은 안보이니까.<br />
+<br />
+라이다의 핵심 원리가 dToF다.<br />
+<br />
+dToF: direct Time-of-Flight, iToF: indirect Time-of-Flight<br />
+<br />
+자율주행에서는 멀리 보기 위해 레이더, 고해상도를 위해 라이다, 색을 구분하기 위해 카메라가 모두 필요하다. 근데 테슬라는 카메라만 쓴다. 이러면 밤에 안보인다!<br />
+<br />
+주차할 때 삐삐삐 소리 나는건 초음파센서가 인식해서 소리나는거다.<br />
+옆차선 차 백미러에 표시해주는 센서는 24GHz 레이더를 쓰고, 스마트크루즈는 77GHz를 쓴다.<br />
+<br />
+자동차에 들어가는 라이다는 원래 몇백만원 하는데, 그래도 많이 들어가고 있는 추세다. EV9, 제네시스 새로운 모델에도 라이다가 들어간다.<br /></p>
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>

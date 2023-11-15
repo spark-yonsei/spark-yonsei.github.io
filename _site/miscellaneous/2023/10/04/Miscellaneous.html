@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">About</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Electromagnetics">
+				<span class="name">Electromagnetics</span>
+				<span class="badge">3</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Circuits">
+				<span class="name">Circuits</span>
+				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#History">
+				<span class="name">History</span>
+				<span class="badge">3</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Miscellaneous">
+				<span class="name">Miscellaneous</span>
+				<span class="badge">5</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Process">
+				<span class="name">Process</span>
+				<span class="badge">11</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Time-Frequency">
+				<span class="name">Time-Frequency</span>
+				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			Miscellaneous
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>ESD Cell: Device에서 Electrostatic Discharge(ESD)가 일어나지 못하도록 하는 protection circuit이다. 여기서 ESD는 전하가 한 곳에 모여있다가 한번에 흐르는 현상이다.<br />
+<br />
+Timing Margin: 신호가 늦게 도착해도 회로가 정상동작할 수 있는 최대 시간이다. 신호가 timing margin보다 늦게 오기 시작하면 회로가 오동작하게 된다.<br />
+<br />
+Firmware: 하드웨어에 내장된 소프트웨어다. 이론적으로 컴퓨터는 CPU와 RAM만 있으면 사용 가능해야 하지만, CPU와 RAM이 서로 제어, 통신을 하려면 펌웨어가 저장된 메모리 모듈이 필요하다. 부품끼리 통신하는 데에 쓰이는 프로토콜은 상당히 복잡하기 때문에, 펌웨어가 그만큼 중요하다.
+옛날에는 펌웨어를 ROM에 저장했어서 수정이 불가능했지만, 요즘은 플래시메모리에 저장하는 경우가 많아져 업데이트나 복구가 더 쉬워졌다. 펌웨어에 문제가 생기면 기기가 벽돌이 되니 조심해야 한다.<br />
+<br />
+PCI Bus: Peripheral Component Interconnect Bus<br />
+컴퓨터 메인보드에 주변 장치를 장착하는데에 쓰이는 컴퓨터 버스의 일종이다.<br />
+<br />
+PXI: PCI eXtensions for Instrumentation<br />
+여러가지 장비들을 측정, 제어하는데에 사용되는 플랫폼이다.<br />
+<br />
+Netlist: Circuit synthesis한 결과<br />
+내가 적은 Verilog등 코드를 회로로 만들어놓은 것이 Netlist다.<br />
+<br />
+Netlist라는 회사도 있다. 나스닥에 상장된 메모리 반도체 모듈 회사다. NLST 티커로 상장되어 있다. LG반도체 출신 홍춘기라는 사람이 대표고, 2020년에 삼성전자와 특허 분쟁을 겪은 적이 있다고 한다.<br />
+<br />
+테스트 양산 엔지니어:<br />
+1. Fab 내에서 발생한 HW, SW 문제들을 디버깅하여 수율을 관리<br />
+2. 고객사가 문제를 제기할 때 QA팀, 회로설계팀, Product팀과 회의해서 어디가 원인인지 분석한다.<br />
+3. 테스트 개발팀에서 새로운 테스트 아이템이 개발되면 그걸 구현하기 위한 테스트 프로그램을 만든다.<br />
+<br />
+테스트 개발 엔지니어:<br />
+1. TTR을 위한 테스트 프로그램을 만들고, 하드웨어 관점에서도 TTR을 위한 방안을 모색한다.<br />
+2. 고객사 의뢰 또는 회사 경쟁력을 위해 새로운 테스트 아이템을 연구해서 양산에 적용될 수 있도록 한다.<br />
+3. 테스트 양산 엔지니어에게 전달할 Test plan sheet를 제작한다.<br />
+<br />
+QA팀: Quality Assurance, 품질보증팀<br />
+TTR: Test Time Reduction<br />
+<br />
+테스트 양산 엔지니어, 테스트 개발 엔지니어 모두가 추구하는 목표는 TTR이다. 한번에 더 많은 칩을 테스트할 방법 연구, 테스트 프로그램 안의 불필요한 코드 수정 등을 통해 TTR을 줄인다.<br />
+<br />
+Test Plan Sheet에는:<br />
+1. 테스트 양산 진행 방식(테스트 조건):<br />
+Ex) leakage current를 재고 싶으면 이런 식으로 재라<br />
+2. 이론적으로 나와야 할 값:<br />
+Leakage current는 700nA정도 나와야 하며, 딱 이정도는 아니겠지만 하여간 1uA 아래로 나와야 한다<br />
+3. Schematic:<br />
+피스파이스 같은 회로는 아니고 Visio라는 Block Diagram용 schematic을 그려놓는다. 테스트 양산 엔지니어들은 이 그림을 보고 어디 소자가 불량이라 결과가 이렇구나 생각을 한다.<br /></p>
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>

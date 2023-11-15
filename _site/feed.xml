@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-15T01:08:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">전자기학 (1)</title><link href="http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html" rel="alternate" type="text/html" title="전자기학 (1)" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html"><![CDATA[<p>고급마이크로파공학 내용 정리<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-16T02:47:49+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">전자기학 (1)</title><link href="http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html" rel="alternate" type="text/html" title="전자기학 (1)" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html"><![CDATA[<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -368,218 +368,324 @@ Simple medium이라는 조건이 붙는 이유는, 일반적으로는 \(\triangl
 \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)<br />
 \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)</p>]]></content><author><name></name></author><category term="Circuits" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\) \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)]]></summary></entry><entry><title type="html">Electromagnetics (1)</title><link href="http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics-1.html" rel="alternate" type="text/html" title="Electromagnetics (1)" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/04/Electromagnetics-1.html"><![CDATA[<p>Under test
 \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)<br />
-\(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\) \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)]]></summary></entry><entry><title type="html">내용정리</title><link href="http://localhost:4000/history/2023/10/04/History.html" rel="alternate" type="text/html" title="내용정리" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History.html"><![CDATA[<p>Under test
+\(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\) \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)]]></summary></entry><entry><title type="html">동운아나텍의 역사</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8F%99%EC%9A%B4%EC%95%84%EB%82%98%ED%85%8D%EC%9D%98-%EC%97%AD%EC%82%AC.html" rel="alternate" type="text/html" title="동운아나텍의 역사" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8F%99%EC%9A%B4%EC%95%84%EB%82%98%ED%85%8D%EC%9D%98%20%EC%97%AD%EC%82%AC</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8F%99%EC%9A%B4%EC%95%84%EB%82%98%ED%85%8D%EC%9D%98-%EC%97%AD%EC%82%AC.html"><![CDATA[<p>동운아나텍의 역사:<br />
+김동철 사장님은 1958년 11월 1일생이고, 서울대 독문 졸업하신 후 1982년 삼성전자 해외영업에 들어가셨다. 당시 삼성전자에서 독일 시장을 개척하려고 독일어 되는 사람을 뽑았다고는 하는데, 사실 명문대 나오면 다들 취직되던 시대 아니었나?<br />
+<br />
+그 후 1987년 삼성전자를 나와 동운상사 라는 회사를 세우셨고, 90년대가 반도체 호황이었기에 돈을 많이 버셨다고 한다.<br />
+<br />
+동운상사에서 가장 처음 만든 제품은 USB Transceiver IC였고, 그 다음은 AF Driver IC였다. 이 제품은 삼성전자, LG전자, 팬택, 소니 핸드폰에 들어갔다.<br />
+<br />
+이 중 팬택이라는 회사가 좀 생소할 수 있는데, CDMA 도입되던 시절부터 스마트폰 초기까지 핸드폰 만들던 우리나라 회사다. 팬택&amp;큐리텔 회사 건물이 지금 동운아나텍이 있는 서초평화빌딩이었다. 지금도 존재는 하는데, 핸드폰을 만들고 있지는 않고 명목상으로만 존재한다.<br />
+<br />
+그래도 제품 목록을 보면 어디선가 들어본 제품들이 있다. 팬택은 2005년에 SKY 핸드폰 브랜드를 갖고 있던 SK텔레텍을 인수해서 SKY 핸드폰들을 출시했었고, 스마트폰 초기에는 베가 시리즈를 냈다. 그 외에도 엄청 많은 핸드폰들을 출시했던 듯 하다.<br />
+<br />
+동운상사는 소니 핸드폰에 제품이 들어가게 하려고 많은 노력을 했다고 한다. 처음에는 소니에서 안만나주다가, 어떻게 계속 비벼서 세컨드, 서드도 아니고 진짜진짜 마지막 벤더로 겨우 들어갔다고 한다.<br />
+<br />
+그러던 어느날, 소니 핸드폰에서 카메라쪽에 문제가 생겼다고 한다. 원래 소니는 로옴에서 만드는 카메라 모듈을 주로 쓰고 있었는데, 모듈에 문제가 있으니 당장 튀어와라 라고 하자 동운상사에서는 즉시 도쿄까지 튀어갔는데, 로옴은 미적거리다가 3일정도 늦게 왔다고 한다.<br />
+<br />
+뭐 결국 카메라 모듈 문제는 아니었다고 한다. 그래도 소니는 문제 찾는 과정에서 동운상사 사람들이 계속 상주하며 열심히 하는걸 보고 동운상사에 ‘SONY Green Partner’ 인증서를 줬다고 한다.<br />
+<br />
+당시 국내에서 인증서를 받은 기업은 삼성전자 하이닉스 뿐이었고 그만큼 인정받은거다 라고 배우긴 했는데, 이거 찾아보니 그냥 친환경 기업 인증서다. 아니 그럼 열심히 하는거랑 상관이 없는건데? 뭐지<br />
+<br />
+로옴(Rohm)이라는 회사에 대해 알아보고 가려고 한다.<br />
+LSI, 트랜지스터, 다이오드, LED, 저항기 등을 생산하는 회사고, 주력사업은 커스텀 LSI 제조다. 본사는 교토에 있고, 요즘은 PMIC 많이 하는 듯 하다.<br />
+<br />
+로옴은 SiC 분야에서 세계 2위 점유율을 갖고 있다. SiC는 Silicon과 Carbon으로 구성된 Silicon Carbide를 말하는데, 파워 모듈 등에 많이 쓰인다고 한다. 세계 1위는 전력 반도체 업계 최대 규모 회사인 인피니언(Infineon)이라는 독일 회사다.<br />
+<br />
+동운상사 이름이 언제 동운아나텍으로 바뀌었는지는 잘 모르겠지만, 동운아나텍 회사소개에 2006년 설립이라고 되어있는걸 보면 2006년에 바뀐게 아닌가 싶다. 반도체 설계 시작한건 2002년 정도였다고 한다.<br />
+<br />
+하여간, 옛날에는 일본에 제품을 많이 팔았지만 요즘은 일본에 거의 안팔고 대부분 중화권에 판다고 한다. 지금 국내:해외 매출 비율은 7:3이고, 3의 대부분이 중화권에서 발생한다.<br />
+<br />
+동운아나텍은 2009년에 심천지사를 설립해서 중국 시장을 개척했다. 심천은 선전 이라고도 불리는 곳인데, 1980년에 덩샤오핑이 경제특구로 지정해서 크게 발전한 곳이다. 화웨이, BYD, 텐센트 본사가 있다. 지리적으로는 홍콩 바로 위에 있다.<br />
+<br />
+하여간 여기에 지사를 설립해 중국 핸드폰 회사들에 AF Driver IC, OIS Driver IC를 팔려고 했는데, 처음에는 중국 업체들이 안사다가 스마트폰 시대가 와서 카메라가 중요해지자 사기 시작했다.<br />
+<br />
+그래서 중국에서 번 돈으로 2015년 코스닥 상장까지 이뤄냈고, 2017년부터는 지문 인식 등 새로운 사업을 시작하고 있다. 현재 동운아나텍은 상해, 심천, 대만 지사를 묶어 GCO(Great China Office)라 부르고, 실리콘밸리와 도쿄에도 지사가 있기는 한데 딱히 매출이 있지는 않은 것 같다.<br />
+<br />
+AF Driver IC 경쟁사: 아사히카세히, 로옴, 아날로그디바이스<br />
+OIS Driver IC 경쟁사: 온세미<br />
+<br />
+중국 업체들도 몇가지 언급됐다. 써니옵티컬, 오필름, Q-Tech, Truly, Liteon 등.<br />
+대강 알아보니 이 중국 업체들은 다 광학 회사들이다.<br />
+<br />
+아사히카세히는 기본적으로는 화학회사인데, 온갖 것에 손대는 종합화학 회사다. 리튬이온전지 발명으로 노벨화학상을 받은 요시노 아키라가 이 회사 출신이다.<br />
+<br />
+아사히카세히의 자회사인 AKM(Asahi Kasei Microdevices)이 반도체 회사다. 홀 센서 등 자기센서, 전류센서, 가스센서, 오디오 소자, 블루투스, 레이더 등 다양한 제품들을 만든다.<br />
+<br />
+근데 AF Driver IC도 한다고 배웠는데, 사이트 제품목록에 안적혀있다. 접은건지 뭔지는 모르겠다.<br />
+<br />
+아날로그디바이스(Analog Devices)는 미국 회사고, 온갖 아날로그 회로들을 다 만든다. ADC, DAC, 코덱 이런거 많다. 그리고 검색으로는 잘 안나오는데, 애플 제품에 들어가는 AF Driver IC가 아날로그디바이스 꺼라고 한다.<br />
+<br />
+온세미(ON Semiconductor): 미국 회사고, 1999년 모토로라 반도체 부문에서 떨어져 나와 생겼다. 애네도 이것저것 만드는 회사다. OIS Driver IC로 배운게 온세미다.<br /></p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[동운아나텍의 역사: 김동철 사장님은 1958년 11월 1일생이고, 서울대 독문 졸업하신 후 1982년 삼성전자 해외영업에 들어가셨다. 당시 삼성전자에서 독일 시장을 개척하려고 독일어 되는 사람을 뽑았다고는 하는데, 사실 명문대 나오면 다들 취직되던 시대 아니었나? 그 후 1987년 삼성전자를 나와 동운상사 라는 회사를 세우셨고, 90년대가 반도체 호황이었기에 돈을 많이 버셨다고 한다. 동운상사에서 가장 처음 만든 제품은 USB Transceiver IC였고, 그 다음은 AF Driver IC였다. 이 제품은 삼성전자, LG전자, 팬택, 소니 핸드폰에 들어갔다. 이 중 팬택이라는 회사가 좀 생소할 수 있는데, CDMA 도입되던 시절부터 스마트폰 초기까지 핸드폰 만들던 우리나라 회사다. 팬택&amp;큐리텔 회사 건물이 지금 동운아나텍이 있는 서초평화빌딩이었다. 지금도 존재는 하는데, 핸드폰을 만들고 있지는 않고 명목상으로만 존재한다. 그래도 제품 목록을 보면 어디선가 들어본 제품들이 있다. 팬택은 2005년에 SKY 핸드폰 브랜드를 갖고 있던 SK텔레텍을 인수해서 SKY 핸드폰들을 출시했었고, 스마트폰 초기에는 베가 시리즈를 냈다. 그 외에도 엄청 많은 핸드폰들을 출시했던 듯 하다. 동운상사는 소니 핸드폰에 제품이 들어가게 하려고 많은 노력을 했다고 한다. 처음에는 소니에서 안만나주다가, 어떻게 계속 비벼서 세컨드, 서드도 아니고 진짜진짜 마지막 벤더로 겨우 들어갔다고 한다. 그러던 어느날, 소니 핸드폰에서 카메라쪽에 문제가 생겼다고 한다. 원래 소니는 로옴에서 만드는 카메라 모듈을 주로 쓰고 있었는데, 모듈에 문제가 있으니 당장 튀어와라 라고 하자 동운상사에서는 즉시 도쿄까지 튀어갔는데, 로옴은 미적거리다가 3일정도 늦게 왔다고 한다. 뭐 결국 카메라 모듈 문제는 아니었다고 한다. 그래도 소니는 문제 찾는 과정에서 동운상사 사람들이 계속 상주하며 열심히 하는걸 보고 동운상사에 ‘SONY Green Partner’ 인증서를 줬다고 한다. 당시 국내에서 인증서를 받은 기업은 삼성전자 하이닉스 뿐이었고 그만큼 인정받은거다 라고 배우긴 했는데, 이거 찾아보니 그냥 친환경 기업 인증서다. 아니 그럼 열심히 하는거랑 상관이 없는건데? 뭐지 로옴(Rohm)이라는 회사에 대해 알아보고 가려고 한다. LSI, 트랜지스터, 다이오드, LED, 저항기 등을 생산하는 회사고, 주력사업은 커스텀 LSI 제조다. 본사는 교토에 있고, 요즘은 PMIC 많이 하는 듯 하다. 로옴은 SiC 분야에서 세계 2위 점유율을 갖고 있다. SiC는 Silicon과 Carbon으로 구성된 Silicon Carbide를 말하는데, 파워 모듈 등에 많이 쓰인다고 한다. 세계 1위는 전력 반도체 업계 최대 규모 회사인 인피니언(Infineon)이라는 독일 회사다. 동운상사 이름이 언제 동운아나텍으로 바뀌었는지는 잘 모르겠지만, 동운아나텍 회사소개에 2006년 설립이라고 되어있는걸 보면 2006년에 바뀐게 아닌가 싶다. 반도체 설계 시작한건 2002년 정도였다고 한다. 하여간, 옛날에는 일본에 제품을 많이 팔았지만 요즘은 일본에 거의 안팔고 대부분 중화권에 판다고 한다. 지금 국내:해외 매출 비율은 7:3이고, 3의 대부분이 중화권에서 발생한다. 동운아나텍은 2009년에 심천지사를 설립해서 중국 시장을 개척했다. 심천은 선전 이라고도 불리는 곳인데, 1980년에 덩샤오핑이 경제특구로 지정해서 크게 발전한 곳이다. 화웨이, BYD, 텐센트 본사가 있다. 지리적으로는 홍콩 바로 위에 있다. 하여간 여기에 지사를 설립해 중국 핸드폰 회사들에 AF Driver IC, OIS Driver IC를 팔려고 했는데, 처음에는 중국 업체들이 안사다가 스마트폰 시대가 와서 카메라가 중요해지자 사기 시작했다. 그래서 중국에서 번 돈으로 2015년 코스닥 상장까지 이뤄냈고, 2017년부터는 지문 인식 등 새로운 사업을 시작하고 있다. 현재 동운아나텍은 상해, 심천, 대만 지사를 묶어 GCO(Great China Office)라 부르고, 실리콘밸리와 도쿄에도 지사가 있기는 한데 딱히 매출이 있지는 않은 것 같다. AF Driver IC 경쟁사: 아사히카세히, 로옴, 아날로그디바이스 OIS Driver IC 경쟁사: 온세미 중국 업체들도 몇가지 언급됐다. 써니옵티컬, 오필름, Q-Tech, Truly, Liteon 등. 대강 알아보니 이 중국 업체들은 다 광학 회사들이다. 아사히카세히는 기본적으로는 화학회사인데, 온갖 것에 손대는 종합화학 회사다. 리튬이온전지 발명으로 노벨화학상을 받은 요시노 아키라가 이 회사 출신이다. 아사히카세히의 자회사인 AKM(Asahi Kasei Microdevices)이 반도체 회사다. 홀 센서 등 자기센서, 전류센서, 가스센서, 오디오 소자, 블루투스, 레이더 등 다양한 제품들을 만든다. 근데 AF Driver IC도 한다고 배웠는데, 사이트 제품목록에 안적혀있다. 접은건지 뭔지는 모르겠다. 아날로그디바이스(Analog Devices)는 미국 회사고, 온갖 아날로그 회로들을 다 만든다. ADC, DAC, 코덱 이런거 많다. 그리고 검색으로는 잘 안나오는데, 애플 제품에 들어가는 AF Driver IC가 아날로그디바이스 꺼라고 한다. 온세미(ON Semiconductor): 미국 회사고, 1999년 모토로라 반도체 부문에서 떨어져 나와 생겼다. 애네도 이것저것 만드는 회사다. OIS Driver IC로 배운게 온세미다.]]></summary></entry><entry><title type="html">메모리의 역사</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC.html" rel="alternate" type="text/html" title="메모리의 역사" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%9D%98%20%EC%97%AD%EC%82%AC</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%9D%98-%EC%97%AD%EC%82%AC.html"><![CDATA[<p>원래 MOSFET은 Planar FET 구조였다. 그데 L이 줄어들면서 Source와 Drain 사이의 leakage current가 증가하는 문제가 생겼다. L은 channel length, 즉 source와 drain 사이 거리다.<br />
+<br />
+그래서, FinFET 구조로 채널과 게이트 사이 표면적을 늘려 leakage current를 줄였다. 이름이 FinFET인 이유는 구조 생긴게 지느러미같이 생겨서 그렇다.<br />
+<br />
+근데, 4nm 이하 공정으로 가자 FinFET으로도 한계가 생겼고, 그래서 GAAFET이 나왔다. Gate-All-Around FET인데, 얘는 Gate와 Channel이 FinFET처럼 3면이 아닌 4면이 만나고 있다. 그래서 Gate와 Channel 사이 면적이 더욱 늘어난다.<br />
+<br />
+MBC(Multi Bridge Channel) FET은 채널이 얇아 전류에 한계가 있다는 GAAFET의 단점을 개선한 구조다. 그냥 채널을 더 넓게 만들어놨다.<br />
+<br />
+GAAFET, MBCFET의 장점 중 하나는 채널의 개수가 늘어나도 소자가 위로 높아질 뿐 아래 면적이 늘어나지는 않는다는 점이다. 그래서 면적을 아낄 수 있다.<br />
+<br />
+PROM: Programmable ROM.<br />
+프로그래밍이 가능한 ROM이다. 내부 회로를 수정해서 데이터를 수정하는 방식이다.<br />
+근데 내부 퓨즈를 끊어 정보를 저장하는 방식이라, 처음 만들 때 프로그래밍 한 후에는 저장된 정보를 수정할 수 없다. 그래서 수정할 필요 없는 boot loader나 firmware 등에 사용된다.<br />
+물론 수정이 가능한 EEPROM, EPROM, 플래시메모리가 더 낫긴 하겠지만, PROM이 더 싸다.<br />
+<br />
+EPROM: Erasable PROM<br />
+EPROM은 정보를 썼다 지웠다 할 수 있는 PROM이다. 정보를 저장할 때는 전기신호를 쓰고, 정보를 지울 때는 일정 시간동안 자외선 아래 둔다.<br />
+<br />
+1980~1990년대에는 컴퓨터나 비디오게임기에 EPROM이 많이 들어갔는데, 요즘은 다 EEPROM과 플래시메모리로 대체됐다.<br />
+<br />
+포켓몬 기준으로, 1세대 2세대는 모두 SRAM과 수은전지로 데이터를 저장했다. 그래서 데이터가 방전되면 세이브가 날아갔다! 게임보이 초기에도 SRAM을 쓰는 카트리지들이 있었다고는 하지만, 그래도 포켓몬 3세대는 모두 플래시메모리에 데이터를 저장했던 것으로 보인다. 루비, 사파이어, 에메랄드는 시간 이벤트 때문에 시계용 전지가 있었고, 파이어레드 리프그린은 시간 이벤트가 없어 전지도 없었다. 이후 포켓몬 게임들도 모두 플래시메모리를 썼다.<br />
+<br />
+EEPROM: EEPROM은 PROM에 저장된 정보를 전기적으로 썼다 지울 수 있는 구조다.<br />
+<br />
+Flash memory:<br />
+1980년, 도시바의 마츠오카 후지오 박사가 NOR Flash 메모리를 발명했다. 그러고 1986년에는 NAND Flash 메모리를 발명했다.<br />
+<br />
+비유하자면 NAND는 서류를 그냥 쌓아둔거고, NOR는 분류해서 쌓아둔거다.<br />
+그래서 서류를 쌓을 때(쓰기)는 NAND가 빠르지만, 서류를 찾을 때(읽기)는 NOR가 빠르다.<br />
+<br />
+한 Cell이 담는 데이터가 작을수록 읽기/쓰기 속도가 빨라지고 수명도 길어지지만, 용량 대비 가격은 비싸진다. -&gt; MLC 얘기인가?<br />
+<br />
+NOR 플래시 메모리는 인텔이 만들고, NAND 플래시 메모리는 삼성전자, SK하이닉스, 키오시아, 웨스턴디지털, 마이크론 등에서 만든다.<br />
+<br />
+키오시아는 옛날 도시바 플래시메모리 반도체 사업부다. 도시바가 경영난으로 매각해서 회사가 생겼다.<br />
+<br />
+웨스턴디지털은 HDD, 플래시메모리, SSD 등을 만드는 회사인데, 2016년에 샌디스크를 인수했다.<br /></p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[원래 MOSFET은 Planar FET 구조였다. 그데 L이 줄어들면서 Source와 Drain 사이의 leakage current가 증가하는 문제가 생겼다. L은 channel length, 즉 source와 drain 사이 거리다. 그래서, FinFET 구조로 채널과 게이트 사이 표면적을 늘려 leakage current를 줄였다. 이름이 FinFET인 이유는 구조 생긴게 지느러미같이 생겨서 그렇다. 근데, 4nm 이하 공정으로 가자 FinFET으로도 한계가 생겼고, 그래서 GAAFET이 나왔다. Gate-All-Around FET인데, 얘는 Gate와 Channel이 FinFET처럼 3면이 아닌 4면이 만나고 있다. 그래서 Gate와 Channel 사이 면적이 더욱 늘어난다. MBC(Multi Bridge Channel) FET은 채널이 얇아 전류에 한계가 있다는 GAAFET의 단점을 개선한 구조다. 그냥 채널을 더 넓게 만들어놨다. GAAFET, MBCFET의 장점 중 하나는 채널의 개수가 늘어나도 소자가 위로 높아질 뿐 아래 면적이 늘어나지는 않는다는 점이다. 그래서 면적을 아낄 수 있다. PROM: Programmable ROM. 프로그래밍이 가능한 ROM이다. 내부 회로를 수정해서 데이터를 수정하는 방식이다. 근데 내부 퓨즈를 끊어 정보를 저장하는 방식이라, 처음 만들 때 프로그래밍 한 후에는 저장된 정보를 수정할 수 없다. 그래서 수정할 필요 없는 boot loader나 firmware 등에 사용된다. 물론 수정이 가능한 EEPROM, EPROM, 플래시메모리가 더 낫긴 하겠지만, PROM이 더 싸다. EPROM: Erasable PROM EPROM은 정보를 썼다 지웠다 할 수 있는 PROM이다. 정보를 저장할 때는 전기신호를 쓰고, 정보를 지울 때는 일정 시간동안 자외선 아래 둔다. 1980~1990년대에는 컴퓨터나 비디오게임기에 EPROM이 많이 들어갔는데, 요즘은 다 EEPROM과 플래시메모리로 대체됐다. 포켓몬 기준으로, 1세대 2세대는 모두 SRAM과 수은전지로 데이터를 저장했다. 그래서 데이터가 방전되면 세이브가 날아갔다! 게임보이 초기에도 SRAM을 쓰는 카트리지들이 있었다고는 하지만, 그래도 포켓몬 3세대는 모두 플래시메모리에 데이터를 저장했던 것으로 보인다. 루비, 사파이어, 에메랄드는 시간 이벤트 때문에 시계용 전지가 있었고, 파이어레드 리프그린은 시간 이벤트가 없어 전지도 없었다. 이후 포켓몬 게임들도 모두 플래시메모리를 썼다. EEPROM: EEPROM은 PROM에 저장된 정보를 전기적으로 썼다 지울 수 있는 구조다. Flash memory: 1980년, 도시바의 마츠오카 후지오 박사가 NOR Flash 메모리를 발명했다. 그러고 1986년에는 NAND Flash 메모리를 발명했다. 비유하자면 NAND는 서류를 그냥 쌓아둔거고, NOR는 분류해서 쌓아둔거다. 그래서 서류를 쌓을 때(쓰기)는 NAND가 빠르지만, 서류를 찾을 때(읽기)는 NOR가 빠르다. 한 Cell이 담는 데이터가 작을수록 읽기/쓰기 속도가 빨라지고 수명도 길어지지만, 용량 대비 가격은 비싸진다. -&gt; MLC 얘기인가? NOR 플래시 메모리는 인텔이 만들고, NAND 플래시 메모리는 삼성전자, SK하이닉스, 키오시아, 웨스턴디지털, 마이크론 등에서 만든다. 키오시아는 옛날 도시바 플래시메모리 반도체 사업부다. 도시바가 경영난으로 매각해서 회사가 생겼다. 웨스턴디지털은 HDD, 플래시메모리, SSD 등을 만드는 회사인데, 2016년에 샌디스크를 인수했다.]]></summary></entry><entry><title type="html">내용정리</title><link href="http://localhost:4000/history/2023/10/04/History.html" rel="alternate" type="text/html" title="내용정리" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History.html"><![CDATA[<p>Under test
 \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)<br />
-\(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\) \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)]]></summary></entry><entry><title type="html">1. 웨이퍼 제조 공정</title><link href="http://localhost:4000/process/2023/10/04/Process-1.html" rel="alternate" type="text/html" title="1. 웨이퍼 제조 공정" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/process/2023/10/04/Process%20-%201</id><content type="html" xml:base="http://localhost:4000/process/2023/10/04/Process-1.html"><![CDATA[<p>반도체 8대공정:<br />
-1. 웨이퍼 제조 공정(Wafer Fabrication)<br />
-2. 산화 공정(Oxidation)<br />
-3. 포토 공정(Photolithography)<br />
-4. 식각 공정(Etching)<br />
-5. 증착 공정(Deposition)<br />
-6. 금속 배선 공정(Metallization)<br />
-7. EDS 공정(Electrical Die Sorting)<br />
-8. 패키징 공정(Packaging)<br />
+\(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\) \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)]]></summary></entry><entry><title type="html">OIS</title><link href="http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous-OIS.html" rel="alternate" type="text/html" title="OIS" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous%20-%20OIS</id><content type="html" xml:base="http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous-OIS.html"><![CDATA[<p>OIS, FAE2 팀에서 설명해준 내용:<br />
+OIS = Optical Image Stabilization<br />
+OIS의 목표는 렌즈를 잘 움직여서 초점을 유지하고, 들어오는 광량을 유지하는 것이다. 즉 손떨림 방지다.<br />
 <br />
-1. 웨이퍼 제조<br />
-일단 대량의 Si를 가져와야 한다. 모래를 녹여서 Si를 가져온다.<br />
-Si는 14족 원소기 때문에, Si 결정은 전류가 흐르지 않는다.<br />
+그림을 넣어야겠짐나 이미지센서-OIS렌즈-렌즈 구조로 되어 있고, OIS 드라이버는 자이로센서로 움직임을 파악해 OIS렌즈를 움직인다.<br />
 <br />
-근데 불순물, 즉 14족 원소가 아닌 원소가 섞이면 전류가 흐를 수도 있다.<br />
-또한, 잉곳을 잘라 웨이퍼를 만드는 과정에서 불순물 때문에 잉곳이 이상하게 잘릴 수 있다.<br />
+OIS 경쟁사는 온세미인데, 트럼프의 대중제재로 온세미가 중국에서 나오게 되자 동운아나텍이 그 자리를 채웠다고 한다.<br />
 <br />
-그래서 Si의 순도가 상당히 중요하다.<br />
+사실 OIS 시장이 그렇게 크지는 않은데, 동운아나텍이 큰 비중을 먹었다.<br />
 <br />
-Si를 모아왔으면, 이걸 도가니에서 녹인 다음에 ‘Seed(단결정 실리콘)’을 가져와서 Si 위에 놓고, 빙빙 돌리면서 위로 올린다.<br />
-이렇게 Seed를 돌려가며 웨이퍼 만드는 공법을 Czochralski(초크랄스키)공법이라 하고, 줄여서 CZ공법이라 부른다.<br />
-이렇게 하면 Si가 엉겨붙어 올라오면서 Ingot이라는 원기둥이 된다.<br />
-Ingot의 사전적 의미는 ‘순도 높은 물질 덩어리’다.<br />
+손떨림 방지 기술이 OIS만 있는 것은 아니다. OIS 말고도 DIS, EIS, HIS가 있다. OIS가 렌즈를 직접 움직여 흔들리지 않은 이미지가 들어오도록 하는 기술이라면, DIS(Digital Image Stabilization)은 흔들려서 들어온 이미지를 소프트웨어로 보정하는 기술이다.<br />
 <br />
-이 Ingot이라 불리는 Si 원기둥을 잘라서 원반으로 만들면 웨이퍼가 된다.<br />
-이때 사용한 Seed는 단결정 Si기 때문에, 생성되는 Ingot과 웨이퍼도 모두 단결정 Si다.<br />
+EIS(Electrical image Stabilization)은 자이로센서로 흔들림을 인식하고, 그 정보를 가지고 소프트웨어로 이미지를 보정하는 방식이다. HIS는 Hybrid의 H라서, 기술들을 합쳐놓은 방식이다<br />
 <br />
-단결정 Silicon : Single Crystalline Silicon<br />
-다결정 Silicon : Multi-Crystalline, 또는 Polycrstalline Silicon<br />
+비용은 DIS가 가장 싸고 EIS가 그 다음, OIS가 가장 비싸다.<br />
+품질은 OIS가 가장 좋고 EIS가 그 다음, DIS가 가장 안좋다.<br />
 <br />
-*Crystal은 명사, Crystalline은 형용사<br />
+그리고 DIS를 쓰면 필요한 장치들이 줄어들어 하드웨어 비용을 아낄 수 있긴 하지만, 그만큼 소프트웨어, 고속 인터페이스 성능이 중요해진다. DIS 쓰려면 화소도 꽤 높아야 한다.<br />
 <br />
-다결정 웨이퍼도 있긴 하다.<br />
-하지만 단결정 웨이퍼가 성능이 더 좋다.<br />
+앞에서 말했듯, 원래 OIS는 렌즈를 움직여서 초점을 맞추고 광량을 유지하는 기술이다. 근데 갈수록 스마트폰 렌즈가 무거워져서, 결국 아이폰 12 이후, 화웨이 P60 pro 이후부터는 렌즈가 아니라 센서를 움직인다. 이때, 렌즈 대신 센서를 움직이기 위해 핸드폰 생산 라인을 아예 바꿔야 했다고 한다.<br />
 <br />
-단결정 웨이퍼에서는 전자가 규칙적인 배열 안에서 이동하기에 딱히 방해받을 일이 없지만,<br />
-다결정 웨이퍼에서는 결정 경계를 이동할 때 마다 전자가 방해받기 때문이다.<br />
+Module Tilt라고 해서, 렌즈와 센서를 동시에 옮기는 기술도 있다. 근데 같이 움직이려면 공간이 많이 필요해서 기기가 커진다.<br />
 <br />
-다결정 웨이퍼의 장점은 만들기 더 쉽다는거다.<br />
-Seed 없이 그냥 Si를 녹여서 거푸집에 부어버리면 그게 Ingot이 된다.<br />
+하여간, 그래서 렌즈를 어떻게 옮기나? 액추에이터로 옮긴다. 여기에는 ball guide 방식과 spring 방식이 있다. Ball guide 방식은 ball들이 렌즈를 움직이게 하는 방식이고, spring 방식은 스프링이 렌즈를 움직이게 하는 방식이다.<br />
+Ball guide 방식이 구동속도도 빠르고 정확성도 높고 내구성도 좋고 배터리 효율도 좋지만, 제어기 tuning이 좀 어렵다. 그리고 ball 잘 굴러다니라고 grease같은걸 발라놓는데, 이게 뭉치거나 날아가거나 하면 작동이 잘 안될 수 있다.<br />
+Spring 방식은 경제성과 생산성에서 이점을 갖고, 제어기 tuning도 쉽다. 하지만 스프링이 늘어날 수 있기에 내구성은 좋지 않다.<br />
 <br />
-이렇게 만들어진 웨이퍼는 원형이라, 방향 구분을 위해 flat zone 또는 notch를 만든다.<br />
+Ball guide 방식에 대한 특허는 다 우리나라에서 가지고 있다. Ball guide 방식 액추에이터는 삼성전기와 자화전자에서 많이 만든다. 그리고, 삼성전자가 이 ball guide 방식을 쓴다. *삼성전기 오타일 수도 있음<br />
+Spring 방식은 중국에서 많이 쓴다.<br />
 <br />
-flat zone 웨이퍼보다는 notch 웨이퍼가 더 많은 die를 만들 수 있기 때문에, 요즘은 notch 웨이퍼를 많이 쓴다.<br />
+그래서 렌즈를 어떻게 움직이는가? 2축제어와 4축제어가 있다.<br />
+2축제어: xtilt, ytilt<br />
+4축제어: xtilt, ytilt, xmove, ymove<br />
 <br />
-웨이퍼 테두리로는 die를 만들 수 없기 때문에, 직경이 큰 웨이퍼가 효율이 좋다.<br />
-면적이 넓을수록 면적당 테두리 길이가 줄어들기 때문이다.<br />
+Zoom은 어떻게 하는건가? X0.5, x1, x3같이 원래 설정에 있는건 그 렌즈를 쓰는거고, 그 외에는 소프트웨어로 보정한다. 근데 확대 배율 높은 렌즈를 쓰려면 센서와 렌즈 사이 거리가 멀어야 한다.<br />
 <br />
-지금 웨이퍼 규격은 8인치(200mm)와 12인치(300mm)다.<br />
-15인치(450mm) 웨이퍼를 도입하려는 움직임도 있었지만, 그럴 경우 기존 장비를 모두 바꿔야 하는 데다가 웨이퍼가 휘어지지 않도록 더 두꺼워져야 하고, 더 넓은 면적에서 균일함을 유지해야 하는 등 문제가 많아 도입되지는 않았다.<br />
+그러다보니 ‘카툭튀’라고 할 정도로 렌즈들이 튀어나오기 시작했다. 근데 당연히 이것도 한계가 있는 방식이고, 거리를 확보할 다른 방식이 필요해졌다.
+그래서 잠망경처럼 기기 안에서 거리를 만드는 방식들이 요즘 나오고 있다. 사진 넣을거긴 한데, 프리즘을 써서 거리를 늘리는 방식이다. X3, x5, x10하는게 다 이런식으로 경로 늘려서 하는거다.<br />
 <br />
-지금도, 웨이퍼 가운데쪽 수율이 테두리쪽 수율보다 높다.<br />
-테두리로 갈 수록 열적 안정성과 균일함이 떨어지기 때문이다.<br />
+화웨이 폰에 들어가는 OIS Driver IC는 DW9786이다. 화웨이는 이 모듈을 사간 다음 펌웨어 코딩을 알아서 한다. 그와 달리 Vivo, Oppo에 DW9786 팔때는 펌웨어 코딩까지 해서 판다.<br />
 <br />
-그럼 8인치는 사장됐나? 그건 아니고, 지금 공장들은 8인치와 12인치 모두 쓴다.<br />
-왜 8인치를 아직도 쓰는걸까? 12인치가 효율이 더 좋은데.<br />
+DW9787에서는 형상기억합금이 액추에이터 역할을 한다. 근데 영국의 CML(Cambridge Mechatronics Ltd.)라는 회사가 형상기억합금 관련 알고리즘을 다 알고 있어서, 펌웨어는 CML에서 만든다. 우리가 하는건 화웨이에 IC만 파는거다.<br />
 <br />
-요즘들어, 메모리반도체 뿐 아니라 시스템반도체에도 기업들이 많은 투자를 하고 있다.<br />
-메모리 반도체는 종류가 몇가지 없기 때문에 그냥 대량생산하면 됐었는데,<br />
-시스템반도체는 종류가 많아서 다품종 소량생산이 필요하다.<br />
-그래서 지금은 시스템반도체를 위해 8인치도 많이 쓰이고 있다.<br />
-물론 미래에는 어떻게 될지 모른다.<br />
+참고로 형상기억합금 = SMA(Shape Memory Alloy)<br />
 <br />
-웨이퍼 제조사들은 이렇다(2020년 기준):<br />
-1. 신에쓰화학 31.2%<br />
-2. 섬코 23.8%<br />
-3. 글로벌웨이퍼스 16.7%<br />
-4. 실트로닉 12.3%<br />
-5. SK실트론 10.6%<br />
+OSOM에서 만든 Solana Saga 폰에는 DW9784가 들어간다. 관련 정보는 나중에 더 찾아보겠다.<br />
+그럼 OIS의 단점은 무엇인가? 카메라를 움직일 때 이게 흔들림인지 의도적인 움직임인지 구분할 수 없기 때문에, 의도적으로 움직일 때 반대방향으로 보정이 들어가서 화면이 느리게 따라온다.<br />
 <br />
-1,2위가 일본, 3위가 대만, 4위가 독일, 5위가 한국이다.<br />
-SK실트론은 국내 유일 웨이퍼 제조업체다.<br />
-하여간 웨이퍼 제조시장은 일본 회사들이 큰 비중을 차지하고 있다.<br /></p>]]></content><author><name></name></author><category term="Process" /><summary type="html"><![CDATA[반도체 8대공정: 1. 웨이퍼 제조 공정(Wafer Fabrication) 2. 산화 공정(Oxidation) 3. 포토 공정(Photolithography) 4. 식각 공정(Etching) 5. 증착 공정(Deposition) 6. 금속 배선 공정(Metallization) 7. EDS 공정(Electrical Die Sorting) 8. 패키징 공정(Packaging) 1. 웨이퍼 제조 일단 대량의 Si를 가져와야 한다. 모래를 녹여서 Si를 가져온다. Si는 14족 원소기 때문에, Si 결정은 전류가 흐르지 않는다. 근데 불순물, 즉 14족 원소가 아닌 원소가 섞이면 전류가 흐를 수도 있다. 또한, 잉곳을 잘라 웨이퍼를 만드는 과정에서 불순물 때문에 잉곳이 이상하게 잘릴 수 있다. 그래서 Si의 순도가 상당히 중요하다. Si를 모아왔으면, 이걸 도가니에서 녹인 다음에 ‘Seed(단결정 실리콘)’을 가져와서 Si 위에 놓고, 빙빙 돌리면서 위로 올린다. 이렇게 Seed를 돌려가며 웨이퍼 만드는 공법을 Czochralski(초크랄스키)공법이라 하고, 줄여서 CZ공법이라 부른다. 이렇게 하면 Si가 엉겨붙어 올라오면서 Ingot이라는 원기둥이 된다. Ingot의 사전적 의미는 ‘순도 높은 물질 덩어리’다. 이 Ingot이라 불리는 Si 원기둥을 잘라서 원반으로 만들면 웨이퍼가 된다. 이때 사용한 Seed는 단결정 Si기 때문에, 생성되는 Ingot과 웨이퍼도 모두 단결정 Si다. 단결정 Silicon : Single Crystalline Silicon 다결정 Silicon : Multi-Crystalline, 또는 Polycrstalline Silicon *Crystal은 명사, Crystalline은 형용사 다결정 웨이퍼도 있긴 하다. 하지만 단결정 웨이퍼가 성능이 더 좋다. 단결정 웨이퍼에서는 전자가 규칙적인 배열 안에서 이동하기에 딱히 방해받을 일이 없지만, 다결정 웨이퍼에서는 결정 경계를 이동할 때 마다 전자가 방해받기 때문이다. 다결정 웨이퍼의 장점은 만들기 더 쉽다는거다. Seed 없이 그냥 Si를 녹여서 거푸집에 부어버리면 그게 Ingot이 된다. 이렇게 만들어진 웨이퍼는 원형이라, 방향 구분을 위해 flat zone 또는 notch를 만든다. flat zone 웨이퍼보다는 notch 웨이퍼가 더 많은 die를 만들 수 있기 때문에, 요즘은 notch 웨이퍼를 많이 쓴다. 웨이퍼 테두리로는 die를 만들 수 없기 때문에, 직경이 큰 웨이퍼가 효율이 좋다. 면적이 넓을수록 면적당 테두리 길이가 줄어들기 때문이다. 지금 웨이퍼 규격은 8인치(200mm)와 12인치(300mm)다. 15인치(450mm) 웨이퍼를 도입하려는 움직임도 있었지만, 그럴 경우 기존 장비를 모두 바꿔야 하는 데다가 웨이퍼가 휘어지지 않도록 더 두꺼워져야 하고, 더 넓은 면적에서 균일함을 유지해야 하는 등 문제가 많아 도입되지는 않았다. 지금도, 웨이퍼 가운데쪽 수율이 테두리쪽 수율보다 높다. 테두리로 갈 수록 열적 안정성과 균일함이 떨어지기 때문이다. 그럼 8인치는 사장됐나? 그건 아니고, 지금 공장들은 8인치와 12인치 모두 쓴다. 왜 8인치를 아직도 쓰는걸까? 12인치가 효율이 더 좋은데. 요즘들어, 메모리반도체 뿐 아니라 시스템반도체에도 기업들이 많은 투자를 하고 있다. 메모리 반도체는 종류가 몇가지 없기 때문에 그냥 대량생산하면 됐었는데, 시스템반도체는 종류가 많아서 다품종 소량생산이 필요하다. 그래서 지금은 시스템반도체를 위해 8인치도 많이 쓰이고 있다. 물론 미래에는 어떻게 될지 모른다. 웨이퍼 제조사들은 이렇다(2020년 기준): 1. 신에쓰화학 31.2% 2. 섬코 23.8% 3. 글로벌웨이퍼스 16.7% 4. 실트로닉 12.3% 5. SK실트론 10.6% 1,2위가 일본, 3위가 대만, 4위가 독일, 5위가 한국이다. SK실트론은 국내 유일 웨이퍼 제조업체다. 하여간 웨이퍼 제조시장은 일본 회사들이 큰 비중을 차지하고 있다.]]></summary></entry><entry><title type="html">2. 산화 공정</title><link href="http://localhost:4000/process/2023/10/04/Process-2.html" rel="alternate" type="text/html" title="2. 산화 공정" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/process/2023/10/04/Process%20-%202</id><content type="html" xml:base="http://localhost:4000/process/2023/10/04/Process-2.html"><![CDATA[<p>반도체 8대공정:<br />
-1. 웨이퍼 제조 공정(Wafer Fabrication)<br />
-2. 산화 공정(Oxidation)<br />
-3. 포토 공정(Photolithography)<br />
-4. 식각 공정(Etching)<br />
-5. 증착 공정(Deposition)<br />
-6. 금속 배선 공정(Metallization)<br />
-7. EDS 공정(Electrical Die Sorting)<br />
-8. 패키징 공정(Packaging)<br />
+영상에서 OIS를 켜놓으면? 그때는 더 이질적으로 보인다. 그래서 영상 찍을때는 OIS를 안쓴다. EIS를 쓰는 경우가 있기는 하다.<br />
 <br />
-2. 산화 공정<br />
-제조한 웨이퍼 위에 산화막을 형성하는 공정이다.<br />
-산화막은 얇은 SiO2 막이다. 즉, 얇은 유리 막이다.<br />
+앞으로는 더 높은 배율을 만드는 것 보다도, 배율을 연속적으로 바꿀 수 있게 하는 방향으로 발전할 것이다. 이게 완성되면 카메라 하나만으로 모든 배율을 만들 수 있을 것이다.<br />
 <br />
-웨이퍼 제조사들은 웨이퍼가 완성되면 표면에 산화막을 만들어서 고객사에게 보낸다.<br />
-고객사는 산화막을 갈아버리고, 새로 위에 산화막 씌울 준비를 한다.<br />
+LG이노텍은 애플 부서와 나머지 부서가 분리되어 있다. 그리고 LG이노텍은 고객사가 몇 없다. 애플이 클 뿐이다. 다른 고객사로는 소니 정도가 있다.<br /></p>]]></content><author><name></name></author><category term="Miscellaneous" /><summary type="html"><![CDATA[OIS, FAE2 팀에서 설명해준 내용: OIS = Optical Image Stabilization OIS의 목표는 렌즈를 잘 움직여서 초점을 유지하고, 들어오는 광량을 유지하는 것이다. 즉 손떨림 방지다. 그림을 넣어야겠짐나 이미지센서-OIS렌즈-렌즈 구조로 되어 있고, OIS 드라이버는 자이로센서로 움직임을 파악해 OIS렌즈를 움직인다. OIS 경쟁사는 온세미인데, 트럼프의 대중제재로 온세미가 중국에서 나오게 되자 동운아나텍이 그 자리를 채웠다고 한다. 사실 OIS 시장이 그렇게 크지는 않은데, 동운아나텍이 큰 비중을 먹었다. 손떨림 방지 기술이 OIS만 있는 것은 아니다. OIS 말고도 DIS, EIS, HIS가 있다. OIS가 렌즈를 직접 움직여 흔들리지 않은 이미지가 들어오도록 하는 기술이라면, DIS(Digital Image Stabilization)은 흔들려서 들어온 이미지를 소프트웨어로 보정하는 기술이다. EIS(Electrical image Stabilization)은 자이로센서로 흔들림을 인식하고, 그 정보를 가지고 소프트웨어로 이미지를 보정하는 방식이다. HIS는 Hybrid의 H라서, 기술들을 합쳐놓은 방식이다 비용은 DIS가 가장 싸고 EIS가 그 다음, OIS가 가장 비싸다. 품질은 OIS가 가장 좋고 EIS가 그 다음, DIS가 가장 안좋다. 그리고 DIS를 쓰면 필요한 장치들이 줄어들어 하드웨어 비용을 아낄 수 있긴 하지만, 그만큼 소프트웨어, 고속 인터페이스 성능이 중요해진다. DIS 쓰려면 화소도 꽤 높아야 한다. 앞에서 말했듯, 원래 OIS는 렌즈를 움직여서 초점을 맞추고 광량을 유지하는 기술이다. 근데 갈수록 스마트폰 렌즈가 무거워져서, 결국 아이폰 12 이후, 화웨이 P60 pro 이후부터는 렌즈가 아니라 센서를 움직인다. 이때, 렌즈 대신 센서를 움직이기 위해 핸드폰 생산 라인을 아예 바꿔야 했다고 한다. Module Tilt라고 해서, 렌즈와 센서를 동시에 옮기는 기술도 있다. 근데 같이 움직이려면 공간이 많이 필요해서 기기가 커진다. 하여간, 그래서 렌즈를 어떻게 옮기나? 액추에이터로 옮긴다. 여기에는 ball guide 방식과 spring 방식이 있다. Ball guide 방식은 ball들이 렌즈를 움직이게 하는 방식이고, spring 방식은 스프링이 렌즈를 움직이게 하는 방식이다. Ball guide 방식이 구동속도도 빠르고 정확성도 높고 내구성도 좋고 배터리 효율도 좋지만, 제어기 tuning이 좀 어렵다. 그리고 ball 잘 굴러다니라고 grease같은걸 발라놓는데, 이게 뭉치거나 날아가거나 하면 작동이 잘 안될 수 있다. Spring 방식은 경제성과 생산성에서 이점을 갖고, 제어기 tuning도 쉽다. 하지만 스프링이 늘어날 수 있기에 내구성은 좋지 않다. Ball guide 방식에 대한 특허는 다 우리나라에서 가지고 있다. Ball guide 방식 액추에이터는 삼성전기와 자화전자에서 많이 만든다. 그리고, 삼성전자가 이 ball guide 방식을 쓴다. *삼성전기 오타일 수도 있음 Spring 방식은 중국에서 많이 쓴다. 그래서 렌즈를 어떻게 움직이는가? 2축제어와 4축제어가 있다. 2축제어: xtilt, ytilt 4축제어: xtilt, ytilt, xmove, ymove Zoom은 어떻게 하는건가? X0.5, x1, x3같이 원래 설정에 있는건 그 렌즈를 쓰는거고, 그 외에는 소프트웨어로 보정한다. 근데 확대 배율 높은 렌즈를 쓰려면 센서와 렌즈 사이 거리가 멀어야 한다. 그러다보니 ‘카툭튀’라고 할 정도로 렌즈들이 튀어나오기 시작했다. 근데 당연히 이것도 한계가 있는 방식이고, 거리를 확보할 다른 방식이 필요해졌다. 그래서 잠망경처럼 기기 안에서 거리를 만드는 방식들이 요즘 나오고 있다. 사진 넣을거긴 한데, 프리즘을 써서 거리를 늘리는 방식이다. X3, x5, x10하는게 다 이런식으로 경로 늘려서 하는거다. 화웨이 폰에 들어가는 OIS Driver IC는 DW9786이다. 화웨이는 이 모듈을 사간 다음 펌웨어 코딩을 알아서 한다. 그와 달리 Vivo, Oppo에 DW9786 팔때는 펌웨어 코딩까지 해서 판다. DW9787에서는 형상기억합금이 액추에이터 역할을 한다. 근데 영국의 CML(Cambridge Mechatronics Ltd.)라는 회사가 형상기억합금 관련 알고리즘을 다 알고 있어서, 펌웨어는 CML에서 만든다. 우리가 하는건 화웨이에 IC만 파는거다. 참고로 형상기억합금 = SMA(Shape Memory Alloy) OSOM에서 만든 Solana Saga 폰에는 DW9784가 들어간다. 관련 정보는 나중에 더 찾아보겠다. 그럼 OIS의 단점은 무엇인가? 카메라를 움직일 때 이게 흔들림인지 의도적인 움직임인지 구분할 수 없기 때문에, 의도적으로 움직일 때 반대방향으로 보정이 들어가서 화면이 느리게 따라온다. 영상에서 OIS를 켜놓으면? 그때는 더 이질적으로 보인다. 그래서 영상 찍을때는 OIS를 안쓴다. EIS를 쓰는 경우가 있기는 하다. 앞으로는 더 높은 배율을 만드는 것 보다도, 배율을 연속적으로 바꿀 수 있게 하는 방향으로 발전할 것이다. 이게 완성되면 카메라 하나만으로 모든 배율을 만들 수 있을 것이다. LG이노텍은 애플 부서와 나머지 부서가 분리되어 있다. 그리고 LG이노텍은 고객사가 몇 없다. 애플이 클 뿐이다. 다른 고객사로는 소니 정도가 있다.]]></summary></entry><entry><title type="html">개발실 소개</title><link href="http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous-%EA%B0%9C%EB%B0%9C%EC%8B%A4-%EC%86%8C%EA%B0%9C.html" rel="alternate" type="text/html" title="개발실 소개" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous%20-%20%EA%B0%9C%EB%B0%9C%EC%8B%A4%20%EC%86%8C%EA%B0%9C</id><content type="html" xml:base="http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous-%EA%B0%9C%EB%B0%9C%EC%8B%A4-%EC%86%8C%EA%B0%9C.html"><![CDATA[<p>개발실 소개:<br />
+동운아나텍은 옛날에는 아날로그 회로만 했는데, 요즘은 Logic 비중이 많이 늘었다. 동운아나텍이 하는 일로는 OIS, AF, Motor, ToF, VCSEL, Sensor, Automotive 등이 있다. 그래도 주력은 AF다.<br />
 <br />
-일단 웨이퍼 위에서 어디가 active region이 될 지 미리 정해놓고,<br />
-도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다.<br />
-그 다음에 전체적으로 산화막을 씌우는데, 여기에 3가지 방법이 있다.<br />
+동운아나텍은 AF를 생각보다 옛날부터 해왔는데, 옛날에는 잘 안팔렸다. 계속 중국에 팔려고 했는데 그것도 잘 안됐다고 한다. 저가형 핸드폰을 많이들 썼으니까. 근데 스마트폰 시대가 오면서, 아무리 저가형이어도 AF는 필요하게 됐다. 카메라로 QR코드, 바코드 등 인식해야 하니까.<br />
 <br />
-1. 열산화(Thermal Oxidation)<br />
-2. 플라즈마 보강 화학적 기상 증착(Plasma-Enhanced Chemical Vapor Decomposition, PECVD)<br />
-3. 전기화학적 양극 처리(Anodizing)<br />
+그래서 많은 회사들이 그때 그 AF 영업하던 한국회사 어디갔냐 하면서 동운아나텍을 찾았고, 이때 동운아나텍이 큰 돈을 벌었다고 한다.<br />
 <br />
-열산화에는 다시 2가지 종류가 있다.<br />
-1. 건식 산화(Dry Oxidation)<br />
-2. 습식 산화(Wet Oxidation)<br />
+옛날에 이런 일이 있었다고 한다. 아이폰 카메라 모듈에 뭔가 문제가 있어서 LG이노텍에서 그걸 확인해보다가, 원인을 모르겠어서 동운아나텍에 물어봤다. 그래서 동운아나텍이 열심히 분석해서 원인을 알아냈고, 그걸 LG이노텍에 알려줬다. 그랬더니 LG이노텍은 지들이 알아낸 것처럼 애플에 보고했다!<br />
 <br />
-웨이퍼 주변을 진공으로 만들어놓고,<br />
-뜨거운 상태에서 O2(g)를 넣어 산화시키면 건식 산화,<br />
-H2O(g)를 넣어 산화시키면 습식 산화다.<br />
+문제의 원인은 아날로그디바이스의 AF 드라이버 IC였다고 한다. 애플은 보고를 듣고 아날로그디바이스를 불러서 어떻게 된 일인지 물어봤는데, 아날로그디바이스는 ‘아 미안하다 우리도 이거 알고 있었고, 그래서 리비전 해줄 예정이었다’라고 했다.<br />
 <br />
-이때 건식산화는 습식산화에 비하면 느리지만 quality가 좋다.<br />
-그래서 gate oxide가 될 부분은 무조건 건식산화로 산화막을 만든다.<br />
-어차피 갈아버릴 곳들은 습식산화로 산화막 만들어도 상관 없다.<br />
+애플은 아니 그럼 진작에 말해줬어야지! 하고 빡쳐서 LG이노텍에게 AF하는 회사 하나 추천해달라고 했고, LG이노텍이 동운아나텍을 추천해줬다.<br />
 <br />
-동일한 온도와 시간을 가정하면, 습식산화로 얻은 산화막이 건식산화로 얻은 산화막보다 5~10배 두껍다.<br />
-두께를 조절하려면, 그냥 더 오래 산화시키면 더 두꺼워진다.<br />
+그래서 아이폰4, 아이패드2에 동운아나텍 AF드라이버 IC가 들어갔다! 근데 그 후 CEO가 잡스에서 팀쿡으로 바뀌면서 더 이상 들어가지 못하게 되었다. 팀쿡이 서플라이 체인을 다 대기업 위주로 갈아엎었기 때문이다. 지금 애플 제품들에는 아날로그디바이스의 AF Driver IC가 들어간다.<br />
 <br />
-근데 산화막을 왜 만드는건가?<br />
-나중에 Si 위에 전선을 올릴거라서, 전선과 웨이퍼 사이에 절연막을 만들어주는거다.<br />
-물론 이러면 도체 사이에 유전체가 끼워진 형태가 되는거라, 캐패시턴스가 생겨 Coupling 등의 문제가 생길 수 있다.<br />
+렌즈 제어에는 Open loop 방식과 Closed loop 방식이 있다. 그래서 AF는 OLAF와 CLAF로 나뉘는데, CLAF가 성능은 더 좋지만 비싸다.<br />
 <br />
-다른 이유도 있다. 산화막은 이온주입공정에서 산화 방지막 역할을 하고,<br />
-식각공정에서는 필요한 부분이 잘못 식각되는 것을 막는 식각 방지막 역할도 한다.<br />
+손떨림 방지도 기술별로 가격 차이가 나서, 저가형은 EIS, 고가형은 OIS를 쓴다. 이렇게 손떨림방지, AF 등 DSLR에 있던 기능들이 모바일 카메라에 하나씩 들어오고 있다.<br />
 <br />
-PECVD, Anodizing에 대해서는 추가 조사가 필요하다.<br />
-그리고 SiO2를 깔아놓은 뒤에 도핑을 하는 것 같은데, 아니면 나중에 고쳐놓겠다.<br />
+회사 입장에서는 AF보다 OIS가 더 크고, 비싸고, 마진도 좋다.<br />
 <br />
-일단 도핑 방법중 하나가 ‘Ion implantation’이다.<br />
-말 그대로 이온을 가속해서 웨이퍼에다가 때려박아 필요한 부분을 도핑하는 방식이다.<br />
-근데, Ion implantation에는 두가지 문제가 있다.<br />
+요즘 렌즈 제어는 앞에서 말한대로 4축제어인데, 애플은 5축제어를 한다.<br />
+5축제어: 4축제어 + rotation<br />
+근데 사실 4축제어나 5축제어나 성능에 큰 차이는 없다. 손떨림이 회전하는 방향으로는 잘 안일어난다.<br />
 <br />
-1. Channeling Effect<br />
-쏘다보면 특정 부분만 이온이 깊게 들어갈 수도 있다.<br />
-그래서 웨이퍼를 다양한 방향으로 기울이거나 회전시켜 이온이 골고루 박히도록 해야 한다.<br />
+Zoom에 대해서도 생각해보자. 갤럭시는 100배 줌이 되는 핸드폰도 있는데, 얘는 앞에서 말한대로 렌즈와 이미지센서 사이 거리를 그렇게까지 늘린걸까? 그건 아니고, 광학으로 5배 zoom 한 뒤 나머지는 소프트웨어로 확대한거다.<br />
 <br />
-2. Annealing<br />
-웨이퍼에 이온들을 쏘다보면 웨이퍼 표면이 울퉁불퉁해진다.<br />
-철판에 총쏘면 철판이 울퉁불퉁해지는거랑 같은 이치다.<br />
-후속 열처리 과정을 통해 표면을 복구해줘야 하는데, 이 복구 과정을 Annealing이라 부른다.<br />
+핸드폰에서 배율이 연속인 이유는, 원래는 x0.5, x1, x3밖에 없었더라도 그 사이 배율을 선택하면 소프트웨어로 만들어주기 때문이다. 그래서 2.99배는 x1렌즈로 받은 이미지를 알고리즘으로 확대한거고, 3배는 그냥 x3 렌즈로 받은거다. 그래서 3배 이미지가 2.99배 이미지보다 훨씬 선명하다.<br />
 <br />
-Ion Implant는 이런 단점들을 갖고 있음에도 널리 쓰인다.<br />
-왜냐하면, 이온을 몇개나 써서 도핑할지 내 맘대로 정할 수 있기 때문이다.<br />
+zoom에 이렇게 관심가지는 이유가 뭐냐면, 확대 배율이 커질수록 손떨림의 영향도 커지기 때문이다. 그래서 zoom이 발전할수록 OIS가 중요해진다.<br />
 <br />
-이런 문제도 발생하긴 한다.<br />
-원래는 SiO2가 이온들을 다 막아줘야 하지만, SiO2는 비정질(Amorphous Solid)라서 원자 배열에 규칙이 없고,<br />
-그래서 이온들이 중간중간 있는 빈칸들에 들어가버리는 경우가 생긴다. 이 현상을 ‘트랩’이라 부른다.<br />
-근데 이 트랩은 Annealing을 하면 다 없어진다.<br />
+동운아나텍은 원래 화웨이에 납품을 못하고 있었다. 3년동안 화웨이 문을 두드렸는데 안사줬다고 한다. 원래 화웨이 핸드폰에는 온세미 OIS가 들어가고 있었다.<br />
 <br />
-Ion implantation 말고 Solid State Diffusion이라는 방법도 있다.<br />
-이건 도체 표면에 dopant를 올려놓고, 웨이퍼로 확산되기를 기다려서 도핑하는 방식이다.<br />
-이때, 다른 곳에는 SiO2가 깔려있기 때문에 dopant가 이상한 곳으로 들어가지 못한다.<br />
+근데 트럼프가 대중제재를 가해 화웨이가 미국 회사인 온세미의 제품들을 못사오게 됐다. 그래서 화웨이가 동운아나텍의 OIS 드라이버 IC를 사기 시작했다! 여기까지는 좋았는데, 그 뒤로도 대중제재가 계쏙되어 화웨이가 거의 뒤져버렸다. 그래서 동운아나텍의 매출도 원래대로 돌아오고 말았다.<br />
 <br />
-이 방식은 diffusion 기반이니까, 오래 diffusion시킬수록 dopant가 더 깊이 들어간다.<br />
-하지만 너무 깊이 들어가버리면 parasitic capacitance가 생겨버릴 수 있다.<br /></p>]]></content><author><name></name></author><category term="Process" /><summary type="html"><![CDATA[반도체 8대공정: 1. 웨이퍼 제조 공정(Wafer Fabrication) 2. 산화 공정(Oxidation) 3. 포토 공정(Photolithography) 4. 식각 공정(Etching) 5. 증착 공정(Deposition) 6. 금속 배선 공정(Metallization) 7. EDS 공정(Electrical Die Sorting) 8. 패키징 공정(Packaging) 2. 산화 공정 제조한 웨이퍼 위에 산화막을 형성하는 공정이다. 산화막은 얇은 SiO2 막이다. 즉, 얇은 유리 막이다. 웨이퍼 제조사들은 웨이퍼가 완성되면 표면에 산화막을 만들어서 고객사에게 보낸다. 고객사는 산화막을 갈아버리고, 새로 위에 산화막 씌울 준비를 한다. 일단 웨이퍼 위에서 어디가 active region이 될 지 미리 정해놓고, 도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다. 그 다음에 전체적으로 산화막을 씌우는데, 여기에 3가지 방법이 있다. 1. 열산화(Thermal Oxidation) 2. 플라즈마 보강 화학적 기상 증착(Plasma-Enhanced Chemical Vapor Decomposition, PECVD) 3. 전기화학적 양극 처리(Anodizing) 열산화에는 다시 2가지 종류가 있다. 1. 건식 산화(Dry Oxidation) 2. 습식 산화(Wet Oxidation) 웨이퍼 주변을 진공으로 만들어놓고, 뜨거운 상태에서 O2(g)를 넣어 산화시키면 건식 산화, H2O(g)를 넣어 산화시키면 습식 산화다. 이때 건식산화는 습식산화에 비하면 느리지만 quality가 좋다. 그래서 gate oxide가 될 부분은 무조건 건식산화로 산화막을 만든다. 어차피 갈아버릴 곳들은 습식산화로 산화막 만들어도 상관 없다. 동일한 온도와 시간을 가정하면, 습식산화로 얻은 산화막이 건식산화로 얻은 산화막보다 5~10배 두껍다. 두께를 조절하려면, 그냥 더 오래 산화시키면 더 두꺼워진다. 근데 산화막을 왜 만드는건가? 나중에 Si 위에 전선을 올릴거라서, 전선과 웨이퍼 사이에 절연막을 만들어주는거다. 물론 이러면 도체 사이에 유전체가 끼워진 형태가 되는거라, 캐패시턴스가 생겨 Coupling 등의 문제가 생길 수 있다. 다른 이유도 있다. 산화막은 이온주입공정에서 산화 방지막 역할을 하고, 식각공정에서는 필요한 부분이 잘못 식각되는 것을 막는 식각 방지막 역할도 한다. PECVD, Anodizing에 대해서는 추가 조사가 필요하다. 그리고 SiO2를 깔아놓은 뒤에 도핑을 하는 것 같은데, 아니면 나중에 고쳐놓겠다. 일단 도핑 방법중 하나가 ‘Ion implantation’이다. 말 그대로 이온을 가속해서 웨이퍼에다가 때려박아 필요한 부분을 도핑하는 방식이다. 근데, Ion implantation에는 두가지 문제가 있다. 1. Channeling Effect 쏘다보면 특정 부분만 이온이 깊게 들어갈 수도 있다. 그래서 웨이퍼를 다양한 방향으로 기울이거나 회전시켜 이온이 골고루 박히도록 해야 한다. 2. Annealing 웨이퍼에 이온들을 쏘다보면 웨이퍼 표면이 울퉁불퉁해진다. 철판에 총쏘면 철판이 울퉁불퉁해지는거랑 같은 이치다. 후속 열처리 과정을 통해 표면을 복구해줘야 하는데, 이 복구 과정을 Annealing이라 부른다. Ion Implant는 이런 단점들을 갖고 있음에도 널리 쓰인다. 왜냐하면, 이온을 몇개나 써서 도핑할지 내 맘대로 정할 수 있기 때문이다. 이런 문제도 발생하긴 한다. 원래는 SiO2가 이온들을 다 막아줘야 하지만, SiO2는 비정질(Amorphous Solid)라서 원자 배열에 규칙이 없고, 그래서 이온들이 중간중간 있는 빈칸들에 들어가버리는 경우가 생긴다. 이 현상을 ‘트랩’이라 부른다. 근데 이 트랩은 Annealing을 하면 다 없어진다. Ion implantation 말고 Solid State Diffusion이라는 방법도 있다. 이건 도체 표면에 dopant를 올려놓고, 웨이퍼로 확산되기를 기다려서 도핑하는 방식이다. 이때, 다른 곳에는 SiO2가 깔려있기 때문에 dopant가 이상한 곳으로 들어가지 못한다. 이 방식은 diffusion 기반이니까, 오래 diffusion시킬수록 dopant가 더 깊이 들어간다. 하지만 너무 깊이 들어가버리면 parasitic capacitance가 생겨버릴 수 있다.]]></summary></entry><entry><title type="html">3. 포토 공정</title><link href="http://localhost:4000/process/2023/10/04/Process-3.html" rel="alternate" type="text/html" title="3. 포토 공정" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/process/2023/10/04/Process%20-%203</id><content type="html" xml:base="http://localhost:4000/process/2023/10/04/Process-3.html"><![CDATA[<p>반도체 8대공정:<br />
-1. 웨이퍼 제조 공정(Wafer Fabrication)<br />
-2. 산화 공정(Oxidation)<br />
-3. 포토 공정(Photolithography)<br />
-4. 식각 공정(Etching)<br />
-5. 증착 공정(Deposition)<br />
-6. 금속 배선 공정(Metallization)<br />
-7. EDS 공정(Electrical Die Sorting)<br />
-8. 패키징 공정(Packaging)<br />
+지금은 갤럭시 워치에 들어갈 온도센서를 만들어보기 위해 솔루엠과 협업하고 있다 -&gt; 이건 터진듯<br /></p>]]></content><author><name></name></author><category term="Miscellaneous" /><summary type="html"><![CDATA[개발실 소개: 동운아나텍은 옛날에는 아날로그 회로만 했는데, 요즘은 Logic 비중이 많이 늘었다. 동운아나텍이 하는 일로는 OIS, AF, Motor, ToF, VCSEL, Sensor, Automotive 등이 있다. 그래도 주력은 AF다. 동운아나텍은 AF를 생각보다 옛날부터 해왔는데, 옛날에는 잘 안팔렸다. 계속 중국에 팔려고 했는데 그것도 잘 안됐다고 한다. 저가형 핸드폰을 많이들 썼으니까. 근데 스마트폰 시대가 오면서, 아무리 저가형이어도 AF는 필요하게 됐다. 카메라로 QR코드, 바코드 등 인식해야 하니까. 그래서 많은 회사들이 그때 그 AF 영업하던 한국회사 어디갔냐 하면서 동운아나텍을 찾았고, 이때 동운아나텍이 큰 돈을 벌었다고 한다. 옛날에 이런 일이 있었다고 한다. 아이폰 카메라 모듈에 뭔가 문제가 있어서 LG이노텍에서 그걸 확인해보다가, 원인을 모르겠어서 동운아나텍에 물어봤다. 그래서 동운아나텍이 열심히 분석해서 원인을 알아냈고, 그걸 LG이노텍에 알려줬다. 그랬더니 LG이노텍은 지들이 알아낸 것처럼 애플에 보고했다! 문제의 원인은 아날로그디바이스의 AF 드라이버 IC였다고 한다. 애플은 보고를 듣고 아날로그디바이스를 불러서 어떻게 된 일인지 물어봤는데, 아날로그디바이스는 ‘아 미안하다 우리도 이거 알고 있었고, 그래서 리비전 해줄 예정이었다’라고 했다. 애플은 아니 그럼 진작에 말해줬어야지! 하고 빡쳐서 LG이노텍에게 AF하는 회사 하나 추천해달라고 했고, LG이노텍이 동운아나텍을 추천해줬다. 그래서 아이폰4, 아이패드2에 동운아나텍 AF드라이버 IC가 들어갔다! 근데 그 후 CEO가 잡스에서 팀쿡으로 바뀌면서 더 이상 들어가지 못하게 되었다. 팀쿡이 서플라이 체인을 다 대기업 위주로 갈아엎었기 때문이다. 지금 애플 제품들에는 아날로그디바이스의 AF Driver IC가 들어간다. 렌즈 제어에는 Open loop 방식과 Closed loop 방식이 있다. 그래서 AF는 OLAF와 CLAF로 나뉘는데, CLAF가 성능은 더 좋지만 비싸다. 손떨림 방지도 기술별로 가격 차이가 나서, 저가형은 EIS, 고가형은 OIS를 쓴다. 이렇게 손떨림방지, AF 등 DSLR에 있던 기능들이 모바일 카메라에 하나씩 들어오고 있다. 회사 입장에서는 AF보다 OIS가 더 크고, 비싸고, 마진도 좋다. 요즘 렌즈 제어는 앞에서 말한대로 4축제어인데, 애플은 5축제어를 한다. 5축제어: 4축제어 + rotation 근데 사실 4축제어나 5축제어나 성능에 큰 차이는 없다. 손떨림이 회전하는 방향으로는 잘 안일어난다. Zoom에 대해서도 생각해보자. 갤럭시는 100배 줌이 되는 핸드폰도 있는데, 얘는 앞에서 말한대로 렌즈와 이미지센서 사이 거리를 그렇게까지 늘린걸까? 그건 아니고, 광학으로 5배 zoom 한 뒤 나머지는 소프트웨어로 확대한거다. 핸드폰에서 배율이 연속인 이유는, 원래는 x0.5, x1, x3밖에 없었더라도 그 사이 배율을 선택하면 소프트웨어로 만들어주기 때문이다. 그래서 2.99배는 x1렌즈로 받은 이미지를 알고리즘으로 확대한거고, 3배는 그냥 x3 렌즈로 받은거다. 그래서 3배 이미지가 2.99배 이미지보다 훨씬 선명하다. zoom에 이렇게 관심가지는 이유가 뭐냐면, 확대 배율이 커질수록 손떨림의 영향도 커지기 때문이다. 그래서 zoom이 발전할수록 OIS가 중요해진다. 동운아나텍은 원래 화웨이에 납품을 못하고 있었다. 3년동안 화웨이 문을 두드렸는데 안사줬다고 한다. 원래 화웨이 핸드폰에는 온세미 OIS가 들어가고 있었다. 근데 트럼프가 대중제재를 가해 화웨이가 미국 회사인 온세미의 제품들을 못사오게 됐다. 그래서 화웨이가 동운아나텍의 OIS 드라이버 IC를 사기 시작했다! 여기까지는 좋았는데, 그 뒤로도 대중제재가 계쏙되어 화웨이가 거의 뒤져버렸다. 그래서 동운아나텍의 매출도 원래대로 돌아오고 말았다. 지금은 갤럭시 워치에 들어갈 온도센서를 만들어보기 위해 솔루엠과 협업하고 있다 -&gt; 이건 터진듯]]></summary></entry><entry><title type="html">영업 소개</title><link href="http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous-%EC%98%81%EC%97%85-%EC%86%8C%EA%B0%9C.html" rel="alternate" type="text/html" title="영업 소개" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous%20-%20%EC%98%81%EC%97%85%20%EC%86%8C%EA%B0%9C</id><content type="html" xml:base="http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous-%EC%98%81%EC%97%85-%EC%86%8C%EA%B0%9C.html"><![CDATA[<p>영업 소개:<br />
+원래는 GCO라는 중국 지사에서 중국 시장을 담당하고 있었는데, 중국쪽 후발주자들에게 시장을 많이 뺏겼다. 근데 뭐 중국 시장에 더 공들이려는건 아닌 것 같고, 중국 시장에 대해서는 Halo라는 회사에 라이선스를 팔았다. 이제 중국에서는 걔네가 동운아나텍 제품들을 판다.<br />
 <br />
-3. 포토 공정<br />
-역사부터 살펴본다.<br />
+삼성전자는 ToF 센서를 제품들에 잠시 넣다가 지금은 안넣는 상황인데, 애플을 따라가기 위해 곧 다시 넣을 것으로 보인다. 올해 6월에는 애플에서 VR 안경이 나온다.<br />
 <br />
-1947년, AT&amp;T 벨 연구소의 연구원들은 반도체를 가지고 전기 신호를 증폭할 수 있다는 사실을 알게 되었고,<br />
-이후 신호를 증폭할 수 있는 반도체 소자는 트랜지스터라 불리게 되었다.<br />
-트랜지스터는 그 이후 널리 쓰이게 되었는데, 1958년 TI의 Jack Kilby가 복잡한 전자부품들을 모두 평면에 찍어내자는 생각을 했다. 이게 집적회로의 시작이다.<br />
+EU 배터리 규제: ‘모든 스마트폰 배터리를 탈착형으로 만들어라’. 그래서 핸드폰 회사들이 이제 배터리를 다 탈착형으로 만들 것이다. 근데 이러면 정품 말고도 짭 배터리들이 많이 나올 것이라, 배터리 정품인증을 위한 보안 칩이 들어갈거다. 보안 칩이 하는 일은 특정 코드를 만들어 입력해주는 일이다.<br />
 <br />
-집적회로가 등장하기 전, 기술이 지속적으로 발전하면서 R,L,C,TR 등 소자들을 연결할 일들이 점점 많아지고 있었다.<br />
-근데 그 연결점들에서 고장이 자주 일어나서 문제였는데, 집적회로에서는 연결점 문제가 없었다.<br />
+현대차에 들어가는 Haptic의 95% 정도를 동운아나텍이 한다. 하지만 차량에 들어가는 Haptic은 핸드폰에 들어가는 햅틱보다 개발 기간도 길고, 판매 수량도 훨씬 적다.<br />
 <br />
-1960년에는 벨 연구소의 강대원과 Martin Atalla가 MOSFET을 발명했다. 제조가 까다롭고 전력소모가 컸던 BJT는 MOSFET으로 대체됐다.<br />
-*이 문장은 그냥 국뽕이라 들어가있는 것 같다.<br />
+전자담배에도 햅틱이 들어간다. KT&amp;G에서 1년에 만드는 전자담배가 7~8백만개다. 상당히 많이 팔리니까, 전자담배도 뭐 끼우면 진동하는 식으로 햅틱을 넣는다.<br />
 <br />
-집적회로 덕분에 전자회로가 작아질 수 있었고, 제작 방식도 사진 찍는거랑 비슷한 방식이라 대량생산될 수 있었다.<br />
-이 ‘사진찍는거랑 비슷한 방식’이 포토 공정이다.<br />
+동운아나텍은 라이다 좀 열심히 하고 있다. 라이다에는 VCSEL이라는 드라이버가 필요하다. 우리나라 라이다 제조사로는 SOSLAB이란 곳이 있는데, 이 회사는 마케팅을 못해서 동운아나텍이 해준다고 한다?<br />
+GM은 2018,2019년쯤에 2021년까지 완전자율주행을 내놓겠다고 발표했지만, 아직도 못내놓고 있다.<br />
+가격, 성능 모두 LiDAR &gt; ToF &gt; 레이더 다.<br />
+해외영업이 하는 일은 당사제품 판매, 신규고객사 개발, 해외지사 관리다.<br />
+이 회사들이 고객사라고 적혀있었던 듯 한데, 뭐하는 회사들인지 알아보자.<br />
+미국: Delphi, Harman, Bosch, Magna<br />
+일본: Nissha, SMK, Tokairika, Kojima<br />
+그리고 독일, 일본과도 거래하려고 한다.<br />
 <br />
-일단 CAD로 회로 패턴을 설계한다.<br />
-설계된 회로 패턴은 순도 높은 석영(Quartz)을 가공해서 만든 기판 위에 크롬(Cr)으로 미세 회로로 그려져 photomask가 된다.<br />
+AGV: Automated Guided Vehicle.<br />
+혼자 돌아다니는 로봇들을 AGV라 부른다. 이걸 많이 하는 회사로는 아마존, Geek, Omron이 있다.<br />
 <br />
-그려진 패턴이 실제로 그릴 회로와 크기가 같으면 그걸 ‘mask’라 부르고,<br />
-실제 회로보다 패턴을 더 크게 그렸다면 그걸 ‘reticle’이라 부른다.<br />
+구글은 원래 안드로이드만 만들겠다 했었는데, 최근 삼성전자 통수를 치고 구글 폰을 만들기 시작했다. 그래서 애플 엔지니어들을 구글에서 많이 영입중이고, 동운아나텍은 AF, OIS, Haptic, ToF 등을 구글에 팔려고 하고 있다.<br />
 <br />
-실제 회로보다 패턴을 더 크게 그리면 어떡하나?<br />
-나중에 렌즈로 빛을 모아 공정을 진행한다.<br />
+동운아나텍은 조명도 한다! 근데 일반 조명들은 중국 업체들이 다 먹어버렸다. 그래서 하이엔드 조명 시장을 노리는 중이다. 관련 기업으로는 Valeo, Sloan 등이 있다.<br />
 <br />
-하여간 photomask가 준비되면, 웨이퍼 표면에 감광액(Photo Resist, PR)을 발라준다.<br />
-만들어지는 회로가 더 고품질이 되려면 PR막이 얇고 균일해야 하며, 빛에 대한 감도가 높아야 한다.<br />
+동운아나텍은 LCD Driver IC도 한다. 근데 요즘 누가 LCD를 쓰냐? 사실 시장은 뒤진지 오래다. 그래도 모바일 아닌 분야에서는 아직 쓰기도 해서, 중국에 많이 내다 팔고 있다.<br />
 <br />
-이때, 감광액은 양성(Positive) 감광액과 음성(negative) 감광액으로 구분된다.<br />
-양성 감광액은 빛을 맞은 부분을 없애고, 음성 감광액은 빛을 안맞은 부분을 없앤다.<br />
+Haptic 중국 시장: 샤오미, ZTE, Oppo, Vivo, Wingtech 등.<br />
 <br />
-양성 감광액이 접착도 및 분해능이 더 좋고, 더 두껍게 만들 수 있고, 산소와 반응하지 않는다.<br />
-음성 감광액은 산소랑 반응하기 때문에 질소 기체를 채워놓고 반응시켜야 한다.<br />
+Haptic 일본 시장: Nissan, 미츠비시 Motors, Rinnai, Wacom 등.<br />
+자동차 회사면 핸들에 햅틱이 들어각고, Rinnai에는 화장실 리모컨 패드에 햅틱이 들어가고, wacom은 필기감이 진짜 쓰는 느낌이 나도록 햅틱을 쓴다.<br />
 <br />
-하지만 양성 감광액은 노출시간에 아주 민감하게 반응하기 때문에, 노출 시간을 칼같이 지켜줘야 한다.<br />
+LED 제조사: GE Lighting, OSRAM, Cooper lighting 등<br />
+ToF 일본 제조사: Kokyo, Hokuyo, Jepico, Sick, Opex<br />
+LiDAR 일본 제조사: Daifuku, Heads<br />
 <br />
-PR막이 준비되면, 노광장비(Stepper)를 사용해 마스크에 빛을 쏜다.<br />
-빛은 마스크와 렌즈를 통과한 후 웨이퍼로 날아가 PR막 위에 회로를 찍어낸다.<br />
-이 과정을 노광(Stepper Exposure)이라 부른다.<br />
+동운아나텍이 지문 알고리즘을 개발한 지는 4~5년 정도가 됐다. 원래는 알고리즘만 했는데, 요즘은 제품을 만들고 있다. 그래서 지문 스마트카드, 지문 모듈, 지문 알고리즘을 하는 회사가 됐다.<br />
 <br />
-위 그림처럼, 마스크는 웨이퍼에 비해 훨씬 작다. 그러면 저 넓은 웨이퍼를 이 작은 마스크로 어떻게 찍을까?<br />
+사진은 지문 스마트카드<br />
+지문이 인식되어야 카드가 동작하는 구조다. 그래서 지문 센서를 신분증에 붙여서 도용할 수 없게 하거나, 장애우대 또는 경로우대로 지하철 탈 때 본인인증을 하고 공짜로 타게 할 수 있다. 복지카드에도 쓸 수 있다.<br />
 <br />
-마스크를 조금씩 옮겨가며 찍기 위해, 마스크에 ‘Align key’라는걸 설치하고,<br />
-이거 기준으로 마스크를 움직이며 일일이 찍어서 웨이퍼 전체를 찍는다.<br />
-align key가 없으면 마스크가 움직이다가 흐트러져서 이상하게 찍혀버릴 것이다.<br />
-이때, 한번 찍는걸 ‘shot’이라 부른다.<br />
+현재 경로우대 승차권이 가장 많이 쓰이는 시간대가 출퇴근 시간대라는데, 부정승차가 얼마나 많으면 이러겠나.<br />
+지문 인식 기술은 많이 발전해 있어서, 이제는 복잡한 회로도 필요 없고 코일안테나 하나만 있어도 지문 인식이 가능하다. 근데 동운아나텍은 원래 회로 하는 곳이라, 회로가 간단하면 딱히 내세울 부분이 없다. 그래서, 복잡한 회로가 쓰이는 cold wallet에 투자를 해보기로 했다.<br />
 <br />
-Align key를 안맞추면 p랑 n이 이상한데서 만나고 하여간 난장판이 된다.<br />
+한국은행에서 요즘 하려고 하는 일 중 하나가, cold wallet으로 원화 거래를 하는거다. 즉 CBDC(Central Bank Digital Currency)다. 중앙은행이 발행한 코인으로 거래가 이뤄지게 하는거다. 그래서 여기 쓰이는 Cold Wallet에 지문 인식 기술이 들어가게 하려고 노력하고 있다.<br />
 <br />
-다 찍었으면 Develop(현상) 과정이 남아있다.<br />
-Develop 공정은 웨이퍼에 현상액(Developer)를 뿌려가며, 빛을 받은 영역과 받지 않은 영역을 선택적으로 제거해 회로 패턴을 형성하는 과정이다.<br />
-이 과정에서 패턴이 결정된다.<br /></p>]]></content><author><name></name></author><category term="Process" /><summary type="html"><![CDATA[반도체 8대공정: 1. 웨이퍼 제조 공정(Wafer Fabrication) 2. 산화 공정(Oxidation) 3. 포토 공정(Photolithography) 4. 식각 공정(Etching) 5. 증착 공정(Deposition) 6. 금속 배선 공정(Metallization) 7. EDS 공정(Electrical Die Sorting) 8. 패키징 공정(Packaging) 3. 포토 공정 역사부터 살펴본다. 1947년, AT&amp;T 벨 연구소의 연구원들은 반도체를 가지고 전기 신호를 증폭할 수 있다는 사실을 알게 되었고, 이후 신호를 증폭할 수 있는 반도체 소자는 트랜지스터라 불리게 되었다. 트랜지스터는 그 이후 널리 쓰이게 되었는데, 1958년 TI의 Jack Kilby가 복잡한 전자부품들을 모두 평면에 찍어내자는 생각을 했다. 이게 집적회로의 시작이다. 집적회로가 등장하기 전, 기술이 지속적으로 발전하면서 R,L,C,TR 등 소자들을 연결할 일들이 점점 많아지고 있었다. 근데 그 연결점들에서 고장이 자주 일어나서 문제였는데, 집적회로에서는 연결점 문제가 없었다. 1960년에는 벨 연구소의 강대원과 Martin Atalla가 MOSFET을 발명했다. 제조가 까다롭고 전력소모가 컸던 BJT는 MOSFET으로 대체됐다. *이 문장은 그냥 국뽕이라 들어가있는 것 같다. 집적회로 덕분에 전자회로가 작아질 수 있었고, 제작 방식도 사진 찍는거랑 비슷한 방식이라 대량생산될 수 있었다. 이 ‘사진찍는거랑 비슷한 방식’이 포토 공정이다. 일단 CAD로 회로 패턴을 설계한다. 설계된 회로 패턴은 순도 높은 석영(Quartz)을 가공해서 만든 기판 위에 크롬(Cr)으로 미세 회로로 그려져 photomask가 된다. 그려진 패턴이 실제로 그릴 회로와 크기가 같으면 그걸 ‘mask’라 부르고, 실제 회로보다 패턴을 더 크게 그렸다면 그걸 ‘reticle’이라 부른다. 실제 회로보다 패턴을 더 크게 그리면 어떡하나? 나중에 렌즈로 빛을 모아 공정을 진행한다. 하여간 photomask가 준비되면, 웨이퍼 표면에 감광액(Photo Resist, PR)을 발라준다. 만들어지는 회로가 더 고품질이 되려면 PR막이 얇고 균일해야 하며, 빛에 대한 감도가 높아야 한다. 이때, 감광액은 양성(Positive) 감광액과 음성(negative) 감광액으로 구분된다. 양성 감광액은 빛을 맞은 부분을 없애고, 음성 감광액은 빛을 안맞은 부분을 없앤다. 양성 감광액이 접착도 및 분해능이 더 좋고, 더 두껍게 만들 수 있고, 산소와 반응하지 않는다. 음성 감광액은 산소랑 반응하기 때문에 질소 기체를 채워놓고 반응시켜야 한다. 하지만 양성 감광액은 노출시간에 아주 민감하게 반응하기 때문에, 노출 시간을 칼같이 지켜줘야 한다. PR막이 준비되면, 노광장비(Stepper)를 사용해 마스크에 빛을 쏜다. 빛은 마스크와 렌즈를 통과한 후 웨이퍼로 날아가 PR막 위에 회로를 찍어낸다. 이 과정을 노광(Stepper Exposure)이라 부른다. 위 그림처럼, 마스크는 웨이퍼에 비해 훨씬 작다. 그러면 저 넓은 웨이퍼를 이 작은 마스크로 어떻게 찍을까? 마스크를 조금씩 옮겨가며 찍기 위해, 마스크에 ‘Align key’라는걸 설치하고, 이거 기준으로 마스크를 움직이며 일일이 찍어서 웨이퍼 전체를 찍는다. align key가 없으면 마스크가 움직이다가 흐트러져서 이상하게 찍혀버릴 것이다. 이때, 한번 찍는걸 ‘shot’이라 부른다. Align key를 안맞추면 p랑 n이 이상한데서 만나고 하여간 난장판이 된다. 다 찍었으면 Develop(현상) 과정이 남아있다. Develop 공정은 웨이퍼에 현상액(Developer)를 뿌려가며, 빛을 받은 영역과 받지 않은 영역을 선택적으로 제거해 회로 패턴을 형성하는 과정이다. 이 과정에서 패턴이 결정된다.]]></summary></entry><entry><title type="html">내용정리</title><link href="http://localhost:4000/time-frequency/2023/10/04/tfanalysis.html" rel="alternate" type="text/html" title="내용정리" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/time-frequency/2023/10/04/tfanalysis</id><content type="html" xml:base="http://localhost:4000/time-frequency/2023/10/04/tfanalysis.html"><![CDATA[<p>Under test
-\(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)<br />
-\(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)</p>]]></content><author><name></name></author><category term="Time-Frequency" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\) \(\nabla_\boldsymbol{x} J(\boldsymbol{x})\)]]></summary></entry><entry><title type="html">Electromagnetics (2)</title><link href="http://localhost:4000/electromagnetics/2023/10/03/Electromagnetics-2.html" rel="alternate" type="text/html" title="Electromagnetics (2)" /><published>2023-10-03T19:31:29+09:00</published><updated>2023-10-03T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/03/Electromagnetics%20-%202</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/03/Electromagnetics-2.html"><![CDATA[<p>Under test
-\(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Under test \(\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)]]></summary></entry></feed>
+이렇게 공공분야로는 조폐공사에, 민간분야로는 이곳저곳에 팔려고 한다. 거기 쓰인 COS(Chip Operating System)도 조폐공사에서 만든 상태다. *조폐공사에서 어떻게 만들었지?<br />
+<br />
+카드에 들어가는 칩은 인피니온이 주로 만들고, NXP도 만든다. 근데 문제는, 지문 인식이 들어간 카드는 일반 카드의 5배정도로 비싸다. 지문인식 좋은건 알겠는데, 이래서야 어느 회사가 그 돈 써가면서까지 시스템을 도입하겠는가?<br />
+<br />
+그래도 지문의 보안성과 편리성 덕분에, 지금 국내기업인 선일금고에 납품중이다.<br />
+<br />
+리모컨에도 지문 인식 기능이 들어갈 수 있다. 성인인증, 결제 등 보안에 쓰일 수 있고, 내가 보는 채널과 다른 가족이 보는 채널을 구분하는 편리성 위주 기능에 쓰일 수도 있다.<br />
+<br />
+지문 인식에는 지문 센서, MCU, Bezel, 알고리즘, 보안칩이 사용된다. 이 중 Bezel은 손이 닿았나 안닿았나 확인하는 용도로 쓰인다.<br />
+<br />
+보안 칩의 원리는 해킹 시도시 랜덤한 값들이 계속 읽히게 만드는거다. 보안은 꽤 중요하다. 삼성전자는 중국에서 칩 베껴가는걸 걱정하고, 캐논도 토너 팔아서 먹고살아야 하는데 토너를 중국에서 베껴가서 걱정이 많다고 한다.<br />
+테슬라 차는 카드키로 여는데, 이걸 또 카드키 작동할 때 옆에서 전파 읽고 그거대로 전파 나오게 해서 차 훔치는게 가능하다고 한다. 유튜브 영상 확인해보자.<br />
+가장 큰 지문인식 회사는 Precise Biometrics다.<br />
+동운아나텍의 지문 알고리즘은 가벼운 알고리즘이라서, 메모리가 적어도 된다.<br />
+마지막으로, 영업관리라 함은 고객 관리, 매출 관리, 물동 관리, 매출채권 관리를 말한다.<br /></p>]]></content><author><name></name></author><category term="Miscellaneous" /><summary type="html"><![CDATA[영업 소개: 원래는 GCO라는 중국 지사에서 중국 시장을 담당하고 있었는데, 중국쪽 후발주자들에게 시장을 많이 뺏겼다. 근데 뭐 중국 시장에 더 공들이려는건 아닌 것 같고, 중국 시장에 대해서는 Halo라는 회사에 라이선스를 팔았다. 이제 중국에서는 걔네가 동운아나텍 제품들을 판다. 삼성전자는 ToF 센서를 제품들에 잠시 넣다가 지금은 안넣는 상황인데, 애플을 따라가기 위해 곧 다시 넣을 것으로 보인다. 올해 6월에는 애플에서 VR 안경이 나온다. EU 배터리 규제: ‘모든 스마트폰 배터리를 탈착형으로 만들어라’. 그래서 핸드폰 회사들이 이제 배터리를 다 탈착형으로 만들 것이다. 근데 이러면 정품 말고도 짭 배터리들이 많이 나올 것이라, 배터리 정품인증을 위한 보안 칩이 들어갈거다. 보안 칩이 하는 일은 특정 코드를 만들어 입력해주는 일이다. 현대차에 들어가는 Haptic의 95% 정도를 동운아나텍이 한다. 하지만 차량에 들어가는 Haptic은 핸드폰에 들어가는 햅틱보다 개발 기간도 길고, 판매 수량도 훨씬 적다. 전자담배에도 햅틱이 들어간다. KT&amp;G에서 1년에 만드는 전자담배가 7~8백만개다. 상당히 많이 팔리니까, 전자담배도 뭐 끼우면 진동하는 식으로 햅틱을 넣는다. 동운아나텍은 라이다 좀 열심히 하고 있다. 라이다에는 VCSEL이라는 드라이버가 필요하다. 우리나라 라이다 제조사로는 SOSLAB이란 곳이 있는데, 이 회사는 마케팅을 못해서 동운아나텍이 해준다고 한다? GM은 2018,2019년쯤에 2021년까지 완전자율주행을 내놓겠다고 발표했지만, 아직도 못내놓고 있다. 가격, 성능 모두 LiDAR &gt; ToF &gt; 레이더 다. 해외영업이 하는 일은 당사제품 판매, 신규고객사 개발, 해외지사 관리다. 이 회사들이 고객사라고 적혀있었던 듯 한데, 뭐하는 회사들인지 알아보자. 미국: Delphi, Harman, Bosch, Magna 일본: Nissha, SMK, Tokairika, Kojima 그리고 독일, 일본과도 거래하려고 한다. AGV: Automated Guided Vehicle. 혼자 돌아다니는 로봇들을 AGV라 부른다. 이걸 많이 하는 회사로는 아마존, Geek, Omron이 있다. 구글은 원래 안드로이드만 만들겠다 했었는데, 최근 삼성전자 통수를 치고 구글 폰을 만들기 시작했다. 그래서 애플 엔지니어들을 구글에서 많이 영입중이고, 동운아나텍은 AF, OIS, Haptic, ToF 등을 구글에 팔려고 하고 있다. 동운아나텍은 조명도 한다! 근데 일반 조명들은 중국 업체들이 다 먹어버렸다. 그래서 하이엔드 조명 시장을 노리는 중이다. 관련 기업으로는 Valeo, Sloan 등이 있다. 동운아나텍은 LCD Driver IC도 한다. 근데 요즘 누가 LCD를 쓰냐? 사실 시장은 뒤진지 오래다. 그래도 모바일 아닌 분야에서는 아직 쓰기도 해서, 중국에 많이 내다 팔고 있다. Haptic 중국 시장: 샤오미, ZTE, Oppo, Vivo, Wingtech 등. Haptic 일본 시장: Nissan, 미츠비시 Motors, Rinnai, Wacom 등. 자동차 회사면 핸들에 햅틱이 들어각고, Rinnai에는 화장실 리모컨 패드에 햅틱이 들어가고, wacom은 필기감이 진짜 쓰는 느낌이 나도록 햅틱을 쓴다. LED 제조사: GE Lighting, OSRAM, Cooper lighting 등 ToF 일본 제조사: Kokyo, Hokuyo, Jepico, Sick, Opex LiDAR 일본 제조사: Daifuku, Heads 동운아나텍이 지문 알고리즘을 개발한 지는 4~5년 정도가 됐다. 원래는 알고리즘만 했는데, 요즘은 제품을 만들고 있다. 그래서 지문 스마트카드, 지문 모듈, 지문 알고리즘을 하는 회사가 됐다. 사진은 지문 스마트카드 지문이 인식되어야 카드가 동작하는 구조다. 그래서 지문 센서를 신분증에 붙여서 도용할 수 없게 하거나, 장애우대 또는 경로우대로 지하철 탈 때 본인인증을 하고 공짜로 타게 할 수 있다. 복지카드에도 쓸 수 있다. 현재 경로우대 승차권이 가장 많이 쓰이는 시간대가 출퇴근 시간대라는데, 부정승차가 얼마나 많으면 이러겠나. 지문 인식 기술은 많이 발전해 있어서, 이제는 복잡한 회로도 필요 없고 코일안테나 하나만 있어도 지문 인식이 가능하다. 근데 동운아나텍은 원래 회로 하는 곳이라, 회로가 간단하면 딱히 내세울 부분이 없다. 그래서, 복잡한 회로가 쓰이는 cold wallet에 투자를 해보기로 했다. 한국은행에서 요즘 하려고 하는 일 중 하나가, cold wallet으로 원화 거래를 하는거다. 즉 CBDC(Central Bank Digital Currency)다. 중앙은행이 발행한 코인으로 거래가 이뤄지게 하는거다. 그래서 여기 쓰이는 Cold Wallet에 지문 인식 기술이 들어가게 하려고 노력하고 있다. 이렇게 공공분야로는 조폐공사에, 민간분야로는 이곳저곳에 팔려고 한다. 거기 쓰인 COS(Chip Operating System)도 조폐공사에서 만든 상태다. *조폐공사에서 어떻게 만들었지? 카드에 들어가는 칩은 인피니온이 주로 만들고, NXP도 만든다. 근데 문제는, 지문 인식이 들어간 카드는 일반 카드의 5배정도로 비싸다. 지문인식 좋은건 알겠는데, 이래서야 어느 회사가 그 돈 써가면서까지 시스템을 도입하겠는가? 그래도 지문의 보안성과 편리성 덕분에, 지금 국내기업인 선일금고에 납품중이다. 리모컨에도 지문 인식 기능이 들어갈 수 있다. 성인인증, 결제 등 보안에 쓰일 수 있고, 내가 보는 채널과 다른 가족이 보는 채널을 구분하는 편리성 위주 기능에 쓰일 수도 있다. 지문 인식에는 지문 센서, MCU, Bezel, 알고리즘, 보안칩이 사용된다. 이 중 Bezel은 손이 닿았나 안닿았나 확인하는 용도로 쓰인다. 보안 칩의 원리는 해킹 시도시 랜덤한 값들이 계속 읽히게 만드는거다. 보안은 꽤 중요하다. 삼성전자는 중국에서 칩 베껴가는걸 걱정하고, 캐논도 토너 팔아서 먹고살아야 하는데 토너를 중국에서 베껴가서 걱정이 많다고 한다. 테슬라 차는 카드키로 여는데, 이걸 또 카드키 작동할 때 옆에서 전파 읽고 그거대로 전파 나오게 해서 차 훔치는게 가능하다고 한다. 유튜브 영상 확인해보자. 가장 큰 지문인식 회사는 Precise Biometrics다. 동운아나텍의 지문 알고리즘은 가벼운 알고리즘이라서, 메모리가 적어도 된다. 마지막으로, 영업관리라 함은 고객 관리, 매출 관리, 물동 관리, 매출채권 관리를 말한다.]]></summary></entry><entry><title type="html">햅틱 ToF</title><link href="http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous-%ED%96%85%ED%8B%B1ToF.html" rel="alternate" type="text/html" title="햅틱 ToF" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous%20-%20%ED%96%85%ED%8B%B1ToF</id><content type="html" xml:base="http://localhost:4000/miscellaneous/2023/10/04/Miscellaneous-%ED%96%85%ED%8B%B1ToF.html"><![CDATA[<p>Haptic:<br />
+터치했을 때 진동이 오면 그걸 햅틱이라 부른다. 알람이나 전화로 울리는 진동도 넓게 보면 햅틱일 수는 있겠지만, 우리가 말하는 햅틱은 아니다.<br />
+<br />
+햅틱이란 단어는 2009년에 나온 연아의 햅틱 시절부터 계속 등장해 왔다. 그렇게 언급만 되다가, 아이폰 7부터 홈버튼이 없어지며 햅틱이 들어갔고, 그때부터 시장이 활성화됐다.<br />
+<br />
+애플 트랙패드에도 햅틱이 들어가고, 삼성, LG 제품에도 다 들어간다.<br />
+<br />
+햅틱의 진동 주파수는 300Hz정도 되는데, 햅틱도 소리랑 비슷하게 나이들면 잘 못느끼게 된다.<br />
+<br />
+아이폰 15부터는 잠금버튼도 진짜 버튼 말고 햅틱으로 만들 예정이다. 라고 적혀있는데, 어떻게 나왔는지 확인 필요<br />
+<br />
+햅틱의 원천특허는 이머전(Immersion)이라는 미국 회사가 갖고 있다. 그래서 햅틱 만드는 회사들 모두가 이머전한테 돈을 내고 있다. 햅틱의 원리는, 터치하면 그게 Driver로 전달돼 액추에이터를 동작시켜서 진동이 발생하는거다.<br />
+<br />
+하이엔드 LG폰들에는 동운아나텍 햅틱이 많이 들어갔었고, 그 외에 ASUS ROG2폰에도 들어갔다.<br />
+<br />
+맥북은 터치패드가 실제로 누르는게 아니라 햅틱이다.<br />
+<br />
+햅틱 이야기가 가장 많이 나오고 있는 곳은 자동차 전장 분야다. 요즘은 차에 있는 버튼들 다 햅틱으로 대체하려 하고 있다. 국산 제네시스에 들어가는 햅틱 드라이버 IC는 다 동운아나텍꺼다.<br />
+<br />
+동운아나텍이 만드는건 햅틱 드라이버 IC지만, 이게 제어하는 대상이 액추에이터라 액추에이터 업체들과 많은 협력을 한다. 협력에서 무엇을 하냐면, 액추에이터로 어떻게 진동을 만들어야 진짜 버튼 눌렀을때랑 비슷한 느낌이 날 지 연구한다. 그걸 위해, 진짜 버튼 눌렀을 때 생기는 가속도를 기록해서 그거대로 느낌나게 설계한다.<br />
+<br />
+애플 액추에이터는 150Hz -&gt; 300Hz -&gt; 180Hz로 진동 주파수가 바뀌며 나오게 되어 있다. 전압은 8~10V다. 애플 액추에이터는 만원정도 하고, 다른 회사 액추에이터들은 1~2천원 정도 한다.<br />
+<br />
+액추에이터는 그네랑 비슷하다. 그네를 한번 밀면 진동하다가 멈추듯이, 액추에이터도 그냥 동작만 시키면 뒤에 진동이 잠시 남아서 느낌이 이상해진다. 그래서 남은 진동을 잘 잡아줘야 한다. 애플은 이걸 잘 잡는데, 삼성전자는 조금 부족하다.<br />
+<br />
+햅틱 분야에서 애플은 독보적이다. 다른 회사들은 노트북에 큰 배터리랑 작은 액추에이터를 넣는데, 맥북은 돈을 더 써서 배터리를 나눠놓고 그 공간에 두꺼운 액추에이터를 넣었다.<br />
+<br />
+테슬라 차에는 햅틱이 없다. 터치스크린은 있는데, 진동 없는 그냥 태블릿이다.<br />
+<br />
+근데 차에 햅틱이 왜 필요한가? 버튼 눌린거 확인시켜주려고 필요하다.<br />
+차에서는 운전하면서 앞만 보면서 화면을 터치해야 하기 때문에, 버튼이 눌렸으면 햅틱으로 그걸 확인시켜주면 좋다.<br />
+<br />
+당연히, 차에서는 핸드폰보다 진동이 더 강해야 한다. 그래서 차에 쓰이는 액추에이터는 핸드폰에 들어가는 액추에이터보다 훨씬 크고, 가격도 4달러정도 한다.<br />
+<br />
+아우디 A8에 들어간 햅틱이 좀 좋은게 들어갔고, 메르세데스 벤츠 햅틱은 쓰레기다.<br />
+<br />
+태블릿 펜, 전자담배에도 햅틱이 들어간다. 모든 햅틱의 목표는 아이폰 같은 느낌이다. 그냥 햅틱은 애플 따라가면 된다.<br />
+<br />
+햅틱 평가요소: 진동력, 소음, 진동시간<br />
+진동력은 적당하면 되고, 소음은 적어야 하고, 진동시간은 짧아야 한다. 이게 아까 얘기한 잔진동 없애야 한다는 이야기다.<br />
+<br />
+삼성전자 햅틱은 2G, 3G, 5G로 약~강 진동을 선택할 수 있다.<br />
+햅틱 원리는 오디오 앰프랑 비슷하다. 그래서 많은 회사들이 한다. 국내만 해도 2~3개 업체가 있고, 중국도 많이 한다. 애플에 들어가는 햅틱은 시러스로직(Cirrus Logic)꺼다.<br />
+<br />
+애플 안면인식은 ToF 센서로 3D 센싱을 하는 방식이다.<br />
+3D 센싱에는 3가지 방식이 있다.<br />
+1. Stereo Vision: 카메라 2개면 거리 재기 가능<br />
+2. Structured Light: 패턴 있는 빛을 뿌려서 반사 패턴을 본다.<br />
+3. ToF<br />
+dToF: 아이폰, 로봇청소기, 3D지도 만드는 차 위에 있는거<br />
+iToF: 아이폰 외 모든 핸드폰<br />
+<br />
+다른 카메라들은 광원이 없는데, ToF 카메라는 광원에서 빛을 쏜다. 우리가 하는건 거기 들어가는 VCSEL(Vertical Cavity Surface Emitting Laser, 웨이퍼 수직 방향으로 레이저 쏘는 다이오드) 구동 장치다.<br />
+<br />
+ToF 카메라 결과로 amplitude, depth 정보가 나온다.<br />
+ToF 스위칭 주파수가 100MHz라서 RF Radiation noise가 심하다.<br />
+<br />
+iToF: 약하게 여러 개 point에 뿌린다. 멀리는 못가지만, 뿌리는 범위가 넓어서 해상도가 높다. 멀리 못간다는게, 5m도 못가는 수준이다. 삼성전자 iToF는 4500개 point를 뿌린다.<br />
+<br />
+dToF: 강하게 몇 개 point에 뿌린다. 멀리 갈 수 있지만, 중간에 비는 부분들은 알고리즘으로 채워넣어야 한다. 애플 dToF는 600개 point를 뿌린다.<br />
+<br />
+iToF, dToF 쏘는건 물총이랑 비슷하게 생각하면 된다. 분무기가 iToF, 물총이 dToF다.<br />
+ToF에서 빈 곳 채우는 기술이 삼성이 많이 딸려서, ToF 파워는 삼성꺼가 더 센데도 애플꺼가 더 멀리간다.<br />
+<br />
+iToF 센서와 dToF 센서는 다르게 생겼는데, 이 중 dToF 센서는 작게 만들기 어렵다.<br />
+dToF 센서는 소니에서 만드는데 애플과 독점 계약이 되어 있다.<br />
+dToF 센서는 위에서 말했듯 빈칸을 채워야 해서 소프트웨어 처리가 많이 필요하다. 그래서 이게 되는 애플만 dToF, 나머지는 iToF를 쓴다.<br />
+<br />
+아까 iToF는 5m도 못간다고 했는데, AR, VR을 하고 싶다면 sensing 가능한 거리가 5m는 넘어야 할 것이다. 그래서 요즘은 많이들 dToF를 검토한다고 한다.<br />
+<br />
+옛날에, 5G 활성화되면 AR, VR 떡상한다는 얘기가 있었지만 아니었다. 그래서 삼성전자도 관심을 껐었는데, 아이폰 13프로부터 dToF센서가 들어가서 다시 관심을 갖고 있다고 한다. 그래도 일단 S24까지는 들어갈 계획 없다고 한다.<br />
+<br />
+애플이 안경을 곧 출시한다는데, 그러면 삼성 글래스가 나오고 거기 동운아나텍 제품이 들어갈 수도 있다.<br />
+<br />
+dToF는 아이폰 외에도 형체 인식하는 곳에 쓰인다. 매장 들어가는 사람 세는 곳 등. 이러면 보안상 좋다. 형체만 보이고 사람은 안보이니까.<br />
+<br />
+라이다의 핵심 원리가 dToF다.<br />
+<br />
+dToF: direct Time-of-Flight, iToF: indirect Time-of-Flight<br />
+<br />
+자율주행에서는 멀리 보기 위해 레이더, 고해상도를 위해 라이다, 색을 구분하기 위해 카메라가 모두 필요하다. 근데 테슬라는 카메라만 쓴다. 이러면 밤에 안보인다!<br />
+<br />
+주차할 때 삐삐삐 소리 나는건 초음파센서가 인식해서 소리나는거다.<br />
+옆차선 차 백미러에 표시해주는 센서는 24GHz 레이더를 쓰고, 스마트크루즈는 77GHz를 쓴다.<br />
+<br />
+자동차에 들어가는 라이다는 원래 몇백만원 하는데, 그래도 많이 들어가고 있는 추세다. EV9, 제네시스 새로운 모델에도 라이다가 들어간다.<br /></p>]]></content><author><name></name></author><category term="Miscellaneous" /><summary type="html"><![CDATA[Haptic: 터치했을 때 진동이 오면 그걸 햅틱이라 부른다. 알람이나 전화로 울리는 진동도 넓게 보면 햅틱일 수는 있겠지만, 우리가 말하는 햅틱은 아니다. 햅틱이란 단어는 2009년에 나온 연아의 햅틱 시절부터 계속 등장해 왔다. 그렇게 언급만 되다가, 아이폰 7부터 홈버튼이 없어지며 햅틱이 들어갔고, 그때부터 시장이 활성화됐다. 애플 트랙패드에도 햅틱이 들어가고, 삼성, LG 제품에도 다 들어간다. 햅틱의 진동 주파수는 300Hz정도 되는데, 햅틱도 소리랑 비슷하게 나이들면 잘 못느끼게 된다. 아이폰 15부터는 잠금버튼도 진짜 버튼 말고 햅틱으로 만들 예정이다. 라고 적혀있는데, 어떻게 나왔는지 확인 필요 햅틱의 원천특허는 이머전(Immersion)이라는 미국 회사가 갖고 있다. 그래서 햅틱 만드는 회사들 모두가 이머전한테 돈을 내고 있다. 햅틱의 원리는, 터치하면 그게 Driver로 전달돼 액추에이터를 동작시켜서 진동이 발생하는거다. 하이엔드 LG폰들에는 동운아나텍 햅틱이 많이 들어갔었고, 그 외에 ASUS ROG2폰에도 들어갔다. 맥북은 터치패드가 실제로 누르는게 아니라 햅틱이다. 햅틱 이야기가 가장 많이 나오고 있는 곳은 자동차 전장 분야다. 요즘은 차에 있는 버튼들 다 햅틱으로 대체하려 하고 있다. 국산 제네시스에 들어가는 햅틱 드라이버 IC는 다 동운아나텍꺼다. 동운아나텍이 만드는건 햅틱 드라이버 IC지만, 이게 제어하는 대상이 액추에이터라 액추에이터 업체들과 많은 협력을 한다. 협력에서 무엇을 하냐면, 액추에이터로 어떻게 진동을 만들어야 진짜 버튼 눌렀을때랑 비슷한 느낌이 날 지 연구한다. 그걸 위해, 진짜 버튼 눌렀을 때 생기는 가속도를 기록해서 그거대로 느낌나게 설계한다. 애플 액추에이터는 150Hz -&gt; 300Hz -&gt; 180Hz로 진동 주파수가 바뀌며 나오게 되어 있다. 전압은 8~10V다. 애플 액추에이터는 만원정도 하고, 다른 회사 액추에이터들은 1~2천원 정도 한다. 액추에이터는 그네랑 비슷하다. 그네를 한번 밀면 진동하다가 멈추듯이, 액추에이터도 그냥 동작만 시키면 뒤에 진동이 잠시 남아서 느낌이 이상해진다. 그래서 남은 진동을 잘 잡아줘야 한다. 애플은 이걸 잘 잡는데, 삼성전자는 조금 부족하다. 햅틱 분야에서 애플은 독보적이다. 다른 회사들은 노트북에 큰 배터리랑 작은 액추에이터를 넣는데, 맥북은 돈을 더 써서 배터리를 나눠놓고 그 공간에 두꺼운 액추에이터를 넣었다. 테슬라 차에는 햅틱이 없다. 터치스크린은 있는데, 진동 없는 그냥 태블릿이다. 근데 차에 햅틱이 왜 필요한가? 버튼 눌린거 확인시켜주려고 필요하다. 차에서는 운전하면서 앞만 보면서 화면을 터치해야 하기 때문에, 버튼이 눌렸으면 햅틱으로 그걸 확인시켜주면 좋다. 당연히, 차에서는 핸드폰보다 진동이 더 강해야 한다. 그래서 차에 쓰이는 액추에이터는 핸드폰에 들어가는 액추에이터보다 훨씬 크고, 가격도 4달러정도 한다. 아우디 A8에 들어간 햅틱이 좀 좋은게 들어갔고, 메르세데스 벤츠 햅틱은 쓰레기다. 태블릿 펜, 전자담배에도 햅틱이 들어간다. 모든 햅틱의 목표는 아이폰 같은 느낌이다. 그냥 햅틱은 애플 따라가면 된다. 햅틱 평가요소: 진동력, 소음, 진동시간 진동력은 적당하면 되고, 소음은 적어야 하고, 진동시간은 짧아야 한다. 이게 아까 얘기한 잔진동 없애야 한다는 이야기다. 삼성전자 햅틱은 2G, 3G, 5G로 약~강 진동을 선택할 수 있다. 햅틱 원리는 오디오 앰프랑 비슷하다. 그래서 많은 회사들이 한다. 국내만 해도 2~3개 업체가 있고, 중국도 많이 한다. 애플에 들어가는 햅틱은 시러스로직(Cirrus Logic)꺼다. 애플 안면인식은 ToF 센서로 3D 센싱을 하는 방식이다. 3D 센싱에는 3가지 방식이 있다. 1. Stereo Vision: 카메라 2개면 거리 재기 가능 2. Structured Light: 패턴 있는 빛을 뿌려서 반사 패턴을 본다. 3. ToF dToF: 아이폰, 로봇청소기, 3D지도 만드는 차 위에 있는거 iToF: 아이폰 외 모든 핸드폰 다른 카메라들은 광원이 없는데, ToF 카메라는 광원에서 빛을 쏜다. 우리가 하는건 거기 들어가는 VCSEL(Vertical Cavity Surface Emitting Laser, 웨이퍼 수직 방향으로 레이저 쏘는 다이오드) 구동 장치다. ToF 카메라 결과로 amplitude, depth 정보가 나온다. ToF 스위칭 주파수가 100MHz라서 RF Radiation noise가 심하다. iToF: 약하게 여러 개 point에 뿌린다. 멀리는 못가지만, 뿌리는 범위가 넓어서 해상도가 높다. 멀리 못간다는게, 5m도 못가는 수준이다. 삼성전자 iToF는 4500개 point를 뿌린다. dToF: 강하게 몇 개 point에 뿌린다. 멀리 갈 수 있지만, 중간에 비는 부분들은 알고리즘으로 채워넣어야 한다. 애플 dToF는 600개 point를 뿌린다. iToF, dToF 쏘는건 물총이랑 비슷하게 생각하면 된다. 분무기가 iToF, 물총이 dToF다. ToF에서 빈 곳 채우는 기술이 삼성이 많이 딸려서, ToF 파워는 삼성꺼가 더 센데도 애플꺼가 더 멀리간다. iToF 센서와 dToF 센서는 다르게 생겼는데, 이 중 dToF 센서는 작게 만들기 어렵다. dToF 센서는 소니에서 만드는데 애플과 독점 계약이 되어 있다. dToF 센서는 위에서 말했듯 빈칸을 채워야 해서 소프트웨어 처리가 많이 필요하다. 그래서 이게 되는 애플만 dToF, 나머지는 iToF를 쓴다. 아까 iToF는 5m도 못간다고 했는데, AR, VR을 하고 싶다면 sensing 가능한 거리가 5m는 넘어야 할 것이다. 그래서 요즘은 많이들 dToF를 검토한다고 한다. 옛날에, 5G 활성화되면 AR, VR 떡상한다는 얘기가 있었지만 아니었다. 그래서 삼성전자도 관심을 껐었는데, 아이폰 13프로부터 dToF센서가 들어가서 다시 관심을 갖고 있다고 한다. 그래도 일단 S24까지는 들어갈 계획 없다고 한다. 애플이 안경을 곧 출시한다는데, 그러면 삼성 글래스가 나오고 거기 동운아나텍 제품이 들어갈 수도 있다. dToF는 아이폰 외에도 형체 인식하는 곳에 쓰인다. 매장 들어가는 사람 세는 곳 등. 이러면 보안상 좋다. 형체만 보이고 사람은 안보이니까. 라이다의 핵심 원리가 dToF다. dToF: direct Time-of-Flight, iToF: indirect Time-of-Flight 자율주행에서는 멀리 보기 위해 레이더, 고해상도를 위해 라이다, 색을 구분하기 위해 카메라가 모두 필요하다. 근데 테슬라는 카메라만 쓴다. 이러면 밤에 안보인다! 주차할 때 삐삐삐 소리 나는건 초음파센서가 인식해서 소리나는거다. 옆차선 차 백미러에 표시해주는 센서는 24GHz 레이더를 쓰고, 스마트크루즈는 77GHz를 쓴다. 자동차에 들어가는 라이다는 원래 몇백만원 하는데, 그래도 많이 들어가고 있는 추세다. EV9, 제네시스 새로운 모델에도 라이다가 들어간다.]]></summary></entry></feed>
