@@ -43,28 +43,21 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Circuits">
 				<span class="name">Circuits</span>
-				<span class="badge">1</span>
+				<span class="badge">15</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#History">
 				<span class="name">History</span>
-				<span class="badge">3</span>
+				<span class="badge">4</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Miscellaneous">
 				<span class="name">Miscellaneous</span>
-				<span class="badge">5</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">11</span>
+				<span class="badge">8</span>
 	    	</a>
  		</li>
 	    
@@ -135,7 +128,66 @@ Ex) leakage current를 재고 싶으면 이런 식으로 재라<br />
 2. 이론적으로 나와야 할 값:<br />
 Leakage current는 700nA정도 나와야 하며, 딱 이정도는 아니겠지만 하여간 1uA 아래로 나와야 한다<br />
 3. Schematic:<br />
-피스파이스 같은 회로는 아니고 Visio라는 Block Diagram용 schematic을 그려놓는다. 테스트 양산 엔지니어들은 이 그림을 보고 어디 소자가 불량이라 결과가 이렇구나 생각을 한다.<br /></p>
+피스파이스 같은 회로는 아니고 Visio라는 Block Diagram용 schematic을 그려놓는다. 테스트 양산 엔지니어들은 이 그림을 보고 어디 소자가 불량이라 결과가 이렇구나 생각을 한다.<br />
+<br />
+메탈 이후 공정이 백엔드 공정이다.<br />
+마이너리비전: 메탈쪽만 리비전<br />
+메이저리비전: 모두 리비전<br />
+<br />
+White noise 줄이려면 크기랑 전력이 필요하다. 그래서 크기 키우고 전류 높이면 white noise가 줄어든다.<br />
+<br />
+SMT(Surface Mount Technology): Through-hole이나 점프선 같은 추잡한 방식 안쓰고 그냥 PCB 위에 IC 연결하는 방식이다.<br />
+<br />
+저항중에 작은 네모로 되어있는 저항도 있다. 얘네는 SMD(Surface Mounted Device)저항이라 불린다.<br />
+<br />
+위에서 말한 migration은 electromigration이다. 흐르는 전류 안의 전자가 도체 원자를 하도 때려서 원자가 밀려나는 현상이다. 이 현상은 J가 커질수록 많이 발생하기에, IC 크기가 작아질수록 중요하다. 이거 때문에, 오래 쓰면 도체가 너덜너덜해지거나 끊어진다. 도체 수명을 알려주는 식이 Black’s equation이다.<br />
+<br />
+Varactor diode: Voltage dependent capacitance를 제공하는 diode. PN junction의 depletion region을 capacitance로 쓴다. 이때 depletion region의 두께는 sqrt(양단전압)에 비례하니까, C가 1/sqrt(V)에 비례한다. 기호 사진 넣고<br />
+Varactor diode는 RF회로, 통신회로에 많이 쓰인다.<br />
+<br />
+TTL(Transistor-Transistor Logic)은 BJT로 만들고, CMOS회로는 MOSFET으로 만든다. 왜 TTL을 BJT로 만드는지는 확인해봐야 한다.<br />
+<br />
+Shmoo plot: [슈모 plot] 어떤 시스템이 온도, 전압등의 조건들이 바뀔 때 보여주는 출력을 2차원으로 정리한 plot이다. 이 분야에서는 만들어진 IC가 다양한 조건의 테스트들에서 보여준 결과들을 2차원으로 정리한 plot을 말한다.<br />
+<br />
+EDS테스트를 하면 EDS 산포 데이터가 나온다.<br />
+EDS1: 메모리 테스트 위주, 열가속 테스트. 85도 사용<br />
+EDS2: 모든 항목을 테스트, 상온 사용<br />
+이게 DW7601에만 이렇게 테스트한건지 아니면 다 이렇게 하는건지는 모르겠다.<br />
+<br />
+EDS 산포데이터를 확인한 후에는 trimming을 통해 산포도를 줄인다. 문제의 원인을 찾는건 보통 어려운 일이라, 그냥 trimming으로 어느정도 해결하고 넘어가버린다.<br />
+<br />
+Level shifter는 3.3V logic과 1.8V logic을 연결하기 위해 전압을 바꾸는 곳이다. 여기는 high voltage 소자와 low voltage 소자가 모두 있어서 문제가 자주 생기는 곳이다.<br />
+<br />
+캐패시터 용량은 3자리 수로 나타내는 경우가 있다. 103 이런 식으로. 이거는 10*10^3pF이란 뜻이다.<br />
+다이오드는 띠 있는 쪽이 회로도에서 세로선이다. 사진 넣기.<br />
+<br />
+신뢰성 테스트는 높은 온도에서 진행하기 때문에, 소자 값이 변한다. 원래는 100옴짜리 저항을 넣었는데 온도가 변해서 120옴이 되어버린다든가 하는 식이다.<br />
+<br />
+SMD는 저항값이 voltage dependent라서, 전압 바꾸면 저항값이 많이 변한다.<br />
+<br />
+저항 값이나 캐패시턴스 값은 같은데 소자 크기가 많이 차이나는 경우가 있다. 이거는 정격 전압이 달라서 그렇다. 큰게 정격전압이 더 높은 소자다.<br />
+<br />
+Current probe는 앙페르의 법칙을 활용한 자기 센서다.<br />
+<br />
+인덕터 들어가는 회로면 OVP(Over Voltage Protection) 설정해놓고 실험해야 한다. 전압이 높게 튈 수 있다.<br />
+<br />
+전선을 손으로 잡았더니 noise가 없어지는 경우가 있다. 이때는 전선을 잡은 손이 캐패시터 역할을 한거다.<br />
+<br />
+OCP도 있다. Over Current Protection이다. 전압, 전류가 각각 OVP, OCP값을 넘으면 power supply가 꺼져버린다.<br />
+<br />
+Display limit이란 기능도 있는데, 이건 보여주는 데에만 한계를 거는 기능이다. 예를 들어 display limit을 200mA로 걸어놓으면, 전류가 증가해도 보이는건 200mA로만 보인다. 하지만 실제로는 210mA, 220mA로 계속 올라가고 있다.<br />
+<br />
+OCP는 보통 사용하는 최대전류의 1.5배로 한다. 즉 마진을 1.5배로 잡는다.<br />
+전류가 A단위가 될 정도로 크면 최대전류의 1.2배로 하기도 한다.<br />
+<br />
+PCB는 그 자체로 방열판 기능이 있다. 그래서 IC 납땜할때 온도가 부족하면 납이 중간에 식어버릴 수도 있다. 그렇다고 너무 뜨거운 온도를 쓰면 PCB나 패키지가 타버린다.<br />
+<br />
+17bit 출력에서, variation이 200code면 2^8정도 되니까, 이때는 정보량이 17-8 = 9bit밖에 안된다. 즉, 9bit랑 다를게 없다.<br />
+<br />
+메모리 칩이나 로직 칩은 L을 무조건 작게 만들려고 하지만, 아날로그 칩은 그렇지 암ㅎ다. 당연히 L이 줄어들면 면적이 줄어드니까 경제적이긴 하지만,<br />
+1. Mismatch, 1/f noise를 줄이려면 L을 늘려야 한다.<br />
+2. L&lt;3~4um부터는 L이 조금만 변해도 Vth가 엄청나게 변한다. 즉, process variation이 심해져서 chip간 variation이 심해진다. 그래서 보통 L을 4um 이상 어딘가 variation 적은 곳에 둔다.<br />
+이런 이유로, 아날로그 회로에서는 L을 무작정 줄이지 않는다.<br /></p>
 
 	</div>
 </article>

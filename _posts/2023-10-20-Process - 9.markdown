@@ -2,7 +2,7 @@
 layout: post
 title:  "웨이퍼 종류"
 date:   2023-10-04 19:31:29 +0900
-categories: Process
+categories: Circuits
 ---
 
 웨이퍼에는 3가지가 있다.<br>
