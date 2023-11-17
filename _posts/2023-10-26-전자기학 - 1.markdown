@@ -372,3 +372,14 @@ $$\triangledown \cdot \bar{E} =\bar{E}_{o} \cdot \triangledown f =\bar{E}_{o} \c
 Simple medium이라는 조건이 붙는 이유는, 일반적으로는 $$\triangledown \cdot \bar{D}=0$$인데 simple medium이어야 $$\bar{D}=\varepsilon\bar{E}$$ ($$\varepsilon$$은 상수) 라서 $$\triangledown \cdot \bar{E}=0$$이 된다.<br>
 <br>
 그럼 magnetic field는 진행 방향과 어떤 관계가 있을까?<br>
+이번에도 $$\bar{E}=\bar{E}_{o} \cdot f_{1} \left( x-vt \right)$$를 가져와서 $$\triangledown \times \bar{E} = -\dfrac{\partial \bar{B}}{\partial t}$$를 만족하는지 확인해보자.<br>
+<br>
+$$\triangledown \times \bar{E} = \triangledown \times \left( \bar{E}_{o} \cdot f_{1} \right) = \triangledown f_{1} \times \bar{E}_{o} + f_{1}\triangledown \times \bar{E}_{o}$$<br>
+<br>
+이때 $$\bar{E}_{o}$$는 constant vector기 때문에, $$\triangledown \times \bar{E}_{o}=0$$이다. 상수를 미분하면 0이니까.<br>
+<br>
+따라서 $$\triangledown f_{1} \times \bar{E}_{o} + f_{1}\triangledown \times \bar{E}_{o} = \triangledown f_{1} \times \bar{E}_{o}$$<br>
+<br>
+Gradient를 풀어놓으면 $$\triangledown f_{1} \times \bar{E}_{o} = \left ( \hat{x} \dfrac{\partial f_{1}}{\partial x} \right) \times \bar{E}_{o}$$
+<br>
+이때, $$f_{1} \left( \right)

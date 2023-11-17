@@ -1,4 +1,4 @@
-I"w <p>ESD Cell: Device에서 Electrostatic Discharge(ESD)가 일어나지 못하도록 하는 protection circuit이다. 여기서 ESD는 전하가 한 곳에 모여있다가 한번에 흐르는 현상이다.<br />
+I"�)<p>ESD Cell: Device에서 Electrostatic Discharge(ESD)가 일어나지 못하도록 하는 protection circuit이다. 여기서 ESD는 전하가 한 곳에 모여있다가 한번에 흐르는 현상이다.<br />
 <br />
 Timing Margin: 신호가 늦게 도착해도 회로가 정상동작할 수 있는 최대 시간이다. 신호가 timing margin보다 늦게 오기 시작하면 회로가 오동작하게 된다.<br />
 <br />
@@ -91,5 +91,27 @@ OCP는 보통 사용하는 최대전류의 1.5배로 한다. 즉 마진을 1.5�
 <br />
 PCB는 그 자체로 방열판 기능이 있다. 그래서 IC 납땜할때 온도가 부족하면 납이 중간에 식어버릴 수도 있다. 그렇다고 너무 뜨거운 온도를 쓰면 PCB나 패키지가 타버린다.<br />
 <br />
-17bit 출력에서, variation이 200code면 2^8정도 되니까, 이때는 정보량이 17-8 = 9bit밖에 안된다. 즉, 9bit랑 다를게 없다.<br /></p>
+17bit 출력에서, variation이 200code면 2^8정도 되니까, 이때는 정보량이 17-8 = 9bit밖에 안된다. 즉, 9bit랑 다를게 없다.<br />
+<br />
+메모리 칩이나 로직 칩은 L을 무조건 작게 만들려고 하지만, 아날로그 칩은 그렇지 암ㅎ다. 당연히 L이 줄어들면 면적이 줄어드니까 경제적이긴 하지만,<br />
+1. Mismatch, 1/f noise를 줄이려면 L을 늘려야 한다.<br />
+2. L&lt;3~4um부터는 L이 조금만 변해도 Vth가 엄청나게 변한다. 즉, process variation이 심해져서 chip간 variation이 심해진다. 그래서 보통 L을 4um 이상 어딘가 variation 적은 곳에 둔다.<br />
+이런 이유로, 아날로그 회로에서는 L을 무작정 줄이지 않는다.<br />
+<br />
+Netlist: Network + List, 소자들의 연결 상태를 보여주는 파일이다.<br />
+<br />
+Netlist 안의 소자들을 instance라고 부르는데, 이 instance들은 각자 terminal을 갖고 있다. 얘네가 wire로 이어져서 network가 생기고, 어떻게 연결되어있는지를 적는게 netlist다.<br />
+<br />
+netlist에도 종류가 있다. SPICE같은 instance-based netlist와 EDIF같은 net-based netlist가 있다.<br />
+<br />
+netlist보다 정보가 더 많다면, 그건 verilog나 VHDL같은 Hardware Description Language가 된다.<br />
+<br />
+2021년에, 반도체 수급이 안되자 fab들이 8인치 단가를 비싸게 불러놨는데, 수급이 생각보다 빠르게 월활해져서 8인치 팹이 많이 놀게 되었다. 그래서 fab이 2023년 초에 많이 노는 상황이었다.<br />
+12인치, 60nm 이하 공정은 지금도 예약이 꽉 차있지만, 8인치 팹은 2022년부터는 full-capacity로 돌아가지 못하고 있다. 지금 어떤지는 모르겠다.<br />
+<br />
+ADC 스펙을 보려면 LPE를 봐야 한다. 근데, cosim에서 LPE를 하면 좀 이상하게 나올 때가 있었다. Spectre는 문제가 없어서 netlist까지는 멀쩡히 나오는데, verilog에서 만들어진 layout을 보면 좀 이상한 부분이 있었다. 그래서 cadence의 다른 프로그램인 QRC를 써볼까 생각중이다.<br />
+<br />
+MOSFET의 W를 2배로 만드록 싶은 경우, W를 2배로 새로 만드는것보다 그냥 MOSFET 2개를 병렬로 연결하는게 낫다. MOSFET 끄트머리 때문에 Weff가 정확히 2배가 안되니까.<br />
+<br />
+근데 이렇게 해도 mismatch가 충분히 줄어들지 않으면, 그때는 ‘layout을 섞어야 한다’.<br /></p>
 :ET

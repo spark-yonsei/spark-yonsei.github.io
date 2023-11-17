@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">About</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Electromagnetics">
+				<span class="name">Electromagnetics</span>
+				<span class="badge">3</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Circuits">
+				<span class="name">Circuits</span>
+				<span class="badge">16</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#History">
+				<span class="name">History</span>
+				<span class="badge">5</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Miscellaneous">
+				<span class="name">Miscellaneous</span>
+				<span class="badge">11</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Time-Frequency">
+				<span class="name">Time-Frequency</span>
+				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			하루만에 내용
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>진짜 하루만에 이해하는 반도체 산업 내용정리:<br />
+2극 진공관: 1905년 플레밍, 다이오드 역할<br />
+3극 진공관: 1907년 포리스트, 트랜지스터 역할<br />
+<br />
+1946년 개발된 ENIAC에는 18000개의 진공관과 1500개의 기계식 스위치가 사용됐다. 무게는 30톤, 소비전력은 180kW<br />
+<br />
+처음에는 반도체에 Ge를 썼는데, 노이스와 무어가 Ge 대신 Si를 쓰기 시작했다. Si는 구하기도 쉽고, 산소랑 반응시키면 SiO2라는 훌륭한 절연체가 된다.<br />
+<br />
+킬비가 집적회로 처음 만들었을 때만 해도 Ge기반 반도체였고, 사람이 일일이 다 납땜해야 했다. 재료가 Si로 바뀌면서 배선 방식도 바뀌어 자동화가 가능해졌다.<br />
+<br />
+1960년에는 MOSFET이 나왔다. MOSFET은 구조가 간단해 BJT 하나 들어갈 자리에 MOSFET 50~80개를 넣을 수 있었고, BJT에 비해 공정 단계가 40%정도 적어 만들기 쉬웠고, BJT보다 소비 전력이 낮았고, 스위칭 속도도 빨랐다.<br />
+<br />
+적층 공정을 할 경우, 각 층을 전기적으로 연결하기 위한 수직 구멍인 via를 뚫는 공정이 추가돼서 가격이 올라간다.<br />
+<br />
+칩 크기가 작아지면 한 웨이퍼에서 만들 수 있는 칩 수도 늘어나고, 웨이퍼에서 버려지는 부분도 줄어든다.<br />
+<br />
+Planar FET: 한 방향 전기장으로 leakage 차단<br />
+FinFET: 세 방향 전기장으로 leakage 차단<br />
+GAAFET: 네 방향 전기장으로 leakage 차단<br />
+<br />
+컴퓨터에서 엑셀을 실행할 경우:<br />
+일단 엑셀 로고가 뜨며 로딩이 된다. 이 시간동안, CPU는 ROM에 있는 엑셀 프로그램 데이터 중 필요한 데이터들을 RAM으로 옮긴다. ROM은 속도가 느리기 때문에 옮겨서 쓰려는거다.<br />
+<br />
+데이터가 RAM으로 다 옮겨지면 엑셀이 실행된다. 엑셀 칸에 1, 2 등을 적으면 이게 다 RAM에 저장되고, 수식을 넣어 계산시키면 CPU가 엑셀 프로그램 데이터에 적혀있는대로 계산해준다.<br />
+<br />
+엑셀에서 저장 버튼을 누르면 RAM에 임시로 저장됐던 정보들이 다 ROM으로 보내진다. 그냥 끄면 ROM으로 안가고 날아가버린다.<br />
+<br />
+그래서 RAM이 커야 프로그램을 여러 개 띄워둘 수 있다. 프로그램에 적힌 계산방식은 CPU가 다 실행해준다. ROM은 흔히 보는 C드라이브다.<br />
+<br />
+CPU는 크게 제어 유닛, ALU(Arithmetic Logic Unit), 아주 작은 용량의 메모리 유닛(캐시메모리, 레지스터)로 이루어져 있다.<br />
+제어유닛: 사용자의 명령을 해석하고, 각 유닛 사이 통신을 제어<br />
+ALU: 제어 유닛이 해석한 명령을 수행하는 연산 기능<br />
+메모리 유닛: 입력이나 출력 기억<br />
+(사진)<br />
+CPU는 계산만 해주는 애고, 기억은 RAM에서 하는데 캐시메모리가 왜 필요한가?<br />
+앞에서 ROM이 너무 느리니 데이터를 RAM으로 옮겨 CPU와 작업시킨다고 했는데, 사실 CPU 입장에서는 RAM도 너무 느리다. 그래서 RAM에 있는 데이터를 RAM보다 더 빠른 캐시메모리와 레지스터로 옮겨 작업한다.<br />
+그럼 캐시메모리와 레지스터를 RAM 대신 쓰면 안되나?<br />
+그러기에는 캐시메모리와 레지스터가 용량 대비 가격이 너무 비싸다.<br />
+그래서 CPU에 넣을 때도 꼭 필요한 만큼만 넣는다.<br />
+<br />
+CPU의 성능은 Core, Thread, Clock, Architecture에 의해 결정된다.<br />
+Core는 ALU의 개수, Thread는 각 ALU가 동시에 몇가지 작업을 처리할 수 있는지 알려준다.<br />
+<br />
+Clock은 초당 몇 개의 instruction이 실행되는지 보여주고, architecture는 cpu가 어떤 명령어 체계를 사용하고, 해석과 연산을 어떻게 분배할 것인지, CPU와 주변 부품들의 구성과 동작에 대한 구조를 의미한다.<br />
+<br />
+그래서 같은 core, clock수를 갖고 있어도 architecture에 따라 CPU의 성능이 달라진다.<br />
+<br />
+CPU의 동작을 요리에 비유할 수 있다.<br />
+ROM: 냉장고, RAM: 조리대, CPU: 요리사, 연산: 요리, 데이터: 식재료<br />
+<br />
+냉장고에서 식재료를 꺼내 조리대에 올려놓는다. 요리사가 요리를 할거다.<br />
+<br />
+이때 요리사의 수: Core 수, 각 요리사들의 팔 개수: Thread 수, 요리사의 요리 속도: clock 수<br />
+<br />
+그래서 core<em>thread</em>clock이 연산 속도를 보여주게 된다.<br />
+<br />
+Architecture: 주방 구조, 업무 체계<br />
+어떻게 보면 architecture가 가장 중요할 수도 있다. 요리사가 아무리 훌륭해도 업무 체계가 구데기면 일 못한다.<br />
+<br />
+2021년 기준, CPU시장 점유율은 인텔 63%, 암드 37%<br />
+<br />
+이번엔 GPU에 대해 알아보자.<br />
+그래픽은 픽셀들이 모여서 만들어지는데, 기술이 발전할수록 당연히 픽셀 수도 증가한다. 요즘 쓰이는 4k 모니터는 약 830만개 픽셀을 갖고 있으며, 각 픽셀이 2^24~=1678만개 색을 낼 수 있다.<br />
+<br />
+우리가 모니터로 보는 화면은 수백만개의 픽셀이 저마다의 색깔을 아주 짧은 시간동안 만들어내면서 생긴다. 각 순간의 화면을 모니터에 구현하기 위해, 컴퓨터는 각 픽셀이 가져야 하는 값을 모두 계산해야 한다. 여기에 쓰이는게 GPU다.<br />
+<br />
+CPU는 어려운 일이든 쉬운 일이든 한번에 하나밖에 못하지만, GPU는 동시에 여러 작업을 할 수 있다.<br />
+CPU는 프로그램에 설명만 되어 있다면 복잡한 연산도 다 해주는데, 그런 CPU를 그래픽 연산에 쓰는건 아주 비효율적인 일이다.<br />
+그래픽 연산은 계산량이 많지만, 복잡한 계산을 필요로 하지는 않는다.<br />
+<br />
+GPU는 코어 성능이 CPU보다 떨어지지만, 대신 코어를 몇천개씩 갖고 있다.<br />
+CPU의 ALU가 요리사 4명이면, GPU의 ALU는 알바 5천명이다.<br />
+<br />
+clock에도 차이가 있다. CPU clock은 4GHz정도 되는데, GPU clock은 1.5~2GHz정도 된다.<br />
+<br />
+GPU에 들어가는 단순 연산용 ALU는 Stream Processor라는 애들이다.<br />
+<br />
+GPGPU: General-Purpose computing on GPU<br />
+<br />
+GPU가 코인 채굴에 사용되면서 인기를 많이 끌었다.<br />
+코인 채굴은 거래 기록을 사슬처럼 이어붙이는 단순 작업이라 GPU가 많이 쓰였다.<br />
+<br />
+이렇게, GPU를 여러 작업들에 활용하는 기술을 GPGPU라 부른다. 요즘은 인공지능 연산에 GPU가 많이 쓰인다.<br />
+(사진)<br />
+GPU는 이렇게, 제어 유닛과 메모리 유닛이 수많은 ALU들을 보조하는 형태로 구성되어 있다.<br />
+<br />
+2021년 기준, GPU 시장의 56%를 엔비디아가, 26%를 암드가, 나머지 18%를 인텔이 점유하고 있다. *인텔 GPU가 있나?<br />
+<br />
+AP, SoC:<br />
+2000년대 후반, 반도체 산업을 다시 한번 부흥시키는 제품이 등장한다. 스마트폰이다.<br />
+스마트폰에는 AP(Application Processor)가 들어있어서, 소프트웨어를 설치하고 실행할 수 있다.<br />
+<br />
+컴퓨터 메인보드를 보면 CPU, GPU, 통신모뎀, RAM, ROM, 전력관리, 오디오, I/O 장치들이 장착되어 있다. 이런걸 다 핸드폰에 넣기 위해 하나의 IC로 만든게 AP다. AP처럼 여러 부품들이 하나에 들어가면 이걸 SoC(System on Chip)이라 부른다.<br />
+(사진)<br />
+AP시장에 가장 먼저 뛰어든건 삼성전자, 퀄컴, TI, Marvell이었다. 애플 아이폰, 아이팟 터치에도 삼성전자의 AP가 들어갔다. 그러다가 TI와 Marvell이 AP시장에서 철수했다.<br />
+<br />
+이때쯤 재정난을 겪던 AMD는 모바일 그래픽 사업부를 퀄컴에 매각했다. 퀄컴은 그 뒤 모바일 그래픽 분야에서도 강점을 보이며 계속 잘나갔다.<br />
+<br />
+초기 스마트폰 시장은 고성능 위주였으나, 시장이 포화된 후에는 중저가 스마트폰 시장이 열렸다. 대만의 MediatTek이 중저가 스마트폰 시장을 잘 파고들었다.<br />
+<br />
+2010년 이후로는 스마트폰 제조사들이 AP를 직접 설계하기 시작했다.<br />
+애플은 2010년, 반도체 설계 업체 Intrinsity를 인수하고, 삼성전자의 AP를 버리고 직접 AP를 만들기 시작한다.<br />
+<br />
+화웨이도 스마트폰에 들어가는 AP를 그들의 자회사인 HiSilicon에서 만든다. 결국 삼성전자, 애플, 화웨이 모두 AP를 직접 만들고 있다.<br />
+<br />
+아니 컴퓨터 제조사들은 CPU, RAM, ROM 직접 안만드는데 왜 스마트폰 제조사들은 AP를 직접 만드는건가?<br />
+1. 제품 출시 일정이 AP회사 일정에 끌려다녀서.<br />
+2. 넣고 싶은 기능 맘대로 넣고싶어서.<br />
+<br />
+현재 AP는 저전력 동작을 위해 많이 노력하고 있다.<br />
+<br />
+2022년 1분기, AP시장 점유율은 미디어텍 38%, 퀄컴 30%, 애플 15%, 유니 SoC 11%, 삼성전자 5%, HiSilicon 1%<br />
+<br />
+NPU:<br />
+Machine Learning은 인공지능의 한 분야고, Deep Learning은 Machine Learning에서 활용되는 알고리즘이다.<br />
+<br />
+요즘 인공지능 반도체라고 NPU라는게 나오는데, 왜 GPU를 두고 NPU라는걸 새로 만든걸까?<br />
+1. 내장 AI 알고리즘, 2. 데이터 전송 속도, 3. 가격<br /></p>
+
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>

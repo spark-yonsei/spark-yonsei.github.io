@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">About</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Electromagnetics">
+				<span class="name">Electromagnetics</span>
+				<span class="badge">3</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Circuits">
+				<span class="name">Circuits</span>
+				<span class="badge">16</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#History">
+				<span class="name">History</span>
+				<span class="badge">5</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Miscellaneous">
+				<span class="name">Miscellaneous</span>
+				<span class="badge">11</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Time-Frequency">
+				<span class="name">Time-Frequency</span>
+				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			Depletion MOSFET
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>MOSFET에 대해 이미 배우긴 했지만, MOSFET에는 Enhancement mode MOSFET과 Depletion mode MOSFET이 있다.<br />
+Enhancement mode MOSFET이 우리가 원래 아는 MOSFET이고,<br />
+Depletion mode MOSFET은 channel이 생겨날 위치에 n-type dopant implant를 박아서 channel을 미리 만들어놓은 MOSFET이다.<br />
+<br />
+그래서 Vgs=0일 때, Enhancement MOSFET이면 당연히 MOSFET이 꺼져있다. Vgs가 Vth보다 작아서 채널이 안생기니까.<br />
+근데 depletion mode MOSFET이면 Vgs를 마이너스로 걸어야 겨우겨우 채널이 사라져 MOSFET이 꺼진다. 즉, Vth가 마이너스다. 그래서 NMOS긴 한데 Vth가 마이너스인 NMOS가 된다.<br />
+<br />
+Native MOSFET이라는 것도 있다. Native면 특성이 Enhancement와 Depletion 사이라서, Vth~=0인 MOSFET을 말한다.<br />
+우리가 아는 NMOS는 P-well 위에 fabricate하는데, Native NMOS는 약하게 도핑된 p-type silicon 위에 fabricate한다. 당연히, 비교하자면 p-well의 농도가 더 높을 것이다.<br />
+<br />
+그래서, p-type silicon위에 fabricate할때는 bulk에 상대적으로 hole이 적은 상태가 된다. 그래서 채널이 훨씬 쉽게 생긴다! 결국 Vth가 낮다고 말할 수 있다.<br />
+이 방식으로 Vth~=0까지 가면 Native MOSFET이 된다.<br />
+<br />
+Vth 낮으면 좋은거 아닌가? Native MOSFET은 n-well이나 p-well 위에 만들어진 MOSFET들보다 conductivity가 낮다. 그래서 같은 conductivity를 얻으려고 해도, native MOSFET은 일반 MOSFET들보다 크기가 더 커야 한다.<br />
+<br />
+Depletion load NMOS Logic이라는게 있다. Logic gate들 만드는 방식 중 하나인건데, 이 방식은 depletion-mode NMOS를 Current Source로 만들어 쓴다. Depletion MOSFET은 다른 MOSFET들보다 더 우수한 current source로서 동작할 수 있기 때문이다.<br />
+<br />
+인텔이 HMOS라고 부르는 process가 depletion-load NMOS process다.<br /></p>
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>
