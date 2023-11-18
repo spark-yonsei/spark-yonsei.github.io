@@ -1,4 +1,4 @@
-I":{<p>고급마이크로파공학 내용 정리<br />
+I"<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -372,5 +372,15 @@ Simple medium이라는 조건이 붙는 이유는, 일반적으로는 \(\triangl
 이때 \(\bar{E}_{o}\)는 constant vector기 때문에, \(\triangledown \times \bar{E}_{o}=0\)이다. 상수를 미분하면 0이니까.<br />
 <br />
 따라서 \(\triangledown f_{1} \times \bar{E}_{o} + f_{1}\triangledown \times \bar{E}_{o} = \triangledown f_{1} \times \bar{E}_{o}\)<br />
+<br />
+Gradient를 풀어놓으면 \(\triangledown f_{1} \times \bar{E}_{o} = \left ( \hat{x} \dfrac{\partial f_{1}}{\partial x} \right) \times \bar{E}_{o}\)
+<br />
+이때, \(f_{1} \left( x-vt \right)\)였으니 \(\dfrac{\partial f_{1}}{\partial x} = -\dfrac{1}{v}\dfrac{\partial f_{1}}{\partial t}\)라고 적을 수 있다. 둘 다 \(f'_{1} \left( x-vt \right)\)니까.<br />
+<br />
+따라서 \(\left ( \hat{x} \dfrac{\partial f_{1}}{\partial x} \right) \times \bar{E}_{o} = \left(\hat{x} \times \bar{E}_{o} \right) \cdot \left( -\dfrac{1}{v}\dfrac{\partial f_{1}}{\partial t} \right)\)<br />
+<br />
+이 식이 \(-\dfrac{\partial \bar{B}}{\partial \bar{t}}\)가 되어야 \(\triangledown \times \bar{E} = -\dfrac{\partial \bar{B}}{\partial t}\)를 만족할 것이다.<br />
+<br />
+\(-\dfrac{\partial \bar{B}}{\partial t} = \left(\hat{x} \times \bar{E}_{o} \right) \cdot \left( -\dfrac{1}{v}\dfrac{\partial f_{1}}{\partial t} \right)\)라고 놓고, 여기서 양변을 t로 적분하면<br />
 <br /></p>
 :ET

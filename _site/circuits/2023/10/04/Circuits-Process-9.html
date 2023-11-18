@@ -50,7 +50,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#History">
 				<span class="name">History</span>
-				<span class="badge">5</span>
+				<span class="badge">6</span>
 	    	</a>
  		</li>
 	    
@@ -82,39 +82,37 @@
 <article class="post">
 	<header class="post-header">
 		<div class="post-title"> 
-			5. 증착 공정
+			웨이퍼 종류
 		</div>
 		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
 		</time>		
 	</header>
 
 	<div class="post-content">
-		<p>반도체 8대공정:<br />
-1. 웨이퍼 제조 공정(Wafer Fabrication)<br />
-2. 산화 공정(Oxidation)<br />
-3. 포토 공정(Photolithography)<br />
-4. 식각 공정(Etching)<br />
-5. 증착 공정(Deposition)<br />
-6. 금속 배선 공정(Metallization)<br />
-7. EDS 공정(Electrical Die Sorting)<br />
-8. 패키징 공정(Packaging)<br />
+		<p>웨이퍼에는 3가지가 있다.<br />
+1. Bulk Polished Wafer<br />
+2. Epi Silicon Wafer,<br />
+3. SOI Wafer<br />
+Bulk polished silicon wafer는 비정질(Amorphous, 원자들 사이 거리에 특별한 규칙이 없음) 고체라서, 전자 이동 속도가 결정질(Crystalline)에 비해 느리다. 그래서 빠르게 작동해야 하는 CMOS등에는 사용하지 않고, DRAM이나 NAND Flash같은 메모리반도체에 쓰인다.<br />
 <br />
-5. 증착 공정<br />
-반도체 칩 하나에는 엄청나게 많은 층(layer)들이 존재한다. 웨이퍼 위에 박막(thin film)을 만들어서 층을 만들어주는 과정이 증착(deposition)과정이다.<br />
+Epi Silicon wafer는 bulk wafer 위에 crystalline silicon으로 되어 있는 epitaxial layer가 있는 구조다. Crystalline 구조가 있기 때문에 전자 이동속도가 bulk wafer보다 빠르다. 그래서 CMOS 이미지센서 등 속도가 빨라야 하는 분야에 쓰인다. 대신, 가격은 bulk wafer보다 비싸다.<br />
 <br />
-증착 방식에는 2가지가 있다. PVD(Physical Vapor Decomposition), CVD(Chemical Vapor Decomposition)이 있다.<br />
-PVD는 source material을 기체로 만들어 웨이퍼 위에 박막이 생기도록 한다.<br />
-CVD는 열 CVD, 광 CVD, 플라즈마 CVD 등이 있고, 플라즈마 CVD가 가장 많이 사용되고 있다.<br />
+SOI wafer의 SOI는 Silicon on Insulator의 약자다. 말 그대로 bulk wafer 위에 insulator가 있고, 그 위에 다시 silicon이 있는 형태다. 이 구조는 parasitic capacitance를 줄이고 switching speed를 올려서 leakage current를 줄여야 하는 회로나 switching speed가 빨라야 하는 회로, 또는 parasitic capacitance가 적어야 하는 RF 회로 등에 쓰인다. 가격은 얘가 제일 비싸다.<br />
 <br />
-PVD는 아르곤 원자를 쓰기 때문에, Ar 수 조절로 웨이퍼에 원자 몇 개를 붙일지 결정할 수 있다.<br />
-하지만 CVD는 PVD만큼 정확한 원자 수 조절이 어렵다.<br />
+IC 회로에서는 Latch-up이라는 현상이 생길 때가 있다. 웨이퍼 안에 박힌 p,n 접합들이 PNP 또는 NPN 트랜지스터처럼 동작하는 PNPN구조, 즉 사이리스터 구조를 만들어 전압이 이상하게 걸리면 short가 되어버리는 현상이다.<br />
 <br />
-그래서 CVD는 PID제어를 통해 박막으로 만들 원자 수를 조절한다. PID 제어라는게 원래 화학 분야에서 기체 섞다가 나온 제어 방식이다.<br />
+Bulk wafer가 아닌 epi, soi wafer를 쓰는게 latch-up 방지에도 도움이 된다.<br />
 <br />
-박막을 깔기 전에, 도핑을 통해 source와 drain을 만드는 공정도 증착 공정으로 분류된다.<br />
-산화 공정때 도핑해서 만들었던건 n-well과 p-well이고, 여기서 만드는건 source와 drain이라 다른거다.<br />
+앞에 적었던 대로, 웨이퍼 직경은 8인치(200mm) 아니면 12인치(300mm)다. SK실트론 사이트 가보면 200mm Epi wafer로는 Analog PMIC, Power discrete, CMOS Image Sensor를 만들고, 300mm Epi wafer로는 MPU, CMOS Image Sensor, Logic(Driver IC)을 만든다.<br />
 <br />
-Frontend process와 backend process로 반도체 공정을 나눌 때가 많은데, 그 경우 증착 공정까지가 frontend process, 그 이후가 backend process다.<br /></p>
+MPU는 CPU를 소형화한건고, MCU는 컴퓨터를 소형화한거다.<br />
+MPU: Micro Processing Unit,<br />
+MCU: Micro Controller Unit<br />
+<br />
+CMOS Image Sensor는 CIS라고 많이들 적는다.<br />
+<br />
+원래 Silicon Wafer의 두께는 600um~900um인데, 패키징할때 백그라인딩이라 해서 두께 100um 수준까지 갈아놓는다. 근데 너무 얇아지면 기계적 stress로 인해 휘어지다가 전기적 특성이 바뀔 수 있다. 그래서 너무 깎아버리면 안된다.<br /></p>
+
 
 	</div>
 </article>

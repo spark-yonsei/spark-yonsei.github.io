@@ -50,7 +50,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#History">
 				<span class="name">History</span>
-				<span class="badge">5</span>
+				<span class="badge">6</span>
 	    	</a>
  		</li>
 	    
@@ -82,29 +82,39 @@
 <article class="post">
 	<header class="post-header">
 		<div class="post-title"> 
-			STI 공정
+			5. 증착 공정
 		</div>
 		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
 		</time>		
 	</header>
 
 	<div class="post-content">
-		<p>STI(Shallow Trench Isolation) Module:<br />
-웨이퍼의 n-영역과 p-영역을 분리하는 isolation 역할을 한다.<br />
+		<p>반도체 8대공정:<br />
+1. 웨이퍼 제조 공정(Wafer Fabrication)<br />
+2. 산화 공정(Oxidation)<br />
+3. 포토 공정(Photolithography)<br />
+4. 식각 공정(Etching)<br />
+5. 증착 공정(Deposition)<br />
+6. 금속 배선 공정(Metallization)<br />
+7. EDS 공정(Electrical Die Sorting)<br />
+8. 패키징 공정(Packaging)<br />
 <br />
-STI 공정을 쓰면 chip size를 작게 할 수 있다. 원래 PN junction을 분리하려면 거리가 필요했는데, STI로 isolation을 하면 거리 없이도 isolation을 할 수 있다. 결과적으로, 회로의 집적도를 높일 수 있다.<br />
+5. 증착 공정<br />
+반도체 칩 하나에는 엄청나게 많은 층(layer)들이 존재한다. 웨이퍼 위에 박막(thin film)을 만들어서 층을 만들어주는 과정이 증착(deposition)과정이다.<br />
 <br />
-옛날에는 P영역 N영역 사이에 SiO2를 대충 끼웠는데, bird’s beak 현상이 발생해서 STI 모양으로 바꿨다고 한다. Bird’s beak 현상은 SiO2가 양 옆을 밀어내며 gate electrode 아래까지 밀고 들어와 채널에 영향을 주는 현상이다.<br />
+증착 방식에는 2가지가 있다. PVD(Physical Vapor Decomposition), CVD(Chemical Vapor Decomposition)이 있다.<br />
+PVD는 source material을 기체로 만들어 웨이퍼 위에 박막이 생기도록 한다.<br />
+CVD는 열 CVD, 광 CVD, 플라즈마 CVD 등이 있고, 플라즈마 CVD가 가장 많이 사용되고 있다.<br />
 <br />
-그래서 요즘은 trench 모양으로 만들긴 하지만, 그렇다고 SiO2가 양옆을 안밀어내는건 아니다. STI의 SiO2에 의해 반도체 영역이 stress를 받는걸 STI stress effect라 한다. 이 effect를 다른 회사들은 모델링 안하는데, 삼성전자 LF6S에서는 한다.<br />
+PVD는 아르곤 원자를 쓰기 때문에, Ar 수 조절로 웨이퍼에 원자 몇 개를 붙일지 결정할 수 있다.<br />
+하지만 CVD는 PVD만큼 정확한 원자 수 조절이 어렵다.<br />
 <br />
-STI Stress에 의한 영향을 방지하려면, active region을 꽉 채워놓거나 더미로라도 채워놓는다.<br />
+그래서 CVD는 PID제어를 통해 박막으로 만들 원자 수를 조절한다. PID 제어라는게 원래 화학 분야에서 기체 섞다가 나온 제어 방식이다.<br />
 <br />
-옛날에 STI 대신 쓰던 Isolation 기술 이름은 LOCOS(Local Oxidation of Silicon)다.<br />
+박막을 깔기 전에, 도핑을 통해 source와 drain을 만드는 공정도 증착 공정으로 분류된다.<br />
+산화 공정때 도핑해서 만들었던건 n-well과 p-well이고, 여기서 만드는건 source와 drain이라 다른거다.<br />
 <br />
-STI 말고 DTI(Deep Trench Isolation) 공정도 있다. DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNT이 증가하는 이미지 센서 등에 사용된다. 이미지 센서에서 Cell들을 분리하는 기술은 ‘ISOCELL’ 기술이라 불린다. Isolation + Cell<br />
-<br />
-STI Stress를 고려해서, layout시 바깥쪽에 source가 가도록 한다. 또는 양쫓 끝에 dummy transistor를 넣는다. Finger로 구성할 때 이야기고, N은 Vss 쪽으로, P는 VDD쪽으로 갈 가능성이 높아서 그렇다. 고 하는데 무슨 뜻인지는 알아봐야 한다.<br /></p>
+Frontend process와 backend process로 반도체 공정을 나눌 때가 많은데, 그 경우 증착 공정까지가 frontend process, 그 이후가 backend process다.<br /></p>
 
 	</div>
 </article>
