@@ -1,95 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">About</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">3</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Circuits">
-				<span class="name">Circuits</span>
-				<span class="badge">16</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#History">
-				<span class="name">History</span>
-				<span class="badge">6</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Miscellaneous">
-				<span class="name">Miscellaneous</span>
-				<span class="badge">11</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Time-Frequency">
-				<span class="name">Time-Frequency</span>
-				<span class="badge">1</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			반도체제국 내용
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>HiSilicon: 화웨이의 칩 설계 회사<br />
+I"1R<p>HiSilicon: 화웨이의 칩 설계 회사<br />
 <br />
 메모리 회사: 어느 정도 용량의 메모리가 가장 수요가 많을지, 어느 정도 전력 소비까지 고객이 감내할 수 있는지 확인<br />
 <br />
@@ -347,15 +256,9 @@ SSD 1TB, HDD 10TB여도 SSD 1TB를 고를 수 있으니까. 10TB까지 필요 �
 UBER: 수정 불가능한 에러가 발생할 확률. Uncorrectable Bit Error Rate<br />
 <br />
 삼성전자는 DRAM때는 원가경쟁으로 경쟁업체들을 말려죽였고, 낸드 시장에서는 낸드와 다른 하드웨어들을 결합한 솔루션(노트북, 아이팟나노 등)들을 제공했다. NOR 대신 NAND쪽을 선택한 것도 옳은 선택이었다.<br />
-(107페이지 삼성전자 연표)<br />
+(삼성전자 연표)<br />
 <br />
 ISA: Instruction Set Architecture. 인텔, AMD CPU는 인텔의 ISA인 x86, x86-64를 쓴다.<br />
 ARM CPU는 ARM V8을 쓴다.<br />
 <br /></p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET
