@@ -5,6 +5,5 @@ date:   2023-10-04 19:31:29 +0900
 categories: History
 ---
 
-Under test
-$$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$<br>
-$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
+전두환 정부와 반도체
+https://shindonga.donga.com/economy/article/all/13/3126496/1

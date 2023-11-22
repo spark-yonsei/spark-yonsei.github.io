@@ -5,6 +5,4 @@ date:   2023-10-04 19:31:29 +0900
 categories: History
 ---
 
-Under test
-$$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$<br>
-$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
+전기요금 누진 방식 1973년에 처음 도입, 명분은 1차 오일쇼크

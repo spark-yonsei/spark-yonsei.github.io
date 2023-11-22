@@ -5,6 +5,12 @@ date:   2023-10-04 19:31:29 +0900
 categories: History
 ---
 
-Under test
-$$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$<br>
-$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
+1887년 GE에서 경복궁 건천궁에 전등 놓아준다.
+중국 일본보다 빨랐다는데 출처 필요
+
+우리나라 전기의 날은 4월 10일
+
+
+https://blog.naver.com/gekorea2010/220753293954
+https://www.etnews.com/20190405000210
+http://www.keaj.kr/news/articleView.html?idxno=3536
