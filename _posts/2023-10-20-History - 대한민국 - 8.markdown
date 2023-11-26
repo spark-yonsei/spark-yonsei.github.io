@@ -5,6 +5,24 @@ date:   2023-10-04 19:31:29 +0900
 categories: History
 ---
 
-Under test
-$$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$<br>
-$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
+1993년~1998년
+
+만화도 컴퓨터로...컴퓨터그래픽 이용한 첨단 만화영화
+https://news.kbs.co.kr/news/pc/view/view.do?ncd=3743401
+
+
+김영삼 대통령, 반도체 256MD 개발 연구팀 초청
+https://news.kbs.co.kr/news/pc/view/view.do?ncd=3743402
+
+
+
+세계 최초 256메가 D램, ‘아이폰 핵심’ 플래시메모리… 반도체 코리아 서막 열었다
+https://www.chosun.com/culture-life/culture_general/2023/07/18/FOHP4IGDENEW3K62W55CIZKLSA/
+
+
+“日보다 먼저 개발하라” 가보지 않은 길에서 이룬 ‘반도체 독립’
+https://www.donga.com/news/Economy/article/all/20191211/98747716/1
+
+
+1994년 8월 29일, 삼성전자가 256MB DRAM 개발한다. 84년전 경술국치가 있었던 날인데 맞춰서 발표한 것 같다
+
