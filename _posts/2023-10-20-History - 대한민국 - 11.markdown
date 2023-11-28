@@ -5,6 +5,8 @@ date:   2023-10-04 19:31:29 +0900
 categories: History
 ---
 
+2008년~2013년
+
 미디어법<br>
 ![alt text](/public/img/shangus1.jpg)<br>
 미디어법에 반대하는 강기갑 의원<br>
@@ -18,3 +20,5 @@ categories: History
 https://www.yna.co.kr/view/AKR20170329102351009
 https://www.chosun.com/economy/tech_it/2023/10/14/YJZIJRVJORAPPKASWGJFCNPX7Q/
 
+2012년 테슬라 모델 S가 출시된다.
+이후 전기차가 점점 늘어난다

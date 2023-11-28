@@ -5,7 +5,7 @@ date:   2023-10-04 19:31:29 +0900
 categories: History
 ---
 
-2017~2022년
+2017년~2022년
 
 탈원전, 신재생 확대 정책
 
@@ -18,3 +18,4 @@ https://sauvik-das.medium.com/censorship-sni-and-privacy-violations-4918464c9cc2
 
 文대통령 ‘K-반도체’ 보고대회 참석…삼성·SK ’510조' 투자 나선다
 https://biz.chosun.com/policy/politics/2021/05/13/6TEENI73KFCFPOV52ZJTXK3WCM/
+
