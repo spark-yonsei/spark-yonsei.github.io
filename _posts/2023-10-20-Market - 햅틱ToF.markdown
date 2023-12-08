@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "햅틱 ToF"
+title:  "기술 - 햅틱 ToF"
 date:   2023-10-04 19:31:29 +0900
-categories: Miscellaneous
+categories: Market
 ---
 
 Haptic:<br>

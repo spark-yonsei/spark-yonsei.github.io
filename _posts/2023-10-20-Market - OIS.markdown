@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "OIS"
+title:  "기술 - OIS"
 date:   2023-10-04 19:31:29 +0900
-categories: Miscellaneous
+categories: Market
 ---
 
 OIS, FAE2 팀에서 설명해준 내용:<br>
