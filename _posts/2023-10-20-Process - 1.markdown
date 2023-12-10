@@ -2,7 +2,7 @@
 layout: post
 title:  "1. 웨이퍼 제조 공정"
 date:   2023-10-04 19:31:29 +0900
-categories: Circuits
+categories: Process
 ---
 
 반도체 8대공정:<br>
@@ -78,3 +78,18 @@ flat zone 웨이퍼보다는 notch 웨이퍼가 더 많은 die를 만들 수 있
 1,2위가 일본, 3위가 대만, 4위가 독일, 5위가 한국이다.<br>
 SK실트론은 국내 유일 웨이퍼 제조업체다.<br>
 하여간 웨이퍼 제조시장은 일본 회사들이 큰 비중을 차지하고 있다.<br>
+
+모래를 녹여 SiO2를 얻는다.
+SiO2를 C(탄소)와 반응시켜 순도 99% 실리콘을 만든다.
+MGS: Metallurgical Grade Silicon, 순도 99% Si
+
+2차 정제과정을 통해 순도를 높인다.
+EGS: Electronic Grade Silicon
+
+이렇게 만들어진 EGS는 다결정질(Polycrystalline) 상태다.
+
+비정질(Amorphous): 원자가 아무 질서 없이 있는 상태
+단결정질(Crystalline): 원자가 정해진 규칙대로 고르게 배열되어있는 상태
+다결정질(Polycrystalline): 미세한 단결정질 조각들이 서로 다르게 뭉쳐있는 상태
+
+다결정질 Silicon을 단결정질로 바꾸는 방법이 초크랄스키법(CZ법)이다.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Depletion MOSFET"
 date:   2023-10-04 19:31:29 +0900
-categories: Circuits
+categories: Process
 ---
 
 MOSFET에 대해 이미 배우긴 했지만, MOSFET에는 Enhancement mode MOSFET과 Depletion mode MOSFET이 있다.<br>
