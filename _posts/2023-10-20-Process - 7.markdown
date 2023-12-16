@@ -6,15 +6,18 @@ categories: Process
 ---
 
 반도체 8대공정:<br>
-1\. 웨이퍼 제조 공정(Wafer Fabrication)<br>
-2\. 산화 공정(Oxidation)<br>
-3\. 포토 공정(Photolithography)<br>
-4\. 식각 공정(Etching)<br>
-5\. 증착 공정(Deposition)<br>
-6\. 금속 배선 공정(Metallization)<br>
+1\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-1.html" target="_blank">웨이퍼 제조 공정(Wafer Fabrication)</a><br>
+2\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-2.html" target="_blank">산화 공정(Oxidation)</a><br>
+2\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-3.html" target="_blank">포토 공정(Photolithography)</a><br>
+4\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-4.html" target="_blank">식각 공정(Etching)</a><br>
+5\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-5.html" target="_blank">증착 공정(Deposition)</a><br>
+6\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-6.html" target="_blank">금속 배선 공정(Metallization)</a><br>
 7\. EDS 공정(Electrical Die Sorting)<br>
-8\. 패키징 공정(Packaging)<br>
+8\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-8.html" target="_blank">패키징 공정(Packaging)</a><br>
 <br>
+
+
+
 7\. EDS 공정<br>
 복잡한 제조과정을 거쳐 만들어지는 반도체 칩은, 마지막으로 양품과 불량품을 구분하는 테스트 단계로 보내진다.<br>
 <br>

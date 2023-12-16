@@ -6,14 +6,14 @@ categories: Process
 ---
 
 반도체 8대공정:<br>
-1\. 웨이퍼 제조 공정(Wafer Fabrication)<br>
-2\. 산화 공정(Oxidation)<br>
+1\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-1.html" target="_blank">웨이퍼 제조 공정(Wafer Fabrication)</a><br>
+2\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-2.html" target="_blank">산화 공정(Oxidation)</a><br>
 3\. 포토 공정(Photolithography)<br>
-4\. 식각 공정(Etching)<br>
-5\. 증착 공정(Deposition)<br>
-6\. 금속 배선 공정(Metallization)<br>
-7\. EDS 공정(Electrical Die Sorting)<br>
-8\. 패키징 공정(Packaging)<br>
+4\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-4.html" target="_blank">식각 공정(Etching)</a><br>
+5\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-5.html" target="_blank">증착 공정(Deposition)</a><br>
+6\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-6.html" target="_blank">금속 배선 공정(Metallization)</a><br>
+7\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-7.html" target="_blank">EDS 공정(Electrical Die Sorting)</a><br>
+8\. <a href="https://sparkrf.github.io/process/2023/10/04/Process-8.html" target="_blank">패키징 공정(Packaging)</a><br>
 <br>
 3\. 포토 공정<br>
 역사부터 살펴본다.<br>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">About</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Electromagnetics">
+				<span class="name">Electromagnetics</span>
+				<span class="badge">3</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Circuits">
+				<span class="name">Circuits</span>
+				<span class="badge">4</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#History">
+				<span class="name">History</span>
+				<span class="badge">21</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Market">
+				<span class="name">Market</span>
+				<span class="badge">10</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Miscellaneous">
+				<span class="name">Miscellaneous</span>
+				<span class="badge">11</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Process">
+				<span class="name">Process</span>
+				<span class="badge">12</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Time-Frequency">
+				<span class="name">Time-Frequency</span>
+				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			4. 식각 공정
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>반도체 8대공정:<br />
+1. <a href="https://sparkrf.github.io/process/2023/10/04/Process-1.html" target="_blank">웨이퍼 제조 공정(Wafer Fabrication)</a><br />
+2. <a href="https://sparkrf.github.io/process/2023/10/04/Process-2.html" target="_blank">산화 공정(Oxidation)</a><br />
+2. <a href="https://sparkrf.github.io/process/2023/10/04/Process-3.html" target="_blank">포토 공정(Photolithography)</a><br />
+4. 식각 공정(Etching)<br />
+5. <a href="https://sparkrf.github.io/process/2023/10/04/Process-5.html" target="_blank">증착 공정(Deposition)</a><br />
+6. <a href="https://sparkrf.github.io/process/2023/10/04/Process-6.html" target="_blank">금속 배선 공정(Metallization)</a><br />
+7. <a href="https://sparkrf.github.io/process/2023/10/04/Process-7.html" target="_blank">EDS 공정(Electrical Die Sorting)</a><br />
+8. <a href="https://sparkrf.github.io/process/2023/10/04/Process-8.html" target="_blank">패키징 공정(Packaging)</a><br />
+<br />
+4. 식각 공정<br />
+<br />
+Photo 공정이 끝나면, 이제 회로 패턴을 제외한 나머지 부분을 제거해야 한다. 그 과정을 식각(etching)공정이라 부른다.<br />
+<br />
+그니까, etching 전에는 감광액으로만 회로 패턴이 그려져 있는거다.<br />
+Etching을 통해 회로 패턴대로 산화막을 남겨줘야 한다.<br />
+<br />
+etching에도 건식(dry) etching과 습식(wet) etching이 있다.<br />
+건식 식각은 플라즈마를 사용하는데, 한번에 웨이퍼 한장씩만 진공 챔버에 넣어 진행한다.<br />
+그래서 느리고 비싸지만 정확하게 etching된다.<br />
+플라즈마에서 나온 반응성 원자(Radical atom)가 산화막과 만나 떨어져 나가는 원리다.<br />
+그래서 감광액이 없는 곳들은 산화막이 다 떨어져 나간다.<br />
+<br />
+습식 식각은 화학 용액에 웨이퍼를 담갔다가 빼는 방식이다.<br />
+한번에 여러장을 담글 수 있어 빠르고 저렴하지만, 정확성은 떨어진다.<br />
+<br />
+요즘은 기술 발전으로 회로 선폭이 아주 미세해지고 있기 때문에, 수율을 최대한 높이기 위해 건식 식각을 많이 쓴다.<br />
+<br />
+식각에는 균일도(Uniformity, 여러 지점에서 식각 속도가 동일한가),<br />
+식각 속도(etching rate, 얼마나 빨리 되는가),<br />
+선택비(Selectivity, 식각할 물질만 식각됐는가),<br />
+형상(Profile, 원하는 모양이 나왔는가) 등 요소들이 중요하다.<br />
+<br />
+회로 설계자 입장에서 유의할 점이 하나 있는데, 설계한 회로 패턴에 빈 공간이 너무 많으면 wet etching의 오차로 안그려질 수도 있다. 넓은 땅에 점 하나 찍은게 무시당하는거랑 비슷한 이야기다.<br />
+<br />
+그래서, 인버터를 그릴 때에도 contact를 2개 이상 박아줘야 한다.<br />
+미세공정일수록 그림이 작아지니까, 미세공정일수록 contact를 최소 2개 이상 박아줘야 한다.<br />
+설계 프로그램에서도 면적 대비 dummy pattern이 30% 아래면 경고가 뜬다.<br /></p>
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>
