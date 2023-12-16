@@ -16,7 +16,21 @@ categories: Process
 8\. 패키징 공정(Packaging)<br>
 <br>
 1\. 웨이퍼 제조<br>
-일단 대량의 Si를 가져와야 한다. 모래를 녹여서 Si를 가져온다.<br>
+
+웨이퍼를 만들려면, 대량의 규소(Si)가 필요하다.
+
+Si를 얻기 위해, 모래를 녹여서 이산화규소($$SiO_{2}$$, Silica)를 가져온다.<br>
+
+SiO2를 C(탄소)와 반응시킨다.
+SiO2 + 2C -> Si + 2CO
+
+순도 99% 실리콘을 만든다.
+
+
+MGS: Metallurgical Grade Silicon, 순도 99% Si
+
+2차 정제과정을 통해 순도를 높인다.
+EGS: Electronic Grade Silicon
 Si는 14족 원소기 때문에, Si 결정은 전류가 흐르지 않는다.<br>
 <br>
 근데 불순물, 즉 14족 원소가 아닌 원소가 섞이면 전류가 흐를 수도 있다.<br>

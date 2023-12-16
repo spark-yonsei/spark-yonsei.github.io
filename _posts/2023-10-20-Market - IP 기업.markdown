@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "IP 기업"
+date:   2023-10-04 19:31:29 +0900
+categories: Market
+---
+
+IP 기업들을 좀 알아보자.
+ARM: AP, MCU Core IP (영국)
+Synopsys: EDA, 반도체 IP (미국)
+Cadence: EDA, 반도체 IP (미국)
+Imagination Technologies: GPU IP (영국)
+SST: 임베디드 메모리IP (미국)
+Ceva: DSP IP (미국)
+Verisilicon: DSP, 통신, NPU IP (중국)
+Alphawave: AI, 통신 IP (영국)
+eMemory Technology: 임베디드 메모리 IP (대만)
+Rambus: 메모리 컨트롤러 IP (미국)
+
+Rambus는 속도가 빠른 RDRAM(Rambus DRAM)의 IP와 DDR DRAM 컨트롤러 IP의 일부를 갖고 있다.
+RDRAM 특허로 DRAM 기업들한테 맨날 시비털고 다니면서 'Patent Troll'이라는 별명도 얻었다.
+이러다보니 메모리반도체 기업들이 빡쳐서 RDRAM을 쓰지 않게 됐고, DDR DRAM이 시장의 주류가 되었다.
+
+그니까, IP 기업의 IP가 아무리 좋아도, 팹리스 기업과 IDM의 선택의 받지 못하면 망한다.

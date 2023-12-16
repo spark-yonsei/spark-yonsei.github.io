@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "팹리스 기업"
+date:   2023-10-04 19:31:29 +0900
+categories: Market
+---
+
+팹리스 기업:
+Qualcomm: AP, 통신반도체 등 (미국)
+NVDIA: GPU 등 (미국)
+Broadcom: DSP, 통신반도체 등 (미국)
+MediaTek: AP, DSP, 통신반도체 등 (대만)
+AMD: GPU, CPU 등 (미국)
+Novatek: DDI 등 (대만)
+Marvell: 메모리컨트롤러, 통신반도체 (미국)
+Realtek: 사운드, 네트워크 반도체 (대만)
+Xilinx: FPGA (미국)
+Himax : 디스플레이, ISP 등 (대만)
+
+Broadcom: Ethernet, Wi-Fi, 블루투스 특화
+
+Mediatek: 스마트폰 AP 만든다. 주요 제품으로는 Helios가 있다.
+
+Realtek: 통신, 오디오 칩 외에도 IPTV용 SoC, SSD 컨트롤러, GloNass(위성항법장치 중 하나)의 수신 칩 등을 만든다.
+
+애플도 설계 많이 한다.
+스마트폰/태블릿에 들어가는 A시리즈 AP,
+고성능 태블릿/PC에 들어가는 M 시리즈 CPU,
+Wearable에 들어가는 S시리즈와 W시리즈를 직접 설계한다.
+
+동운아나텍
+아이언디바이스
+파두
