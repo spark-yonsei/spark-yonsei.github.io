@@ -3,6 +3,7 @@ layout: post
 title:  "개발실 소개"
 date:   2023-10-04 19:31:29 +0900
 categories: Miscellaneous
+order: 7
 ---
 
 개발실 소개:<br>

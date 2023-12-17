@@ -3,6 +3,7 @@ layout: post
 title:  "기술지원팀 소개"
 date:   2023-10-04 19:31:29 +0900
 categories: Miscellaneous
+order: 6
 ---
 
 기술지원팀 소개:<br>

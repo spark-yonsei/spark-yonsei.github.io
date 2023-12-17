@@ -3,6 +3,7 @@ layout: post
 title:  "전기기사 전력공학"
 date:   2023-10-04 19:31:29 +0900
 categories: Miscellaneous
+order: 3
 ---
 
 크게 3개 파트가 있다.

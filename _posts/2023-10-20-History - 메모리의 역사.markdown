@@ -3,6 +3,7 @@ layout: post
 title:  "메모리의 역사"
 date:   2023-10-04 19:31:29 +0900
 categories: History
+order: 19
 ---
 
 원래 MOSFET은 Planar FET 구조였다. 그데 L이 줄어들면서 Source와 Drain 사이의 leakage current가 증가하는 문제가 생겼다. L은 channel length, 즉 source와 drain 사이 거리다.<br>

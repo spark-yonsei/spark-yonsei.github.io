@@ -3,6 +3,7 @@ layout: post
 title:  "Miscellaneous"
 date:   2023-10-04 19:31:29 +0900
 categories: Miscellaneous
+order: 1
 ---
 
 ESD Cell: Device에서 Electrostatic Discharge(ESD)가 일어나지 못하도록 하는 protection circuit이다. 여기서 ESD는 전하가 한 곳에 모여있다가 한번에 흐르는 현상이다.<br>

@@ -3,6 +3,7 @@ layout: post
 title:  "Chip war 내용"
 date:   2023-10-04 19:31:29 +0900
 categories: History
+order: 17
 ---
 
 Chip war 내용 정리:<br>

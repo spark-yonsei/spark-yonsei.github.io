@@ -3,6 +3,7 @@ layout: post
 title:  "KETI 세미나 내용"
 date:   2023-10-04 19:31:29 +0900
 categories: Miscellaneous
+order: 9
 ---
 
 KETI 세미나 내용:<br>

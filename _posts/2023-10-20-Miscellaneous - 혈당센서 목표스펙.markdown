@@ -3,6 +3,7 @@ layout: post
 title:  "혈당센서 목표스펙"
 date:   2023-10-04 19:31:29 +0900
 categories: Miscellaneous
+order: 2
 ---
 
 혈당센서 목표스펙:<br>

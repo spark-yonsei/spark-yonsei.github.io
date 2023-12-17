@@ -3,6 +3,7 @@ layout: post
 title:  "대한민국의 전기공학 (2) - 일제시대"
 date:   2023-10-04 19:31:29 +0900
 categories: History
+order: 2
 ---
 
 1910년~1945년: 일제시대

@@ -3,6 +3,7 @@ layout: post
 title:  "Cadence 사람들"
 date:   2023-10-04 19:31:29 +0900
 categories: Miscellaneous
+order: 11
 ---
 
 Cadence 사람들 왔을 때 얘기:<br>

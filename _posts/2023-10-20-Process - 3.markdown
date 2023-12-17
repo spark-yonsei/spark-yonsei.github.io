@@ -3,6 +3,7 @@ layout: post
 title:  "3. 포토 공정"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
+order: 3
 ---
 
 반도체 8대공정:<br>
@@ -67,3 +68,5 @@ Align key를 안맞추면 p랑 n이 이상한데서 만나고 하여간 난장�
 다 찍었으면 Develop(현상) 과정이 남아있다.<br>
 Develop 공정은 웨이퍼에 현상액(Developer)를 뿌려가며, 빛을 받은 영역과 받지 않은 영역을 선택적으로 제거해 회로 패턴을 형성하는 과정이다.<br>
 이 과정에서 패턴이 결정된다.<br>
+<br>
+ASML 이야기

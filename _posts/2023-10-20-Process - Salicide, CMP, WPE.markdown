@@ -3,6 +3,7 @@ layout: post
 title:  "Salicide, CMP, WPE"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
+order: 9
 ---
 
 금속 대신 Polysilicon을 쓰는 이유: 고온에 잘 버텨서 공정이 쉽다. 그래도 저항이 더 작은건 금속이기 때문에, 어떻게든 금속을 쓸 때도 있다.<br>

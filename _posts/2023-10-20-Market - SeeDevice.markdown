@@ -3,6 +3,7 @@ layout: post
 title:  "회사 - SeeDevice"
 date:   2023-10-04 19:31:29 +0900
 categories: Market
+order: 7
 ---
 
 gaas를 보통 ir센서에 많이 쓰는데 strained silicon을 쓰면 더 좋아진다고 한다 라는게 seedevice 주장이다. 한국사람이 세운 미국 회사

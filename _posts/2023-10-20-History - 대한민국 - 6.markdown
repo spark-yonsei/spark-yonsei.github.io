@@ -3,6 +3,7 @@ layout: post
 title:  "대한민국의 전기공학 (6) - 전두환 정부"
 date:   2023-10-04 19:31:29 +0900
 categories: History
+order: 6
 ---
 <br>
 1980년~1988년<br>

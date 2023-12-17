@@ -3,6 +3,7 @@ layout: post
 title:  "대한민국의 전기공학 (3) - 1950년대"
 date:   2023-10-04 19:31:29 +0900
 categories: History
+order: 3
 ---
 
 1948년~1960년: 이승만 정부

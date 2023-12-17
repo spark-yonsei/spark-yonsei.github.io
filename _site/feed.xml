@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-17T02:48:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">전자기학 (1)</title><link href="http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html" rel="alternate" type="text/html" title="전자기학 (1)" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html"><![CDATA[<p>고급마이크로파공학 내용 정리<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-18T00:48:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">전자기학 (1)</title><link href="http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html" rel="alternate" type="text/html" title="전자기학 (1)" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99%20-%201</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/%EC%A0%84%EC%9E%90%EA%B8%B0%ED%95%99-1.html"><![CDATA[<p>고급마이크로파공학 내용 정리<br />
 <br />
 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다.<br />
 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다.<br />
@@ -382,7 +382,24 @@ Gradient를 풀어놓으면 \(\triangledown f_{1} \times \bar{E}_{o} = \left ( \
 이 식이 \(-\dfrac{\partial \bar{B}}{\partial \bar{t}}\)가 되어야 \(\triangledown \times \bar{E} = -\dfrac{\partial \bar{B}}{\partial t}\)를 만족할 것이다.<br />
 <br />
 \(-\dfrac{\partial \bar{B}}{\partial t} = \left(\hat{x} \times \bar{E}_{o} \right) \cdot \left( -\dfrac{1}{v}\dfrac{\partial f_{1}}{\partial t} \right)\)라고 놓고, 여기서 양변을 t로 적분하면<br />
-<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[고급마이크로파공학 내용 정리 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다. 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다. 전기전자공학과 대학원은 이 책을 많이 쓰고, 물리학과 대학원은 Jackson의 ‘Classical Electrodynamics’를 많이 쓴다. 우리 책은 mks 단위계, Jackson 책은 cgs단위계를 사용한다. 유럽은 Linguistic notation : Curl \(\bar{E}\) 미국은 Gibbs notation : \(\triangledown \times \bar{E}\) 이 과목은 고급마이크로파공학 보다는 고급전자장론, 또는 고급전자기학 정도가 어울리는 과목이다. 고급마이크로파공학이란 이름은 30년전에 지어진 이름이라 그냥 쓰는거다. Electromagnetics Theory. 현대물리, 양자역학이 들어오면서 고전역학은 상당 부분 수정되어야 했다. 그런데 전자기학은 전혀 바뀌지 않았다! 그만큼 수학적으로 정교한 이론이다. Microscopic Theory: 원자, 분자 한개의 특성. 슈뢰딩거 방정식 Macroscopic Theory: 통계적인 특성. 맥스웰 방정식. 원자,분자 단위에서는 적용 불가 원자, 분자가 아보가드로 수 수준으로 많은 경우부터 Macroscopic model을 사용할 수 있다. 우리가 배울 내용은 Macroscopic theory다. Field Quantities: \(\bar{E}\) : Electric field intensity [V/m] \(\bar{H}\) : Magnetic field intensity \(\bar{D}\) : Electric flux density \(\bar{B}\) : Magnetic flux density \(\bar{J}\) : Electric current density \(\rho\) : Electric charge density \(\bar{E}\)는 Electric field, \(\bar{H}\) : Magnetic field라고 자주 부르지만, 엄밀한 명칭은 intensity까지 붙여줘야 한다. 이 물리량들은 모두 시간과 공간에 대한 함수다. \(f(x,y,z,t)\) Faraday’s Law: 어떤 폐곡선(Closed Contour) c가 있다고 해보자. 이 폐곡선에 대해: \(\oint_{c}^{}\bar{E}\cdot d\bar{l}=-\dfrac{d}{dt}\iint_{S}^{}\bar{B}\cdot \hat{n}dS\) 라는게 Faraday’s Law다.]]></summary></entry><entry><title type="html">EMMI</title><link href="http://localhost:4000/circuits/2023/10/04/Circuits-EMMI.html" rel="alternate" type="text/html" title="EMMI" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/circuits/2023/10/04/Circuits%20-%20EMMI</id><content type="html" xml:base="http://localhost:4000/circuits/2023/10/04/Circuits-EMMI.html"><![CDATA[<p>Leakage current가 많이 나올 때는 EMMI라는 장치로 IC를 살펴봐야 한다.<br />
+<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[고급마이크로파공학 내용 정리 우리 교재는 Harrington의 ‘Time-Harmonic Electromagnetic Fields’다. 60년정도 된 책인데, 오타가 없는 대단한 책이다. 그래서 버전도 1개뿐이다. 전기전자공학과 대학원은 이 책을 많이 쓰고, 물리학과 대학원은 Jackson의 ‘Classical Electrodynamics’를 많이 쓴다. 우리 책은 mks 단위계, Jackson 책은 cgs단위계를 사용한다. 유럽은 Linguistic notation : Curl \(\bar{E}\) 미국은 Gibbs notation : \(\triangledown \times \bar{E}\) 이 과목은 고급마이크로파공학 보다는 고급전자장론, 또는 고급전자기학 정도가 어울리는 과목이다. 고급마이크로파공학이란 이름은 30년전에 지어진 이름이라 그냥 쓰는거다. Electromagnetics Theory. 현대물리, 양자역학이 들어오면서 고전역학은 상당 부분 수정되어야 했다. 그런데 전자기학은 전혀 바뀌지 않았다! 그만큼 수학적으로 정교한 이론이다. Microscopic Theory: 원자, 분자 한개의 특성. 슈뢰딩거 방정식 Macroscopic Theory: 통계적인 특성. 맥스웰 방정식. 원자,분자 단위에서는 적용 불가 원자, 분자가 아보가드로 수 수준으로 많은 경우부터 Macroscopic model을 사용할 수 있다. 우리가 배울 내용은 Macroscopic theory다. Field Quantities: \(\bar{E}\) : Electric field intensity [V/m] \(\bar{H}\) : Magnetic field intensity \(\bar{D}\) : Electric flux density \(\bar{B}\) : Magnetic flux density \(\bar{J}\) : Electric current density \(\rho\) : Electric charge density \(\bar{E}\)는 Electric field, \(\bar{H}\) : Magnetic field라고 자주 부르지만, 엄밀한 명칭은 intensity까지 붙여줘야 한다. 이 물리량들은 모두 시간과 공간에 대한 함수다. \(f(x,y,z,t)\) Faraday’s Law: 어떤 폐곡선(Closed Contour) c가 있다고 해보자. 이 폐곡선에 대해: \(\oint_{c}^{}\bar{E}\cdot d\bar{l}=-\dfrac{d}{dt}\iint_{S}^{}\bar{B}\cdot \hat{n}dS\) 라는게 Faraday’s Law다.]]></summary></entry><entry><title type="html">Depletion MOSFET</title><link href="http://localhost:4000/circuits/2023/10/04/Circuits-Depletion-MOSFET.html" rel="alternate" type="text/html" title="Depletion MOSFET" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/circuits/2023/10/04/Circuits%20-%20Depletion%20MOSFET</id><content type="html" xml:base="http://localhost:4000/circuits/2023/10/04/Circuits-Depletion-MOSFET.html"><![CDATA[<p>MOSFET에 대해 이미 배우긴 했지만, MOSFET에는 Enhancement mode MOSFET과 Depletion mode MOSFET이 있다.<br />
+Enhancement mode MOSFET이 우리가 원래 아는 MOSFET이고,<br />
+Depletion mode MOSFET은 channel이 생겨날 위치에 n-type dopant implant를 박아서 channel을 미리 만들어놓은 MOSFET이다.<br />
+<br />
+그래서 Vgs=0일 때, Enhancement MOSFET이면 당연히 MOSFET이 꺼져있다. Vgs가 Vth보다 작아서 채널이 안생기니까.<br />
+근데 depletion mode MOSFET이면 Vgs를 마이너스로 걸어야 겨우겨우 채널이 사라져 MOSFET이 꺼진다. 즉, Vth가 마이너스다. 그래서 NMOS긴 한데 Vth가 마이너스인 NMOS가 된다.<br />
+<br />
+Native MOSFET이라는 것도 있다. Native면 특성이 Enhancement와 Depletion 사이라서, Vth~=0인 MOSFET을 말한다.<br />
+우리가 아는 NMOS는 P-well 위에 fabricate하는데, Native NMOS는 약하게 도핑된 p-type silicon 위에 fabricate한다. 당연히, 비교하자면 p-well의 농도가 더 높을 것이다.<br />
+<br />
+그래서, p-type silicon위에 fabricate할때는 bulk에 상대적으로 hole이 적은 상태가 된다. 그래서 채널이 훨씬 쉽게 생긴다! 결국 Vth가 낮다고 말할 수 있다.<br />
+이 방식으로 Vth~=0까지 가면 Native MOSFET이 된다.<br />
+<br />
+Vth 낮으면 좋은거 아닌가? Native MOSFET은 n-well이나 p-well 위에 만들어진 MOSFET들보다 conductivity가 낮다. 그래서 같은 conductivity를 얻으려고 해도, native MOSFET은 일반 MOSFET들보다 크기가 더 커야 한다.<br />
+<br />
+Depletion load NMOS Logic이라는게 있다. Logic gate들 만드는 방식 중 하나인건데, 이 방식은 depletion-mode NMOS를 Current Source로 만들어 쓴다. Depletion MOSFET은 다른 MOSFET들보다 더 우수한 current source로서 동작할 수 있기 때문이다.<br />
+<br />
+인텔이 HMOS라고 부르는 process가 depletion-load NMOS process다.<br /></p>]]></content><author><name></name></author><category term="Circuits" /><summary type="html"><![CDATA[MOSFET에 대해 이미 배우긴 했지만, MOSFET에는 Enhancement mode MOSFET과 Depletion mode MOSFET이 있다. Enhancement mode MOSFET이 우리가 원래 아는 MOSFET이고, Depletion mode MOSFET은 channel이 생겨날 위치에 n-type dopant implant를 박아서 channel을 미리 만들어놓은 MOSFET이다. 그래서 Vgs=0일 때, Enhancement MOSFET이면 당연히 MOSFET이 꺼져있다. Vgs가 Vth보다 작아서 채널이 안생기니까. 근데 depletion mode MOSFET이면 Vgs를 마이너스로 걸어야 겨우겨우 채널이 사라져 MOSFET이 꺼진다. 즉, Vth가 마이너스다. 그래서 NMOS긴 한데 Vth가 마이너스인 NMOS가 된다. Native MOSFET이라는 것도 있다. Native면 특성이 Enhancement와 Depletion 사이라서, Vth~=0인 MOSFET을 말한다. 우리가 아는 NMOS는 P-well 위에 fabricate하는데, Native NMOS는 약하게 도핑된 p-type silicon 위에 fabricate한다. 당연히, 비교하자면 p-well의 농도가 더 높을 것이다. 그래서, p-type silicon위에 fabricate할때는 bulk에 상대적으로 hole이 적은 상태가 된다. 그래서 채널이 훨씬 쉽게 생긴다! 결국 Vth가 낮다고 말할 수 있다. 이 방식으로 Vth~=0까지 가면 Native MOSFET이 된다. Vth 낮으면 좋은거 아닌가? Native MOSFET은 n-well이나 p-well 위에 만들어진 MOSFET들보다 conductivity가 낮다. 그래서 같은 conductivity를 얻으려고 해도, native MOSFET은 일반 MOSFET들보다 크기가 더 커야 한다. Depletion load NMOS Logic이라는게 있다. Logic gate들 만드는 방식 중 하나인건데, 이 방식은 depletion-mode NMOS를 Current Source로 만들어 쓴다. Depletion MOSFET은 다른 MOSFET들보다 더 우수한 current source로서 동작할 수 있기 때문이다. 인텔이 HMOS라고 부르는 process가 depletion-load NMOS process다.]]></summary></entry><entry><title type="html">EMMI</title><link href="http://localhost:4000/circuits/2023/10/04/Circuits-EMMI.html" rel="alternate" type="text/html" title="EMMI" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/circuits/2023/10/04/Circuits%20-%20EMMI</id><content type="html" xml:base="http://localhost:4000/circuits/2023/10/04/Circuits-EMMI.html"><![CDATA[<p>Leakage current가 많이 나올 때는 EMMI라는 장치로 IC를 살펴봐야 한다.<br />
 EMMI: Emission Microscope<br />
 <br />
 EMMI로 IC를 분석해보려면, 일단 위쪽 패키징을 없애야 한다. 이렇게 패키징 없애는걸 decap이라 한다. Decapsulation인 듯 하다.<br />
@@ -885,35 +902,4 @@ http://www.keaj.kr/news/articleView.html?idxno=3536</p>
 
 <p>1910년 8월 29일, 조선은 완전히 주권을 빼앗긴다. 경술국치</p>
 
-<p>84년 후인 1994년 8월 29일에는 삼성전자가 세계 최초로 256MB DRAM을 만들며 일본 메모리반도체를 앞서게 된다.</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1392년~1910년]]></summary></entry><entry><title type="html">대한민국의 전기공학 (10) - 노무현 정부</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-10.html" rel="alternate" type="text/html" title="대한민국의 전기공학 (10) - 노무현 정부" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20-%2010</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-10.html"><![CDATA[<p>2003년~2008년</p>
-
-<p>*IT839 정책</p>
-
-<p>노무현은 인터넷에 조예가 깊은 사람이었다.</p>
-
-<p>잘 알려져있지 않은 사실인데, 노무현은 프로그래밍 경험이 있는 사람이다.</p>
-
-<p>2003년 이라크전쟁</p>
-
-<p>2003년 일은포 사건:
-미국이 이라크전쟁을 하게 되어, 투자자들이 안전자산인 엔화를 대량매수해 엔화 가치가 올라갔다.
-헤지펀드들이 엔화 상승을 예상하고 거금을 쏟아붓는다.</p>
-
-<p>고베 대지진때 조지 소로스한테 털렸던 일본은 똑같이 안당하겠다! 하며 엄청난 돈을 써서 환율을 유지한다.</p>
-
-<p>바다이야기<br /></p>
-
-<p>게임물등급위원회</p>
-
-<p>2007년 손님 맞을래요</p>
-
-<p>삼성전자 출신 진대제를 장관으로 데려왔다.</p>
-
-<p>노무현 라디오
-민주주의 2.0</p>
-
-<p>IT839는 지난 2004년 2월 수립한 참여정부의 정보통신 전략이다. 8대 서비스와 3대 인프라 및 9대 신성장동력을 통해 우리나라 IT산업을 총체적으로 발전시키겠다는 정통부의 종합적인 발전계획이다.</p>
-
-<p>8대 서비스로는 휴대인터넷 와이브로•DMB(위성 및 지상파)•홈네트워크 서비스•텔레매틱스 서비스•RFID 서비스•WCDMA•지상파 DTV•인터넷 전화 등이 있으며, 3대 인프라에는 BcN•USN•IPv6 등이 포함돼 있다. 9대 신성장동력은 차세대 이동통신기기•디지털TV/방송기기•홈네트워크 기기•텔레매틱스 기기•차세대PC•지능형 로봇•IT SoC•임베디드SW•디지털 콘텐츠 등이다.</p>
-
-<p>https://terms.naver.com/entry.naver?docId=6627327&amp;cid=40942&amp;categoryId=31898</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[2003년~2008년]]></summary></entry></feed>
+<p>84년 후인 1994년 8월 29일에는 삼성전자가 세계 최초로 256MB DRAM을 만들며 일본 메모리반도체를 앞서게 된다.</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1392년~1910년]]></summary></entry></feed>

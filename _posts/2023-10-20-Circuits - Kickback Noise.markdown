@@ -3,6 +3,7 @@ layout: post
 title:  "Kickback Noise"
 date:   2023-10-04 19:31:29 +0900
 categories: Circuits
+order: 2
 ---
 
 Kickback noise:<br>

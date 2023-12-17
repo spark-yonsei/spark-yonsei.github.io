@@ -3,6 +3,7 @@ layout: post
 title:  "내용정리"
 date:   2023-10-04 19:31:29 +0900
 categories: [Time-Frequency]
+order: 1
 ---
 
 Under test

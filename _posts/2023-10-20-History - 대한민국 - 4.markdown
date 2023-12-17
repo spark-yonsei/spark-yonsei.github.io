@@ -3,6 +3,7 @@ layout: post
 title:  "대한민국의 전기공학 (4) - 1960년대"
 date:   2023-10-04 19:31:29 +0900
 categories: History
+order: 4
 ---
 
 1963년~1979년: 박정희 정부

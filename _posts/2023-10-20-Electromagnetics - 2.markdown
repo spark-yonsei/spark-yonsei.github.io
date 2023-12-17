@@ -3,6 +3,7 @@ layout: post
 title:  "Electromagnetics (2)"
 date:   2023-10-03 19:31:29 +0900
 categories: Electromagnetics
+order: 3
 ---
 
 Under test

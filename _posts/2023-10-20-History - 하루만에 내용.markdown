@@ -3,6 +3,7 @@ layout: post
 title:  "하루만에 내용"
 date:   2023-10-04 19:31:29 +0900
 categories: History
+order: 16
 ---
 
 진짜 하루만에 이해하는 반도체 산업 내용정리:<br>

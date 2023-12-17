@@ -3,6 +3,7 @@ layout: post
 title:  "EMMI"
 date:   2023-10-04 19:31:29 +0900
 categories: Circuits
+order: 1
 ---
 
 Leakage current가 많이 나올 때는 EMMI라는 장치로 IC를 살펴봐야 한다.<br>
