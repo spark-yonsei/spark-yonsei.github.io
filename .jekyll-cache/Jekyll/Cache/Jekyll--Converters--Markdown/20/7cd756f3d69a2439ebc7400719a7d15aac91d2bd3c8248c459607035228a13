@@ -1,0 +1,134 @@
+I"&<p>반도체 8대공정:<br />
+1. <a href="https://sparkrf.github.io/process/2023/10/04/Process-1.html" target="_blank">웨이퍼 제조 공정(Wafer Fabrication)</a><br />
+2. 산화 공정(Oxidation)<br />
+3. <a href="https://sparkrf.github.io/process/2023/10/04/Process-3.html" target="_blank">포토 공정(Photolithography)</a><br />
+4. <a href="https://sparkrf.github.io/process/2023/10/04/Process-4.html" target="_blank">식각 공정(Etching)</a><br />
+5. <a href="https://sparkrf.github.io/process/2023/10/04/Process-5.html" target="_blank">증착 공정(Deposition)</a><br />
+6. <a href="https://sparkrf.github.io/process/2023/10/04/Process-6.html" target="_blank">금속 배선 공정(Metallization)</a><br />
+7. <a href="https://sparkrf.github.io/process/2023/10/04/Process-7.html" target="_blank">EDS 공정(Electrical Die Sorting)</a><br />
+8. <a href="https://sparkrf.github.io/process/2023/10/04/Process-8.html" target="_blank">패키징 공정(Packaging)</a><br />
+<br />
+2. 산화 공정<br />
+<br />
+웨이퍼가 완성되면, 웨이퍼 위에 반도체 소자들을 만들게 된다.<br />
+<br />
+그런데, 그냥 반도체 소자를 만들면 전류가 이상한 곳으로 새어나갈 수 있다.<br />
+그래서 전류가 흐르지 않아야 하는 곳은 산화막으로 확실하게 전류를 막는다.<br />
+<br />
+산화막은 얇은 SiO\(_{2}\) 막이다.<br />
+SiO\(_{2}\)는 유리의 원료이기도 하기에, 산화막은 얇은 유리 막이라고 생각하면 된다.<br />
+<br />
+먼저, 웨이퍼 어느 영역에 소자가 형성될지 미리 정해놓는다.<br />
+소자가 형성되는 영역을 Active Region이라 부른다.<br />
+Active Region이 정해지면, 도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다.<br />
+<br />
+그런데, 웨이퍼에 n-well과 p-well을 깔다보면 웨이퍼에 pn junction이 생긴다.
+의도하지 않은 pn junction에 의해 원하지 않은 전류가 흐를 수 있다.
+그래서, 절연체를 통해 두 영역을 isolation해줘야 한다.</p>
+
+<p>옛날에는 LOCOS(Local Oxidation of Silicon)라고 해서, n영역 p영역 사이에 SiO2를 대충 끼워넣었다.
+그랬더니 SiO2가 양 옆을 밀어내며 gate electrode 아래까지 밀고 들어오는 현상이 발생했다.
+이렇게 되면 MOSFET의 채널에 영향을 주게 된다.
+이 현상을 bird’s beak 현상이라 부른다. SiO2가 옆을 밀어내는 모양이 새 부리같이 생겨서 그렇다.</p>
+
+<p>그래서, LOCOS 대신 STI(Shallow Trench Isolation) 공정을 사용하기 시작했다.
+Trench를 파고, 그 안에 SiO2를 집어넣어 pn junction을 방지하는 방식이다.</p>
+
+<p>LOCOS보다는 낫지만, 그래도 STI를 쓴다고 해서 SiO2가 양 옆을 아예 안밀어내는건 아니다.
+STI의 SiO2에 의해 반도체 영역이 stress를 받는걸 STI stress effect라 한다.
+STI stress effect는 모델링하는 파운드리 회사도 있고, 그렇지 않은 파운드리 회사도 있다.</p>
+
+<p>STI 공정을 쓰면 chip size를 작게 할 수 있다.
+원래 PN junction을 분리하려면 거리가 필요했는데, STI로 isolation을 하면 거리 없이도 isolation을 할 수 있다.
+결과적으로, 회로의 집적도를 높일 수 있다.</p>
+
+<p><br />
+STI(Shallow Trench Isolation) Module:<br />
+웨이퍼의 n-영역과 p-영역을 분리하는 isolation 역할을 한다.<br />
+<br />
+STI 공정을 쓰면 chip size를 작게 할 수 있다. 원래 PN junction을 분리하려면 거리가 필요했는데, STI로 isolation을 하면 거리 없이도 isolation을 할 수 있다. 결과적으로, 회로의 집적도를 높일 수 있다.<br />
+<br />
+옛날에는 P영역 N영역 사이에 SiO2를 대충 끼웠는데, bird’s beak 현상이 발생해서 STI 모양으로 바꿨다고 한다. Bird’s beak 현상은 SiO2가 양 옆을 밀어내며 gate electrode 아래까지 밀고 들어와 채널에 영향을 주는 현상이다.<br />
+<br />
+그래서 요즘은 trench 모양으로 만들긴 하지만, 그렇다고 SiO2가 양옆을 안밀어내는건 아니다. STI의 SiO2에 의해 반도체 영역이 stress를 받는걸 STI stress effect라 한다. 이 effect를 다른 회사들은 모델링 안하는데, 삼성전자 LF6S에서는 한다.<br />
+<br />
+STI Stress에 의한 영향을 방지하려면, active region을 꽉 채워놓거나 더미로라도 채워놓는다.<br />
+<br />
+옛날에 STI 대신 쓰던 Isolation 기술 이름은 LOCOS(Local Oxidation of Silicon)다.<br />
+<br />
+STI 말고 DTI(Deep Trench Isolation) 공정도 있다. DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNT이 증가하는 이미지 센서 등에 사용된다. 이미지 센서에서 Cell들을 분리하는 기술은 ‘ISOCELL’ 기술이라 불린다. Isolation + Cell<br />
+<br />
+STI Stress를 고려해서, layout시 바깥쪽에 source가 가도록 한다. 또는 양쪽 끝에 dummy transistor를 넣는다. Finger로 구성할 때 이야기고, N은 Vss 쪽으로, P는 VDD쪽으로 갈 가능성이 높아서 그렇다. 고 하는데 무슨 뜻인지는 알아봐야 한다.<br /></p>
+
+<p>제조한 웨이퍼 위에 산화막을 형성하는 공정이다.<br />
+산화막은 얇은 SiO\(_{2}\) 막이다. 즉, 얇은 유리 막이다.<br /></p>
+
+<p>나중에 웨이퍼 위에 만들어질 반도체 소자들의 필요한 부분에만 전류가 흘러야 하는데,
+<br />
+웨이퍼 제조사들은 웨이퍼가 완성되면 표면에 산화막을 만들어서 고객사에게 보낸다.<br />
+고객사는 산화막을 갈아버리고, 새로 위에 산화막 씌울 준비를 한다.<br />
+<br />
+일단 웨이퍼 위에서 어디가 active region이 될 지 미리 정해놓고,<br />
+도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다.<br />
+그 다음에 전체적으로 산화막을 씌우는데, 여기에 3가지 방법이 있다.<br />
+<br />
+1. 열산화(Thermal Oxidation)<br />
+2. 플라즈마 보강 화학적 기상 증착(Plasma-Enhanced Chemical Vapor Decomposition, PECVD)<br />
+3. 전기화학적 양극 처리(Anodizing)<br />
+<br />
+열산화에는 다시 2가지 종류가 있다.<br />
+1. 건식 산화(Dry Oxidation)<br />
+2. 습식 산화(Wet Oxidation)<br />
+<br />
+웨이퍼 주변을 진공으로 만들어놓고,<br />
+뜨거운 상태에서 O2(g)를 넣어 산화시키면 건식 산화,<br />
+H2O(g)를 넣어 산화시키면 습식 산화다.<br />
+<br />
+이때 건식산화는 습식산화에 비하면 느리지만 quality가 좋다.<br />
+그래서 gate oxide가 될 부분은 무조건 건식산화로 산화막을 만든다.<br />
+어차피 갈아버릴 곳들은 습식산화로 산화막 만들어도 상관 없다.<br />
+<br />
+동일한 온도와 시간을 가정하면, 습식산화로 얻은 산화막이 건식산화로 얻은 산화막보다 5~10배 두껍다.<br />
+두께를 조절하려면, 그냥 더 오래 산화시키면 더 두꺼워진다.<br />
+<br />
+근데 산화막을 왜 만드는건가?<br />
+나중에 Si 위에 전선을 올릴거라서, 전선과 웨이퍼 사이에 절연막을 만들어주는거다.<br />
+물론 이러면 도체 사이에 유전체가 끼워진 형태가 되는거라, 캐패시턴스가 생겨 Coupling 등의 문제가 생길 수 있다.<br />
+<br />
+다른 이유도 있다. 산화막은 이온주입공정에서 산화 방지막 역할을 하고,<br />
+식각공정에서는 필요한 부분이 잘못 식각되는 것을 막는 식각 방지막 역할도 한다.<br />
+<br />
+PECVD, Anodizing에 대해서는 추가 조사가 필요하다.<br />
+그리고 SiO2를 깔아놓은 뒤에 도핑을 하는 것 같은데, 아니면 나중에 고쳐놓겠다.<br />
+<br />
+일단 도핑 방법중 하나가 ‘Ion implantation’이다.<br />
+말 그대로 이온을 가속해서 웨이퍼에다가 때려박아 필요한 부분을 도핑하는 방식이다.<br />
+근데, Ion implantation에는 두가지 문제가 있다.<br />
+<br />
+1. Channeling Effect<br />
+쏘다보면 특정 부분만 이온이 깊게 들어갈 수도 있다.<br />
+그래서 웨이퍼를 다양한 방향으로 기울이거나 회전시켜 이온이 골고루 박히도록 해야 한다.<br />
+<br />
+2. Annealing<br />
+웨이퍼에 이온들을 쏘다보면 웨이퍼 표면이 울퉁불퉁해진다.<br />
+철판에 총쏘면 철판이 울퉁불퉁해지는거랑 같은 이치다.<br />
+후속 열처리 과정을 통해 표면을 복구해줘야 하는데, 이 복구 과정을 Annealing이라 부른다.<br />
+<br />
+Ion Implant는 이런 단점들을 갖고 있음에도 널리 쓰인다.<br />
+왜냐하면, 이온을 몇개나 써서 도핑할지 내 맘대로 정할 수 있기 때문이다.<br />
+<br />
+이런 문제도 발생하긴 한다.<br />
+원래는 SiO2가 이온들을 다 막아줘야 하지만, SiO2는 비정질(Amorphous Solid)라서 원자 배열에 규칙이 없고,<br />
+그래서 이온들이 중간중간 있는 빈칸들에 들어가버리는 경우가 생긴다. 이 현상을 ‘트랩’이라 부른다.<br />
+근데 이 트랩은 Annealing을 하면 다 없어진다.<br />
+<br />
+Ion implantation 말고 Solid State Diffusion이라는 방법도 있다.<br />
+이건 도체 표면에 dopant를 올려놓고, 웨이퍼로 확산되기를 기다려서 도핑하는 방식이다.<br />
+이때, 다른 곳에는 SiO2가 깔려있기 때문에 dopant가 이상한 곳으로 들어가지 못한다.<br />
+<br />
+이 방식은 diffusion 기반이니까, 오래 diffusion시킬수록 dopant가 더 깊이 들어간다.<br />
+하지만 너무 깊이 들어가버리면 parasitic capacitance가 생겨버릴 수 있다.<br />
+<br />
+<br /></p>
+
+:ET

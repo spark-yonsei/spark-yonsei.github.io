@@ -50,14 +50,14 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#History">
 				<span class="name">History</span>
-				<span class="badge">21</span>
+				<span class="badge">20</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Market">
 				<span class="name">Market</span>
-				<span class="badge">10</span>
+				<span class="badge">12</span>
 	    	</a>
  		</li>
 	    
@@ -114,15 +114,47 @@
 8. <a href="https://sparkrf.github.io/process/2023/10/04/Process-8.html" target="_blank">패키징 공정(Packaging)</a><br />
 <br />
 2. 산화 공정<br />
-제조한 웨이퍼 위에 산화막을 형성하는 공정이다.<br />
-산화막은 얇은 SiO\(_{2}\) 막이다. 즉, 얇은 유리 막이다.<br />
 <br />
-웨이퍼 제조사들은 웨이퍼가 완성되면 표면에 산화막을 만들어서 고객사에게 보낸다.<br />
-고객사는 산화막을 갈아버리고, 새로 위에 산화막 씌울 준비를 한다.<br />
+웨이퍼가 완성되면, 웨이퍼 위에 반도체 소자들을 만들게 된다.<br />
 <br />
-일단 웨이퍼 위에서 어디가 active region이 될 지 미리 정해놓고,<br />
-도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다.<br />
-그 다음에 전체적으로 산화막을 씌우는데, 여기에 3가지 방법이 있다.<br />
+그런데, 그냥 반도체 소자를 만들면 전류가 이상한 곳으로 새어나갈 수 있다.<br />
+그래서 전류가 흐르지 않아야 하는 곳은 산화막으로 확실하게 전류를 막는다.<br />
+<br />
+산화막은 얇은 SiO\(_{2}\) 막이다.<br />
+SiO\(_{2}\)는 유리의 원료이기도 하기에, 산화막은 얇은 유리 막이라고 생각하면 된다.<br />
+<br />
+먼저, 웨이퍼 어느 영역에 소자가 형성될지 미리 정해놓는다.<br />
+소자가 형성되는 영역을 Active Region이라 부른다.<br />
+Active Region이 정해지면, 도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다.<br />
+<br />
+그런데, 웨이퍼에 n-well과 p-well을 깔다보면 웨이퍼에 pn junction이 생긴다.<br />
+의도하지 않은 pn junction에 의해 원하지 않은 전류가 흐를 수 있다.<br />
+그래서, 절연체를 통해 두 영역을 isolation해줘야 한다.<br />
+<br />
+옛날에는 LOCOS(Local Oxidation of Silicon)라고 해서, n영역 p영역 사이에 SiO2를 대충 끼워넣었다.<br />
+그랬더니 SiO2가 양 옆을 밀어내며 gate electrode 아래까지 밀고 들어오는 현상이 발생했다.<br />
+이렇게 되면 MOSFET의 채널에 영향을 주게 된다.<br />
+이 현상을 bird’s beak 현상이라 부른다. SiO2가 옆을 밀어내는 모양이 새 부리같이 생겨서 그렇다.<br />
+<br />
+그래서, LOCOS 대신 STI(Shallow Trench Isolation) 공정을 사용하기 시작했다.<br />
+Trench를 파고, 그 안에 SiO2를 집어넣어 pn junction을 방지하는 방식이다.<br />
+<br />
+LOCOS보다는 낫지만, 그래도 STI를 쓴다고 해서 SiO2가 양 옆을 아예 안밀어내는건 아니다.<br />
+STI의 SiO2에 의해 반도체 영역이 stress를 받는걸 STI stress effect라 한다.<br />
+STI stress에 의한 영향을 방지하려면, active region을 더미로라도 꽉 채워놓아야 한다.
+STI stress effect는 모델링하는 파운드리 회사도 있고, 그렇지 않은 파운드리 회사도 있다.<br />
+<br />
+STI 공정을 쓰면 chip size를 작게 할 수 있다.<br />
+원래 PN junction을 분리하려면 거리가 필요했는데, STI로 isolation을 하면 거리 없이도 isolation을 할 수 있다.<br />
+결과적으로, 회로의 집적도를 높일 수 있다.<br />
+<br />
+STI 말고 DTI(Deep Trench Isolation) 공정도 있다.
+DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNR이 증가하는 이미지 센서 등에 사용된다.</p>
+
+<p>어쨌든, 이렇게 웨이퍼 사이에도 SiO2를 넣어줘야 하고, 웨이퍼 위에다가도 SiO2를 씌워줘야 한다.
+웨이퍼 위에 씌운 SiO2는, 나중에 연결이 필요한 영역은 갈아버리고 도체를 연결할거다.</p>
+
+<p>SiO2를 씌우는 데에는 3가지 방법이 있다.<br />
 <br />
 1. 열산화(Thermal Oxidation)<br />
 2. 플라즈마 보강 화학적 기상 증착(Plasma-Enhanced Chemical Vapor Decomposition, PECVD)<br />
@@ -181,24 +213,17 @@ Ion implantation 말고 Solid State Diffusion이라는 방법도 있다.<br />
 이 방식은 diffusion 기반이니까, 오래 diffusion시킬수록 dopant가 더 깊이 들어간다.<br />
 하지만 너무 깊이 들어가버리면 parasitic capacitance가 생겨버릴 수 있다.<br />
 <br />
-<br />
-<br />
-STI(Shallow Trench Isolation) Module:<br />
-웨이퍼의 n-영역과 p-영역을 분리하는 isolation 역할을 한다.<br />
-<br />
-STI 공정을 쓰면 chip size를 작게 할 수 있다. 원래 PN junction을 분리하려면 거리가 필요했는데, STI로 isolation을 하면 거리 없이도 isolation을 할 수 있다. 결과적으로, 회로의 집적도를 높일 수 있다.<br />
-<br />
-옛날에는 P영역 N영역 사이에 SiO2를 대충 끼웠는데, bird’s beak 현상이 발생해서 STI 모양으로 바꿨다고 한다. Bird’s beak 현상은 SiO2가 양 옆을 밀어내며 gate electrode 아래까지 밀고 들어와 채널에 영향을 주는 현상이다.<br />
-<br />
-그래서 요즘은 trench 모양으로 만들긴 하지만, 그렇다고 SiO2가 양옆을 안밀어내는건 아니다. STI의 SiO2에 의해 반도체 영역이 stress를 받는걸 STI stress effect라 한다. 이 effect를 다른 회사들은 모델링 안하는데, 삼성전자 LF6S에서는 한다.<br />
-<br />
-STI Stress에 의한 영향을 방지하려면, active region을 꽉 채워놓거나 더미로라도 채워놓는다.<br />
-<br />
-옛날에 STI 대신 쓰던 Isolation 기술 이름은 LOCOS(Local Oxidation of Silicon)다.<br />
-<br />
-STI 말고 DTI(Deep Trench Isolation) 공정도 있다. DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNT이 증가하는 이미지 센서 등에 사용된다. 이미지 센서에서 Cell들을 분리하는 기술은 ‘ISOCELL’ 기술이라 불린다. Isolation + Cell<br />
-<br />
+<br /></p>
+
+<p>STI 말고 DTI(Deep Trench Isolation) 공정도 있다.
+DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNR이 증가하는 이미지 센서 등에 사용된다.
+삼성전자에서는 이미지 센서에서 Cell들을 분리하는 기술은 ‘ISOCELL’ 기술이라 불린다. Isolation + Cell<br /></p>
+
+<p><br />
 STI Stress를 고려해서, layout시 바깥쪽에 source가 가도록 한다. 또는 양쪽 끝에 dummy transistor를 넣는다. Finger로 구성할 때 이야기고, N은 Vss 쪽으로, P는 VDD쪽으로 갈 가능성이 높아서 그렇다. 고 하는데 무슨 뜻인지는 알아봐야 한다.<br /></p>
+
+<p>웨이퍼 제조사들은 웨이퍼가 완성되면 표면에 산화막을 만들어서 고객사에게 보낸다.<br />
+고객사는 산화막을 갈아버리고, 새로 위에 산화막 씌울 준비를 한다.<br /></p>
 
 	</div>
 </article>
