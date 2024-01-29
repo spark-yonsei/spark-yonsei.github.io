@@ -1,109 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">About</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-		
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">3</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Circuits">
-				<span class="name">Circuits</span>
-				<span class="badge">5</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#History">
-				<span class="name">History</span>
-				<span class="badge">20</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Market">
-				<span class="name">Market</span>
-				<span class="badge">12</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Miscellaneous">
-				<span class="name">Miscellaneous</span>
-				<span class="badge">11</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">9</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Time-Frequency">
-				<span class="name">Time-Frequency</span>
-				<span class="badge">2</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			대한민국의 전기공학 (6) - 전두환 정부
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p><br />
+I"<p><br />
 1980년~1988년<br />
 <br />
 *64KB DRAM<br />
@@ -113,7 +8,7 @@
 <br />
 <br />
 <br />
-전두환은 박정희 사망 이후, 12.12 군사반란으로 정권을 잡아 대통령이 된 인물이다.<br />
+전두환은 박정희 사망 이후, 쿠데타로 정권을 잡아 대통령이 된 인물이다.<br />
 <br />
 <br />
 당시 미국은 한국의 쿠데타에 개입할 여력이 없었다.<br />
@@ -192,10 +87,53 @@ DRAM 뿐 아니라 자동차 등 여러 품목에서 일본에게 시장을 빼�
 <br />
 3저호황은 낮은 유가, 낮은 금리, 낮은 달러에 기반한 호황을 뜻한다.</p>
 
+<p><br />
+<br />
+<br />
+중요한 점은, 플라자합의때문에 일본 경제가 망하지는 않았다는거다.<br />
+<br />
+플라자합의로 망한건 수출 경쟁력이 사라진 제조업 회사들 뿐이었고, 나라 자체는 나쁠거 없었다.<br />
+<br />
+<br />
+<br />
+동남아시아, 한국 등 국가들은 그동안 자국화폐를 달러에 고정환율제를 걸어놓고 있었다.<br />
+<br />
+그래서 엔화가 오르면 자연스럽게 일본 대비 수출 경쟁력이 생겨, 상당한 호황을 누리고 있었다.<br />
+<br />
+한국의 3저호황도 이 시기다. 김영삼 초기까지 호황이었다.<br />
+<br />
+3저호황은 유가 하락, 금리 하락, 싼 달러와 더불어 88올림픽 투자유치 등 있었다.<br />
+<br />
+<br />
+<br /></p>
 
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+<p><br />
+삼성전자, 마이크론 등이 DRAM 시장에 들어와도 그들은 그냥 무지성으로 생산량 더 늘려서 더 많이 찍어냈다.<br />
+<br />
+소니는 다른 일본 회사들이랑 다르게, DRAM 말고 이미지센서에 투자했다. 그리고 아직까지 그걸로 먹고 산다.<br />
+<br /></p>
+
+<p>마이크론이 특이하게 78년인가에 만들어지는데, 마이크론 말고 다른 미국 DRAM 업체들은 다 죽어버렸다.
+<br />
+<br />
+<br />
+반도체 뿐 아니라 여러가지로 털리던 미국은 플라자합의로 일본 수출품 가격을 크게 올린다.<br /></p>
+
+<p>1982년, 체신부에서 한국통신이 쪼개져 나온다.
+일본도 1952년 NTT가 일본 체신성에서 분리되어 나온 바 있다.</p>
+
+<p>그 뒤에는 전화교환기 국산화를 시도한다</p>
+
+<p>1981년에 88올림픽 개최와 86아시안게임 개최가 결정된다.</p>
+
+<p>1982년에 ‘이동무선전화 현대화 계획’을 수립한다. 모토로라 제품들을 들여온다.</p>
+
+<p>https://www.newsverse.kr/news/articleView.html?idxno=903</p>
+
+<p>전두환 반도체
+https://shindonga.donga.com/economy/article/all/13/3126496/1</p>
+
+<p>https://www.etnews.com/20160831000329</p>
+
+<p>https://fred.stlouisfed.org/graph/?g=RIqt</p>
+:ET
