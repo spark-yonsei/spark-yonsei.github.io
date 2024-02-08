@@ -1,0 +1,48 @@
+I"P<p>반도체 8대공정:<br />
+1. <a href="https://sparkrf.github.io/process/2023/10/04/Process-1.html" target="_blank">웨이퍼 제조 공정(Wafer Fabrication)</a><br />
+2. 산화 공정(Oxidation)<br />
+3. <a href="https://sparkrf.github.io/process/2023/10/04/Process-3.html" target="_blank">포토 공정(Photolithography)</a><br />
+4. <a href="https://sparkrf.github.io/process/2023/10/04/Process-4.html" target="_blank">식각 공정(Etching)</a><br />
+5. <a href="https://sparkrf.github.io/process/2023/10/04/Process-5.html" target="_blank">증착 공정(Deposition)</a><br />
+6. <a href="https://sparkrf.github.io/process/2023/10/04/Process-6.html" target="_blank">금속 배선 공정(Metallization)</a><br />
+7. <a href="https://sparkrf.github.io/process/2023/10/04/Process-7.html" target="_blank">EDS 공정(Electrical Die Sorting)</a><br />
+8. <a href="https://sparkrf.github.io/process/2023/10/04/Process-8.html" target="_blank">패키징 공정(Packaging)</a><br />
+<br />
+2. 산화 공정<br />
+<br />
+웨이퍼가 완성되면, 웨이퍼 위에 반도체 소자들을 만들게 된다.<br />
+<br />
+그런데, 그냥 반도체 소자를 만들면 전류가 이상한 곳으로 새어나갈 수 있다.<br />
+그래서 전류가 흐르지 않아야 하는 곳은 산화막으로 확실하게 전류를 막는다.<br />
+<br />
+산화막은 얇은 SiO\(_{2}\) 막이다.<br />
+SiO\(_{2}\)는 유리의 원료이기도 하기에, 산화막은 얇은 유리 막이라고 생각하면 된다.<br />
+<br />
+먼저, 웨이퍼 어느 영역에 소자가 형성될지 미리 정해놓는다.<br />
+소자가 형성되는 영역을 Active Region이라 부른다.<br />
+Active Region이 정해지면, 도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다.<br />
+<br />
+그런데, 웨이퍼에 n-well과 p-well을 깔다보면 웨이퍼에 pn junction이 생긴다.<br />
+의도하지 않은 pn junction에 의해 원하지 않은 전류가 흐를 수 있다.<br />
+그래서, 절연체를 통해 두 영역을 isolation해줘야 한다.<br />
+<br />
+옛날에는 LOCOS(Local Oxidation of Silicon)라고 해서, n영역 p영역 사이에 SiO2를 대충 끼워넣었다.<br />
+그랬더니 SiO2가 양 옆을 밀어내며 gate electrode 아래까지 밀고 들어오는 현상이 발생했다.<br />
+이렇게 되면 MOSFET의 채널에 영향을 주게 된다.<br />
+이 현상을 bird’s beak 현상이라 부른다. SiO2가 옆을 밀어내는 모양이 새 부리같이 생겨서 그렇다.<br />
+<br />
+그래서, LOCOS 대신 STI(Shallow Trench Isolation) 공정을 사용하기 시작했다.<br />
+Trench를 파고, 그 안에 SiO2를 집어넣어 pn junction을 방지하는 방식이다.<br />
+<br />
+LOCOS보다는 낫지만, 그래도 STI를 쓴다고 해서 SiO2가 양 옆을 아예 안밀어내는건 아니다.<br />
+STI의 SiO2에 의해 반도체 영역이 stress를 받는걸 STI stress effect라 한다.<br />
+STI stress에 의한 영향을 방지하려면, active region을 더미로라도 꽉 채워놓아야 한다.
+STI stress effect는 모델링하는 파운드리 회사도 있고, 그렇지 않은 파운드리 회사도 있다.<br />
+<br />
+STI 공정을 쓰면 chip size를 작게 할 수 있다.<br />
+원래 PN junction을 분리하려면 거리가 필요했는데, STI로 isolation을 하면 거리 없이도 isolation을 할 수 있다.<br />
+결과적으로, 회로의 집적도를 높일 수 있다.<br />
+<br />
+STI 말고 DTI(Deep Trench Isolation) 공정도 있다.
+DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNR이 증가하는 이미지 센서 등에 사용된다.</p>
+:ET
