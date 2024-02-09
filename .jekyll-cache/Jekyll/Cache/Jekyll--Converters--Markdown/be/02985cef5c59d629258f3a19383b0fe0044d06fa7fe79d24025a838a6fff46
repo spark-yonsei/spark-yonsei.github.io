@@ -1,0 +1,75 @@
+I"�<p><img src="/public/img/material1.png" alt="alt text" /><br />
+Common semiconductor material characteristics.<br />
+<br />
+<img src="/public/img/material2.png" alt="alt text" /><br />
+Comparison of millimeter-wave technology options.<br />
+<br />
+[1] SiGe and CMOS Technology for State-of-the-Art Millimeter-Wave Transceivers<br />
+<br />
+<br />
+Wireless Transceiver에는 원래 GaAs가 많이 쓰였는데, 요즘은 CMOS와 BiCMOS가 많이 쓰인다.
+fabrication 비용이 낮고, 디지털 시스템과의 연결이 용이하기 때문이다.</p>
+
+<p>아직 GaAs, GaN을 쓰는 분야도 많다. GaAs는 noise가 적다.</p>
+
+<p>MMIC = Monolithic Microwave Integrated Circuit</p>
+
+<p>MMIC 시장의 상당 부분은 자동차 레이더 transceiver가 차지한다.
+그래서 wideband Si MMIC가 요즘 많이 쓰인다.</p>
+
+<p>주파수가 높은 전파는 멀리 못간다.
+Oxygen absorption의 영향으로 attenuate된다.</p>
+
+<p>Oxygen absorption은 60GHz정도에서 최대다.</p>
+
+<p>멀리 못가는게 장점일때도 있다. 바로 옆동네에서도 그 주파수를 쓸 수 있다. 안섞이니까.</p>
+
+<p>E-band 전파는 비교적 멀리 가고, V-band 전파는 비교적 멀리 못간다.</p>
+
+<p>그래서 E-band transceiver에는 CMOS, BiCMOS보다 GaN, GaAs를 많이 쓴다.
+Output power를 더 크게 낼 수 있고, linearity가 비교적 좋기 때문이다.</p>
+
+<p>V-band는 신호가 멀리 못가니까 power가 좀 적어도 된다. 그래서 CMOS, BiCMOS를 많이 쓴다.
+CMOS, BiCMOS를 쓰면 Digital radio들과 함께 한번에 찍어낼 수 있기 때문에 더 경제적이다.</p>
+
+<p>원래 100GHz 위에서는 InP가 자주 보였는데, 요즘은 다른 technology들도 보인다.</p>
+
+<p>FDSOI CMOS?</p>
+
+<p>InP devices : HBT, HEMT</p>
+
+<p>GaN device들은 noise가 적어 sensitive receiver에 쓰인다.</p>
+
+<p>GaAs도 고주파에서 noise 성능이 우수하다.</p>
+
+<p>mHEMT(metamorphic HEMT)를 쓴 GaAs LNA(Low Noise Amplifier) 예시도 있다.</p>
+
+<p>scale돼서 크기가 작아진 CMOS공정, 즉 scaled CMOS공정은:
+크기가 작아서 input capacitance는 작아서 좋지만,
+interconnect parasitic때문에 ft가 악화되기 쉽다.</p>
+
+<p>실제로는 45nm, 28nm CMOS 정도가 성능이 최대치를 갖는 지점이다.
+이거보다 작으면 소자들이 parasitic gate capacitance, resistance에 크게 영향받는다.
+그래서 RF performance가 안좋아진다.
+그래서 RF에서는 더 줄이는게 의미가 없다.</p>
+
+<p>그래도, FDSOI, SOI 등으로 RF performance 개선하려고 노력하긴 한다.</p>
+
+<p>FDSOI: Fully Depleted Silicon On Insulator</p>
+
+<p>Bipolar transistor들은 CMOS 대비 더 높은 gm, 더 낮은 1/f noise를 갖는다.
+breakdown voltage도 더 높고, reliability도 더 높다.</p>
+
+<p>Hot carrier injection:
+MOS thermal reliability 저해
+이렇게 되면 Vds가 클 경우 gm, Vt가 degrade된다.</p>
+
+<p>Silicon substrate를 쓸 때, 어떻게 ground reference를 만들 것인가?
+III-V에서는 off-chip ground plane을 자주 쓴다. multi-MMIC design에서도 그렇다.
+multi-MMIC에서는 1개 metallization layer가 모든 ground node들을 연결한다.</p>
+
+<p>Silicon에서는 on-chip metal layer로 ground plane을 만들어야 한다.</p>
+
+<p>ETRI GaN,GaAsMMIC개발 및 전망:</p>
+
+:ET

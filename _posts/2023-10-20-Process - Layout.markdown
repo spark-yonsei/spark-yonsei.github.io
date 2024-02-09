@@ -8,6 +8,46 @@ order: 10
 
 일단 적을 수 있는거 몽땅 적어놓겠다.
 
+동운아나텍 Analog Layout Manual:
+
+업무 Flow:
+Layout Start
+Custom Layout Review
+Layout Fix
+Verification
+Post Layout Simulation (LPE) - 이후 문제있으면 Layout Fix로, 문제 없으면 IP Merge로
+IP Merge
+Tape Out
+Job Deck View
+Mask 제작 요청
+
+Layout 사전 준비:
+Design Directory 생성(System Library setup for Layout Design)
+공정별 PDK 설치(공정명, 사용 metal, voltage 확인 후 설치)
+공정 자료집 확인(Design Rule spec, E/R spec, Layout grid 및 주의사항 등)
+Real Data 확인
+Layout 의뢰서 확인
+회로, netlist 확인
+검증 rule(최종버전 확인, DRC/LVS/QRC 사전 확인, Dummy 소자 인식 확인 필수)
+Layout grid 설정
+Floor plan 확인
+Estimate Layout TAT 산출
+
+Layout Design Check list:
+Design Rule: Layout을 하기 전 반드시 필요한 File이며 공정 별로 Rule이 다름
+Layout Notice
+Critical / Dirty Path
+Power / GND Path
+Resistance of Path
+ESD / Latch-up
+PIN / PAN Assignment for Assembly
+DRC / LVS/LPE
+Origin
+Index
+
+Layout 세부 설계 진행:
+
+
 -. 특정 기능을 수행하는 회로를 칩으로 제작할 수 있게 물리적으로 패턴으로 구현한 것
 
 -. 반도체 설계 과정 중 하나

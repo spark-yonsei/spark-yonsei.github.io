@@ -1,0 +1,200 @@
+---
+layout: post
+title:  "Semiconductor Material Characteristics"
+date:   2023-10-04 19:31:29 +0900
+categories: Process
+order: 11
+---
+
+![alt text](/public/img/material1.png)<br>
+Common semiconductor material characteristics.<br>
+<br>
+![alt text](/public/img/material2.png)<br>
+Comparison of millimeter-wave technology options.<br>
+<br>
+![alt text](/public/img/material3.png)<br>
+반도체별 주요 소자 및 특징.<br>
+<br>
+![alt text](/public/img/material4.png)<br>
+HBT vs FET.<br>
+<br>
+[1] SiGe and CMOS Technology for State-of-the-Art Millimeter-Wave Transceivers<br>
+[2] ETRI GaN,GaAsMMIC개발 및 전망
+[3] Comparing GaAs and GaN technologies for RF, J. L. Jimenez
+
+<br>
+<br>
+Wireless Transceiver에는 원래 GaAs가 많이 쓰였는데, 요즘은 CMOS와 BiCMOS가 많이 쓰인다.
+fabrication 비용이 낮고, 디지털 시스템과의 연결이 용이하기 때문이다.
+
+아직 GaAs, GaN을 쓰는 분야도 많다. GaAs는 noise가 적다.
+
+MMIC = Monolithic Microwave Integrated Circuit
+
+MMIC 시장의 상당 부분은 자동차 레이더 transceiver가 차지한다.
+그래서 wideband Si MMIC가 요즘 많이 쓰인다.
+
+주파수가 높은 전파는 멀리 못간다.
+Oxygen absorption의 영향으로 attenuate된다.
+
+Oxygen absorption은 60GHz정도에서 최대다.
+
+멀리 못가는게 장점일때도 있다. 바로 옆동네에서도 그 주파수를 쓸 수 있다. 안섞이니까.
+
+E-band 전파는 비교적 멀리 가고, V-band 전파는 비교적 멀리 못간다.
+
+그래서 E-band transceiver에는 CMOS, BiCMOS보다 GaN, GaAs를 많이 쓴다.
+Output power를 더 크게 낼 수 있고, linearity가 비교적 좋기 때문이다.
+
+V-band는 신호가 멀리 못가니까 power가 좀 적어도 된다. 그래서 CMOS, BiCMOS를 많이 쓴다.
+CMOS, BiCMOS를 쓰면 Digital radio들과 함께 한번에 찍어낼 수 있기 때문에 더 경제적이다.
+
+원래 100GHz 위에서는 InP가 자주 보였는데, 요즘은 다른 technology들도 보인다.
+
+FDSOI CMOS?
+
+InP devices : HBT, HEMT
+
+GaN device들은 noise가 적어 sensitive receiver에 쓰인다.
+
+GaAs도 고주파에서 noise 성능이 우수하다.
+
+mHEMT(metamorphic HEMT)를 쓴 GaAs LNA(Low Noise Amplifier) 예시도 있다.
+
+scale돼서 크기가 작아진 CMOS공정, 즉 scaled CMOS공정은:
+크기가 작아서 input capacitance는 작아서 좋지만,
+interconnect parasitic때문에 ft가 악화되기 쉽다.
+
+실제로는 45nm, 28nm CMOS 정도가 성능이 최대치를 갖는 지점이다.
+이거보다 작으면 소자들이 parasitic gate capacitance, resistance에 크게 영향받는다.
+그래서 RF performance가 안좋아진다.
+그래서 RF에서는 더 줄이는게 의미가 없다.
+
+그래도, FDSOI, SOI 등으로 RF performance 개선하려고 노력하긴 한다.
+
+FDSOI: Fully Depleted Silicon On Insulator
+
+Bipolar transistor들은 CMOS 대비 더 높은 gm, 더 낮은 1/f noise를 갖는다.
+breakdown voltage도 더 높고, reliability도 더 높다.
+
+Hot carrier injection:
+MOS thermal reliability 저해
+이렇게 되면 Vds가 클 경우 gm, Vt가 degrade된다.
+
+Silicon substrate를 쓸 때, 어떻게 ground reference를 만들 것인가?
+III-V에서는 off-chip ground plane을 자주 쓴다. multi-MMIC design에서도 그렇다.
+multi-MMIC에서는 1개 metallization layer가 모든 ground node들을 연결한다.
+
+Silicon에서는 on-chip metal layer로 ground plane을 만들어야 한다.
+
+
+ETRI GaN,GaAsMMIC개발 및 전망:
+
+MMIC 기술은 RF부품을 설계하고 제작하는 기술이다
+
+옛날 RF시스템은 hybrid 형태였는데,
+1980년대부터 hybrid 회로(HMIC)들이 MMIC로 대체되기 시작했다.
+
+여러 기능의 회로들을 한 칩 위에 집적해 소형화, 경량화, 원가 절감이 가능해졌다.
+
+하지만 MMIC는 HMIC와 달리 한번 제작 후에는 튜닝이 불가능하다.
+그리고 소자들 사이 간격이 좁아 crosstalk, coupling 등 parasitic effect가 HMIC보다 크다.
+
+Bandgap은 GaN이 가장 크다.
+
+기판의 물질 특성에 의해 능동소자 특성이 결정되고, 그거에 따라 적용 응용분야가 달라진다.
+
+InP MMIC는 GaAs MMIC보다 제작 비용이 비싸지만, 주파수 특성이 고주파에 적합하다.
+
+SiGe MMIC는 Si기판 위에 만들 수 있기에, 기존 Si공정에 단계만 추가하면 된다.
+그래서 생산 효율이 높아 가격이 싸다는 장점이 있다.
+
+GaN MMIC는 전자 이동도는 낮지만 고전압 동장이 가능하고, 높은 전력 밀도를 만들 수 있다.
+
+GaN은 열 전도도가 Si보다 3배, GaAs보다 7배정도 높아 냉각이 쉽다.
+
+
+Qorvo의 Comparing GaAs and GaN technologies for RF:
+
+정보를 더 많이 보낼수록, 더 확실한 linearity가 문제가 된다.
+
+더 많은 channel -> device당 더 많은 전력 필요 -> linearity가 줄어든다
+
+symbol constellation이 더 복잡해짐 -> symbol 사이 거리가 줄어든다 -> linearity가 더 중요해진다
+
+Shannon's Capacity Equation:
+C = BW * log2(SNR)
+
+GaN:
+큰 Bandgap -> 강한 전기장
+High Saturation Velocity, high Charge capability -> 큰 전류
+
+그리고 강한 전기장과 큰 전류는 높은 power density를 가능하게 한다.
+
+RF power, power electronics 분야에서는 FET의 성능을 3개 variable로 평가한다.
+IDmax, Vbr, Ron 3가지다.
+
+IDmax, Vbr은 power density를 보여주고,
+Vbr, Ron은 efficiency를 보여준다.
+
+근데, power density가 왜 중요한가?
+device를 더 작게 만들 수 있기 때문이다.
+
+device를 더 작게 만들면 뭐가 좋은가?
+capacitance가 더 작어지고, insertion loss가 줄어든다.
+capacitance가 작기 때문에 BW가 커지고,
+insertion loss가 작기 때문에 Efficiency가 높아진다.
+
+GaN on SiC:
+GaN crystal과 SiC crystal은 입자 사이 거리가 다르다.
+그거때문에 gate current가 크고, trapping도 더 높다.
+
+GaN의 heat flux는 엄청나다. 즉, 열이 많이 난다.
+
+GaN은 bandgap이 큰 물질이다. -> strong Ionic bond
+아마 그래서 chemical etch가 어려워 physical etch를 해야 하고, 그래서 stop etch layer가 없다는 것 같다.
+
+bandgap이 크기 때문에 생기는 문제는 또 있다.
+bandgap이 크면 p-doping이 잘 안된다는 것 같은데, 확인 필요
+
+시장 규모는 GaAs > GaN on SiC다.
+
+왜냐?
+p-doping이 잘 안되고, stop etch layer가 없기 때문에 GaN에서는 좋은 HBT를 만들 수가 없다.
+
+근데 모바일에서는 HBT가 중요하다.
+HBT는 주어진 전압에 대해, FET보다 효율적이고 linear한 device라 그렇다.
+
+HBT vs FET, Efficiency:
+HBT의 vertical current는 FET의 horizontal current와 비교했을때, HBT가 더 작은 Ron을 가질 수 있게 한다.
+
+Ron이 더 작으면 RF efficiency가 더 좋아지며, 낮은 전압에서는 이게 더 중요하다.
+
+그리고 전류를 미분해보면 HBT의 beta가 FET의 gm보다 더 linear하다.
+
+근데 GaN은 이 HBT를 제대로 만들 수 없다고 했잖아?
+그래서 GaAs 시장이 더 큰거다.
+
+그니까, GaAs vs GaN이라고 보기보다는 HBT vs FET이라고 보는게 더 적합할거다.
+
+수많은 III-V 기술자들이 power density를 늘리기 위해 연구하고 있긴 하지만, 현재 III-V 시장은 linearity spec에 의해 굴러가고 있다.
+
+
+EPC라는 회사 사이트:
+GaN 기반 power device들은 Si 기반 power device들보다 훨씬 성능이 좋다.
+
+GaN은 다양한 substrate들 위에 만들어질 수 있다.
+사파이어, SiC, Si 등.
+
+Si 위에 GaN Epi layer를 만들 경우, 기존 Si 생산시설을 활용할 수 있다. 따라서 더 경제적이다.
+
+GaN은 반도체 power device, RF components, LED 등에 쓰인다.
+
+https://epc-co.com/epc/gallium-nitride/what-is-gan
+https://epc-co.com/epc/products/gan-hemt
+https://epc-co.com/epc/gallium-nitride/why-gan
+https://epc-co.com/epc/gallium-nitride/where-is-gan-going
+https://epc-co.com/epc/about-epc/contact/ask-a-gan-expert
+https://eepower.com/news/next-gen-gan-on-sic-power-devices-from-new-epi-growth-mechanism/#
+
+

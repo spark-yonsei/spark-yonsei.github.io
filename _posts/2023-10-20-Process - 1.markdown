@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "1. 웨이퍼 제조 공정"
+title:  "8대공정 (1) - 웨이퍼 제조 공정"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 1

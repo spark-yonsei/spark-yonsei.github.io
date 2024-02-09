@@ -1,0 +1,85 @@
+I"�<p>AI반도체 회사들이 많지만, 다들 집중하는 연산, 분야가 다 다르다.
+한국의 유명한 AI반도체 회사 3개를 중심으로 예시를 들려고 한다.
+리벨리온, 퓨리오사, 사피온
+모빌린트, 딥엑스</p>
+
+<p>tenstorrent</p>
+
+<p>리벨리온은 throughput보다 latency에 집중한다</p>
+
+<p>NPU에 필요한건 throughput, latency, efficiency</p>
+
+<p>인공지능이 성능은 좋은데 느리더라. 연산량이 너무 많았다
+그래서 리벨리온은 latency쪽으로 갔다.</p>
+
+<p>현재 인공지능의 문제: training을 할때 전력을 엄청나게 먹는다.</p>
+
+<p>지금도 그런데, 우리 생활 속에 AI가 다 들어오면 전력소모가 진짜 감당 안될거다.</p>
+
+<p>미국 보면 데이터센터를 냉각을 위해 바다에 짓고 있다.</p>
+
+<p>하여간, 전력소모가 해결 안되면 지구 전체에 문제가 될거다.
+이걸 NPU가 해결할 수 있을거다. 더 효율적으로 연산하니까.</p>
+
+<p>퓨리오사:
+데이터센터, 인프라 영역에 집중하고 있다.
+-&gt; power efficiency를 중점적으로 보고 있다</p>
+
+<p>반도체보다도 AI를 더 중요하게 생각한다</p>
+
+<p>Neural Scaling Law</p>
+
+<p>hyperscaler 중심으로 AI가 먼저 도입되기 시작했다</p>
+
+<p>tradeoff of programmability, performance and power efficiency
+performance and power efficiency are hard problems,
+but programmability is even harder</p>
+
+<p>SW: Compiler
+HW: Silicon Architecture</p>
+
+<p>퓨리오사 warboy: 삼성전자 14nm공정, 컴퓨터비전 특화</p>
+
+<p>MLPerf: 반도체 성능 대회</p>
+
+<p>edge 영역, server 영역?</p>
+
+<p>말해보카 OCR이 Warboy 쓰인다 한다
+Chip의 안정성 평가가 중요했다.
+AI 모델들이 보통 엔비디아 GPU에서 개발되다보니, 그걸 퓨리오사 칩 쪽으로 가져온느게 중요했다.
+AI반도체는 테스트가 그렇게 어렵지는 않다. 모델이 잘 돌아가면 된다.</p>
+
+<p>리벨리온:</p>
+
+<p>설계는 대기업의 영역이라기보다, 스타트업의 엘리트비즈니스다.
+미국만 봐도, 설계는 스타트업이 앞서나가고 대기업들이 따라가는 구조였다.</p>
+
+<p>AI반도체면 AI도 알아야 하고 반도체도 알아야 하는데, 펀딩 따오기가 어려웠다</p>
+
+<p>deep tech 회사들은 항상 시간이 부족하다. 경쟁자들이 계속 달리고 있다.</p>
+
+<p>stac-ML은 월스트리트쪽에서 성능확인</p>
+
+<p>Latency-Critical AI - Latency만큼은 정말 좋은 AI, HFT
+커다란 규모의 상업화 - KT랑 함께 데이터센터도 도전중</p>
+
+<p>LightTrader는 월스트리트에서 한번 써보고 있다
+KT 언어모델들도 돌려보고 있다</p>
+
+<p>RebelFLOW: 리벨리온의 소프트웨어 suite
+그냥 쿠버네틱스 위에 올리면 바로 돌아간다? 고 한다
+ML OPs?</p>
+
+<p>시카고에서 선물데이터가 변하면 뉴욕에서도 현물데이터가 변한다</p>
+
+<p>주가예측은 LSTM으로 하는데, 이걸 GPU로 돌린느것보다 빠르게 돌릴 수 있다</p>
+
+<p>정보를 조금이라도 빠르게 가져오는 기술은 정말 중요하다.</p>
+
+<p>리벨리온은 삼성전자 5nm공정을 썼다.
+삼성전자의 배려로 test chip을 만들 수 있었다.
+2024년 양산 계획이 있다.</p>
+
+<p>엔비디아 DGX</p>
+
+:ET
