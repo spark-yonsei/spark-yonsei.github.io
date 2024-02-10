@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "ToF"
+title:  "스마트폰 - ToF 센서"
 date:   2023-10-04 19:31:29 +0900
 categories: Market
-order: 10
+order: 5
 ---
 
 애플 안면인식은 ToF 센서로 3D 센싱을 하는 방식이다.<br>

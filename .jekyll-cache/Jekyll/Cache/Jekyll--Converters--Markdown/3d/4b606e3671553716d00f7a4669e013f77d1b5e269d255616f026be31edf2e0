@@ -1,18 +1,0 @@
-I"<p>Wireless Transceiver에는 원래 GaAs가 많이 쓰였는데, 요즘은 CMOS와 BiCMOS가 많이 쓰인다.
-fabrication 비용이 낮고, 디지털 시스템과의 연결이 용이하기 때문이다.</p>
-
-<p>아직 GaAs, GaN을 쓰는 분야도 많다. GaAs는 noise가 적다.</p>
-
-<p>MMIC = Monolithic Microwave Integrated Circuit</p>
-
-<p>MMIC 시장의 상당 부분은 자동차 레이더 transceiver가 차지한다.
-그래서 wideband Si MMIC가 요즘 많이 쓰인다.</p>
-
-<p>주파수가 높은 전파는 멀리 못간다.
-Oxygen absorption의 영향으로 attenuate된다.</p>
-
-<p>Oxygen absorption은 60GHz정도에서 최대다.</p>
-
-<p>멀리 못가는게 장점일때도 있다. 바로 옆동네에서도 그 주파수를 쓸 수 있다. 안섞이니까.</p>
-
-:ET
