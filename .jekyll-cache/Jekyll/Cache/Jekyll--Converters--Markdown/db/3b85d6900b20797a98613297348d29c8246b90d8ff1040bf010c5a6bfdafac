@@ -1,130 +1,39 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+I"�~<p>특정 연산에 특화된 하드웨어를 가속기(Accelerator) 또는 ASIC(Application Specific IC)라 부른다.
+인공지능 반도체 팹리스 업체는 인공지능 연산에 특화된 가속기를 설계하는 업체다.</p>
 
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
+<p>대표적인 인공지능 가속기 업체로는 엔비디아가 있다.
+엔비디아는 다양한 인공지능 가속기들을 출시했고, 실제로 수많은 기업들이 그걸 사서 쓰고 있다.</p>
 
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">CV</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
+<p>근데, 문제가 있다.
+인공지능이 성능이 좋긴 한데, training을 할 때 전력을 엄청나게 먹는다는 점이다.
+그래서 더 효율적인 연산을 하는 하드웨어가 필요한 상황이 되었다.</p>
 
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-		
-	    <li>
-	    	<a class="nav-item" href="/category/#History">
-				<span class="name">History</span>
-				<span class="badge">5</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Market">
-				<span class="name">Market</span>
-				<span class="badge">10</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Miscellaneous">
-				<span class="name">Miscellaneous</span>
-				<span class="badge">3</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">11</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
+<p>그래서 커다란 클라우드 회사들(아마존, 마이크로소프트, 구글, 텐센트, 알리바바)은 그들 각자의 수요에 맞는 칩을 설계하기 시작했다.
+예를 들어, 구글은 구글의 Tensorflow 라이브러리에 최적화된 TPU(Tensor Processing Unit)를 구글 데이터센터에 쓰고 있다.<br /></p>
 
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
+<p>그 외에도 많은 기업들이 자사를 위해 특화된 AI칩을 원하고 있지만,
+인공지능 가속기는 아무나 쉽게 설계할 수 있는게 아니다.</p>
 
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			기업 - 팹리스 - 인공지능 반도체
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
+<p>구글 마이크로소프트 아마존같은 대기업들은 알아서 투자해서 만들겠지만,
+그게 불가능한 회사들도 자사에 특화된 인공지능 가속기를 원하고 있다.
+그래서, 이런 기업들을 위해 수요에 맞춰 설계해주는 인공지능 반도체 회사들이 생기기 시작했다.</p>
 
-	<div class="post-content">
-		<p>특정 연산에 특화된 하드웨어를 가속기(Accelerator) 또는 ASIC(Application Specific IC)라 부른다.<br />
-인공지능 반도체 팹리스 업체는 인공지능 연산에 특화된 가속기를 설계하는 업체다.<br />
-<br />
-<br />
-대표적인 인공지능 가속기 업체로는 엔비디아가 있다.<br />
-엔비디아는 다양한 인공지능 가속기들을 출시했고, 실제로 수많은 기업들이 그걸 사서 쓰고 있다.<br />
-<br />
-근데, 문제가 있다.<br />
-인공지능이 성능이 좋긴 한데, training을 할 때 전력을 엄청나게 먹는다는 점이다.<br />
-그래서 더 효율적인 연산을 하는 하드웨어가 필요한 상황이 되었다.<br />
-<br />
-<br />
-그래서 커다란 클라우드 회사들(아마존, 마이크로소프트, 구글, 텐센트, 알리바바)은 그들 각자의 수요에 맞는 칩을 설계하기 시작했다.<br />
-예를 들어, 구글은 구글의 Tensorflow 라이브러리에 최적화된 TPU(Tensor Processing Unit)를 구글 데이터센터에 쓰고 있다.<br />
-<br />
-<br />
-그 외에도 많은 기업들이 자사를 위해 특화된 AI칩을 원하고 있지만,<br />
-인공지능 가속기는 아무나 쉽게 설계할 수 있는게 아니다.<br />
-<br />
-구글 마이크로소프트 아마존같은 대기업들은 알아서 투자해서 만들겠지만,<br />
-그게 불가능한 회사들도 자사에 특화된 인공지능 가속기를 원하고 있다.<br />
-그래서, 이런 기업들을 위해 수요에 맞춰 설계해주는 인공지능 반도체 회사들이 생기기 시작했다.<br />
-<br />
-아니 근데 스타트업들이 많은데, 더 좋은 제품 만드는게 가능하냐?<br />
-딱 한가지 기능만을 위해 설계하는거라, 인재들이 모인다면 가능하다. 원래 엘리트 비즈니스다.<br />
-예를 들어 한국의 리벨리온은 latency만을 극도로 낮춘 칩을 개발한 바 있다.<br />
-원래 시스템반도체 업계는 특화기업들이 살아남는거다.<br />
-<br />
-<br />
-<br />
-현재, 국내외 수많은 스타트업들이 인공지능 가속기 설계를 하고 있다.
-AI반도체 회사들이 많지만, 다들 집중하는 연산, 분야가 다 다르다.
+<p>아니 근데 스타트업들이 많은데, 더 좋은 제품 만드는게 가능하냐?
+딱 한가지 기능만을 위해 설계하는거라, 인재들이 모인다면 가능하다. 원래 엘리트 비즈니스다.
+예를 들어 한국의 리벨리온은 latency만을 극도로 낮춘 칩을 개발한 바 있다.
+원래 시스템반도체 업계는 특화기업들이 살아남는거다.</p>
+
+<p>현재, 국내외 수많은 스타트업들이 인공지능 가속기 설계를 하고 있다.</p>
+
+<p>AI반도체 회사들이 많지만, 다들 집중하는 연산, 분야가 다 다르다.
 한국의 유명한 AI반도체 회사 3개를 중심으로 예시를 들려고 한다.
 리벨리온, 퓨리오사, 사피온
 모빌린트, 딥엑스</p>
 
-<p>네이버 AI?</p>
-
 <p>tenstorrent</p>
 
 <p>https://v.daum.net/v/20240207165405603
-https://tenstorrent.com/thinking/
-https://www.youtube.com/@mobilint/videos</p>
+https://tenstorrent.com/thinking/</p>
 
 <p>리벨리온은 throughput보다 latency에 집중한다</p>
 
@@ -538,10 +447,4 @@ CUDA 덕분에 코드 참조나 이직도 쉬워졌다.<br />
 <p>그렇다고 엔비디아 미래가 무조건 밝은건 아니다. 클라우드 회사들(아마존, 마이크로소프트, 구글, 텐센트, 알리바바)이 그들 각자의 수요에 맞는 칩을 설계하기 시작했기 때문이다.<br />
 <br /></p>
 
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET
