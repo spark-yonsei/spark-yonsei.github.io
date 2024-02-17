@@ -1,81 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">CV</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-		
-	    <li>
-	    	<a class="nav-item" href="/category/#History">
-				<span class="name">History</span>
-				<span class="badge">5</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Market">
-				<span class="name">Market</span>
-				<span class="badge">10</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">11</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			기업 - 팹리스 - 인공지능 가속기
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>특정 연산에 특화된 하드웨어를 가속기(Accelerator) 또는 ASIC(Application Specific IC)라 부른다.<br />
+I"�'<p>특정 연산에 특화된 하드웨어를 가속기(Accelerator) 또는 ASIC(Application Specific IC)라 부른다.<br />
 인공지능 가속기 팹리스 업체는 인공지능 연산에 특화된 가속기를 설계하는 업체다.<br />
 <br />
 <br />
@@ -230,10 +153,4 @@ AWS 등 서버 서비스가 확장되어 서버용 CPU를 팔며 이득을 보�
 <p>파운드리 업체 입장:
 삼성전자 파운드리가 분리 안되어있는게 꼭 나쁜건 아닐 수 있다.
 삼성전자 HBM의 원활한 공급을 위해 삼성전자 파운드리를 선택할 수도 있다.</p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET
