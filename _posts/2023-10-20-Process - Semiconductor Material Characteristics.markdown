@@ -327,10 +327,27 @@ wire로 충전하면 몸에 구멍을 내야 하니 안좋다. 감염 위험도 
 
 MRI에서도 더 높은 해상도를 얻기 위해 GaN을 쓴다. 10~100배 높은 해상도를 얻을 수 있다.
 
+Si MOSFET에서 높은 전력밀도를 쓰려면 비싼 냉각시스템을 써야 했다.
+
+GaN은 microinverter나, 분리된 MPPT/optimizer에 적합하다.
+
+ESS:
+GaN을 쓰면 더 작고 더 낮은 전압을 쓰는 소자를 쓸 수 있다.
+이러면 dV/dt가 줄어들고, equivalent output frequency가 늘어나고,
+결과적으로 더 높은 효율과 밀도를 제공하고
+열 발생을 낮춰 cooling 부담을 덜고 소자들에 들어가는 stress를 줄여 lifetime을 늘린다.
+
+Solar Optimizer:
+이게 뭔지는 좀 알아보긴 해야 할듯
+여기에도 쓰인다.
+
+dToF는 time difference, iToF는 phase difference
+이거 추가해놓자
+
+GaN FET, IC들은 극히 작은 pulse width를 갖는 high-current pulse를 만들 수 있다.
+그 덕분에 해상도가 높아지고, 측정가능거리가 길어질 수 있다.
 
 
 https://epc-co.com/epc/about-epc/gan-talk-blog/post/17602/egan-vs-silicon
-https://epc-co.com/epc/markets/industrial/time-of-flight-tof-lidar
-https://epc-co.com/epc/markets/industrial/solar
 https://epc-co.com/epc/design-support/application-notes/an003-using-enhancement-mode
 https://www.electronicdesign.com/technologies/power/article/21807592/the-great-semi-debate-sic-or-gan

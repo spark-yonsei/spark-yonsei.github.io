@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">CV</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-		
-	    <li>
-	    	<a class="nav-item" href="/category/#Market">
-				<span class="name">Market</span>
-				<span class="badge">10</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">11</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			Semiconductor Material Characteristics
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>반도체를 왜 쓰는건가? 스위치를 만들려고. 옛날에는 진공관을 썼는데, 이게 트랜지스터로 대체된거다. 크기도 작고 효율도 좋고 쉽게 깨지지도 않으니까</p>
+I"Z<<p>반도체를 왜 쓰는건가? 스위치를 만들려고. 옛날에는 진공관을 썼는데, 이게 트랜지스터로 대체된거다. 크기도 작고 효율도 좋고 쉽게 깨지지도 않으니까</p>
 
 <p>BJT에서 CMOS로 변하기도 했었다. 이건 기억이 안나네 왜더라</p>
 
@@ -398,12 +328,7 @@ GaN을 쓰면 더 작고 더 낮은 전압을 쓰는 소자를 쓸 수 있다.
 그 덕분에 해상도가 높아지고, 측정가능거리가 길어질 수 있다.</p>
 
 <p>https://epc-co.com/epc/about-epc/gan-talk-blog/post/17602/egan-vs-silicon
+https://epc-co.com/epc/markets/industrial/time-of-flight-tof-lidar
 https://epc-co.com/epc/design-support/application-notes/an003-using-enhancement-mode
 https://www.electronicdesign.com/technologies/power/article/21807592/the-great-semi-debate-sic-or-gan</p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET
