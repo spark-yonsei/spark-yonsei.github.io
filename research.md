@@ -36,7 +36,3 @@ kernel은 application specific이다. 상황에 맞는 kernel을 통해 최적�
 test
 ### OTFDR (Optical Time-Frequency Domain Reflectometry)
 test
-
-
-
-이 뒤로는 회로, 코딩 이야기 해야 할듯
