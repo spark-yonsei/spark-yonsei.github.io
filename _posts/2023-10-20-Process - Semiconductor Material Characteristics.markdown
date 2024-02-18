@@ -6,9 +6,42 @@ categories: Process
 order: 11
 ---
 
-![alt text](/public/img/material1.png)<br>
-Common semiconductor material characteristics.<br>
+반도체를 왜 쓰는건가? 스위치를 만들려고. 옛날에는 진공관을 썼는데, 이게 트랜지스터로 대체된거다. 크기도 작고 효율도 좋고 쉽게 깨지지도 않으니까
+
+BJT에서 CMOS로 변하기도 했었다. 이건 기억이 안나네 왜더라
+
+원래 반도체는 Ge를 썼다.<br>
+근데 왜 Si로 넘어갔나? 녹는점 높아서, 더 구하기 쉬워서.<br>
 <br>
+근데 고성능 반도체 소자가 필요해지면서, 다른 반도체 물질을 사용하는 경우가 많이 생겼다.
+
+더 ideal한 스위치를 만들기 위함이다.
+
+여기서 ideal switch:
+무한히 빠른 switching speed, 전기저항 0, 가격 0
+
+<br>
+<br>
+![alt text](/public/img/material1.png)<br>
+Common semiconductor material characteristics. [1]<br>
+<br>
+
+SiGe:
+
+SiC:
+
+GaAs:
+
+GaN:
+
+InP:
+
+
+
+
+
+
+
 ![alt text](/public/img/material2.png)<br>
 Comparison of millimeter-wave technology options.<br>
 <br>
@@ -182,6 +215,7 @@ Ron이 더 작으면 RF efficiency가 더 좋아지며, 낮은 전압에서는 �
 
 EPC라는 회사 사이트:
 GaN 기반 power device들은 Si 기반 power device들보다 훨씬 성능이 좋다.
+high conductivity 덕분에 higher breakdown strength, faster switching speed, higher thermal conductivity and lower on-resistance 덕분이다
 
 GaN은 다양한 substrate들 위에 만들어질 수 있다.
 사파이어, SiC, Si 등.
@@ -190,11 +224,113 @@ Si 위에 GaN Epi layer를 만들 경우, 기존 Si 생산시설을 활용할 �
 
 GaN은 반도체 power device, RF components, LED 등에 쓰인다.
 
-https://epc-co.com/epc/gallium-nitride/what-is-gan
-https://epc-co.com/epc/products/gan-hemt
-https://epc-co.com/epc/gallium-nitride/why-gan
-https://epc-co.com/epc/gallium-nitride/where-is-gan-going
-https://epc-co.com/epc/about-epc/contact/ask-a-gan-expert
-https://eepower.com/news/next-gen-gan-on-sic-power-devices-from-new-epi-growth-mechanism/#
+HEMT(High Electron Mobility Transistors)는,
+서로 다른 bandgap을 갖는 2가지 물질의 junction에서 발생하는 2DEG(2-Dimensional Electron Gas)를 이용한 소자다.
+
+GaN based HEMT는 Si 기반 소자들보다 빠른 switching speed, 높은 열전도율, 낮은 on-resistance를 갖는다.
+
+그래서, GaN transistor, GaN IC를 power conversion system 내 회로에 사용해 efficiency를 늘리고, 크기를 줄이고, 가격을 줄일 수 있다.
+
+GaN은 Si보다 천배 효율적으로 전자를 conduct할 수 있다.
+
+GaN 공정은 Si보다 근본적으로 저렴하다.
+각 소자가 Si 소자보다 훨씬 작기 때문에, 각 웨이퍼마다 소자가 더 많이 생산될 수 있다.
+
+그래서 GaN이 high-efficiency power transistor에 많이 쓰이게 됐는데, 이게 어떻게 동작하나?
+
+2DEG 생성:
+GaN 결정 위에 얇은 AlGaN층을 만든다.
+interface에 strain이 발생하고, 그걸 compensate하기 위해 2DEG가 생긴다.
+전기장이 걸리면, 2DEG를 통해 전류가 원활히 흐른다.
+
+Efficient conduction:
+2DEG는 전자를 interface의 아주 좁은 영역에 가둬놓고 전류가 흐르게 한다. 이렇게 가둬놓기 때문에 전자의 mobility가 올라간다.
+unstrained GaN에서는 1000cm2/Vs, 2DEG 영역에서는 1500~2000cm2/Vs
+
+GaN이 새로운 application을 가능하게 하는가?:
+GaN-on-Si 트랜지스터는 MOSFET보다 10배, IGBT보다 100배 빠르게 switching을 한다.
+
+이렇게 GaN이 빠른 동작을 할 수 있었기 때문에,
+4G/LTE base station에서 RF envelope tracking을 위해,
+LiDAR에서 자율주행을 위해 쓰이게 됐다.
+빠른 동작이 필요한 분야다.
+
+GaN 트랜지스터들은 빠를 뿐 아니라 크기도 작았다.
+그래서 로보틱스, 의료전자, 인공위성, 드론 등에도 쓰인다.
+
+GaN device는 같은 전압에서, 단위면적당 on-resistance가 Si, SiC device보다 훨씬 낮다. -> smaller die, smaller packaging 가능
+
+fast switching -> passive component들의 크기 감소 가능
+그러면 또 size, weight 감소 가능
 
 
+GaN은 power level device와 signal level device를 같은 웨이퍼에 만들 수 있다는 장점이 있다. 그니까, same substrate
+
+discrete device들은 점점 높은 power density로 동작하는데,
+원래 얘네는 전류를 외부와 연결된 bump를 통해 끌어와야 한다.
+근데 점점 power density가 높아지면 이게 어려워질 수 있다.
+
+그래서, 한번에 integrated된 solution으로 GaN 소자들이 쓰일 수 있다.
+-> monolithic integration
+
+GaN 트랜지스터는 크기가 작아서 PCB 면적을 줄일 수 있다. 가격 절감
+
+chip scale packaging을 하면 power transistor의 저항, 인덕턴스, 크기, 열저항, 가격을 줄일 수 있다.
+
+package 때문에 인덕턴스가 생길 경우, power transistor들이 더 느리게 켜지고 꺼지게 된다.
+
+thermal resistance도 작다.
+eliminating all barriers between the active device and the ambient environment gives heat the most direct path to the outside world.
+
+eGaN?
+
+GaN과 SiC 모두 wide bandgap semiconductor solution이다.
+high voltage, high frequency에서 동작 가능하다.
+
+SiC는 900V 이상 전압에 적합하고,
+GaN-on-Si는 700V 이하에 적합하다.
+
+격전지는 700V~900V다.
+여기가 전기차용 전자장치들이 쓰이는 영역인데,
+GaN, SiC, Si IGBT들이 싸운다.
+
+GaN 시장은 점점 커질 것으로 전망된다.
+fast charger, class-D audio, power bank, ToF센서 등.
+이런 application들에서 ToF는 더 우수한 
+
+신재생에너지가 많이 쓰이게 되면서, Solar microinverts, optimizers, ESS 제조사들은 점점 GaN을 쓰고 있다.
+높은 효율, 높은 전력밀도, 개선된 reliability.
+
+원래 datacenter에서는:
+backplane에서 48V를 받고, 그걸 12V로 바꿔서 processing board에 주고, 그걸 다시 1V정도로 바꿔서 digital chip들에게 줬다.
+근데 GaN을 쓰면 switching speed가 더 빨라서  48V를 바로 1V로 바꿀 수 있다.
+아마 DC DC converter 원리인듯?
+
+LiDAR에서, 레이저가 더 빠르게 발사될수록 liDAR의 resolution이 올라갈 수 있다.
+GaN소자를 쓰면 Si소자보다 더 빠르게 레이저를 발사할 수 있다.
+
+
+GaN 소자는 우주에서도 쓰인다.
+GaN은 선천적으로 radiation tolerant하다.
+
+Si에서는 radiation을 막으려면 특별한 fabrication 방식, 특별한 packaging 방식이 필요하다.
+GaN은 그딴거 필요 없다.
+
+그래서 space application에 아주 적합하다.
+
+
+GaN은 medical application에 많이 쓰인다.
+무선 전력 전송으로 몸 안의 장비를 충전해야 하는 경우가 있다. 여기에 GaN이 쓰인다.
+
+heart pump, pain scintillators 등.
+wire로 충전하면 몸에 구멍을 내야 하니 안좋다. 감염 위험도 있다.
+
+MRI에서도 더 높은 해상도를 얻기 위해 GaN을 쓴다. 10~100배 높은 해상도를 얻을 수 있다.
+
+
+
+https://epc-co.com/epc/about-epc/gan-talk-blog/post/17602/egan-vs-silicon
+https://epc-co.com/epc/markets/industrial/time-of-flight-tof-lidar
+https://epc-co.com/epc/markets/industrial/solar
+https://epc-co.com/epc/design-support/application-notes/an003-using-enhancement-mode
+https://www.electronicdesign.com/technologies/power/article/21807592/the-great-semi-debate-sic-or-gan
