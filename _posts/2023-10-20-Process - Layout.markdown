@@ -3,10 +3,8 @@ layout: post
 title:  "Layout"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
-order: 10
+order: 14
 ---
-
-일단 적을 수 있는거 몽땅 적어놓겠다.
 
 동운아나텍 Analog Layout Manual:
 
