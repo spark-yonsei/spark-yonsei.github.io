@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">CV</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-		
-	    <li>
-	    	<a class="nav-item" href="/category/#Market">
-				<span class="name">Market</span>
-				<span class="badge">10</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">14</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			Frontend - FEOL - 웨이퍼 제조(Wafer Fabrication)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>웨이퍼 제조 공정(Wafer Fabrication)은 반도체 회로가 만들어질 기판, 즉 웨이퍼를 제조하는 공정이다.<br />
+I"+<p>웨이퍼 제조 공정(Wafer Fabrication)은 반도체 회로가 만들어질 기판, 즉 웨이퍼를 제조하는 공정이다.<br />
 <br />
 <br />
 웨이퍼의 주된 재료는 규소(Si)다.<br />
@@ -182,10 +112,4 @@ CMOS Image Sensor는 CIS라고 많이들 적는다.<br />
 
 <p>왜 웨이퍼는 p-substrate로 쓰는가?
 P-N 접합에서 전류가 흐르지 않게 하려면, 상대적으로 속도가 느린 양공을 다수캐리어로 갖는 P-type Substrate 를 사용하는 것이 유리하다. (이 때 소수캐리어는 전자)</p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET

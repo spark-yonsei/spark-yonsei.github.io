@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">CV</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-		
-	    <li>
-	    	<a class="nav-item" href="/category/#Market">
-				<span class="name">Market</span>
-				<span class="badge">10</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">14</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			Frontend - FEOL - 웨이퍼 제조(Wafer Fabrication)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>웨이퍼 제조 공정(Wafer Fabrication)은 반도체 회로가 만들어질 기판, 즉 웨이퍼를 제조하는 공정이다.<br />
+I"�<p>웨이퍼 제조 공정(Wafer Fabrication)은 반도체 회로가 만들어질 기판, 즉 웨이퍼를 제조하는 공정이다.<br />
 <br />
 <br />
 웨이퍼의 주된 재료는 규소(Si)다.<br />
@@ -90,7 +20,7 @@ EGS의 순도는 99.999999999% (11 Nine, 11N) 수준이다.<br />
 1. Si는 14족 원소기 때문에 Si 결정은 전류가 흐르지 않는다.<br />
 하지만 불순물, 즉 14족 원소가 아닌 원소가 섞이면 예상치 못한 곳에 전류가 흐르게 된다.<br />
 <br />
-2. 이후 잉곳을 잘라 웨이퍼를 만드는 과정에서, 불순물 때문에 잉곳이 이상하게 잘릴 수 있다.<br />
+2. 이후 잉곳을 잘라 웨이퍼를 만드는 과정에서, 불순물 때문에 잉곳이 이상하게 잘릴 수도 있다.<br />
 <br />
 그래서 Si의 순도가 상당히 중요하다.<br />
 <br />
@@ -108,9 +38,9 @@ CZ법에서는 EGS를 도가니에서 녹인 뒤, Seed라는 단결정 실리콘
 이렇게 하면 EGS가 Seed에 엉겨붙어 올라오면서 잉곳(Ingot)이라는 단결정질 원기둥이 된다.<br />
 <br />
 추후 만들어질 웨이퍼의 방향 구분을 위해, 잉곳에 flat zone 또는 notch를 만든다.<br />
-flat zone 웨이퍼보다는 notch 웨이퍼가 웨이퍼당 더 많은 die를 만들 수 있기 때문에 notch가 선호된다.<br />
+flat zone 웨이퍼보다는 notch 웨이퍼가 웨이퍼당 더 많은 die를 만들 수 있기 때문에 선호된다.<br />
 <br />
-만들어진 잉곳을 잘라 원반 형태로 만들면 웨이퍼가 된다.<br />
+잉곳을 잘라 원반 형태로 만들면 웨이퍼가 된다.<br />
 <br />
 막 자른 웨이퍼는 표면이 울퉁불퉁하다.<br />
 그래서 Grinding, Lapping, Etching, Polishing 등의 공정을 통해 웨이퍼를 평평하게 만든다.<br />
@@ -129,7 +59,6 @@ Seed 없이, 그냥 EGS를 녹여서 거푸집에 부어버리면 그게 잉곳�
 웨이퍼 테두리로는 die를 만들 수 없기 때문에, 지름이 큰 웨이퍼가 효율이 좋다.<br />
 지름이 클수록 면적당 테두리 길이가 줄어들기 때문이다.<br />
 <br />
-<br />
 지금 웨이퍼 규격은 8인치(200mm)와 12인치(300mm)다.<br />
 15인치(450mm) 웨이퍼를 도입하려는 움직임도 있었지만, 그럴 경우 기존 장비를 모두 바꿔야 하는 데다가 웨이퍼가 휘어지지 않도록 더 두꺼워져야 하고, 더 넓은 면적에서 균일함을 유지해야 하는 등 문제가 많아 도입되지는 않았다.<br />
 <br />
@@ -145,22 +74,23 @@ Seed 없이, 그냥 EGS를 녹여서 거푸집에 부어버리면 그게 잉곳�
 그래서 지금은 시스템반도체를 위해 8인치도 많이 쓰이고 있다.<br />
 물론 미래에는 어떻게 될지 모른다.<br />
 <br />
-웨이퍼 제조시장은 일본 회사들이 큰 비중을 차지하고 있다.<br />
+웨이퍼 제조사들은 이렇다(2020년 기준):<br />
+1. 신에쓰화학 31.2%<br />
+2. 섬코 23.8%<br />
+3. 글로벌웨이퍼스 16.7%<br />
+4. 실트로닉 12.3%<br />
+5. SK실트론 10.6%<br />
 <br />
-대표적인 웨이퍼 제조사로는:<br />
-일본의 신에츠화학,SUMCO,<br />
-대만의 글로벌 웨이퍼스,<br />
-독일의 실트로닉,<br />
-한국의 SK실트론 등이 있다.<br />
-<br />
+1,2위가 일본, 3위가 대만, 4위가 독일, 5위가 한국이다.<br />
 SK실트론은 국내 유일 웨이퍼 제조업체다.<br />
+하여간 웨이퍼 제조시장은 일본 회사들이 큰 비중을 차지하고 있다.<br />
+<br />
 <br />
 <br />
 웨이퍼에는 3가지가 있다.<br />
 1. Bulk Polished Wafer<br />
 2. Epi Silicon Wafer,<br />
 3. SOI Wafer<br />
-<br />
 Bulk polished silicon wafer는 비정질(Amorphous, 원자들 사이 거리에 특별한 규칙이 없음) 고체라서, 전자 이동 속도가 결정질(Crystalline)에 비해 느리다. 그래서 빠르게 작동해야 하는 CMOS등에는 사용하지 않고, DRAM이나 NAND Flash같은 메모리반도체에 쓰인다.<br />
 <br />
 Epi Silicon wafer는 bulk wafer 위에 crystalline silicon으로 되어 있는 epitaxial layer가 있는 구조다. Crystalline 구조가 있기 때문에 전자 이동속도가 bulk wafer보다 빠르다. 그래서 CMOS 이미지센서 등 속도가 빨라야 하는 분야에 쓰인다. 대신, 가격은 bulk wafer보다 비싸다.<br />
@@ -178,14 +108,9 @@ MPU: Micro Processing Unit,<br />
 MCU: Micro Controller Unit<br />
 <br />
 CMOS Image Sensor는 CIS라고 많이들 적는다.<br />
-<br /></p>
+<br />
+원래 Silicon Wafer의 두께는 600um~900um인데, 패키징할때 백그라인딩이라 해서 두께 100um 수준까지 갈아놓는다. 근데 너무 얇아지면 기계적 stress로 인해 휘어지다가 전기적 특성이 바뀔 수 있다. 그래서 너무 깎아버리면 안된다.<br /></p>
 
 <p>왜 웨이퍼는 p-substrate로 쓰는가?
 P-N 접합에서 전류가 흐르지 않게 하려면, 상대적으로 속도가 느린 양공을 다수캐리어로 갖는 P-type Substrate 를 사용하는 것이 유리하다. (이 때 소수캐리어는 전자)</p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET

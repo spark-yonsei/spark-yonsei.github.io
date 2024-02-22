@@ -138,15 +138,3 @@ EUV는 에너지가 너무 강하다보니까 대부분 물질들의 Bandgap보�
 <br>
 
 
-Well Proximity Effect:<br>
-앞에서 말했던 내용들 중 웨이퍼에 well을 만드는 내용이 있었다. Substrate 위에 well을 만들 곳을 정해놓고, 그 외 영역을 photoresist로 덮어버린 후 이온을 쏴서 도핑하는 방식이었다.<br>
-<br>
-근데 이러면 문제가, 끄트머리에서 튕겨나온 이온들 때문에 well의 가장자리는 원래 의도했던 수치보다 더 높게 도핑된다.<br>
-<br>
-그래서 well 끄트머리에 설치된 MOSFET과 안쪽에 설치된 MOSFET은 다르게 동작할 수 있다. Well의 Doping 농도가 다르기 때문이다.<br>
-<br>
-이 문제를 해결하기 위해, layout 만들때 Well 영역을 일부러 조금 더 길게 잡을수도 있고, Dummy Transistor를 가장자리에 끼워서 해당 효과를 피할 수도 있다.<br>
-<br>
-근데, 그냥 중요한 MOSFET이면 가장자리에서 멀리 떼어놓는게 좋다.<br>
-
-https://kor-razavai.tistory.com/29

@@ -1,134 +1,25 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+I"�0<p>웨이퍼 표면에 SiO\(_{2}\) 층을 만드는 공정을 산화(Oxidation) 공정이라 부른다.</p>
 
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">CV</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-		
-	    <li>
-	    	<a class="nav-item" href="/category/#Market">
-				<span class="name">Market</span>
-				<span class="badge">10</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">14</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			Frontend - FEOL - 산화(Oxidation)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>웨이퍼에 SiO\(_{2}\)를 만드는 공정을 산화(Oxidation) 공정이라 부른다.
-산화막을 만들기도 하고, 덩어리로 소자를 분리하기도 하고, interdielectric layer(층간 절연막), passivation layer(보호막)에서도 SiO2를 쓴다.
+<p>산화 공정(Oxidation)<br />
 <br />
 <br />
 웨이퍼가 완성되면, 산화 공정을 통해 웨이퍼 표면에 SiO\(_{2}\) 산화막을 생성한다.<br />
-불순물이 섞이는 것을 방지하기 위해서다.
+불순물이 섞이는 것을 방지하기 위해서다.</p>
+
+<p><br />
+웨이퍼가 완성되면, 웨이퍼 위에 반도체 소자들을 만들게 된다.<br />
+<br />
+그런데, 그냥 반도체 소자를 만들면 전류가 이상한 곳으로 새어나갈 수 있다.<br />
+그래서 전류가 흐르지 않아야 하는 곳은 산화막으로 확실하게 전류를 막는다.<br />
+<br />
+산화막은 얇은 SiO\(_{2}\) 막이다.<br />
 SiO\(_{2}\)는 유리의 원료이기도 하기에, 산화막은 얇은 유리 막이라고 생각하면 된다.<br />
-이 상태로 웨이퍼를 보관한다.
 <br />
-<br />
-웨이퍼를 사용할 때에는, 먼저 웨이퍼 어디에 어떤 소자가 만들어질지 정한다.<br />
+먼저, 웨이퍼 어느 영역에 소자가 형성될지 미리 정해놓는다.<br />
 소자가 형성되는 영역을 Active Region이라 부른다.<br />
-Active Region이 정해지면, 도핑을 통해 필요한 곳에 Well을 만들게 된다.<br />
+Active Region이 정해지면, 도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다.<br />
 <br />
-P-Epi 웨이퍼를 사용할 때에는 PMOS가 만들어질 곳에 N-Well을 만들어줘야 하고,<br />
-N-Epi 웨이퍼를 사용할 때에는 NMOS가 만들어질 곳에 P-Well을 만들어줘야 한다.<br />
-<br />
-<br />
-Epi에 Well을 만들기 위해서는, Epi를 도핑해야 한다.
-그러기 위해서, Well이 생겨야 하는 위치의 oxide를 제거할 필요가 있다.
-Oxide를 제거한 틈으로 이온을 쏴서 도핑을 하게 된다.</p>
-
-<p>일단 웨이퍼 전체에 photoresist를 뿌린다. 세로로 Epi - Oxide - Photoresist 구조가 된다.
-이제 mask로 oxide를 제거해야 하는 부분을 표시하고, oxide를 제거한다.
-그러면 그 위에는 아무것도 없고, 틈이 아닌 곳에는 oxide + photoresist가 있다. etch했으니까.
-그리고 여기다가 이온을 쏴서 도핑한다.</p>
-
-<p>ion을 때려박은 뒤에는 가열해서 ion이 안쪽까지 diffusion되어 들어가게 한다.
-(Well Drive In)
-이렇게 하면 위쪽에도 oxide가 다시 생긴다. 가열했으니까.
-일단 도핑 방법중 하나가 ‘Ion implantation’이다.<br />
-말 그대로 이온을 가속해서 웨이퍼에다가 때려박아 필요한 부분을 도핑하는 방식이다.<br />
-근데, Ion implantation에는 두가지 문제가 있다.<br />
-<br />
-1. Channeling Effect<br />
-쏘다보면 특정 부분만 이온이 깊게 들어갈 수도 있다.<br />
-그래서 웨이퍼를 다양한 방향으로 기울이거나 회전시켜 이온이 골고루 박히도록 해야 한다.<br />
-<br />
-2. Annealing<br />
-웨이퍼에 이온들을 쏘다보면 웨이퍼 표면이 울퉁불퉁해진다.<br />
-철판에 총쏘면 철판이 울퉁불퉁해지는거랑 같은 이치다.<br />
-후속 열처리 과정을 통해 표면을 복구해줘야 하는데, 이 복구 과정을 Annealing이라 부른다.<br />
-<br />
-Ion Implant는 이런 단점들을 갖고 있음에도 널리 쓰인다.<br />
-왜냐하면, 이온을 몇개나 써서 도핑할지 내 맘대로 정할 수 있기 때문이다.<br />
-<br />
-이런 문제도 발생하긴 한다.<br />
-원래는 SiO2가 이온들을 다 막아줘야 하지만, SiO2는 비정질(Amorphous Solid)라서 원자 배열에 규칙이 없고,<br />
-그래서 이온들이 중간중간 있는 빈칸들에 들어가버리는 경우가 생긴다. 이 현상을 ‘트랩’이라 부른다.<br />
-근데 이 트랩은 Annealing을 하면 다 없어진다.<br />
-<br />
-Ion implantation 말고 Solid State Diffusion이라는 방법도 있다.<br />
-이건 도체 표면에 dopant를 올려놓고, 웨이퍼로 확산되기를 기다려서 도핑하는 방식이다.<br />
-이때, 다른 곳에는 SiO2가 깔려있기 때문에 dopant가 이상한 곳으로 들어가지 못한다.<br />
-<br />
-이 방식은 diffusion 기반이니까, 오래 diffusion시킬수록 dopant가 더 깊이 들어간다.<br />
-하지만 너무 깊이 들어가버리면 parasitic capacitance가 생겨버릴 수 있다.<br /></p>
-
-<p>이렇게 하면 Si에 Well이 생긴 상태가 되고, 그 위도 oxide로 덮여 있다.</p>
-
-<p>그런데, 웨이퍼에 n-well과 p-well을 깔다보면 웨이퍼에 pn junction이 생긴다.<br />
+그런데, 웨이퍼에 n-well과 p-well을 깔다보면 웨이퍼에 pn junction이 생긴다.<br />
 의도하지 않은 pn junction에 의해 원하지 않은 전류가 흐를 수 있다.<br />
 그래서, 절연체를 통해 두 영역을 isolation해줘야 한다.<br />
 <br />
@@ -185,9 +76,35 @@ H2O(g)를 넣어 산화시키면 습식 산화다.<br />
 <br />
 PECVD, Anodizing에 대해서는 추가 조사가 필요하다.<br />
 그리고 SiO2를 깔아놓은 뒤에 도핑을 하는 것 같은데, 아니면 나중에 고쳐놓겠다.<br />
-<br /></p>
-
-<p><br />
+<br />
+일단 도핑 방법중 하나가 ‘Ion implantation’이다.<br />
+말 그대로 이온을 가속해서 웨이퍼에다가 때려박아 필요한 부분을 도핑하는 방식이다.<br />
+근데, Ion implantation에는 두가지 문제가 있다.<br />
+<br />
+1. Channeling Effect<br />
+쏘다보면 특정 부분만 이온이 깊게 들어갈 수도 있다.<br />
+그래서 웨이퍼를 다양한 방향으로 기울이거나 회전시켜 이온이 골고루 박히도록 해야 한다.<br />
+<br />
+2. Annealing<br />
+웨이퍼에 이온들을 쏘다보면 웨이퍼 표면이 울퉁불퉁해진다.<br />
+철판에 총쏘면 철판이 울퉁불퉁해지는거랑 같은 이치다.<br />
+후속 열처리 과정을 통해 표면을 복구해줘야 하는데, 이 복구 과정을 Annealing이라 부른다.<br />
+<br />
+Ion Implant는 이런 단점들을 갖고 있음에도 널리 쓰인다.<br />
+왜냐하면, 이온을 몇개나 써서 도핑할지 내 맘대로 정할 수 있기 때문이다.<br />
+<br />
+이런 문제도 발생하긴 한다.<br />
+원래는 SiO2가 이온들을 다 막아줘야 하지만, SiO2는 비정질(Amorphous Solid)라서 원자 배열에 규칙이 없고,<br />
+그래서 이온들이 중간중간 있는 빈칸들에 들어가버리는 경우가 생긴다. 이 현상을 ‘트랩’이라 부른다.<br />
+근데 이 트랩은 Annealing을 하면 다 없어진다.<br />
+<br />
+Ion implantation 말고 Solid State Diffusion이라는 방법도 있다.<br />
+이건 도체 표면에 dopant를 올려놓고, 웨이퍼로 확산되기를 기다려서 도핑하는 방식이다.<br />
+이때, 다른 곳에는 SiO2가 깔려있기 때문에 dopant가 이상한 곳으로 들어가지 못한다.<br />
+<br />
+이 방식은 diffusion 기반이니까, 오래 diffusion시킬수록 dopant가 더 깊이 들어간다.<br />
+하지만 너무 깊이 들어가버리면 parasitic capacitance가 생겨버릴 수 있다.<br />
+<br />
 <br /></p>
 
 <p>STI 말고 DTI(Deep Trench Isolation) 공정도 있다.
@@ -254,10 +171,4 @@ Boron implant는 LOCOS nitride 만들고 남은 photoresist를 쓴다.
 그럼 거기에 phosphorus를 implant한다. 이게 앞서 implant된 blanket boron을 counterdope해서 NMOS thick-field threshold를 끌어올린다. 이렇게 해서 thick-field threshold가 모두 최대 동작 전압을 넘어가도록 한다.
 그 다음에는 photoresist를 전부 제거한다.</p>
 
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET

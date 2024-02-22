@@ -6,47 +6,10 @@ categories: Process
 order: 2
 ---
 
-산화 공정(Oxidation)<br>
+웨이퍼에 SiO$$_{2}$$를 만드는 공정을 산화(Oxidation) 공정이라 부른다.
+산화막을 만들기도 하고, 덩어리로 소자를 분리하기도 하고, interdielectric layer(층간 절연막), passivation layer(보호막)에서도 SiO2를 쓴다.
 <br>
-웨이퍼가 완성되면, 웨이퍼 위에 반도체 소자들을 만들게 된다.<br>
 <br>
-그런데, 그냥 반도체 소자를 만들면 전류가 이상한 곳으로 새어나갈 수 있다.<br>
-그래서 전류가 흐르지 않아야 하는 곳은 산화막으로 확실하게 전류를 막는다.<br>
-<br>
-산화막은 얇은 SiO$$_{2}$$ 막이다.<br>
-SiO$$_{2}$$는 유리의 원료이기도 하기에, 산화막은 얇은 유리 막이라고 생각하면 된다.<br>
-<br>
-먼저, 웨이퍼 어느 영역에 소자가 형성될지 미리 정해놓는다.<br>
-소자가 형성되는 영역을 Active Region이라 부른다.<br>
-Active Region이 정해지면, 도핑을 통해 필요한 곳에 n-well, p-well을 만들어놓는다.<br>
-<br>
-그런데, 웨이퍼에 n-well과 p-well을 깔다보면 웨이퍼에 pn junction이 생긴다.<br>
-의도하지 않은 pn junction에 의해 원하지 않은 전류가 흐를 수 있다.<br>
-그래서, 절연체를 통해 두 영역을 isolation해줘야 한다.<br>
-<br>
-옛날에는 LOCOS(Local Oxidation of Silicon)라고 해서, n영역 p영역 사이에 SiO2를 대충 끼워넣었다.<br>
-그랬더니 SiO2가 양 옆을 밀어내며 gate electrode 아래까지 밀고 들어오는 현상이 발생했다.<br>
-이렇게 되면 MOSFET의 채널에 영향을 주게 된다.<br>
-이 현상을 bird's beak 현상이라 부른다. SiO2가 옆을 밀어내는 모양이 새 부리같이 생겨서 그렇다.<br>
-<br>
-그래서, LOCOS 대신 STI(Shallow Trench Isolation) 공정을 사용하기 시작했다.<br>
-Trench를 파고, 그 안에 SiO2를 집어넣어 pn junction을 방지하는 방식이다.<br>
-<br>
-LOCOS보다는 낫지만, 그래도 STI를 쓴다고 해서 SiO2가 양 옆을 아예 안밀어내는건 아니다.<br>
-STI의 SiO2에 의해 반도체 영역이 stress를 받는걸 STI stress effect라 한다.<br>
-STI stress에 의한 영향을 방지하려면, active region을 더미로라도 꽉 채워놓아야 한다.
-STI stress effect는 모델링하는 파운드리 회사도 있고, 그렇지 않은 파운드리 회사도 있다.<br>
-<br>
-STI 공정을 쓰면 chip size를 작게 할 수 있다.<br>
-원래 PN junction을 분리하려면 거리가 필요했는데, STI로 isolation을 하면 거리 없이도 isolation을 할 수 있다.<br>
-결과적으로, 회로의 집적도를 높일 수 있다.<br>
-<br>
-STI 말고 DTI(Deep Trench Isolation) 공정도 있다.
-DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNR이 증가하는 이미지 센서 등에 사용된다.
-
-어쨌든, 이렇게 웨이퍼 사이에도 SiO2를 넣어줘야 하고, 웨이퍼 위에다가도 SiO2를 씌워줘야 한다.
-웨이퍼 위에 씌운 SiO2는, 나중에 연결이 필요한 영역은 갈아버리고 도체를 연결할거다.
-
 SiO2를 씌우는 데에는 3가지 방법이 있다.<br>
 <br>
 1\. 열산화(Thermal Oxidation)<br>
@@ -68,16 +31,35 @@ H2O(g)를 넣어 산화시키면 습식 산화다.<br>
 동일한 온도와 시간을 가정하면, 습식산화로 얻은 산화막이 건식산화로 얻은 산화막보다 5~10배 두껍다.<br>
 두께를 조절하려면, 그냥 더 오래 산화시키면 더 두꺼워진다.<br>
 <br>
-근데 산화막을 왜 만드는건가?<br>
-나중에 Si 위에 전선을 올릴거라서, 전선과 웨이퍼 사이에 절연막을 만들어주는거다.<br>
-물론 이러면 도체 사이에 유전체가 끼워진 형태가 되는거라, 캐패시턴스가 생겨 Coupling 등의 문제가 생길 수 있다.<br>
 <br>
-다른 이유도 있다. 산화막은 이온주입공정에서 산화 방지막 역할을 하고,<br>
-식각공정에서는 필요한 부분이 잘못 식각되는 것을 막는 식각 방지막 역할도 한다.<br>
+웨이퍼가 완성되면, 산화 공정을 통해 웨이퍼 표면에 SiO$$_{2}$$ 산화막을 생성한다.<br>
+불순물이 섞이는 것을 방지하기 위해서다.
+SiO$$_{2}$$는 유리의 원료이기도 하기에, 산화막은 얇은 유리 막이라고 생각하면 된다.<br>
+이 상태로 웨이퍼를 보관한다.
 <br>
-PECVD, Anodizing에 대해서는 추가 조사가 필요하다.<br>
-그리고 SiO2를 깔아놓은 뒤에 도핑을 하는 것 같은데, 아니면 나중에 고쳐놓겠다.<br>
 <br>
+웨이퍼를 사용할 때에는, 먼저 웨이퍼 어디에 어떤 소자가 만들어질지 정한다.<br>
+소자가 형성되는 영역을 Active Region이라 부른다.<br>
+Active Region이 정해지면, 도핑을 통해 필요한 곳에 Well을 만들게 된다.<br>
+<br>
+P-Epi 웨이퍼를 사용할 때에는 PMOS가 만들어질 곳에 N-Well을 만들어줘야 하고,<br>
+N-Epi 웨이퍼를 사용할 때에는 NMOS가 만들어질 곳에 P-Well을 만들어줘야 한다.<br>
+<br>
+<br>
+Epi에 Well을 만들기 위해서는, Epi를 도핑해야 한다.
+그러기 위해서, Well이 생겨야 하는 위치의 oxide를 제거할 필요가 있다.
+Oxide를 제거한 틈으로 이온을 쏴서 도핑을 하게 된다.
+
+일단 웨이퍼 전체에 photoresist를 뿌린다. 세로로 Epi - Oxide - Photoresist 구조가 된다.
+이제 mask로 oxide를 제거해야 하는 부분을 표시하고, oxide를 제거한다.
+그러면 그 위에는 아무것도 없고, 틈이 아닌 곳에는 oxide + photoresist가 있다. etch했으니까.
+그리고 여기다가 이온을 쏴서 도핑한다.
+
+
+
+ion을 때려박은 뒤에는 가열해서 ion이 안쪽까지 diffusion되어 들어가게 한다.
+(Well Drive In)
+이렇게 하면 위쪽에도 oxide가 다시 생긴다. 가열했으니까.
 일단 도핑 방법중 하나가 'Ion implantation'이다.<br>
 말 그대로 이온을 가속해서 웨이퍼에다가 때려박아 필요한 부분을 도핑하는 방식이다.<br>
 근데, Ion implantation에는 두가지 문제가 있다.<br>
@@ -105,15 +87,125 @@ Ion implantation 말고 Solid State Diffusion이라는 방법도 있다.<br>
 <br>
 이 방식은 diffusion 기반이니까, 오래 diffusion시킬수록 dopant가 더 깊이 들어간다.<br>
 하지만 너무 깊이 들어가버리면 parasitic capacitance가 생겨버릴 수 있다.<br>
-<br>
-<br>
 
-STI 말고 DTI(Deep Trench Isolation) 공정도 있다.
-DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNR이 증가하는 이미지 센서 등에 사용된다.
-삼성전자에서는 이미지 센서에서 Cell들을 분리하는 기술은 ‘ISOCELL’ 기술이라 불린다. Isolation + Cell<br>
 
+
+이렇게 하면 Si에 Well이 생긴 상태가 되고, 그 위도 oxide로 덮여 있다.
+
+
+
+
+Well Proximity Effect:<br>
+앞에서 말했던 내용들 중 웨이퍼에 well을 만드는 내용이 있었다. Substrate 위에 well을 만들 곳을 정해놓고, 그 외 영역을 photoresist로 덮어버린 후 이온을 쏴서 도핑하는 방식이었다.<br>
 <br>
-STI Stress를 고려해서, layout시 바깥쪽에 source가 가도록 한다. 또는 양쪽 끝에 dummy transistor를 넣는다. Finger로 구성할 때 이야기고, N은 Vss 쪽으로, P는 VDD쪽으로 갈 가능성이 높아서 그렇다. 고 하는데 무슨 뜻인지는 알아봐야 한다.<br>
+근데 이러면 문제가, 끄트머리에서 튕겨나온 이온들 때문에 well의 가장자리는 원래 의도했던 수치보다 더 높게 도핑된다.<br>
+<br>
+그래서 well 끄트머리에 설치된 MOSFET과 안쪽에 설치된 MOSFET은 다르게 동작할 수 있다. Well의 Doping 농도가 다르기 때문이다.<br>
+<br>
+이 문제를 해결하기 위해, layout 만들때 Well 영역을 일부러 조금 더 길게 잡을수도 있고, Dummy Transistor를 가장자리에 끼워서 해당 효과를 피할 수도 있다.<br>
+<br>
+근데, 그냥 중요한 MOSFET이면 가장자리에서 멀리 떼어놓는게 좋다.<br>
+
+https://kor-razavai.tistory.com/29
 
 웨이퍼 제조사들은 웨이퍼가 완성되면 표면에 산화막을 만들어서 고객사에게 보낸다.<br>
 고객사는 산화막을 갈아버리고, 새로 위에 산화막 씌울 준비를 한다.<br>
+
+
+그렇게 보관하다가, 이제 무슨 패턴 그려야 할지 정해지면 그걸 들고 온다.
+P-Epi면 N-Well, N-Epi면 P-Well을 만들어야 할 것이다.
+
+N-Well, P-Well이 생겨야 하는 위치에 oxide를 etch해서 틈을 만든다.
+틈 위에는 아무것도 없고, 틈이 아닌 곳에는 oxide + photoresist가 있다. etch했으니까.
+그리고 거기다가 ion을 때려박는다.
+
+ion을 때려박은 뒤에는 가열해서 ion이 안쪽까지 diffusion되어 들어가게 한다.
+(Well Drive In)
+이렇게 하면 위쪽에도 oxide가 다시 생긴다. 가열했으니까.
+
+이렇게 하면 Si에 Well이 생긴 상태가 되고, 그 위도 oxide로 덮여 있다.
+
+이렇게 만들어진 Well은 counterdoping으로 만들어진거다.
+그래서, Well 안은 dopant concentration이 높고,
+그래서 majority carrier의 mobility가 조금 떨어진다.
+
+그래서 Well에 올라가야 하는 소자는 성능이 조금 떨어지게 된다.
+P-Epi를 쓰면 N-Well을 만들고 거기에 PMOS를 올리게 된다.
+그래서 PMOS의 성능을 조금 희생해 NMOS 성능을 최대화한 상황이 된다.
+
+N-Epi를 쓰면 반대로, P-well을 만들고 거기에 NMOS를 올리게 된다.
+이때는 NMOS의 성능을 조금 희생해 PMOS 성능을 최대화한거다.
+
+근데, 그래도 NMOS가 더 빠르다. 전자 mobility가 hole mobility보다 애초에 크기 때문이다.
+
+N-well process에서는 p-sub를 ground에 박아야 하고, P-well process에서는 N-sub를 최대한 높은 전압에 꽂아야 한다. 보통 circuit designer들은 ground에 꽂는걸 선호한다. Multiple power supply를 쓰면 가장 높은 전압에 연결하기 어렵다.
+
+Field oxide는 두꺼워야 한다. Field oxide의 threshold voltage는 커야 하기도 하고, 커다래야 금속과 그 아래 silicon 사이의 parasitic capacitance가 작다.
+
+CMOS process는 선택적으로 field oxide를 만들고, active device가 만들어질 영역에는 얇은 pad oxide만 남기기 위해 LOCOS technology를 쓴다.(이 기술은 bird’s beak 현상 등 문제로 지금은 DTI로 대체된걸로 알고 있다)
+Field oxide가 생길 영역을 field region, 안생길 영역을 moat region이라 부른다.
+
+LOCOS process는 일단 웨이퍼 전체에 nitride를 deposit한다.
+그리고 inverse moat mask를 가져와서 nitride에 패턴을 그린다
+그다음 selective etch로 field region에서 nitride를 제거한다.
+
+LOCOS에 쓰이는 nitride layer는 pad oxide 위에 생겨야 한다. 그냥 Silicon 위에 바로 만들면 nitride growth때문에 mechanical stress가 들어가고, silicon lattice가 움직일 수 있다(dislocation)
+Pad oxide가 nitride 영향으로부터 Si를 보호해준다
+
+근데, 이 thick field주변에 생기는 thick-field transistor의 threshold voltage가 최대 동작 전압보다 확실하게 높아야 할 것이다. 안그러면 제대로 분리가 안됐다고 봐야겠지. 거기서 막 동작이 일어날텐데
+
+그래서, 여기 threshold voltage 더 높여주기 위해서, P-epi의 field region에 p-type channel stop implant를 한다. N-well field region에는 N-type channel stop implant를 한다.
+Channel stop에는 다양한 방법들이 있는데, 여기서는 blanket boron implant 후 patterned phosphorus implant를 하는 방법을 쓴다.
+Boron implant는 LOCOS nitride 만들고 남은 photoresist를 쓴다.
+지금 상황은 웨이퍼 위에 pad oxide가 있고, 그 위 nitride가 남아잇는 moat region과 nitride가 없는 field region이 있는 상황이다. 그리고 moat region의 nitride 위에는 photoresist가 남아있다.
+그래서, photoresist가 없는 곳에 전부 blanket boron implant를 한다. 이렇게 하면 epi region의 thick-field threshold가 올라간다.
+그 다음에는 웨이퍼 전체를 photoresist로 덮는다.
+아까 남아있던 photoresist가 남아있어도 상관 없다. 어차피 moat region은 안건드릴거다.
+그다음에 웨이퍼에 다시 패턴을 그린다. Channel stop mask를 이용한다.
+이걸 하고 나면 N-well field region만 노출되게 된다.
+그럼 거기에 phosphorus를 implant한다. 이게 앞서 implant된 blanket boron을 counterdope해서 NMOS thick-field threshold를 끌어올린다. 이렇게 해서 thick-field threshold가 모두 최대 동작 전압을 넘어가도록 한다.
+그 다음에는 photoresist를 전부 제거한다. 
+
+
+
+
+
+
+
+그런데, 웨이퍼에 n-well과 p-well을 깔다보면 웨이퍼에 pn junction이 생긴다.<br>
+의도하지 않은 pn junction에 의해 원하지 않은 전류가 흐를 수 있다.<br>
+그래서, 절연체를 통해 두 영역을 isolation해줘야 한다.<br>
+
+
+Isolation:
+Isolation에는 LOCOS, STI, DTI가 있다.
+
+
+LOCOS(Local Oxidation of Silicon):
+옛날에는 LOCOS(Local Oxidation of Silicon)라고 해서, n영역 p영역 사이에 SiO2를 대충 끼워넣었다.<br>
+그랬더니 SiO2가 양 옆을 밀어내며 gate electrode 아래까지 밀고 들어오는 현상이 발생했다.<br>
+이렇게 되면 MOSFET의 채널에 영향을 주게 된다.<br>
+이 현상을 bird's beak 현상이라 부른다. SiO2가 옆을 밀어내는 모양이 새 부리같이 생겨서 그렇다.<br>
+
+
+STI(Shallow Trench Isolation):
+그래서, LOCOS 대신 STI(Shallow Trench Isolation) 공정을 사용하기 시작했다.<br>
+Trench를 파고, 그 안에 SiO2를 집어넣어 pn junction을 방지하는 방식이다.<br>
+<br>
+LOCOS보다는 낫지만, 그래도 STI를 쓴다고 해서 SiO2가 양 옆을 아예 안밀어내는건 아니다.<br>
+STI의 SiO2에 의해 반도체 영역이 stress를 받는걸 STI stress effect라 한다.<br>
+STI stress에 의한 영향을 방지하려면, active region을 더미로라도 꽉 채워놓아야 한다.
+STI stress effect는 모델링하는 파운드리 회사도 있고, 그렇지 않은 파운드리 회사도 있다.<br>
+<br>
+STI 공정을 쓰면 chip size를 작게 할 수 있다.<br>
+원래 PN junction을 분리하려면 거리가 필요했는데, STI로 isolation을 하면 거리 없이도 isolation을 할 수 있다.<br>
+결과적으로, 회로의 집적도를 높일 수 있다.<br>
+<br>
+STI Stress를 고려해서, layout시 바깥쪽에 source가 가도록 한다. 또는 양쪽 끝에 dummy transistor를 넣는다. Finger로 구성할 때 이야기고, N은 Vss 쪽으로, P는 VDD쪽으로 갈 가능성이 높아서 그렇다. 고 하는데 무슨 뜻인지는 알아봐야 한다.<br>
+
+
+DTI(Deep Trench Isolation):
+DTI는 STI보다 훨씬 깊게 파는 공정인데, 옆 소자와 분리돼야 SNR이 증가하는 이미지 센서 등에 사용된다.
+삼성전자에서는 이미지 센서에서 Cell들을 분리하는 기술은 ‘ISOCELL’ 기술이라 불린다. Isolation + Cell<br>
+
+

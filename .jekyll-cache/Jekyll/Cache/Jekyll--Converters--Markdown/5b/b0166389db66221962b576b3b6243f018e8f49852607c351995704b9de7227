@@ -1,74 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
-<style>@import url(/public/css/syntax/monokai.css);</style>
-  <title>Seil Park</title>
-  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
-
-  <link href="/public/css/style.css" rel="stylesheet">
-  <body>
-  	<div class="container"> 
-		<div class="sidebar">
-			<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/">Seil Park</a>
-	</div>
-	<p class="lead"></p></div>
-
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title" style="text-align: center;">Introduction</li>
-	  <li>
-	  	<a class="nav-item" href="/">CV</a>
-	  </li>
-	  <li>
-		<a class="nav-item" href="/research">Research</a>
-	  </li>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title" style="text-align: center;">Articles</li>
-		
-	    <li>
-	    	<a class="nav-item" href="/category/#Market">
-				<span class="name">Market</span>
-				<span class="badge">10</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Process">
-				<span class="name">Process</span>
-				<span class="badge">14</span>
-	    	</a>
- 		</li>
-	    
-	  </nav>
-	</ul>
-</div>
-
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
-
-		</div>
-		<div class="content">
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<article class="post">
-	<header class="post-header">
-		<div class="post-title"> 
-			Backend - 패키징(Packaging)
-		</div>
-		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
-		</time>		
-	</header>
-
-	<div class="post-content">
-		<p>패키징 공정(Packaging)<br /></p>
+I"|<p>패키징 공정(Packaging)<br /></p>
 
 <p>웨이퍼를 잘라서 나온 낱개의 칩을 베어칩(Bare Chip), 또는 다이(Die)라 부른다.<br />
 그러나 이 상태의 칩은 외부와 전기 신호를 주고받을 수 없으며, 외부 충격에 의해 손상되기도 쉽다.<br />
@@ -168,10 +98,4 @@ EMC는 반도체를 보호하고 열을 잘 방출하고, 이 방식은 가격�
 <p>AVP? Advanced Packaging?</p>
 
 <p>원래 Silicon Wafer의 두께는 600um~900um인데, 패키징할때 백그라인딩이라 해서 두께 100um 수준까지 갈아놓는다. 근데 너무 얇아지면 기계적 stress로 인해 휘어지다가 전기적 특성이 바뀔 수 있다. 그래서 너무 깎아버리면 안된다.<br /></p>
-
-	</div>
-</article>
-		</div>
-	</div>
-  </body>
-</html>
+:ET
