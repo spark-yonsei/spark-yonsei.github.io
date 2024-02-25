@@ -6,10 +6,7 @@ categories: Process
 order: 3
 ---
 
-포토 공정(Photolithography)<br>
-
-포토 공정에서는 산화막 위에 감광액을 코팅하고, 원하는 회로 패턴대로 그려지게 한다.
-
+웨이퍼 위에 감광액(Photoresist)을 코팅하고, 그 위에 원하는 회로 패턴대로 빛을 조사하는 공정이 포토 공정(Photolithography)이다.<br>
 
 
 일단 CAD로 회로 패턴을 설계한다.<br>
