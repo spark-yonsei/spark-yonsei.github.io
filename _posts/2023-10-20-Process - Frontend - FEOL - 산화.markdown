@@ -6,11 +6,11 @@ categories: Process
 order: 2
 ---
 
-웨이퍼에 SiO$$_{2}$$를 만드는 공정을 산화(Oxidation) 공정이라 부른다.
-산화막을 만들기도 하고, 덩어리로 소자를 분리하기도 하고, interdielectric layer(층간 절연막), passivation layer(보호막)에서도 SiO2를 쓴다.
+웨이퍼 위에 SiO$$_{2}$$를 만드는 공정을 산화(Oxidation) 공정이라 부른다.<br>
+산화 공정에서는 SiO$$_{2}$$로 MOSFET의 Gate Oxide를 만들기도 하고, 각 소자를 분리하는 절연체 벽을 만들기도 한다.
 <br>
 <br>
-SiO2를 씌우는 데에는 3가지 방법이 있다.<br>
+웨이퍼 표면에 SiO$$_{2}$$를 씌우는 데에는 3가지 방법이 있다.<br>
 <br>
 1\. 열산화(Thermal Oxidation)<br>
 2\. 플라즈마 보강 화학적 기상 증착(Plasma-Enhanced Chemical Vapor Decomposition, PECVD)<br>
@@ -32,35 +32,35 @@ H2O(g)를 넣어 산화시키면 습식 산화다.<br>
 두께를 조절하려면, 그냥 더 오래 산화시키면 더 두꺼워진다.<br>
 <br>
 <br>
-웨이퍼가 완성되면, 산화 공정을 통해 웨이퍼 표면에 SiO$$_{2}$$ 산화막을 생성한다.<br>
-불순물이 섞이는 것을 방지하기 위해서다.
-SiO$$_{2}$$는 유리의 원료이기도 하기에, 산화막은 얇은 유리 막이라고 생각하면 된다.<br>
-이 상태로 웨이퍼를 보관한다.
+웨이퍼가 완성되면, 산화 공정을 통해 웨이퍼 표면에 SiO$$_{2}$$ 산화막을 생성하고 그 상태로 보관한다.<br>
+불순물이 섞이는 것을 방지하기 위해서다.<br>
+<br>
+웨이퍼 위에 소자를 만들 때에는 원래 산화막을 갈아버리고, 새로 산화막을 씌운다.<br>
+웨이퍼 전체가 아닌 특정 부분에만 산화막이 존재해야 하기 때문이다.<br>
 <br>
 <br>
-
-
-웨이퍼 제조사들은 웨이퍼가 완성되면 표면에 산화막을 만들어서 고객사에게 보낸다.<br>
-고객사는 산화막을 갈아버리고, 새로 위에 산화막 씌울 준비를 한다.<br>
-
-
-이게 지금 소자를 분리하려는건지 pn junction 쪼개려는건지 확인 필요
-아마 소자 분리가 맞을 것 같다. LOCOS로 pn junction못쪼개잖아
-
-일단 웨이퍼 전체에 pad oxide를 깔고, moat region에만 nitride를 올린다.
-그다음 Nitride가 없는 field region에만 SiO2를 넣는게
-
-
-그다음에 다시 oxide를 키워서 nitride 없는 곳에만 SiO2를 만든다.
-
+소자가 생길 영역을 active region(또는 moat region)이라 부른다.<br>
+소자가 생기지 않을 영역을 field region이라 부른다.<br>
+<br>
+active region에는 MOSFET의 Oxide 층을 구성할 SiO$$_{2}$$층이 필요하고,<br>
+field region에는 웨이퍼 위 소자들을 분리할 SiO$$_{2}$$벽이 필요하다.<br>
 <br>
 <br>
-소자가 생길 region : moat region, active region<br>
-소자가 없는 region : field region<br>
+SiO$$_{2}$$ in Active Region:<br>
+미세공정을 하다보면 Gate Oxide가 점점 얇아질 필요가 있다.<br>
+근데 이게 얇아지다보니 전류가 새는 문제가 점점 심해지게 되었다.<br>
 <br>
-그런데, 웨이퍼에 n-well과 p-well을 깔다보면 웨이퍼 안에 pn junction들이 생긴다.<br>
-이 pn junction들에 의해 원하지 않는 전류가 흘러버릴 수 있기 때문에, 절연체를 pn junction 사이에 끼워줘야 한다.<br>
+그래서 물리적으로는 얇고, 전기적으로는 누설전류가 없는 절연막이 필요하게 됐다.<br>
+그 결과, SiO$$_{2}$$보다 유전상수(dielectric constant, k)가 더 큰 high-k dielectric material이 Gate oxide로 쓰이게 됐다.<br>
+<br>
+지금은 HfO$$_{2}$$(산화하프늄)가 많이 쓰이고 있고, 란타넘(Lanthanum, La) 기반 산화물도 Gate Oxide 재료로 연구되고 있다.<br>
+<br>
+<br>
+SiO$$_{2}$$ in Field Region:<br>
+소자를 만들기 위해 웨이퍼에 n-well과 p-well을 만들다 보면 웨이퍼 안에 수많은 pn junction들이 생긴다.<br>
+이 pn junction들에 의해 원하지 않는 전류가 흘러버릴 수 있기 때문에, 절연체를 pn junction들 사이에 끼워줘야 한다.<br>
 이렇게 pn junction 사이에 절연체를 끼우는 것을 isolation이라 부른다.<br>
+Isolation에 쓰이는 절연체는 SiO$$_{2}$$다.<br>
 <br>
 <br>
 Isolation:<br>
@@ -100,3 +100,13 @@ STI Stress를 고려해서, layout시 바깥쪽에 source가 가도록 한다. �
 DTI(Deep Trench Isolation):<br>
 DTI는 STI보다 훨씬 깊은 Trench를 파고, 거기에 SiO2를 집어넣는 방식이다.<br>
 SNR 개선을 위해 옆 소자와 확실하게 분리되어야 하는 이미지 센서 등에 사용된다.<br>
+
+
+이게 지금 소자를 분리하려는건지 pn junction 쪼개려는건지 확인 필요
+아마 소자 분리가 맞을 것 같다. LOCOS로 pn junction못쪼개잖아
+
+일단 웨이퍼 전체에 pad oxide를 깔고, moat region에만 nitride를 올린다.
+그다음 Nitride가 없는 field region에만 SiO2를 넣는게
+
+
+그다음에 다시 oxide를 키워서 nitride 없는 곳에만 SiO2를 만든다.

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">CV</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+		
+	    <li>
+	    	<a class="nav-item" href="/category/#Design">
+				<span class="name">Design</span>
+				<span class="badge">3</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#History">
+				<span class="name">History</span>
+				<span class="badge">2</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Market">
+				<span class="name">Market</span>
+				<span class="badge">11</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Process">
+				<span class="name">Process</span>
+				<span class="badge">15</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			스마트폰 - 카메라 - AF
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>AF는 스마트폰 카메라에 적용되는 기술이다.<br />
+<br />
+<br />
+<br />
+카메라 초점을 잡는 방식에는 MF와 AF가 있다.<br />
+MF = Manual Focus, 사용자가 직접 초점을 설정<br />
+AF = Auto Focus, 카메라가 알아서 초점을 설정<br />
+<br />
+피쳐폰 시대에는 핸드폰 카메라에 AF기능이 굳이 들어가지 않았다.<br />
+그러나 스마트폰 시대가 오면서, 아무리 저가형 핸드폰이라도 AF 기능이 필요하게 되었다.<br />
+핸드폰 카메라로 QR코드, 바코드 등을 인식해야 하는 시대가 되었기 때문이다.<br />
+<br />
+<br />
+초점을 조정하기 위해서는 렌즈를 앞뒤로 움직일 필요가 있다.<br />
+AF 렌즈 제어에는 Open loop 방식과 Closed loop 방식이 있다.<br />
+<br />
+Open Loop 방식:<br />
+코일에 전류를 인가해 렌즈를 움직인다.<br />
+렌즈 이동 후 위치를 피드백받을 수가 없다.<br />
+정밀한 제어는 어렵지만, 생산단가가 저렴하다.<br />
+<br />
+Closed Loop 방식:<br />
+코일에 전류를 인가해 렌즈를 움직인다.<br />
+렌즈 이동 후에는 Hall Sensor를 통해 렌즈 위치를 피드백받아 정밀하게 제어할 수 있다.<br />
+생산단가는 비싸지만, 더 정밀한 제어가 가능하다.<br />
+<br />
+<img src="/public/img/AF.png" alt="alt text" /><br />
+*VCM(Voice Coil Motor): 코일과 자석으로 이루어진 구조다. 전류가 인가되면 움직인다.<br />
+<br />
+<br />
+AF 렌즈 제어를 실행하는 반도체 칩이 AF Driver IC다.<br />
+Open Loop 방식으로 렌즈를 제어하는 AF Driver IC를 OLAF(Open-Loop AF) Driver IC,<br />
+Closed Loop 방식으로 렌즈를 제어하는 AF Driver IC를 CLAF(Closed-Loop AF) Driver IC라 부른다.<br />
+<br />
+Driver IC 구조는 OLAF가 가장 간단하고 CLAF가 그 다음, OIS가 가장 복잡하다.<br />
+Driver IC 수율은 OLAF가 가장 높고 CLAF가 그 다음, OIS가 가장 낮다.<br />
+Driver IC 가격은 OLAF가 가장 낮고 CLAF가 그 다음, OIS가 가장 높다.<br />
+Driver IC 마진은 OLAF가 가장 낮고 CLAF가 그 다음, OIS가 가장 높다.<br /></p>
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>
