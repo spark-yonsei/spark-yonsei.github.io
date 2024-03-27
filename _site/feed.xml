@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-22T00:58:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Charge-Pump.html" rel="alternate" type="text/html" title="Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator]]></summary></entry><entry><title type="html">LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-LDO.html" rel="alternate" type="text/html" title="LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-28T01:44:31+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Charge-Pump.html" rel="alternate" type="text/html" title="Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator]]></summary></entry><entry><title type="html">LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-LDO.html" rel="alternate" type="text/html" title="LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
 <br />
 <br />
 IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
@@ -369,6 +369,9 @@ LG전자는 LG그램 2024년형 14,15인치 모델 생산을 대만의 Quanta에
 <br />
 원청업체는 ODM을 통해 생산비용과 개발비용을 아낄 수 있고, 아낀 비용을 유통, 영업 등에 투자할 수 있다.<br />
 <br />
+ODM은 제품 설계 및 생산 과정에 본사의 개입이 적기에, 품질이 비교적 나쁠 수도 있다.<br />
+그래서 ODM은 고가형 제품보다는 저가형 제품 생산에 많이 쓰이는 방식이다.<br />
+<br />
 <br />
 JDM(Joint Development Manufacturer):<br />
 JDM은 하청업체가 원청업체와 함께 설계하고, 생산은 혼자 하는 방식의 위탁생산이다.<br />
@@ -383,7 +386,7 @@ ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는�
 <br />
 OBM(Original Brand Manufacturer):<br />
 위탁생산으로 기술력을 쌓은 제조사가 자체 브랜드를 개발해 설계, 생산, 유통, 영업을 모두 하는 형태다.<br />
-OBM으로 생산된 완제품에는 제조사 자체 브랜드의 로고가 붙는다.<br /></p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[생산 비용을 아끼기 위해, 다른 업체에 생산을 맡기는 것을 위탁생산이라 한다. 생산만 맡기는 경우도 있고, 생산과 설계 모두 맡기는 경우도 있다. 어떤 일을 맡기느냐에 따라, 위탁생산은 OEM, ODM, JDM으로 분류된다. 위탁생산을 맡기는 업체를 원청업체, 위탁생산을 맡는 업체를 하청업체라 한다. OEM(Original Equipment Manufacturer): OEM은 하청업체가 원청업체에게 설계도를 받아, 설계도대로 만들어주는 방식의 위탁생산이다. OEM으로 생산된 부품은 나중에 원청업체의 완제품에 들어간다. 애플은 대만의 Foxconn에 각종 부품 생산을 맡기는데, 이 방식이 OEM이다. 팹리스 업체의 IC를 생산해주는 TSMC 등 파운드리 업체들도 OEM 업체로 분류된다. 원청업체는 OEM을 통해 생산비용을 아낄 수 있고, 아낀 비용을 개발, 유통, 영업 등에 투자할 수 있다. ODM(Original Development Manufacturer): ODM은 하청업체가 원청업체의 의뢰대로 설계부터 생산까지 모두 하는 방식의 위탁생산이다. ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는다. 대만의 Compal, Quanta, Wistron이 전자공학 분야의 대표적인 ODM 업체다. 구글은 넥서스 원 스마트폰 생산을 대만의 HTC에 ODM으로 맡겼던 바 있다. 삼성전자는 저가모델 생산을 중국의 Wingtech, Longcheer, Huaqin에 ODM으로 맡기고 있다. LG전자는 LG그램 2024년형 14,15인치 모델 생산을 대만의 Quanta에 ODM으로 맡기고 있다. 원청업체는 ODM을 통해 생산비용과 개발비용을 아낄 수 있고, 아낀 비용을 유통, 영업 등에 투자할 수 있다. JDM(Joint Development Manufacturer): JDM은 하청업체가 원청업체와 함께 설계하고, 생산은 혼자 하는 방식의 위탁생산이다. ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는다. 삼성전자는 일부 모델의 스마트폰 생산을 중국의 Wingtech, Huaqin에 JDM으로 맡기고 있다. 원청업체는 JDM을 통해 생산비용을 아끼고, 설계에 제조 전문 업체의 의견을 참고할 수 있다. 마지막으로, 위탁생산은 아니지만 연관된 형태의 생산 방식인 OBM이 있다. OBM(Original Brand Manufacturer): 위탁생산으로 기술력을 쌓은 제조사가 자체 브랜드를 개발해 설계, 생산, 유통, 영업을 모두 하는 형태다. OBM으로 생산된 완제품에는 제조사 자체 브랜드의 로고가 붙는다.]]></summary></entry><entry><title type="html">광물</title><link href="http://localhost:4000/market/2023/10/04/Market-%EA%B4%91%EB%AC%BC.html" rel="alternate" type="text/html" title="광물" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/market/2023/10/04/Market%20-%20%EA%B4%91%EB%AC%BC</id><content type="html" xml:base="http://localhost:4000/market/2023/10/04/Market-%EA%B4%91%EB%AC%BC.html"><![CDATA[<p>니켈:
+OBM으로 생산된 완제품에는 제조사 자체 브랜드의 로고가 붙는다.<br /></p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[생산 비용을 아끼기 위해, 다른 업체에 생산을 맡기는 것을 위탁생산이라 한다. 생산만 맡기는 경우도 있고, 생산과 설계 모두 맡기는 경우도 있다. 어떤 일을 맡기느냐에 따라, 위탁생산은 OEM, ODM, JDM으로 분류된다. 위탁생산을 맡기는 업체를 원청업체, 위탁생산을 맡는 업체를 하청업체라 한다. OEM(Original Equipment Manufacturer): OEM은 하청업체가 원청업체에게 설계도를 받아, 설계도대로 만들어주는 방식의 위탁생산이다. OEM으로 생산된 부품은 나중에 원청업체의 완제품에 들어간다. 애플은 대만의 Foxconn에 각종 부품 생산을 맡기는데, 이 방식이 OEM이다. 팹리스 업체의 IC를 생산해주는 TSMC 등 파운드리 업체들도 OEM 업체로 분류된다. 원청업체는 OEM을 통해 생산비용을 아낄 수 있고, 아낀 비용을 개발, 유통, 영업 등에 투자할 수 있다. ODM(Original Development Manufacturer): ODM은 하청업체가 원청업체의 의뢰대로 설계부터 생산까지 모두 하는 방식의 위탁생산이다. ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는다. 대만의 Compal, Quanta, Wistron이 전자공학 분야의 대표적인 ODM 업체다. 구글은 넥서스 원 스마트폰 생산을 대만의 HTC에 ODM으로 맡겼던 바 있다. 삼성전자는 저가모델 생산을 중국의 Wingtech, Longcheer, Huaqin에 ODM으로 맡기고 있다. LG전자는 LG그램 2024년형 14,15인치 모델 생산을 대만의 Quanta에 ODM으로 맡기고 있다. 원청업체는 ODM을 통해 생산비용과 개발비용을 아낄 수 있고, 아낀 비용을 유통, 영업 등에 투자할 수 있다. ODM은 제품 설계 및 생산 과정에 본사의 개입이 적기에, 품질이 비교적 나쁠 수도 있다. 그래서 ODM은 고가형 제품보다는 저가형 제품 생산에 많이 쓰이는 방식이다. JDM(Joint Development Manufacturer): JDM은 하청업체가 원청업체와 함께 설계하고, 생산은 혼자 하는 방식의 위탁생산이다. ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는다. 삼성전자는 일부 모델의 스마트폰 생산을 중국의 Wingtech, Huaqin에 JDM으로 맡기고 있다. 원청업체는 JDM을 통해 생산비용을 아끼고, 설계에 제조 전문 업체의 의견을 참고할 수 있다. 마지막으로, 위탁생산은 아니지만 연관된 형태의 생산 방식인 OBM이 있다. OBM(Original Brand Manufacturer): 위탁생산으로 기술력을 쌓은 제조사가 자체 브랜드를 개발해 설계, 생산, 유통, 영업을 모두 하는 형태다. OBM으로 생산된 완제품에는 제조사 자체 브랜드의 로고가 붙는다.]]></summary></entry><entry><title type="html">광물</title><link href="http://localhost:4000/market/2023/10/04/Market-%EA%B4%91%EB%AC%BC.html" rel="alternate" type="text/html" title="광물" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/market/2023/10/04/Market%20-%20%EA%B4%91%EB%AC%BC</id><content type="html" xml:base="http://localhost:4000/market/2023/10/04/Market-%EA%B4%91%EB%AC%BC.html"><![CDATA[<p>니켈:
 러시아산이 많고, 동남아에서도 나온다. 인도네시아에 많다</p>
 
 <p>코발트:
@@ -394,8 +397,31 @@ OBM으로 생산된 완제품에는 제조사 자체 브랜드의 로고가 붙�
 칠레, 볼리비아, 아르헨티나
 핸드폰 배터리에도 리튬이 필요하고, 전기차 배터리에도 리튬이 필요하다</p>
 
+<p>탄탈럼:
+호주, 브라질, 콩고민주공화국에서 나온다.</p>
+
+<p>인듐: CPU 솔더링? 나무위키 확인</p>
+
 <p>희토류:
 Rare Earth Elements, 희귀한 금속원소</p>
+
+<p>Sc: Scandium, 스칸듐, 21번
+Y: Yttrium, 이트륨, 39번
+La: Lanthanum, 란타넘, 57번
+Ce: Cerium, 세륨, 58번
+Pr: Praseodymium, 프라세오디뮴, 59번
+Nd: Neodymium, 네오디늄, 60번
+Pm: Promethium, 프로메튬, 61번
+Sm: Samarium, 사마륨, 62번
+Eu: Europium, 유로퓸, 63번
+Gd: Gadolinium, 가돌리늄, 64번
+Tb: Terbium, 터븀, 65번
+Dy: Dysprosium, 디스프로슘, 66번
+Ho: Holmium, 홀뮴, 67번
+Er: Erbium, 어븀, 68번
+Tm: Thulium, 툴륨, 69번
+Yb: Ytterbium, 이터븀, 70번
+Lu: Lutetium, 루테튬, 71번</p>
 
 <p>2007년 아이폰에는 17가지 희토류중 9가지가 들어갔다
 유리에 인듐
@@ -431,65 +457,50 @@ cbmm이란 회사가 독점하고 있다</p>
 
 <p>달 표면에 희토류가 많다. 우주 개발 사업들이 이런걸 목표로 한다.</p>
 
-<p>경희토류 중희토류?</p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[니켈: 러시아산이 많고, 동남아에서도 나온다. 인도네시아에 많다]]></summary></entry><entry><title type="html">스마트폰 - 햅틱</title><link href="http://localhost:4000/market/2023/10/04/Market-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-Haptic.html" rel="alternate" type="text/html" title="스마트폰 - 햅틱" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/market/2023/10/04/Market%20-%20%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0%20-%20Haptic</id><content type="html" xml:base="http://localhost:4000/market/2023/10/04/Market-%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-Haptic.html"><![CDATA[<p>햅틱은 사용자가 어떤 행동을 하면, 진동을 통해 촉각을 느낄 수 있게 하는 기술이다.<br />
-<br />
-<br />
-<br />
-핸드폰 업계에서, 햅틱이란 단어는 삼성전자에서 2009년에 출시한 연아의 햅틱 시절부터 계속 등장해 왔다.<br />
-<br />
-스마트폰에서는 아이폰 7부터 누르는 홈버튼이 없어지며 햅틱 기능이 들어갔다.<br />
-스마트폰 화면을 터치하면, 스마트폰이 진동해서 진짜로 버튼을 누른 느낌을 주는 방식이다.<br />
-그 후 다른 스마트폰들에도 햅틱 기능이 들어가게 되었다.<br />
-<br />
-<br />
-햅틱 시장은 점점 커지고 있으며, 스마트폰 외 다른 제품군에도 햅틱이 들어가고 있다.<br />
-<br />
-대표적으로 자동차 전장 분야가 있다.<br />
-자동차 전장은 자동차 내부 전자 장치를 뜻한다.<br />
-<br />
-자동차 전장 분야에서는 자동차 내 버튼들을 터치스크린과 햅틱으로 대체하려는 움직임이 있다.<br />
-자동차에서는 운전중 앞만 보며 화면을 터치해야 하기 때문에, 버튼이 눌렸으면 햅틱으로 그걸 확인시켜주는 것이 좋다.<br />
-<br />
-그 외에도 전자담배, 태블릿 펜 등 다양한 제품군에 햅틱이 활용된다.<br />
-전자담배는 액상 끼우면 진동하는 식으로 동작하게 햅틱 기능을 넣고,<br />
-태블릿 펜은 종이에 글씨 쓰는 느낌 나도록 햅틱을 넣는다.<br />
-<br />
-<br />
-햅틱이 동작하기 위해서는 햅틱 드라이버 IC와 액추에이터가 필요하다.<br />
-터치가 발생하면 그 정보가 햅틱 드라이버 IC로 전달되고, 햅틱 드라이버 IC는 그 정보대로 액추에이터를 동작시켜 진동이 발생한다.<br />
-<br />
-햅틱 드라이버 IC 업체들은 액추에이터를 어떻게 제어해야 진짜 버튼 눌렀을때랑 비슷한 느낌이 날 지를 연구한다.<br />
-그래서, 햅틱 드라이버 IC 업체들은 액추에이터 업체들과 많은 협력을 한다.<br />
-진짜 버튼을 눌렀을 때 생기는 가속도를 기록하고, 액추에이터가 똑같이 진동하도록 설계하는 등의 노력을 한다.<br />
-<br />
-<br />
-햅틱 평가요소에는 소음, 진동시간, 진동력이 있다.<br />
-소음은 적어야 하고, 진동시간은 짧아야 하고, 진동력은 적당해야 한다.<br />
-<br />
-진동시간이 짧아야 한다는 이야기는, 진동 후 잔진동이 남으면 안된다는 뜻이다.<br />
-액추에이터 제어 기술을 통해 남은 진동을 잘 잡아줘야 한다.<br />
-<br />
-진동력이 적당해야 한다는 이야기는, 햅틱이 적용되는 제품에 따라 적당한 세기로 진동해야 한다는 뜻이다.<br />
-당연히, 자동차에서는 핸드폰보다 햅틱 진동이 더 강해야 할 것이다.<br />
-그래서 차에 쓰이는 액추에이터는 핸드폰에 들어가는 액추에이터보다 훨씬 크고, 가격도 비싸다.<br />
-<br />
-<br />
-햅틱 시장에는 수많은 회사들이 참여하고 있지만, 대표적인 회사가 몇 곳 있다.<br />
-<br />
-햅틱의 원천 특허를 갖고 있는 회사는 미국의 이머전(Immersion)이라는 회사다.<br />
-그래서, 햅틱이 들어간 제품을 만드는 회사들은 모두 이머전에게 돈을 내야 한다.<br />
-<br />
-현재 햅틱 기술이 가장 우수하다고 평가되는 회사는 애플이다.<br />
-애플 제품들에 들어가는 햅틱 드라이버 IC는 시러스 로직(Cirrus Logic)에서 만든다.<br />
-애플 제품들에 들어가는 햅틱 액추에이터는 애플이 직접 개발하며, Taptic Engine이라는 이름을 갖고 있다.<br />
-애플의 Taptic Engine은 다른 회사들의 햅틱 액추에이터보다 훨씬 비싸다.<br />
-<br />
-<br />
-햅틱의 진동 주파수는 300Hz정도 되는데, 회사마다 조금씩 차이가 있다.<br />
-예를 들어 애플의 Taptic Engine은 진동시 150Hz -&gt; 300Hz -&gt; 180Hz로 진동 주파수가 변한다.<br />
-햅틱도 소리랑 비슷하게, 나이가 들면 잘 못느끼게 된다.<br />
-<br />
-<br />
-햅틱 시장은 분명 넓어지고 있지만, 모든 분야에서 햅틱이 환영받는 것은 아니다.<br />
-예를 들어, 모바일 게임 회사들은 햅틱에 소극적인 경향이 있다.<br />
-핸드폰마다 진동하는 방식이 다르니, 모든 핸드폰에서 같은 느낌을 줄 수가 없기 때문이다.<br /></p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[햅틱은 사용자가 어떤 행동을 하면, 진동을 통해 촉각을 느낄 수 있게 하는 기술이다. 핸드폰 업계에서, 햅틱이란 단어는 삼성전자에서 2009년에 출시한 연아의 햅틱 시절부터 계속 등장해 왔다. 스마트폰에서는 아이폰 7부터 누르는 홈버튼이 없어지며 햅틱 기능이 들어갔다. 스마트폰 화면을 터치하면, 스마트폰이 진동해서 진짜로 버튼을 누른 느낌을 주는 방식이다. 그 후 다른 스마트폰들에도 햅틱 기능이 들어가게 되었다. 햅틱 시장은 점점 커지고 있으며, 스마트폰 외 다른 제품군에도 햅틱이 들어가고 있다. 대표적으로 자동차 전장 분야가 있다. 자동차 전장은 자동차 내부 전자 장치를 뜻한다. 자동차 전장 분야에서는 자동차 내 버튼들을 터치스크린과 햅틱으로 대체하려는 움직임이 있다. 자동차에서는 운전중 앞만 보며 화면을 터치해야 하기 때문에, 버튼이 눌렸으면 햅틱으로 그걸 확인시켜주는 것이 좋다. 그 외에도 전자담배, 태블릿 펜 등 다양한 제품군에 햅틱이 활용된다. 전자담배는 액상 끼우면 진동하는 식으로 동작하게 햅틱 기능을 넣고, 태블릿 펜은 종이에 글씨 쓰는 느낌 나도록 햅틱을 넣는다. 햅틱이 동작하기 위해서는 햅틱 드라이버 IC와 액추에이터가 필요하다. 터치가 발생하면 그 정보가 햅틱 드라이버 IC로 전달되고, 햅틱 드라이버 IC는 그 정보대로 액추에이터를 동작시켜 진동이 발생한다. 햅틱 드라이버 IC 업체들은 액추에이터를 어떻게 제어해야 진짜 버튼 눌렀을때랑 비슷한 느낌이 날 지를 연구한다. 그래서, 햅틱 드라이버 IC 업체들은 액추에이터 업체들과 많은 협력을 한다. 진짜 버튼을 눌렀을 때 생기는 가속도를 기록하고, 액추에이터가 똑같이 진동하도록 설계하는 등의 노력을 한다. 햅틱 평가요소에는 소음, 진동시간, 진동력이 있다. 소음은 적어야 하고, 진동시간은 짧아야 하고, 진동력은 적당해야 한다. 진동시간이 짧아야 한다는 이야기는, 진동 후 잔진동이 남으면 안된다는 뜻이다. 액추에이터 제어 기술을 통해 남은 진동을 잘 잡아줘야 한다. 진동력이 적당해야 한다는 이야기는, 햅틱이 적용되는 제품에 따라 적당한 세기로 진동해야 한다는 뜻이다. 당연히, 자동차에서는 핸드폰보다 햅틱 진동이 더 강해야 할 것이다. 그래서 차에 쓰이는 액추에이터는 핸드폰에 들어가는 액추에이터보다 훨씬 크고, 가격도 비싸다. 햅틱 시장에는 수많은 회사들이 참여하고 있지만, 대표적인 회사가 몇 곳 있다. 햅틱의 원천 특허를 갖고 있는 회사는 미국의 이머전(Immersion)이라는 회사다. 그래서, 햅틱이 들어간 제품을 만드는 회사들은 모두 이머전에게 돈을 내야 한다. 현재 햅틱 기술이 가장 우수하다고 평가되는 회사는 애플이다. 애플 제품들에 들어가는 햅틱 드라이버 IC는 시러스 로직(Cirrus Logic)에서 만든다. 애플 제품들에 들어가는 햅틱 액추에이터는 애플이 직접 개발하며, Taptic Engine이라는 이름을 갖고 있다. 애플의 Taptic Engine은 다른 회사들의 햅틱 액추에이터보다 훨씬 비싸다. 햅틱의 진동 주파수는 300Hz정도 되는데, 회사마다 조금씩 차이가 있다. 예를 들어 애플의 Taptic Engine은 진동시 150Hz -&gt; 300Hz -&gt; 180Hz로 진동 주파수가 변한다. 햅틱도 소리랑 비슷하게, 나이가 들면 잘 못느끼게 된다. 햅틱 시장은 분명 넓어지고 있지만, 모든 분야에서 햅틱이 환영받는 것은 아니다. 예를 들어, 모바일 게임 회사들은 햅틱에 소극적인 경향이 있다. 핸드폰마다 진동하는 방식이 다르니, 모든 핸드폰에서 같은 느낌을 줄 수가 없기 때문이다.]]></summary></entry></feed>
+<p>우라늄:
+우라늄은 카자흐스탄에 가장 많이 묻혀있다.
+카자흐스탄 국영기업 카자톰프롬이 수출한다.</p>
+
+<p>호주, 캐나다도 우라늄을 수출하며,
+니제르, 나미비아에도 우라늄이 많이 묻혀있다.</p>
+
+<p>우라늄 농축 설비는 러시아에 몰려있다.
+그래서 원전 재료, 원자탄 재료가 되는 농축우라늄은 러시아에서 사와야 한다.</p>
+
+<p>경수로에는 저농축 우라늄(농축도 5% 이하)이 들어가고,
+연구, 무기에는 고농축 우라늄(농축도 20% 이상)이 들어간다.</p>
+
+<p>SMR(소형모듈원자로) 등 차세대 원전에는 HALEU(고순도 저농축 우라늄)이 들어간다고 한다.
+이거는 5%~ 20% 사이의 농축도를 갖는 우라늄이다.</p>
+
+<p>분쟁광물:
+콩고, 우간다 지역에서 전쟁 및 범죄를 동원해 생산되는 자원
+탄탈럼, 텅스텐, 주석, 금, 다이아몬드, 코발트</p>
+
+<p>이 광물들은 채취 과정에 노동착취 등 문제가 있고,
+판매대금이 반군이나 부패정부로 유입되기때문에 국가들이 사용을 자제하려고 한다.</p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[니켈: 러시아산이 많고, 동남아에서도 나온다. 인도네시아에 많다]]></summary></entry><entry><title type="html">기업 - 디스플레이</title><link href="http://localhost:4000/market/2023/10/04/Market-%EA%B8%B0%EC%97%85-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4.html" rel="alternate" type="text/html" title="기업 - 디스플레이" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/market/2023/10/04/Market%20-%20%EA%B8%B0%EC%97%85%20-%20%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4</id><content type="html" xml:base="http://localhost:4000/market/2023/10/04/Market-%EA%B8%B0%EC%97%85-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4.html"><![CDATA[<p>1966년 금성사가 국내최초로 흑백TV를 출시했다.
+우리나라는 1980년에 컬러TV를 들여왔다.</p>
+
+<p>디스플레이 산업 특징:
+전방 / 후방 사업을 모두 하는 그룹의 계열사들이 한다.
+전방 사업: TV, 스마트폰, 노트북, 모니터 등
+후방 사업: 유리기판, 액정 소재, 컬러필터, 제조장비 등</p>
+
+<p>삼성디스플레이, LG디스플레이 모두 그렇다.</p>
+
+<p>디스플레이 흐름: CRT -&gt; LCD -&gt; OLED</p>
+
+<p>LCD: 형광등이 백라이트로 들어간다. 형광등에서 나온 백색광이 컬러필터를 거쳐 색을 가진 빛이 된다.
+OLED보다 성능은 떨어지지만, 가격은 훨씬 싸다.</p>
+
+<p>OLED: LED 조명을 광원으로 사용한다. 성능도 LCD보다 좋고, 두께도 더 얇다. 요즘은 OLED가 많이 쓰인다.</p>
+
+<p>AMOLED: OLED의 일종</p>
+
+<p>삼성디스플레이: 스위치 TFT를 저온폴리실리콘 LTPS -&gt; Oxide TFT로 바꿔서 원가를 절감했다? 이건 좀 알아보자.</p>
+
+<p>TV에서는 OLED가 큰 반응을 못얻었다. TV는 더 얇아져봐야 큰 의미가 없었고, TV 살때 전력소모 보고 안사잖아.
+하지만 스마트폰 등 휴대기기에는 의미가 컸다.</p>
+
+<p>BOE등 중국정부에서 보조금받는 중국 업체들이 LCD 시장을 많이 먹어버렸다.
+하지만 OLED는 기술이 많이 중요해서 중국업체들이 잘 못들어오고 있다.</p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[1966년 금성사가 국내최초로 흑백TV를 출시했다. 우리나라는 1980년에 컬러TV를 들여왔다.]]></summary></entry></feed>
