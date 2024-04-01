@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">CV</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+		
+	    <li>
+	    	<a class="nav-item" href="/category/#Design">
+				<span class="name">Design</span>
+				<span class="badge">6</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#History">
+				<span class="name">History</span>
+				<span class="badge">5</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Market">
+				<span class="name">Market</span>
+				<span class="badge">14</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Process">
+				<span class="name">Process</span>
+				<span class="badge">15</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			Digital - Serial Communication Protocols
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>💡Serial Communication Protocols(UART,I2C,SPI)📍📝</p>
+
+<p>🔰 1. UART (Universal Asynchronous Receiver-Transmitter):
+  ✔ UART is an asynchronous serial communication protocol commonly used for short-distance communication between devices.
+ ✔ It uses two wires, one for transmitting data (TX) and another for receiving data (RX).
+  ✔ UART does not have a clock signal, so the data is transmitted asynchronously using start and stop bits to mark the beginning and end of each data frame.
+  ✔ It is a straightforward and simple protocol, commonly used in applications like serial communication between a microcontroller and a computer, GPS modules, and Bluetooth modules.</p>
+
+<p>🔰 2. SPI (Serial Peripheral Interface):
+ ✔ SPI is a synchronous serial communication protocol primarily used for
+communication between microcontrollers and peripheral devices, such as sensors, displays, and memory chips.
+ ✔ It requires four wires: a master-out-slave-in (MOSI) line for data transmission, a master-in-slave-out (MISO) line for data reception, a clock (SCK) line for synchronization, and a chip select (CS) line to select the target device.
+ ✔ SPI operates in a master-slave configuration, where a master device initiates the communication and controls the data transfer to one or more slave devices.
+  ✔ It supports full-duplex communication, meaning data can be simultaneously transmitted and received.
+   ✔ SPI is known for its high data transfer rates and is commonly used in applications that require fast and efficient data transfer.</p>
+
+<p>🔰 3. I2C (Inter-Integrated Circuit):
+   ✔ I2C is a multi-master, multi-slave, and bidirectional serial communication protocol designed for communication between integrated circuits on a circuit board.
+ ✔ It uses two wires: a serial data line (SDA) for bidirectional data transfer and a serial clock line (SCL) for synchronization.
+   ✔ I2C allows multiple devices to share the same bus, with each device having a unique address.
+   ✔ It supports both 7-bit and 10-bit addressing modes, providing the capability to connect a large number of devices.
+ ✔ I2C is a slower protocol compared to UART and SPI, but it requires fewer wires and is commonly used in applications where simplicity and low pin count are important, such as sensors, EEPROM memory chips, and real-time clocks.</p>
+
+<p>P.S: Repost this info &amp; follow Vinay Varikooti for more knowledge.</p>
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>

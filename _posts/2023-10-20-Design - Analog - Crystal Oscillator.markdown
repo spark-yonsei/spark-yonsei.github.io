@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Analog - Crystal Oscillator"
+date:   2023-10-04 19:31:29 +0900
+categories: Design
+order: 3
+---
+
+Crystal Oscillator\
+Oscillator 종류:
+Rc 발진기
+크리스탈 발진기: 그냥 크리스탈
+크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것
+그냥 전원만 넣으면 클럭이 출력된다
+
+근데, 크리스탈만 있을때 전압출력은 사인파인데
+크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다
+
+오실레이터 관련해서는 따로 정리

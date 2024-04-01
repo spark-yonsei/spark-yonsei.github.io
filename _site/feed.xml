@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-29T02:00:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Charge-Pump.html" rel="alternate" type="text/html" title="Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator]]></summary></entry><entry><title type="html">LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-LDO.html" rel="alternate" type="text/html" title="LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-31T02:35:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog - Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html" rel="alternate" type="text/html" title="Analog - Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
+Oscillator 종류:
+Rc 발진기
+크리스탈 발진기: 그냥 크리스탈
+크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것
+그냥 전원만 넣으면 클럭이 출력된다</p>
+
+<p>근데, 크리스탈만 있을때 전압출력은 사인파인데
+크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다</p>
+
+<p>오실레이터 관련해서는 따로 정리</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator Oscillator 종류: Rc 발진기 크리스탈 발진기: 그냥 크리스탈 크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것 그냥 전원만 넣으면 클럭이 출력된다]]></summary></entry><entry><title type="html">Analog - LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html" rel="alternate" type="text/html" title="Analog - LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
 <br />
 <br />
 IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
@@ -17,10 +27,128 @@ Stability:<br />
 <br />
 그럼 frequency response를 어떻게 확인할 것인가?<br />
 Loop Gain을 본다.<br />
-<img src="/public/img/LDO2.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다. PMOS를 써서 만들면 Common Source 구조가 되고, NMOS를 써서 만들면 Source Follower 구조가 된다. Stability: 어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까? 안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다. 그럼 frequency response를 어떻게 확인할 것인가? Loop Gain을 본다.]]></summary></entry><entry><title type="html">대한민국(1) - 1940년대 이전</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1.html" rel="alternate" type="text/html" title="대한민국(1) - 1940년대 이전" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20-%201</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1.html"><![CDATA[<p>1392년~1910년: 조선<br />
+<img src="/public/img/LDO2.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다. PMOS를 써서 만들면 Common Source 구조가 되고, NMOS를 써서 만들면 Source Follower 구조가 된다. Stability: 어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까? 안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다. 그럼 frequency response를 어떻게 확인할 것인가? Loop Gain을 본다.]]></summary></entry><entry><title type="html">Analog - Sigma-Delta ADC</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Sigma-Delta-ADC.html" rel="alternate" type="text/html" title="Analog - Sigma-Delta ADC" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Sigma-Delta%20ADC</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Sigma-Delta-ADC.html"><![CDATA[<p>adf</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[adf]]></summary></entry><entry><title type="html">Digital - Firmware</title><link href="http://localhost:4000/design/2023/10/04/Design-Digital-Firmware.html" rel="alternate" type="text/html" title="Digital - Firmware" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Digital%20-%20Firmware</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Digital-Firmware.html"><![CDATA[<p>C, 어셈블리어 등의 언어로 원하는 동작을 구현한 텍스트 파일(코드 적힌 파일)을 만든다. 이게 소스 파일이다.</p>
+
+<p>그리고 소스 파일을 컴파일해서 얻어지는 기계어 명령어 집합을 펌웨어라고 한다?</p>
+
+<p>이 펌웨어를 메모리에 저장해두면, cpu는 그 메모리에서 기계어 명령을 읽고 해석해서 동작을 실행한다.</p>
+
+<p>임베디드 시스템에서 자주 사용되는 직렬 통신:
+UART, I2C, SPI</p>
+
+<p>CPU에는 cu, alu, register가 있다
+CU: control unit, 제어 유닛
+Cu는 주변 유닛들을 제어해 기계어를 읽어들이고 그걸 시행한다</p>
+
+<p>Alu는 계산을 하는 곳이다</p>
+
+<p>메모리에서 cpu까지 정보를 읽어올때, 연결하는 통신 신호선을 bus라고 부른다. 근데 r,c의 영향으로 신호 전달속도에 한계가 있으니, cpu 안에 레지스터를 만들어놓고 여기다가 정보를 저장한다</p>
+
+<p>Cpu 안 레지스터는 특수 용도 레지스터랑 일반 목적 레지스터가 있다.
+특수 용도 레지스터는 특정 정보를 저장하게 되고,
+일반 목적 레지스터는 그냥 연산 결과, 함수 내 인수 변수 등을 임시 저장하는데에 쓰인다.</p>
+
+<p>어셈블리어로 펌웨어 프로그래밍 해보면, 대부분 동작은 일반 레지스터를 이용해 데이터를 저장하고 사용하게 된다.</p>
+
+<p>Cpu 동작:
+명령어 읽어오기(fetch)
+명령어 분석(decode)
+명령어 실행(execute)</p>
+
+<p>이 3단계를 거치며 동작한다
+각 clock마다 한 단계를 거친다</p>
+
+<p>Pipeline 동작:
+Decode하는 동안 다음 명령어 fetch해오는 방식으로 시간 줄이는 방식
+병렬처리 동작이라고도 한다</p>
+
+<p>RISC CPU
+명령어 수 적음
+명령어 크기 고정
+1개 명령어 처리속도 빠름
+프로그래밍 코드 복잡</p>
+
+<p>CISC CPU
+명령어 수 많음
+명령어 크기 명령어마다 다름
+1개 명령어 처리속도 명령어마다 다름
+프로그래밍코드 단순</p>
+
+<p>명령어 수가 많으면, 하나의 명령어만 적어서 구현할 수 있는 동작들이 많다. 그래서 Cisc는 복합 명령을 하나의 명령으로 많이 갖고 있다</p>
+
+<p>Risc는 명령어 수를 최소화하고, 명령어 크기를 고정한 상태에서 명령어들의 동작을 최적화해 효율을 높인다</p>
+
+<p>일반적으로 pc계열은 cisc, arm계열은 risc를 쓴다</p>
+
+<p>왜 cisc는 명령어마다 길이가 다르냐?
+여러 명령들을 묶어서 만든 복합 명령들이 많아서 그렇다</p>
+
+<p>Risc는 명령 크기를 16비트, 32비트 이런식으로 고정해둔다</p>
+
+<p>처리 속도:
+Risc는 명령어마다 1클럭 또는 2클럭 안에 끝내게 되어 있다
+Cisc는 명령어마다 다르다. 복합 명령들이 읶으니까</p>
+
+<p>프로그래밍 편의:
+Cisc에서 모든 명령을 다 숙지하고 있다면, 딱 적합한 명령어를 써서 프로그래밍을 단순하게 할 수 있다</p>
+
+<p>근데 그렇게 되는거 자체거 힘든 일이라, 꼭 cisc가 risc보다 프로그래밍이 쉽다고는 할 수 없다</p>
+
+<p>C언어 컴파일러로 컴파일하면 어셈블리어, 이걸 어셈블러에 넣으면 기계어(binary file)이 나온다</p>
+
+<p>보통 c언어로 코딩해놓고, 사용할 cpu에 맞는 컴파일러를 가져와서 어셈블리어 기계어로 바꾼다.
+같은 c코드도 컴파일러에 따라 출력되는 어셈블리어, 기계어가 다르다</p>
+
+<p>그래서 c언어로 펌웨어를 만들고, 이걸 컴파일러에 넣어 이진 파일을 만들고, 이 파일을 메모리에 기록해두면 cpu가 이걸 읽고 실행해 원하는 동작을 시행한다</p>
+
+<p>Regulator: 일정한 전압을 만들어주는 소자</p>
+
+<p>Linear regulator, switching regulator
+장단점 정리해두기
+Ldo는 linear regulator
+Buck, boost converter는 switching regulator</p>
+
+<p>오실레이터에서 만들어진 주기적인 진동 파형을 슈미트 트리거로 정확한 구형파형으로 만들어 clock을 만든다
+이걸 cpu에 넣어준다</p>
+
+<p>PLL:
+보통 오실레이터에서 출력되는 클락은 8MHz, 12MHz, 16MHz라서 실제 시스템 동작속도보다 느리다
+그래서 PLL은 주파수를 올리고 안정적으로 만든다
+여기서 나온 클락신호가 cpu에 전달된다</p>
+
+<p>Mcu 내의 다른 로직들은 보통 cpu보다 구동 주파수가 낮다. 그래서 prescaler(전치분주기)로 주파수를 내려준다</p>
+
+<p>메모리 구분 표 있는데 이거 참고해서 정리</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[C, 어셈블리어 등의 언어로 원하는 동작을 구현한 텍스트 파일(코드 적힌 파일)을 만든다. 이게 소스 파일이다.]]></summary></entry><entry><title type="html">Digital - Serial Communication Protocols</title><link href="http://localhost:4000/design/2023/10/04/Design-Digital-Serial-Communication-Protocols.html" rel="alternate" type="text/html" title="Digital - Serial Communication Protocols" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Digital%20-%20Serial%20Communication%20Protocols</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Digital-Serial-Communication-Protocols.html"><![CDATA[<p>💡Serial Communication Protocols(UART,I2C,SPI)📍📝</p>
+
+<p>🔰 1. UART (Universal Asynchronous Receiver-Transmitter):
+  ✔ UART is an asynchronous serial communication protocol commonly used for short-distance communication between devices.
+ ✔ It uses two wires, one for transmitting data (TX) and another for receiving data (RX).
+  ✔ UART does not have a clock signal, so the data is transmitted asynchronously using start and stop bits to mark the beginning and end of each data frame.
+  ✔ It is a straightforward and simple protocol, commonly used in applications like serial communication between a microcontroller and a computer, GPS modules, and Bluetooth modules.</p>
+
+<p>🔰 2. SPI (Serial Peripheral Interface):
+ ✔ SPI is a synchronous serial communication protocol primarily used for
+communication between microcontrollers and peripheral devices, such as sensors, displays, and memory chips.
+ ✔ It requires four wires: a master-out-slave-in (MOSI) line for data transmission, a master-in-slave-out (MISO) line for data reception, a clock (SCK) line for synchronization, and a chip select (CS) line to select the target device.
+ ✔ SPI operates in a master-slave configuration, where a master device initiates the communication and controls the data transfer to one or more slave devices.
+  ✔ It supports full-duplex communication, meaning data can be simultaneously transmitted and received.
+   ✔ SPI is known for its high data transfer rates and is commonly used in applications that require fast and efficient data transfer.</p>
+
+<p>🔰 3. I2C (Inter-Integrated Circuit):
+   ✔ I2C is a multi-master, multi-slave, and bidirectional serial communication protocol designed for communication between integrated circuits on a circuit board.
+ ✔ It uses two wires: a serial data line (SDA) for bidirectional data transfer and a serial clock line (SCL) for synchronization.
+   ✔ I2C allows multiple devices to share the same bus, with each device having a unique address.
+   ✔ It supports both 7-bit and 10-bit addressing modes, providing the capability to connect a large number of devices.
+ ✔ I2C is a slower protocol compared to UART and SPI, but it requires fewer wires and is commonly used in applications where simplicity and low pin count are important, such as sensors, EEPROM memory chips, and real-time clocks.</p>
+
+<p>P.S: Repost this info &amp; follow Vinay Varikooti for more knowledge.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[💡Serial Communication Protocols(UART,I2C,SPI)📍📝]]></summary></entry><entry><title type="html">대한민국(1) - 1940년대 이전</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1.html" rel="alternate" type="text/html" title="대한민국(1) - 1940년대 이전" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20-%201</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-1.html"><![CDATA[<p>1392년~1910년: 조선<br />
 1910년~1945년: 일제시대<br />
 1945년~1948년: 미군정<br />
 1948년~1960년: 이승만 정부<br />
+<br />
+#발전기<br />
+#전신, 전화<br />
+#라디오<br />
 <br />
 <br />
 조선 조정은 1876년 이전까지는 강력한 쇄국정책을 시행하고 있었다.<br />
@@ -35,8 +163,10 @@ Loop Gain을 본다.<br />
 그래서 향원정의 귀한 물고기들이 모두 삶아지고 말았다.<br />
 소리도 시끄러워 궁녀들이 잠을 제대로 못 잤다는 이야기도 있다.<br />
 <br />
+어쨌든, 건천궁 발전기를 시작으로 조선에도 발전기, 발전소들이 설치되기 시작했다.<br />
 <br />
-전보를 주고받는 전신 시설은 1884년 조선에 설치됐다.<br />
+<br />
+전보를 주고받기 위한 전신 시설은 조선에 대한 영향력을 확대하려던 일본 제국과 청나라의 주도로 설치되기 시작했다.<br />
 <br />
 일본 제국은 ‘대북부전신회사’라는 덴마크 회사와 협약해 상하이-나가사키, 나가사키-블라디보스토크 해저전선을 설치해 운영하고 있었다.<br />
 그러던 도중, 1882년 조선에서 임오군란이 일어나 한반도에서 일본의 영향력이 약해지게 됐다.<br />
@@ -65,9 +195,6 @@ Loop Gain을 본다.<br />
 1894~1895년 동안 청일전쟁, 갑오개혁, 을미사변, 을미개혁 등 사건들로 나라가 혼란해서 설치를 못했다.<br />
 그러다가 1896년에 서울-인천 전화선이 설치됐고, 동시에 덕수궁을 중심으로 국가부처들을 연결하는 전화선도 설치됐다.<br />
 <br />
-1902년에는 민간 전화사업이 시작됐는데, 너무 비싸서 거의 외국인 전용이었다.<br />
-그때 쌀 한섬(144kg) 가격이 8원이었고, 전화 설치비는 600원이었다고 한다.<br />
-<br />
 1902년 대한제국 조정은 ‘전화규칙’을 반포하고, 이를 근거로 일본 제국이 서울에 임의로 설치한 전화선들을 철거했다.<br />
 그러나 러일전쟁 이후 1905년 체결된 ‘한일 통신 협정’으로 대한제국의 모든 우편/전신/전화 인프라는 일본 제국이 관리하게 됐다.<br />
 <br />
@@ -75,22 +202,204 @@ Loop Gain을 본다.<br />
 이 시기에, 일본 제국은 만주 진출을 위해 북한 지역에 제철소와 발전소를 다량 건설한다.<br />
 <br />
 <br />
-1945년 8월 일본 제국의 항복 이후, 미군은 9월에 남한 지역에 들어와 군정을 실시한다.<br />
+한반도의 첫 라디오 방송국은 1927년 개국한 경성방송국이다.<br />
+경성은 도쿄, 오사카, 나고야에 이어 동양에서 4번째로 방송국이 생긴 곳이다.<br />
+당시 경성방송국의 방송 주파수는 690kHz였는데, 전파 출력은 1kW에 불과했다고 한다.<br />
+<br />
+경성방송국은 이후 ‘조선방송협회’로 이름이 바뀌었다.<br />
+조선방송협회는 1933년 출력 10kW의 연희송신소를 신설했고, 일본어 방송 뿐 아니라 조선어 방송도 송출하기 시작했다.<br />
+610kHz 조선어 방송이 상당한 인기를 끌어서, 1930년대에 한반도 내 라디오 수상기의 수가 크게 늘어났다.<br />
+<br />
+그러나 1937년 중일전쟁, 1941년 태평양전쟁과 함께 한반도 내의 조선어 방송은 점점 축소되기 시작했다.<br />
+그래도 충칭에서 대한민국 임시정부가 송출하던 방송,<br />
+샌프란시스코에서 이승만이 송출하던 ‘미국의 소리’ 등 해외에서 송출되는 조선어 방송들은 건재했다.<br />
+<br />
+1942년에는 방송국 직원들이 해외 조선어 방송들을 듣다가 체포당하는 ‘단파방송 밀청사건’이 발생했고,<br />
+1943년에는 한반도 내의 조선어 방송이 아예 폐지됐다.<br />
+그 후 1945년 8월 해방 이전까지는 한반도에서 일본어 방송만 송출됐다.<br />
+<br />
+조선방송협회는 해방 후 KBS가 된다.<br />
+<br />
+<br />
+1945년 8월 해방 이후, 미군은 9월에 남한 지역에 들어와 군정을 실시한다.<br />
 남한 지역의 공산당이었던 남로당은 미군정에 반발하며 조직적으로 테러를 저질렀다.<br />
-남로당은 경찰을 무력화하기 위해 통신 시설을 주로 공격했고, 결국 얼마 남지도 않았던 통신 인프라가 또 파괴되고 말았다.<br />
+남로당은 경찰을 무력화하기 위해 통신 시설을 주로 공격했고, 결국 얼마 있지도 않았던 통신 인프라가 상당수 파괴되고 말았다.<br />
 <br />
 남로당의 반발에도 1948년 남한 단독 총선거(5.10 총선)가 치뤄졌고, 북한은 여기에 반발해 5.14 단전조치를 시행한다.<br />
 일제시대에 지은 발전소가 대부분 북한 지역에 있었기에 북한에서 남한으로 전력을 보내주고 있었는데, 북한 측에서 이걸 끊어버린 것이다.<br />
 <br />
 미국은 전력선 2대를 남한에 보냈고, 남한은 전력 인프라가 회복될때까지 전력선에서 생산되는 전력으로 연명해야 했다.<br />
-전력에 허덕이는 남한을 보며 이승만이 원자력에 관심을 갖게 된 것이 이 시기다.<br />
+전력 부족에 허덕이는 남한을 보며 이승만이 원자력에 관심을 갖게 된 것이 이 시기다.<br />
 <br />
-이승만은 이후 1956년 한미 원자력 협정을 체결하고, 1959년에는 원자력 연구소를 설치해 원자력 발전의 기틀을 제공했다.</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1392년~1910년: 조선 1910년~1945년: 일제시대 1945년~1948년: 미군정 1948년~1960년: 이승만 정부 조선 조정은 1876년 이전까지는 강력한 쇄국정책을 시행하고 있었다. 1876년 강화도조약을 시작으로 주변 국가들과 근대적 조약을 맺기 시작했고, 1883년에는 미국에 보빙사를 파견해 신문물을 경험하고 돌아오게 한다. 보빙사 인원들은 미국에서 돌아온 뒤, 고종에게 전등 설치를 건의한다. 그리고 1887년, 에디슨이 세운 미국 회사 GE(General Electric)를 통해 경복궁 건천궁에 발전기와 전구를 설치한다. 에디슨이 전구를 발명한 것이 1879년이었으니, 8년만에 조선에 설치된 것이다. 이 발전기는 경복궁 향원정 연못 물을 끓여 증기터빈을 돌리는 방식이었다. 그래서 향원정의 귀한 물고기들이 모두 삶아지고 말았다. 소리도 시끄러워 궁녀들이 잠을 제대로 못 잤다는 이야기도 있다. 전보를 주고받는 전신 시설은 1884년 조선에 설치됐다. 일본 제국은 ‘대북부전신회사’라는 덴마크 회사와 협약해 상하이-나가사키, 나가사키-블라디보스토크 해저전선을 설치해 운영하고 있었다. 그러던 도중, 1882년 조선에서 임오군란이 일어나 한반도에서 일본의 영향력이 약해지게 됐다. 임오군란 진압을 청나라 군대가 했기 때문이다. 일본 제국은 임오군란으로 입은 피해에 대한 보상을 요구하며 조선과 제물포 조약을 체결해 이권을 챙기긴 했으나, 이후 영향력 유지를 위해서는 한반도 정세를 실시간으로 살필 수 있는 전신선이 필요하다고 판단했다. 1883년, 조선은 일본 제국과 ‘부산일본간해저전신선조약’을 맺고, 1884년 부산에서 대마도를 경유해 나가사키로 이어지는 해저전선을 개통했다. 1884년에는 갑신정변이 일어났다. 위안스카이가 이끄는 청나라 군대가 갑신정변을 진압했고, 조선에서 청나라의 영향력은 더욱 커졌다. 청나라는 계속해서 일본 제국을 견제하기 위해 1885년 조선과 ‘의주 전선 합동’을 맺고 조선의 전신설비 설치를 위한 차관을 제공했다. 조선은 청나라의 차관으로 서울-인천, 서울-평양-의주를 연결하는 ‘서로 전신선’을 설치했다. 결국, 일본 제국은 한반도에서의 영향력을 다시 가져오기 위해 1894년 청일전쟁을 일으키게 된다. 전화기가 조선에 처음 소개된 것은 1882년이다. 1880년에 청나라 톈진 무기공장에 파견됐던 사람들이 귀국하면서 들고 온 전화기였다. 조선은 전화기를 도입하려고 1893년에 일본에서 전화기를 사오긴 했는데, 1894~1895년 동안 청일전쟁, 갑오개혁, 을미사변, 을미개혁 등 사건들로 나라가 혼란해서 설치를 못했다. 그러다가 1896년에 서울-인천 전화선이 설치됐고, 동시에 덕수궁을 중심으로 국가부처들을 연결하는 전화선도 설치됐다. 1902년에는 민간 전화사업이 시작됐는데, 너무 비싸서 거의 외국인 전용이었다. 그때 쌀 한섬(144kg) 가격이 8원이었고, 전화 설치비는 600원이었다고 한다. 1902년 대한제국 조정은 ‘전화규칙’을 반포하고, 이를 근거로 일본 제국이 서울에 임의로 설치한 전화선들을 철거했다. 그러나 러일전쟁 이후 1905년 체결된 ‘한일 통신 협정’으로 대한제국의 모든 우편/전신/전화 인프라는 일본 제국이 관리하게 됐다. 일제시대에는 전화선이 한반도 전역으로 확장됐고, 자동전화교환 기술도 도입됐다. 이 시기에, 일본 제국은 만주 진출을 위해 북한 지역에 제철소와 발전소를 다량 건설한다. 1945년 8월 일본 제국의 항복 이후, 미군은 9월에 남한 지역에 들어와 군정을 실시한다. 남한 지역의 공산당이었던 남로당은 미군정에 반발하며 조직적으로 테러를 저질렀다. 남로당은 경찰을 무력화하기 위해 통신 시설을 주로 공격했고, 결국 얼마 남지도 않았던 통신 인프라가 또 파괴되고 말았다. 남로당의 반발에도 1948년 남한 단독 총선거(5.10 총선)가 치뤄졌고, 북한은 여기에 반발해 5.14 단전조치를 시행한다. 일제시대에 지은 발전소가 대부분 북한 지역에 있었기에 북한에서 남한으로 전력을 보내주고 있었는데, 북한 측에서 이걸 끊어버린 것이다. 미국은 전력선 2대를 남한에 보냈고, 남한은 전력 인프라가 회복될때까지 전력선에서 생산되는 전력으로 연명해야 했다. 전력에 허덕이는 남한을 보며 이승만이 원자력에 관심을 갖게 된 것이 이 시기다. 이승만은 이후 1956년 한미 원자력 협정을 체결하고, 1959년에는 원자력 연구소를 설치해 원자력 발전의 기틀을 제공했다.]]></summary></entry><entry><title type="html">대한민국(4) - 1970년대</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-70%EB%85%84%EB%8C%80.html" rel="alternate" type="text/html" title="대한민국(4) - 1970년대" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20-%2070%EB%85%84%EB%8C%80</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-70%EB%85%84%EB%8C%80.html"><![CDATA[<p>1963년~1979년: 박정희 정부<br />
+이승만은 이후 1956년 한미 원자력 협정을 체결하고, 1959년에는 원자력 연구소를 설치해 원자력 발전의 기틀을 제공했다.</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1392년~1910년: 조선 1910년~1945년: 일제시대 1945년~1948년: 미군정 1948년~1960년: 이승만 정부 #발전기 #전신, 전화 #라디오 조선 조정은 1876년 이전까지는 강력한 쇄국정책을 시행하고 있었다. 1876년 강화도조약을 시작으로 주변 국가들과 근대적 조약을 맺기 시작했고, 1883년에는 미국에 보빙사를 파견해 신문물을 경험하고 돌아오게 한다. 보빙사 인원들은 미국에서 돌아온 뒤, 고종에게 전등 설치를 건의한다. 그리고 1887년, 에디슨이 세운 미국 회사 GE(General Electric)를 통해 경복궁 건천궁에 발전기와 전구를 설치한다. 에디슨이 전구를 발명한 것이 1879년이었으니, 8년만에 조선에 설치된 것이다. 이 발전기는 경복궁 향원정 연못 물을 끓여 증기터빈을 돌리는 방식이었다. 그래서 향원정의 귀한 물고기들이 모두 삶아지고 말았다. 소리도 시끄러워 궁녀들이 잠을 제대로 못 잤다는 이야기도 있다. 어쨌든, 건천궁 발전기를 시작으로 조선에도 발전기, 발전소들이 설치되기 시작했다. 전보를 주고받기 위한 전신 시설은 조선에 대한 영향력을 확대하려던 일본 제국과 청나라의 주도로 설치되기 시작했다. 일본 제국은 ‘대북부전신회사’라는 덴마크 회사와 협약해 상하이-나가사키, 나가사키-블라디보스토크 해저전선을 설치해 운영하고 있었다. 그러던 도중, 1882년 조선에서 임오군란이 일어나 한반도에서 일본의 영향력이 약해지게 됐다. 임오군란 진압을 청나라 군대가 했기 때문이다. 일본 제국은 임오군란으로 입은 피해에 대한 보상을 요구하며 조선과 제물포 조약을 체결해 이권을 챙기긴 했으나, 이후 영향력 유지를 위해서는 한반도 정세를 실시간으로 살필 수 있는 전신선이 필요하다고 판단했다. 1883년, 조선은 일본 제국과 ‘부산일본간해저전신선조약’을 맺고, 1884년 부산에서 대마도를 경유해 나가사키로 이어지는 해저전선을 개통했다. 1884년에는 갑신정변이 일어났다. 위안스카이가 이끄는 청나라 군대가 갑신정변을 진압했고, 조선에서 청나라의 영향력은 더욱 커졌다. 청나라는 계속해서 일본 제국을 견제하기 위해 1885년 조선과 ‘의주 전선 합동’을 맺고 조선의 전신설비 설치를 위한 차관을 제공했다. 조선은 청나라의 차관으로 서울-인천, 서울-평양-의주를 연결하는 ‘서로 전신선’을 설치했다. 결국, 일본 제국은 한반도에서의 영향력을 다시 가져오기 위해 1894년 청일전쟁을 일으키게 된다. 전화기가 조선에 처음 소개된 것은 1882년이다. 1880년에 청나라 톈진 무기공장에 파견됐던 사람들이 귀국하면서 들고 온 전화기였다. 조선은 전화기를 도입하려고 1893년에 일본에서 전화기를 사오긴 했는데, 1894~1895년 동안 청일전쟁, 갑오개혁, 을미사변, 을미개혁 등 사건들로 나라가 혼란해서 설치를 못했다. 그러다가 1896년에 서울-인천 전화선이 설치됐고, 동시에 덕수궁을 중심으로 국가부처들을 연결하는 전화선도 설치됐다. 1902년 대한제국 조정은 ‘전화규칙’을 반포하고, 이를 근거로 일본 제국이 서울에 임의로 설치한 전화선들을 철거했다. 그러나 러일전쟁 이후 1905년 체결된 ‘한일 통신 협정’으로 대한제국의 모든 우편/전신/전화 인프라는 일본 제국이 관리하게 됐다. 일제시대에는 전화선이 한반도 전역으로 확장됐고, 자동전화교환 기술도 도입됐다. 이 시기에, 일본 제국은 만주 진출을 위해 북한 지역에 제철소와 발전소를 다량 건설한다. 한반도의 첫 라디오 방송국은 1927년 개국한 경성방송국이다. 경성은 도쿄, 오사카, 나고야에 이어 동양에서 4번째로 방송국이 생긴 곳이다. 당시 경성방송국의 방송 주파수는 690kHz였는데, 전파 출력은 1kW에 불과했다고 한다. 경성방송국은 이후 ‘조선방송협회’로 이름이 바뀌었다. 조선방송협회는 1933년 출력 10kW의 연희송신소를 신설했고, 일본어 방송 뿐 아니라 조선어 방송도 송출하기 시작했다. 610kHz 조선어 방송이 상당한 인기를 끌어서, 1930년대에 한반도 내 라디오 수상기의 수가 크게 늘어났다. 그러나 1937년 중일전쟁, 1941년 태평양전쟁과 함께 한반도 내의 조선어 방송은 점점 축소되기 시작했다. 그래도 충칭에서 대한민국 임시정부가 송출하던 방송, 샌프란시스코에서 이승만이 송출하던 ‘미국의 소리’ 등 해외에서 송출되는 조선어 방송들은 건재했다. 1942년에는 방송국 직원들이 해외 조선어 방송들을 듣다가 체포당하는 ‘단파방송 밀청사건’이 발생했고, 1943년에는 한반도 내의 조선어 방송이 아예 폐지됐다. 그 후 1945년 8월 해방 이전까지는 한반도에서 일본어 방송만 송출됐다. 조선방송협회는 해방 후 KBS가 된다. 1945년 8월 해방 이후, 미군은 9월에 남한 지역에 들어와 군정을 실시한다. 남한 지역의 공산당이었던 남로당은 미군정에 반발하며 조직적으로 테러를 저질렀다. 남로당은 경찰을 무력화하기 위해 통신 시설을 주로 공격했고, 결국 얼마 있지도 않았던 통신 인프라가 상당수 파괴되고 말았다. 남로당의 반발에도 1948년 남한 단독 총선거(5.10 총선)가 치뤄졌고, 북한은 여기에 반발해 5.14 단전조치를 시행한다. 일제시대에 지은 발전소가 대부분 북한 지역에 있었기에 북한에서 남한으로 전력을 보내주고 있었는데, 북한 측에서 이걸 끊어버린 것이다. 미국은 전력선 2대를 남한에 보냈고, 남한은 전력 인프라가 회복될때까지 전력선에서 생산되는 전력으로 연명해야 했다. 전력 부족에 허덕이는 남한을 보며 이승만이 원자력에 관심을 갖게 된 것이 이 시기다. 이승만은 이후 1956년 한미 원자력 협정을 체결하고, 1959년에는 원자력 연구소를 설치해 원자력 발전의 기틀을 제공했다.]]></summary></entry><entry><title type="html">대한민국(2) - 1950년대</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-2.html" rel="alternate" type="text/html" title="대한민국(2) - 1950년대" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20-%202</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-2.html"><![CDATA[<p>1948년~1960년: 이승만 정부<br />
 <br />
-*오일쇼크<br />
-*승압사업<br />
-*4K, 16K DRAM<br />
+#6.25 전쟁<br />
+#삼백산업<br />
+#TV방송<br />
 <br />
+<br />
+1948년 남한 북한에 각각 정부가 세워졌다.<br />
+하지만 김일성은 한반도 전체를 공산화하고 싶어했고, 계속해서 스탈린에게 전쟁을 제의했다.<br />
+중국의 국공내전이 결국 공산당의 승리로 끝난 것을 확인한 김일성은, 1950년 선전포고 없이 6.25 전쟁을 일으킨다.<br />
+<br />
+6.25 전쟁은 1953년에 휴전협정이 체결되어 3년만에 일단락되었다.<br />
+하지만 당시 대한민국은 조정이 부패하고 무능했던 구한말, 35년간 수탈당했던 일제시대를 거치며 극히 가난해진 나라였다.<br />
+이 상태에서 6.25 전쟁으로 몇 없던 기반 시설들마저 모두 파괴되고 만 것이다.<br />
+<br />
+대한민국에게는 다행히도, 미국은 대한민국의 공산화를 막기 위해 경제를 회복시켜둘 필요가 있었다.<br />
+미국은 대한민국에 밀, 면화 등을 원조했고, 이승만 정부는 이 물자들을 원료로 경공업을 육성하고자 했다.<br />
+그 결과 면방직 공업, 제당 공업, 제분 공업 회사들이 이 시기에 대량 생겨났다.<br />
+이 산업들을 ‘삼백산업’이라 통칭한다.<br />
+<br />
+이 시기에 생긴 회사 중 하나가 1953년 이병철이 설립한 제일제당이다.<br />
+제일제당은 미국의 원조 농산물을 가공해 파는 것으로 막대한 이익을 냈고,<br />
+이병철은 이후 제일모직을 설립하고 회사들을 인수하며 부를 키워나갔다.<br />
+<br />
+<br />
+1950년대는 대한민국의 TV 방송이 시작된 시기다.<br />
+<br />
+당시 미국에는 RCA(Radio Corporation of America)라는 회사가 있었다.<br />
+황태영은 대한민국의 RCA 대리점 운영을 맡고 있던 사람이다.<br />
+<br />
+대한민국에 TV방송을 들여오고 싶었던 황태영은 RCA를 통해 TV방송 기자재를 들여왔고,<br />
+1955년 종로네거리에 있던 RCA 대리점에 24인치 흑백 TV가 설치된다.<br />
+그리고 한국 RCA는 1956년 대한민국 최초의 TV 방송국인 KORCAD-TV를 설립한다.<br />
+<br />
+KORCAD-TV는 민영방송이니 돈을 벌어야 했는데, 당시 대한민국이 빈곤해서 광고 수주가 어려웠다.<br />
+그리고 RCA 입장에서는 TV를 팔아서 돈을 벌어야 했는데, 당시 TV는 대한민국 사람들이 감당하기 어려운 가격이라 잘 팔리지 않았다.<br />
+TV의 가격도 문제였지만, KORCAD-TV의 출력이 0.1kW라 시청 가능 범위가 반경 30km에 불과했던 것도 문제였다.<br />
+<br />
+결국 KORCAD-TV는 적자를 감당하지 못하고 1957년 한국일보에 매각되었다.<br />
+한국일보는 방송국을 꾸준히 운영했으나, 1959년 방송국에 큰 불이 나 방송을 중단하게 된다.<br />
+결국 1961년 방송국은 폐국했고, 직원들은 그해 12월 설립된 국영 방송국 KBS-TV로 이직했다.<br />
+<br />
+<br />
+사실 1950년대에 송출된 TV방송이 하나 더 있다. 미군이 1957년부터 남산에서 송출을 시작한 TV방송이다.<br />
+AFKN(American Forces Korean Network)이라는 주한 미군 관할 방송국의 방송이었다.<br />
+<br />
+AFKN의 방송은 이후 언론 통제가 심각하던 1970년대, 1980년대에 국민들에게 진실을 알리는 역할을 하기도 한다.<br />
+<br />
+<br />
+이승만이 소속되어 있던 자유당은 장기 집권을 위해 부정선거, 정치깡패 등 온갖 술수를 썼다.<br />
+그러나 1960년, 부정선거에 분노한 시민들이 4.19 혁명을 일으켜 결국 이승만이 하야한다.<br /></p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1948년~1960년: 이승만 정부 #6.25 전쟁 #삼백산업 #TV방송 1948년 남한 북한에 각각 정부가 세워졌다. 하지만 김일성은 한반도 전체를 공산화하고 싶어했고, 계속해서 스탈린에게 전쟁을 제의했다. 중국의 국공내전이 결국 공산당의 승리로 끝난 것을 확인한 김일성은, 1950년 선전포고 없이 6.25 전쟁을 일으킨다. 6.25 전쟁은 1953년에 휴전협정이 체결되어 3년만에 일단락되었다. 하지만 당시 대한민국은 조정이 부패하고 무능했던 구한말, 35년간 수탈당했던 일제시대를 거치며 극히 가난해진 나라였다. 이 상태에서 6.25 전쟁으로 몇 없던 기반 시설들마저 모두 파괴되고 만 것이다. 대한민국에게는 다행히도, 미국은 대한민국의 공산화를 막기 위해 경제를 회복시켜둘 필요가 있었다. 미국은 대한민국에 밀, 면화 등을 원조했고, 이승만 정부는 이 물자들을 원료로 경공업을 육성하고자 했다. 그 결과 면방직 공업, 제당 공업, 제분 공업 회사들이 이 시기에 대량 생겨났다. 이 산업들을 ‘삼백산업’이라 통칭한다. 이 시기에 생긴 회사 중 하나가 1953년 이병철이 설립한 제일제당이다. 제일제당은 미국의 원조 농산물을 가공해 파는 것으로 막대한 이익을 냈고, 이병철은 이후 제일모직을 설립하고 회사들을 인수하며 부를 키워나갔다. 1950년대는 대한민국의 TV 방송이 시작된 시기다. 당시 미국에는 RCA(Radio Corporation of America)라는 회사가 있었다. 황태영은 대한민국의 RCA 대리점 운영을 맡고 있던 사람이다. 대한민국에 TV방송을 들여오고 싶었던 황태영은 RCA를 통해 TV방송 기자재를 들여왔고, 1955년 종로네거리에 있던 RCA 대리점에 24인치 흑백 TV가 설치된다. 그리고 한국 RCA는 1956년 대한민국 최초의 TV 방송국인 KORCAD-TV를 설립한다. KORCAD-TV는 민영방송이니 돈을 벌어야 했는데, 당시 대한민국이 빈곤해서 광고 수주가 어려웠다. 그리고 RCA 입장에서는 TV를 팔아서 돈을 벌어야 했는데, 당시 TV는 대한민국 사람들이 감당하기 어려운 가격이라 잘 팔리지 않았다. TV의 가격도 문제였지만, KORCAD-TV의 출력이 0.1kW라 시청 가능 범위가 반경 30km에 불과했던 것도 문제였다. 결국 KORCAD-TV는 적자를 감당하지 못하고 1957년 한국일보에 매각되었다. 한국일보는 방송국을 꾸준히 운영했으나, 1959년 방송국에 큰 불이 나 방송을 중단하게 된다. 결국 1961년 방송국은 폐국했고, 직원들은 그해 12월 설립된 국영 방송국 KBS-TV로 이직했다. 사실 1950년대에 송출된 TV방송이 하나 더 있다. 미군이 1957년부터 남산에서 송출을 시작한 TV방송이다. AFKN(American Forces Korean Network)이라는 주한 미군 관할 방송국의 방송이었다. AFKN의 방송은 이후 언론 통제가 심각하던 1970년대, 1980년대에 국민들에게 진실을 알리는 역할을 하기도 한다. 이승만이 소속되어 있던 자유당은 장기 집권을 위해 부정선거, 정치깡패 등 온갖 술수를 썼다. 그러나 1960년, 부정선거에 분노한 시민들이 4.19 혁명을 일으켜 결국 이승만이 하야한다.]]></summary></entry><entry><title type="html">대한민국(3) - 1960년대</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-3.html" rel="alternate" type="text/html" title="대한민국(3) - 1960년대" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20-%203</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-3.html"><![CDATA[<p><br />
+1960년~1963년: 의원내각제 체제
+1963년~1979년: 박정희 정부<br />
+<br />
+*MOSFET<br />
+*김해수<br />
+*한만춘<br />
+*김완희<br />
+<br />
+<br />
+1960년 이승만 하야 이후, 대한민국에는 윤보선을 대통령으로 하는 의원내각제 체제가 들어섰다.<br />
+그러나 의원내각제 체제는 1961년 박정희의 5.16 군사정변으로 사실상 중단된다.<br />
+<br />
+박정희가 대통령이 된건 1963년이지만, 5.16 군사정변은 1961년이라 18년간 권력을 잡고 있었다고 보통 평가한다.<br />
+<br />
+<br />
+5.16 군사정변 직후, 박정희는 혁명재판을 열어 이승만 정권의 비호 아래 부정부패를 저지른 자들과 정치깡패들을 숙청한다.
+이 혁명재판으로 박정희의 인기가 치솟게 된다.</p>
+
+<p>돈이 생긴 이병철에게는 정치계 인맥이 필요해졌다.
+이때 이병철의 눈에 들어온 것이 내무부장관 홍진기였다.</p>
+
+<p>4.19혁명이 일어나 이승만이 하야한다.</p>
+
+<p>이때 시위 당시 발표명령을 내렸던 내무부장관 홍진기가 사형 선고를 받는데, 이병철이 구해준다.</p>
+
+<p>박정희는 5.16 군사정변으로 정권을 잡아 대통령이 된 인물이다.<br /></p>
+
+<p>농어촌 라디오 보내기 운동
+농어촌 전화사업
+새마을운동</p>
+
+<p>등 농촌 발전에 큰 투자를 했다</p>
+
+<p>첨단 전자공학 발전을 위해서는 한만춘, 김완희 도움을 받았다</p>
+
+<p>금성사 라디오가 많이 팔리도록 농촌 라디오 보내기 운동도 하고, 일본/미국 밀수품 라디오를 막기도 한다</p>
+
+<p>이걸로 국산 라디오가 엄청나게 팔리게 된다.
+박정희 입장에서는 라디오를 보급해 쿠데타의 당위성을 설파해서 좋았고,
+금성사 입장에서는 라디오가 많이 팔려 좋았다.</p>
+
+<p>한만춘 교수:</p>
+
+<p>박정희의 시대
+쿠데타로 정권을 잡았고 많은 나쁜 짓을 했지만,
+대한민국 전자공업은 정부 지원을 통해 엄청나게 발전했다.</p>
+
+<p>박정희는 전자공학에 꽤 관심이 많았던 것으로 보인다. 국가적으로 전자공업을 엄청나게 지원해줬다.</p>
+
+<p>근데, 절대 기업이 주도해서 발전하게 한건 아니었다.
+박정희는 재벌들을 싫어했다. 그들에게서 돈을 뜯거나 감방에 보냈다.
+그 돈으로 국가주도 산업들을 잘 이끈건 잘한거지만, 기업 위주 발전은 절대 아니었다.</p>
+
+<p>1947년, 구인회가 락희화학공업사 창업
+1958년, 락희화학공업사에서 금성사 창업
+1959년, 국내 최초의 라디오 ‘A-501’이 나온다.</p>
+
+<p>A는 AC, 5는 진공관 5개, 01은 첫번째 제품이란 뜻</p>
+
+<p>가격이 비싸긴 했지만, 외국 라디오에 비하면 2/3 정도 가격이었다.
+근데 딱히 뭐 잘팔리지는 않았다. 성능이 외국꺼에 비해 많이 떨어졌다.</p>
+
+<p>그러다가 1961년에, 박정희가 예고도 없이 금성사 라디오 공장을 찾아온다.
+그날은 A-501을 만든 김해수만 공장에 있었는데, 박정희가 뭐 필요한거 없냐고 물어봤다.
+김해수는 일본/미국 밀수품을 막아야 한다고 주장한다.</p>
+
+<p>박정희는 두가지를 한다.
+1. 밀수품 근절에 관한 최고회의 포고령
+2. 농촌 라디오 보내기 운동</p>
+
+<p>이걸로 국산 라디오가 엄청나게 팔리게 된다.
+박정희 입장에서는 라디오를 보급해 쿠데타의 당위성을 설파해서 좋았고,
+금성사 입장에서는 라디오가 많이 팔려 좋았다.</p>
+
+<p>http://www.edulove.info/bbs/board_view.php?bid=letter_sss&amp;uid=174&amp;pageno=3</p>
+
+<p>나중 이야기지만, 김해수는 50~60년대 동안은 금성사에서, 70년대 동안은 많은 회사를 설립하며 사업을 키워나갔다.
+1979년에는 우리나라 전자산업의 기틀을 닦은 공로를 인정받아 대통령 산업포장도 받았다.
+하지만 딸과 사위가 사노맹 사건으로 감옥에 가게 된다.
+그래서 거실에 걸어놨던 대통령 산업포장도 내려놓게 되었다고 한다.</p>
+
+<p>말하는걸 보면 결국 딸 편이었던 것 같은데, 내가 보기에는 사노맹 사건은 진짜 빨갱이같은데..</p>
+
+<p>1965년 농어촌 전화사업</p>
+
+<p>한만춘 교수님:
+https://www.hankyung.com/it/article/2016061261981</p>
+
+<p>김완희 교수:
+컬럼비아대 교수였다는데 확인 필요
+‘박정희 김완희’ 검색하면 내용 되게 많음</p>
+
+<p>1968년부터 한국 전자공학 발전을 위해 노력했고,
+김완희 교수는 1986년 미국으로 돌아간다.</p>
+
+<p>https://m.monthly.chosun.com/client/mdaily/daily_view.asp?idx=15341&amp;Newsnumb=20220515341
+https://www.etnews.com/20220223000242</p>
+
+<p>1969년 삼성전자가 설립된다.</p>
+
+<p>1966년 사카린 밀수 사건</p>
+
+<p>삼성산요전기 -&gt; 삼성전기
+삼성NEC -&gt; 삼성SDI</p>
+
+<p>1969년 전자공업진흥법 -&gt; 정부가 전자공업에 돈을 쓰기 시작한다.</p>
+
+<p>1965년, 박정희가 미국에 간다.
+베트남전 파병해줄테니 이것저것 내놓으라고 간거다.
+여기서 다른것들도 많이 요구하는데, 한국에 연구소 하나 지어달라고 한다.</p>
+
+<p>그래서 1966년, 미국의 도움으로 한국과학기술연구원(KIST)가 세워진다.</p>
+
+<p>60년대에 자동차 전화가 나온다.</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1960년~1963년: 의원내각제 체제 1963년~1979년: 박정희 정부 *MOSFET *김해수 *한만춘 *김완희 1960년 이승만 하야 이후, 대한민국에는 윤보선을 대통령으로 하는 의원내각제 체제가 들어섰다. 그러나 의원내각제 체제는 1961년 박정희의 5.16 군사정변으로 사실상 중단된다. 박정희가 대통령이 된건 1963년이지만, 5.16 군사정변은 1961년이라 18년간 권력을 잡고 있었다고 보통 평가한다. 5.16 군사정변 직후, 박정희는 혁명재판을 열어 이승만 정권의 비호 아래 부정부패를 저지른 자들과 정치깡패들을 숙청한다. 이 혁명재판으로 박정희의 인기가 치솟게 된다.]]></summary></entry><entry><title type="html">대한민국(4) - 1970년대</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-4.html" rel="alternate" type="text/html" title="대한민국(4) - 1970년대" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20-%204</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-4.html"><![CDATA[<p>1963년~1979년: 박정희 정부<br />
+<br />
+#오일쇼크<br />
+#승압사업<br />
+#4K, 16K DRAM<br />
 <br />
 <br />
 1970년대의 박정희 정부는 매우 불안정한 상태였다.<br />
@@ -173,363 +482,4 @@ Loop Gain을 본다.<br />
 
 <p>전화교환기에는 전자식과 기계식이 있다.</p>
 
-<p>벨기에 ITT에서 전화교환기를 들여온다. 이때 교환기 뿐 아니라 기술도 제대로 들여오려고 노력한다.</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1963년~1979년: 박정희 정부 *오일쇼크 *승압사업 *4K, 16K DRAM 1970년대의 박정희 정부는 매우 불안정한 상태였다. 대내적으로는 민주화 요구, 외교적으로는 한미관계 악화, 경제적으로는 오일쇼크에 의한 중공업 기업들의 어려움에 대응해야 했다. 1972년, 박정희 정부는 군대를 동원해 국회를 해산하고 대통령 선거를 간선제로 바꾼다. (10월 유신) 선거조차 제대로 실시하지 않는 정부에 국민들은 크게 반발했고, 박정희 정부 내내 민주화를 요구하는 크고 작은 투쟁들이 일어나게 된다. 특히, 정권 말에는 YH무역 사건, 부마항쟁 등으로 나라가 매우 혼란스러워진다. 1973년에는 이스라엘과 아랍 국가들 사이에 제4차 중동전쟁이 발발한다. 미국은 여기서 이스라엘을 지원했는데, 아랍 국가들은 미국에게 경제 타격을 주기 위해 석유를 감산한다. 그 결과 석유 가격이 폭등했고, 전세계 경제가 큰 타격을 받는다. 이 사건이 1차 오일쇼크다. 석유는 없으면서 중화학공업을 육성하던 한국은 1차 오일쇼크로 치명적인 피해를 입었다. 중화학공업의 원료인 석유 가격이 올라 제품의 제조원가가 올랐고, 전세계 경제가 불황이라 수출도 잘 안됐다. 화력발전소에서 석유를 사용하던 한국은 전기도 부족해졌다. 박정희 정부는 가정용 전기에 누진제 전기요금제를 도입해 전기사용을 억제했으며, 연세대 한만춘 교수의 의견을 수렴해 110V, 220V가 혼용되던 배전망을 모두 220V로 교체해 전력 손실을 크게 줄였다. (승압사업) 이후 화력발전소에서는 석유가 아닌 석탄을 쓰게 되었으며, 1978년부터는 고리 원자력 발전소가 가동되기 시작했다. 미국의 반도체 기업들은 1차 오일쇼크로 경제가 어려워지자 투자를 줄였다. 그런데, 일본 반도체 기업들은 이때 공장 설비에 큰 투자를 감행했다. 공장 설비 투자로 일본 반도체 제품의 생산단가가 크게 낮아져, 결국 1980년대에는 일본 반도체가 미국 시장을 집어삼키게 된다. 당시 일본은 공장 설비뿐 아니라 신기술에도 열심히 투자했다. 1973년, 미국의 TI에서 4K bit DRAM을 개발했는데, 3년 뒤인 1976년 일본에서 16K bit DRAM이 개발된다. 미국은 1964년부터 1975년까지 베트남 전쟁을 치르는 중이었다. 미국은 베트남의 공산화를 막지 못해 친미 국가들로부터 능력을 의심받게 되었고, 또한 베트남 전쟁동안 찍어낸 엄청난 양의 달러때문에 심각한 인플레이션을 겪고 있었다. 소련은 프라하의 봄, 중국과의 국경분쟁 등을 겪으며 영향력 붕괴를 실감하고 있었고, 소련 경제는 미국과의 군비경쟁으로 크게 망가져 있었다. 결국 냉전에 외교적, 경제적 피로를 느낀 미국과 소련은 1970년대 들어 경쟁을 완화하게 된다. 그 결과, 미국은 방위비 절감과 군사경쟁 완화를 위해 주한미군 철수를 검토하게 된다. 박정희 정부는 주한미군 철수에 맞서 핵개발과 자주국방 프로젝트들을 시도했으며, 주한미군 철수를 막기 위해 미국 정치인들에게 뇌물을 주다가 미국에게 들킨다. (코리아 게이트) 당연히 한미 관계는 크게 악화됐고, 박정희 정부는 내정, 외교, 경제 모두 위험한 상황이 된다. 그러던 중, 1978년 이란 혁명에 의한 2차 오일쇼크로 석유값과 전기값이 또 폭등했다. 중화학공업이 또 타격받고 경제가 아주 어려워졌다. 극히 혼란스러운 상황에서, 중앙정보부장이었던 김재규가 1979년 10월 26일 박정희를 총으로 쏴 죽인다. 이렇게 박정희 정권이 끝났고, 이후 1979년 12월 12일 밤 전두환의 쿠데타로 전두환이 정권을 잡는다.]]></summary></entry><entry><title type="html">대한민국(5) - 전두환 정부</title><link href="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EC%A0%84%EB%91%90%ED%99%98.html" rel="alternate" type="text/html" title="대한민국(5) - 전두환 정부" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/history/2023/10/04/History%20-%20%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20-%20%EC%A0%84%EB%91%90%ED%99%98</id><content type="html" xml:base="http://localhost:4000/history/2023/10/04/History-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EC%A0%84%EB%91%90%ED%99%98.html"><![CDATA[<p><br />
-1980년~1988년<br />
-<br />
-*64KB DRAM<br />
-*플라자 합의<br />
-*미일 반도체 협정<br />
-*3저 호황<br />
-<br />
-<br />
-<br />
-전두환은 박정희 사망 이후, 12.12 군사반란으로 정권을 잡아 대통령이 된 인물이다.<br />
-<br />
-<br />
-당시 미국은 한국의 쿠데타에 개입할 여력이 없었다.<br />
-<br />
-당시 이란에서는 친미 정권이었던 팔라비 왕조가 무너졌고, 뒤이어 미 대사관 인질 사건까지 발생했다.<br />
-이에 외교능력을 의심받던 지미 카터 행정부는 한국에 개입하기 어려웠다.<br />
-게다가 베트남전쟁동안 찍어낸 달러에 의한 인플레이션도 심각했다.<br />
-<br />
-쿠데타로 집권해 당위성이 부족했던 전두환 정부는, 쿠데타를 문제삼지 않는 미국과 최대한 친하게 지내기로 한다.<br />
-전두환 정부는 대미 관계를 위해 박정희 정부에서 진행하던 미사일, 핵 개발 등 자주국방 관련 프로젝트들을 모두 포기한다.<br />
-미국도 그에 화답해 전두환 정부를 문제삼지 않는다.<br />
-<br />
-그 결과 한국 운동권이 반미감정을 크게 갖게 되기도 한다.<br />
-<br />
-<br />
-이 시기에 미국 연준 의장이 된 폴 볼커(Paul Volcker)는 성장을 포기하고 인플레이션부터 해결하기로 한다.<br />
-그래서 기준금리를 연 20% 수준까지 끌어올린다.<br />
-<br />
-금리가 엄청나게 오르자, 높은 이자 때문에 자금 조달에 실패한 중소기업들은 파산했다.<br />
-대기업들은 대출받아서 투자해봐야 이자 내면 남는게 없으니 사업 확장을 포기했고, 실업률은 폭등했다.<br />
-하지만 시장 자금이 높은 이자를 노리고 은행으로 이동했기에, 인플레이션은 해결됐다.<br />
-<br />
-그러나, 다른 문제가 생겼다. 미국의 고금리 예금을 누리기 위해, 해외 투자자들이 달러를 매수하기 시작했다.<br />
-달러 수요가 늘어나자 달러 환율이 오르게 되었고, 미국 제품의 가격 경쟁력이 저하된다.<br />
-예를 들어, 원래는 1000원 주고 사던 1달러짜리 제품을 이제는 1300원 주고 사야 하게 된 것이다.<br />
-<br />
-<br />
-1980년대에는 인텔, TI 등 미국 기업 뿐 아니라 히타치, 미쓰비시, 도시바, NEC 등 일본 기업들도 DRAM을 만들고 있었다.<br />
-높은 달러 환율에 의해 상대적으로 가격 경쟁력이 생긴 일본 기업들은 DRAM을 싼 가격에 수출하면서 큰 이득을 보게 된다.<br />
-<br />
-일본 기업들은 자금 조달도 쉬웠다. 당시 일본 금리는 6~7%정도였다.<br />
-일본은 사람들이 저축을 많이 해서 은행에 현금이 많았고, 그래서 은행들이 기업들에게 저금리 대출을 많이 해줄 수 있었던 것이다.<br />
-<br />
-결국 미국 기업들은 DRAM 시장에서 일본 기업들에게 크게 밀리기 시작한다.<br />
-<br />
-<br />
-그러던 1983년 2월, 한국의 삼성전자가 반도체 사업을 시작하겠다고 발표한다. (도쿄 선언)<br />
-<br />
-미국 기업들 입장에서는 DRAM 만들어봐야 일본 DRAM에 상대가 안되니, 삼성전자에 관련 기술 던져주고 돈이라도 받는 것이 나았다.<br />
-일본 외 DRAM 공급원이 생기는 편이 미국 기업들에게 유리하기도 했다.<br />
-<br />
-전두환 정부 또한 80년대 내내 한국 반도체 기업들의 편의를 많이 봐줬다.<br />
-<br />
-그리고 1983년 12월, 미국 기업들과 한국 정부의 지원을 받은 삼성전자가 64KB DRAM 개발에 성공한다.<br />
-<br />
-<br />
-일본 기업들은 삼성전자의 빠른 성공에 큰 충격을 받는다.<br />
-<br />
-1984년, 일본 기업들은 경쟁 기업들을 제거하기 위해 공격적으로 DRAM 가격을 낮춰 팔기 시작한다.<br />
-64KB DRAM의 가격은 1년만에 3달러에서 0.3달러까지 떨어진다.<br />
-인텔은 이때 DRAM 시장에서 완전히 철수하고, 다른 반도체 기업들은 엄청난 손해를 본다.<br />
-<br />
-<br />
-DRAM 뿐 아니라 자동차 등 여러 품목에서 일본에게 시장을 빼앗기던 미국은 더 이상 참을 수가 없었고, 온갖 협박을 통해 환율 합의를 이끌어낸다.<br />
-<br />
-1985년, 프랑스, 서독, 영국, 미국, 일본의 합의로 달러 환율이 조정된다. (플라자 합의)<br />
-합의에 의한 엔화 가치 상승으로, 달러당 약 250엔이던 환율이 2년만에 달러당 약 120엔이 된다.<br />
-결국 일본 수출품의 가격 경쟁력이 사라진다.<br />
-<br />
-<br />
-1987년에는 미일 반도체 협정이 체결된다.<br />
-그 결과 일본은 미국 시장에 반도체 덤핑을 할 수 없게 되었고, 미국 자본의 일본 반도체 투자를 허용해야 했다.<br />
-<br />
-<br />
-엔화 환율도 오르고 반도체 가격 규제도 생겼기에, 일본의 수출 경쟁력은 크게 저하된다.<br />
-일본은 수출로는 답이 안나오니 내수 시장을 살리기로 한다.<br />
-<br />
-일본 정부는 금리를 내려 내수 활성화를 시도했는데, 부동산이 미친듯이 올라버린다.<br />
-사람들은 집을 담보로, 싼 이자로 대출을 받아 부동산을 샀고, 그걸 담보로 또 대출을 받아 또 부동산을 샀다. 어차피 미친듯이 오르니까.<br />
-<br />
-이렇게, 일본의 버블경제 시기가 시작된다.<br />
-<br />
-<br />
-한편, 일본 엔화가 오르자 한국 및 동남아시아 국가들은 일본 대비 수출 경쟁력이 생겼다.<br />
-그 결과 이 국가들은 상당한 호황을 누리게 된다. 한국의 3저호황도 이 시기다.<br />
-<br />
-3저호황은 낮은 유가, 낮은 금리, 낮은 달러에 기반한 호황을 뜻한다.</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1980년~1988년 *64KB DRAM *플라자 합의 *미일 반도체 협정 *3저 호황 전두환은 박정희 사망 이후, 12.12 군사반란으로 정권을 잡아 대통령이 된 인물이다. 당시 미국은 한국의 쿠데타에 개입할 여력이 없었다. 당시 이란에서는 친미 정권이었던 팔라비 왕조가 무너졌고, 뒤이어 미 대사관 인질 사건까지 발생했다. 이에 외교능력을 의심받던 지미 카터 행정부는 한국에 개입하기 어려웠다. 게다가 베트남전쟁동안 찍어낸 달러에 의한 인플레이션도 심각했다. 쿠데타로 집권해 당위성이 부족했던 전두환 정부는, 쿠데타를 문제삼지 않는 미국과 최대한 친하게 지내기로 한다. 전두환 정부는 대미 관계를 위해 박정희 정부에서 진행하던 미사일, 핵 개발 등 자주국방 관련 프로젝트들을 모두 포기한다. 미국도 그에 화답해 전두환 정부를 문제삼지 않는다. 그 결과 한국 운동권이 반미감정을 크게 갖게 되기도 한다. 이 시기에 미국 연준 의장이 된 폴 볼커(Paul Volcker)는 성장을 포기하고 인플레이션부터 해결하기로 한다. 그래서 기준금리를 연 20% 수준까지 끌어올린다. 금리가 엄청나게 오르자, 높은 이자 때문에 자금 조달에 실패한 중소기업들은 파산했다. 대기업들은 대출받아서 투자해봐야 이자 내면 남는게 없으니 사업 확장을 포기했고, 실업률은 폭등했다. 하지만 시장 자금이 높은 이자를 노리고 은행으로 이동했기에, 인플레이션은 해결됐다. 그러나, 다른 문제가 생겼다. 미국의 고금리 예금을 누리기 위해, 해외 투자자들이 달러를 매수하기 시작했다. 달러 수요가 늘어나자 달러 환율이 오르게 되었고, 미국 제품의 가격 경쟁력이 저하된다. 예를 들어, 원래는 1000원 주고 사던 1달러짜리 제품을 이제는 1300원 주고 사야 하게 된 것이다. 1980년대에는 인텔, TI 등 미국 기업 뿐 아니라 히타치, 미쓰비시, 도시바, NEC 등 일본 기업들도 DRAM을 만들고 있었다. 높은 달러 환율에 의해 상대적으로 가격 경쟁력이 생긴 일본 기업들은 DRAM을 싼 가격에 수출하면서 큰 이득을 보게 된다. 일본 기업들은 자금 조달도 쉬웠다. 당시 일본 금리는 6~7%정도였다. 일본은 사람들이 저축을 많이 해서 은행에 현금이 많았고, 그래서 은행들이 기업들에게 저금리 대출을 많이 해줄 수 있었던 것이다. 결국 미국 기업들은 DRAM 시장에서 일본 기업들에게 크게 밀리기 시작한다. 그러던 1983년 2월, 한국의 삼성전자가 반도체 사업을 시작하겠다고 발표한다. (도쿄 선언) 미국 기업들 입장에서는 DRAM 만들어봐야 일본 DRAM에 상대가 안되니, 삼성전자에 관련 기술 던져주고 돈이라도 받는 것이 나았다. 일본 외 DRAM 공급원이 생기는 편이 미국 기업들에게 유리하기도 했다. 전두환 정부 또한 80년대 내내 한국 반도체 기업들의 편의를 많이 봐줬다. 그리고 1983년 12월, 미국 기업들과 한국 정부의 지원을 받은 삼성전자가 64KB DRAM 개발에 성공한다. 일본 기업들은 삼성전자의 빠른 성공에 큰 충격을 받는다. 1984년, 일본 기업들은 경쟁 기업들을 제거하기 위해 공격적으로 DRAM 가격을 낮춰 팔기 시작한다. 64KB DRAM의 가격은 1년만에 3달러에서 0.3달러까지 떨어진다. 인텔은 이때 DRAM 시장에서 완전히 철수하고, 다른 반도체 기업들은 엄청난 손해를 본다. DRAM 뿐 아니라 자동차 등 여러 품목에서 일본에게 시장을 빼앗기던 미국은 더 이상 참을 수가 없었고, 온갖 협박을 통해 환율 합의를 이끌어낸다. 1985년, 프랑스, 서독, 영국, 미국, 일본의 합의로 달러 환율이 조정된다. (플라자 합의) 합의에 의한 엔화 가치 상승으로, 달러당 약 250엔이던 환율이 2년만에 달러당 약 120엔이 된다. 결국 일본 수출품의 가격 경쟁력이 사라진다. 1987년에는 미일 반도체 협정이 체결된다. 그 결과 일본은 미국 시장에 반도체 덤핑을 할 수 없게 되었고, 미국 자본의 일본 반도체 투자를 허용해야 했다. 엔화 환율도 오르고 반도체 가격 규제도 생겼기에, 일본의 수출 경쟁력은 크게 저하된다. 일본은 수출로는 답이 안나오니 내수 시장을 살리기로 한다. 일본 정부는 금리를 내려 내수 활성화를 시도했는데, 부동산이 미친듯이 올라버린다. 사람들은 집을 담보로, 싼 이자로 대출을 받아 부동산을 샀고, 그걸 담보로 또 대출을 받아 또 부동산을 샀다. 어차피 미친듯이 오르니까. 이렇게, 일본의 버블경제 시기가 시작된다. 한편, 일본 엔화가 오르자 한국 및 동남아시아 국가들은 일본 대비 수출 경쟁력이 생겼다. 그 결과 이 국가들은 상당한 호황을 누리게 된다. 한국의 3저호황도 이 시기다. 3저호황은 낮은 유가, 낮은 금리, 낮은 달러에 기반한 호황을 뜻한다.]]></summary></entry><entry><title type="html">경영 - 라이선싱</title><link href="http://localhost:4000/market/2023/10/04/Market-%EA%B2%BD%EC%98%81-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8B%B1.html" rel="alternate" type="text/html" title="경영 - 라이선싱" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/market/2023/10/04/Market%20-%20%EA%B2%BD%EC%98%81%20-%20%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8B%B1</id><content type="html" xml:base="http://localhost:4000/market/2023/10/04/Market-%EA%B2%BD%EC%98%81-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8B%B1.html"><![CDATA[<p>라이선싱(Licensing)은 다른 기업에게 IP 사용권한을 주고, 그 대가로 돈을 받는 계약이다.<br />
-팹리스 업계에서는 설계도나 ISA 등이 라이선싱의 대상이 된다.<br />
-<br />
-ISA(Instruction Set Architecture): 칩이 동작할 때 사용하는 명령어 모음<br />
-<br />
-<br />
-IP를 제공하는 회사는 라이선싱으로 돈을 받고,<br />
-IP를 제공받는 회사는 IP를 자사 제품에 적용해 판매한다.<br />
-<br />
-기술력이 부족한 회사라도, 부족한 부분의 IP를 라이선싱해오면 일단 제품을 만들어볼 수는 있다.<br />
-<br />
-<br />
-디지털 회로 block 설계도를 라이선싱해올 경우, 3가지 방법이 있다.<br />
-<br />
-Soft macro:<br />
-설계도를 RTL code 형태로 라이선싱해온다.<br />
-칩 내에서의 동작 특성을 예상하기는 힘들지만, 자사 칩과 완전히 한 덩어리로 만들어 넣을 수 있다.<br />
-판매자 입장에서는 기술 유출이 우려되는 형태다.<br />
-<br />
-Firm macro:<br />
-설계도를 netlist 형태로 라이선싱해온다.<br />
-Soft macro보다 동작 특성을 예상하기 쉽고,<br />
-Hard macro보다 자유롭게 변경 가능하다.<br />
-<br />
-Hard macro:<br />
-설계도를 GDSII 파일 형태로 라이선싱해온다.<br />
-칩 내에서 자유로운 모습으로 변경은 불가능하지만, Hard macro 부분의 성능, 전력 사용량, 면적 등 동작 특성은 쉽게 추측할 수 있다.<br />
-기술 유출 가능성이 적어 판매자 입장에서 안심되는 형태다.<br />
-<br />
-<br />
-라이선싱으로 돈을 버는 대표적인 회사로, ARM이 있다.<br />
-<br />
-다른 팹리스 업체들은 칩을 설계한 후, 파운드리에 제조를 맡기고 완성된 칩을 판매해 수익을 낸다.<br />
-하지만 ARM은 칩을 설계한 후 그 칩의 설계도, 그 칩 일부 block의 설계도, 또는 ISA를 라이선싱해 수익을 낸다.<br />
-<br />
-<br />
-ARM은 저전력 동작에 특화된 설계도와 ISA를 제공한다.<br />
-배터리로 동작하는 휴대용 기기가 다수 출시되기 시작하면서 ARM 프로세서가 각광받게 되었다.<br />
-대표적으로는 스마트폰에 ARM 프로세서가 쓰이고, 닌텐도 게임기 등 다른 휴대용 기기들에도 ARM 프로세서가 쓰인다.<br />
-<br />
-애플, 삼성전자, 퀄컴, 화웨이 등이 스마트폰 AP에 ARM의 설계도 또는 ISA를 활용한다.<br />
-ISA만 구매한 후 코어는 자체설계하는 회사들도 있고, ISA와 코어 설계도 모두 구매하는 회사들도 있다.<br />
-<br />
-<br />
-ARM은 스마트폰 시대와 함께 큰 돈을 벌었지만, 이제는 스마트폰 출하량이 감소하고 있다.<br />
-하지만 ARM은 스마트폰 AP 말고는 제대로 자리잡은 시장이 아직 없는 상황이다.<br />
-<br />
-그리고 스마트폰 제조사들이 자사 스마트폰의 AP를 모두 스스로 설계하려고 노력하고 있다.<br />
-이런 회사들이 늘어나면 ARM의 스마트폰 AP 시장 입지가 위험해질 수 있다.<br />
-<br />
-물론, 모든 핸드폰 제조사들이 자기 AP를 스스로 만든다고 해도, ARM은 ISA 라이선싱으로 돈 벌 수는 있을 것이다.<br />
-하지만 ISA만 라이선싱하는건 설계도 라이선싱보다 훨씬 이익이 적다.<br />
-<br />
-그래서, ARM은 다른 시장을 개척해야 하는 상황이다.<br />
-<br />
-<br />
-스마트폰 AP 분야에서는 제조사들이 ARM의 ISA를 라이선싱해 사용하는데,<br />
-컴퓨터 CPU 분야에서는 제조사들이 AMD의 x86-64 ISA를 사용한다.<br />
-<br />
-<br />
-32비트 CPU 시절까지는 AMD가 인텔의 ISA인 x86을 라이선싱해오고 있었다.<br />
-<br />
-그러다가, 1999년 AMD에서 64비트 CPU용 ISA인 x86-64를 발표했다.<br />
-당시 인텔은 64비트 ISA를 개발할 여력이 없었기에, 거꾸로 AMD로부터 ISA를 라이선싱해오게 된다.<br />
-<br />
-그 후로 현재까지도 인텔은 x86-64 ISA를 AMD로부터 라이선싱해오고 있다.<br />
-<br />
-<br />
-최근에는 중국 정부가 반도체 자급자족을 위해 중국제 반도체 제품 사용을 장려하고 있다.<br />
-동운아나텍은 대중 수출 활로를 열기 위해 라이선싱을 이용했다.<br />
-<br />
-동운아나텍은 Halo Microelectronics와 AF 드라이버 IC, OIS 드라이버 IC에 대한 라이선싱 계약을 체결했다.<br />
-Halo는 라이선싱 비용으로 동운아나텍에게 현금을 지급했고, 동운아나텍의 설계도를 통해 제품을 생산하고 판매 수익을 얻을 권리를 얻게 되었다.<br />
-<br />
-동운아나텍이 수출 대신 라이선싱을 해서 이득보는 점:<br />
-수출 재고 관리 걱정 없이 현금 수급<br />
-중국정부 규제 회피<br />
-<br />
-Halo가 라이선싱을 통해 이득보는 점:<br />
-동운아나텍이 직접 수출했다면 얻지 못했을 이윤<br /></p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[라이선싱(Licensing)은 다른 기업에게 IP 사용권한을 주고, 그 대가로 돈을 받는 계약이다. 팹리스 업계에서는 설계도나 ISA 등이 라이선싱의 대상이 된다. ISA(Instruction Set Architecture): 칩이 동작할 때 사용하는 명령어 모음 IP를 제공하는 회사는 라이선싱으로 돈을 받고, IP를 제공받는 회사는 IP를 자사 제품에 적용해 판매한다. 기술력이 부족한 회사라도, 부족한 부분의 IP를 라이선싱해오면 일단 제품을 만들어볼 수는 있다. 디지털 회로 block 설계도를 라이선싱해올 경우, 3가지 방법이 있다. Soft macro: 설계도를 RTL code 형태로 라이선싱해온다. 칩 내에서의 동작 특성을 예상하기는 힘들지만, 자사 칩과 완전히 한 덩어리로 만들어 넣을 수 있다. 판매자 입장에서는 기술 유출이 우려되는 형태다. Firm macro: 설계도를 netlist 형태로 라이선싱해온다. Soft macro보다 동작 특성을 예상하기 쉽고, Hard macro보다 자유롭게 변경 가능하다. Hard macro: 설계도를 GDSII 파일 형태로 라이선싱해온다. 칩 내에서 자유로운 모습으로 변경은 불가능하지만, Hard macro 부분의 성능, 전력 사용량, 면적 등 동작 특성은 쉽게 추측할 수 있다. 기술 유출 가능성이 적어 판매자 입장에서 안심되는 형태다. 라이선싱으로 돈을 버는 대표적인 회사로, ARM이 있다. 다른 팹리스 업체들은 칩을 설계한 후, 파운드리에 제조를 맡기고 완성된 칩을 판매해 수익을 낸다. 하지만 ARM은 칩을 설계한 후 그 칩의 설계도, 그 칩 일부 block의 설계도, 또는 ISA를 라이선싱해 수익을 낸다. ARM은 저전력 동작에 특화된 설계도와 ISA를 제공한다. 배터리로 동작하는 휴대용 기기가 다수 출시되기 시작하면서 ARM 프로세서가 각광받게 되었다. 대표적으로는 스마트폰에 ARM 프로세서가 쓰이고, 닌텐도 게임기 등 다른 휴대용 기기들에도 ARM 프로세서가 쓰인다. 애플, 삼성전자, 퀄컴, 화웨이 등이 스마트폰 AP에 ARM의 설계도 또는 ISA를 활용한다. ISA만 구매한 후 코어는 자체설계하는 회사들도 있고, ISA와 코어 설계도 모두 구매하는 회사들도 있다. ARM은 스마트폰 시대와 함께 큰 돈을 벌었지만, 이제는 스마트폰 출하량이 감소하고 있다. 하지만 ARM은 스마트폰 AP 말고는 제대로 자리잡은 시장이 아직 없는 상황이다. 그리고 스마트폰 제조사들이 자사 스마트폰의 AP를 모두 스스로 설계하려고 노력하고 있다. 이런 회사들이 늘어나면 ARM의 스마트폰 AP 시장 입지가 위험해질 수 있다. 물론, 모든 핸드폰 제조사들이 자기 AP를 스스로 만든다고 해도, ARM은 ISA 라이선싱으로 돈 벌 수는 있을 것이다. 하지만 ISA만 라이선싱하는건 설계도 라이선싱보다 훨씬 이익이 적다. 그래서, ARM은 다른 시장을 개척해야 하는 상황이다. 스마트폰 AP 분야에서는 제조사들이 ARM의 ISA를 라이선싱해 사용하는데, 컴퓨터 CPU 분야에서는 제조사들이 AMD의 x86-64 ISA를 사용한다. 32비트 CPU 시절까지는 AMD가 인텔의 ISA인 x86을 라이선싱해오고 있었다. 그러다가, 1999년 AMD에서 64비트 CPU용 ISA인 x86-64를 발표했다. 당시 인텔은 64비트 ISA를 개발할 여력이 없었기에, 거꾸로 AMD로부터 ISA를 라이선싱해오게 된다. 그 후로 현재까지도 인텔은 x86-64 ISA를 AMD로부터 라이선싱해오고 있다. 최근에는 중국 정부가 반도체 자급자족을 위해 중국제 반도체 제품 사용을 장려하고 있다. 동운아나텍은 대중 수출 활로를 열기 위해 라이선싱을 이용했다. 동운아나텍은 Halo Microelectronics와 AF 드라이버 IC, OIS 드라이버 IC에 대한 라이선싱 계약을 체결했다. Halo는 라이선싱 비용으로 동운아나텍에게 현금을 지급했고, 동운아나텍의 설계도를 통해 제품을 생산하고 판매 수익을 얻을 권리를 얻게 되었다. 동운아나텍이 수출 대신 라이선싱을 해서 이득보는 점: 수출 재고 관리 걱정 없이 현금 수급 중국정부 규제 회피 Halo가 라이선싱을 통해 이득보는 점: 동운아나텍이 직접 수출했다면 얻지 못했을 이윤]]></summary></entry><entry><title type="html">경영 - 생산품질 부서</title><link href="http://localhost:4000/market/2023/10/04/Market-%EA%B2%BD%EC%98%81-%EC%83%9D%EC%82%B0%ED%92%88%EC%A7%88-%EB%B6%80%EC%84%9C.html" rel="alternate" type="text/html" title="경영 - 생산품질 부서" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/market/2023/10/04/Market%20-%20%EA%B2%BD%EC%98%81%20-%20%EC%83%9D%EC%82%B0%ED%92%88%EC%A7%88%20%EB%B6%80%EC%84%9C</id><content type="html" xml:base="http://localhost:4000/market/2023/10/04/Market-%EA%B2%BD%EC%98%81-%EC%83%9D%EC%82%B0%ED%92%88%EC%A7%88-%EB%B6%80%EC%84%9C.html"><![CDATA[<p>팹리스 업체에는 생산품질 부서가 있고, 그 안에 생산기술팀과 생산관리팀이 있다.<br />
-<br />
-<br />
-생산기술팀: 제품 신뢰성 확인, 수율 관리<br />
-<br />
-제품 신뢰성 확인:<br />
-제품에 품질 문제가 발생하지 않도록 신규 개발, revision된 제품의 신뢰성을 검증하는 일을 하며, 품질 문제가 발생할 경우 대응하는 일도 한다.<br />
-<br />
-수율 관리:<br />
-목표 수율을 정하는건 설계팀인데, 수율이 특정 공정 내에서 더 이상 개선이 안되면 설계팀이 생산기술팀과 함께 논의한다.<br />
-생산기술팀은 수율 문제가 발생하는 곳을 모니터링하다가, 설계팀과 회의를 통해 어떤 부분을 개선해 수율을 올릴지 결정한다.<br />
-<br />
-설계에서 얘기하는 수율은 모두 멀쩡한 웨이퍼 위에 IC를 만들 때 이야기지만, 사실 웨이퍼부터 수율이 100%가 아니다.<br />
-그래서 설계에서 예상한 수율과 실제 수율에 차이가 있을 수 있다.<br />
-<br />
-<br />
-생산관리팀: 원가 관리, 협력사 관리<br />
-<br />
-원가 관리:<br />
-Fab, Bump, Backend, Mold Package, test비용 등 제품 생산 과정에서 발생하는 비용을 관리한다.<br />
-이 중 Fab 비용이 가장 비싸다. 즉, front end 공정이 가장 비싸다.<br />
-<br />
-협력사 관리:<br />
-팹리스 업체는 파운드리 업체, 패키징 업체 등 협력사가 많을 수밖에 없다.<br />
-협력사들이 잘 굴러가고 있는지 일정 주기마다 확인한다.<br />
-즉, SCM(Supply Chain Management, 공급망 관리)을 한다.<br />
-<br />
-QBR(Quarterly Business Review): 분기마다 확인<br />
-MBR(Monthly Business Review): 매월 확인<br />
-<br />
-<br />
-생산품질 부서는 협력사를 선택하는 일도 한다.<br />
-이때, 업체 선정 기준은 분야에 따라 다르다.<br />
-<br />
-파운드리 업체:<br />
-어떤 업체를 선택하느냐에 따라 제품이 크게 달라진다.<br />
-따라서, 설계하려는 제품에 적합한 공정을 제공하는 업체를 선택한다.<br />
-<br />
-패키징 업체:<br />
-어떤 업체에서 패키징을 하든 결과물이 비슷하다.<br />
-따라서, 가격과 지정학적 리스크를 고려해 업체를 선택한다.<br />
-<br />
-<br />
-생산품질 부서의 관심사는 재고 관리, Capa 관리, 원가 절감이다.<br />
-<br />
-재고 관리:<br />
-영업 부서는 재고를 많이 갖고 있을수록 좋다.<br />
-공급계약은 됐는데 재고가 없어 팔지 못하는 일이 없기 때문이다.<br />
-<br />
-생산품질 부서는 재고를 적게 갖고 있을수록 좋다.<br />
-공급계약에 실패해 팔지 못한 재고는 그대로 손실이 되기 때문이다.<br />
-<br />
-그래서 적절한 수준으로 재고를 보유하고 있는 것이 중요하다.<br />
-<br />
-Capa 관리:<br />
-Capa는 Capacity의 약어다. 현재 공급망이 공급할 수 있는 제품 수를 Capa라고 한다.<br />
-<br />
-Capa가 충분히 확보된다면, 재고를 적게 보유하고 있더라도 필요할 때 빠르게 제품을 공급할 수 있다.<br />
-이 Capa를 확보하기 위해 생산관리팀이 SCM을 한다.<br />
-<br />
-물론, 주력 제품들은 Capa가 충분히 확보되더라도 회사에서 재고를 다량 보유한다.<br />
-주력 제품 공급에 실패하는 것은 회사에 치명적이기 때문이다.<br />
-<br />
-원가 절감:<br />
-생산품질 부서는 원가 절감 시뮬레이션을 한다.<br />
-업체를 바꾸면 원가가 절감될지 여부를 확인하는 일이다.<br />
-<br />
-매년 연말, 영업 부서 이야기를 듣고 내년 월별 비용을 예상해놓기도 한다.</p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[팹리스 업체에는 생산품질 부서가 있고, 그 안에 생산기술팀과 생산관리팀이 있다. 생산기술팀: 제품 신뢰성 확인, 수율 관리 제품 신뢰성 확인: 제품에 품질 문제가 발생하지 않도록 신규 개발, revision된 제품의 신뢰성을 검증하는 일을 하며, 품질 문제가 발생할 경우 대응하는 일도 한다. 수율 관리: 목표 수율을 정하는건 설계팀인데, 수율이 특정 공정 내에서 더 이상 개선이 안되면 설계팀이 생산기술팀과 함께 논의한다. 생산기술팀은 수율 문제가 발생하는 곳을 모니터링하다가, 설계팀과 회의를 통해 어떤 부분을 개선해 수율을 올릴지 결정한다. 설계에서 얘기하는 수율은 모두 멀쩡한 웨이퍼 위에 IC를 만들 때 이야기지만, 사실 웨이퍼부터 수율이 100%가 아니다. 그래서 설계에서 예상한 수율과 실제 수율에 차이가 있을 수 있다. 생산관리팀: 원가 관리, 협력사 관리 원가 관리: Fab, Bump, Backend, Mold Package, test비용 등 제품 생산 과정에서 발생하는 비용을 관리한다. 이 중 Fab 비용이 가장 비싸다. 즉, front end 공정이 가장 비싸다. 협력사 관리: 팹리스 업체는 파운드리 업체, 패키징 업체 등 협력사가 많을 수밖에 없다. 협력사들이 잘 굴러가고 있는지 일정 주기마다 확인한다. 즉, SCM(Supply Chain Management, 공급망 관리)을 한다. QBR(Quarterly Business Review): 분기마다 확인 MBR(Monthly Business Review): 매월 확인 생산품질 부서는 협력사를 선택하는 일도 한다. 이때, 업체 선정 기준은 분야에 따라 다르다. 파운드리 업체: 어떤 업체를 선택하느냐에 따라 제품이 크게 달라진다. 따라서, 설계하려는 제품에 적합한 공정을 제공하는 업체를 선택한다. 패키징 업체: 어떤 업체에서 패키징을 하든 결과물이 비슷하다. 따라서, 가격과 지정학적 리스크를 고려해 업체를 선택한다. 생산품질 부서의 관심사는 재고 관리, Capa 관리, 원가 절감이다. 재고 관리: 영업 부서는 재고를 많이 갖고 있을수록 좋다. 공급계약은 됐는데 재고가 없어 팔지 못하는 일이 없기 때문이다. 생산품질 부서는 재고를 적게 갖고 있을수록 좋다. 공급계약에 실패해 팔지 못한 재고는 그대로 손실이 되기 때문이다. 그래서 적절한 수준으로 재고를 보유하고 있는 것이 중요하다. Capa 관리: Capa는 Capacity의 약어다. 현재 공급망이 공급할 수 있는 제품 수를 Capa라고 한다. Capa가 충분히 확보된다면, 재고를 적게 보유하고 있더라도 필요할 때 빠르게 제품을 공급할 수 있다. 이 Capa를 확보하기 위해 생산관리팀이 SCM을 한다. 물론, 주력 제품들은 Capa가 충분히 확보되더라도 회사에서 재고를 다량 보유한다. 주력 제품 공급에 실패하는 것은 회사에 치명적이기 때문이다. 원가 절감: 생산품질 부서는 원가 절감 시뮬레이션을 한다. 업체를 바꾸면 원가가 절감될지 여부를 확인하는 일이다. 매년 연말, 영업 부서 이야기를 듣고 내년 월별 비용을 예상해놓기도 한다.]]></summary></entry><entry><title type="html">경영 - 위탁생산</title><link href="http://localhost:4000/market/2023/10/04/Market-%EA%B2%BD%EC%98%81-%EC%9C%84%ED%83%81%EC%83%9D%EC%82%B0.html" rel="alternate" type="text/html" title="경영 - 위탁생산" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/market/2023/10/04/Market%20-%20%EA%B2%BD%EC%98%81%20-%20%EC%9C%84%ED%83%81%EC%83%9D%EC%82%B0</id><content type="html" xml:base="http://localhost:4000/market/2023/10/04/Market-%EA%B2%BD%EC%98%81-%EC%9C%84%ED%83%81%EC%83%9D%EC%82%B0.html"><![CDATA[<p>생산 비용을 아끼기 위해, 다른 업체에 생산을 맡기는 것을 위탁생산이라 한다.<br />
-생산만 맡기는 경우도 있고, 생산과 설계 모두 맡기는 경우도 있다.<br />
-어떤 일을 맡기느냐에 따라, 위탁생산은 OEM, ODM, JDM으로 분류된다.<br />
-<br />
-<br />
-위탁생산을 맡기는 업체를 원청업체,<br />
-위탁생산을 맡는 업체를 하청업체라 한다.<br />
-<br />
-<br />
-OEM(Original Equipment Manufacturer):<br />
-OEM은 하청업체가 원청업체에게 설계도를 받아, 설계도대로 만들어주는 방식의 위탁생산이다.<br />
-OEM으로 생산된 부품은 나중에 원청업체의 완제품에 들어간다.<br />
-<br />
-애플은 대만의 Foxconn에 각종 부품 생산을 맡기는데, 이 방식이 OEM이다.<br />
-팹리스 업체의 IC를 생산해주는 TSMC 등 파운드리 업체들도 OEM 업체로 분류된다.<br />
-<br />
-원청업체는 OEM을 통해 생산비용을 아낄 수 있고, 아낀 비용을 개발, 유통, 영업 등에 투자할 수 있다.<br />
-<br />
-<br />
-ODM(Original Development Manufacturer):<br />
-ODM은 하청업체가 원청업체의 의뢰대로 설계부터 생산까지 모두 하는 방식의 위탁생산이다.<br />
-ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는다.<br />
-<br />
-대만의 Compal, Quanta, Wistron이 전자공학 분야의 대표적인 ODM 업체다.<br />
-<br />
-구글은 넥서스 원 스마트폰 생산을 대만의 HTC에 ODM으로 맡겼던 바 있다.<br />
-삼성전자는 저가모델 생산을 중국의 Wingtech, Longcheer, Huaqin에 ODM으로 맡기고 있다.<br />
-LG전자는 LG그램 2024년형 14,15인치 모델 생산을 대만의 Quanta에 ODM으로 맡기고 있다.<br />
-<br />
-원청업체는 ODM을 통해 생산비용과 개발비용을 아낄 수 있고, 아낀 비용을 유통, 영업 등에 투자할 수 있다.<br />
-<br />
-ODM은 제품 설계 및 생산 과정에 본사의 개입이 적기에, 품질이 비교적 나쁠 수도 있다.<br />
-그래서 ODM은 고가형 제품보다는 저가형 제품 생산에 많이 쓰이는 방식이다.<br />
-<br />
-<br />
-JDM(Joint Development Manufacturer):<br />
-JDM은 하청업체가 원청업체와 함께 설계하고, 생산은 혼자 하는 방식의 위탁생산이다.<br />
-ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는다.<br />
-<br />
-삼성전자는 일부 모델의 스마트폰 생산을 중국의 Wingtech, Huaqin에 JDM으로 맡기고 있다.<br />
-<br />
-원청업체는 JDM을 통해 생산비용을 아끼고, 설계에 제조 전문 업체의 의견을 참고할 수 있다.<br />
-<br />
-<br />
-마지막으로, 위탁생산은 아니지만 연관된 형태의 생산 방식인 OBM이 있다.<br />
-<br />
-OBM(Original Brand Manufacturer):<br />
-위탁생산으로 기술력을 쌓은 제조사가 자체 브랜드를 개발해 설계, 생산, 유통, 영업을 모두 하는 형태다.<br />
-OBM으로 생산된 완제품에는 제조사 자체 브랜드의 로고가 붙는다.<br /></p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[생산 비용을 아끼기 위해, 다른 업체에 생산을 맡기는 것을 위탁생산이라 한다. 생산만 맡기는 경우도 있고, 생산과 설계 모두 맡기는 경우도 있다. 어떤 일을 맡기느냐에 따라, 위탁생산은 OEM, ODM, JDM으로 분류된다. 위탁생산을 맡기는 업체를 원청업체, 위탁생산을 맡는 업체를 하청업체라 한다. OEM(Original Equipment Manufacturer): OEM은 하청업체가 원청업체에게 설계도를 받아, 설계도대로 만들어주는 방식의 위탁생산이다. OEM으로 생산된 부품은 나중에 원청업체의 완제품에 들어간다. 애플은 대만의 Foxconn에 각종 부품 생산을 맡기는데, 이 방식이 OEM이다. 팹리스 업체의 IC를 생산해주는 TSMC 등 파운드리 업체들도 OEM 업체로 분류된다. 원청업체는 OEM을 통해 생산비용을 아낄 수 있고, 아낀 비용을 개발, 유통, 영업 등에 투자할 수 있다. ODM(Original Development Manufacturer): ODM은 하청업체가 원청업체의 의뢰대로 설계부터 생산까지 모두 하는 방식의 위탁생산이다. ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는다. 대만의 Compal, Quanta, Wistron이 전자공학 분야의 대표적인 ODM 업체다. 구글은 넥서스 원 스마트폰 생산을 대만의 HTC에 ODM으로 맡겼던 바 있다. 삼성전자는 저가모델 생산을 중국의 Wingtech, Longcheer, Huaqin에 ODM으로 맡기고 있다. LG전자는 LG그램 2024년형 14,15인치 모델 생산을 대만의 Quanta에 ODM으로 맡기고 있다. 원청업체는 ODM을 통해 생산비용과 개발비용을 아낄 수 있고, 아낀 비용을 유통, 영업 등에 투자할 수 있다. ODM은 제품 설계 및 생산 과정에 본사의 개입이 적기에, 품질이 비교적 나쁠 수도 있다. 그래서 ODM은 고가형 제품보다는 저가형 제품 생산에 많이 쓰이는 방식이다. JDM(Joint Development Manufacturer): JDM은 하청업체가 원청업체와 함께 설계하고, 생산은 혼자 하는 방식의 위탁생산이다. ODM으로 생산된 완제품에는 나중에 원청업체의 로고가 붙는다. 삼성전자는 일부 모델의 스마트폰 생산을 중국의 Wingtech, Huaqin에 JDM으로 맡기고 있다. 원청업체는 JDM을 통해 생산비용을 아끼고, 설계에 제조 전문 업체의 의견을 참고할 수 있다. 마지막으로, 위탁생산은 아니지만 연관된 형태의 생산 방식인 OBM이 있다. OBM(Original Brand Manufacturer): 위탁생산으로 기술력을 쌓은 제조사가 자체 브랜드를 개발해 설계, 생산, 유통, 영업을 모두 하는 형태다. OBM으로 생산된 완제품에는 제조사 자체 브랜드의 로고가 붙는다.]]></summary></entry><entry><title type="html">광물</title><link href="http://localhost:4000/market/2023/10/04/Market-%EA%B4%91%EB%AC%BC.html" rel="alternate" type="text/html" title="광물" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/market/2023/10/04/Market%20-%20%EA%B4%91%EB%AC%BC</id><content type="html" xml:base="http://localhost:4000/market/2023/10/04/Market-%EA%B4%91%EB%AC%BC.html"><![CDATA[<p>리튬 이온 배터리 소재:<br />
-<br />
-핸드폰, 전기차 배터리에는 리튬 이온 배터리가 쓰인다.<br />
-리튬 이온 배터리에는 리튬, 니켈, 코발트 등이 필요하다.<br />
-<br />
-리튬(Li, Lithium, 3번): 칠레, 볼리비아, 아르헨티나<br />
-니켈(Ni, Nickel, 28번): 인도네시아, 필리핀, 러시아<br />
-코발트(Co, Cobalt, 27번): 콩고민주공화국<br />
-<br />
-콩고민주공화국의 코발트 광산들은 대부분 중국계 기업 소유다.<br />
-<br />
-<br />
-탄탈럼(Ta, Tantalum, 73번):<br />
-탄탈럼을 사용하면 알루미늄 기반 캐패시터보다 훨씬 작은 캐패시터를 만들 수 있다.<br />
-그래서 각종 전자기기에 탄탈럼 캐패시터가 널리 쓰인다.<br />
-<br />
-탄탈럼은 호주, 브라질, 콩고민주공화국에서 주로 생산된다.<br />
-<br />
-<br />
-우라늄(U, Uranium, 92번):<br />
-우라늄은 카자흐스탄에 가장 많이 묻혀있다.<br />
-카자흐스탄 국영기업 카자톰프롬이 수출한다.<br />
-<br />
-호주, 캐나다도 우라늄을 수출하며,<br />
-니제르, 나미비아에도 우라늄이 많이 묻혀있다.<br />
-<br />
-우라늄 농축 설비는 러시아에 몰려있다.<br />
-그래서 원자력 발전 및 연구개발에 필요한 농축우라늄은 러시아에서 생산된다.<br />
-<br />
-<br />
-희토류:<br />
-희토류(Rare Earth Elements)는 희귀한 17가지 금속원소를 칭한다.<br />
-<br />
-Sc: Scandium, 스칸듐, 21번<br />
-Y: Yttrium, 이트륨, 39번<br />
-La: Lanthanum, 란타넘, 57번<br />
-Ce: Cerium, 세륨, 58번<br />
-Pr: Praseodymium, 프라세오디뮴, 59번<br />
-Nd: Neodymium, 네오디뮴, 60번<br />
-Pm: Promethium, 프로메튬, 61번<br />
-Sm: Samarium, 사마륨, 62번<br />
-Eu: Europium, 유로퓸, 63번<br />
-Gd: Gadolinium, 가돌리늄, 64번<br />
-Tb: Terbium, 터븀, 65번<br />
-Dy: Dysprosium, 디스프로슘, 66번<br />
-Ho: Holmium, 홀뮴, 67번<br />
-Er: Erbium, 어븀, 68번<br />
-Tm: Thulium, 툴륨, 69번<br />
-Yb: Ytterbium, 이터븀, 70번<br />
-Lu: Lutetium, 루테튬, 71번<br />
-<br />
-<br />
-희토류 중 가장 많이 쓰이는 원소는 네오디뮴이다.<br />
-자석에 네오디뮴을 첨가하면 자력이 10배정도 강해지기에, 더 작은 크기의 자석으로도 같은 자력을 얻을 수 있다.<br />
-그래서 모터에 쓰이는 자석으로 네오디뮴 자석을 사용하면 모터의 크기를 줄일 수 있다.<br />
-전기차, 로봇 등에 모터가 많이 쓰이고 있기 때문에, 모터 소형화를 위해 필요한 네오디뮴은 점점 더 중요해지고 있다.<br />
-<br />
-모터가 회전하다 보면, 모터 내부 온도가 지나치게 올라가 모터 내부 자석들이 자성을 잃어버리는 경우가 생길 수 있다.<br />
-자석에 디스프로슘을 첨가하면 자력은 조금 약해지지만 고온에서도 자성을 잃지 않게 된다.<br />
-<br />
-그래서 모터 온도가 지나치게 올라갈 우려가 있는 풍력발전기, 전기차에는 디스프로슘이 첨가된 자석이 필요하다.<br />
-<br />
-<br />
-희토류는 중국에서 주로 생산된다.<br />
-덩샤오핑이 ‘중동에 기름이 있다면 중국에는 희토류가 있다’라고도 한 적이 있다.<br />
-<br />
-중국 외에는 브라질, 베트남, 러시아에 희토류가 많이 묻혀있으며,<br />
-생산량 기준으로는 호주, 미국, 미얀마가 중국 뒤를 따른다.<br />
-북한에 희토류가 대량 묻혀있다는 예측도 있으나, 북한 정부가 매장량을 발표한 적이 없어 추측일 뿐이다.<br />
-<br />
-달 표면에는 희토류 뿐 아니라 핵융합에 쓰이는 헬륨3도 풍부히 존재한다.<br />
-우주 개발 사업들이 노리는 것이 이렇게 지구에서 구하기 어려운 자원들이다.<br />
-<br />
-<br />
-희토류는 대량의 황산, 염산 등 강산으로 암석을 녹여 얻는다.<br />
-이 과정에서 온갖 폐수, 폐기물, 유독가스 등이 생긴다.<br />
-그래서 희토류는 찾는 것도 문제지만, 제련 과정에서의 환경오염도 큰 문제다.<br />
-<br />
-그린란드는 인구밀도가 낮아 오염에 의한 피해가 적을 것으로 예상되기에, 그린란드 희토류 광산들이 각광받고 있다.</p>]]></content><author><name></name></author><category term="Market" /><summary type="html"><![CDATA[리튬 이온 배터리 소재: 핸드폰, 전기차 배터리에는 리튬 이온 배터리가 쓰인다. 리튬 이온 배터리에는 리튬, 니켈, 코발트 등이 필요하다. 리튬(Li, Lithium, 3번): 칠레, 볼리비아, 아르헨티나 니켈(Ni, Nickel, 28번): 인도네시아, 필리핀, 러시아 코발트(Co, Cobalt, 27번): 콩고민주공화국 콩고민주공화국의 코발트 광산들은 대부분 중국계 기업 소유다. 탄탈럼(Ta, Tantalum, 73번): 탄탈럼을 사용하면 알루미늄 기반 캐패시터보다 훨씬 작은 캐패시터를 만들 수 있다. 그래서 각종 전자기기에 탄탈럼 캐패시터가 널리 쓰인다. 탄탈럼은 호주, 브라질, 콩고민주공화국에서 주로 생산된다. 우라늄(U, Uranium, 92번): 우라늄은 카자흐스탄에 가장 많이 묻혀있다. 카자흐스탄 국영기업 카자톰프롬이 수출한다. 호주, 캐나다도 우라늄을 수출하며, 니제르, 나미비아에도 우라늄이 많이 묻혀있다. 우라늄 농축 설비는 러시아에 몰려있다. 그래서 원자력 발전 및 연구개발에 필요한 농축우라늄은 러시아에서 생산된다. 희토류: 희토류(Rare Earth Elements)는 희귀한 17가지 금속원소를 칭한다. Sc: Scandium, 스칸듐, 21번 Y: Yttrium, 이트륨, 39번 La: Lanthanum, 란타넘, 57번 Ce: Cerium, 세륨, 58번 Pr: Praseodymium, 프라세오디뮴, 59번 Nd: Neodymium, 네오디뮴, 60번 Pm: Promethium, 프로메튬, 61번 Sm: Samarium, 사마륨, 62번 Eu: Europium, 유로퓸, 63번 Gd: Gadolinium, 가돌리늄, 64번 Tb: Terbium, 터븀, 65번 Dy: Dysprosium, 디스프로슘, 66번 Ho: Holmium, 홀뮴, 67번 Er: Erbium, 어븀, 68번 Tm: Thulium, 툴륨, 69번 Yb: Ytterbium, 이터븀, 70번 Lu: Lutetium, 루테튬, 71번 희토류 중 가장 많이 쓰이는 원소는 네오디뮴이다. 자석에 네오디뮴을 첨가하면 자력이 10배정도 강해지기에, 더 작은 크기의 자석으로도 같은 자력을 얻을 수 있다. 그래서 모터에 쓰이는 자석으로 네오디뮴 자석을 사용하면 모터의 크기를 줄일 수 있다. 전기차, 로봇 등에 모터가 많이 쓰이고 있기 때문에, 모터 소형화를 위해 필요한 네오디뮴은 점점 더 중요해지고 있다. 모터가 회전하다 보면, 모터 내부 온도가 지나치게 올라가 모터 내부 자석들이 자성을 잃어버리는 경우가 생길 수 있다. 자석에 디스프로슘을 첨가하면 자력은 조금 약해지지만 고온에서도 자성을 잃지 않게 된다. 그래서 모터 온도가 지나치게 올라갈 우려가 있는 풍력발전기, 전기차에는 디스프로슘이 첨가된 자석이 필요하다. 희토류는 중국에서 주로 생산된다. 덩샤오핑이 ‘중동에 기름이 있다면 중국에는 희토류가 있다’라고도 한 적이 있다. 중국 외에는 브라질, 베트남, 러시아에 희토류가 많이 묻혀있으며, 생산량 기준으로는 호주, 미국, 미얀마가 중국 뒤를 따른다. 북한에 희토류가 대량 묻혀있다는 예측도 있으나, 북한 정부가 매장량을 발표한 적이 없어 추측일 뿐이다. 달 표면에는 희토류 뿐 아니라 핵융합에 쓰이는 헬륨3도 풍부히 존재한다. 우주 개발 사업들이 노리는 것이 이렇게 지구에서 구하기 어려운 자원들이다. 희토류는 대량의 황산, 염산 등 강산으로 암석을 녹여 얻는다. 이 과정에서 온갖 폐수, 폐기물, 유독가스 등이 생긴다. 그래서 희토류는 찾는 것도 문제지만, 제련 과정에서의 환경오염도 큰 문제다. 그린란드는 인구밀도가 낮아 오염에 의한 피해가 적을 것으로 예상되기에, 그린란드 희토류 광산들이 각광받고 있다.]]></summary></entry></feed>
+<p>벨기에 ITT에서 전화교환기를 들여온다. 이때 교환기 뿐 아니라 기술도 제대로 들여오려고 노력한다.</p>]]></content><author><name></name></author><category term="History" /><summary type="html"><![CDATA[1963년~1979년: 박정희 정부 #오일쇼크 #승압사업 #4K, 16K DRAM 1970년대의 박정희 정부는 매우 불안정한 상태였다. 대내적으로는 민주화 요구, 외교적으로는 한미관계 악화, 경제적으로는 오일쇼크에 의한 중공업 기업들의 어려움에 대응해야 했다. 1972년, 박정희 정부는 군대를 동원해 국회를 해산하고 대통령 선거를 간선제로 바꾼다. (10월 유신) 선거조차 제대로 실시하지 않는 정부에 국민들은 크게 반발했고, 박정희 정부 내내 민주화를 요구하는 크고 작은 투쟁들이 일어나게 된다. 특히, 정권 말에는 YH무역 사건, 부마항쟁 등으로 나라가 매우 혼란스러워진다. 1973년에는 이스라엘과 아랍 국가들 사이에 제4차 중동전쟁이 발발한다. 미국은 여기서 이스라엘을 지원했는데, 아랍 국가들은 미국에게 경제 타격을 주기 위해 석유를 감산한다. 그 결과 석유 가격이 폭등했고, 전세계 경제가 큰 타격을 받는다. 이 사건이 1차 오일쇼크다. 석유는 없으면서 중화학공업을 육성하던 한국은 1차 오일쇼크로 치명적인 피해를 입었다. 중화학공업의 원료인 석유 가격이 올라 제품의 제조원가가 올랐고, 전세계 경제가 불황이라 수출도 잘 안됐다. 화력발전소에서 석유를 사용하던 한국은 전기도 부족해졌다. 박정희 정부는 가정용 전기에 누진제 전기요금제를 도입해 전기사용을 억제했으며, 연세대 한만춘 교수의 의견을 수렴해 110V, 220V가 혼용되던 배전망을 모두 220V로 교체해 전력 손실을 크게 줄였다. (승압사업) 이후 화력발전소에서는 석유가 아닌 석탄을 쓰게 되었으며, 1978년부터는 고리 원자력 발전소가 가동되기 시작했다. 미국의 반도체 기업들은 1차 오일쇼크로 경제가 어려워지자 투자를 줄였다. 그런데, 일본 반도체 기업들은 이때 공장 설비에 큰 투자를 감행했다. 공장 설비 투자로 일본 반도체 제품의 생산단가가 크게 낮아져, 결국 1980년대에는 일본 반도체가 미국 시장을 집어삼키게 된다. 당시 일본은 공장 설비뿐 아니라 신기술에도 열심히 투자했다. 1973년, 미국의 TI에서 4K bit DRAM을 개발했는데, 3년 뒤인 1976년 일본에서 16K bit DRAM이 개발된다. 미국은 1964년부터 1975년까지 베트남 전쟁을 치르는 중이었다. 미국은 베트남의 공산화를 막지 못해 친미 국가들로부터 능력을 의심받게 되었고, 또한 베트남 전쟁동안 찍어낸 엄청난 양의 달러때문에 심각한 인플레이션을 겪고 있었다. 소련은 프라하의 봄, 중국과의 국경분쟁 등을 겪으며 영향력 붕괴를 실감하고 있었고, 소련 경제는 미국과의 군비경쟁으로 크게 망가져 있었다. 결국 냉전에 외교적, 경제적 피로를 느낀 미국과 소련은 1970년대 들어 경쟁을 완화하게 된다. 그 결과, 미국은 방위비 절감과 군사경쟁 완화를 위해 주한미군 철수를 검토하게 된다. 박정희 정부는 주한미군 철수에 맞서 핵개발과 자주국방 프로젝트들을 시도했으며, 주한미군 철수를 막기 위해 미국 정치인들에게 뇌물을 주다가 미국에게 들킨다. (코리아 게이트) 당연히 한미 관계는 크게 악화됐고, 박정희 정부는 내정, 외교, 경제 모두 위험한 상황이 된다. 그러던 중, 1978년 이란 혁명에 의한 2차 오일쇼크로 석유값과 전기값이 또 폭등했다. 중화학공업이 또 타격받고 경제가 아주 어려워졌다. 극히 혼란스러운 상황에서, 중앙정보부장이었던 김재규가 1979년 10월 26일 박정희를 총으로 쏴 죽인다. 이렇게 박정희 정권이 끝났고, 이후 1979년 12월 12일 밤 전두환의 쿠데타로 전두환이 정권을 잡는다.]]></summary></entry></feed>
