@@ -1,0 +1,17 @@
+I"�<p>두가지 구조가 있다.<br />
+첫번째 구조부터 보면:<br />
+<br /></p>
+<div>
+    <img src="/public/img/2tr1.png" style="width: 15%; height: auto;" alt="my picture" />
+</div>
+<p><br />
+<br />
+위쪽은 native TR이라, V\(_{th}\)가 0보다 약간 작다.<br />
+그래서 M1은 항상 켜져있다.  V\(_{GS}\)=0인데 V\(_{th}\)는 0보다 약간 작으니까.<br />
+<br />
+<br />
+그리고 2개 트랜지스터에 흐르는 전류는 동일하니까:<br />
+I\(_{1}\)=\(\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_1}{L_1} \left(-V_{th1} \right)^{2} \left(-V_{GS1}=0 \right)\)<br />
+<br />
+I\(_{2}\)=\(\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_2}{L_2} \left(V_{GS2}-V_{th2} \right)^{2}\)<br /></p>
+:ET

@@ -15,7 +15,10 @@ OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드�
 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다.<br>
 그래서, 이때는 LDO라는 회로를 써줘야 한다.<br>
 <br>
-![alt text](/public/img/LDO1.png)<br>
+<div style="float: left">
+    <img src="/public/img/LDO1.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
 PMOS를 써서 만들면 Common Source 구조가 되고,<br>
 NMOS를 써서 만들면 Source Follower 구조가 된다.<br>
 <br>
@@ -25,6 +28,7 @@ Stability:<br>
 <br>
 그럼 frequency response를 어떻게 확인할 것인가?<br>
 Loop Gain을 본다.<br>
-![alt text](/public/img/LDO2.png)<br>
-
+<div style="float: left">
+    <img src="/public/img/LDO2.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
 

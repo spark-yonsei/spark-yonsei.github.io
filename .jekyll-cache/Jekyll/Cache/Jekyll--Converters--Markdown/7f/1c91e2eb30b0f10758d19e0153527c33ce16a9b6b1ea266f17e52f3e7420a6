@@ -1,0 +1,42 @@
+I"�<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
+아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다.<br />
+<br />
+2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다.<br />
+<br />
+Native 또는 Depletion MOSFET을 쓰면 공정시 layer가 하나 더 필요하다.<br />
+Body가 무조건 ground에 연결되어야 하기 때문이다.<br />
+<br />
+두가지 구조가 있다.<br />
+첫번째 구조부터 보면:<br />
+<br /></p>
+<div>
+    <img src="/public/img/2tr1.png" style="width: 15%; height: auto;" alt="my picture" />
+</div>
+<p><br />
+<br />
+위쪽은 native TR이라, \(V_{th}\)가 0보다 약간 작다.<br />
+그래서 M1은 항상 켜져있다.  \(V_{GS1}\)=0인데 \(V_{th1}\)는 0보다 약간 작으니까.<br />
+<br />
+<br />
+그리고 2개 트랜지스터에 흐르는 전류는 동일하니까:<br />
+\(I_{1}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_1}{L_1} \left(-V_{th1} \right)^{2}\)<br />
+<br />
+\(I_{2}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_2}{L_2} \left(V_{GS2}-V_{th2} \right)^{2}\)<br />
+<br />
+여기서 \(I_{1}=I_{2}\)으로 놓고 정리하면:<br />
+\(V_{GS2} = V_{th2} - \sqrt{\frac{W_1L_2}{L_1W_2}}V_{th1}\)
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /></p>
+<div>
+    <img src="/public/img/2tr2.png" style="width: 20%; height: auto;" alt="my picture" />
+</div>
+<p><br /></p>
+:ET
