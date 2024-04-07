@@ -1,6 +1,0 @@
-I"�<p>PLL : Phase Locked Loops<br />
-<br />
-<br />
-원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다.</p>
-
-:ET
