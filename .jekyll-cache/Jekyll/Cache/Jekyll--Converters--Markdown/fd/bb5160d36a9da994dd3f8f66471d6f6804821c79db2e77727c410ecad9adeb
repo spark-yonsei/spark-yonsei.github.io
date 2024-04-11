@@ -1,0 +1,117 @@
+I"�<p>LDO : Low Dropout Regulators<br />
+<br />
+<br />
+IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
+OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만,<br />
+<br />
+저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다.<br />
+그래서, 이때는 LDO라는 회로를 써줘야 한다.<br />
+<br /></p>
+<div style="float: left">
+    <img src="/public/img/LDO1.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p>PMOS를 써서 만들면 Common Source 구조가 되고,<br />
+NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
+<br />
+Stability:<br />
+어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까?<br />
+안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다.<br />
+<br />
+그럼 frequency response를 어떻게 확인할 것인가?<br />
+Loop Gain을 본다.<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDO2.png" style="width: 40%; height: auto;" alt="my picture" />
+</div>
+
+<p>LDO 만들때는:<br />
+Low dropout voltage,<br />
+high output current,<br />
+low no-load quiescent current,<br />
+small output transient undershoot<br />
+이런 것들이 필요하다.<br />
+<br />
+LDO가 낮은 dropout voltage를 유지하면서 load current도 많이 공급해주려면, Pass device로 크기가 큰 PMOS를 써야 한다. W/L이 커야 해서.<br />
+근데 크기가 큰 PMOS를 쓰면, 그 device의 C가 커진다.<br />
+원래는 C_load에 의한 dominant pole만 저주파에 있었어야 했는데,<br />
+PMOS의 C가 크면 저주파에 pole이 하나 더 생긴다. 결국, stability가 안좋아진다.<br />
+<br />
+이럴 경우, LHP zero를 하나 만들어서 phase를 보상하는 방식이 있다.<br />
+C_load에 직렬로 ESR(Equivalent Series Resistor)를 붙여서 만들 수 있다.<br />
+<br />
+근데, 이 방식은 mismatch때문에 pole zero 위치가 움직이면 큰 문제가 생길 수도 있다.<br />
+그리고 current load가 크게, 순식간에 변할 경우, Cout이 작으면 급격하게 변하는 전류가 저항에 흐를 수 있다.<br />
+이럴 경우, 전압이 크게 흔들린다.<br />
+<br /></p>
+<div style="float: left">
+    <img src="/public/img/LDO3.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+<p><br />
+\(p_0 = \dfrac{1}{R_{out}C_{load}}\)<br />
+\(p_1 = \dfrac{1}{r_{oea}C_b}\)<br />
+\(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)<br />
+<br />
+여기서, 사용하는 buffer의 \(C_b\)와 \(r_{ob}\)가 최대한 작은게 좋다. 그래야 \(p_1\), \(p_2\)가 모두 고주파로 날아가서 \(p_0\)밖에 안남는다.<br />
+<br />
+일단 이렇게 생긴 source follower를 buffer로 쓴다고 해보자.</p>
+
+<div style="float: left">
+    <img src="/public/img/LDO4.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p>Source follower를 buffer로 쓰면 이런 상황이 된다.<br />
+이때 \(C_b\), \(r_{ob}\)가 최대한 작은 값을 갖게 해야 한다.<br />
+<br />
+buffer의 small signal model을 생각해보면, \(r_{ob}=\dfrac{1}{g_{m1}}\)이 된다.<br />
+따라서, \(r_{ob}\)를 줄이려면 \(g_{m1}\)를 최대한 늘려야 한다.<br />
+<br />
+\(g_{m1}\)을 늘리는 데에는 두가지 방법이 있다.<br />
+\(I_1\)을 늘리는 방법이 있고, \(\dfrac{W_1}{L_1}\)을 늘리는 방법이 있다.<br />
+<br />
+근데, \(I_1\)를 늘리면 buffer가 먹는 전류가 늘어나는거라, \(I_Q\)가 늘어난다.<br />
+그렇다고 \(\dfrac{W_1}{L_1}\)을 늘리면 트랜지스터 크기가 커져서 \(C_b\)가 늘어난다.<br />
+<br />
+그래서, 위 그림에서 사용된 simple source follower는 여기서 buffer로 사용하기에 부적합하다.<br />
+<br />
+<br />
+source follower with negative feedback을 쓰는 방법이 있다.<br />
+BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDO5.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p>buffer 입장에서 출력 전압 노드인, \(M_p\)의 gate 전압이 증가한 경우를 생각해보면:<br />
+\(M_1\)의 Vds가 증가했으니, channel length modulation에 의해 \(M_1\)의 Ids가 증가한다.<br />
+근데, \(M_2\)의 Ids는 Current mirror 구조에 의해 고정되어 있다.<br />
+그래서, \(M_1\)의 Ids가 증가한 만큼 \(Q_1\)의 Ib가 증가하게 된다.<br />
+그러면 \(Q_1\)의 Ice는 \(\beta\)Ib만큼 증가한다.<br />
+<br />
+그래서, 원래 Vout이 Vx만큼 증가하면 전류가 gm1Vx만큼 증가했었는데,<br />
+이제는 gm1Vx + \(\beta\)gm1Vx = (1+beta)gm1Vx만큼 증가하는 것이다.<br />
+<br />
+따라서 \(r_{ob}=\dfrac{1}{g_{m1}(1+\beta)}\)가 된다.<br />
+이렇게 되면 rob가 확 줄어드니까, gm이 그렇게까지 안커도 된다. beta가 큰 값이니까.<br />
+그래서 gm을 조금 포기하는 대신 I1을 줄여 IQ를 줄일 수 있고, W/L을 줄여 Cb를 줄일 수 있다.<br />
+<br />
+<br />
+근데 또 문제가 있다. load current가 증가하면 unity gain frequency도 증가하는데,<br />
+그러면 rob도 그에 맞춰 줄어들어줘야 한다.<br />
+<br />
+그렇지 않으면 unity gain frequency가 계속 증가하다가 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)보다 커질 수도 있다.<br />
+그러면 unity gain frequency 이전에 pole이 하나 더 생기는거라, stability가 안좋아진다.<br />
+<br />
+그래서 이런 구조를 만들게 됐다.<br />
+<br />
+<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDO6.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+이 상태에서 \(M_p\)의 \(I_DS\)r가 증가하면?
+일단 \(M_p\)의 Gate 전압이 줄어들어야 할 것이다. 그래야 \(I_DS\)가 증가하니까.
+그러면 \(M_4\)의 \(\abs(V_GS)\) <br /></p>
+:ET

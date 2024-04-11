@@ -3,7 +3,7 @@ layout: post
 title:  "Analog - LDO"
 date:   2023-10-04 19:31:29 +0900
 categories: Design
-order: 3
+order: 1
 ---
 
 LDO : Low Dropout Regulators<br>
@@ -98,7 +98,7 @@ $$M_1$$의 Vds가 증가했으니, channel length modulation에 의해 $$M_1$$�
 <br>
 그래서, 원래 Vout이 Vx만큼 증가하면 전류가 gm1Vx만큼 증가했었는데,<br>
 이제는 gm1Vx + $$\beta$$gm1Vx = (1+beta)gm1Vx만큼 증가하는 것이다.<br>
-
+<br>
 따라서 $$r_{ob}=\dfrac{1}{g_{m1}(1+\beta)}$$가 된다.<br>
 이렇게 되면 rob가 확 줄어드니까, gm이 그렇게까지 안커도 된다. beta가 큰 값이니까.<br>
 그래서 gm을 조금 포기하는 대신 I1을 줄여 IQ를 줄일 수 있고, W/L을 줄여 Cb를 줄일 수 있다.<br>
@@ -118,4 +118,21 @@ $$M_1$$의 Vds가 증가했으니, channel length modulation에 의해 $$M_1$$�
     <img src="/public/img/LDO6.png" style="width: 50%; height: auto;" alt="my picture" />
 </div>
 
-이렇게 하면 dynamic이 된다.
+<br>
+일단, 이 buffer의 output resistance는:<br>
+$$r_{ob} = \dfrac{1}{g_{m1}(1+\beta)} || \dfrac{1}{g_{m4}} = \dfrac{1}{g_{m1}(1+\beta)+g_{m4}}$$<br>
+<br>
+<br>
+이 상태에서 $$M_p$$의 $$I_{DS}$$가 증가하면?<br>
+일단 $$M_p$$의 Gate 전압이 줄어들어야 할 것이다. 그래야 $$I_{DS}$$가 증가하니까.<br>
+그러면 $$M_4$$와 $$M_5$$의 $$|V_{GS}|$$ 가 증가한다.<br>
+그래서 $$M_4$$와 $$M_5$$의 $$I_{DS}$$가 증가하는데,<br>
+<br>
+$$M_4$$의 $$I_{DS}$$가 증가하면 $$g_{m4}$$가 증가하고,<br>
+$$M_5$$의 $$I_{DS}$$가 증가하면 $$M_2$$, $$M_3$$이 이루고 있는 current mirror에 의해 $$M_1$$에서도 전류가 증가한다. 따라서 $$g_{m1}$$이 증가한다.<br>
+<br>
+결국, Load Current가 증가해서 $$M_p$$의 $$I_{DS}$$가 증가하면<br>
+$$g_{m4}$$, $$g_{m1}$$이 증가해 $$r_{ob}$$가 작아진다.<br>
+그래서 $$p_2 = \dfrac{1}{r_{ob}C_{pmos}}$$는 Load current가 증가하면 더 높은 주파수로 이동하기에,
+항상 Unity Gain Frequency보다 높은 주파수에 있을 수 있다.<br>
+<br>

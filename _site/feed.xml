@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-08T01:59:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog - 2-Transistor Voltage Reference</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html" rel="alternate" type="text/html" title="Analog - 2-Transistor Voltage Reference" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%202-Transistor%20Voltage%20Reference</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html"><![CDATA[<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-12T01:37:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog - 2-Transistor Voltage Reference</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html" rel="alternate" type="text/html" title="Analog - 2-Transistor Voltage Reference" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%202-Transistor%20Voltage%20Reference</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html"><![CDATA[<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
 아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다.<br />
 <br />
 2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다.<br />
@@ -60,7 +60,63 @@ Rc 발진기
 
 <p>오실레이터 관련해서는 따로 정리</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator Oscillator 종류: Rc 발진기 크리스탈 발진기: 그냥 크리스탈 크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것 그냥 전원만 넣으면 클럭이 출력된다]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>PLL : Phase Locked Loops<br />
 <br />
-<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[PLL : Phase Locked Loops]]></summary></entry><entry><title type="html">Analog - LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html" rel="alternate" type="text/html" title="Analog - LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
+<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[PLL : Phase Locked Loops]]></summary></entry><entry><title type="html">Analog - LDO - Amplifier Design</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html" rel="alternate" type="text/html" title="Analog - LDO - Amplifier Design" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Amplifer%20Design</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
+<br />
+PMOS를 써서 만들면 Common Source 구조가 되고,<br />
+NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
+<br />
+Low-Dropout이 중요하지 않은 경우엔느 NMOS가 Pass Device로 쓰일 수 있다.<br />
+Gate와 Source 사이에 전압 차이가 필요하긴 한데, Rout이 작아서(아마 NMOS PMOS의 \(\mu\)차이 이야기)<br />
+Compensation이 더 쉽다.<br />
+NMOS를 쓰면 follower configuration이 된다.<br />
+<br />
+근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다.<br />
+그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다.<br />
+<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDOamp1.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+Low Voltage Operation이 중요할때는 PMOS를 쓴다.<br />
+PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain이든 모두 \(g_m r_{ds}\)다.<br />
+<br />
+그래서, Power line에서 ripple이 들어올 경우, Amp에서도 같은 ripple을 출력해줘야 PMOS 전류가 안흔들린다.<br />
+<br />
+그래서 NMOS에 쓰이는 AMP는 power line의 ripple을 다 없애야 하고,<br />
+PMOS에 쓰이는 amp는 power line의 ripple을 그대로 출력에 전달해야 한다.<br />
+<br />
+Ripple을 그대로 전달하는 구조:<br />
+<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDOamp2.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+이게 왜 ripple을 그대로 전달하는 구조인가?<br />
+그건 이 모델의 small signal model을 봐야 한다.<br />
+아니면 이렇게 만들어도 된다.<br /></p>
+
+<p><br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDOamp3.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br /></p>
+
+<p><br />
+아니면 이렇게 만들어도 된다.<br /></p>
+
+<p><br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDOamp4.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators PMOS를 써서 만들면 Common Source 구조가 되고, NMOS를 써서 만들면 Source Follower 구조가 된다. Low-Dropout이 중요하지 않은 경우엔느 NMOS가 Pass Device로 쓰일 수 있다. Gate와 Source 사이에 전압 차이가 필요하긴 한데, Rout이 작아서(아마 NMOS PMOS의 \(\mu\)차이 이야기) Compensation이 더 쉽다. NMOS를 쓰면 follower configuration이 된다. 근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다. 그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다.]]></summary></entry><entry><title type="html">Analog - LDO - Buffer Compensation</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Buffer-Compensation.html" rel="alternate" type="text/html" title="Analog - LDO - Buffer Compensation" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Buffer%20Compensation</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Buffer-Compensation.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
 <br />
 <br />
 IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
@@ -151,9 +207,9 @@ BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br />
 그러면 \(Q_1\)의 Ice는 \(\beta\)Ib만큼 증가한다.<br />
 <br />
 그래서, 원래 Vout이 Vx만큼 증가하면 전류가 gm1Vx만큼 증가했었는데,<br />
-이제는 gm1Vx + \(\beta\)gm1Vx = (1+beta)gm1Vx만큼 증가하는 것이다.<br /></p>
-
-<p>따라서 \(r_{ob}=\dfrac{1}{g_{m1}(1+\beta)}\)가 된다.<br />
+이제는 gm1Vx + \(\beta\)gm1Vx = (1+beta)gm1Vx만큼 증가하는 것이다.<br />
+<br />
+따라서 \(r_{ob}=\dfrac{1}{g_{m1}(1+\beta)}\)가 된다.<br />
 이렇게 되면 rob가 확 줄어드니까, gm이 그렇게까지 안커도 된다. beta가 큰 값이니까.<br />
 그래서 gm을 조금 포기하는 대신 I1을 줄여 IQ를 줄일 수 있고, W/L을 줄여 Cb를 줄일 수 있다.<br />
 <br />
@@ -172,7 +228,164 @@ BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br />
     <img src="/public/img/LDO6.png" style="width: 50%; height: auto;" alt="my picture" />
 </div>
 
-<p>이렇게 하면 dynamic이 된다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry><entry><title type="html">Analog - PLL</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html" rel="alternate" type="text/html" title="Analog - PLL" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20PLL</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html"><![CDATA[<p>PLL : Phase Locked Loops<br />
+<p><br />
+일단, 이 buffer의 output resistance는:<br />
+\(r_{ob} = \dfrac{1}{g_{m1}(1+\beta)} || \dfrac{1}{g_{m4}} = \dfrac{1}{g_{m1}(1+\beta)+g_{m4}}\)<br />
+<br />
+<br />
+이 상태에서 \(M_p\)의 \(I_{DS}\)가 증가하면?<br />
+일단 \(M_p\)의 Gate 전압이 줄어들어야 할 것이다. 그래야 \(I_{DS}\)가 증가하니까.<br />
+그러면 \(M_4\)와 \(M_5\)의 \(|V_{GS}|\) 가 증가한다.<br />
+그래서 \(M_4\)와 \(M_5\)의 \(I_{DS}\)가 증가하는데,<br />
+<br />
+\(M_4\)의 \(I_{DS}\)가 증가하면 \(g_{m4}\)가 증가하고,<br />
+\(M_5\)의 \(I_{DS}\)가 증가하면 \(M_2\), \(M_3\)이 이루고 있는 current mirror에 의해 \(M_1\)에서도 전류가 증가한다. 따라서 \(g_{m1}\)이 증가한다.<br />
+<br />
+결국, Load Current가 증가해서 \(M_p\)의 \(I_{DS}\)가 증가하면<br />
+\(g_{m4}\), \(g_{m1}\)이 증가해 \(r_{ob}\)가 작아진다.<br />
+그래서 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)는 Load current가 있을 때에도 Unity Gain Frequency보다 높은 주파수에 있을 수 있다.<br />
+<br />
+<br />
+참고자료: A transient-Enhanced Low-Quiescent Current Low-Dropout Regulator With Buffer Impedance Attenuation</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry><entry><title type="html">Analog - LDO - Frequency Response</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Frequency-Response.html" rel="alternate" type="text/html" title="Analog - LDO - Frequency Response" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Frequency%20Response</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Frequency-Response.html"><![CDATA[<p><br />
+Stability:<br />
+어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까?<br />
+안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다.<br />
+<br />
+그럼 frequency response를 어떻게 확인할 것인가?<br />
+Loop Gain을 본다.<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDO2.png" style="width: 40%; height: auto;" alt="my picture" />
+</div>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Stability: 어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까? 안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다. 그럼 frequency response를 어떻게 확인할 것인가? Loop Gain을 본다.]]></summary></entry><entry><title type="html">Analog - LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html" rel="alternate" type="text/html" title="Analog - LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
+<br />
+<br />
+IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
+OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만,<br />
+<br />
+저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다.<br />
+그래서, 이때는 LDO라는 회로를 써줘야 한다.<br />
+<br /></p>
+<div style="float: left">
+    <img src="/public/img/LDO1.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p>PMOS를 써서 만들면 Common Source 구조가 되고,<br />
+NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
+<br />
+Stability:<br />
+어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까?<br />
+안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다.<br />
+<br />
+그럼 frequency response를 어떻게 확인할 것인가?<br />
+Loop Gain을 본다.<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDO2.png" style="width: 40%; height: auto;" alt="my picture" />
+</div>
+
+<p>LDO 만들때는:<br />
+Low dropout voltage,<br />
+high output current,<br />
+low no-load quiescent current,<br />
+small output transient undershoot<br />
+이런 것들이 필요하다.<br />
+<br />
+LDO가 낮은 dropout voltage를 유지하면서 load current도 많이 공급해주려면, Pass device로 크기가 큰 PMOS를 써야 한다. W/L이 커야 해서.<br />
+근데 크기가 큰 PMOS를 쓰면, 그 device의 C가 커진다.<br />
+원래는 C_load에 의한 dominant pole만 저주파에 있었어야 했는데,<br />
+PMOS의 C가 크면 저주파에 pole이 하나 더 생긴다. 결국, stability가 안좋아진다.<br />
+<br />
+이럴 경우, LHP zero를 하나 만들어서 phase를 보상하는 방식이 있다.<br />
+C_load에 직렬로 ESR(Equivalent Series Resistor)를 붙여서 만들 수 있다.<br />
+<br />
+근데, 이 방식은 mismatch때문에 pole zero 위치가 움직이면 큰 문제가 생길 수도 있다.<br />
+그리고 current load가 크게, 순식간에 변할 경우, Cout이 작으면 급격하게 변하는 전류가 저항에 흐를 수 있다.<br />
+이럴 경우, 전압이 크게 흔들린다.<br />
+<br /></p>
+<div style="float: left">
+    <img src="/public/img/LDO3.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+<p><br />
+\(p_0 = \dfrac{1}{R_{out}C_{load}}\)<br />
+\(p_1 = \dfrac{1}{r_{oea}C_b}\)<br />
+\(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)<br />
+<br />
+여기서, 사용하는 buffer의 \(C_b\)와 \(r_{ob}\)가 최대한 작은게 좋다. 그래야 \(p_1\), \(p_2\)가 모두 고주파로 날아가서 \(p_0\)밖에 안남는다.<br />
+<br />
+일단 이렇게 생긴 source follower를 buffer로 쓴다고 해보자.</p>
+
+<div style="float: left">
+    <img src="/public/img/LDO4.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p>Source follower를 buffer로 쓰면 이런 상황이 된다.<br />
+이때 \(C_b\), \(r_{ob}\)가 최대한 작은 값을 갖게 해야 한다.<br />
+<br />
+buffer의 small signal model을 생각해보면, \(r_{ob}=\dfrac{1}{g_{m1}}\)이 된다.<br />
+따라서, \(r_{ob}\)를 줄이려면 \(g_{m1}\)를 최대한 늘려야 한다.<br />
+<br />
+\(g_{m1}\)을 늘리는 데에는 두가지 방법이 있다.<br />
+\(I_1\)을 늘리는 방법이 있고, \(\dfrac{W_1}{L_1}\)을 늘리는 방법이 있다.<br />
+<br />
+근데, \(I_1\)를 늘리면 buffer가 먹는 전류가 늘어나는거라, \(I_Q\)가 늘어난다.<br />
+그렇다고 \(\dfrac{W_1}{L_1}\)을 늘리면 트랜지스터 크기가 커져서 \(C_b\)가 늘어난다.<br />
+<br />
+그래서, 위 그림에서 사용된 simple source follower는 여기서 buffer로 사용하기에 부적합하다.<br />
+<br />
+<br />
+source follower with negative feedback을 쓰는 방법이 있다.<br />
+BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDO5.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p>buffer 입장에서 출력 전압 노드인, \(M_p\)의 gate 전압이 증가한 경우를 생각해보면:<br />
+\(M_1\)의 Vds가 증가했으니, channel length modulation에 의해 \(M_1\)의 Ids가 증가한다.<br />
+근데, \(M_2\)의 Ids는 Current mirror 구조에 의해 고정되어 있다.<br />
+그래서, \(M_1\)의 Ids가 증가한 만큼 \(Q_1\)의 Ib가 증가하게 된다.<br />
+그러면 \(Q_1\)의 Ice는 \(\beta\)Ib만큼 증가한다.<br />
+<br />
+그래서, 원래 Vout이 Vx만큼 증가하면 전류가 gm1Vx만큼 증가했었는데,<br />
+이제는 gm1Vx + \(\beta\)gm1Vx = (1+beta)gm1Vx만큼 증가하는 것이다.<br />
+<br />
+따라서 \(r_{ob}=\dfrac{1}{g_{m1}(1+\beta)}\)가 된다.<br />
+이렇게 되면 rob가 확 줄어드니까, gm이 그렇게까지 안커도 된다. beta가 큰 값이니까.<br />
+그래서 gm을 조금 포기하는 대신 I1을 줄여 IQ를 줄일 수 있고, W/L을 줄여 Cb를 줄일 수 있다.<br />
+<br />
+<br />
+근데 또 문제가 있다. load current가 증가하면 unity gain frequency도 증가하는데,<br />
+그러면 rob도 그에 맞춰 줄어들어줘야 한다.<br />
+<br />
+그렇지 않으면 unity gain frequency가 계속 증가하다가 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)보다 커질 수도 있다.<br />
+그러면 unity gain frequency 이전에 pole이 하나 더 생기는거라, stability가 안좋아진다.<br />
+<br />
+그래서 이런 구조를 만들게 됐다.<br />
+<br />
+<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/LDO6.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+일단, 이 buffer의 output resistance는:<br />
+\(r_{ob} = \dfrac{1}{g_{m1}(1+\beta)} || \dfrac{1}{g_{m4}} = \dfrac{1}{g_{m1}(1+\beta)+g_{m4}}\)<br />
+<br />
+<br />
+이 상태에서 \(M_p\)의 \(I_{DS}\)가 증가하면?<br />
+일단 \(M_p\)의 Gate 전압이 줄어들어야 할 것이다. 그래야 \(I_{DS}\)가 증가하니까.<br />
+그러면 \(M_4\)와 \(M_5\)의 \(|V_{GS}|\) 가 증가한다.<br />
+그래서 \(M_4\)와 \(M_5\)의 \(I_{DS}\)가 증가하는데,<br />
+<br />
+\(M_4\)의 \(I_{DS}\)가 증가하면 \(g_{m4}\)가 증가하고,<br />
+\(M_5\)의 \(I_{DS}\)가 증가하면 \(M_2\), \(M_3\)이 이루고 있는 current mirror에 의해 \(M_1\)에서도 전류가 증가한다. 따라서 \(g_{m1}\)이 증가한다.<br />
+<br />
+결국, Load Current가 증가해서 \(M_p\)의 \(I_{DS}\)가 증가하면<br />
+\(g_{m4}\), \(g_{m1}\)이 증가해 \(r_{ob}\)가 작아진다.<br />
+그래서 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)는 Load current가 증가하면 더 높은 주파수로 이동하기에,
+항상 Unity Gain Frequency보다 높은 주파수에 있을 수 있다.<br />
+<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry><entry><title type="html">Analog - PLL</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html" rel="alternate" type="text/html" title="Analog - PLL" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20PLL</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html"><![CDATA[<p>PLL : Phase Locked Loops<br />
 <br />
 <br />
 원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다.
@@ -180,119 +393,4 @@ PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다.
 다른 block들은 그거 보고 동작하기 시작하면 된다.</p>
 
 <p>chip이 켜지면 Analog trimming data 등 정보가 들어있는 Flash memory를 읽는데,
-Flash memory를 PLL이 Lock 되기 전에 읽기도 한다. PLL이 Lock되는 데에는 시간이 좀 걸리니까, 시간 아끼기 위해서다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[PLL : Phase Locked Loops 원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다. PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다. 다른 block들은 그거 보고 동작하기 시작하면 된다.]]></summary></entry><entry><title type="html">Analog - Sigma-Delta ADC</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Sigma-Delta-ADC.html" rel="alternate" type="text/html" title="Analog - Sigma-Delta ADC" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Sigma-Delta%20ADC</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Sigma-Delta-ADC.html"><![CDATA[<p>adf</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[adf]]></summary></entry><entry><title type="html">Analog - Stability Analysis</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Stability-Analysis.html" rel="alternate" type="text/html" title="Analog - Stability Analysis" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Stability%20Analysis</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Stability-Analysis.html"><![CDATA[<p>Phase margin이 60도보다 작아지면 보통 peak가 생기고, 45도보다 작아지면 보통 overshoot 후 settle한다.
-그래서 보통 설계할때는 45도 이상으로 phase margin이 나오게 한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Phase margin이 60도보다 작아지면 보통 peak가 생기고, 45도보다 작아지면 보통 overshoot 후 settle한다. 그래서 보통 설계할때는 45도 이상으로 phase margin이 나오게 한다.]]></summary></entry><entry><title type="html">Digital - Firmware</title><link href="http://localhost:4000/design/2023/10/04/Design-Digital-Firmware.html" rel="alternate" type="text/html" title="Digital - Firmware" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Digital%20-%20Firmware</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Digital-Firmware.html"><![CDATA[<p>C, 어셈블리어 등의 언어로 원하는 동작을 구현한 텍스트 파일(코드 적힌 파일)을 만든다. 이게 소스 파일이다.</p>
-
-<p>그리고 소스 파일을 컴파일해서 얻어지는 기계어 명령어 집합을 펌웨어라고 한다?</p>
-
-<p>이 펌웨어를 메모리에 저장해두면, cpu는 그 메모리에서 기계어 명령을 읽고 해석해서 동작을 실행한다.</p>
-
-<p>임베디드 시스템에서 자주 사용되는 직렬 통신:
-UART, I2C, SPI</p>
-
-<p>CPU에는 cu, alu, register가 있다
-CU: control unit, 제어 유닛
-Cu는 주변 유닛들을 제어해 기계어를 읽어들이고 그걸 시행한다</p>
-
-<p>Alu는 계산을 하는 곳이다</p>
-
-<p>메모리에서 cpu까지 정보를 읽어올때, 연결하는 통신 신호선을 bus라고 부른다. 근데 r,c의 영향으로 신호 전달속도에 한계가 있으니, cpu 안에 레지스터를 만들어놓고 여기다가 정보를 저장한다</p>
-
-<p>Cpu 안 레지스터는 특수 용도 레지스터랑 일반 목적 레지스터가 있다.
-특수 용도 레지스터는 특정 정보를 저장하게 되고,
-일반 목적 레지스터는 그냥 연산 결과, 함수 내 인수 변수 등을 임시 저장하는데에 쓰인다.</p>
-
-<p>어셈블리어로 펌웨어 프로그래밍 해보면, 대부분 동작은 일반 레지스터를 이용해 데이터를 저장하고 사용하게 된다.</p>
-
-<p>Cpu 동작:
-명령어 읽어오기(fetch)
-명령어 분석(decode)
-명령어 실행(execute)</p>
-
-<p>이 3단계를 거치며 동작한다
-각 clock마다 한 단계를 거친다</p>
-
-<p>Pipeline 동작:
-Decode하는 동안 다음 명령어 fetch해오는 방식으로 시간 줄이는 방식
-병렬처리 동작이라고도 한다</p>
-
-<p>RISC CPU
-명령어 수 적음
-명령어 크기 고정
-1개 명령어 처리속도 빠름
-프로그래밍 코드 복잡</p>
-
-<p>CISC CPU
-명령어 수 많음
-명령어 크기 명령어마다 다름
-1개 명령어 처리속도 명령어마다 다름
-프로그래밍코드 단순</p>
-
-<p>명령어 수가 많으면, 하나의 명령어만 적어서 구현할 수 있는 동작들이 많다. 그래서 Cisc는 복합 명령을 하나의 명령으로 많이 갖고 있다</p>
-
-<p>Risc는 명령어 수를 최소화하고, 명령어 크기를 고정한 상태에서 명령어들의 동작을 최적화해 효율을 높인다</p>
-
-<p>일반적으로 pc계열은 cisc, arm계열은 risc를 쓴다</p>
-
-<p>왜 cisc는 명령어마다 길이가 다르냐?
-여러 명령들을 묶어서 만든 복합 명령들이 많아서 그렇다</p>
-
-<p>Risc는 명령 크기를 16비트, 32비트 이런식으로 고정해둔다</p>
-
-<p>처리 속도:
-Risc는 명령어마다 1클럭 또는 2클럭 안에 끝내게 되어 있다
-Cisc는 명령어마다 다르다. 복합 명령들이 읶으니까</p>
-
-<p>프로그래밍 편의:
-Cisc에서 모든 명령을 다 숙지하고 있다면, 딱 적합한 명령어를 써서 프로그래밍을 단순하게 할 수 있다</p>
-
-<p>근데 그렇게 되는거 자체거 힘든 일이라, 꼭 cisc가 risc보다 프로그래밍이 쉽다고는 할 수 없다</p>
-
-<p>C언어 컴파일러로 컴파일하면 어셈블리어, 이걸 어셈블러에 넣으면 기계어(binary file)이 나온다</p>
-
-<p>보통 c언어로 코딩해놓고, 사용할 cpu에 맞는 컴파일러를 가져와서 어셈블리어 기계어로 바꾼다.
-같은 c코드도 컴파일러에 따라 출력되는 어셈블리어, 기계어가 다르다</p>
-
-<p>그래서 c언어로 펌웨어를 만들고, 이걸 컴파일러에 넣어 이진 파일을 만들고, 이 파일을 메모리에 기록해두면 cpu가 이걸 읽고 실행해 원하는 동작을 시행한다</p>
-
-<p>Regulator: 일정한 전압을 만들어주는 소자</p>
-
-<p>Linear regulator, switching regulator
-장단점 정리해두기
-Ldo는 linear regulator
-Buck, boost converter는 switching regulator</p>
-
-<p>오실레이터에서 만들어진 주기적인 진동 파형을 슈미트 트리거로 정확한 구형파형으로 만들어 clock을 만든다
-이걸 cpu에 넣어준다</p>
-
-<p>PLL:
-보통 오실레이터에서 출력되는 클락은 8MHz, 12MHz, 16MHz라서 실제 시스템 동작속도보다 느리다
-그래서 PLL은 주파수를 올리고 안정적으로 만든다
-여기서 나온 클락신호가 cpu에 전달된다</p>
-
-<p>Mcu 내의 다른 로직들은 보통 cpu보다 구동 주파수가 낮다. 그래서 prescaler(전치분주기)로 주파수를 내려준다</p>
-
-<p>메모리 구분 표 있는데 이거 참고해서 정리</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[C, 어셈블리어 등의 언어로 원하는 동작을 구현한 텍스트 파일(코드 적힌 파일)을 만든다. 이게 소스 파일이다.]]></summary></entry><entry><title type="html">Digital - Serial Communication Protocols</title><link href="http://localhost:4000/design/2023/10/04/Design-Digital-Serial-Communication-Protocols.html" rel="alternate" type="text/html" title="Digital - Serial Communication Protocols" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Digital%20-%20Serial%20Communication%20Protocols</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Digital-Serial-Communication-Protocols.html"><![CDATA[<p>💡Serial Communication Protocols(UART,I2C,SPI)📍📝</p>
-
-<p>🔰 1. UART (Universal Asynchronous Receiver-Transmitter):
-  ✔ UART is an asynchronous serial communication protocol commonly used for short-distance communication between devices.
- ✔ It uses two wires, one for transmitting data (TX) and another for receiving data (RX).
-  ✔ UART does not have a clock signal, so the data is transmitted asynchronously using start and stop bits to mark the beginning and end of each data frame.
-  ✔ It is a straightforward and simple protocol, commonly used in applications like serial communication between a microcontroller and a computer, GPS modules, and Bluetooth modules.</p>
-
-<p>🔰 2. SPI (Serial Peripheral Interface):
- ✔ SPI is a synchronous serial communication protocol primarily used for
-communication between microcontrollers and peripheral devices, such as sensors, displays, and memory chips.
- ✔ It requires four wires: a master-out-slave-in (MOSI) line for data transmission, a master-in-slave-out (MISO) line for data reception, a clock (SCK) line for synchronization, and a chip select (CS) line to select the target device.
- ✔ SPI operates in a master-slave configuration, where a master device initiates the communication and controls the data transfer to one or more slave devices.
-  ✔ It supports full-duplex communication, meaning data can be simultaneously transmitted and received.
-   ✔ SPI is known for its high data transfer rates and is commonly used in applications that require fast and efficient data transfer.</p>
-
-<p>🔰 3. I2C (Inter-Integrated Circuit):
-   ✔ I2C is a multi-master, multi-slave, and bidirectional serial communication protocol designed for communication between integrated circuits on a circuit board.
- ✔ It uses two wires: a serial data line (SDA) for bidirectional data transfer and a serial clock line (SCL) for synchronization.
-   ✔ I2C allows multiple devices to share the same bus, with each device having a unique address.
-   ✔ It supports both 7-bit and 10-bit addressing modes, providing the capability to connect a large number of devices.
- ✔ I2C is a slower protocol compared to UART and SPI, but it requires fewer wires and is commonly used in applications where simplicity and low pin count are important, such as sensors, EEPROM memory chips, and real-time clocks.</p>
-
-<p>P.S: Repost this info &amp; follow Vinay Varikooti for more knowledge.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[💡Serial Communication Protocols(UART,I2C,SPI)📍📝]]></summary></entry></feed>
+Flash memory를 PLL이 Lock 되기 전에 읽기도 한다. PLL이 Lock되는 데에는 시간이 좀 걸리니까, 시간 아끼기 위해서다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[PLL : Phase Locked Loops 원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다. PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다. 다른 block들은 그거 보고 동작하기 시작하면 된다.]]></summary></entry><entry><title type="html">Analog - Sigma-Delta ADC</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Sigma-Delta-ADC.html" rel="alternate" type="text/html" title="Analog - Sigma-Delta ADC" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Sigma-Delta%20ADC</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Sigma-Delta-ADC.html"><![CDATA[<p>adf</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[adf]]></summary></entry></feed>
