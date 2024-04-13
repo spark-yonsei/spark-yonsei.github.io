@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-12T01:37:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog - 2-Transistor Voltage Reference</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html" rel="alternate" type="text/html" title="Analog - 2-Transistor Voltage Reference" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%202-Transistor%20Voltage%20Reference</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html"><![CDATA[<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-14T02:43:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog - 2-Transistor Voltage Reference</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html" rel="alternate" type="text/html" title="Analog - 2-Transistor Voltage Reference" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%202-Transistor%20Voltage%20Reference</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html"><![CDATA[<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
 아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다.<br />
 <br />
 2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다.<br />
@@ -49,18 +49,105 @@ Body가 무조건 ground에 연결되어야 하기 때문이다.<br />
     <img src="/public/img/2tr2.png" style="width: 20%; height: auto;" alt="my picture" />
 </div>
 <p><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다. 아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다. 2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다. Native 또는 Depletion MOSFET을 쓰면 공정시 layer가 하나 더 필요하다. Body가 무조건 ground에 연결되어야 하기 때문이다. 두가지 구조가 있다. 첫번째 구조부터 보면: 위쪽은 native TR이라, \(V_{th}\)가 0보다 약간 작다. 그래서 M1은 항상 켜져있다. \(V_{GS1}\)=0인데 \(V_{th1}\)는 0보다 약간 작으니까. 그리고 2개 트랜지스터에 흐르는 전류는 동일하니까: \(I_{1}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_1}{L_1} \left(-V_{th1} \right)^{2}\) \(I_{2}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_2}{L_2} \left(V_{GS2}-V_{th2} \right)^{2}\) 여기서 \(I_{1}=I_{2}\)으로 놓고 정리하면: \(V_{out} = V_{GS2} = V_{th2} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot V_{th1}\) 우변은 다 트랜지스터 구조에 의해 결정되는 값들이라, 이 구조에서 \(V_{GS2}\)도 하나의 값으로 정해지게 된다. 여기까지는 좋은데, 우린 이걸 BGR로 쓰고싶은거니까 온도가 변해도 전압이 일정하다는걸 확인해야 한다. 온도가 변하면 \(V_{th1}, V_{th2}\)이 변한다. \(\dfrac{\partial V_{out}}{\partial T} = \dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}\) 이 회로가 Voltage Reference로 동작하려면, \(\dfrac{\partial V_{out}}{\partial T}=0\)이 되어야 한다. 즉, \(\dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}=0\)이 0이 되도록 트랜지스터 크기 \(\left(W_{1}, W_{2}, L_{1}, L_{2}\right)\)를 잘 조절해주면 된다. 잘 조절하면 \(\dfrac{\partial V_{out}}{\partial T}=0\)이 된다. 이렇게 만들면 된다. 두번째 구조:]]></summary></entry><entry><title type="html">Analog - Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html" rel="alternate" type="text/html" title="Analog - Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
-Oscillator 종류:
-Rc 발진기
-크리스탈 발진기: 그냥 크리스탈
-크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것
-그냥 전원만 넣으면 클럭이 출력된다</p>
-
-<p>근데, 크리스탈만 있을때 전압출력은 사인파인데
-크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다</p>
-
-<p>오실레이터 관련해서는 따로 정리</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator Oscillator 종류: Rc 발진기 크리스탈 발진기: 그냥 크리스탈 크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것 그냥 전원만 넣으면 클럭이 출력된다]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>PLL : Phase Locked Loops<br />
+Oscillator 종류:<br />
+Rc 발진기<br />
+크리스탈 발진기: 그냥 크리스탈<br />
+크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것<br />
+그냥 전원만 넣으면 클럭이 출력된다<br />
 <br />
-<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[PLL : Phase Locked Loops]]></summary></entry><entry><title type="html">Analog - LDO - Amplifier Design</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html" rel="alternate" type="text/html" title="Analog - LDO - Amplifier Design" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Amplifer%20Design</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
+근데, 크리스탈만 있을때 전압출력은 사인파인데<br />
+크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다<br />
+<br />
+<br />
+Crystal oscillator는:<br />
+항상 켜져있어야 하는 block이라, power 소비가 적어야 한다.<br />
+항상 같은 주파수를 만들어야 하기 때문에, PVT variation에 적게 영향받아야 한다.<br />
+오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다.<br />
+<br />
+외부에서 Crystal에 넣어줘야 하는 power:<br />
+P_Extr: extract oscillation frequency and phase<br />
+P_Ener: Inject energy into crystal to compensate loss<br />
+P_Timi: Timing control of energy injection<br />
+<br />
+P_XO = P_Extr + P_Ener + P_Timi<br />
+<br />
+그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다<br />
+P_XO &gt; P_loss<br />
+<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/XO1.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+Crystal의 등가회로는 이렇다.<br />
+쓸때는 이렇게 밑에 shunt capacitance를 붙여서 쓴다.<br />
+<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/XO2.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+당연히, 이렇게만 둔다고 동작하는건 아니다.
+밖에서 에너지를 넣어줘야 진동을 할거다.
+그 역할을 하는 회로를 붙여줘야 한다.</p>
+
+<p>Resonance mode가 2개 있는데,
+Parallel mode가 있고 series mode가 있다.</p>
+
+<p>Parallel mode 진동을 할때는 inverter를 붙여주면 되고,
+Series mode 진동을 할때는 buffer를 붙여주면 된다.</p>
+
+<p>Parallel mode:
+Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator Oscillator 종류: Rc 발진기 크리스탈 발진기: 그냥 크리스탈 크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것 그냥 전원만 넣으면 클럭이 출력된다 근데, 크리스탈만 있을때 전압출력은 사인파인데 크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다 Crystal oscillator는: 항상 켜져있어야 하는 block이라, power 소비가 적어야 한다. 항상 같은 주파수를 만들어야 하기 때문에, PVT variation에 적게 영향받아야 한다. 오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다. 외부에서 Crystal에 넣어줘야 하는 power: P_Extr: extract oscillation frequency and phase P_Ener: Inject energy into crystal to compensate loss P_Timi: Timing control of energy injection P_XO = P_Extr + P_Ener + P_Timi 그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다 P_XO &gt; P_loss]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
+inductive motor들이 주로 load로 쓰인다.</p>
+
+<p>H-bridge에는 External diodes(Free-wheeling diode 또는 flyback diode라고도 불린다)가 들어가지 않을 때도 있다
+FET의 body diode를 쓸 수도 있기 때문이다.</p>
+
+<p>H-bridge에서 조심할 점:
+절대 한쪽 FET 2개를 동시에 켜면 안된다. Q1 Q2를 동시에 켜거나 Q3, Q4를 동시에 켜면 안된다는거다.
+이러면 전원에서 ground까지 impedance가 아주 작은 경로가 생겨버려서,
+전류가 엄청나게 흐르고 FET이 damage를 입을 수도 있다.
+이게 shoot through다.</p>
+
+<p>Fast decay mode랑 slow decay mode가 있는데, 모터 속도 이야기가 아니고 모터 안 인덕터의 전류가 decaying되는 속도 이야기다.
+그래서 fast decay mode를 쓴다고 모터가 빨리 멈추는게 아니다. 실제로는 slow decay mode에서 모터가 더 빨리 멈춘다.</p>
+
+<p>예를 들어, Q1 Q4가 켜져서 motor가 돌고 있다고 해보자. 갑자기 Q1 Q4가 꺼지면?
+모터의 인덕터는 전류가 연속이어야 하니까, 전류는 바로 0이 되지 않고 flyback diode 또는 FET body diode를 통해 흘러나간다.
+이러면 전류가 천천히 0이 될거다.</p>
+
+<p>여기서, Fast decay mode는 전류 빠질때 diode가 아니라 FET으로 빠지게 하는 방식이다.
+Q1 Q4가 꺼지면 Q2 Q3을 켜는 식이다. 이러면 인덕터에 전압 0이 걸리는게 아니라 -Vpp가 걸려서, 전류가 더 빨리 빠져나간다.
+물론, shoot through가 안일어나도록 잘 제어해줘야 한다.</p>
+
+<p>근데 뭐 모터 멈추는데 있어서 fast decay mode가 꼭 필요한건 아니다.
+fast decay mode는 high inductance motor나 high speed motor 등 전류가 빠르게 변해야 하는 곳에 쓰인다.</p>
+
+<p>그리고, diode에 의한 전압강하보다 FET의 ron에 의한 전압강하가 더 작다면 fast decay mode가 power를 아끼는 데에도 도움이 될 수 있다.</p>
+
+<p>아까처럼, Q1 Q4가 켜진 채로 모터가 돌고 있다고 해보자.
+그냥 모터를 끄려면 Q1 Q4를 끄고,
+fast decay mode로 모터를 끄려면 Q1 Q4를 끄면서 Q2 Q3을 켠다.</p>
+
+<p>slow decay mode로 모터를 끄려면 Q1을 끄면서 Q2를 켜거나 Q4를 끄면서 Q3을 끈다.
+즉, 위쪽 2개나 아래쪽 2개만 켜져있게 한다.</p>
+
+<p>이렇게 하면, 켜져있는 2개 FET의 ron에 의해 전류가 열로 dissipate되면서 사라진다.
+이 mode는 전류가 줄어드는건 fast decay mode보다 더 느린데, 모터가 멈추는건 더 빠르다.
+이유는 motor의 에너지 관점에서 생각해줘야 한다.</p>
+
+<p>DC motor가 회전할 경우, back emf가 생긴다.
+fast decay mode에서는 전류는 빨리 나가는데, back emf에는 별 조치가 안돼서 motor가 느리게 멈춘다.</p>
+
+<p>slow decay mode에서는 back emf의 양단 사이에 ron 저항 2개밖에 없다.
+그래서 거의 short라서, motor에 있던 에너지가 아주 빠르게 열에너지로 바뀌어 사라진다.
+즉 모터가 빠르게 멈춘다.</p>
+
+<p>그니까, slow랑 fast는 inductive load (여기서는 motor winding)에 흐르는 전류가 줄어드는 rate를 말하는거다.
+모터의 각속도 이야기가 아니다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[H-bridge는 4개 FET을 써서 load에다가 전류를 준다. inductive motor들이 주로 load로 쓰인다.]]></summary></entry><entry><title type="html">Analog - LDO - Amplifier Design</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html" rel="alternate" type="text/html" title="Analog - LDO - Amplifier Design" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Amplifer%20Design</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
 <br />
 PMOS를 써서 만들면 Common Source 구조가 되고,<br />
 NMOS를 써서 만들면 Source Follower 구조가 된다.<br />

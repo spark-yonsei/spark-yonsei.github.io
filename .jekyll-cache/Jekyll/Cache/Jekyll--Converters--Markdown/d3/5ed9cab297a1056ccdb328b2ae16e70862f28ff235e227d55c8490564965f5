@@ -1,0 +1,27 @@
+I"B<p>Crystal Oscillator<br />
+Oscillator 종류:<br />
+Rc 발진기<br />
+크리스탈 발진기: 그냥 크리스탈<br />
+크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것<br />
+그냥 전원만 넣으면 클럭이 출력된다<br />
+<br />
+근데, 크리스탈만 있을때 전압출력은 사인파인데<br />
+크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다<br />
+<br />
+<br />
+Crystal oscillator는:<br />
+항상 켜져있어야 하는 block이라, power 소비가 적어야 한다.<br />
+항상 같은 주파수를 만들어야 하기 때문에, PVT variation에 적게 영향받아야 한다.<br />
+오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다.<br />
+<br />
+외부에서 Crystal에 넣어줘야 하는 power:<br />
+P_Extr: extract oscillation frequency and phase<br />
+P_Ener: Inject energy into crystal to compensate loss<br />
+P_Timi: Timing control of energy injection<br />
+<br />
+P_XO = P_Extr + P_Ener + P_Timi<br />
+<br />
+그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다<br />
+P_XO &gt; P_loss<br />
+<br /></p>
+:ET

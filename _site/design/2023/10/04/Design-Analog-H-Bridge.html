@@ -50,7 +50,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Market">
 				<span class="name">Market</span>
-				<span class="badge">14</span>
+				<span class="badge">15</span>
 	    	</a>
  		</li>
 	    
@@ -82,9 +82,55 @@
 	</header>
 
 	<div class="post-content">
-		<p>PLL : Phase Locked Loops<br />
-<br />
-<br /></p>
+		<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
+inductive motor들이 주로 load로 쓰인다.</p>
+
+<p>H-bridge에는 External diodes(Free-wheeling diode 또는 flyback diode라고도 불린다)가 들어가지 않을 때도 있다
+FET의 body diode를 쓸 수도 있기 때문이다.</p>
+
+<p>H-bridge에서 조심할 점:
+절대 한쪽 FET 2개를 동시에 켜면 안된다. Q1 Q2를 동시에 켜거나 Q3, Q4를 동시에 켜면 안된다는거다.
+이러면 전원에서 ground까지 impedance가 아주 작은 경로가 생겨버려서,
+전류가 엄청나게 흐르고 FET이 damage를 입을 수도 있다.
+이게 shoot through다.</p>
+
+<p>Fast decay mode랑 slow decay mode가 있는데, 모터 속도 이야기가 아니고 모터 안 인덕터의 전류가 decaying되는 속도 이야기다.
+그래서 fast decay mode를 쓴다고 모터가 빨리 멈추는게 아니다. 실제로는 slow decay mode에서 모터가 더 빨리 멈춘다.</p>
+
+<p>예를 들어, Q1 Q4가 켜져서 motor가 돌고 있다고 해보자. 갑자기 Q1 Q4가 꺼지면?
+모터의 인덕터는 전류가 연속이어야 하니까, 전류는 바로 0이 되지 않고 flyback diode 또는 FET body diode를 통해 흘러나간다.
+이러면 전류가 천천히 0이 될거다.</p>
+
+<p>여기서, Fast decay mode는 전류 빠질때 diode가 아니라 FET으로 빠지게 하는 방식이다.
+Q1 Q4가 꺼지면 Q2 Q3을 켜는 식이다. 이러면 인덕터에 전압 0이 걸리는게 아니라 -Vpp가 걸려서, 전류가 더 빨리 빠져나간다.
+물론, shoot through가 안일어나도록 잘 제어해줘야 한다.</p>
+
+<p>근데 뭐 모터 멈추는데 있어서 fast decay mode가 꼭 필요한건 아니다.
+fast decay mode는 high inductance motor나 high speed motor 등 전류가 빠르게 변해야 하는 곳에 쓰인다.</p>
+
+<p>그리고, diode에 의한 전압강하보다 FET의 ron에 의한 전압강하가 더 작다면 fast decay mode가 power를 아끼는 데에도 도움이 될 수 있다.</p>
+
+<p>아까처럼, Q1 Q4가 켜진 채로 모터가 돌고 있다고 해보자.
+그냥 모터를 끄려면 Q1 Q4를 끄고,
+fast decay mode로 모터를 끄려면 Q1 Q4를 끄면서 Q2 Q3을 켠다.</p>
+
+<p>slow decay mode로 모터를 끄려면 Q1을 끄면서 Q2를 켜거나 Q4를 끄면서 Q3을 끈다.
+즉, 위쪽 2개나 아래쪽 2개만 켜져있게 한다.</p>
+
+<p>이렇게 하면, 켜져있는 2개 FET의 ron에 의해 전류가 열로 dissipate되면서 사라진다.
+이 mode는 전류가 줄어드는건 fast decay mode보다 더 느린데, 모터가 멈추는건 더 빠르다.
+이유는 motor의 에너지 관점에서 생각해줘야 한다.</p>
+
+<p>DC motor가 회전할 경우, back emf가 생긴다.
+fast decay mode에서는 전류는 빨리 나가는데, back emf에는 별 조치가 안돼서 motor가 느리게 멈춘다.</p>
+
+<p>slow decay mode에서는 back emf의 양단 사이에 ron 저항 2개밖에 없다.
+그래서 거의 short라서, motor에 있던 에너지가 아주 빠르게 열에너지로 바뀌어 사라진다.
+즉 모터가 빠르게 멈춘다.</p>
+
+<p>그니까, slow랑 fast는 inductive load (여기서는 motor winding)에 흐르는 전류가 줄어드는 rate를 말하는거다.
+모터의 각속도 이야기가 아니다.</p>
+
 
 	</div>
 </article>
