@@ -17,22 +17,28 @@ Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할
 여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다.<br>
 <br>
 <br>
-전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.
+전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.<br>
+<br>
+좌표계 변환 - 위치:<br>
+<br>
+좌표계 변환 - 벡터:<br>
+<br>
 
-좌표계 변환 - 위치:
+<div style="float: left">
+    <img src="/public/img/EM1.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
 
-좌표계 변환 - 벡터:
-
-Vector와 Vector field의 차이
-
-Gradient가 무엇인가
-
-좌표계별 Gradient:
-
-Curl이 무엇인가
-
-좌표계별 Curl:
-
+<br>
+Vector와 Vector field의 차이<br>
+<br>
+Gradient가 무엇인가<br>
+<br>
+좌표계별 Gradient:<br>
+<br>
+Curl이 무엇인가<br>
+<br>
+좌표계별 Curl:<br>
+<br>
 
 
 
