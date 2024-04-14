@@ -1,0 +1,65 @@
+I"n<p>Crystal Oscillator<br />
+Oscillator 종류:<br />
+Rc 발진기<br />
+크리스탈 발진기: 그냥 크리스탈<br />
+크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것<br />
+그냥 전원만 넣으면 클럭이 출력된다<br />
+<br />
+근데, 크리스탈만 있을때 전압출력은 사인파인데<br />
+크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다<br />
+<br />
+<br />
+Crystal oscillator는:<br />
+항상 켜져있어야 하는 block이라, power 소비가 적어야 한다.<br />
+항상 같은 주파수를 만들어야 하기 때문에, PVT variation에 적게 영향받아야 한다.<br />
+오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다.<br />
+<br />
+외부에서 Crystal에 넣어줘야 하는 power:<br />
+\(P_{Extr}\): extract oscillation frequency and phase<br />
+\(P_{Ener}\): Inject energy into crystal to compensate loss<br />
+\(P_{Timi}\): Timing control of energy injection<br />
+<br />
+\(P_{XO} = P_{Extr} + P_{Ener} + P_{Timi}\)<br />
+<br />
+그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다<br />
+\(P_{XO} &gt; P_{loss}\)<br />
+<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/XO1.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+Crystal의 등가회로는 이렇다.<br />
+Co는 전극과 패키징에 의한 캐패시턴스를 표현한거고,<br />
+RLC branch (Rs Ls Cs)는 crystal의 mechanical resonance를 표현한거다<br />
+<br />
+Q factor:<br />
+\(Q=2\pi \dfrac{E_{Stored}}{E_{Loss,T}} = 2\pi \dfrac{0.5L_sI^2_{R_s}}{0.5I^2_{R_s}R_sT_{XO}} = \dfrac{\omega_{osc}L_s}{R_s}\)<br /></p>
+
+<p>쓸때는 이렇게 밑에 shunt capacitance를 붙여서 쓴다.<br />
+<br /></p>
+
+<div style="float: left">
+    <img src="/public/img/XO2.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+당연히, 이렇게만 둔다고 동작하는건 아니다.<br />
+밖에서 에너지를 넣어줘야 진동을 할거다.<br />
+그 역할을 하는 회로를 붙여줘야 한다.<br />
+<br />
+Resonance mode가 2개 있는데,<br />
+Parallel mode가 있고 series mode가 있다.<br />
+<br />
+Parallel mode 진동을 할때는 inverter를 붙여주면 되고,<br />
+Series mode 진동을 할때는 buffer를 붙여주면 된다.<br />
+<br />
+\(f_{series} = \dfrac{1}{2\pi \sqrt{L_sC_s}}\)</p>
+
+<p>Parallel mode:<br />
+Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.<br />
+\(f_{parallel}= \dfrac{1}{2\pi \sqrt{L_s\left(C_s||C_L \right)}}  = \dfrac{1}{2\pi \sqrt{L_sC_s}} \sqrt{1+\dfrac{C_s}{C_L}} = f_{series}\sqrt{1+\dfrac{C_s}{C_L}} \approx f_{series}\left(1+\dfrac{C_s}{2C_L} \right)\)<br />
+<br /></p>
+
+:ET

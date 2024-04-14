@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-14T02:43:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog - 2-Transistor Voltage Reference</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html" rel="alternate" type="text/html" title="Analog - 2-Transistor Voltage Reference" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%202-Transistor%20Voltage%20Reference</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html"><![CDATA[<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-14T16:00:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog - 2-Transistor Voltage Reference</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html" rel="alternate" type="text/html" title="Analog - 2-Transistor Voltage Reference" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%202-Transistor%20Voltage%20Reference</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html"><![CDATA[<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
 아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다.<br />
 <br />
 2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다.<br />
@@ -48,8 +48,84 @@ Body가 무조건 ground에 연결되어야 하기 때문이다.<br />
 <div>
     <img src="/public/img/2tr2.png" style="width: 20%; height: auto;" alt="my picture" />
 </div>
-<p><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다. 아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다. 2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다. Native 또는 Depletion MOSFET을 쓰면 공정시 layer가 하나 더 필요하다. Body가 무조건 ground에 연결되어야 하기 때문이다. 두가지 구조가 있다. 첫번째 구조부터 보면: 위쪽은 native TR이라, \(V_{th}\)가 0보다 약간 작다. 그래서 M1은 항상 켜져있다. \(V_{GS1}\)=0인데 \(V_{th1}\)는 0보다 약간 작으니까. 그리고 2개 트랜지스터에 흐르는 전류는 동일하니까: \(I_{1}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_1}{L_1} \left(-V_{th1} \right)^{2}\) \(I_{2}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_2}{L_2} \left(V_{GS2}-V_{th2} \right)^{2}\) 여기서 \(I_{1}=I_{2}\)으로 놓고 정리하면: \(V_{out} = V_{GS2} = V_{th2} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot V_{th1}\) 우변은 다 트랜지스터 구조에 의해 결정되는 값들이라, 이 구조에서 \(V_{GS2}\)도 하나의 값으로 정해지게 된다. 여기까지는 좋은데, 우린 이걸 BGR로 쓰고싶은거니까 온도가 변해도 전압이 일정하다는걸 확인해야 한다. 온도가 변하면 \(V_{th1}, V_{th2}\)이 변한다. \(\dfrac{\partial V_{out}}{\partial T} = \dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}\) 이 회로가 Voltage Reference로 동작하려면, \(\dfrac{\partial V_{out}}{\partial T}=0\)이 되어야 한다. 즉, \(\dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}=0\)이 0이 되도록 트랜지스터 크기 \(\left(W_{1}, W_{2}, L_{1}, L_{2}\right)\)를 잘 조절해주면 된다. 잘 조절하면 \(\dfrac{\partial V_{out}}{\partial T}=0\)이 된다. 이렇게 만들면 된다. 두번째 구조:]]></summary></entry><entry><title type="html">Analog - Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html" rel="alternate" type="text/html" title="Analog - Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
-Oscillator 종류:<br />
+<p><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다. 아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다. 2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다. Native 또는 Depletion MOSFET을 쓰면 공정시 layer가 하나 더 필요하다. Body가 무조건 ground에 연결되어야 하기 때문이다. 두가지 구조가 있다. 첫번째 구조부터 보면: 위쪽은 native TR이라, \(V_{th}\)가 0보다 약간 작다. 그래서 M1은 항상 켜져있다. \(V_{GS1}\)=0인데 \(V_{th1}\)는 0보다 약간 작으니까. 그리고 2개 트랜지스터에 흐르는 전류는 동일하니까: \(I_{1}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_1}{L_1} \left(-V_{th1} \right)^{2}\) \(I_{2}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_2}{L_2} \left(V_{GS2}-V_{th2} \right)^{2}\) 여기서 \(I_{1}=I_{2}\)으로 놓고 정리하면: \(V_{out} = V_{GS2} = V_{th2} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot V_{th1}\) 우변은 다 트랜지스터 구조에 의해 결정되는 값들이라, 이 구조에서 \(V_{GS2}\)도 하나의 값으로 정해지게 된다. 여기까지는 좋은데, 우린 이걸 BGR로 쓰고싶은거니까 온도가 변해도 전압이 일정하다는걸 확인해야 한다. 온도가 변하면 \(V_{th1}, V_{th2}\)이 변한다. \(\dfrac{\partial V_{out}}{\partial T} = \dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}\) 이 회로가 Voltage Reference로 동작하려면, \(\dfrac{\partial V_{out}}{\partial T}=0\)이 되어야 한다. 즉, \(\dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}=0\)이 0이 되도록 트랜지스터 크기 \(\left(W_{1}, W_{2}, L_{1}, L_{2}\right)\)를 잘 조절해주면 된다. 잘 조절하면 \(\dfrac{\partial V_{out}}{\partial T}=0\)이 된다. 이렇게 만들면 된다. 두번째 구조:]]></summary></entry><entry><title type="html">Analog - Amplifier Class</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Amplifier-class.html" rel="alternate" type="text/html" title="Analog - Amplifier Class" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Amplifier%20class</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Amplifier-class.html"><![CDATA[<p>Amplifier에서는 linearity, signal gain, efficiency, power output 등을 생각해줘야 한다.
+다른 특성을 갖는 amplifier들을 구분하기 위해, amplifier class를 사용한다.</p>
+
+<p>amplifier 분류는:
+High linearity, low efficiency amplifer와
+Low linearity, high efficiency amplifer 사이를 구분해놓은거다.
+그니까 linearity가 높으면 efficiency가 낮다는 뜻이고,
+각 특성을 얼마나 높게 설정했는지에 따라 class가 구분된다.</p>
+
+<p>Amplifier class들은 크게 2가지로 구분될 수 있다.
+A, B, AB, C : Output stage TR들이 완전히 켜짐과 꺼짐의 중간 상태에서 동작한다.</p>
+
+<p>D, E, F, G, S, T 등: Output stage TR들이 switching operation을 해서 껐다 켜진다.
+즉, saturation region 갔다가 cutoff region 갔다가를 반복하며 PWM(Pulse Width Modulation) 동작을 한다.</p>
+
+<p>Class A Amplifier:
+Class A amplifier는 output switching transistor 하나만 있으면 되기 때문에 많이 쓰인다.
+여기 쓰이는 output transistor는 Q-point(operating point)에 bias되어 있어서, cutoff region이나 saturation region으로 날아가버리지 않는다.
+그래서 전압 위상에 관계없이 전류를 잘 출력할 수 있다는 장점이 있다.</p>
+
+<p>단점은, 항상 켜져있어서 전류 소모가 계속 일어난ㄷ는 점이다.</p>
+
+<p>class A amplifier는 gain이 크고, distortion이 적고, linearity가 훌륭하다.
+그래서 high-fidelity audio amplifier 설계에 많이 쓰인다.
+하지만 thermal power supply consideration 때문에 high power에서는 잘 안쓰인다.</p>
+
+<p>class A amplifier는 linear region에서 동작해야 하기 때문에, DC biasing voltage가 잘 인가되어야 한다.
+안그러면 동작이 이상해질 수도 있고, distortion이 생길 수도 있다.</p>
+
+<p>근데, output transistor가 항상 켜져있기 때문에, 항상 전류가 흐르고 있는 상태다.
+그래서 지속적인 열손실이 발생하고, 효율이 30%정도밖에 안된다.
+그래서 high power amplification에서는 이런 구조를 못쓴다. 손실도 많고 뜨거워지니까.</p>
+
+<p>Class B amplifier:
+input signal이 positive일 때는 위쪽 트랜지스터만, negative일 때는 아래쪽 트랜지스터만 켜지는 구조다.
+여기서는 이 구조를 push-pull 구조라고 부른다.</p>
+
+<p>당연히 class A amplifier보다는 효율이 높은 구조지만, 새로운 문제가 또 생긴다.
+입력 전압이 -0.7V~0.7V동안은 위아래 트랜지스터가 둘 다 꺼져서 출력이 안나온다.</p>
+
+<p>이거때문에 zero-crossing distortion(Crossover distortion이라고도 한다)이 생겨서,
+class B amplifier는 audio amplifier같은 곳에 못쓴다.</p>
+
+<p>Class AB amplifier:
+이름에서 보이듯, Class A랑 Class B를 합친 구조다.
+audio power amplifier design에서 많이 쓰이는 구조다.</p>
+
+<p>class B를 조금 변형한 구조인데, crossover point에서 두 트랜지스터가 꺼지지 않고 켜져있는 구조다.</p>
+
+<p>여기 들어가는 트랜지스터들은 걸려있는 bias voltage가 아주 작다. cutoff point보다 아주 조금 높은 전압이다.
+이렇게 되면 트랜지스터가 조금 더 오래 켜져있다. half cycle보다 조금 더 길게 켜져있다.</p>
+
+<p>Class B는 half cycle보다 짧게, Class A는 항상 켜져있으니 그 사이에 있다는 의미로 class AB라 한다.
+하여간, half cycle보다 길게 켜져있기에, crossover distortion이 일어나지 않는다.
+efficiency는 50~60% 정도다.</p>
+
+<p>Class C amplifier:
+Class C amplifer는 효율이 꽤 높지만, linearity가 많이 떨어진다.
+Class A, AB, B는 linear amplifier로 분류되지만, C는 그렇지 못한다.</p>
+
+<p>Class C amplifier는 절반도 훨씬 안되게, 90도 정도만 켜진다.
+그래서 효율은 80%정도 되긴 하는데, 엄청난 distortion이 생긴다.
+Sine wave가 들어오면 머리만 참수해서 내보내는 수준이니까.</p>
+
+<p>그래서, class C amplifier는 high frequency sine wave oscillator나 RF amplifier에 쓰인다.
+고주파에서는 amplifier에 의해 발생한 current가 LC resonance circuit에 의해 특정 주파수의 sine wave로 바뀔 수 있기 때문이다.</p>
+
+<p>class D~T는 switching operation을 한디.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Amplifier에서는 linearity, signal gain, efficiency, power output 등을 생각해줘야 한다. 다른 특성을 갖는 amplifier들을 구분하기 위해, amplifier class를 사용한다.]]></summary></entry><entry><title type="html">Analog - Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html" rel="alternate" type="text/html" title="Analog - Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
+1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다.
+Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다.
+진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.</p>
+
+<p>quartz crystal은 mechanical, chemical stability가 높아 resonance frequency가 정확하고 안정적으로 나온다.</p>
+
+<p>quartz crystal은 elastic hysteresis가 아주 작기 때문에 Q factor가 크다.
+Q factor가 크다는건, 진동할때마다 날려먹는 에너지가 적다는거다.</p>
+
+<p>Oscillator 종류:<br />
 Rc 발진기<br />
 크리스탈 발진기: 그냥 크리스탈<br />
 크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것<br />
@@ -64,15 +140,26 @@ Crystal oscillator는:<br />
 항상 같은 주파수를 만들어야 하기 때문에, PVT variation에 적게 영향받아야 한다.<br />
 오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다.<br />
 <br />
-외부에서 Crystal에 넣어줘야 하는 power:<br />
-P_Extr: extract oscillation frequency and phase<br />
-P_Ener: Inject energy into crystal to compensate loss<br />
-P_Timi: Timing control of energy injection<br />
+Allan Deviation:
+예를 들어 t=1s에 측정한 10MHz clock의 Allan deviation이 10^{-9}였으면,
+t=1s에 오차가 10MHz * 10^{-9} = 10mHz만큼 있다는 뜻이다.</p>
+
+<p>Crystal은 항상 켜져있지만, power 많이 먹는 block들은 원래 꺼뒀다가 필요할때만 켠다.
+근데 crystal의 long term stability가 부족하면, crystal만 믿었다가는 시간 측정 잘못해서 block이 필요할때 꺼져있을 수도 있다.
+그래서, guard band를 넣어서 block을 조금 더 미리 켜줘야 한다. 그만큼 power가 더 나간다.</p>
+
+<p>crystal의 long term stability가 높으면 guard band를 더 좁게 가져가도 될거다. 그러면 power을 아낄 수 있다.
+그래서 Crystal의 long term stability가 부족하면, 결국 chip 전체의 power 소모가 늘어나게 된다.</p>
+
+<p>외부에서 Crystal에 넣어줘야 하는 power:<br />
+\(P_{Extr}\): extract oscillation frequency and phase<br />
+\(P_{Ener}\): Inject energy into crystal to compensate loss<br />
+\(P_{Timi}\): Timing control of energy injection<br />
 <br />
-P_XO = P_Extr + P_Ener + P_Timi<br />
+\(P_{XO} = P_{Extr} + P_{Ener} + P_{Timi}\)<br />
 <br />
 그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다<br />
-P_XO &gt; P_loss<br />
+\(P_{XO} &gt; P_{loss}\)<br />
 <br /></p>
 
 <div style="float: left">
@@ -81,26 +168,76 @@ P_XO &gt; P_loss<br />
 
 <p><br />
 Crystal의 등가회로는 이렇다.<br />
-쓸때는 이렇게 밑에 shunt capacitance를 붙여서 쓴다.<br />
-<br /></p>
+Co는 전극과 패키징에 의한 캐패시턴스를 표현한거고,<br />
+RLC branch (Rs Ls Cs)는 crystal의 mechanical resonance를 표현한거다<br />
+크리스탈을 패키징할때, 패키징이 작은 Crystal일 수록 ESR이 크고 motional inductance가 크다.
+<br />
+Q factor:<br />
+\(Q=2\pi \dfrac{E_{Stored}}{E_{Loss,T}} = 2\pi \dfrac{0.5L_sI^2_{R_s}}{0.5I^2_{R_s}R_sT_{XO}} = \dfrac{\omega_{osc}L_s}{R_s}\)<br /></p>
+
+<p>쓸때는 이렇게 밑에 shunt capacitance를 붙여서 쓴다.<br />
+Cp가 작을때의 장점:
+startup time이 Cp^2에 비례하기 때문에, Cp가 작으면 startup time이 짧다.
+amplitude control loop의 반응 시간이 더 짧다.</p>
+
+<p>Cp가 클 때의 장점:
+RF phase noise가 작다.</p>
+
+<p><br /></p>
 
 <div style="float: left">
     <img src="/public/img/XO2.png" style="width: 50%; height: auto;" alt="my picture" />
 </div>
 
 <p><br />
-당연히, 이렇게만 둔다고 동작하는건 아니다.
-밖에서 에너지를 넣어줘야 진동을 할거다.
-그 역할을 하는 회로를 붙여줘야 한다.</p>
+당연히, 이렇게만 둔다고 동작하는건 아니다.<br />
+밖에서 에너지를 넣어줘야 진동을 할거다.<br />
+그 역할을 하는 회로를 붙여줘야 한다.<br />
+<br />
+Resonance mode가 2개 있는데,<br />
+Parallel mode가 있고 series mode가 있다.<br />
+<br />
+Parallel mode 진동을 할때는 inverter를 붙여주면 되고,<br />
+Series mode 진동을 할때는 buffer를 붙여주면 된다.<br />
+<br />
+\(f_{series} = \dfrac{1}{2\pi \sqrt{L_sC_s}}\)</p>
 
-<p>Resonance mode가 2개 있는데,
-Parallel mode가 있고 series mode가 있다.</p>
+<p>Parallel mode:<br />
+Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.<br />
+\(f_{parallel}= \dfrac{1}{2\pi \sqrt{L_s\left(C_s||C_L \right)}}  = \dfrac{1}{2\pi \sqrt{L_sC_s}} \sqrt{1+\dfrac{C_s}{C_L}} = f_{series}\sqrt{1+\dfrac{C_s}{C_L}} \approx f_{series}\left(1+\dfrac{C_s}{2C_L} \right)\)<br />
+<br /></p>
 
-<p>Parallel mode 진동을 할때는 inverter를 붙여주면 되고,
-Series mode 진동을 할때는 buffer를 붙여주면 된다.</p>
+<p>\(f_{parallel}\)은 C_L에 대한함수라서 외부에 달아주는 C_p를 바꾸면 f_parallel도 바뀐다.<br />
+근데 f_series는 crystal 내부 수치들에 의해서만 결정된다.<br />
+<br />
+이렇게도 표현할 수 있다:<br />
+\(\dfrac{df_{parallel}}{dC_L}  = -f_{series} \dfrac{C_s}{2C^2_L}\)
+이게 좀 중요해질 수도 있는게, SMD(Surface-Mount Device) 캐패시터는 C가 \(\pm1% ~ \pm5%\)정도의 variation을 갖는다.
+이게 몇 Hz정도의 variation인지 알아야 한다면 이 수식을 쓰면 된다.</p>
 
-<p>Parallel mode:
-Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator Oscillator 종류: Rc 발진기 크리스탈 발진기: 그냥 크리스탈 크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것 그냥 전원만 넣으면 클럭이 출력된다 근데, 크리스탈만 있을때 전압출력은 사인파인데 크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다 Crystal oscillator는: 항상 켜져있어야 하는 block이라, power 소비가 적어야 한다. 항상 같은 주파수를 만들어야 하기 때문에, PVT variation에 적게 영향받아야 한다. 오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다. 외부에서 Crystal에 넣어줘야 하는 power: P_Extr: extract oscillation frequency and phase P_Ener: Inject energy into crystal to compensate loss P_Timi: Timing control of energy injection P_XO = P_Extr + P_Ener + P_Timi 그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다 P_XO &gt; P_loss]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
+<p>공진 주파수는 온도의 영향도 받는다. 대부분의 32kHz Crystal들은 XY cut인데, 이 경우 oscillation frequency는 온도에 대한 이차함수가 된다.</p>
+
+<p>\(f_{parallel} = f_o\left(1 - \alpha\left(T-T_o \right)^2 \right)\)
+\(T_o\) : Turnover temperature
+\(f_o\) : Oscillation frequency at \(T_o\)
+\(\alpha\): temperature coefficient</p>
+
+<p>Crystal을 직렬 RLC 하나 + C_o로 간단하게 모델링해놨지만, 사실은 f_{parallel}의 harmonic 주파수에 해당하는 진동들도 존재한다.
+그런 진동들을 ‘overtone mode’라고 부른다.</p>
+
+<p>예를 들어, 32kHz crystal에서는 fundamental frequency의 6배 주파수에 second overtne이 존재한다.</p>
+
+<p>overtone의 영향을 줄이려면, 그 주파수에서의 drive level이나 loop gain이 낮게 나오게 하면 된다.</p>
+
+<p>ESR: Equivalent Series Resistance
+Series resonant frequency에서 crystal이 보여주는 resistance다.
+\(ESR = R_s \left( 1+\dfrac{C_o}{C_p} \right)^2\)
+Cp가 들어간걸 보면 Cp를 달아놓고 잰 것 같긴 한데, 정확히 어떻게 잰건지는 잘 모르겠다.
+어쨌든, 보통 \(C_p&gt;&gt;C_o\)라서 \(ESR \approx R_s\)다.</p>
+
+<p>Drive level은 crystal 내에서 소모된 전력을 말한다.
+$$DL = 2ESR \left( \pi f \left( C_L+C_o \right)V_{pp} \right)^2
+Vpp는 출력의 peak to peak 전압이다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator 1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다. Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다. 진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
 inductive motor들이 주로 load로 쓰인다.</p>
 
 <p>H-bridge에는 External diodes(Free-wheeling diode 또는 flyback diode라고도 불린다)가 들어가지 않을 때도 있다
@@ -472,7 +609,19 @@ BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br />
 \(g_{m4}\), \(g_{m1}\)이 증가해 \(r_{ob}\)가 작아진다.<br />
 그래서 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)는 Load current가 증가하면 더 높은 주파수로 이동하기에,
 항상 Unity Gain Frequency보다 높은 주파수에 있을 수 있다.<br />
-<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry><entry><title type="html">Analog - PLL</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html" rel="alternate" type="text/html" title="Analog - PLL" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20PLL</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html"><![CDATA[<p>PLL : Phase Locked Loops<br />
+<br /></p>
+
+<p>LDO는 디지털 로직들에게 전류를 주면서도 전압을 유지하기 위한 회로니까, 당연히 출력쪽에 전류가 많이 흐른다.
+원래 전류가 많이 흐르는 path가 있을 때에는 layout팀에게 이 path는 저항 얼마 이하로 해달라고 요청한다.</p>
+
+<p>그래서 이번에 layout 수정할때, metal 저항을 줄이기 위해 metal line을 더 두껍게 만들었고, 또 저항이 작은 top metal을 썼다.</p>
+
+<p>LDO는 원래 나가는 path도 저항이 없도록 신경을 써줘야 한다.
+그래서, 출력 pad 바로 옆에 LDO를 놓는 구조가 많다.
+path가 짧아질테니 저항이 줄어든다.</p>
+
+<p>LDO에서 전압이 짧게라도 튀면, 그 짧은 시간동안 device에 stress가 들어간다.
+그래서 튀는 전압은 최대한 줄이는게 좋다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry><entry><title type="html">Analog - PLL</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html" rel="alternate" type="text/html" title="Analog - PLL" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20PLL</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html"><![CDATA[<p>PLL : Phase Locked Loops<br />
 <br />
 <br />
 원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다.
@@ -480,4 +629,11 @@ PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다.
 다른 block들은 그거 보고 동작하기 시작하면 된다.</p>
 
 <p>chip이 켜지면 Analog trimming data 등 정보가 들어있는 Flash memory를 읽는데,
-Flash memory를 PLL이 Lock 되기 전에 읽기도 한다. PLL이 Lock되는 데에는 시간이 좀 걸리니까, 시간 아끼기 위해서다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[PLL : Phase Locked Loops 원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다. PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다. 다른 block들은 그거 보고 동작하기 시작하면 된다.]]></summary></entry><entry><title type="html">Analog - Sigma-Delta ADC</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Sigma-Delta-ADC.html" rel="alternate" type="text/html" title="Analog - Sigma-Delta ADC" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Sigma-Delta%20ADC</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Sigma-Delta-ADC.html"><![CDATA[<p>adf</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[adf]]></summary></entry></feed>
+Flash memory를 PLL이 Lock 되기 전에 읽기도 한다. PLL이 Lock되는 데에는 시간이 좀 걸리니까, 시간 아끼기 위해서다.</p>
+
+<p>PLL은 출력 신호의 phase와 입력 신호의 phase를 비교하는 feedback system이다.
+비교는 PLL 안의 phase detector에서 진행된다.</p>
+
+<p>그니까, 이런 식이다.</p>
+
+<p>이상적인 phase det</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[PLL : Phase Locked Loops 원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다. PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다. 다른 block들은 그거 보고 동작하기 시작하면 된다.]]></summary></entry></feed>

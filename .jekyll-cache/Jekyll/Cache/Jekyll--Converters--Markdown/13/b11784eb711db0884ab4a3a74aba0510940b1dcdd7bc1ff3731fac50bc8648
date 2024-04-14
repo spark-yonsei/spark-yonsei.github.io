@@ -1,0 +1,38 @@
+I"�<p>RTL: Register Transfer Language
+DTL: Diode-Transistor Logic
+TTL: Transistor-Transistor Logic</p>
+
+<p>RTL은 1961년에 fairchild에서 출시됐다.
+RTL의 input parallel register들에서 발생할 수 있는 short current를 방지하기 위해 parallel diode들을 쓴게 DTL이고,
+그걸 다시 BJT로 대체한게 TTL이다.</p>
+
+<p>처음에는 PMOS, 그 다음에는 NMOS processor들이 따로 출시됐는데,
+1975년에 CMOS processor가 나온 뒤로는 모두 CMOS로 processor를 만들게 됐다.</p>
+
+<p>Digital 회로가 CMOS로 구현될 경우, gate capacitance가 drain current에 의해 충전됐다가 방전됐다가 한다.
+gate capacitance의 충전/방전에 의해 보이는 high/low 전압으로 1 또는 0 정보를 표현하게 되고,
+high와 low를 구분하는 전압 기준을 ‘logical threshold’라고 부른다.</p>
+
+<p>그리고 logical threshold와 high/low voltage의 차이를 ‘noise margin’이라 부른다.
+보통 digital 회로들에서 noise margin은 충분히 크기 때문에,
+supply voltage bounce같은 환경 변화에 크게 신경 안써도 된다.
+analog에서는 신경 많이 써야 한다.</p>
+
+<p>digital 회로는 트랜지스터의 on/off characteristic을 이용해 만든거라,
+트랜지스터가 작아지든 새로운 물질로 만들어지든 on/off만 잘 되면 그대로 잘 동작한다.
+그래서 Moore’s law에 의해 트랜지스터가 작아지면 그게 성능 증가랑 직결됐다.</p>
+
+<p>근데, 트랜지스터가 작아져서 커다란 digital system들이 한 IC에 들어가게 되자,
+모든 corner에서 chip이 잘 동작하도록 하는 design verification이 복잡해졌다.</p>
+
+<p>요즘 digital system들은 3D stacking, chiplet같은 상황에서 power consumption을 어떻게 줄여야 할지를 생각해야 한다.</p>
+
+<p>Digital Circuit은 combinational circuit들과 sequential machine들로 이루어진다.</p>
+
+<p>combinational circuit은 memory 없이, logic expression으로만 표현된다.
+뭐 f(a,b,c) = \bar{a}bc + a\bar{b}c 이런 식이다.</p>
+
+<p>Sequential machine은 moore-type 또는 mealy-type state machine으로 구현되며, state-transition diagram으로 표현된다.
+state transition은 보통 clock에 맞춰 발생한다.</p>
+
+:ET

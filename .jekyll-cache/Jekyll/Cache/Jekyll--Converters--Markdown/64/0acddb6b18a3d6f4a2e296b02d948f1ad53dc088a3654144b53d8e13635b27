@@ -1,4 +1,5 @@
-I"�<p>Crystal Oscillator<br />
+I"�
+<p>Crystal Oscillator<br />
 Oscillator 종류:<br />
 Rc 발진기<br />
 크리스탈 발진기: 그냥 크리스탈<br />
@@ -15,14 +16,14 @@ Crystal oscillator는:<br />
 오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다.<br />
 <br />
 외부에서 Crystal에 넣어줘야 하는 power:<br />
-P_Extr: extract oscillation frequency and phase<br />
-P_Ener: Inject energy into crystal to compensate loss<br />
-P_Timi: Timing control of energy injection<br />
+\(P_{Extr}\): extract oscillation frequency and phase<br />
+\(P_{Ener}\): Inject energy into crystal to compensate loss<br />
+\(P_{Timi}\): Timing control of energy injection<br />
 <br />
-P_XO = P_Extr + P_Ener + P_Timi<br />
+\(P_{XO} = P_{Extr} + P_{Ener} + P_{Timi}\)<br />
 <br />
 그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다<br />
-P_XO &gt; P_loss<br />
+\(P_{XO} &gt; P_{loss}\)<br />
 <br /></p>
 
 <div style="float: left">
@@ -31,7 +32,13 @@ P_XO &gt; P_loss<br />
 
 <p><br />
 Crystal의 등가회로는 이렇다.<br />
-쓸때는 이렇게 밑에 shunt capacitance를 붙여서 쓴다.<br />
+Co는 전극과 패키징에 의한 캐패시턴스를 표현한거고,<br />
+RLC branch (Rs Ls Cs)는 crystal의 mechanical resonance를 표현한거다<br />
+<br />
+Q factor:<br />
+\(Q=2\pi \dfrac{E_{Stored}}{E_{Loss,T}} = 2\pi \dfrac{0.5L_sI^2_{R_s}}{0.5I^2_{R_s}R_sT_{XO}} = \dfrac{\omega_{osc}L_s}{R_s}\)<br /></p>
+
+<p>쓸때는 이렇게 밑에 shunt capacitance를 붙여서 쓴다.<br />
 <br /></p>
 
 <div style="float: left">
@@ -50,5 +57,7 @@ Parallel mode가 있고 series mode가 있다.</p>
 Series mode 진동을 할때는 buffer를 붙여주면 된다.</p>
 
 <p>Parallel mode:
-Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.</p>
+Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.
+\(f_{parallel}= \dfrac{1}{2\pi \sqrt{L_s\left(C_s||C_L \right)}}  = \dfrac{1}{2\pi \sqrt{L_sC_s}} \sqrt{1+\dfrac{C_s}{C_L}}\)</p>
+
 :ET

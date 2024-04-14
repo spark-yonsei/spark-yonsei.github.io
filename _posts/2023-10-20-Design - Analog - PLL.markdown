@@ -15,3 +15,11 @@ PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다.
 
 chip이 켜지면 Analog trimming data 등 정보가 들어있는 Flash memory를 읽는데,
 Flash memory를 PLL이 Lock 되기 전에 읽기도 한다. PLL이 Lock되는 데에는 시간이 좀 걸리니까, 시간 아끼기 위해서다.
+
+PLL은 출력 신호의 phase와 입력 신호의 phase를 비교하는 feedback system이다.
+비교는 PLL 안의 phase detector에서 진행된다.
+
+그니까, 이런 식이다.
+
+
+이상적인 phase det
