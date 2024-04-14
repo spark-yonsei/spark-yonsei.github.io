@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Vector Calculus"
+date:   2023-10-24 19:31:29 +0900
+categories: Electromagnetics
+order: 1
+---
+
+Electromagnetics Theory에는 크게 2가지가 있다.<br>
+<br>
+Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다.<br>
+Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다.<br>
+<br>
+Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고,<br>
+그 갯수가 아보가드로 수($$N_A \approx 6.02 \cdot 10^{23}$$) 수준이 되어야 적용할 수 있다.<br>
+<br>
+여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다.<br>
+<br>
+<br>
+전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.
+
+좌표계 변환 - 위치:
+
+좌표계 변환 - 벡터:
+
+Vector와 Vector field의 차이
+
+Gradient가 무엇인가
+
+좌표계별 Gradient:
+
+Curl이 무엇인가
+
+좌표계별 Curl:
+
+
+
+
+<br>
+유럽은 Linguistic notation : Curl $$ \bar{E} $$<br>
+미국은 Gibbs notation : $$ \triangledown  \times \bar{E} $$<br>
+
+
+
+
+
+
+
+
+

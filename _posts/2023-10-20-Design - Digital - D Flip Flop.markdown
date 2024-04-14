@@ -58,4 +58,18 @@ ATPG Tool: Automatic Test Pattern Generation
 flipflop 때문에 순차적으로 입력을 넣어줘야 하는데, 그 순차 입력 게획이 상당히 복잡하다거나 하는 경우다.
 이런 문제를 해결하기 위해 scan test라는게 나왔다.
 
-scan test는 모든
+scan test는 testability를 위해 회로 내부를 바꾼다.
+앞에서 언급한 TE, TI를 써서 바꾸는거다.
+이러면 test pattern generation이 훨씬 쉬워질 수 있다.
+뭐 이런 방법들로 stuck at 0, stuck at 1을 찾아낼 수 있다.
+
+근데 open은 찾아내기가 좀 어렵다.
+삼성전자는 scan test에서 측정하는 factor들 중 leakage current가 있는데,
+아마 이게 open fault 때문인 것으로 보인다.
+
+Fault coverage:
+Logic을 잘 만들면 어디에서 fault가 발생하든 다 잡아낼 수 있다.
+근데, 또 100%잡아낼 수 있게 만들면 logic이 너무 커진다.
+그래서 한 95%정도 잡아낼 수 있게 만들고, 이 수치를 fault coverage라고 부른다.
+이 맥락에서 DFT가 나오면, 그건 Design for Testability다.
+

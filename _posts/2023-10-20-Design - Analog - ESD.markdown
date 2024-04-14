@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Analog - ESD"
+date:   2023-10-04 19:31:29 +0900
+categories: Design
+order: 3
+---
+
+ESD Test: 정전기 시험
+
+진짜 우리가 아는 정전기 얘기다.
+사람은 정전기에 따끔 하면 끝이지만, IC는 정전기 때문에 치명적인 문제가 생길수도 있다.
+
+그래서 ESD Cell로 정전기가 IC에 영향을 주지 못하게 만들고,
+몇가지 ESD Model로 IC를 테스트한다.
+
+ESD = Electrostatic Discharge
+
+ESD Model:
+HBM : Human Body Model
+MM : Machine Model
+CDM : Charged Device Model
+
+HBM은 인체에 의한 정전기, MM은 기계에 의한 정전기, CDM은 공기중 전하에 의한 정전기 모델이다.
+
+ESD 방지 대책으로는 ESD Cell을 만들어서 붙인다.
+

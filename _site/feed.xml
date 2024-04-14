@@ -1,121 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-14T16:00:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog - 2-Transistor Voltage Reference</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html" rel="alternate" type="text/html" title="Analog - 2-Transistor Voltage Reference" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%202-Transistor%20Voltage%20Reference</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-2-Transistor-Voltage-Reference.html"><![CDATA[<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
-아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-15T01:09:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Field Quantities</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Field-Quantities.html" rel="alternate" type="text/html" title="Field Quantities" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics%20-%20Field%20Quantities</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Field-Quantities.html"><![CDATA[<p>전자기학에서는 다양한 field들을 다룬다.<br />
 <br />
-2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다.<br />
+Field Quantities:<br />
+\(\bar{E}\) : Electric field intensity [\(V/m\)]<br />
+\(\bar{H}\) : Magnetic field intensity [\(A/m\)]<br />
+\(\bar{D}\) : Electric flux density [\(C/m^2\)]<br />
+\(\bar{B}\) : Magnetic flux density [\(Wb\)]<br />
+\(\bar{J}\) : Electric current density [\(A/m^2\)]<br />
+\(\rho\) : Electric charge density [\(C/m^3\)]<br />
 <br />
-Native 또는 Depletion MOSFET을 쓰면 공정시 layer가 하나 더 필요하다.<br />
-Body가 무조건 ground에 연결되어야 하기 때문이다.<br />
+\(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다.<br />
 <br />
-두가지 구조가 있다.<br />
-첫번째 구조부터 보면:<br />
-<br /></p>
-<div>
-    <img src="/public/img/2tr1.png" style="width: 15%; height: auto;" alt="my picture" />
-</div>
+이 물리량들은 모두 시간과 공간에 대한 함수다.<br />
+그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다.<br />
+<br />
+이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다.<br />
+\(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고,<br />
+\(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.<br />
+<br />
+<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Signals</title><link href="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html" rel="alternate" type="text/html" title="Signals" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/mathematics/2023/10/24/Mathematics%20-%20Signals</id><content type="html" xml:base="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html"><![CDATA[<p>ㅁㄴㅇㄹ</p>]]></content><author><name></name></author><category term="Mathematics" /><summary type="html"><![CDATA[ㅁㄴㅇㄹ]]></summary></entry><entry><title type="html">Vector Calculus</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Vector-Calculus.html" rel="alternate" type="text/html" title="Vector Calculus" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics%20-%20Vector%20Calculus</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Vector-Calculus.html"><![CDATA[<p>Electromagnetics Theory에는 크게 2가지가 있다.<br />
+<br />
+Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다.<br />
+Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다.<br />
+<br />
+Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고,<br />
+그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다.<br />
+<br />
+여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다.<br />
+<br />
+<br />
+전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.</p>
+
+<p>좌표계 변환 - 위치:</p>
+
+<p>좌표계 변환 - 벡터:</p>
+
+<p>Vector와 Vector field의 차이</p>
+
+<p>Gradient가 무엇인가</p>
+
+<p>좌표계별 Gradient:</p>
+
+<p>Curl이 무엇인가</p>
+
+<p>좌표계별 Curl:</p>
+
 <p><br />
-<br />
-위쪽은 native TR이라, \(V_{th}\)가 0보다 약간 작다.<br />
-그래서 M1은 항상 켜져있다.  \(V_{GS1}\)=0인데 \(V_{th1}\)는 0보다 약간 작으니까.<br />
-<br />
-<br />
-그리고 2개 트랜지스터에 흐르는 전류는 동일하니까:<br />
-\(I_{1}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_1}{L_1} \left(-V_{th1} \right)^{2}\)<br />
-<br />
-\(I_{2}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_2}{L_2} \left(V_{GS2}-V_{th2} \right)^{2}\)<br />
-<br />
-여기서 \(I_{1}=I_{2}\)으로 놓고 정리하면:<br />
-\(V_{out} = V_{GS2} = V_{th2} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot V_{th1}\)<br />
-<br />
-우변은 다 트랜지스터 구조에 의해 결정되는 값들이라, 이 구조에서 \(V_{GS2}\)도 하나의 값으로 정해지게 된다.<br />
-<br />
-여기까지는 좋은데, 우린 이걸 BGR로 쓰고싶은거니까 온도가 변해도 전압이 일정하다는걸 확인해야 한다.<br />
-온도가 변하면 \(V_{th1}, V_{th2}\)이 변한다.<br />
-<br />
-\(\dfrac{\partial V_{out}}{\partial T} = \dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}\)<br />
-<br />
-이 회로가 Voltage Reference로 동작하려면, \(\dfrac{\partial V_{out}}{\partial T}=0\)이 되어야 한다.<br />
-즉, \(\dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}=0\)이 0이 되도록 트랜지스터 크기 \(\left(W_{1}, W_{2}, L_{1}, L_{2}\right)\)를 잘 조절해주면 된다.<br />
-<br />
-잘 조절하면 \(\dfrac{\partial V_{out}}{\partial T}=0\)이 된다.<br />
-이렇게 만들면 된다.<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-두번째 구조:<br />
-<br /></p>
-<div>
-    <img src="/public/img/2tr2.png" style="width: 20%; height: auto;" alt="my picture" />
-</div>
-<p><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다. 아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다. 2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다. Native 또는 Depletion MOSFET을 쓰면 공정시 layer가 하나 더 필요하다. Body가 무조건 ground에 연결되어야 하기 때문이다. 두가지 구조가 있다. 첫번째 구조부터 보면: 위쪽은 native TR이라, \(V_{th}\)가 0보다 약간 작다. 그래서 M1은 항상 켜져있다. \(V_{GS1}\)=0인데 \(V_{th1}\)는 0보다 약간 작으니까. 그리고 2개 트랜지스터에 흐르는 전류는 동일하니까: \(I_{1}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_1}{L_1} \left(-V_{th1} \right)^{2}\) \(I_{2}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_2}{L_2} \left(V_{GS2}-V_{th2} \right)^{2}\) 여기서 \(I_{1}=I_{2}\)으로 놓고 정리하면: \(V_{out} = V_{GS2} = V_{th2} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot V_{th1}\) 우변은 다 트랜지스터 구조에 의해 결정되는 값들이라, 이 구조에서 \(V_{GS2}\)도 하나의 값으로 정해지게 된다. 여기까지는 좋은데, 우린 이걸 BGR로 쓰고싶은거니까 온도가 변해도 전압이 일정하다는걸 확인해야 한다. 온도가 변하면 \(V_{th1}, V_{th2}\)이 변한다. \(\dfrac{\partial V_{out}}{\partial T} = \dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}\) 이 회로가 Voltage Reference로 동작하려면, \(\dfrac{\partial V_{out}}{\partial T}=0\)이 되어야 한다. 즉, \(\dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}=0\)이 0이 되도록 트랜지스터 크기 \(\left(W_{1}, W_{2}, L_{1}, L_{2}\right)\)를 잘 조절해주면 된다. 잘 조절하면 \(\dfrac{\partial V_{out}}{\partial T}=0\)이 된다. 이렇게 만들면 된다. 두번째 구조:]]></summary></entry><entry><title type="html">Analog - Amplifier Class</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Amplifier-class.html" rel="alternate" type="text/html" title="Analog - Amplifier Class" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Amplifier%20class</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Amplifier-class.html"><![CDATA[<p>Amplifier에서는 linearity, signal gain, efficiency, power output 등을 생각해줘야 한다.
-다른 특성을 갖는 amplifier들을 구분하기 위해, amplifier class를 사용한다.</p>
-
-<p>amplifier 분류는:
-High linearity, low efficiency amplifer와
-Low linearity, high efficiency amplifer 사이를 구분해놓은거다.
-그니까 linearity가 높으면 efficiency가 낮다는 뜻이고,
-각 특성을 얼마나 높게 설정했는지에 따라 class가 구분된다.</p>
-
-<p>Amplifier class들은 크게 2가지로 구분될 수 있다.
-A, B, AB, C : Output stage TR들이 완전히 켜짐과 꺼짐의 중간 상태에서 동작한다.</p>
-
-<p>D, E, F, G, S, T 등: Output stage TR들이 switching operation을 해서 껐다 켜진다.
-즉, saturation region 갔다가 cutoff region 갔다가를 반복하며 PWM(Pulse Width Modulation) 동작을 한다.</p>
-
-<p>Class A Amplifier:
-Class A amplifier는 output switching transistor 하나만 있으면 되기 때문에 많이 쓰인다.
-여기 쓰이는 output transistor는 Q-point(operating point)에 bias되어 있어서, cutoff region이나 saturation region으로 날아가버리지 않는다.
-그래서 전압 위상에 관계없이 전류를 잘 출력할 수 있다는 장점이 있다.</p>
-
-<p>단점은, 항상 켜져있어서 전류 소모가 계속 일어난ㄷ는 점이다.</p>
-
-<p>class A amplifier는 gain이 크고, distortion이 적고, linearity가 훌륭하다.
-그래서 high-fidelity audio amplifier 설계에 많이 쓰인다.
-하지만 thermal power supply consideration 때문에 high power에서는 잘 안쓰인다.</p>
-
-<p>class A amplifier는 linear region에서 동작해야 하기 때문에, DC biasing voltage가 잘 인가되어야 한다.
-안그러면 동작이 이상해질 수도 있고, distortion이 생길 수도 있다.</p>
-
-<p>근데, output transistor가 항상 켜져있기 때문에, 항상 전류가 흐르고 있는 상태다.
-그래서 지속적인 열손실이 발생하고, 효율이 30%정도밖에 안된다.
-그래서 high power amplification에서는 이런 구조를 못쓴다. 손실도 많고 뜨거워지니까.</p>
-
-<p>Class B amplifier:
-input signal이 positive일 때는 위쪽 트랜지스터만, negative일 때는 아래쪽 트랜지스터만 켜지는 구조다.
-여기서는 이 구조를 push-pull 구조라고 부른다.</p>
-
-<p>당연히 class A amplifier보다는 효율이 높은 구조지만, 새로운 문제가 또 생긴다.
-입력 전압이 -0.7V~0.7V동안은 위아래 트랜지스터가 둘 다 꺼져서 출력이 안나온다.</p>
-
-<p>이거때문에 zero-crossing distortion(Crossover distortion이라고도 한다)이 생겨서,
-class B amplifier는 audio amplifier같은 곳에 못쓴다.</p>
-
-<p>Class AB amplifier:
-이름에서 보이듯, Class A랑 Class B를 합친 구조다.
-audio power amplifier design에서 많이 쓰이는 구조다.</p>
-
-<p>class B를 조금 변형한 구조인데, crossover point에서 두 트랜지스터가 꺼지지 않고 켜져있는 구조다.</p>
-
-<p>여기 들어가는 트랜지스터들은 걸려있는 bias voltage가 아주 작다. cutoff point보다 아주 조금 높은 전압이다.
-이렇게 되면 트랜지스터가 조금 더 오래 켜져있다. half cycle보다 조금 더 길게 켜져있다.</p>
-
-<p>Class B는 half cycle보다 짧게, Class A는 항상 켜져있으니 그 사이에 있다는 의미로 class AB라 한다.
-하여간, half cycle보다 길게 켜져있기에, crossover distortion이 일어나지 않는다.
-efficiency는 50~60% 정도다.</p>
-
-<p>Class C amplifier:
-Class C amplifer는 효율이 꽤 높지만, linearity가 많이 떨어진다.
-Class A, AB, B는 linear amplifier로 분류되지만, C는 그렇지 못한다.</p>
-
-<p>Class C amplifier는 절반도 훨씬 안되게, 90도 정도만 켜진다.
-그래서 효율은 80%정도 되긴 하는데, 엄청난 distortion이 생긴다.
-Sine wave가 들어오면 머리만 참수해서 내보내는 수준이니까.</p>
-
-<p>그래서, class C amplifier는 high frequency sine wave oscillator나 RF amplifier에 쓰인다.
-고주파에서는 amplifier에 의해 발생한 current가 LC resonance circuit에 의해 특정 주파수의 sine wave로 바뀔 수 있기 때문이다.</p>
-
-<p>class D~T는 switching operation을 한디.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Amplifier에서는 linearity, signal gain, efficiency, power output 등을 생각해줘야 한다. 다른 특성을 갖는 amplifier들을 구분하기 위해, amplifier class를 사용한다.]]></summary></entry><entry><title type="html">Analog - Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html" rel="alternate" type="text/html" title="Analog - Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
+유럽은 Linguistic notation : Curl \(\bar{E}\)<br />
+미국은 Gibbs notation : \(\triangledown  \times \bar{E}\)<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Electromagnetics Theory에는 크게 2가지가 있다. Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다. Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다. Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고, 그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다. 여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다. 전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
 1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다.
 Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다.
 진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.</p>
@@ -237,7 +168,24 @@ Cp가 들어간걸 보면 Cp를 달아놓고 잰 것 같긴 한데, 정확히 �
 
 <p>Drive level은 crystal 내에서 소모된 전력을 말한다.
 $$DL = 2ESR \left( \pi f \left( C_L+C_o \right)V_{pp} \right)^2
-Vpp는 출력의 peak to peak 전압이다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator 1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다. Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다. 진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
+Vpp는 출력의 peak to peak 전압이다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator 1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다. Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다. 진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.]]></summary></entry><entry><title type="html">Analog - ESD</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html" rel="alternate" type="text/html" title="Analog - ESD" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20ESD</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html"><![CDATA[<p>ESD Test: 정전기 시험</p>
+
+<p>진짜 우리가 아는 정전기 얘기다.
+사람은 정전기에 따끔 하면 끝이지만, IC는 정전기 때문에 치명적인 문제가 생길수도 있다.</p>
+
+<p>그래서 ESD Cell로 정전기가 IC에 영향을 주지 못하게 만들고,
+몇가지 ESD Model로 IC를 테스트한다.</p>
+
+<p>ESD = Electrostatic Discharge</p>
+
+<p>ESD Model:
+HBM : Human Body Model
+MM : Machine Model
+CDM : Charged Device Model</p>
+
+<p>HBM은 인체에 의한 정전기, MM은 기계에 의한 정전기, CDM은 공기중 전하에 의한 정전기 모델이다.</p>
+
+<p>ESD 방지 대책으로는 ESD Cell을 만들어서 붙인다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[ESD Test: 정전기 시험]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
 inductive motor들이 주로 load로 쓰인다.</p>
 
 <p>H-bridge에는 External diodes(Free-wheeling diode 또는 flyback diode라고도 불린다)가 들어가지 않을 때도 있다
@@ -621,19 +569,4 @@ BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br />
 path가 짧아질테니 저항이 줄어든다.</p>
 
 <p>LDO에서 전압이 짧게라도 튀면, 그 짧은 시간동안 device에 stress가 들어간다.
-그래서 튀는 전압은 최대한 줄이는게 좋다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry><entry><title type="html">Analog - PLL</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html" rel="alternate" type="text/html" title="Analog - PLL" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20PLL</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-PLL.html"><![CDATA[<p>PLL : Phase Locked Loops<br />
-<br />
-<br />
-원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다.
-PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다.
-다른 block들은 그거 보고 동작하기 시작하면 된다.</p>
-
-<p>chip이 켜지면 Analog trimming data 등 정보가 들어있는 Flash memory를 읽는데,
-Flash memory를 PLL이 Lock 되기 전에 읽기도 한다. PLL이 Lock되는 데에는 시간이 좀 걸리니까, 시간 아끼기 위해서다.</p>
-
-<p>PLL은 출력 신호의 phase와 입력 신호의 phase를 비교하는 feedback system이다.
-비교는 PLL 안의 phase detector에서 진행된다.</p>
-
-<p>그니까, 이런 식이다.</p>
-
-<p>이상적인 phase det</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[PLL : Phase Locked Loops 원래는 주파수 높은 clock을 만들려고 쓰지만, 동작 주파수가 낮은 경우에도 clock의 jitter를 없애기 위해 PLL을 쓰기도 한다. PLL이 Lock되면, PLL block에서 Lock 신호를 high로 올려준다. 다른 block들은 그거 보고 동작하기 시작하면 된다.]]></summary></entry></feed>
+그래서 튀는 전압은 최대한 줄이는게 좋다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry></feed>

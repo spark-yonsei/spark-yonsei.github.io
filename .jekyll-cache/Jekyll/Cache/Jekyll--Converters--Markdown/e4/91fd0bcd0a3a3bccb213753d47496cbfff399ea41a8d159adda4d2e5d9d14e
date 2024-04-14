@@ -1,0 +1,37 @@
+I"�<p>Electromagnetics Theory에는 크게 2가지가 있다.<br />
+<br />
+Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다.<br />
+Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다.<br />
+<br />
+Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고,<br />
+그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다.<br />
+<br />
+여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다.<br />
+<br />
+<br />
+전자기학에서는 다양한 field들을 다룬다.<br />
+<br />
+Field Quantities:<br />
+\(\bar{E}\) : Electric field intensity [\(V/m\)]<br />
+\(\bar{H}\) : Magnetic field intensity [\(A/m\)]<br />
+\(\bar{D}\) : Electric flux density [\(C/m^2\)]<br />
+\(\bar{B}\) : Magnetic flux density [\(Wb\)]<br />
+\(\bar{J}\) : Electric current density [\(A/m^2\)]<br />
+\(\rho\) : Electric charge density [\(C/m^3\)]<br />
+<br />
+\(\bar{E}\)는 Electric field, \(\bar{H}\) : Magnetic field라고 자주 부르지만, 엄밀한 명칭은 intensity까지 붙인 것이다.<br />
+<br />
+이 물리량들은 모두 시간과 공간에 대한 함수다.<br />
+즉 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다.<br />
+<br />
+이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다.<br />
+\(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고,<br />
+\(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.<br />
+<br />
+<br /></p>
+
+<p><br />
+유럽은 Linguistic notation : Curl \(\bar{E}\)<br />
+미국은 Gibbs notation : \(\triangledown  \times \bar{E}\)<br /></p>
+
+:ET
