@@ -19,11 +19,7 @@ NMOS를 쓰면 follower configuration이 된다.<br>
 근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다.<br>
 그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다.<br>
 <br>
-
-<div style="float: left">
-    <img src="/public/img/LDOamp1.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
+![alt text](/public/img/LDOamp1.png)<br>
 <br>
 Low Voltage Operation이 중요할때는 PMOS를 쓴다.<br>
 PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain이든 모두 $$g_m r_{ds}$$다.<br>
@@ -35,33 +31,21 @@ PMOS에 쓰이는 amp는 power line의 ripple을 그대로 출력에 전달해�
 <br>
 Ripple을 그대로 전달하는 구조:<br>
 <br>
-
-<div style="float: left">
-    <img src="/public/img/LDOamp2.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
+![alt text](/public/img/LDOamp2.png)<br>
 <br>
 이게 왜 ripple을 그대로 전달하는 구조인가?<br>
 그건 이 모델의 small signal model을 봐야 한다.<br>
 아니면 이렇게 만들어도 된다.<br>
 
 <br>
-
-<div style="float: left">
-    <img src="/public/img/LDOamp3.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
+![alt text](/public/img/LDOamp3.png)<br>
 <br>
 
 <br>
 아니면 이렇게 만들어도 된다.<br>
 
 <br>
-
-<div style="float: left">
-    <img src="/public/img/LDOamp4.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
+![alt text](/public/img/LDOamp4.png)<br>
 <br>
 
 

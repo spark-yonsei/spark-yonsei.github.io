@@ -7,10 +7,10 @@ order: 6
 ---
 
 
-💡Serial Communication Protocols(UART,I2C,SPI)📍📝
+Serial Communication Protocol에는 UART, I2C, SPI가 있다.
 
-🔰 1. UART (Universal Asynchronous Receiver-Transmitter):
-  ✔ UART is an asynchronous serial communication protocol commonly used for short-distance communication between devices.
+UART (Universal Asynchronous Receiver-Transmitter):
+UART는 device간 단거리 통신에 쓰이는 asynchronous serial communication protocol이다.
  ✔ It uses two wires, one for transmitting data (TX) and another for receiving data (RX).
   ✔ UART does not have a clock signal, so the data is transmitted asynchronously using start and stop bits to mark the beginning and end of each data frame.
   ✔ It is a straightforward and simple protocol, commonly used in applications like serial communication between a microcontroller and a computer, GPS modules, and Bluetooth modules.
@@ -31,4 +31,5 @@ communication between microcontrollers and peripheral devices, such as sensors, 
  ✔ I2C is a slower protocol compared to UART and SPI, but it requires fewer wires and is commonly used in applications where simplicity and low pin count are important, such as sensors, EEPROM memory chips, and real-time clocks.
 
 
-P.S: Repost this info & follow Vinay Varikooti for more knowledge.
+
+I3C?

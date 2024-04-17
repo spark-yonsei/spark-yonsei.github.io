@@ -1,0 +1,11 @@
+I"Y<p>LDO : Low Dropout Regulators<br />
+<br />
+<br />
+IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
+OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만,<br />
+<br />
+저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다.<br />
+그래서, 이때는 LDO라는 회로를 써줘야 한다.<br />
+<br />
+<img src="/public/img/LDO1.png" alt="alt text" /><br /></p>
+:ET

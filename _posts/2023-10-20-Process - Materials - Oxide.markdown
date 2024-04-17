@@ -6,4 +6,4 @@ categories: Process
 order: 13
 ---
 
-asfd
+nitride를 끼우면 유전율은 증가하지만 metal이랑 junction이 안좋아진다?

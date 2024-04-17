@@ -1,0 +1,271 @@
+I"�2<p>반도체를 왜 쓰는건가? 스위치를 만들려고. 옛날에는 진공관을 썼는데, 이게 트랜지스터로 대체된거다. 크기도 작고 효율도 좋고 쉽게 깨지지도 않으니까</p>
+
+<p>BJT에서 CMOS로 변하기도 했었다. 이건 기억이 안나네 왜더라</p>
+
+<p>원래 반도체는 Ge를 썼다.<br />
+근데 왜 Si로 넘어갔나? 녹는점 높아서, 더 구하기 쉬워서.<br />
+<br />
+근데 고성능 반도체 소자가 필요해지면서, 다른 반도체 물질을 사용하는 경우가 많이 생겼다.</p>
+
+<p>왜 고성능 반도체 소자가 필요해졌나?
+통신 시스템의 요구 조건이 높아졌다.</p>
+
+<p>더 많은 channel -&gt; device당 더 많은 전력 필요 -&gt; linearity가 줄어든다
+symbol constellation이 더 복잡해짐 -&gt; symbol 사이 거리가 줄어든다 -&gt; linearity가 더 중요해진다</p>
+
+<p>무슨 말이냐면, 일단 더 많은 정보를 보낼수록 더 확실한 linearity가 필요하다는거다.
+더 많은 정보를 보낸다는건 constellation들이 더 빽빽하게 모여있다는거라,
+linearity가 충분히 확보돼야 얘네가 안겹친다. linearity가 부족하면 겹친다.</p>
+
+<p>근데, 더 많은 정보를 보낸다는건 device들이 개당 더 많은 에너지를 먹는다는 뜻이다.
+그러면 device의 linearity가 떨어진다.</p>
+
+<p>그래서 채널이 늘어나고 통신량이 늘어나자, device들의 linearity가 문제가 되게 되었다.</p>
+
+<p>Shannon’s Capacity Equation:
+C = BW * log2(SNR)</p>
+
+<p>그래서 여러가지 재료들이 연구되게 되었다.
+그 중 GaN이 대표적이다.</p>
+
+<p>GaN은 Si보다 큰 Bandgap을 가진다.
+따라서 더 강한 전기장을 만들 수 있다.</p>
+
+<p>GaN은 Si보다 큰 Saturation velocity, high charge capability를 가진다.
+따라서 더 큰 전류를 만들 수 있다.</p>
+
+<p>그리고, 더 강한 전기장과 더 큰 전류는 더 높은 power density를 가능하게 한다.
+power density가 높아지면, 더 작은 device로도 같은 power를 운용할 수 있다.</p>
+
+<p>device가 작으면 뭐가 좋은가?
+capacitance가 더 작아지고, insertion loss가 줄어든다.</p>
+
+<p>capacitance가 작아지면 device의 BW가 더 넓어진다.
+또한, capacitance가 작아지면 insertion loss도 감소한다. 그 결과 efficiency가 개선된다.</p>
+
+<p>GaN의 커다란 Bandgap은 강한 전기장을 만드는데에 쓰일 수 있었지만, 동시에 단점의 원인이 되기도 한다.
+GaN은 bandgap이 크다보니 strong ionic bond를 갖는다.
+그래서 chemical etch가 어려워 physical etch를 해야 한다.
+그래서 stop layer etch가 없고, 그렇기에 GaN에서는 좋은 HBT를 만들 수가 없다.
+그리고, ionic bond가 강하다보니 doping도 잘 안된다.</p>
+
+<p>근데, HBT를 쓸 수 있느냐가 사실 엄청 중요하다.
+HBT는 FET보다 효율적이고 linear한 device라 그렇다.</p>
+
+<p>왜 HBT가 FET보다 더 효율적이고 linear한가?
+HBT: Vertical current, FET: Horizontal Current
+그 결과, HBT가 더 작은 Ron을 갖는다.</p>
+
+<p>Ron이 작으면 RF efficiency가 더 좋아지고,
+전류를 미분해보면 HBT의 beta가 FET의 gm보다 더 linear하다.</p>
+
+<p>이 좋은 HBT를 GaN에서는 만들 수 없기에,
+HBT를 만들 수 있는 GaAs가 GaN보다 더 많이 쓰이고 있다.</p>
+
+<p><br />
+<br />
+<img src="/public/img/material1.png" alt="alt text" /><br />
+Common semiconductor material characteristics. [1]<br />
+<br /></p>
+
+<p>Si:
+MOS
+싼 가격, 낮은 주파수
+디지털 시스템과 함께 찍어낼 수 있어, Fabrication 비용이 낮다</p>
+
+<p>SiGe:
+HBT
+싼 가격, 낮은 소비전력
+SiGe MMIC는 Si기판 위에 만들 수 있기에, 기존 Si공정에 단계만 추가하면 된다.
+그래서 생산 효율이 높아 가격이 싸다는 장점이 있다.</p>
+
+<p>SiC:</p>
+
+<p>GaAs:
+MESFET, HEMT, HBT
+싼 가격, 고주파</p>
+
+<p>GaN:
+MODFET, HEMT
+고밀도 전력
+Bandgap이 가장 크다.
+GaN MMIC는 전자 이동도는 낮지만 고전압 동작이 가능하고, 높은 전력 밀도를 만들 수 있다.
+GaN은 열 전도도가 Si보다 3배, GaAs보다 7배정도 높아 냉각이 쉽다.
+Si에서는 radiation을 막으려면 특별한 fabrication 방식, 특별한 packaging 방식이 필요하다.
+GaN은 선천적으로 radiation tolerant하다.
+그래서 space application에 아주 적합하다.</p>
+
+<p>GaN 기반 power device들은 Si 기반 power device들보다 훨씬 성능이 좋다.
+high conductivity 덕분에 higher breakdown strength, faster switching speed, higher thermal conductivity and lower on-resistance 덕분이다
+GaN은 다양한 substrate들 위에 만들어질 수 있다.
+사파이어, SiC, Si 등.
+Si 위에 GaN Epi layer를 만들 경우, 기존 Si 생산시설을 활용할 수 있다. 따라서 더 경제적이다.</p>
+
+<p>InP:
+HBT, HEMT
+고속, 초고주파
+InP MMIC는 GaAs MMIC보다 제작 비용이 비싸지만, 주파수 특성이 고주파에 적합하다.</p>
+
+<p><img src="/public/img/material2.png" alt="alt text" /><br />
+Comparison of millimeter-wave technology options.<br />
+<br />
+<img src="/public/img/material4.png" alt="alt text" /><br />
+HBT vs FET.<br />
+<br />
+[1] SiGe and CMOS Technology for State-of-the-Art Millimeter-Wave Transceivers<br />
+[3] Comparing GaAs and GaN technologies for RF, J. L. Jimenez</p>
+
+<p><br />
+<br /></p>
+
+<p>원래 100GHz 위에서는 InP가 자주 보였는데, 요즘은 다른 technology들도 보인다.
+InP devices : HBT, HEMT</p>
+
+<p>GaN, GaAs: power를 더 크게 낼 수 있고, linearity가 비교적 좋다, noise가 적다</p>
+
+<p>mHEMT(metamorphic HEMT)를 쓴 GaAs LNA(Low Noise Amplifier) 예시도 있다.</p>
+
+<p>그래도, FDSOI, SOI 등으로 RF performance 개선하려고 노력하긴 한다.</p>
+
+<p>FDSOI: Fully Depleted Silicon On Insulator</p>
+
+<p>EPC라는 회사 사이트:</p>
+
+<p>GaN은 반도체 power device, RF components, LED 등에 쓰인다.</p>
+
+<p>HEMT(High Electron Mobility Transistors)는,
+서로 다른 bandgap을 갖는 2가지 물질의 junction에서 발생하는 2DEG(2-Dimensional Electron Gas)를 이용한 소자다.</p>
+
+<p>GaN based HEMT는 Si 기반 소자들보다 빠른 switching speed, 높은 열전도율, 낮은 on-resistance를 갖는다.</p>
+
+<p>그래서, GaN transistor, GaN IC를 power conversion system 내 회로에 사용해 efficiency를 늘리고, 크기를 줄이고, 가격을 줄일 수 있다.</p>
+
+<p>GaN은 Si보다 천배 효율적으로 전자를 conduct할 수 있다.</p>
+
+<p>GaN 공정은 Si보다 근본적으로 저렴하다.
+각 소자가 Si 소자보다 훨씬 작기 때문에, 각 웨이퍼마다 소자가 더 많이 생산될 수 있다.</p>
+
+<p>그래서 GaN이 high-efficiency power transistor에 많이 쓰이게 됐는데, 이게 어떻게 동작하나?</p>
+
+<p>2DEG 생성:
+GaN 결정 위에 얇은 AlGaN층을 만든다.
+interface에 strain이 발생하고, 그걸 compensate하기 위해 2DEG가 생긴다.
+전기장이 걸리면, 2DEG를 통해 전류가 원활히 흐른다.</p>
+
+<p>Efficient conduction:
+2DEG는 전자를 interface의 아주 좁은 영역에 가둬놓고 전류가 흐르게 한다. 이렇게 가둬놓기 때문에 전자의 mobility가 올라간다.
+unstrained GaN에서는 1000cm2/Vs, 2DEG 영역에서는 1500~2000cm2/Vs</p>
+
+<p>GaN이 새로운 application을 가능하게 하는가?:
+GaN-on-Si 트랜지스터는 MOSFET보다 10배, IGBT보다 100배 빠르게 switching을 한다.</p>
+
+<p>이렇게 GaN이 빠른 동작을 할 수 있었기 때문에,
+4G/LTE base station에서 RF envelope tracking을 위해,
+LiDAR에서 자율주행을 위해 쓰이게 됐다.
+빠른 동작이 필요한 분야다.</p>
+
+<p>GaN 트랜지스터들은 빠를 뿐 아니라 크기도 작았다.
+그래서 로보틱스, 의료전자, 인공위성, 드론 등에도 쓰인다.</p>
+
+<p>GaN device는 같은 전압에서, 단위면적당 on-resistance가 Si, SiC device보다 훨씬 낮다. -&gt; smaller die, smaller packaging 가능</p>
+
+<p>fast switching -&gt; passive component들의 크기 감소 가능
+그러면 또 size, weight 감소 가능</p>
+
+<p>GaN은 power level device와 signal level device를 같은 웨이퍼에 만들 수 있다는 장점이 있다. 그니까, same substrate</p>
+
+<p>discrete device들은 점점 높은 power density로 동작하는데,
+원래 얘네는 전류를 외부와 연결된 bump를 통해 끌어와야 한다.
+근데 점점 power density가 높아지면 이게 어려워질 수 있다.</p>
+
+<p>그래서, 한번에 integrated된 solution으로 GaN 소자들이 쓰일 수 있다.
+-&gt; monolithic integration</p>
+
+<p>GaN 트랜지스터는 크기가 작아서 PCB 면적을 줄일 수 있다. 가격 절감</p>
+
+<p>chip scale packaging을 하면 power transistor의 저항, 인덕턴스, 크기, 열저항, 가격을 줄일 수 있다.</p>
+
+<p>package 때문에 인덕턴스가 생길 경우, power transistor들이 더 느리게 켜지고 꺼지게 된다.</p>
+
+<p>thermal resistance도 작다.
+eliminating all barriers between the active device and the ambient environment gives heat the most direct path to the outside world.</p>
+
+<p>eGaN?</p>
+
+<p>GaN과 SiC 모두 wide bandgap semiconductor solution이다.
+high voltage, high frequency에서 동작 가능하다.</p>
+
+<p>SiC는 900V 이상 전압에 적합하고,
+GaN-on-Si는 700V 이하에 적합하다.</p>
+
+<p>격전지는 700V~900V다.
+여기가 전기차용 전자장치들이 쓰이는 영역인데,
+GaN, SiC, Si IGBT들이 싸운다.</p>
+
+<p>GaN 시장은 점점 커질 것으로 전망된다.
+fast charger, class-D audio, power bank, ToF센서 등.
+이런 application들에서 ToF는 더 우수한</p>
+
+<p>신재생에너지가 많이 쓰이게 되면서, Solar microinverts, optimizers, ESS 제조사들은 점점 GaN을 쓰고 있다.
+높은 효율, 높은 전력밀도, 개선된 reliability.</p>
+
+<p>원래 datacenter에서는:
+backplane에서 48V를 받고, 그걸 12V로 바꿔서 processing board에 주고, 그걸 다시 1V정도로 바꿔서 digital chip들에게 줬다.
+근데 GaN을 쓰면 switching speed가 더 빨라서  48V를 바로 1V로 바꿀 수 있다.
+아마 DC DC converter 원리인듯?</p>
+
+<p>LiDAR에서, 레이저가 더 빠르게 발사될수록 liDAR의 resolution이 올라갈 수 있다.
+GaN소자를 쓰면 Si소자보다 더 빠르게 레이저를 발사할 수 있다.</p>
+
+<p>GaN은 medical application에 많이 쓰인다.
+무선 전력 전송으로 몸 안의 장비를 충전해야 하는 경우가 있다. 여기에 GaN이 쓰인다.</p>
+
+<p>heart pump, pain scintillators 등.
+wire로 충전하면 몸에 구멍을 내야 하니 안좋다. 감염 위험도 있다.</p>
+
+<p>MRI에서도 더 높은 해상도를 얻기 위해 GaN을 쓴다. 10~100배 높은 해상도를 얻을 수 있다.</p>
+
+<p>Si MOSFET에서 높은 전력밀도를 쓰려면 비싼 냉각시스템을 써야 했다.</p>
+
+<p>GaN은 microinverter나, 분리된 MPPT/optimizer에 적합하다.</p>
+
+<p>ESS:
+GaN을 쓰면 더 작고 더 낮은 전압을 쓰는 소자를 쓸 수 있다.
+이러면 dV/dt가 줄어들고, equivalent output frequency가 늘어나고,
+결과적으로 더 높은 효율과 밀도를 제공하고
+열 발생을 낮춰 cooling 부담을 덜고 소자들에 들어가는 stress를 줄여 lifetime을 늘린다.</p>
+
+<p>GaN FET, IC들은 극히 작은 pulse width를 갖는 high-current pulse를 만들 수 있다.
+그 덕분에 해상도가 높아지고, 측정가능거리가 길어질 수 있다.</p>
+
+<p>https://epc-co.com/epc/about-epc/gan-talk-blog/post/17602/egan-vs-silicon
+https://epc-co.com/epc/design-support/application-notes/an003-using-enhancement-mode
+https://www.electronicdesign.com/technologies/power/article/21807592/the-great-semi-debate-sic-or-gan</p>
+
+<p>Hot carrier injection:
+MOS thermal reliability 저해
+이렇게 되면 Vds가 클 경우 gm, Vt가 degrade된다.</p>
+
+<p>Silicon substrate를 쓸 때, 어떻게 ground reference를 만들 것인가?
+III-V에서는 off-chip ground plane을 자주 쓴다. multi-MMIC design에서도 그렇다.
+multi-MMIC에서는 1개 metallization layer가 모든 ground node들을 연결한다.</p>
+
+<p>Silicon에서는 on-chip metal layer로 ground plane을 만들어야 한다.</p>
+
+<p>ETRI GaN,GaAsMMIC개발 및 전망:</p>
+
+<p>MMIC 기술은 RF부품을 설계하고 제작하는 기술이다</p>
+
+<p>옛날 RF시스템은 hybrid 형태였는데,
+1980년대부터 hybrid 회로(HMIC)들이 MMIC로 대체되기 시작했다.</p>
+
+<p>여러 기능의 회로들을 한 칩 위에 집적해 소형화, 경량화, 원가 절감이 가능해졌다.</p>
+
+<p>하지만 MMIC는 HMIC와 달리 한번 제작 후에는 튜닝이 불가능하다.
+그리고 소자들 사이 간격이 좁아 crosstalk, coupling 등 parasitic effect가 HMIC보다 크다.</p>
+
+<p>더 ideal한 스위치를 만들기 위함이다.</p>
+
+<p>여기서 ideal switch:
+무한히 빠른 switching speed, 전기저항 0, 가격 0</p>
+:ET

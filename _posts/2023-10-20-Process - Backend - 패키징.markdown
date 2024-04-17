@@ -107,3 +107,7 @@ EMC는 반도체를 보호하고 열을 잘 방출하고, 이 방식은 가격�
 AVP? Advanced Packaging?
 
 원래 Silicon Wafer의 두께는 600um~900um인데, 패키징할때 백그라인딩이라 해서 두께 100um 수준까지 갈아놓는다. 근데 너무 얇아지면 기계적 stress로 인해 휘어지다가 전기적 특성이 바뀔 수 있다. 그래서 너무 깎아버리면 안된다.<br>
+
+chip scale packaging을 하면 power transistor의 저항, 인덕턴스, 크기, 열저항, 가격을 줄일 수 있다.
+
+package 때문에 인덕턴스가 생길 경우, power transistor들이 더 느리게 켜지고 꺼지게 된다.

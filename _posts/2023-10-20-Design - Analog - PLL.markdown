@@ -21,5 +21,26 @@ PLL은 출력 신호의 phase와 입력 신호의 phase를 비교하는 feedback
 
 그니까, 이런 식이다.
 
+*그냥, XOR gate를 phase detector로 사용할 수 있다
+이상적인 phase detector면 출력 전압의 시간 평균과 phase 차이가 비례하며, phase 차이가 0이면 출력 전압의 시간 평균도 0이다.
 
-이상적인 phase det
+
+
+생각해보면, PD가 XOR gate랑 상당히 비슷하다는 것을 알 수 있다.
+
+그래서 PD는 그렇다 치고, PLL은 뭔가?
+
+우리가 VCO를 동작시키고 있는데, VCO의 출력파형의 phase가 reference clock의 phase랑 딱 맞았으면 좋겠을 경우, 어떻게 해야 할까?
+
+VCO에 넣는 전압을 잠시 바꿨다가 원래대로 돌려놓으면 된다.
+전압이 바뀌면 출력 파형의 주파수가 변하니까, 이걸로 phase 맞춰놓고 다시 전압 복구해서 원래 주파수로 돌려놓으면 된다.
+
+
+
+PLL 안에 loop filter가 있어서, 나중에 lock이 안풀리는 문제가 있었던 적이 있다.
+
+PLL에서 왜 lock detection을 하나? 처음에는 PLL 주파수랑 external 주파수랑 좀 다르니까.
+주파수가 같아지면 그때 PLL clock으로 바꿔준다. 그게 external과 lock이 된 상태다.
+
+PLL을 왜 쓰냐? 여기서는 피에조센서에 쓸 PWM이 필요하다보니 clock boosting이 필요해서 썼다.
+

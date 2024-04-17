@@ -23,15 +23,14 @@ Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할
 <br>
 좌표계 변환 - 벡터:<br>
 <br>
-
-<div style="float: left">
-    <img src="/public/img/EM1.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
+![alt text](/public/img/EM1.png)<br>
 <br>
 Vector와 Vector field의 차이<br>
 <br>
 Gradient가 무엇인가<br>
+
+Gradient는 어떤 Scalar Field의 
+
 <br>
 좌표계별 Gradient:<br>
 <br>
@@ -48,8 +47,16 @@ Curl이 무엇인가<br>
 
 
 
-
-
+<br>
+Stokes' Theorem:<br>
+$$\oint_{c}\bar{F}\cdot d\bar{l}=\iint_{S}\triangledown \times \bar{F}\cdot \hat{n}dS$$<br>
+<br>
+Divergence Theorem:<br>
+$$\oiint_{S}\bar{F}\cdot \hat{n}dS=\iiint_{V}\triangledown \cdot \bar{F}dV$$<br>
+<br>
+Div, Curl을 Gibbs notation으로 적을 때는 각각 $$\triangledown \cdot $$, $$\triangledown \times $$라고 적는다.<br>
+이때, $$\triangledown \times \bar{F}$$를 $$\triangledown$$와 $$\bar{F}$$를 cross product하는 거라고 해석하는건 일반적으로 틀린 해석이다.<br>
+그런 해석은 Cartesian coordinates에서만 맞는 이야기다. 일반적으로, $$\triangledown \cdot $$와 $$\triangledown \times $$는 그냥 그 자체로 하나로 봐야 한다.<br>
 
 
 

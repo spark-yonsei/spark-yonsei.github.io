@@ -36,7 +36,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Design">
 				<span class="name">Design</span>
-				<span class="badge">18</span>
+				<span class="badge">20</span>
 	    	</a>
  		</li>
 	    
@@ -57,7 +57,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Process">
 				<span class="name">Process</span>
-				<span class="badge">15</span>
+				<span class="badge">17</span>
 	    	</a>
  		</li>
 	    
@@ -104,10 +104,8 @@ OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드�
 <br />
 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다.<br />
 그래서, 이때는 LDO라는 회로를 써줘야 한다.<br />
-<br /></p>
-<div style="float: left">
-    <img src="/public/img/LDO1.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
+<br />
+<img src="/public/img/LDO1.png" alt="alt text" /><br /></p>
 
 <p>PMOS를 써서 만들면 Common Source 구조가 되고,<br />
 NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
@@ -119,9 +117,7 @@ Stability:<br />
 그럼 frequency response를 어떻게 확인할 것인가?<br />
 Loop Gain을 본다.<br /></p>
 
-<div style="float: left">
-    <img src="/public/img/LDO2.png" style="width: 40%; height: auto;" alt="my picture" />
-</div>
+<p><img src="/public/img/LDO2.png" alt="alt text" /><br /></p>
 
 <p>LDO 만들때는:<br />
 Low dropout voltage,<br />
@@ -141,11 +137,9 @@ C_load에 직렬로 ESR(Equivalent Series Resistor)를 붙여서 만들 수 있�
 근데, 이 방식은 mismatch때문에 pole zero 위치가 움직이면 큰 문제가 생길 수도 있다.<br />
 그리고 current load가 크게, 순식간에 변할 경우, Cout이 작으면 급격하게 변하는 전류가 저항에 흐를 수 있다.<br />
 이럴 경우, 전압이 크게 흔들린다.<br />
-<br /></p>
-<div style="float: left">
-    <img src="/public/img/LDO3.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-<p><br />
+<br />
+<img src="/public/img/LDO3.png" alt="alt text" /><br />
+<br />
 \(p_0 = \dfrac{1}{R_{out}C_{load}}\)<br />
 \(p_1 = \dfrac{1}{r_{oea}C_b}\)<br />
 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)<br />
@@ -154,9 +148,7 @@ C_load에 직렬로 ESR(Equivalent Series Resistor)를 붙여서 만들 수 있�
 <br />
 일단 이렇게 생긴 source follower를 buffer로 쓴다고 해보자.</p>
 
-<div style="float: left">
-    <img src="/public/img/LDO4.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
+<p><img src="/public/img/LDO4.png" alt="alt text" /><br /></p>
 
 <p>Source follower를 buffer로 쓰면 이런 상황이 된다.<br />
 이때 \(C_b\), \(r_{ob}\)가 최대한 작은 값을 갖게 해야 한다.<br />
@@ -176,9 +168,7 @@ buffer의 small signal model을 생각해보면, \(r_{ob}=\dfrac{1}{g_{m1}}\)이
 source follower with negative feedback을 쓰는 방법이 있다.<br />
 BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br /></p>
 
-<div style="float: left">
-    <img src="/public/img/LDO5.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
+<p><img src="/public/img/LDO5.png" alt="alt text" /><br /></p>
 
 <p>buffer 입장에서 출력 전압 노드인, \(M_p\)의 gate 전압이 증가한 경우를 생각해보면:<br />
 \(M_1\)의 Vds가 증가했으니, channel length modulation에 의해 \(M_1\)의 Ids가 증가한다.<br />

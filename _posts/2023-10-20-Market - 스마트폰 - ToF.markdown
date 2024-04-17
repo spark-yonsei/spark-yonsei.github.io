@@ -65,3 +65,4 @@ dToF는 아이폰 외에도 형체만 인식하는 곳들에 쓰인다.<br>
 <br>
 dToF는 스마트폰 외 제품군에도 적용된다.<br>
 라이다의 핵심 원리가 dToF다.<br>
+dToF는 time difference, iToF는 phase difference

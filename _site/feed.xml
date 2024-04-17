@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-15T01:09:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Field Quantities</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Field-Quantities.html" rel="alternate" type="text/html" title="Field Quantities" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics%20-%20Field%20Quantities</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Field-Quantities.html"><![CDATA[<p>전자기학에서는 다양한 field들을 다룬다.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-18T01:03:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Field Quantities</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Field-Quantities.html" rel="alternate" type="text/html" title="Field Quantities" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics%20-%20Field%20Quantities</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Field-Quantities.html"><![CDATA[<p>전자기학에서는 다양한 field들을 다룬다.<br />
 <br />
 Field Quantities:<br />
 \(\bar{E}\) : Electric field intensity [\(V/m\)]<br />
@@ -17,7 +17,44 @@ Field Quantities:<br />
 \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고,<br />
 \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.<br />
 <br />
-<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Signals</title><link href="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html" rel="alternate" type="text/html" title="Signals" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/mathematics/2023/10/24/Mathematics%20-%20Signals</id><content type="html" xml:base="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html"><![CDATA[<p>ㅁㄴㅇㄹ</p>]]></content><author><name></name></author><category term="Mathematics" /><summary type="html"><![CDATA[ㅁㄴㅇㄹ]]></summary></entry><entry><title type="html">Vector Calculus</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Vector-Calculus.html" rel="alternate" type="text/html" title="Vector Calculus" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics%20-%20Vector%20Calculus</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Vector-Calculus.html"><![CDATA[<p>Electromagnetics Theory에는 크게 2가지가 있다.<br />
+<br /></p>
+
+<p>Faraday’s Law:<br />
+어떤 closed contour c에 대해,
+<br /></p>
+
+<p><img src="/public/img/EM2.png" alt="alt text" /><br /></p>
+
+<p><br />
+이때 S는 평면일 필요는 없고, Boundary가 폐곡선 c인 임의의 곡면이면 된다.<br />
+<br />
+\(\oint_{c}^{}\bar{E}\cdot d\bar{l}\)을 계산할 때는?<br />
+\(\bar{E}\)랑 각 \(d\bar{l}\)들 dot product해서 더한게 \(\oint_{c}^{}\bar{E}\cdot d\bar{l}\)다.<br />
+\(\bar{E}\)의 단위가 [V/m], \(d\bar{l}\)의 단위가 [m]이라 \(\oint_{c}^{}\bar{E}\cdot d\bar{l}\)의 단위는 [V]다.<br />
+<br />
+Maxwell-Ampère’s Law:<br />
+<br /></p>
+
+<p><img src="/public/img/EM3.png" alt="alt text" /><br /></p>
+
+<p><br />
+우변 두번째 항이 중요하다. 이게 없으면 Ampère’s Law, 있으면 Maxwell-Ampère’s Law다.<br />
+이 항이 표현하는건 ‘displacement current’다. 왜 displacement냐면, 이 곳이 아닌 다른 곳에서 전류가 생긴다는 뜻으로 생각하면 된다.<br /></p>
+
+<p><br />
+Charge Conservation Equation / Continuity Equation:<br />
+Charge Conservation Equation(전하량 보존법칙)이라고도 부르고, Continuity Equation이라고도 부른다.<br />
+<br /></p>
+
+<p><img src="/public/img/EM4.png" alt="alt text" /><br />
+여기서 봐야 할 것은, charge가 안움직이면 전류가 생기지 않는다는 점이다.</p>
+
+<p>Stokes’ Theorem, Divergence Theorem
+<img src="/public/img/EM5.png" alt="alt text" /><br /></p>
+
+<p>Faraday’s equation, Maxwell-Ampere’s law에 Stokes’ theorem을 적용해서 두 수식을 ‘differential form’이라는 형태로 표현할 수 있다.</p>
+
+<p><img src="/public/img/EM6.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Signals</title><link href="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html" rel="alternate" type="text/html" title="Signals" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/mathematics/2023/10/24/Mathematics%20-%20Signals</id><content type="html" xml:base="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html"><![CDATA[<p>ㅁㄴㅇㄹ</p>]]></content><author><name></name></author><category term="Mathematics" /><summary type="html"><![CDATA[ㅁㄴㅇㄹ]]></summary></entry><entry><title type="html">Vector Calculus</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Vector-Calculus.html" rel="alternate" type="text/html" title="Vector Calculus" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics%20-%20Vector%20Calculus</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Vector-Calculus.html"><![CDATA[<p>Electromagnetics Theory에는 크게 2가지가 있다.<br />
 <br />
 Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다.<br />
 Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다.<br />
@@ -28,25 +65,42 @@ Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할
 여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다.<br />
 <br />
 <br />
-전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.</p>
+전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.<br />
+<br />
+좌표계 변환 - 위치:<br />
+<br />
+좌표계 변환 - 벡터:<br />
+<br />
+<img src="/public/img/EM1.png" alt="alt text" /><br />
+<br />
+Vector와 Vector field의 차이<br />
+<br />
+Gradient가 무엇인가<br /></p>
 
-<p>좌표계 변환 - 위치:</p>
+<p>Gradient는 어떤 Scalar Field의</p>
 
-<p>좌표계 변환 - 벡터:</p>
-
-<p>Vector와 Vector field의 차이</p>
-
-<p>Gradient가 무엇인가</p>
-
-<p>좌표계별 Gradient:</p>
-
-<p>Curl이 무엇인가</p>
-
-<p>좌표계별 Curl:</p>
+<p><br />
+좌표계별 Gradient:<br />
+<br />
+Curl이 무엇인가<br />
+<br />
+좌표계별 Curl:<br />
+<br /></p>
 
 <p><br />
 유럽은 Linguistic notation : Curl \(\bar{E}\)<br />
-미국은 Gibbs notation : \(\triangledown  \times \bar{E}\)<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Electromagnetics Theory에는 크게 2가지가 있다. Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다. Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다. Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고, 그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다. 여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다. 전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
+미국은 Gibbs notation : \(\triangledown  \times \bar{E}\)<br /></p>
+
+<p><br />
+Stokes’ Theorem:<br />
+\(\oint_{c}\bar{F}\cdot d\bar{l}=\iint_{S}\triangledown \times \bar{F}\cdot \hat{n}dS\)<br />
+<br />
+Divergence Theorem:<br />
+\(\oiint_{S}\bar{F}\cdot \hat{n}dS=\iiint_{V}\triangledown \cdot \bar{F}dV\)<br />
+<br />
+Div, Curl을 Gibbs notation으로 적을 때는 각각 \(\triangledown \cdot\), \(\triangledown \times\)라고 적는다.<br />
+이때, \(\triangledown \times \bar{F}\)를 \(\triangledown\)와 \(\bar{F}\)를 cross product하는 거라고 해석하는건 일반적으로 틀린 해석이다.<br />
+그런 해석은 Cartesian coordinates에서만 맞는 이야기다. 일반적으로, \(\triangledown \cdot\)와 \(\triangledown \times\)는 그냥 그 자체로 하나로 봐야 한다.<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Electromagnetics Theory에는 크게 2가지가 있다. Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다. Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다. Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고, 그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다. 여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다. 전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다. 좌표계 변환 - 위치: 좌표계 변환 - 벡터: Vector와 Vector field의 차이 Gradient가 무엇인가]]></summary></entry><entry><title type="html">Analog - Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html" rel="alternate" type="text/html" title="Analog - Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
 1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다.
 Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다.
 진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.</p>
@@ -244,13 +298,9 @@ NMOS를 쓰면 follower configuration이 된다.<br />
 <br />
 근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다.<br />
 그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다.<br />
-<br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDOamp1.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p><br />
+<br />
+<img src="/public/img/LDOamp1.png" alt="alt text" /><br />
+<br />
 Low Voltage Operation이 중요할때는 PMOS를 쓴다.<br />
 PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain이든 모두 \(g_m r_{ds}\)다.<br />
 <br />
@@ -260,35 +310,23 @@ PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain�
 PMOS에 쓰이는 amp는 power line의 ripple을 그대로 출력에 전달해야 한다.<br />
 <br />
 Ripple을 그대로 전달하는 구조:<br />
-<br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDOamp2.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p><br />
+<br />
+<img src="/public/img/LDOamp2.png" alt="alt text" /><br />
+<br />
 이게 왜 ripple을 그대로 전달하는 구조인가?<br />
 그건 이 모델의 small signal model을 봐야 한다.<br />
 아니면 이렇게 만들어도 된다.<br /></p>
 
-<p><br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDOamp3.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p><br /></p>
+<p><br />
+<img src="/public/img/LDOamp3.png" alt="alt text" /><br />
+<br /></p>
 
 <p><br />
 아니면 이렇게 만들어도 된다.<br /></p>
 
-<p><br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDOamp4.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators PMOS를 써서 만들면 Common Source 구조가 되고, NMOS를 써서 만들면 Source Follower 구조가 된다. Low-Dropout이 중요하지 않은 경우엔느 NMOS가 Pass Device로 쓰일 수 있다. Gate와 Source 사이에 전압 차이가 필요하긴 한데, Rout이 작아서(아마 NMOS PMOS의 \(\mu\)차이 이야기) Compensation이 더 쉽다. NMOS를 쓰면 follower configuration이 된다. 근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다. 그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다.]]></summary></entry><entry><title type="html">Analog - LDO - Buffer Compensation</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Buffer-Compensation.html" rel="alternate" type="text/html" title="Analog - LDO - Buffer Compensation" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Buffer%20Compensation</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Buffer-Compensation.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
+<p><br />
+<img src="/public/img/LDOamp4.png" alt="alt text" /><br />
+<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators PMOS를 써서 만들면 Common Source 구조가 되고, NMOS를 써서 만들면 Source Follower 구조가 된다. Low-Dropout이 중요하지 않은 경우엔느 NMOS가 Pass Device로 쓰일 수 있다. Gate와 Source 사이에 전압 차이가 필요하긴 한데, Rout이 작아서(아마 NMOS PMOS의 \(\mu\)차이 이야기) Compensation이 더 쉽다. NMOS를 쓰면 follower configuration이 된다. 근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다. 그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다. Low Voltage Operation이 중요할때는 PMOS를 쓴다. PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain이든 모두 \(g_m r_{ds}\)다. 그래서, Power line에서 ripple이 들어올 경우, Amp에서도 같은 ripple을 출력해줘야 PMOS 전류가 안흔들린다. 그래서 NMOS에 쓰이는 AMP는 power line의 ripple을 다 없애야 하고, PMOS에 쓰이는 amp는 power line의 ripple을 그대로 출력에 전달해야 한다. Ripple을 그대로 전달하는 구조: 이게 왜 ripple을 그대로 전달하는 구조인가? 그건 이 모델의 small signal model을 봐야 한다. 아니면 이렇게 만들어도 된다.]]></summary></entry><entry><title type="html">Analog - LDO - Buffer Compensation</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Buffer-Compensation.html" rel="alternate" type="text/html" title="Analog - LDO - Buffer Compensation" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Buffer%20Compensation</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Buffer-Compensation.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
 <br />
 <br />
 IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
@@ -296,10 +334,8 @@ OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드�
 <br />
 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다.<br />
 그래서, 이때는 LDO라는 회로를 써줘야 한다.<br />
-<br /></p>
-<div style="float: left">
-    <img src="/public/img/LDO1.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
+<br />
+<img src="/public/img/LDO1.png" alt="alt text" /><br /></p>
 
 <p>PMOS를 써서 만들면 Common Source 구조가 되고,<br />
 NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
@@ -311,9 +347,7 @@ Stability:<br />
 그럼 frequency response를 어떻게 확인할 것인가?<br />
 Loop Gain을 본다.<br /></p>
 
-<div style="float: left">
-    <img src="/public/img/LDO2.png" style="width: 40%; height: auto;" alt="my picture" />
-</div>
+<p><img src="/public/img/LDO2.png" alt="alt text" /><br /></p>
 
 <p>LDO 만들때는:<br />
 Low dropout voltage,<br />
@@ -333,11 +367,9 @@ C_load에 직렬로 ESR(Equivalent Series Resistor)를 붙여서 만들 수 있�
 근데, 이 방식은 mismatch때문에 pole zero 위치가 움직이면 큰 문제가 생길 수도 있다.<br />
 그리고 current load가 크게, 순식간에 변할 경우, Cout이 작으면 급격하게 변하는 전류가 저항에 흐를 수 있다.<br />
 이럴 경우, 전압이 크게 흔들린다.<br />
-<br /></p>
-<div style="float: left">
-    <img src="/public/img/LDO3.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-<p><br />
+<br />
+<img src="/public/img/LDO3.png" alt="alt text" /><br />
+<br />
 \(p_0 = \dfrac{1}{R_{out}C_{load}}\)<br />
 \(p_1 = \dfrac{1}{r_{oea}C_b}\)<br />
 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)<br />
@@ -346,9 +378,7 @@ C_load에 직렬로 ESR(Equivalent Series Resistor)를 붙여서 만들 수 있�
 <br />
 일단 이렇게 생긴 source follower를 buffer로 쓴다고 해보자.</p>
 
-<div style="float: left">
-    <img src="/public/img/LDO4.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
+<p><img src="/public/img/LDO4.png" alt="alt text" /><br /></p>
 
 <p>Source follower를 buffer로 쓰면 이런 상황이 된다.<br />
 이때 \(C_b\), \(r_{ob}\)가 최대한 작은 값을 갖게 해야 한다.<br />
@@ -368,9 +398,7 @@ buffer의 small signal model을 생각해보면, \(r_{ob}=\dfrac{1}{g_{m1}}\)이
 source follower with negative feedback을 쓰는 방법이 있다.<br />
 BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br /></p>
 
-<div style="float: left">
-    <img src="/public/img/LDO5.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
+<p><img src="/public/img/LDO5.png" alt="alt text" /><br /></p>
 
 <p>buffer 입장에서 출력 전압 노드인, \(M_p\)의 gate 전압이 증가한 경우를 생각해보면:<br />
 \(M_1\)의 Vds가 증가했으니, channel length modulation에 의해 \(M_1\)의 Ids가 증가한다.<br />
@@ -428,145 +456,4 @@ Loop Gain을 본다.<br /></p>
 
 <div style="float: left">
     <img src="/public/img/LDO2.png" style="width: 40%; height: auto;" alt="my picture" />
-</div>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Stability: 어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까? 안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다. 그럼 frequency response를 어떻게 확인할 것인가? Loop Gain을 본다.]]></summary></entry><entry><title type="html">Analog - LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html" rel="alternate" type="text/html" title="Analog - LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
-<br />
-<br />
-IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
-OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만,<br />
-<br />
-저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다.<br />
-그래서, 이때는 LDO라는 회로를 써줘야 한다.<br />
-<br /></p>
-<div style="float: left">
-    <img src="/public/img/LDO1.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p>PMOS를 써서 만들면 Common Source 구조가 되고,<br />
-NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
-<br />
-Stability:<br />
-어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까?<br />
-안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다.<br />
-<br />
-그럼 frequency response를 어떻게 확인할 것인가?<br />
-Loop Gain을 본다.<br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDO2.png" style="width: 40%; height: auto;" alt="my picture" />
-</div>
-
-<p>LDO 만들때는:<br />
-Low dropout voltage,<br />
-high output current,<br />
-low no-load quiescent current,<br />
-small output transient undershoot<br />
-이런 것들이 필요하다.<br />
-<br />
-LDO가 낮은 dropout voltage를 유지하면서 load current도 많이 공급해주려면, Pass device로 크기가 큰 PMOS를 써야 한다. W/L이 커야 해서.<br />
-근데 크기가 큰 PMOS를 쓰면, 그 device의 C가 커진다.<br />
-원래는 C_load에 의한 dominant pole만 저주파에 있었어야 했는데,<br />
-PMOS의 C가 크면 저주파에 pole이 하나 더 생긴다. 결국, stability가 안좋아진다.<br />
-<br />
-이럴 경우, LHP zero를 하나 만들어서 phase를 보상하는 방식이 있다.<br />
-C_load에 직렬로 ESR(Equivalent Series Resistor)를 붙여서 만들 수 있다.<br />
-<br />
-근데, 이 방식은 mismatch때문에 pole zero 위치가 움직이면 큰 문제가 생길 수도 있다.<br />
-그리고 current load가 크게, 순식간에 변할 경우, Cout이 작으면 급격하게 변하는 전류가 저항에 흐를 수 있다.<br />
-이럴 경우, 전압이 크게 흔들린다.<br />
-<br /></p>
-<div style="float: left">
-    <img src="/public/img/LDO3.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-<p><br />
-\(p_0 = \dfrac{1}{R_{out}C_{load}}\)<br />
-\(p_1 = \dfrac{1}{r_{oea}C_b}\)<br />
-\(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)<br />
-<br />
-여기서, 사용하는 buffer의 \(C_b\)와 \(r_{ob}\)가 최대한 작은게 좋다. 그래야 \(p_1\), \(p_2\)가 모두 고주파로 날아가서 \(p_0\)밖에 안남는다.<br />
-<br />
-일단 이렇게 생긴 source follower를 buffer로 쓴다고 해보자.</p>
-
-<div style="float: left">
-    <img src="/public/img/LDO4.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p>Source follower를 buffer로 쓰면 이런 상황이 된다.<br />
-이때 \(C_b\), \(r_{ob}\)가 최대한 작은 값을 갖게 해야 한다.<br />
-<br />
-buffer의 small signal model을 생각해보면, \(r_{ob}=\dfrac{1}{g_{m1}}\)이 된다.<br />
-따라서, \(r_{ob}\)를 줄이려면 \(g_{m1}\)를 최대한 늘려야 한다.<br />
-<br />
-\(g_{m1}\)을 늘리는 데에는 두가지 방법이 있다.<br />
-\(I_1\)을 늘리는 방법이 있고, \(\dfrac{W_1}{L_1}\)을 늘리는 방법이 있다.<br />
-<br />
-근데, \(I_1\)를 늘리면 buffer가 먹는 전류가 늘어나는거라, \(I_Q\)가 늘어난다.<br />
-그렇다고 \(\dfrac{W_1}{L_1}\)을 늘리면 트랜지스터 크기가 커져서 \(C_b\)가 늘어난다.<br />
-<br />
-그래서, 위 그림에서 사용된 simple source follower는 여기서 buffer로 사용하기에 부적합하다.<br />
-<br />
-<br />
-source follower with negative feedback을 쓰는 방법이 있다.<br />
-BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDO5.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p>buffer 입장에서 출력 전압 노드인, \(M_p\)의 gate 전압이 증가한 경우를 생각해보면:<br />
-\(M_1\)의 Vds가 증가했으니, channel length modulation에 의해 \(M_1\)의 Ids가 증가한다.<br />
-근데, \(M_2\)의 Ids는 Current mirror 구조에 의해 고정되어 있다.<br />
-그래서, \(M_1\)의 Ids가 증가한 만큼 \(Q_1\)의 Ib가 증가하게 된다.<br />
-그러면 \(Q_1\)의 Ice는 \(\beta\)Ib만큼 증가한다.<br />
-<br />
-그래서, 원래 Vout이 Vx만큼 증가하면 전류가 gm1Vx만큼 증가했었는데,<br />
-이제는 gm1Vx + \(\beta\)gm1Vx = (1+beta)gm1Vx만큼 증가하는 것이다.<br />
-<br />
-따라서 \(r_{ob}=\dfrac{1}{g_{m1}(1+\beta)}\)가 된다.<br />
-이렇게 되면 rob가 확 줄어드니까, gm이 그렇게까지 안커도 된다. beta가 큰 값이니까.<br />
-그래서 gm을 조금 포기하는 대신 I1을 줄여 IQ를 줄일 수 있고, W/L을 줄여 Cb를 줄일 수 있다.<br />
-<br />
-<br />
-근데 또 문제가 있다. load current가 증가하면 unity gain frequency도 증가하는데,<br />
-그러면 rob도 그에 맞춰 줄어들어줘야 한다.<br />
-<br />
-그렇지 않으면 unity gain frequency가 계속 증가하다가 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)보다 커질 수도 있다.<br />
-그러면 unity gain frequency 이전에 pole이 하나 더 생기는거라, stability가 안좋아진다.<br />
-<br />
-그래서 이런 구조를 만들게 됐다.<br />
-<br />
-<br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDO6.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p><br />
-일단, 이 buffer의 output resistance는:<br />
-\(r_{ob} = \dfrac{1}{g_{m1}(1+\beta)} || \dfrac{1}{g_{m4}} = \dfrac{1}{g_{m1}(1+\beta)+g_{m4}}\)<br />
-<br />
-<br />
-이 상태에서 \(M_p\)의 \(I_{DS}\)가 증가하면?<br />
-일단 \(M_p\)의 Gate 전압이 줄어들어야 할 것이다. 그래야 \(I_{DS}\)가 증가하니까.<br />
-그러면 \(M_4\)와 \(M_5\)의 \(|V_{GS}|\) 가 증가한다.<br />
-그래서 \(M_4\)와 \(M_5\)의 \(I_{DS}\)가 증가하는데,<br />
-<br />
-\(M_4\)의 \(I_{DS}\)가 증가하면 \(g_{m4}\)가 증가하고,<br />
-\(M_5\)의 \(I_{DS}\)가 증가하면 \(M_2\), \(M_3\)이 이루고 있는 current mirror에 의해 \(M_1\)에서도 전류가 증가한다. 따라서 \(g_{m1}\)이 증가한다.<br />
-<br />
-결국, Load Current가 증가해서 \(M_p\)의 \(I_{DS}\)가 증가하면<br />
-\(g_{m4}\), \(g_{m1}\)이 증가해 \(r_{ob}\)가 작아진다.<br />
-그래서 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)는 Load current가 증가하면 더 높은 주파수로 이동하기에,
-항상 Unity Gain Frequency보다 높은 주파수에 있을 수 있다.<br />
-<br /></p>
-
-<p>LDO는 디지털 로직들에게 전류를 주면서도 전압을 유지하기 위한 회로니까, 당연히 출력쪽에 전류가 많이 흐른다.
-원래 전류가 많이 흐르는 path가 있을 때에는 layout팀에게 이 path는 저항 얼마 이하로 해달라고 요청한다.</p>
-
-<p>그래서 이번에 layout 수정할때, metal 저항을 줄이기 위해 metal line을 더 두껍게 만들었고, 또 저항이 작은 top metal을 썼다.</p>
-
-<p>LDO는 원래 나가는 path도 저항이 없도록 신경을 써줘야 한다.
-그래서, 출력 pad 바로 옆에 LDO를 놓는 구조가 많다.
-path가 짧아질테니 저항이 줄어든다.</p>
-
-<p>LDO에서 전압이 짧게라도 튀면, 그 짧은 시간동안 device에 stress가 들어간다.
-그래서 튀는 전압은 최대한 줄이는게 좋다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry></feed>
+</div>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Stability: 어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까? 안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다. 그럼 frequency response를 어떻게 확인할 것인가? Loop Gain을 본다.]]></summary></entry></feed>

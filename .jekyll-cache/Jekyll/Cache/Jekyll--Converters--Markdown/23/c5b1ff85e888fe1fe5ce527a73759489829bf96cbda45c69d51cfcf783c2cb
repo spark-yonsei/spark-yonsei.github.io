@@ -1,0 +1,159 @@
+I"�<p>Layout: 특정 기능을 수행하는 회로를 칩으로 제작할 수 있게 물리적으로 패턴으로 구현한 것</p>
+
+<p>설계가 완료된 회로는 칩으로 만들기 위해 일정한 규칙을 갖는 물리적 패턴으로 변환해줘야 한다.
+이 과정을 레이아웃 설계 또는 마스크 패턴(Pattern) 설계라고 한다.</p>
+
+<p>레이아웃 설계에서 만든 패턴은 마스크로 제작된다.</p>
+
+<p>이 마스크 패턴대로 회로가 웨이퍼에 새겨지게 된다.</p>
+
+<p>Layout에는 Full-custom(Manual layout) 방식과 Auto layout 방식이 있다.</p>
+
+<p>일단, 공정에 맞는 PDK를 설치한다.
+그다음에 회로에 맞게 Layout을 진행한다.</p>
+
+<p>Floor plan:
+layout에서, 트랜지스터 단위 배치가 아닌 block 단위 배치</p>
+
+<p>Floor plan을 할 때 고려해야 할 점:
+Noise의 민감도는 Digital에서 Analog로 갈 수록 민감도가 커지지만, Noise는 Analog에서 Digital로 갈수록 커진다.
+*뭔소린지 모르겠으니 좀 알아보겠다.
+Analog와 Digital의 Power는 반드시 분리하며, 특별히 주의가 필요한 Block의 경우 추가로 Power를 분리한다.
+배선은 최대한 간소화한다. 민감한 Analog 배선을 굳이 길게 만들 필요가 없으니, 최대한 짧게 만든다.
+chip 면적을 최대한 줄인다. 면적이 작을수록 웨이퍼 하나당 chip을 더 많이 생산할 수 있다.</p>
+
+<p>Layout에서 봐야 할 점:
+일단 전류가 많이 흐르는 곳은 도체가 두꺼워야 한다.</p>
+
+<p>그리고 도체들이 overlap되거나 하면 coupling capacitance가 생길 수 있는데,
+이 Capacitance때문에 계산한 gain이 안나온다거나 PSRR이 안좋아진다거나 할 수 있다.</p>
+
+<p>Sub이 흔들리면 안되니까, deep nwell로 isolation을 해줘야 한다.</p>
+
+<p>layout이 끝났으면 post layout simulation으로 간다.</p>
+
+<p>동운아나텍 Analog Layout Manual:</p>
+
+<p>업무 Flow:
+Layout Start
+Custom Layout Review
+Layout Fix
+Verification
+Post Layout Simulation (LPE) - 이후 문제있으면 Layout Fix로, 문제 없으면 IP Merge로
+IP Merge
+Tape Out
+Job Deck View
+Mask 제작 요청</p>
+
+<p>Layout 사전 준비:
+Design Directory 생성(System Library setup for Layout Design)
+공정별 PDK 설치(공정명, 사용 metal, voltage 확인 후 설치)
+공정 자료집 확인(Design Rule spec, E/R spec, Layout grid 및 주의사항 등)
+Real Data 확인
+Layout 의뢰서 확인
+회로, netlist 확인
+검증 rule(최종버전 확인, DRC/LVS/QRC 사전 확인, Dummy 소자 인식 확인 필수)
+Layout grid 설정
+Floor plan 확인
+Estimate Layout TAT 산출</p>
+
+<p>Layout Design Check list:
+Design Rule: Layout을 하기 전 반드시 필요한 File이며 공정 별로 Rule이 다름
+Layout Notice
+Critical / Dirty Path
+Power / GND Path
+Resistance of Path
+ESD / Latch-up
+PIN / PAN Assignment for Assembly
+DRC / LVS/LPE
+Origin
+Index</p>
+
+<p>-. Design Rule: Layout을 하기 전 반드시 필요한 File이며 공정 별로 Rule이 다름
+-. Layout Notice
+-. Critical / Dirty Path
+-. Power / GND Path
+-. Resistance / Capacitance of Path
+-. Device Multi-place: 크기가 큰 Device의 경우 여러 개로 나누어 배치
+-. Substrat Contact
+-. ESD / Latch-up
+-. PIN / PAN Assignment for Assembly
+-. DRC / LVS (Clean)
+-. Origin
+-. Logo</p>
+
+<p>-. Normal Flow (Block, Full Chip Layout에 적용)
+※ DRC검증 Rule을 Normal Design Rule 사용
+① Pre-Meeting
+② 1st sign-off
+③ Feasibility Study ※ 상황에 따라 생략 가능
+④ Layout Start
+⑤ Customer Review &amp; Layout Fix
+⑥ Verification
+⑦ Post-Layout Simulation⑧ DB 전달
+⑨ 최종 Sign-off
+⑩ Layout 종료</p>
+
+<p>-. Standard Primitive Cell 제작 Flow (for P&amp;R&lt;D/K&gt; STD-Prim Layout에 적용)
+※ Standard Primitive는 해당 공정의 Design Kit로 사용되며 Full Chip P&amp;R시 사용
+※ Verification 단계가 2단계로 구성. DRC검증 Rule을 Special Design Rule 사용
+① Pre-Meeting
+② 1st sign-off
+③ Feasibility Study ※ 상황에 따라 생략 가능
+④ Layout Start
+⑤ Customer Review &amp; Layout Fix
+⑥ 1st Verification w.i Via1 Cell
+⑦ 1st Post-Sim w.i Via1 Cell
+⑧ Customer Review w.o Via1 Cell
+⑨ Final Verification w.o Via1 Cell
+⑩ 2nd Post-Sim w.o Via1 Cell
+⑪ DB 전달
+⑫ 최종 Sign-off
+⑬ Layout 종료</p>
+
+<p>-. Standard IO Cell 제작 Flow (for P&amp;R&lt;D/K&gt; STD-IO Layout에 적용)
+※ DRC검증 Rule을 Special Design Rule 사용
+① Pre-Meeting
+② 1st sign-off
+③ Feasibility Study ※ 상황에 따라 생략 가능
+④ Layout Start
+⑤ Customer Review &amp; Layout Fix
+⑥ Verification
+⑦ Post-Layout Simulation
+⑧ DB 전달
+⑨ 최종 Sign-off
+⑩ Layout 종료</p>
+
+<p>-. Layout Design 사전준비
+① System Library Set up for Layout Design
+    * Design Directory 생성, … 등 
+② 공정 자료집 입수
+    * Design Rule Spec
+    * E/R Spec 입수
+    * Layout Guide 및 주의사항, … 등
+③ 회로도 &amp; Netlist 입수
+④ 검증 (LVS, DRC, Antenna, LPE, … 등) Rule 입수
+⑤ Layout GRID 설정
+⑥ 입수된 회로도를 이용한 Floor Plan (가배치 포함)
+⑦ Estimate Layout TAT (Turn-Around Time) 산출</p>
+
+<p>저항, 캐패시터, 트랜지스터 매칭 고려해서 배치해줘야 한다.
+공정에 맞게 layout을 해줘야 한다.
+수율이 높게 나오도록 layout을 해줘야 한다.
+latchup, noise를 고려해서 layout을 해줘야 한다.
+block guardring도 고려하라는건가? 이게 뭐지</p>
+
+<p>Verification rule:
+검증 (LVS, DRC, Antenna, LPE, … 등) Rule
+검증 rule(최종버전 확인, DRC/LVS/QRC 사전 확인, Dummy 소자 인식 확인 필수)
+Layout grid 설정
+Floor plan 확인
+Estimate Layout TAT 산출</p>
+
+<p>https://blog.naver.com/kwon96812521/222676812185</p>
+
+<p>마지막이:
+Job deck view</p>
+
+<p>mask 제작 의뢰</p>
+:ET

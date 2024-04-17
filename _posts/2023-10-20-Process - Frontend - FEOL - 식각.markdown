@@ -6,9 +6,9 @@ categories: Process
 order: 4
 ---
 
-식각 공정(Etching)<br>
+식각(Etching)<br>
 <br>
-Photo 공정이 끝나면, 이제 회로 패턴을 제외한 나머지 부분을 제거해야 한다. 그 과정을 식각(etching)공정이라 부른다.<br>
+Photo 공정이 끝나면, 이제 회로 패턴을 제외한 나머지 부분을 제거해야 한다. 그 과정을 식각(etching) 공정이라 부른다.<br>
 <br>
 그니까, etching 전에는 감광액으로만 회로 패턴이 그려져 있는거다.<br>
 Etching을 통해 회로 패턴대로만 산화막을 남겨줘야 한다.<br>
@@ -45,3 +45,8 @@ etching에도 건식(dry) etching과 습식(wet) etching이 있다.<br>
 현재 건식 식각은 물리 화학적 방법이라고 해서, 두 방식을 모두 사용한다.
 화학적 방식의 장점: 높은 선택비, 대상의 손상이 적다
 물리적 방식의 장점: 원하는 곳을 정확히 제거할 수 있다
+
+ESC: Electrostatic Chuck
+ESC는 정전기적인 힘(Electrostatic force)를 이용하여 반도체 제조 장비 내에서 Wafer를 고정하는 부품으로, 일반적으로 전극의 개수에 따라 Monopolar(Unipolar)와 Bipolar 타입으로 구분되고, 또한 유전층 저항률의 크기에 따라 columb과 Jonsen-Rahbek 타입으로 나뉜다.
+
+극저온 식각 기술, 초임계 건조 기술(Supercritical Drying Technology)
