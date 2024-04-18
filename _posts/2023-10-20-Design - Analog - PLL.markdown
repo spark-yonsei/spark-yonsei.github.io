@@ -44,3 +44,9 @@ PLL에서 왜 lock detection을 하나? 처음에는 PLL 주파수랑 external �
 
 PLL을 왜 쓰냐? 여기서는 피에조센서에 쓸 PWM이 필요하다보니 clock boosting이 필요해서 썼다.
 
+PLL:
+보통 오실레이터에서 출력되는 클락은 8MHz, 12MHz, 16MHz라서 실제 시스템 동작속도보다 느리다
+그래서 PLL은 주파수를 올리고 안정적으로 만든다
+여기서 나온 클락신호가 cpu에 전달된다
+
+Mcu 내의 다른 로직들은 보통 cpu보다 구동 주파수가 낮다. 그래서 prescaler(전치분주기)로 주파수를 내려준다

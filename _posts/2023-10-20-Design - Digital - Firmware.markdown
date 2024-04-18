@@ -13,6 +13,18 @@ C, 어셈블리어 등의 언어로 원하는 동작을 구현한 텍스트 파�
 
 이 펌웨어를 메모리에 저장해두면, cpu는 그 메모리에서 기계어 명령을 읽고 해석해서 동작을 실행한다.
 
+유명한 펌웨어 규격:
+
+BIOS: Basic Input Output System
+16비트 기반
+
+UEFI: Unified Extensible Firmware Interface
+64비트 기반
+
+
+펌웨어는 EEPROM이나 플래시메모리에 저장된다.
+이게 손상되면 벽돌이 된다.
+
 임베디드 시스템에서 자주 사용되는 직렬 통신:
 UART, I2C, SPI
 
@@ -95,12 +107,7 @@ Buck, boost converter는 switching regulator
 이걸 cpu에 넣어준다
 
 
-PLL:
-보통 오실레이터에서 출력되는 클락은 8MHz, 12MHz, 16MHz라서 실제 시스템 동작속도보다 느리다
-그래서 PLL은 주파수를 올리고 안정적으로 만든다
-여기서 나온 클락신호가 cpu에 전달된다
 
-Mcu 내의 다른 로직들은 보통 cpu보다 구동 주파수가 낮다. 그래서 prescaler(전치분주기)로 주파수를 내려준다
 
 메모리 구분 표 있는데 이거 참고해서 정리
 
