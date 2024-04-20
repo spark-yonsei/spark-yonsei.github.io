@@ -98,9 +98,9 @@ Parallel mode가 있고 series mode가 있다.<br>
 Parallel mode 진동을 할때는 inverter를 붙여주면 되고,<br>
 Series mode 진동을 할때는 buffer를 붙여주면 된다.<br>
 <br>
-$$f_{series} = \dfrac{1}{2\pi \sqrt{L_sC_s}}$$
-
-
+$$f_{series} = \dfrac{1}{2\pi \sqrt{L_sC_s}}$$<br>
+<br>
+<br>
 Parallel mode:<br>
 Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.<br>
 $$f_{parallel}= \dfrac{1}{2\pi \sqrt{L_s\left(C_s||C_L \right)}}  = \dfrac{1}{2\pi \sqrt{L_sC_s}} \sqrt{1+\dfrac{C_s}{C_L}} = f_{series}\sqrt{1+\dfrac{C_s}{C_L}} \approx f_{series}\left(1+\dfrac{C_s}{2C_L} \right)$$<br>

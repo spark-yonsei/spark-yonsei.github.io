@@ -33,3 +33,6 @@ communication between microcontrollers and peripheral devices, such as sensors, 
 
 
 I3C?
+
+slave는 master에게 ACK을 보내야 한다.
+그래서 신호 받기만 할거여도 SDA는 출력을 보낼 수 있는 구조여야 한다.
