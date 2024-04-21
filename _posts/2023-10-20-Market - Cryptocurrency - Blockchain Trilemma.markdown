@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cryptocurrency"
+title:  "Cryptocurrency - Blockchain Trilemma"
 date:   2023-10-04 19:31:29 +0900
 categories: Market
 order: 13

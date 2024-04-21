@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Vector Calculus"
+title:  "Electromagnetics - Vector Calculus"
 date:   2023-10-24 19:31:29 +0900
-categories: Electromagnetics
+categories: Physics
 order: 1
 ---
 

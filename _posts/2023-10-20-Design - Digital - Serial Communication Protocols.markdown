@@ -36,3 +36,7 @@ I3C?
 
 slave는 master에게 ACK을 보내야 한다.
 그래서 신호 받기만 할거여도 SDA는 출력을 보낼 수 있는 구조여야 한다.
+
+I2C 통신으로 특정 code pattern을 넣어야 특정 레지스터들에 접근 가능하도록 하는게 protection 기능이다.
+예를 들어, analog trimming data 영역은 사용자가 못건드리게 protection을 걸어놓는다. 이거 건드리면 동작이 아예 안될수도 있다.
+

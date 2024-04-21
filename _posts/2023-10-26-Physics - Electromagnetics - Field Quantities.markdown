@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Field Quantities"
+title:  "Electromagnetics - Field Quantities"
 date:   2023-10-24 19:31:29 +0900
-categories: Electromagnetics
+categories: Physics
 order: 2
 ---
 
