@@ -111,3 +111,5 @@ AVP? Advanced Packaging?
 chip scale packaging을 하면 power transistor의 저항, 인덕턴스, 크기, 열저항, 가격을 줄일 수 있다.
 
 package 때문에 인덕턴스가 생길 경우, power transistor들이 더 느리게 켜지고 꺼지게 된다.
+
+bonding wire에 의해 1mm당 1nH정도를 붙여놓고 simulation한다.

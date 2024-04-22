@@ -24,104 +24,39 @@ HB테크놀러지: 유리기판 장비
 와이씨켐: 유리기판 소재
 에프엔에스테크: 식각 공정
 
-Introduction to Glass PCB
-A glass printed circuit board (Glass PCB) is a specialized type of printed circuit board (PCB) that uses glass as the base substrate material instead of the more common FR-4 fiberglass. Glass offers some unique advantages over FR-4 that make it an attractive option for certain applications requiring high performance, reliability and durability.
-Advantages of Glass PCBs
-Here are some of the main benefits of using glass PCBs:
-Excellent thermal conductivity - Glass has much higher thermal conductivity compared to standard FR-4. This allows Glass PCBs to dissipate heat efficiently.
-Low thermal expansion - The coefficient of thermal expansion of glass is much lower than FR-4. This results in greater board stability over a wide temperature range.
-High frequency support - The stable dielectric properties of glass enable Glass PCBs to support higher operating frequencies. Glass has low dielectric loss at high frequencies.
-Excellent chemical resistance - Glass provides superior chemical resistance and won't absorb moisture like FR-4. This improves the reliability and lifespan of Glass PCBs.
-High strength - Glass has very high flexural strength and is highly resistant to cracks and fractures. This makes Glass PCBs suitable for demanding structural applications.
-Applications of Glass PCBs
 
-Some of the common applications where Glass PCBs provide technical advantages include:
-High speed digital circuits - Used in compute, telecom, automotive and medical applications requiring multi-GHz frequencies.
-High power circuits - The thermal conductivity handles high power densities efficiently. Used in power electronics.
-High temperature electronics - Glass PCBs can operate continuously at over 200°C making them suitable for downhole, aerospace and automotive applications.
-High frequency antennas - The stable dielectric properties are ideal for antenna applications up to mmWave frequencies.
-Sensors and transducers - Resistant to corrosion and humidity, glass PCBs are widely used in harsh environment sensors.
-Medical electronics - The durability and biological inertness allows use in implantable devices.
-Glass PCB Materials and Properties
-Glass PCBs are fabricated from a range of different glass material types, tailored to meet application requirements. Some common types of glass used include:
-Borosilicate Glass
-Borosilicate glass is one of the most common types used for PCBs. Key properties include:
-High thermal shock resistance
-Low thermal expansion coefficient
-Excellent chemical resistance
-High strength
-Operating temperatures up to 315°C
-Borosilicate glass is widely used in high reliability electronic assemblies. It provides a good combination of electrical, thermal and mechanical characteristics.
-Aluminosilicate Glass
-Aluminosilicate glass has similar properties to borosilicate but with even lower dielectric loss, enabling higher frequency operation. Key properties are:
-Extremely low dielectric loss
-Low dielectric constant
-Near zero thermal expansion coefficient
-High thermal conductivity
-High flexural strength
-Aluminosilicate Glass PCBs are used in specialized high frequency applications like radars, satellite communications and 5G equipment.
-Fused Silica Glass
+원래 PCB에 쓰는거: FR-4 Fiberglass
+
+유리기판의 장점:
+Thermal conductivity가 높아서, 열을 더 효율적으로 방출할 수 있다.
+열팽창 계수가 낮아서, board 안정성이 더 높다.
+유리는 고주파에서 low dielectric loss를 가진다. 그래서 고주파에서도 잘 동작할 수 있다.
+유리는 FR-4보다 수분을 덜 흡수한다. reliability, lifespan이 더 우수하다.
+
+그래서 high frequency랑 high power에서 쓰려고 많이 연구중이다.
+열 잘빠지고 dielectric loss 적으니까
 
 
-Fused silica glass is an ultrapure glass made only from silicon dioxide. It has exceptional thermal stability and the lowest thermal expansion of any glass. Key properties:
-Extremely low thermal expansion coefficient
-Excellent thermal shock resistance
-High strength and stiffness
-High optical transmission
-Stable dielectric properties
-Withstands over 1000°C
-Fused silica glass PCBs are used in space, aerospace and other demanding applications with extreme temperature cycling requirements.
-E-Glass
-E-Glass is aluminoborosilicate glass reinforced with glass fibers, giving it excellent mechanical strength while maintaining high heat resistance and stable electrical properties.
-Glass PCB Manufacturing Process
-Glass offers unique advantages but is also challenging to manufacture into PCBs compared to standard FR-4 laminates. Here is an overview of the manufacturing process flow:
-Glass Panel Preparation
-Glass sheets are cut to size from large glass panels to match PCB panel dimensions.
-Holes are drilled for tooling and alignment.
-Notches and cutouts are machined by laser or water jet cutting.
-Cleaning and Surface Treatment
-Glass panels go through ultrasonic cleaning tanks and surface treatments to remove contaminants and improve adhesion.
-A coupling agent layer may be applied to enhance bonding to the metallization layers.
-Metallization and Imaging
-The first metal layer is deposited by sputtering, evaporation or plating processes.
-A photoresist is applied and patterned by lithography processes.
-The exposed metal is etched to form the desired circuit pattern.
-Layer Build Up
-Additional metal and dielectric build-up layers are added to form a multilayer board using lithography processes.
-Microvias create interconnections between the layers.
-Blind and buried vias are possible by using laser drilling.
-Component Assembly
-Active and passive components are assembled onto the glass PCB using soldering or conductive adhesives.
-Glass is difficult to drill so larger through holes may need to be molded into the glass.
-Testing and Singulation
 
-The glass PCB panel goes through electrical testing.
-Individual PCBs are separated by scoring, laser cutting or dicing methods.
-Final electrical tests are performed on singulated boards.
-Comparison between Glass PCB and FR4 PCB
-Glass and FR4 PCBs have quite different properties and performance tradeoffs:
-ParameterGlass PCBFR4 PCBDielectric Constant4.6-6.74.2-4.8Loss Tangent0.002-0.00470.01-0.02Thermal Conductivity (W/mK)1.1-1.50.25-0.35Coefficient of Thermal Expansion (ppm/C)3-812-20Maximum Operating Temperature (°C)Up to 1000130-180Moisture Absorption (%)<0.010.2-0.4Dielectric Strength (kV/mm)40-10018-25Flexural Strength (MPa)48-450130-180Thermal Shock Resistance (ΔT)150-30050-100Frequency SupportUp to mmWaveUp to 10GHzCostHighLow
-In summary, glass PCBs offer superior high frequency performance, thermal characteristics and ruggedness compared to standard FR4, but at higher cost. The choice depends on application requirements.
-Future Trends in Glass PCBs
-Some of the emerging trends that indicate continued strong demand growth for glass PCBs include:
-5G wireless infrastructure pushing into mmWave frequencies above 24 GHz
-High power density applications like SiC and GaN devices for power electronics
-Electric vehicles with expanding electronics content for battery management and powertrain systems
-Growth of digital health and medical electronics needing bio-compatible and high reliability PCBs
-Aerospace and defense electronics requiring lightweight and high strength PCBs
-Advances in manufacturing techniques like photolithography, laser direct imaging and plasma etching have also made glass PCB fabrication more economical and accessible.
-The unique performance advantages of glass PCBs make them suitable to meet the increasing demands of high speed, high frequency and high temperature applications.
-Conclusion
+요즘은 칩의 pin 갯수가 엄청 늘어나서, 기판이 이 pin 수를 감당하지 못한다. 그래서 interposer가 필요하다.
 
-Glass PCB technology brings some compelling benefits like excellent high frequency performance, thermal conductivity, strength and chemical resistance unmatched by conventional PCB materials. These advantages have led to rapid growth in glass PCB adoption in communication, aerospace, automotive and power electronics applicaions. Continued technology improvements and demand for high performance electronics will see glass emerge as a mainstream PCB substrate option.
-FAQs
-What are some common applications of glass PCBs?
-Some common applications are in high speed digital systems, mmWave antennas, aerospace and automotive electronics, high power devices, and high temperature industrial electronics. Glass PCBs are used where their properties like low loss, thermal stability, chemical resistance and high strength are needed.
-How is heat dissipation better in glass PCBs?
-The thermal conductivity of glass is 4-5 times higher than FR4. This allows glass PCBs to conduct heat efficiently to connected heat sinks and the surrounding environment. High power components can thus be operated at higher temperatures without overheating.
-Can components be soldered onto glass PCBs?
-Yes, components can be soldered onto glass PCBs, but the glass surface requires additional surface preparation to create a suitable pad finish. Conductive adhesives are also usable but soldering is preferred for high reliability connections.
-Are glass PCBs compatible with lead-free soldering?
-Lead-free soldering processes are compatible with glass PCBs provided the board and solder masks can withstand the higher reflow temperatures. Solder masks with high temperature stability are selected.
-How rigid and fragile are glass PCBs?
-The strength of glass PCBs depends on the glass type - fused silica has the highest rigidity and flexural strength. With proper handling, glass PCBs are not inherently fragile but have higher strength than organic boards. Cutting and machining require diamond-tipped tools.
+현재 interposer 기술에는 2가지가 있다.
+Organic interposer, Si interposer
+
+Organic interposer:
+장점: Si interposer보다 훨씬 싸다.
+
+단점: 쉽게 휘어지고, 표면이 울퉁불퉁해 배선 간격을 좁게 하기 어렵다.
+
+Si interposer:
+TSV를 여기서도 쓴다.
+성능은 괜찮은데, 공정이 어려워서 너무 비싸다. 설비투자도 많이 필요하다.
+
+그래서, interposer를 쓰면 가격과 성능 사이에서 타협해야 한다.
+이걸 빠져나가기 위해 유리기판이라는게 제시됐다.
+
+유리기판을 쓰면, interposer 없이 바로 PCB에 미세한 회로를 그릴 수 있다. 기존 기판은 그렇게 미세한 회로를 못그려서 interposer를 쓴 거였다.
+
+유리기판은 가격이 그렇게 비싸지는 않은데, TGV라는 새로운 공정을 연구해야 한다. TSV는 Si에 구멍뚫는거였고, TGV는 유리에 구멍뚫는거다.
+
+유리기판이 지금 해결해야 할 문제로는, 층간 연결문제가 있다.
