@@ -66,7 +66,39 @@ dielectric은 low gate leakage를 위해 SiO2, Si3N4, high-k 등으로 얇은 di
 
 
 
+GaN device는 dynamic Ron 문제를 겪는다.
+GaN device 구조의 trap들과 large depletion length 때문이다.
 
+수많은 channel electron들이 trapped되어 conduction에 기여하지 못하게 되는데,
+이 trapped되는 시점이 HEMT가 켜지는 시점이다.
+
+결국 dynamic Ron이 static Ron보다 큰 값을 갖게 되고, 이건 power loss로 이어진다.
+
+근데, GaN device들은 high voltage에 쓰이는 소자라 large depletion length가 필요한건 어쩔 수가 없다.
+
+그래서 소자 개발자들은 GaN buffer, interfaces, dielectric layers, field plate 구조 등을 잘 조절해서,
+trap 현상을 최대한 줄이면서도 breakdown voltage는 높게 유지해야 한다.
+
+
+HEMT개발에서, device reliability도 중요하다.
+device는 쓰다보면 특성이 안좋아지니까, 600V rated device더라도 처음에는 1350V정도 버티도록 만들어준다.
+
+Cascode MOSFET을 안쓰고, 그냥 enhancement GaN TR을 쓰기도 한다.
+이때는 cost, size, slew rate, control 등 이유다.
+
+
+normally off device에서 low Ron을 얻고 싶다면,
+source-to-gate access region과 gate-to-drain access region에서 높은 2DEG 밀도를 유지해야 하며,
+zero gate bias에서는 gate 제어 하에 있는 channel이 완전히 depleted되게 해야 한다.
+
+
+Enhancement GaN에서 normally off + low Ron을 얻기 위한 2가지 방법을 소개한다.
+
+p-GaN Gate FET:
+AlGaN barrier layer와 gate electrode 사이에 p-type GaN layer를 끼우는 방식이다.
+p-GaN layer의 doping level과 두께를 잘 조절한다면,
+p-GaN layer에 충분히 많이 존재하는 negative charge들이 그 아래의 2DEG를 deplete시키게 된다.
+이 방식의 예시가 GIT(Gate Injection Transistor)다. EPC(Efficient Power Conversion)에서 만들었다.
 
 
 
