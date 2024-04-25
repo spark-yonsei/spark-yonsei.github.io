@@ -100,7 +100,18 @@ p-GaN layer의 doping level과 두께를 잘 조절한다면,
 p-GaN layer에 충분히 많이 존재하는 negative charge들이 그 아래의 2DEG를 deplete시키게 된다.
 이 방식의 예시가 GIT(Gate Injection Transistor)다. EPC(Efficient Power Conversion)에서 만들었다.
 
+GIT:
+P-type GaN gate가 gate 아래 heterojunction의 potential을 끌어올린다.
+이걸로 normally off operation이 구현된다.
 
+고밀도 2DEG가 유지되는 곳에는 p-type GaN layer가 영향을 주지 못한다.
+이걸로 low ron, high current driving capability가 구현된다.
+
+그래서 normally off + low ron 둘 다 가져갈 수 있다.
+그럼에도, dynamic ron 문제는 남아있다. ron이 올라가는 문제다.
+이 문제는 current collapse 문제라고도 불린다.
+
+HD-GIT라는게 나왔다.
 
 
 참고자료: 'GaN-on-Si Power Technology: Devices and Applications'
