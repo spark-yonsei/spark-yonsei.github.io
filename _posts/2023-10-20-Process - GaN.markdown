@@ -100,7 +100,7 @@ p-GaN layer의 doping level과 두께를 잘 조절한다면,
 p-GaN layer에 충분히 많이 존재하는 negative charge들이 그 아래의 2DEG를 deplete시키게 된다.
 이 방식의 예시가 GIT(Gate Injection Transistor)다. EPC(Efficient Power Conversion)에서 만들었다.
 
-GIT:
+GIT(Gate Injection Transistor):
 P-type GaN gate가 gate 아래 heterojunction의 potential을 끌어올린다.
 이걸로 normally off operation이 구현된다.
 
@@ -112,6 +112,9 @@ P-type GaN gate가 gate 아래 heterojunction의 potential을 끌어올린다.
 이 문제는 current collapse 문제라고도 불린다.
 
 HD-GIT라는게 나왔다.
+Hybrid-drain-embedded GIT
+HD-GIT은 drain electrode 밑에 p-GaN layer를 만들어놓는다.
 
+off state일때, drain쪽 p-GaN layer에서 나오는 hole들이 
 
 참고자료: 'GaN-on-Si Power Technology: Devices and Applications'
