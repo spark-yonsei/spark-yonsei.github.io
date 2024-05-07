@@ -1,8 +1,0 @@
-I"5<p><br />
-Stability:<br />
-어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까?<br />
-안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다.<br />
-<br />
-그럼 frequency response를 어떻게 확인할 것인가?<br />
-Loop Gain을 본다.<br /></p>
-:ET

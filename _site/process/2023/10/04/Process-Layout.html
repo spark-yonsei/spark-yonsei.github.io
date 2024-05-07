@@ -36,7 +36,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Design">
 				<span class="name">Design</span>
-				<span class="badge">20</span>
+				<span class="badge">26</span>
 	    	</a>
  		</li>
 	    
@@ -57,14 +57,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Process">
 				<span class="name">Process</span>
-				<span class="badge">17</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">2</span>
+				<span class="badge">22</span>
 	    	</a>
  		</li>
 	    
@@ -72,6 +65,13 @@
 	    	<a class="nav-item" href="/category/#Mathematics">
 				<span class="name">Mathematics</span>
 				<span class="badge">1</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Electromagnetics">
+				<span class="name">Electromagnetics</span>
+				<span class="badge">6</span>
 	    	</a>
  		</li>
 	    
@@ -96,35 +96,114 @@
 	</header>
 
 	<div class="post-content">
-		<p>Layout: 특정 기능을 수행하는 회로를 칩으로 제작할 수 있게 물리적으로 패턴으로 구현한 것</p>
+		<p>Layout: 설계한 회로가 칩으로 제작될 수 있도록, 회로를 물리적 구조로 구현한 것</p>
 
-<p>설계가 완료된 회로는 칩으로 만들기 위해 일정한 규칙을 갖는 물리적 패턴으로 변환해줘야 한다.
-이 과정을 레이아웃 설계 또는 마스크 패턴(Pattern) 설계라고 한다.</p>
+<p>Layout이 완성되면, Layout에 맞춰 포토마스크가 제작된다.
+그리고 포토마스크에 그려진 대로 회로가 웨이퍼에 새겨지게 된다.</p>
 
-<p>레이아웃 설계에서 만든 패턴은 마스크로 제작된다.
-이 마스크 패턴대로 회로가 웨이퍼에 새겨지게 된다.</p>
+<p>동일한 회로라도 사용 목적, Layout 설계자에 의해 다른 형태의 Layout이 나올 수 있다.
+Layout 내 소자 제작 및 연결 방법에 따라 다른 Parasitic R, C 성분이 생겨 소자 특성이 달라진다.
+그래서, 최대한 원래 설계 의도와 동일하게 회로가 동작할 수 있도록 Layout을 잘 만들어줘야 한다.</p>
 
-<p>Layout에는 Full-custom(Manual layout) 방식과 Auto layout 방식이 있다.</p>
+<p>여기서 소자라 함은 주로 MOSFET, 저항, 캐패시터를 말한다.</p>
 
-<p>일단, 공정에 맞는 PDK를 설치한다.
-그다음에 회로에 맞게 Layout을 진행한다.</p>
+<p>MOSFET Layout:
+Source와 Drain 사이, Drain과 Body 사이의 Junction Capacitance 최소화
+Source, Drain 영역의 Contact 간격 균일화를 통해 균일한 전위 분배
+동일한 입력 Bias 전압이 가해지는 TR이라면, 일정한  TR Unit width 비율 유지</p>
 
-<p>동운아나텍 Analog Layout Manual:</p>
+<p>각각의 Process에 적당한 Physical Size가 결정되어 있음
+Layout design 단계에서는 Physical Value(전기적 특성)을 고려한 Place &amp; Route를 적용
+Width 와 Length의 비가 보통 10~200 범위 내 유지
+특별한 Output driver 단에서는 1000배 이상 되는 것도 있음</p>
 
-<p>업무 Flow:
-Layout Start
-Custom Layout Review
-Layout Fix
-Verification
-Post Layout Simulation (LPE) - 이후 문제있으면 Layout Fix로, 문제 없으면 IP Merge로
-IP Merge
-Tape Out
-Job Deck View
-Mask 제작 요청</p>
+<p>저항 Layout:
+Value의 정확도와 크기에 따라 재료 선택
+재료에 따라 편차가 있으며 Chip상에서 차지하는 면적과 정확도를 고려하여 적용
+Layout Design에서는 일반적으로 정확한 값을 구현하기 유리한 Poly저항을 이용
+정확도는 떨어지지만 큰 값을 구현하기 위해 Diffusion 저항을 사용하기도 함
+Gradient를 최소화 하기 위해서 inter-digitized 및 Centroid 구조를 주로 사용</p>
 
-<p>Layout Design Check list:</p>
+<p>캐패시터 Layout:
+물리적 특성상 재료의 유전율,  Area, Distance에 의해 Value가 결정
+주변 소자와의 배치된 상태에 따라서도 Variation이 발생
+ Layout Design에서는 주변소자, Route 종류, 배치 방법 등 Cross Talk를 최소화 하면서 정확한 Value를 유지하기 위한 많은 방법들을 적용</p>
 
-<p>Design Rule: Layout을 하기 전 반드시 필요한 File이며 공정 별로 Rule이 다름
+<p>배선 Layout:
+일단 전류가 많이 흐르는 곳은 도체가 두꺼워야 한다.
+그리고 도체들이 overlap되거나 하면 coupling capacitance가 생길 수 있는데,
+이 Capacitance때문에 계산한 gain이 안나온다거나 PSRR이 안좋아진다거나 할 수 있다.
+배선은 최대한 간소화한다. 민감한 Analog 배선을 굳이 길게 만들 필요가 없으니, 최대한 짧게 만든다.</p>
+
+<p>Matching:
+Matching 관련해서는 아예 파일이 따로 있으니까 그거 보고 정리
+Parasitic R, C 성분을 완전히 제거할 수는 없다.</p>
+
+<p>Matching이 요구되는 소자(MOS, CAP, RES):
+Matching을 요하는 소자들의 위치는 가깝게 할 수록 유리
+3차원적인 고려를 통하여 주변 또는 상하의 조건을 동일하게 감안하여 Layout 진행
+Layout에서는  parasitic 성분을 완전히 제거할 수 없음
+최소화 하거나 parasitic 성분을 입력 TR에서 동일하게 해 주어야 함(Matching의 중요성)
+입력  TR은 중간에 배치하는 것이 유리(AMP 의 offset을 최소화 할 수 있음)
+Source를 공유하여 작업하면 면적상 유리
+     - but source를 공유하면  revision 작업 시 회로 분리 불가능</p>
+
+<p>Guard ring technique:
+Guard ring에 clock noise를 차단하는 방법
+Substrate contact 또는 well contact 사용
+Analog와 Digital Guard ring Voltage source 분리</p>
+
+<p>Noise Coupling:
+Analog line과 Digital line 사이의 Coupling Capacitance, Crosstalk에 의한 영향
+Analog와 Digital line이 병렬로 구성되어 있을 때 Coupling 발생, 겹치면서 혼선이 생겼을 때 발생 
+Shielding 작업으로 해결</p>
+
+<p>Shielding 작업:
+Analog Line과 Digital Line 사이에 GND Line을 깔아놓는다.</p>
+
+<p>Latchup:
+NMOS TR과 PMOS TR의 전압차가 크고 근접해 있을때 Latchup이 발생하기 쉽다.
+Latchup이 발생하면 회로 short, 회로 기능 상실, 과전류 등 문제가 생긴다.</p>
+
+<p>Latchup을 방지하려면 전압차가 큰 TR은 원거리 배치하고, bulk bias를 많이 넣는다.
+아마 같은 전압 TR끼리는 가까이 배치하고, 인접 block과의 거리를 멀리한다.</p>
+
+<p>Guardring 작업도 한다.</p>
+
+<p>단차:
+각 소자의 Pattern 및 소자 사이를 연결하는 배선이 고르지 못한 표면에 형성
+Chip은 무척 많은 공정을 거처 제작
+각 공정을 거치면서 필수적으로 나타나는 현상
+TEXT 도포 및 식각 공정에 의해 위로 볼록하게 나오기도 하고 밑으로 오목하게 들어가는 Pattern 발생 
+동일한 길이로 배선을 연결  실제 Chip에서 만들어지는 길이는 다르게 됨(연관된 각 소자의 동작 특성에 영향을 미침)
+작은 변화가 증폭기를 거치게 되면 큰 차이로 나타나게 되므로 이에 대한 감안이 필요</p>
+
+<p>소자간 isolation:
+P-substrate에는 가장 낮은 전압, N-well에는 가장 높은 전압
+이러면 역방향 다이오드라서, 다른 소자와 분리하는 isolation 역할을 하게 된다.</p>
+
+<p>Chip을 구성하는 각 block들은 인가되는 신호와 주파수가 다르고, 사용되는 전원이 다른 경우도 많다. 그 block들이 서로 영향을 미치는 현상이 일어날 수 있으니, Guard ring 작업을 해줘야 한다.</p>
+
+<p>Sub이 흔들리면 안되니까, deep nwell로 isolation을 해줘야 한다. - 이건 여기얘기가 맞나</p>
+
+<p>Floor plan:
+layout에서, 트랜지스터 단위 배치가 아닌 block 단위 배치
+면적을 최대한 줄이는 것이 좋다.
+면적이 작을수록 웨이퍼 하나당 chip을 더 많이 생산할 수 있다.</p>
+
+<p>Floor plan을 할 때 고려해야 할 점:
+Noise의 민감도는 Digital에서 Analog로 갈 수록 민감도가 커지지만, Noise는 Analog에서 Digital로 갈수록 커진다.
+*뭔소린지 모르겠으니 좀 알아보겠다.
+Analog와 Digital의 Power는 반드시 분리하며, 특별히 주의가 필요한 Block의 경우 추가로 Power를 분리한다.</p>
+
+<p>Verification rule:
+검증 (LVS, DRC, Antenna, LPE, … 등) Rule
+검증 rule(최종버전 확인, DRC/LVS/QRC 사전 확인, Dummy 소자 인식 확인 필수)
+Layout grid 설정
+Floor plan 확인
+Estimate Layout TAT 산출
+Estimate Layout TAT (Turn-Around Time) 산출
+Design Rule
 Layout Notice
 Critical / Dirty Path
 Power / GND Path
@@ -136,45 +215,12 @@ DRC / LVS/LPE
 Origin
 Index</p>
 
-<p>Layout에서 봐야 할 점:
-일단 전류가 많이 흐르는 곳은 도체가 두꺼워야 한다.</p>
-
-<p>그리고 도체들이 overlap되거나 하면 coupling capacitance가 생길 수 있는데,
-이 Capacitance때문에 계산한 gain이 안나온다거나 PSRR이 안좋아진다거나 할 수 있다.</p>
-
-<p>저항, 캐패시터, 트랜지스터 매칭 고려해서 배치해줘야 한다.
-공정에 맞게 layout을 해줘야 한다.
-수율이 높게 나오도록 layout을 해줘야 한다.
-latchup, noise를 고려해서 layout을 해줘야 한다.
-block guardring도 고려하라는건가? 이게 뭐지</p>
-
-<p>Verification rule:
-검증 (LVS, DRC, Antenna, LPE, … 등) Rule
-검증 rule(최종버전 확인, DRC/LVS/QRC 사전 확인, Dummy 소자 인식 확인 필수)
-Layout grid 설정
-Floor plan 확인
-Estimate Layout TAT 산출
-Estimate Layout TAT (Turn-Around Time) 산출</p>
-
-<p>Floor plan:
-layout에서, 트랜지스터 단위 배치가 아닌 block 단위 배치</p>
-
-<p>Floor plan을 할 때 고려해야 할 점:
-Noise의 민감도는 Digital에서 Analog로 갈 수록 민감도가 커지지만, Noise는 Analog에서 Digital로 갈수록 커진다.
-*뭔소린지 모르겠으니 좀 알아보겠다.
-Analog와 Digital의 Power는 반드시 분리하며, 특별히 주의가 필요한 Block의 경우 추가로 Power를 분리한다.
-배선은 최대한 간소화한다. 민감한 Analog 배선을 굳이 길게 만들 필요가 없으니, 최대한 짧게 만든다.
-chip 면적을 최대한 줄인다. 면적이 작을수록 웨이퍼 하나당 chip을 더 많이 생산할 수 있다.</p>
-
-<p>마지막이:
+<p>LGPG Flow(Layer Generation Pattern Generation):
+Rule file과 GDS file을 준비한다.
+마지막이:
 Job deck view</p>
 
 <p>mask 제작 의뢰</p>
-
-<p>Standard Primitive: 해당 공정의 Design kit로 사용되며 Full chip PnR시 쓴다.
-Standard IO Cell: for PnR Design kit STD-IO Layout</p>
-
-<p>Sub이 흔들리면 안되니까, deep nwell로 isolation을 해줘야 한다. - 이건 여기얘기가 맞나</p>
 
 	</div>
 </article>

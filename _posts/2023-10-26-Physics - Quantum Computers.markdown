@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Quantum Computers"
+title:  "Microscopic Electromagnetics - Quantum Computers"
 date:   2023-10-24 19:31:29 +0900
-categories: Physics
+categories: Electromagnetics
 order: 1
 ---
 

@@ -12,12 +12,80 @@ Systemic mismatch:
 회로/레이아웃 설계때문에 생기는 mismatch다.
 설계 잘하면 피할 수 있다.
 
+어떻게 설계를 잘하면 피할 수 있나?
 
+소자를 사용할때, 그냥 하나 말고 unit size 소자를 여러개 이어서 만든다.
+트랜지스터, 저항, 캐패시터 다 여러개 붙여서 소자 하나 만든다.
+
+같은 전압이 걸려야 하는 곳은 모든 것을 똑같게 해줘야 한다.
+wire 길이, routing 거리, parasitic capacitance 등 모두 동일하게 해줘야 한다.
+
+다른 type device들은 섞으면 안된다.
+poly 저항 +  n+저항 이런 식으로 섞으면 안된다.
+
+poly 저항과 n+저항이 있을 경우, 같은 device끼리 모아서 layout해라.
+거리가 멀 수록 variation이 크다.
 
 
 random mismatch:
 process parameters, lithography에서의 variation에 의한 mismatch
 
+device length, channel doping, oxide thickness, sheet resistance, capacitance 등이 트랜지스터마다 조금씩 다르다.
+
+소자의 면적을 넓히면, 면적이 작을때보다 variation이 작아진다.
+
+block을 layout할 경우, 정사각형으로 layout하는게 가장 matching이 좋다.
+
+
+
 gradient mismatch:
 Wafer 위에서의 위치에 따라서 특성이 달라지는 mismatch
 
+wafer가 완전히 평평하지 않아서 생기는 mismatch다.
+
+gradient mismatch를 줄이려면, 소자들이 비슷한 위치에 있어야 한다.
+
+common centroid, interdigitation으로 개선한다.
+
+이 방식들이 뭔지는 나중에 설명
+
+
+
+WPE:
+Nwell을 형성하기 위해 ion implant를 할 떄,
+photoresist 없는 영역에는 이온이 박히고,
+photoresist 있는 영역은 photoresist에 막혀서 이온이 안 박힌다.
+
+이때, 일부 이온이 photoresist에 튕겨져 나와 well에 들어간다.
+그 결과, well의 edge 부분에는 더 많은 이온이 박혀 doping 농도가 증가한다.
+
+이러면 무슨 문제가 생기냐?
+Nwell 위에 PMOS를 만들어야 하는데,
+Nwell 농도가 높으면 channel에 hole 모이기 힘들어진다.
+그래서 channel이 만들어지기 더 힘들게 되어 Vth가 증가한다.
+
+그니까, well의 edge쪽 트랜지스터들은 원래 의도보다 Vth가 높아지는거다.
+이러면 켜지는 전압도 높아지고, 켜졌을때 전류도 줄어든다.
+
+이걸 예방하려면, 소자들은 well edge로부터 멀리 떨어뜨려야 한다.
+
+멀리 떨어뜨리는게 확실해서 좋겠지만,
+너무 멀리 떨어뜨리면 소자들을 연결하는 배선이 길어져 metal 저항이 늘어나고, 전체 layout 크기도 늘어나게 된다.
+
+그래서 적당히 떨어뜨려줘야 한다.
+
+Sheet gate Oxide는 고전압 트랜지스터에서 나타나는 현상인데, 비슷한 현상이다.
+
+
+STI Stress:
+기존에는 active끼리 분리하기 위해 LOCOS(Local Oxidation Of Silicon) 방식을 썼는데,
+이러면 bird's beak 현상때문에 active 영역 면적 손해가 발생했고, 집적도를 높이기도 힘들었다.
+이 현상은 가로방향으로 산화 영역이 늘어나는 현상이다.
+
+이제는 STI(Shallow Trench Isolation) 방식을 쓴다.
+근데 공정이 더 작아지다보니 STI에서도 문제가 생기고 있다.
+STI에 채워넣는 물질이 active를 미는 힘을 만들어서, active에 기계적 stress를 준다.
+
+이러면 gate length가 줄어들어 leakage current가 증가한다.
+
+이 영향을 줄이기 위해, dummy tr을 추가하거나, array 구조로 active를 계속 연결한다.

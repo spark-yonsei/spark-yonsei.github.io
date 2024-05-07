@@ -1,4 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-18T01:03:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Field Quantities</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Field-Quantities.html" rel="alternate" type="text/html" title="Field Quantities" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics%20-%20Field%20Quantities</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Field-Quantities.html"><![CDATA[<p>전자기학에서는 다양한 field들을 다룬다.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-08T01:55:58+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Signals</title><link href="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html" rel="alternate" type="text/html" title="Signals" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/mathematics/2023/10/24/Mathematics%20-%20Signals</id><content type="html" xml:base="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html"><![CDATA[<p>ㅁㄴㅇㄹ</p>]]></content><author><name></name></author><category term="Mathematics" /><summary type="html"><![CDATA[ㅁㄴㅇㄹ]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Special Relativity</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Special-Relativity.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Special Relativity" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Special%20Relativity</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Special-Relativity.html"><![CDATA[<p>맥스웰 방정식은 source에 의해 field가 어떻게 생기는지 알려준다</p>
+
+<p>lorentz force가 알려주는건, field가 어떤 영향을 주는지다</p>
+
+<p>상대성이론에서도, 전하, spin, 광속은 일정하다</p>
+
+<p>Lorentz transform:</p>
+
+<p>광속은 일정한 채로 시공간 transform을 해야 한다</p>
+
+<p>그러다보니 Lorentz transform을 하게 된다</p>
+
+<p>Lorentz transform을 해보면</p>
+
+<p>이 시공간 개념으로 전자기력을 관찰해볼 수 있다.</p>
+
+<p>전기장은 전하에서 나온다.
+그래서 field가 직진하고(div만 있고 curl이 없고),
+field에 의해 특정 방향으로 직진하는 힘을 받는다.</p>
+
+<p>자기장은 전하의 움직임에서 나온다.
+그래서 field가 회전하고(curl만 있고 div가 없고),
+field에 의해 특정 방향으로 회전하는 힘을 받는다.</p>
+
+<p>민코프스키공간에서 보면,
+전기력은 Lorentz transform이고, 자기력은 공간 내 회전이다
+그래서 둘 다 회전이라 같은 걸로 볼 수 있다</p>
+
+<p>광자의 반입자가 있나?
+있다. 광자의 반입자는 광자다.
+​
+force carriers(전자기력-광자, 약력-z보손, 강력-글루온)들은 입자와 반입자가 같다.</p>
+
+<p>반입자는 원래 입자와 charge가 반대지만, 이 force carrier들은 전하가 0이라 반입자도 전하가 0이다.</p>
+
+<p>입자의 반입자가 그 자신이려면, 그 입자에서 CPT 대칭이 맞아야 한다.
+Charge Conjugation,
+Parity Inversion,
+Time Inversion</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[맥스웰 방정식은 source에 의해 field가 어떻게 생기는지 알려준다]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Quantum Electrodynamics</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Quantum-Electrodynamics.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Quantum Electrodynamics" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Quantum%20Electrodynamics</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Quantum-Electrodynamics.html"><![CDATA[<p>아주 복잡한 이론이지만, 최대한 수식 없이 설명해두려고 한다.
+수식을 입력하기도 어렵고, 나도 잘 모르니 자세한 설명이 필요하면 전공자를 찾아가라.</p>
+
+<p>빛을 유리에 비추면 일부는 반사되고 일부는 통과한다.</p>
+
+<p>고전물리학의 입자라면 이럴수가 없다.
+완벽히 같은 조건에서 발사했는데 어떻게 일부는 통과하고 일부는 반사되나?</p>
+
+<p>파동이라고 말하면 어느정도 말이 된다.</p>
+
+<p>근데 빛이 파동이면 광전효과 설명이 안된다.
+아무리 빛을 어둡게(광자를 적게) 해서 발사해도, 금속판에서 튀어나오는 전자의 에너지는 동일하다.</p>
+
+<p>그래서, 광자를 확률적으로 행동하는 입자라고 하기로 했다.
+그렇다면 얼마만큼의 확률로 어떤 행동을 하는지 설명할 방법이 필요하다.</p>
+
+<p>그것을 확률진폭으로 설명한다.
+어떤 사건이 일어나는 도중에 발생하는 각 사건의 확률진폭을 구하고, 그걸 다 합성한 뒤 제곱하면 확률이 나온다.
+여기서 확률진폭은 phasor랑 비슷하게, 화살표로 표현한다.</p>
+
+<p>확률이 아니라 확률진폭으로 표현하는 이유는, 확률들이 서로 상쇄될 수 있기 때문이다.</p>
+
+<p>확률적으로 행동하는 입자는 고전 물리학을 전부 설명할 수 있으며,
+고전물리학이 설명하지 못하는 부분까지 설명할 수 있다.</p>
+
+<p>빛은 입사각과 반사각이 같다고 하지만,
+사실은 그게 가장 확률이 높은 경로라서 대부분의 광자가 그렇게 행동하는 것이다.
+(정확한 얘기 아닌듯? 다른 경로들이 다 상쇄된거니까. 생각좀 해서 정리하자)</p>
+
+<p>빛이 직진하는것도, 빛이 직진하는 경로가 가장 확률이 높긴 하지만 약간 퍼지는 경로도 분명 확률이 0이 아니다.
+그래서 빛이 멀리멀리 직진하다보면 점점 퍼지는거다.</p>
+
+<p>빛의 속도도, c로 이동할 확률이 가장 높긴 하지만 c보다 약간 크거나 약간 작은 속도로 이동할 확률도 0이 아니다.
+하지만 이건 아주 짧은 거리에서나 일어나는 이야기고,
+빛이 긴 거리를 진행하면 광자가 다 속도 c로 수렴한다.</p>
+
+<p>솔직히 빛 반사 얘기 다 할필요는 없을 것 같고,
+Stimulated Emission만 어떻게 설명해서 넣어놓자</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[아주 복잡한 이론이지만, 최대한 수식 없이 설명해두려고 한다. 수식을 입력하기도 어렵고, 나도 잘 모르니 자세한 설명이 필요하면 전공자를 찾아가라.]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Quantum Computers</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Quantum-Computers.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Quantum Computers" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Quantum%20Computers</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Quantum-Computers.html"><![CDATA[<p>양자컴퓨터는 중첩, 얽힘, 간섭 등 양자역학적 특징을 이용하는 컴퓨터다.</p>
+
+<p>1982년 리처드 파인만이 양자컴퓨터 개념을 제시했다.</p>
+
+<p>쇼어 알고리즘, 그로버 알고리즘은 양자컴퓨터가 고전 컴퓨터보다 특정 연산에서 빠를 수 있다는걸 증명했다.</p>
+
+<p>결국 양자컴퓨터에서 어려운 것은:
+양자 오류 정정(Quantum Error Correction)을 활용한 Qubit 제어가 어려운 것이다.</p>
+
+<p>양자컴퓨터 구조:
+Physical Layer와 Logical Layer가 있다.</p>
+
+<p>physical layer:
+Lattice of superconducting qubits and resonators로 만들어진 physical quantum processor가 있고,
+여기에 control을 위한 microwave pulses, readout을 위한 quantum-limited amplifiers가 있고
+quantum error correction을 위한 부분이 있다.</p>
+
+<p>Logical layer:
+여기는 Shor, Grover의 quantum simulation들이 돌아간다.</p>
+
+<p>쇼어 알고리즘:
+양자 푸리에 변환을 사용한다.
+빠른 소인수분해로 암호 해독을 빠르게 할 수 있다.</p>
+
+<p>그로버 알고리즘:
+찾으려는 값의 확률진폭을 키우는 과정을 반복해서, 고전 알고리즘 대비 복잡도를 최대 루트N배 낮출 수 있다.</p>
+
+<p>큐비트를 구현하는 방법은 상당히 다양하다.</p>
+
+<p>반도체 양자점, 초전도 등등</p>
+
+<p>반도체 양자점 큐비트 방식은 양자점으로 양자정보처리를 한다.</p>
+
+<p>X게이트, Z게이트: 단일 큐비트 게이트
+CNOT 게이트: 다중 큐비트 게이트
+X게이트는 NOT gate와 같은 역할을 한다.</p>
+
+<p>양자점을 만들떄:
+AlGaAs, GaAs를 붙여놓고 전압을 걸면, 접합면에서 전자가 전위 우물에 갇혀 양자점이 생긴다.</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[양자컴퓨터는 중첩, 얽힘, 간섭 등 양자역학적 특징을 이용하는 컴퓨터다.]]></summary></entry><entry><title type="html">Macroscopic Electromagnetics - Vector Calculus</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Electromagnetics-Vector-Calculus.html" rel="alternate" type="text/html" title="Macroscopic Electromagnetics - Vector Calculus" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Electromagnetics%20-%20Vector%20Calculus</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Electromagnetics-Vector-Calculus.html"><![CDATA[<p>Electromagnetics Theory에는 크게 2가지가 있다.<br />
+<br />
+Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다.<br />
+Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다.<br />
+<br />
+Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고,<br />
+그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다.<br />
+<br />
+여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다.<br />
+<br />
+<br />
+전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.<br />
+<br />
+좌표계 변환 - 위치:<br />
+<br />
+좌표계 변환 - 벡터:<br />
+<br />
+<img src="/public/img/EM1.png" alt="alt text" /><br />
+<br />
+Vector와 Vector field의 차이<br />
+<br />
+Gradient가 무엇인가<br /></p>
+
+<p>Gradient는 어떤 Scalar Field의</p>
+
+<p><br />
+좌표계별 Gradient:<br />
+<br />
+Curl이 무엇인가<br />
+<br />
+좌표계별 Curl:<br />
+<br /></p>
+
+<p><br />
+유럽은 Linguistic notation : Curl \(\bar{E}\)<br />
+미국은 Gibbs notation : \(\triangledown  \times \bar{E}\)<br /></p>
+
+<p><br />
+Stokes’ Theorem:<br />
+\(\oint_{c}\bar{F}\cdot d\bar{l}=\iint_{S}\triangledown \times \bar{F}\cdot \hat{n}dS\)<br />
+<br />
+Divergence Theorem:<br />
+\(\oiint_{S}\bar{F}\cdot \hat{n}dS=\iiint_{V}\triangledown \cdot \bar{F}dV\)<br />
+<br />
+Div, Curl을 Gibbs notation으로 적을 때는 각각 \(\triangledown \cdot\), \(\triangledown \times\)라고 적는다.<br />
+이때, \(\triangledown \times \bar{F}\)를 \(\triangledown\)와 \(\bar{F}\)를 cross product하는 거라고 해석하는건 일반적으로 틀린 해석이다.<br />
+그런 해석은 Cartesian coordinates에서만 맞는 이야기다. 일반적으로, \(\triangledown \cdot\)와 \(\triangledown \times\)는 그냥 그 자체로 하나로 봐야 한다.<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Electromagnetics Theory에는 크게 2가지가 있다. Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다. Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다. Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고, 그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다. 여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다. 전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다. 좌표계 변환 - 위치: 좌표계 변환 - 벡터: Vector와 Vector field의 차이 Gradient가 무엇인가]]></summary></entry><entry><title type="html">Macroscopic Electromagnetics - Field Quantities</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Electromagnetics-Field-Quantities.html" rel="alternate" type="text/html" title="Macroscopic Electromagnetics - Field Quantities" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Electromagnetics%20-%20Field%20Quantities</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Electromagnetics-Field-Quantities.html"><![CDATA[<p>전자기학에서는 다양한 field들을 다룬다.<br />
 <br />
 Field Quantities:<br />
 \(\bar{E}\) : Electric field intensity [\(V/m\)]<br />
@@ -54,192 +213,142 @@ Charge Conservation Equation(전하량 보존법칙)이라고도 부르고, Cont
 
 <p>Faraday’s equation, Maxwell-Ampere’s law에 Stokes’ theorem을 적용해서 두 수식을 ‘differential form’이라는 형태로 표현할 수 있다.</p>
 
-<p><img src="/public/img/EM6.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Signals</title><link href="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html" rel="alternate" type="text/html" title="Signals" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/mathematics/2023/10/24/Mathematics%20-%20Signals</id><content type="html" xml:base="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html"><![CDATA[<p>ㅁㄴㅇㄹ</p>]]></content><author><name></name></author><category term="Mathematics" /><summary type="html"><![CDATA[ㅁㄴㅇㄹ]]></summary></entry><entry><title type="html">Vector Calculus</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Vector-Calculus.html" rel="alternate" type="text/html" title="Vector Calculus" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics%20-%20Vector%20Calculus</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Electromagnetics-Vector-Calculus.html"><![CDATA[<p>Electromagnetics Theory에는 크게 2가지가 있다.<br />
-<br />
-Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다.<br />
-Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다.<br />
-<br />
-Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고,<br />
-그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다.<br />
-<br />
-여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다.<br />
-<br />
-<br />
-전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.<br />
-<br />
-좌표계 변환 - 위치:<br />
-<br />
-좌표계 변환 - 벡터:<br />
-<br />
-<img src="/public/img/EM1.png" alt="alt text" /><br />
-<br />
-Vector와 Vector field의 차이<br />
-<br />
-Gradient가 무엇인가<br /></p>
+<p><img src="/public/img/EM6.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Basic Particles</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Basic Particles" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Basic%20Particles</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html"><![CDATA[<p>다이너마이트 폭발: 전자 패턴 재배치
+원자폭탄 폭발: 양성자/중성자 패턴 재배치</p>
 
-<p>Gradient는 어떤 Scalar Field의</p>
+<p>원자핵에 양성자 빔을 쏴서 깨보면 온갖 기본입자들이 나온다.</p>
 
-<p><br />
-좌표계별 Gradient:<br />
-<br />
-Curl이 무엇인가<br />
-<br />
-좌표계별 Curl:<br />
-<br /></p>
+<p>Strong interaction(강한 핵력)에 대한 이론: Quantum Chromodynamics</p>
 
-<p><br />
-유럽은 Linguistic notation : Curl \(\bar{E}\)<br />
-미국은 Gibbs notation : \(\triangledown  \times \bar{E}\)<br /></p>
+<p>Baryon: 3개 쿼크로 구성되는 입자. 양성자, 중성자 등
+Meson: 쿼크 1개와 반쿼크 1개로 구성되는 입자. 파이온 등.</p>
 
-<p><br />
-Stokes’ Theorem:<br />
-\(\oint_{c}\bar{F}\cdot d\bar{l}=\iint_{S}\triangledown \times \bar{F}\cdot \hat{n}dS\)<br />
-<br />
-Divergence Theorem:<br />
-\(\oiint_{S}\bar{F}\cdot \hat{n}dS=\iiint_{V}\triangledown \cdot \bar{F}dV\)<br />
-<br />
-Div, Curl을 Gibbs notation으로 적을 때는 각각 \(\triangledown \cdot\), \(\triangledown \times\)라고 적는다.<br />
-이때, \(\triangledown \times \bar{F}\)를 \(\triangledown\)와 \(\bar{F}\)를 cross product하는 거라고 해석하는건 일반적으로 틀린 해석이다.<br />
-그런 해석은 Cartesian coordinates에서만 맞는 이야기다. 일반적으로, \(\triangledown \cdot\)와 \(\triangledown \times\)는 그냥 그 자체로 하나로 봐야 한다.<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Electromagnetics Theory에는 크게 2가지가 있다. Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다. Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다. Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고, 그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다. 여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다. 전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다. 좌표계 변환 - 위치: 좌표계 변환 - 벡터: Vector와 Vector field의 차이 Gradient가 무엇인가]]></summary></entry><entry><title type="html">Analog - Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html" rel="alternate" type="text/html" title="Analog - Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Analog - Crystal Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Crystal Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Crystal Oscillator<br />
-1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다.
-Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다.
-진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.</p>
+<p>스핀 1/2 입자: 전자, u쿼크, d쿼크.
+셋 다 전하를 갖고 있다. 각각 -1, -1/3, +2/3.
+전하라는건, 광자와 결합할 확률진폭이다.</p>
 
-<p>quartz crystal은 mechanical, chemical stability가 높아 resonance frequency가 정확하고 안정적으로 나온다.</p>
+<p>전자의 질량: 0.511MeV
+u쿼크, d쿼크의 질량: 약 10MeV
+1MeV는 약 1.78*10^-27g</p>
 
-<p>quartz crystal은 elastic hysteresis가 아주 작기 때문에 Q factor가 크다.
-Q factor가 크다는건, 진동할때마다 날려먹는 에너지가 적다는거다.</p>
+<p>d쿼크가 u쿼크보다 약간 무겁다.
+그래서 중성자가 양성자보다 약간 무겁다.</p>
 
-<p>Oscillator 종류:<br />
-Rc 발진기<br />
-크리스탈 발진기: 그냥 크리스탈<br />
-크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것<br />
-그냥 전원만 넣으면 클럭이 출력된다<br />
-<br />
-근데, 크리스탈만 있을때 전압출력은 사인파인데<br />
-크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다<br />
-<br />
-<br />
-Crystal oscillator는:<br />
-항상 켜져있어야 하는 block이라, power 소비가 적어야 한다.<br />
-항상 같은 주파수를 만들어야 하기 때문에, PVT variation에 적게 영향받아야 한다.<br />
-오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다.<br />
-<br />
-Allan Deviation:
-예를 들어 t=1s에 측정한 10MHz clock의 Allan deviation이 10^{-9}였으면,
-t=1s에 오차가 10MHz * 10^{-9} = 10mHz만큼 있다는 뜻이다.</p>
+<p>양성자 = u쿼크 2개, d쿼크 1개
+중성자 = u쿼크 1개, d쿼크 2개</p>
 
-<p>Crystal은 항상 켜져있지만, power 많이 먹는 block들은 원래 꺼뒀다가 필요할때만 켠다.
-근데 crystal의 long term stability가 부족하면, crystal만 믿었다가는 시간 측정 잘못해서 block이 필요할때 꺼져있을 수도 있다.
-그래서, guard band를 넣어서 block을 조금 더 미리 켜줘야 한다. 그만큼 power가 더 나간다.</p>
+<p>쿼크들은 왜 붙어있을까?
+전기력 때문이라고 하기에는 전기력이 너무 약하다.</p>
 
-<p>crystal의 long term stability가 높으면 guard band를 더 좁게 가져가도 될거다. 그러면 power을 아낄 수 있다.
-그래서 Crystal의 long term stability가 부족하면, 결국 chip 전체의 power 소모가 늘어나게 된다.</p>
+<p>gluon 때문이다.
+gluon은 광자처럼, spin 1짜리 입자다.</p>
 
-<p>외부에서 Crystal에 넣어줘야 하는 power:<br />
-\(P_{Extr}\): extract oscillation frequency and phase<br />
-\(P_{Ener}\): Inject energy into crystal to compensate loss<br />
-\(P_{Timi}\): Timing control of energy injection<br />
-<br />
-\(P_{XO} = P_{Extr} + P_{Ener} + P_{Timi}\)<br />
-<br />
-그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다<br />
-\(P_{XO} &gt; P_{loss}\)<br />
-<br /></p>
+<p>gluon이 돌아다니는 경로에 대한 확률진폭은 광자와 같은 공식에 의해 결정된다.
+다른 점은, 글루온이 쿼크에서 방출되거나 흡수되는 사건에 대한 확률진폭이 j가 아니라 g라는 새로운 수라는 점이다.
+g가 j보다 훨씬 큰 수기 때문에, 글루온에 의한 힘이 전자기력(j에 의한 힘)보다 훨씬 강하다.</p>
 
-<div style="float: left">
-    <img src="/public/img/XO1.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
+<p>나머지는 그럼 전자기력이랑 다 똑같은가? 그렇지는 않다.
+쿼크에서는 편광을 color라고 부르는데, 쿼크의 편광 유형에는 Red Green Blue가 있다.
+쿼크는 글루온을 방출하거나 흡수할 때 color가 변한다.</p>
 
-<p><br />
-Crystal의 등가회로는 이렇다.<br />
-Co는 전극과 패키징에 의한 캐패시턴스를 표현한거고,<br />
-RLC branch (Rs Ls Cs)는 crystal의 mechanical resonance를 표현한거다<br />
-크리스탈을 패키징할때, 패키징이 작은 Crystal일 수록 ESR이 크고 motional inductance가 크다.
-<br />
-Q factor:<br />
-\(Q=2\pi \dfrac{E_{Stored}}{E_{Loss,T}} = 2\pi \dfrac{0.5L_sI^2_{R_s}}{0.5I^2_{R_s}R_sT_{XO}} = \dfrac{\omega_{osc}L_s}{R_s}\)<br /></p>
+<p>그래서, 글루온에도 color가 있다.
+예를 들어, 쿼크가 Red에서 Green으로 변하면서 방출되는 gluon은 red-antigreen 글루온이다.
+이 글루온이 Green 쿼크를 만나면 그 쿼크는 Red로 변한다.</p>
 
-<p>쓸때는 이렇게 밑에 shunt capacitance를 붙여서 쓴다.<br />
-Cp가 작을때의 장점:
-startup time이 Cp^2에 비례하기 때문에, Cp가 작으면 startup time이 짧다.
-amplitude control loop의 반응 시간이 더 짧다.</p>
+<p>글루온이 글루온을 만나면? 그때도 색깔대로 변한다.
+green-antiblue 글루온 + red-antigreen 글루온 = red - antigreen 글루온</p>
 
-<p>Cp가 클 때의 장점:
-RF phase noise가 작다.</p>
+<p>사실 QED랑 글루온에 의한 힘이랑 큰 차이는 없어보인다.
+그런데도 글루온에 의한 힘(강력)은 왜 제대로 계산이 안되고 있나?</p>
 
-<p><br /></p>
+<p>g가 j보다 훨씬 큰 값이라, 높은 차수를 갖는 항(결합점이 많은 항)들을 무시할 수 없기 때문이다.</p>
 
-<div style="float: left">
-    <img src="/public/img/XO2.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
+<p>하여간 이게 Quantum Chromodynamics다.</p>
 
-<p><br />
-당연히, 이렇게만 둔다고 동작하는건 아니다.<br />
-밖에서 에너지를 넣어줘야 진동을 할거다.<br />
-그 역할을 하는 회로를 붙여줘야 한다.<br />
-<br />
-Resonance mode가 2개 있는데,<br />
-Parallel mode가 있고 series mode가 있다.<br />
-<br />
-Parallel mode 진동을 할때는 inverter를 붙여주면 되고,<br />
-Series mode 진동을 할때는 buffer를 붙여주면 된다.<br />
-<br />
-\(f_{series} = \dfrac{1}{2\pi \sqrt{L_sC_s}}\)</p>
+<p>쿼크 3개짜리 입자는 3개 쿼크가 각각 Red, Green, Blue 중 하나의 편광을 갖고 있다.
+쿼크 2개짜리 입자는 보색 쿼크로 이루어져 있다. Red + Antired 또는 Green + Antigreen 또는 Blue + Antiblue
+이때 Anticolor를 갖는 쿼크들은 반쿼크다.</p>
 
-<p>Parallel mode:<br />
-Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.<br />
-\(f_{parallel}= \dfrac{1}{2\pi \sqrt{L_s\left(C_s||C_L \right)}}  = \dfrac{1}{2\pi \sqrt{L_sC_s}} \sqrt{1+\dfrac{C_s}{C_L}} = f_{series}\sqrt{1+\dfrac{C_s}{C_L}} \approx f_{series}\left(1+\dfrac{C_s}{2C_L} \right)\)<br />
-<br /></p>
+<p>쿼크들은 글루온으로 붙어있기 때문에 독립적으로 존재하지 못한다.
+그래서 원자핵을 깨도 쿼크 하나하나가 튀어나오지 않고 Meson(쿼크+반쿼크), Baryon(쿼크3개)이 나온다.</p>
 
-<p>\(f_{parallel}\)은 C_L에 대한함수라서 외부에 달아주는 C_p를 바꾸면 f_parallel도 바뀐다.<br />
-근데 f_series는 crystal 내부 수치들에 의해서만 결정된다.<br />
-<br />
-이렇게도 표현할 수 있다:<br />
-\(\dfrac{df_{parallel}}{dC_L}  = -f_{series} \dfrac{C_s}{2C^2_L}\)
-이게 좀 중요해질 수도 있는게, SMD(Surface-Mount Device) 캐패시터는 C가 \(\pm1% ~ \pm5%\)정도의 variation을 갖는다.
-이게 몇 Hz정도의 variation인지 알아야 한다면 이 수식을 쓰면 된다.</p>
+<p>그럼 QED랑 QCD는 모든걸 설명할 수 있나?
+아니다. 이 이론들로는 쿼크가 바뀌는걸 설명할 수 없다.
+u쿼크는 무슨 일이 일어나도 u쿼크, d쿼크는 무슨 일이 일어나도 d쿼크여야 한다.</p>
 
-<p>공진 주파수는 온도의 영향도 받는다. 대부분의 32kHz Crystal들은 XY cut인데, 이 경우 oscillation frequency는 온도에 대한 이차함수가 된다.</p>
+<p>근데, 베타붕괴가 일어나면 중성자가 양성자로 변한다.
+즉, d쿼크 하나가 u쿼크로 변한다.</p>
 
-<p>\(f_{parallel} = f_o\left(1 - \alpha\left(T-T_o \right)^2 \right)\)
-\(T_o\) : Turnover temperature
-\(f_o\) : Oscillation frequency at \(T_o\)
-\(\alpha\): temperature coefficient</p>
+<p>이건 W입자로 설명한다.(W보손)
+d쿼크가 W입자를 내놓으며 u쿼크로 바뀌고, W입자는 전자와 반뉴트리노(Anti-neutrino)로 붕괴한다.</p>
 
-<p>Crystal을 직렬 RLC 하나 + C_o로 간단하게 모델링해놨지만, 사실은 f_{parallel}의 harmonic 주파수에 해당하는 진동들도 존재한다.
-그런 진동들을 ‘overtone mode’라고 부른다.</p>
+<p>뉴트리노는 전자, 쿼크같이 스핀 1/2입자인데, 질량도 전하도 없다.
+전하가 없기에 광자와 상호작용하지 않는다.
+뉴트리노는 글루온과도 상호작용하지 않고, W입자랑만 상호작용한다.</p>
 
-<p>예를 들어, 32kHz crystal에서는 fundamental frequency의 6배 주파수에 second overtne이 존재한다.</p>
+<p>W입자는 광자, 글루온처럼 스핀 1짜리 입자다.
+W입자는 쿼크의 종류를 바꾸며 전하의 일정량을 뺏어간다.
+color는 안바꾼다.</p>
 
-<p>overtone의 영향을 줄이려면, 그 주파수에서의 drive level이나 loop gain이 낮게 나오게 하면 된다.</p>
+<p>W-는 -1전하를 갖고, 반입자인 W+는 +1전하를 갖는다.
+W는 -1전하를 갖기 때문에, 광자와 결합할 수도 있다.</p>
 
-<p>ESR: Equivalent Series Resistance
-Series resonant frequency에서 crystal이 보여주는 resistance다.
-\(ESR = R_s \left( 1+\dfrac{C_o}{C_p} \right)^2\)
-Cp가 들어간걸 보면 Cp를 달아놓고 잰 것 같긴 한데, 정확히 어떻게 잰건지는 잘 모르겠다.
-어쨌든, 보통 \(C_p&gt;&gt;C_o\)라서 \(ESR \approx R_s\)다.</p>
+<p>베타붕괴는 전자와 광자의 상호작용보다 훨씬 느린 속도로 일어난다.
+따라서, W입자는 광자, 글루온과는 달리 매우 큰 질량(약 80,000MeV)를 갖는다.</p>
 
-<p>Drive level은 crystal 내에서 소모된 전력을 말한다.
-$$DL = 2ESR \left( \pi f \left( C_L+C_o \right)V_{pp} \right)^2
-Vpp는 출력의 peak to peak 전압이다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Crystal Oscillator 1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다. Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다. 진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.]]></summary></entry><entry><title type="html">Analog - ESD</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html" rel="alternate" type="text/html" title="Analog - ESD" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20ESD</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html"><![CDATA[<p>ESD Test: 정전기 시험</p>
+<p>전하가 없는 W입자도 있다. 이걸 Z입자(Z보손)이라 부른다.
+Z입자는 d쿼크, u쿼크, 전자, 뉴트리노 등과 결합할 수 있으며,
+이러한 상호작용을 neutral current라 부른다.</p>
 
-<p>진짜 우리가 아는 정전기 얘기다.
-사람은 정전기에 따끔 하면 끝이지만, IC는 정전기 때문에 치명적인 문제가 생길수도 있다.</p>
+<p>W+, W-, Z의 관계:
+W+와 W-이 결합하면 Z가 나온다.
+근데 이떄, 측정된 결합상수 값이 j와 매우 유사하다.</p>
 
-<p>그래서 ESD Cell로 정전기가 IC에 영향을 주지 못하게 만들고,
-몇가지 ESD Model로 IC를 테스트한다.</p>
+<p>그래서 3개의 W입자(W+, W-, Z)와 광자가 같은 존재의 다른 모습이라는 것이
+Stephen Weinberg와 Abdus Salam의 전자기약력 이론이다.</p>
 
-<p>ESD = Electrostatic Discharge</p>
+<p>지금까지 3가지 상호작용을 살펴봤다. 광자(전자기력), 글루온(강력), W입자(약력)
+근데 기본입자들은 사실 훨씬 많다.</p>
 
-<p>ESD Model:
-HBM : Human Body Model
-MM : Machine Model
-CDM : Charged Device Model</p>
+<p>원자핵을 때리는 양성자의 에너지가 높을수록, 원자핵이 깨지면서 새로운 입자들이 튀어나온다.
+이 새로운 입자중 하나가 뮤온(Muon)이다.</p>
 
-<p>HBM은 인체에 의한 정전기, MM은 기계에 의한 정전기, CDM은 공기중 전하에 의한 정전기 모델이다.</p>
+<p>뮤온은 전자보다 206배정도 무겁다는 점을 제외하면 같은 입자다.
+전자: 0.511MeV, 뮤온: 105.8MeV
+그래서, 뮤온의 모든 특성은 QED로 완벽히 설명될 수 있다.</p>
 
-<p>ESD 방지 대책으로는 ESD Cell을 만들어서 붙인다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[ESD Test: 정전기 시험]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
+<p>뮤온의 확률진폭을 계산할 때, 결합상수 j와 함수 E(A-&gt;B)는 전자와 같은 값, 함수를 쓰면 되지만,
+자기쌍극자능률 n에 대해서는 다른 값을 넣어야 한다.
+뮤온의 자기쌍극자능률은 전자보다 아주 약간 크다.
+이유가 책에 있었는데 나중에 다시 확인해보자.</p>
+
+<p>뮤온의 질량이 전자보다 200배정도 크기 때문에, 뮤온의 초시계는 전자보다 200배정도 빠르게 회전한다.</p>
+
+<p>광자는 전자와 반전자를 계속해서 만든다고 했는데, 뮤온과 반뮤온을 만들기도 한다.
+W-입자도, 아까는 전자와 반뉴트리노를 만든다고 했지만, 뮤온+뮤뉴트리노를 만들기도 한다.</p>
+
+<p>s쿼크: 200MeV 질량을 갖는다. u쿼크, d쿼크는 10MeV였다.</p>
+
+<p>베타붕괴의 u쿼크 d쿼크처럼, s쿼크가 W입자를 방출하고 생겨날 4번째 쿼크가 필요해졌다. 이게 C쿼크다.</p>
+
+<p>여기서, 뮤온 나올때보다 훨씬 더 높은 에너지로 원자핵을 깨뜨렸더니, 이번에는 뮤온보다 훨씬 무거운 타우입자가 발견됐다.
+타우입자는 양성자의 2배정도의 질량인 1800MeV를 갖는다. (전자의 3640배 정도)</p>
+
+<p>아니 u쿼크 d쿼크 질량이 10MeV정도였는데 양성자 질량은 938MeV라고?
+상대성이론 때문이라고 한다. 나중에 다시 확인</p>
+
+<p>하여간, 이 타우 입자도 질량이 훨씬 크다는 점만 뺴면 전자랑 똑같은 입자다.
+그래서 타우-뉴트리노도 있다.
+그리고 타우입자를 흡수하고 방출하는 b쿼크, t쿼크도 있다.</p>
+
+<p>물리학자들은 더 높은 에너지로 원자핵을 깨보면서, 타우입자보다 더 무거우면서 전자와 같은 성질을 갖는 입자를 찾으려 노력중이다.
+왜 전자-&gt;뮤온-&gt;타우입자 로 가면서 질량이 하필 206배, 3640배 되는지는 아무도 모른다.</p>
+
+<p>양성자는 불안정한가? 그니까, 양성자에는 반감기가 있는가? 아무도 모른다.</p>
+
+<p>이렇게, 양자 이론으로 강력, 약력, 전자기력을 설명한다.
+양자 이론으로 중력을 설명하려는 이론도 있다.
+중력자(graviton)라는 스핀2 입자를 통해 중력을 설명하려 하는데, 아직 갈길이 먼 이론이다.</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[다이너마이트 폭발: 전자 패턴 재배치 원자폭탄 폭발: 양성자/중성자 패턴 재배치]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
 inductive motor들이 주로 load로 쓰인다.</p>
 
 <p>H-bridge에는 External diodes(Free-wheeling diode 또는 flyback diode라고도 불린다)가 들어가지 않을 때도 있다
@@ -286,7 +395,28 @@ fast decay mode에서는 전류는 빨리 나가는데, back emf에는 별 조�
 즉 모터가 빠르게 멈춘다.</p>
 
 <p>그니까, slow랑 fast는 inductive load (여기서는 motor winding)에 흐르는 전류가 줄어드는 rate를 말하는거다.
-모터의 각속도 이야기가 아니다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[H-bridge는 4개 FET을 써서 load에다가 전류를 준다. inductive motor들이 주로 load로 쓰인다.]]></summary></entry><entry><title type="html">Analog - LDO - Amplifier Design</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html" rel="alternate" type="text/html" title="Analog - LDO - Amplifier Design" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Amplifer%20Design</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
+모터의 각속도 이야기가 아니다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[H-bridge는 4개 FET을 써서 load에다가 전류를 준다. inductive motor들이 주로 load로 쓰인다.]]></summary></entry><entry><title type="html">Analog - Kickback Noise</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Kickback-Noise.html" rel="alternate" type="text/html" title="Analog - Kickback Noise" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Kickback%20Noise</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Kickback-Noise.html"><![CDATA[<p>Kickback noise:<br />
+Kickback noise는 Latch에서 발생하는 noise다. Latched comparator는 latch 구조를 포함하는 comparator인데, positive feedback 구조라서 analog signal을 digital signal로 바꾼다.<br />
+<br />
+예를 들어, input이 Vref보다 아주 조금 커도 그 차이가 positive feedback에 의해 증폭돼서 출력이 VDD가 되고, input이 Vref보다 아주 조금 작아도 Output은 VSS가 된다. Positive feedback은 차이가 커지는 방향으로 작용하기 때문이다.<br />
+<br />
+이 positive feedback 때문에, input 전압은 조금만 변해도 output 전압은 크게 변할 수 있다. 이 경우 latch 안 노드들의 dv/dt가 상당히 크다. 이 커다란 dv/dt가 parasitic capacitance에 Cdv/dt만큼 전류가 흐르게 만든다.<br />
+<br />
+Input 전압을 인가해주는 회로의 Rout이 0이라면 전류가 흘러들어와도 input 전압에 영향이 있지 않았겠지만, Rout이 0이 아니면 이 전류에 의해 input 전압이 달라진다. 이 현상이 kickback noise다.<br />
+빠르고 전력 효율이 좋은 comparator일수록 kickback noise가 크게 생긴다.<br />
+<br />
+Kickback noise 해결방법:<br />
+1. Preamplifier를 comparator 앞에 붙인다.<br />
+근데 이러면 preamplifier가 power를 먹어 전력효율이 떨어진다.<br />
+2. Differential pair의 drain들에 스위치를 달고, latch 전압이 바뀌는 동안 스위치를 열어서 전압 변화가 캐패시턴스에 전달 안되게 한다<br />.
+이때는 스위치 열면 IDS=0이 되어 MOSFET들이 Triode region에 처박힌다. 그리고 Drain 전압이 어디에도 연결되지 않아서 맘대로 날뛸 수 있다.<br />
+3. Differential Pair의 gate들에 스위치를 달아서 input을 sampling해 넣ㄴ느다. 이러면 input에 의한 dV/dt가 전류를 만들 때 스위치가 열려있어 영향이 없다.<br />
+하지만 스위치 닫히는게 어차피 input에 영향을 준다.<br />
+<br />
+몇가지 방법이 더 있다고는 하는데, 일단 kickback noise가 뭔지는 확인했으니 다음에 더 알아보자. 내용출처는 ‘Kickback noise reduction techniques for CMOS latched comparators’<br /></p>
+
+<p>Layout때문에 kickback noise가 발생하는 경우도 있다.
+이럴땐 Parasitic Capacitance 안생기게 주변을 다 치워버려야 한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Kickback noise: Kickback noise는 Latch에서 발생하는 noise다. Latched comparator는 latch 구조를 포함하는 comparator인데, positive feedback 구조라서 analog signal을 digital signal로 바꾼다. 예를 들어, input이 Vref보다 아주 조금 커도 그 차이가 positive feedback에 의해 증폭돼서 출력이 VDD가 되고, input이 Vref보다 아주 조금 작아도 Output은 VSS가 된다. Positive feedback은 차이가 커지는 방향으로 작용하기 때문이다. 이 positive feedback 때문에, input 전압은 조금만 변해도 output 전압은 크게 변할 수 있다. 이 경우 latch 안 노드들의 dv/dt가 상당히 크다. 이 커다란 dv/dt가 parasitic capacitance에 Cdv/dt만큼 전류가 흐르게 만든다. Input 전압을 인가해주는 회로의 Rout이 0이라면 전류가 흘러들어와도 input 전압에 영향이 있지 않았겠지만, Rout이 0이 아니면 이 전류에 의해 input 전압이 달라진다. 이 현상이 kickback noise다. 빠르고 전력 효율이 좋은 comparator일수록 kickback noise가 크게 생긴다. Kickback noise 해결방법: 1. Preamplifier를 comparator 앞에 붙인다. 근데 이러면 preamplifier가 power를 먹어 전력효율이 떨어진다. 2. Differential pair의 drain들에 스위치를 달고, latch 전압이 바뀌는 동안 스위치를 열어서 전압 변화가 캐패시턴스에 전달 안되게 한다. 이때는 스위치 열면 IDS=0이 되어 MOSFET들이 Triode region에 처박힌다. 그리고 Drain 전압이 어디에도 연결되지 않아서 맘대로 날뛸 수 있다. 3. Differential Pair의 gate들에 스위치를 달아서 input을 sampling해 넣ㄴ느다. 이러면 input에 의한 dV/dt가 전류를 만들 때 스위치가 열려있어 영향이 없다. 하지만 스위치 닫히는게 어차피 input에 영향을 준다. 몇가지 방법이 더 있다고는 하는데, 일단 kickback noise가 뭔지는 확인했으니 다음에 더 알아보자. 내용출처는 ‘Kickback noise reduction techniques for CMOS latched comparators’]]></summary></entry><entry><title type="html">Analog - LDO - Amplifier Design</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html" rel="alternate" type="text/html" title="Analog - LDO - Amplifier Design" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Amplifer%20Design</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
 <br />
 PMOS를 써서 만들면 Common Source 구조가 되고,<br />
 NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
@@ -326,134 +456,4 @@ Ripple을 그대로 전달하는 구조:<br />
 
 <p><br />
 <img src="/public/img/LDOamp4.png" alt="alt text" /><br />
-<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators PMOS를 써서 만들면 Common Source 구조가 되고, NMOS를 써서 만들면 Source Follower 구조가 된다. Low-Dropout이 중요하지 않은 경우엔느 NMOS가 Pass Device로 쓰일 수 있다. Gate와 Source 사이에 전압 차이가 필요하긴 한데, Rout이 작아서(아마 NMOS PMOS의 \(\mu\)차이 이야기) Compensation이 더 쉽다. NMOS를 쓰면 follower configuration이 된다. 근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다. 그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다. Low Voltage Operation이 중요할때는 PMOS를 쓴다. PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain이든 모두 \(g_m r_{ds}\)다. 그래서, Power line에서 ripple이 들어올 경우, Amp에서도 같은 ripple을 출력해줘야 PMOS 전류가 안흔들린다. 그래서 NMOS에 쓰이는 AMP는 power line의 ripple을 다 없애야 하고, PMOS에 쓰이는 amp는 power line의 ripple을 그대로 출력에 전달해야 한다. Ripple을 그대로 전달하는 구조: 이게 왜 ripple을 그대로 전달하는 구조인가? 그건 이 모델의 small signal model을 봐야 한다. 아니면 이렇게 만들어도 된다.]]></summary></entry><entry><title type="html">Analog - LDO - Buffer Compensation</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Buffer-Compensation.html" rel="alternate" type="text/html" title="Analog - LDO - Buffer Compensation" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Buffer%20Compensation</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Buffer-Compensation.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
-<br />
-<br />
-IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다.<br />
-OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만,<br />
-<br />
-저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다.<br />
-그래서, 이때는 LDO라는 회로를 써줘야 한다.<br />
-<br />
-<img src="/public/img/LDO1.png" alt="alt text" /><br /></p>
-
-<p>PMOS를 써서 만들면 Common Source 구조가 되고,<br />
-NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
-<br />
-Stability:<br />
-어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까?<br />
-안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다.<br />
-<br />
-그럼 frequency response를 어떻게 확인할 것인가?<br />
-Loop Gain을 본다.<br /></p>
-
-<p><img src="/public/img/LDO2.png" alt="alt text" /><br /></p>
-
-<p>LDO 만들때는:<br />
-Low dropout voltage,<br />
-high output current,<br />
-low no-load quiescent current,<br />
-small output transient undershoot<br />
-이런 것들이 필요하다.<br />
-<br />
-LDO가 낮은 dropout voltage를 유지하면서 load current도 많이 공급해주려면, Pass device로 크기가 큰 PMOS를 써야 한다. W/L이 커야 해서.<br />
-근데 크기가 큰 PMOS를 쓰면, 그 device의 C가 커진다.<br />
-원래는 C_load에 의한 dominant pole만 저주파에 있었어야 했는데,<br />
-PMOS의 C가 크면 저주파에 pole이 하나 더 생긴다. 결국, stability가 안좋아진다.<br />
-<br />
-이럴 경우, LHP zero를 하나 만들어서 phase를 보상하는 방식이 있다.<br />
-C_load에 직렬로 ESR(Equivalent Series Resistor)를 붙여서 만들 수 있다.<br />
-<br />
-근데, 이 방식은 mismatch때문에 pole zero 위치가 움직이면 큰 문제가 생길 수도 있다.<br />
-그리고 current load가 크게, 순식간에 변할 경우, Cout이 작으면 급격하게 변하는 전류가 저항에 흐를 수 있다.<br />
-이럴 경우, 전압이 크게 흔들린다.<br />
-<br />
-<img src="/public/img/LDO3.png" alt="alt text" /><br />
-<br />
-\(p_0 = \dfrac{1}{R_{out}C_{load}}\)<br />
-\(p_1 = \dfrac{1}{r_{oea}C_b}\)<br />
-\(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)<br />
-<br />
-여기서, 사용하는 buffer의 \(C_b\)와 \(r_{ob}\)가 최대한 작은게 좋다. 그래야 \(p_1\), \(p_2\)가 모두 고주파로 날아가서 \(p_0\)밖에 안남는다.<br />
-<br />
-일단 이렇게 생긴 source follower를 buffer로 쓴다고 해보자.</p>
-
-<p><img src="/public/img/LDO4.png" alt="alt text" /><br /></p>
-
-<p>Source follower를 buffer로 쓰면 이런 상황이 된다.<br />
-이때 \(C_b\), \(r_{ob}\)가 최대한 작은 값을 갖게 해야 한다.<br />
-<br />
-buffer의 small signal model을 생각해보면, \(r_{ob}=\dfrac{1}{g_{m1}}\)이 된다.<br />
-따라서, \(r_{ob}\)를 줄이려면 \(g_{m1}\)를 최대한 늘려야 한다.<br />
-<br />
-\(g_{m1}\)을 늘리는 데에는 두가지 방법이 있다.<br />
-\(I_1\)을 늘리는 방법이 있고, \(\dfrac{W_1}{L_1}\)을 늘리는 방법이 있다.<br />
-<br />
-근데, \(I_1\)를 늘리면 buffer가 먹는 전류가 늘어나는거라, \(I_Q\)가 늘어난다.<br />
-그렇다고 \(\dfrac{W_1}{L_1}\)을 늘리면 트랜지스터 크기가 커져서 \(C_b\)가 늘어난다.<br />
-<br />
-그래서, 위 그림에서 사용된 simple source follower는 여기서 buffer로 사용하기에 부적합하다.<br />
-<br />
-<br />
-source follower with negative feedback을 쓰는 방법이 있다.<br />
-BJT를 feedback device로 사용해서, \(r_{ob}\)를 줄이는 구조다.<br /></p>
-
-<p><img src="/public/img/LDO5.png" alt="alt text" /><br /></p>
-
-<p>buffer 입장에서 출력 전압 노드인, \(M_p\)의 gate 전압이 증가한 경우를 생각해보면:<br />
-\(M_1\)의 Vds가 증가했으니, channel length modulation에 의해 \(M_1\)의 Ids가 증가한다.<br />
-근데, \(M_2\)의 Ids는 Current mirror 구조에 의해 고정되어 있다.<br />
-그래서, \(M_1\)의 Ids가 증가한 만큼 \(Q_1\)의 Ib가 증가하게 된다.<br />
-그러면 \(Q_1\)의 Ice는 \(\beta\)Ib만큼 증가한다.<br />
-<br />
-그래서, 원래 Vout이 Vx만큼 증가하면 전류가 gm1Vx만큼 증가했었는데,<br />
-이제는 gm1Vx + \(\beta\)gm1Vx = (1+beta)gm1Vx만큼 증가하는 것이다.<br />
-<br />
-따라서 \(r_{ob}=\dfrac{1}{g_{m1}(1+\beta)}\)가 된다.<br />
-이렇게 되면 rob가 확 줄어드니까, gm이 그렇게까지 안커도 된다. beta가 큰 값이니까.<br />
-그래서 gm을 조금 포기하는 대신 I1을 줄여 IQ를 줄일 수 있고, W/L을 줄여 Cb를 줄일 수 있다.<br />
-<br />
-<br />
-근데 또 문제가 있다. load current가 증가하면 unity gain frequency도 증가하는데,<br />
-그러면 rob도 그에 맞춰 줄어들어줘야 한다.<br />
-<br />
-그렇지 않으면 unity gain frequency가 계속 증가하다가 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)보다 커질 수도 있다.<br />
-그러면 unity gain frequency 이전에 pole이 하나 더 생기는거라, stability가 안좋아진다.<br />
-<br />
-그래서 이런 구조를 만들게 됐다.<br />
-<br />
-<br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDO6.png" style="width: 50%; height: auto;" alt="my picture" />
-</div>
-
-<p><br />
-일단, 이 buffer의 output resistance는:<br />
-\(r_{ob} = \dfrac{1}{g_{m1}(1+\beta)} || \dfrac{1}{g_{m4}} = \dfrac{1}{g_{m1}(1+\beta)+g_{m4}}\)<br />
-<br />
-<br />
-이 상태에서 \(M_p\)의 \(I_{DS}\)가 증가하면?<br />
-일단 \(M_p\)의 Gate 전압이 줄어들어야 할 것이다. 그래야 \(I_{DS}\)가 증가하니까.<br />
-그러면 \(M_4\)와 \(M_5\)의 \(|V_{GS}|\) 가 증가한다.<br />
-그래서 \(M_4\)와 \(M_5\)의 \(I_{DS}\)가 증가하는데,<br />
-<br />
-\(M_4\)의 \(I_{DS}\)가 증가하면 \(g_{m4}\)가 증가하고,<br />
-\(M_5\)의 \(I_{DS}\)가 증가하면 \(M_2\), \(M_3\)이 이루고 있는 current mirror에 의해 \(M_1\)에서도 전류가 증가한다. 따라서 \(g_{m1}\)이 증가한다.<br />
-<br />
-결국, Load Current가 증가해서 \(M_p\)의 \(I_{DS}\)가 증가하면<br />
-\(g_{m4}\), \(g_{m1}\)이 증가해 \(r_{ob}\)가 작아진다.<br />
-그래서 \(p_2 = \dfrac{1}{r_{ob}C_{pmos}}\)는 Load current가 있을 때에도 Unity Gain Frequency보다 높은 주파수에 있을 수 있다.<br />
-<br />
-<br />
-참고자료: A transient-Enhanced Low-Quiescent Current Low-Dropout Regulator With Buffer Impedance Attenuation</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators IC가 제대로 동작하기 위해서는 흔들리지 않는 일정한 전압이 필요한 부분들이 있다. OP AMP 의 입력, MOSFET의 Gate 등 전류를 흐르게 하지 않는 노드면 BGR 회로(Bandgap Reference Circuit)으로 전압을 주면 되지만, 저항, Logic Gate 등 전류를 소모하는 load가 연결된 경우에는 BGR을 쓰면 전압이 이상하게 나온다. 그래서, 이때는 LDO라는 회로를 써줘야 한다.]]></summary></entry><entry><title type="html">Analog - LDO - Frequency Response</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Frequency-Response.html" rel="alternate" type="text/html" title="Analog - LDO - Frequency Response" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Frequency%20Response</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Frequency-Response.html"><![CDATA[<p><br />
-Stability:<br />
-어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까?<br />
-안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다.<br />
-<br />
-그럼 frequency response를 어떻게 확인할 것인가?<br />
-Loop Gain을 본다.<br /></p>
-
-<div style="float: left">
-    <img src="/public/img/LDO2.png" style="width: 40%; height: auto;" alt="my picture" />
-</div>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Stability: 어떤 주파수로 load current를 당겨도 LDO 출력전압이 안떨어질까? 안타깝게도 그렇지는 않다. frequency response가 일정하지 못하다. 그럼 frequency response를 어떻게 확인할 것인가? Loop Gain을 본다.]]></summary></entry></feed>
+<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators PMOS를 써서 만들면 Common Source 구조가 되고, NMOS를 써서 만들면 Source Follower 구조가 된다. Low-Dropout이 중요하지 않은 경우엔느 NMOS가 Pass Device로 쓰일 수 있다. Gate와 Source 사이에 전압 차이가 필요하긴 한데, Rout이 작아서(아마 NMOS PMOS의 \(\mu\)차이 이야기) Compensation이 더 쉽다. NMOS를 쓰면 follower configuration이 된다. 근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다. 그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다. Low Voltage Operation이 중요할때는 PMOS를 쓴다. PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain이든 모두 \(g_m r_{ds}\)다. 그래서, Power line에서 ripple이 들어올 경우, Amp에서도 같은 ripple을 출력해줘야 PMOS 전류가 안흔들린다. 그래서 NMOS에 쓰이는 AMP는 power line의 ripple을 다 없애야 하고, PMOS에 쓰이는 amp는 power line의 ripple을 그대로 출력에 전달해야 한다. Ripple을 그대로 전달하는 구조: 이게 왜 ripple을 그대로 전달하는 구조인가? 그건 이 모델의 small signal model을 봐야 한다. 아니면 이렇게 만들어도 된다.]]></summary></entry></feed>

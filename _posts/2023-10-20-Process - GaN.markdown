@@ -115,6 +115,47 @@ HD-GIT라는게 나왔다.
 Hybrid-drain-embedded GIT
 HD-GIT은 drain electrode 밑에 p-GaN layer를 만들어놓는다.
 
-off state일때, drain쪽 p-GaN layer에서 나오는 hole들이 
+off state일때, drain쪽 p-GaN layer에서 나오는 hole들이 carrier로 동작하게 된다.
+그래서, 전자가 trap되어 사라지는걸 이 hole injection으로 보상한다?
+
+
+
+p-GaN 소자를 만들때, 공정 안정성을 위해 TRRG(Through Recessed and Regrowth Gate) 방식이 사용된다.
+
+원래, AlGaN/GaN HFET들의 Vth를 조절할 떄는 Recess area 아래의 AlGaN layer 두께 조절이 중요하다.
+
+근데, nm단위 두께 조절은 아주 어려운 일이다. 그래서 두께가 균일하게 잘 안나와서 공정이 불안정했다.
+
+그래서, 그냥 AlGaN 일단 싹 갈아버리고, epitaxial growth로 필요한 만큼 새로 깔게 되었다.
+이랬더니 산포가 훨씬 좋아졌다. 이게 TRRG다.
+
+
+
+MIS-Gate FET:
+MIS = Metal-Insulator-Semiconductor.
+
+gate leakage current를 줄이기 위해, barrier layer를 갈아버리고 insulating dielectric layer로 갈아끼우는 구조다.
+
+이때, barrier layer를 다 갈지는 않고 얇게 조금 남겨둬도 된다.
+gate-controlled channel의 보다 높은 mobility를 위해서다.
+즉, 더 높은 Ron을 얻을 수 있다는 뜻이다.
+
+근데 얇게 남기려고 하면, 또 두께 조절이 어렵다.
+그러면 또 공정이 불안정해져 Vth 산포가 난장판이 된다.
+
+Buried channel은 surface channel보다 Vth thermal stability가 안좋다.
+그래서 fully recessed가 낫다.
+
+Recessed-gate E-mode GaN MIS-FET은 Si, SiC Power MOSFET들에 비해 gate swing이 크고 gate leakage가 더 낮지만,
+Vth 안정성, dielectric reliability가 부족하다.
+
+
+high frequency power switching circuit에서는,
+gate control loop 안의 parasitic L, C때문에 gate ringing이 생겨 gate voltage가 operating bias를 넘어설 수 있다.
+
+
+
+
+
 
 참고자료: 'GaN-on-Si Power Technology: Devices and Applications'
