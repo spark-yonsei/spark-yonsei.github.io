@@ -16,3 +16,6 @@ interconnect parasitic때문에 또 악화된다.
 이거보다 작으면 소자들이 parasitic gate capacitance, resistance에 크게 영향받는다.
 그래서 RF performance가 안좋아진다.
 그래서 RF에서는 더 줄이는게 의미가 없다.
+
+Si결정 격자 간격이 0.545nm다.
+그래서 채널 길이 5nm 아래부터는 전자가 다양한 경로로 움직인다.
