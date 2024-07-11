@@ -89,3 +89,15 @@ Power on -> POR/BOR 동작 ->
 HIS OSC켜짐 -> PLL 켜짐 -> PLL Lock까지 대기 -> flash clock 켜짐 ->(Always on Block들)
 flash에서 analog block 읽기(Flash Controller)
 -> AHB prescaler, APB prescaler, Timer prescaler, clock gating 켜짐(clock generatro)
+
+
+PLL은 layout해놓으면 캐패시터가 엄청나게 커다랗다.
+Loop filter에 엄청나게 커다란 캐패시터가 들어가기 때문이다.
+
+
+PLL이 왜 필요한가?
+data는 어디 안들르고 바로 오지만, clock은 tree처럼 이곳저곳에서 쪼개져서 들어온다.
+그래서 바로 오는 data와 쪼개져서 느리게 들어오는 clock과 도달 시점이 달라서 phase 차이가 날 수 있다.
+이걸 보상해주기 위해 PLL을 쓸 수 있다.
+
+요즘 많이 쓰는 구조가 charge pump PLL이다.

@@ -36,7 +36,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Design">
 				<span class="name">Design</span>
-				<span class="badge">26</span>
+				<span class="badge">27</span>
 	    	</a>
  		</li>
 	    
@@ -50,14 +50,14 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Market">
 				<span class="name">Market</span>
-				<span class="badge">15</span>
+				<span class="badge">17</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Process">
 				<span class="name">Process</span>
-				<span class="badge">22</span>
+				<span class="badge">20</span>
 	    	</a>
  		</li>
 	    
@@ -124,6 +124,80 @@ HDL side는 FPGA에 들어가서 FPGA의 clock대로 동작한다.</p>
 
 <p>Verification을 확실히 해줘야 제품 하드웨어에 문제가 없다.
 펌웨어 문제면 업데이트하면 되는데, 하드웨어 문제는 답이 없다.</p>
+
+<p>HDL로 프로그래밍을 한 뒤, synthesis를 하면 gate level netlist가 나온다.</p>
+
+<p>보통 RTL과 HDL은 혼용되어 쓰인다.
+RTL을 hardware로 바꿀 때에는 보통 synopsys의 ‘Design Compiler’를 쓴다.</p>
+
+<p>Design compiler에서는:
+fab에서 주는 공정에 맞는 design kit,
+사용자가 만든 RTL,
+timing constant</p>
+
+<p>이렇게 3개를 입력받아 gate level netlist를 만든다.</p>
+
+<p>software compile과 비교하면:
+Design kit가 ISA(Instruction Set Architecture),
+RTL이 C code에 해당한다.</p>
+
+<p>software를 compile하고 나면, instruction sequence가 나온다.
+RTL을 synthesis하고 나면 gate들을 연결한 결과가 나온다.</p>
+
+<p>timing constraint: chip 내 clock들의 속도, chip의 I/O delay, clock에 연결된 신호 사이 관계 등을 말한다. 
+timing constraint는 SDC file로 주어진다.</p>
+
+<p>synthesis tool은 RTL logic이 주어진 timing constraint에서 잘 동작할 수 있도록,
+gate들을 잘 연결해서 gate level netlist를 만든다.</p>
+
+<p>근데 잘 안되면? RTL을 고쳐야 한다.
+보통, RTL에 적힌 flipflop의 combinational logic이 너무 복잡하면 이런 문제가 생긴다.</p>
+
+<p>synthesis해서 나오는 gate level netlist를 pre netlist라 부른다.
+layout 전이라서 pre netlist다.</p>
+
+<p>netlist는 보통 verilog로 표현한다.
+Verilog는 RTL 표현에도 쓰일 수 있고, gate level 표현에도 쓰일 수 있는 것이다.</p>
+
+<p>verilog로 netlist를 표현하니까, verilog testbench로 pre netlist를 simulation할 수 있다. 이걸 pre-sim이라 부른다.</p>
+
+<p>pre netlist가 잘 만들어졌는지 확인하기 위해 pre-sim을 해볼수도 있지만, 발생 가능한 모든 vector로 테스트하는건 너무 오래 걸린다.</p>
+
+<p>netlist가 잘 만들어졌는지 검증하는걸 formal verification이라 하는데, 여기에는 별도의 tool이 사용된다.</p>
+
+<p>formal verification에는 Synopsys의 ‘formality’라는 tool을 많이 쓴다.
+HDL로 적힌 design과 netlist로 적힌 design의 동작을 비교해서, 똑같이 동작하는지 확인해주는 tool이다.</p>
+
+<p>이 formality라는 tool은, 꼭 HDL과 netlist 비교가 아니라 HDL 설계중에 부분부분 바꿔보면서 동작 차이를 확인할때에도 사용할 수 있다.</p>
+
+<p>fabless 업체는 synthesis가 끝난 netlist를 backend 업체에 전달한다(또는 알아서 한다).
+netlist는 software로 치면 어셈블리어 정도 된다. 문제를 찾거나 기능을 추가하는게 아주 어렵다는 뜻이다.</p>
+
+<p>여기서 말하는 backend 업체는 fabless 업체를 대신해 파운드리, 패키징, 테스트 업체와 계약해주는 업체다.</p>
+
+<p>backend업체는 netlist를 전달받으면 일단 memory BIST, SCAN 등 test logic을 netlist에 추가한다.
+이 test logic들은 나중에 chip이 생산된 후 chip이 제대로 동작하는지 검증하기 위해 들어가는 아주 기본적인 logic들이고, test mode에서만 동작한다.</p>
+
+<p>test logic을 추가한 뒤에는 P&amp;R(=Layout)을 해야 한다.
+gate들을 어디 놓을지(Place), 그 gate들을 어떻게 연결할지(Route)를 정해주는 과정이다.
+사람이 일일이 다 하는건 아니고, 이것도 tool을 써서 한다.</p>
+
+<p>P&amp;R이 끝나면, 결과가 GDS파일 형태로 나온다. 이걸 파운드리에 보내면 만들어주는거다.</p>
+
+<p>근데 파운드리에 보내기 전에, 일단 P&amp;R 결과를 다시 netlist로 만들어본다.
+이걸 post netlist라고 부른다.</p>
+
+<p>post netlist가 pre netlist와 다른 점:
+wiring에 의한 delay까지 모두 모델링되어 있다.
+netlist 파일 형태가 아니고, SDF 파일 형태다.</p>
+
+<p>이 post netlist가 나오면, STA(Static Timing Analysis)를 통해 설계한 timing(clock 주파수, delay 등)대로 chip이 잘 만들어져 있는지 확인하게 된다.</p>
+
+<p>RTL engineer도 post netlist를 가져와서 다시 동작 확인 simulation을 해본다.
+이걸 post sim이라 부른다.</p>
+
+<p>post sim은 아주 느리다. gate level simulation인데다가 wire, gate에 의한 delay까지 모두 반영되어 있기 때문이다.</p>
+
 
 	</div>
 </article>

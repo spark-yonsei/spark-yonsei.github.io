@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "태양광"
+date:   2023-10-04 19:31:29 +0900
+categories: Market
+order: 12
+---
+
+태양전지:
+PERC: passivated emitter rear cell
+저가생산 가능
+TOP:  tunnel oxide passivated contact
+터널 산화막으로 빛 손실 줄임
+HJT: heterojunction technology
+가장 효율이 높음
+
+페로브스카이트도 연구중

@@ -36,7 +36,7 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Design">
 				<span class="name">Design</span>
-				<span class="badge">26</span>
+				<span class="badge">27</span>
 	    	</a>
  		</li>
 	    
@@ -50,14 +50,14 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Market">
 				<span class="name">Market</span>
-				<span class="badge">15</span>
+				<span class="badge">17</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Process">
 				<span class="name">Process</span>
-				<span class="badge">22</span>
+				<span class="badge">20</span>
 	    	</a>
  		</li>
 	    
@@ -174,6 +174,16 @@ Power on -&gt; POR/BOR 동작 -&gt;
 HIS OSC켜짐 -&gt; PLL 켜짐 -&gt; PLL Lock까지 대기 -&gt; flash clock 켜짐 -&gt;(Always on Block들)
 flash에서 analog block 읽기(Flash Controller)
 -&gt; AHB prescaler, APB prescaler, Timer prescaler, clock gating 켜짐(clock generatro)</p>
+
+<p>PLL은 layout해놓으면 캐패시터가 엄청나게 커다랗다.
+Loop filter에 엄청나게 커다란 캐패시터가 들어가기 때문이다.</p>
+
+<p>PLL이 왜 필요한가?
+data는 어디 안들르고 바로 오지만, clock은 tree처럼 이곳저곳에서 쪼개져서 들어온다.
+그래서 바로 오는 data와 쪼개져서 느리게 들어오는 clock과 도달 시점이 달라서 phase 차이가 날 수 있다.
+이걸 보상해주기 위해 PLL을 쓸 수 있다.</p>
+
+<p>요즘 많이 쓰는 구조가 charge pump PLL이다.</p>
 
 	</div>
 </article>
