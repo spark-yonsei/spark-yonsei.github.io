@@ -1,0 +1,64 @@
+I"a<p>Serial Communication Protocol에는 UART, I2C, SPI가 있다.</p>
+
+<p>UART (Universal Asynchronous Receiver-Transmitter):
+UART는 device간 단거리 통신에 쓰이는 asynchronous serial communication protocol이다.
+ ✔ It uses two wires, one for transmitting data (TX) and another for receiving data (RX).
+  ✔ UART does not have a clock signal, so the data is transmitted asynchronously using start and stop bits to mark the beginning and end of each data frame.
+  ✔ It is a straightforward and simple protocol, commonly used in applications like serial communication between a microcontroller and a computer, GPS modules, and Bluetooth modules.</p>
+
+<p>🔰 2. SPI (Serial Peripheral Interface):
+ ✔ SPI is a synchronous serial communication protocol primarily used for
+communication between microcontrollers and peripheral devices, such as sensors, displays, and memory chips.
+ ✔ It requires four wires: a master-out-slave-in (MOSI) line for data transmission, a master-in-slave-out (MISO) line for data reception, a clock (SCK) line for synchronization, and a chip select (CS) line to select the target device.
+ ✔ SPI operates in a master-slave configuration, where a master device initiates the communication and controls the data transfer to one or more slave devices.
+  ✔ It supports full-duplex communication, meaning data can be simultaneously transmitted and received.
+   ✔ SPI is known for its high data transfer rates and is commonly used in applications that require fast and efficient data transfer.</p>
+
+<p>🔰 3. I2C (Inter-Integrated Circuit):
+   ✔ I2C is a multi-master, multi-slave, and bidirectional serial communication protocol designed for communication between integrated circuits on a circuit board.
+ ✔ It uses two wires: a serial data line (SDA) for bidirectional data transfer and a serial clock line (SCL) for synchronization.
+   ✔ I2C allows multiple devices to share the same bus, with each device having a unique address.
+   ✔ It supports both 7-bit and 10-bit addressing modes, providing the capability to connect a large number of devices.
+ ✔ I2C is a slower protocol compared to UART and SPI, but it requires fewer wires and is commonly used in applications where simplicity and low pin count are important, such as sensors, EEPROM memory chips, and real-time clocks.
+SDA: bus를 통해 data 전달
+SCL: master, slave 사이 data transfer를 synchronize한다.</p>
+
+<p>I2C가 위 2개보다 나은 점:
+Flexibility – The I2C protocol supports multi-master, multi-slave communication, which implies you can add a lot of functionality to your design. More than one master IC controlling and communicating with the slave ICs can speed things up and add functionalities to the embedded system.</p>
+
+<p>Addressing feature – Yet another advantage of the I2C protocol lies in its inherent ability to use chip addressing. It means that you can easily add components to the bus without any complexity. It eliminates the necessity of CS (chip select) lines.</p>
+
+<p>Simplicity – I2C protocol doesn’t complicate the design. It requires only two bidirectional signal lines to establish communication among multiple devices. Further, the pin count is low as well.</p>
+
+<p>Better error handling mechanism – To improve the error detection and correction mechanism, the I2C protocol relies on ACK/NACK feature, which is a robust error correction feature. ACK stands for Acknowledgement whereas NACK means No Acknowledgement.</p>
+
+<p>Adaptable – The I2C protocol is adaptable in the sense that it can work well with both slow ICs and fast ICs.</p>
+
+<p>I2C가 위 2개보다 안좋은점:
+Conflicts – Due to chip addressing, there’s always a possibility of an address conflict.</p>
+
+<p>Slower speeds – I2C protocol uses pull-up resistors rather than the push-pull ones used by its peers. Due to the open-drain design, the speed is limited.</p>
+
+<p>Requires more space – Now, as an embedded system engineer, you know how valuable PCB real estate is. So, it isn’t such a positive attribute that the I2C protocol requires so much space for its pull-up resistors.</p>
+
+<p>slave는 master에게 ACK을 보내야 한다.
+그래서 신호 받기만 할거여도 SDA는 출력을 보낼 수 있는 구조여야 한다.</p>
+
+<p>I2C 통신으로 특정 code pattern을 넣어야 특정 레지스터들에 접근 가능하도록 하는게 protection 기능이다.
+예를 들어, analog trimming data 영역은 사용자가 못건드리게 protection을 걸어놓는다. 이거 건드리면 동작이 아예 안될수도 있다.</p>
+
+<p>I3C: Improved Inter-Integrated Circuit</p>
+
+<p>I2C operates in five main modes:</p>
+
+<p>Standard Mode: 100 kHz
+Fast Mode: 400 kHz
+Fast Mode Plus: 1 MHz
+High Speed: 3.4 MHz
+Ultra-Fast Mode: 5 MHz
+I3C, on the other hand, has a Standard Data Rate of 12.5 MHz, with new versions of I3C supporting data rates up to 100 Mbps. Needless to say, I3C supports speeds that far surpasses that of I2C.</p>
+
+<p>Backward Compatibility
+When developing I3C, the ability for the protocol to be fully backward compatible was a significant focus. I3C applications can operate with I2C slave devices as well as native I3C devices. This backward compatibility allows engineers time to phase out their existing I2C applications. This phase-out time is necessary for embedded systems engineers because it makes the adoption of the new protocol much easier and streamlined.</p>
+
+:ET

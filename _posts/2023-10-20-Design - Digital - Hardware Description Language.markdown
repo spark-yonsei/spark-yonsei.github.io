@@ -10,3 +10,10 @@ Verilog : Digital,
 Verilog - A: Analog.
 
 Verilog-A는 simulation에만 사용되고, synthesis는 안된다.
+
+VHDL: Ada, Pascal 기반
+Verilog: C 기반
+
+systemVerilog?
+systemC?
+

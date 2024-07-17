@@ -1,4 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-11T21:56:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Signals</title><link href="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html" rel="alternate" type="text/html" title="Signals" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/mathematics/2023/10/24/Mathematics%20-%20Signals</id><content type="html" xml:base="http://localhost:4000/mathematics/2023/10/24/Mathematics-Signals.html"><![CDATA[<p>ㅁㄴㅇㄹ</p>]]></content><author><name></name></author><category term="Mathematics" /><summary type="html"><![CDATA[ㅁㄴㅇㄹ]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Special Relativity</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Special-Relativity.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Special Relativity" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Special%20Relativity</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Special-Relativity.html"><![CDATA[<p>맥스웰 방정식은 source에 의해 field가 어떻게 생기는지 알려준다</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-18T00:47:37+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Microscopic Electromagnetics - Basic Particles</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Basic Particles" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Basic%20Particles</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html"><![CDATA[<p>원자핵은 양성자와 중성자로 구성되며,<br />
+양성자와 중성자는 3개의 쿼크로 이루어져 있다.<br />
+<br />
+양성자 = u쿼크 2개, d쿼크 1개<br />
+중성자 = u쿼크 1개, d쿼크 2개<br />
+<br />
+u쿼크는 +2/3 전하, d쿼크는 -1/3 전하를 갖고 있다.<br />
+그래서 양성자는 +1 전하, 중성자는 0 전하를 갖는다.<br />
+<br />
+<br />
+그런데 전자기 이론으로는 전하를 갖는 쿼크들이 양성자, 중성자로 뭉쳐있는 이유를 설명하기 어렵다.<br />
+<br />
+예를 들어 양성자에서는, 양성자 지름보다도 작은 거리에 +2/3 전하를 갖는 u쿼크 2개가 있는 것이다.<br />
+전자기 이론에 따르면, 양전하를 갖는 두 입자는 서로를 이미 멀리 밀어냈어야 한다.<br />
+<br />
+<br />
+쿼크들을 양성자, 중성자로 묶어두는 힘을 Strong Nuclear Force(강한 핵력)라 부른다.<br />
+강한 핵력의 매개입자는 gluon(글루온)이다.<br />
+<br />
+글루온은 광자처럼 Spin 1 입자이며, 광자와 같은 확률진폭 계산식을 갖는다.<br />
+단, 전자가 광자와 결합할 확률보다 쿼크가 글루온과 결합할 확률이 훨씬 높다.<br />
+<br />
+그래서 강한 핵력의 계산이 전자기력 계산에 비해 훨씬 복잡하다.<br />
+결합이 여러번 일어나는 항들을 무시할 수 없기 때문이다.<br />
+<br />
+<br />
+강한 핵력이 있으니, Weak Nuclear Force(약한 핵력)도 있다.<br />
+<br />
+전자기력, 강한 핵력의 이론대로면 u쿼크는 언제나 u쿼크, d쿼크는 언제나 d쿼크여야 한다.<br />
+하지만 베타붕괴가 일어나면, 양성자가 중성자로 변한다.<br />
+즉, d쿼크가 u쿼크로 변하는 경우가 발생하는 것이다.<br />
+<br />
+쿼크의 종류가 변하는 현상을 설명하는 힘이 약한 핵력이다.<br />
+약한 핵력의 매개입자는 W- Boson, W+ Boson, Z Boson(W-입자, W+입자, Z입자)다.<br />
+여기서, W+입자는 W-입자의 반입자다.<br />
+<br />
+베타붕괴가 일어나면, d쿼크가 W-입자를 내놓으며 u쿼크로 변한다.<br />
+W-입자는 이후 전자와 Anti-Neutrino(반뉴트리노)로 붕괴한다.<br />
+<br />
+베타+붕괴 현상도 있다.<br />
+여기서는 u쿼크가 W+입자를 내놓으며 d쿼크로 변한다.<br />
+W+입자는 이후 양전자와 뉴트리노로 붕괴한다.<br />
+<br />
+W-입자, W+입자는 광자, 글루온과는 달리 매우 큰 질량(약 80,000MeV)를 갖는다.<br />
+그래서 베타붕괴는 전자와 광자의 상호작용보다 훨씬 느린 속도로 일어난다.<br />
+<br />
+핵자 단위에서 관찰하면,<br />
+베타붕괴는 중성자를 양성자로 만들며 전자와 반뉴트리노를 방출하고,<br />
+베타+붕괴는 양성자를 중성자로 만들며 양전자와 뉴트리노를 방출한다.<br />
+<br />
+<br />
+뉴트리노는 전자, 쿼크처럼 Spin 1/2 입자이며, 질량도 전하도 없다.<br />
+<br />
+뉴트리노는 전하가 없기에 광자와 상호작용하지 않으며,<br />
+쿼크가 아니기에 글루온과 상호작용하지도 않는다.<br />
+뉴트리노와 상호작용하는 입자는 W+입자, W-입자, Z입자 뿐이다.<br />
+<br />
+Z입자는 W+입자와 W-입자가 결합할 경우 생기는 입자다.<br />
+Z입자는 전하가 없어 광자와 상호작용하지는 못하지만,<br />
+d쿼크, u쿼크, 전자, 뉴트리노 등과 momentum, 에너지 등을 주고받으며 상호작용할 수 있다.<br />
+<br />
+<br />
+W+입자와 W-입자가 결합해 Z입자가 생기는 과정에서,<br />
+두 입자가 결합할 확률을 나타내는 결합상수가 전자와 광자의 결합상수와 매우 유사한 값을 가진다.<br />
+<br />
+그래서 3개 입자(W+입자, W-입자, Z입자)가 광자의 다른 모습이라는 이론이 탄생한다.<br />
+이것이 전자기력과 약한핵력을 통합하는 Electroweak Theory(전자기약력 이론)이다.<br />
+<br />
+1968년 제시된 전자기약력 이론은 오랫동안 어려움을 겪었는데,<br />
+광자는 질량이 없지만 W+입자, W-입자, Z입자는 질량이 있다는 점이 문제였다.<br />
+<br />
+이 문제는 2013년 Higgs Boson(힉스 입자)가 발견되며 해결됐다.<br />
+힉스 입자는 기본입자에 질량을 부여하는 입자다.<br />
+<br />
+<br />
+지금까지 3가지 상호작용과 그 매개입자를 살펴봤다.<br />
+전자기력: 광자, 강한 핵력: 글루온, 약한 핵력: W-입자, Z입자<br />
+<br />
+그리고 원자를 구성하는 전자, u쿼크, d쿼크,<br />
+약한 핵력의 상호작용에서 발생하는 뉴트리노,<br />
+질량을 부여하는 힉스 입자도 살펴봤다.<br />
+<br />
+총 9가지 기본 입자를 확인한 것이다.<br />
+(W+입자는 W-입자의 반입자라 기본입자는 아니다)<br />
+<br />
+그런데, 기본입자는 총 17가지다.<br />
+지금부터는 남은 8가지 기본 입자에 대해 알아보려고 한다.<br />
+<br />
+<br />
+새로운 입자를 연구하기 위해서는 입자가속기가 필요하다.<br />
+양성자를 입자가속기로 가속해서 원자핵과 충돌시키면, 원자핵이 깨지며 입자들이 튀어나온다.<br />
+이때, 더 높은 에너지로 충돌시킬수록 새로운 입자들을 관찰할 수 있다.<br />
+<br />
+이 새로운 입자중 하나가 Muon(뮤온)이다.<br />
+<br />
+<br />
+뮤온은 전자와 질량을 제외한 모든 특성이 동일하다.<br />
+질량은 뮤온이 전자보다 약 200배 무겁다.<br />
+전자: 약 0.511MeV, 뮤온: 약 105.8MeV<br />
+<br />
+그래서, 뮤온의 모든 행동은 전자를 설명하던 기존 이론으로 설명될 수 있다.<br />
+<br />
+광자는 전자와 양전자를 계속해서 만든다고 했는데, 뮤온과 반뮤온을 만들기도 한다.<br />
+W-입자도, 아까는 전자와 반뉴트리노를 만든다고 했지만, 뮤온과 반뮤뉴트리노를 만들기도 한다.<br />
+<br />
+<br />
+전자와 뮤온의 관계처럼, 쿼크 중에서도 u쿼크, d쿼크와 동일한 특성을 갖지만 질량이 더 무거운 쿼크가 발견되었다.<br />
+그것이 c쿼크와 s쿼크다.<br />
+<br />
+s쿼크에서 베타붕괴가 일어날 경우,<br />
+s쿼크는 W-입자를 방출하고 c쿼크로 변한다.<br />
+<br />
+<br />
+이렇게 해서 뮤온, 뮤뉴트리노, s쿼크, c쿼크를 기본 입자에 추가하게 되었다.<br />
+<br />
+<br />
+뮤온이 방출될 때 보다도 훨씬 높은 에너지로 원자핵을 충돌시킬 경우,<br />
+전자와 같은 특성을 갖지만 뮤온보다도 훨씬 무거운 타우입자가 튀어나온다.<br />
+<br />
+타우입자는 약 1800MeV의 질량을 갖는다.<br />
+이 값은 전자 질량의 약 3640배이며, 양성자 질량의 약 2배다.<br />
+<br />
+타우입자에 대해서도 유사하게 타우 뉴트리노가 있으며,<br />
+u쿼크, d쿼크와 동일한 특성을 가지지만 타우입자를 흡수/방출하며 훨씬 무거운 t쿼크, b쿼크가 있다.<br />
+<br />
+그래서 타우입자, 타우 뉴트리노, t쿼크, b쿼크를 기본 입자에 추가하면 총 17개 입자를 포함하는 표가 완성된다.<br />
+<br />
+<br />
+현대 물리학은 이렇게 해서 강한 핵력, 약한 핵력, 전자기력을 설명하고 있다.<br />
+중력을 매개하는 입자(graviton, 중력자)를 찾아 중력을 함께 설명하려는 시도도 존재한다.<br />
+만약 존재한다면 Spin 2 입자일 것으로 예측되지만, 아직 발견된 바는 없다.<br />
+<br />
+<br />
+여기 밑에 입자들 질량, 스핀 정리<br />
+<br />
+아니 u쿼크 d쿼크 질량이 10MeV정도였는데 양성자 질량은 938MeV라고?<br />
+상대성이론 때문이라고 한다. 나중에 다시 확인<br />
+중력자는 Spin 2 입자로 생각하고 있다.<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[원자핵은 양성자와 중성자로 구성되며, 양성자와 중성자는 3개의 쿼크로 이루어져 있다. 양성자 = u쿼크 2개, d쿼크 1개 중성자 = u쿼크 1개, d쿼크 2개 u쿼크는 +2/3 전하, d쿼크는 -1/3 전하를 갖고 있다. 그래서 양성자는 +1 전하, 중성자는 0 전하를 갖는다. 그런데 전자기 이론으로는 전하를 갖는 쿼크들이 양성자, 중성자로 뭉쳐있는 이유를 설명하기 어렵다. 예를 들어 양성자에서는, 양성자 지름보다도 작은 거리에 +2/3 전하를 갖는 u쿼크 2개가 있는 것이다. 전자기 이론에 따르면, 양전하를 갖는 두 입자는 서로를 이미 멀리 밀어냈어야 한다. 쿼크들을 양성자, 중성자로 묶어두는 힘을 Strong Nuclear Force(강한 핵력)라 부른다. 강한 핵력의 매개입자는 gluon(글루온)이다. 글루온은 광자처럼 Spin 1 입자이며, 광자와 같은 확률진폭 계산식을 갖는다. 단, 전자가 광자와 결합할 확률보다 쿼크가 글루온과 결합할 확률이 훨씬 높다. 그래서 강한 핵력의 계산이 전자기력 계산에 비해 훨씬 복잡하다. 결합이 여러번 일어나는 항들을 무시할 수 없기 때문이다. 강한 핵력이 있으니, Weak Nuclear Force(약한 핵력)도 있다. 전자기력, 강한 핵력의 이론대로면 u쿼크는 언제나 u쿼크, d쿼크는 언제나 d쿼크여야 한다. 하지만 베타붕괴가 일어나면, 양성자가 중성자로 변한다. 즉, d쿼크가 u쿼크로 변하는 경우가 발생하는 것이다. 쿼크의 종류가 변하는 현상을 설명하는 힘이 약한 핵력이다. 약한 핵력의 매개입자는 W- Boson, W+ Boson, Z Boson(W-입자, W+입자, Z입자)다. 여기서, W+입자는 W-입자의 반입자다. 베타붕괴가 일어나면, d쿼크가 W-입자를 내놓으며 u쿼크로 변한다. W-입자는 이후 전자와 Anti-Neutrino(반뉴트리노)로 붕괴한다. 베타+붕괴 현상도 있다. 여기서는 u쿼크가 W+입자를 내놓으며 d쿼크로 변한다. W+입자는 이후 양전자와 뉴트리노로 붕괴한다. W-입자, W+입자는 광자, 글루온과는 달리 매우 큰 질량(약 80,000MeV)를 갖는다. 그래서 베타붕괴는 전자와 광자의 상호작용보다 훨씬 느린 속도로 일어난다. 핵자 단위에서 관찰하면, 베타붕괴는 중성자를 양성자로 만들며 전자와 반뉴트리노를 방출하고, 베타+붕괴는 양성자를 중성자로 만들며 양전자와 뉴트리노를 방출한다. 뉴트리노는 전자, 쿼크처럼 Spin 1/2 입자이며, 질량도 전하도 없다. 뉴트리노는 전하가 없기에 광자와 상호작용하지 않으며, 쿼크가 아니기에 글루온과 상호작용하지도 않는다. 뉴트리노와 상호작용하는 입자는 W+입자, W-입자, Z입자 뿐이다. Z입자는 W+입자와 W-입자가 결합할 경우 생기는 입자다. Z입자는 전하가 없어 광자와 상호작용하지는 못하지만, d쿼크, u쿼크, 전자, 뉴트리노 등과 momentum, 에너지 등을 주고받으며 상호작용할 수 있다. W+입자와 W-입자가 결합해 Z입자가 생기는 과정에서, 두 입자가 결합할 확률을 나타내는 결합상수가 전자와 광자의 결합상수와 매우 유사한 값을 가진다. 그래서 3개 입자(W+입자, W-입자, Z입자)가 광자의 다른 모습이라는 이론이 탄생한다. 이것이 전자기력과 약한핵력을 통합하는 Electroweak Theory(전자기약력 이론)이다. 1968년 제시된 전자기약력 이론은 오랫동안 어려움을 겪었는데, 광자는 질량이 없지만 W+입자, W-입자, Z입자는 질량이 있다는 점이 문제였다. 이 문제는 2013년 Higgs Boson(힉스 입자)가 발견되며 해결됐다. 힉스 입자는 기본입자에 질량을 부여하는 입자다. 지금까지 3가지 상호작용과 그 매개입자를 살펴봤다. 전자기력: 광자, 강한 핵력: 글루온, 약한 핵력: W-입자, Z입자 그리고 원자를 구성하는 전자, u쿼크, d쿼크, 약한 핵력의 상호작용에서 발생하는 뉴트리노, 질량을 부여하는 힉스 입자도 살펴봤다. 총 9가지 기본 입자를 확인한 것이다. (W+입자는 W-입자의 반입자라 기본입자는 아니다) 그런데, 기본입자는 총 17가지다. 지금부터는 남은 8가지 기본 입자에 대해 알아보려고 한다. 새로운 입자를 연구하기 위해서는 입자가속기가 필요하다. 양성자를 입자가속기로 가속해서 원자핵과 충돌시키면, 원자핵이 깨지며 입자들이 튀어나온다. 이때, 더 높은 에너지로 충돌시킬수록 새로운 입자들을 관찰할 수 있다. 이 새로운 입자중 하나가 Muon(뮤온)이다. 뮤온은 전자와 질량을 제외한 모든 특성이 동일하다. 질량은 뮤온이 전자보다 약 200배 무겁다. 전자: 약 0.511MeV, 뮤온: 약 105.8MeV 그래서, 뮤온의 모든 행동은 전자를 설명하던 기존 이론으로 설명될 수 있다. 광자는 전자와 양전자를 계속해서 만든다고 했는데, 뮤온과 반뮤온을 만들기도 한다. W-입자도, 아까는 전자와 반뉴트리노를 만든다고 했지만, 뮤온과 반뮤뉴트리노를 만들기도 한다. 전자와 뮤온의 관계처럼, 쿼크 중에서도 u쿼크, d쿼크와 동일한 특성을 갖지만 질량이 더 무거운 쿼크가 발견되었다. 그것이 c쿼크와 s쿼크다. s쿼크에서 베타붕괴가 일어날 경우, s쿼크는 W-입자를 방출하고 c쿼크로 변한다. 이렇게 해서 뮤온, 뮤뉴트리노, s쿼크, c쿼크를 기본 입자에 추가하게 되었다. 뮤온이 방출될 때 보다도 훨씬 높은 에너지로 원자핵을 충돌시킬 경우, 전자와 같은 특성을 갖지만 뮤온보다도 훨씬 무거운 타우입자가 튀어나온다. 타우입자는 약 1800MeV의 질량을 갖는다. 이 값은 전자 질량의 약 3640배이며, 양성자 질량의 약 2배다. 타우입자에 대해서도 유사하게 타우 뉴트리노가 있으며, u쿼크, d쿼크와 동일한 특성을 가지지만 타우입자를 흡수/방출하며 훨씬 무거운 t쿼크, b쿼크가 있다. 그래서 타우입자, 타우 뉴트리노, t쿼크, b쿼크를 기본 입자에 추가하면 총 17개 입자를 포함하는 표가 완성된다. 현대 물리학은 이렇게 해서 강한 핵력, 약한 핵력, 전자기력을 설명하고 있다. 중력을 매개하는 입자(graviton, 중력자)를 찾아 중력을 함께 설명하려는 시도도 존재한다. 만약 존재한다면 Spin 2 입자일 것으로 예측되지만, 아직 발견된 바는 없다. 여기 밑에 입자들 질량, 스핀 정리 아니 u쿼크 d쿼크 질량이 10MeV정도였는데 양성자 질량은 938MeV라고? 상대성이론 때문이라고 한다. 나중에 다시 확인 중력자는 Spin 2 입자로 생각하고 있다.]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Special Relativity</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Special-Relativity.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Special Relativity" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Special%20Relativity</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Special-Relativity.html"><![CDATA[<p>맥스웰 방정식은 source에 의해 field가 어떻게 생기는지 알려준다</p>
 
 <p>lorentz force가 알려주는건, field가 어떤 영향을 주는지다</p>
 
@@ -256,144 +393,26 @@ Charge Conservation Equation(전하량 보존법칙)이라고도 부르고, Cont
 
 <p>Faraday’s equation, Maxwell-Ampere’s law에 Stokes’ theorem을 적용해서 두 수식을 ‘differential form’이라는 형태로 표현할 수 있다.</p>
 
-<p><img src="/public/img/EM6.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Basic Particles</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Basic Particles" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Basic%20Particles</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html"><![CDATA[<p>원자핵은 양성자와 중성자로 구성되며,<br />
-양성자와 중성자는 3개의 쿼크로 이루어져 있다.<br />
-<br />
-양성자 = u쿼크 2개, d쿼크 1개<br />
-중성자 = u쿼크 1개, d쿼크 2개<br />
-<br />
-u쿼크는 +2/3 전하, d쿼크는 -1/3 전하를 갖고 있다.<br />
-그래서 양성자는 +1 전하, 중성자는 0 전하를 갖는다.<br />
-<br />
-<br />
-그런데 전자기 이론으로는 전하를 갖는 쿼크들이 양성자, 중성자로 뭉쳐있는 이유를 설명하기 어렵다.<br />
-<br />
-예를 들어 양성자에서는, 양성자 지름보다도 작은 거리에 +2/3 전하를 갖는 u쿼크 2개가 있는 것이다.<br />
-전자기 이론에 따르면, 양전하를 갖는 두 입자는 서로를 이미 멀리 밀어냈어야 한다.<br />
-<br />
-<br />
-쿼크들을 양성자, 중성자로 묶어두는 힘을 Strong Nuclear Force(강한 핵력)라 부른다.<br />
-강한 핵력의 매개입자는 gluon(글루온)이다.<br />
-<br />
-글루온은 광자처럼 Spin 1 입자이며, 광자와 같은 확률진폭 계산식을 갖는다.<br />
-단, 전자가 광자와 결합할 확률보다 쿼크가 글루온과 결합할 확률이 훨씬 높다.<br />
-<br />
-그래서 강한 핵력의 계산이 전자기력 계산에 비해 훨씬 복잡하다.<br />
-결합이 여러번 일어나는 항들을 무시할 수 없기 때문이다.<br />
-<br />
-<br />
-강한 핵력이 있으니, Weak Nuclear Force(약한 핵력)도 있다.<br />
-<br />
-전자기력, 강한 핵력의 이론대로면 u쿼크는 언제나 u쿼크, d쿼크는 언제나 d쿼크여야 한다.<br />
-하지만 베타붕괴가 일어나면, 양성자가 중성자로 변한다.<br />
-즉, d쿼크가 u쿼크로 변하는 경우가 발생하는 것이다.<br />
-<br />
-쿼크의 종류가 변하는 현상을 설명하는 힘이 약한 핵력이다.<br />
-약한 핵력의 매개입자는 W- Boson, W+ Boson, Z Boson(W-입자, W+입자, Z입자)다.<br />
-여기서, W+입자는 W-입자의 반입자다.<br />
-<br />
-베타붕괴가 일어나면, d쿼크가 W-입자를 내놓으며 u쿼크로 변한다.<br />
-W-입자는 이후 전자와 Anti-Neutrino(반뉴트리노)로 붕괴한다.<br />
-<br />
-베타+붕괴 현상도 있다.<br />
-여기서는 u쿼크가 W+입자를 내놓으며 d쿼크로 변한다.<br />
-W+입자는 이후 양전자와 뉴트리노로 붕괴한다.<br />
-<br />
-W-입자, W+입자는 광자, 글루온과는 달리 매우 큰 질량(약 80,000MeV)를 갖는다.<br />
-그래서 베타붕괴는 전자와 광자의 상호작용보다 훨씬 느린 속도로 일어난다.<br />
-<br />
-핵자 단위에서 관찰하면,<br />
-베타붕괴는 중성자를 양성자로 만들며 전자와 반뉴트리노를 방출하고,<br />
-베타+붕괴는 양성자를 중성자로 만들며 양전자와 뉴트리노를 방출한다.<br />
-<br />
-<br />
-뉴트리노는 전자, 쿼크처럼 Spin 1/2 입자이며, 질량도 전하도 없다.<br />
-<br />
-뉴트리노는 전하가 없기에 광자와 상호작용하지 않으며,<br />
-쿼크가 아니기에 글루온과 상호작용하지도 않는다.<br />
-뉴트리노와 상호작용하는 입자는 W+입자, W-입자, Z입자 뿐이다.<br />
-<br />
-Z입자는 W+입자와 W-입자가 결합할 경우 생기는 입자다.<br />
-Z입자는 전하가 없어 광자와 상호작용하지는 못하지만,<br />
-d쿼크, u쿼크, 전자, 뉴트리노 등과 momentum, 에너지 등을 주고받으며 상호작용할 수 있다.<br />
-<br />
-<br />
-W+입자와 W-입자가 결합해 Z입자가 생기는 과정에서,<br />
-두 입자가 결합할 확률을 나타내는 결합상수가 전자와 광자의 결합상수와 매우 유사한 값을 가진다.<br />
-<br />
-그래서 3개 입자(W+입자, W-입자, Z입자)가 광자의 다른 모습이라는 이론이 탄생한다.<br />
-이것이 전자기력과 약한핵력을 통합하는 Electroweak Theory(전자기약력 이론)이다.<br />
-<br />
-1968년 제시된 전자기약력 이론은 오랫동안 어려움을 겪었는데,<br />
-광자는 질량이 없지만 W+입자, W-입자, Z입자는 질량이 있다는 점이 문제였다.<br />
-<br />
-이 문제는 2013년 Higgs Boson(힉스 입자)가 발견되며 해결됐다.<br />
-힉스 입자는 기본입자에 질량을 부여하는 입자다.<br />
-<br />
-<br />
-지금까지 3가지 상호작용과 그 매개입자를 살펴봤다.<br />
-전자기력: 광자, 강한 핵력: 글루온, 약한 핵력: W-입자, Z입자<br />
-<br />
-그리고 원자를 구성하는 전자, u쿼크, d쿼크,<br />
-약한 핵력의 상호작용에서 발생하는 뉴트리노,<br />
-질량을 부여하는 힉스 입자도 살펴봤다.<br />
-<br />
-총 9가지 기본 입자를 확인한 것이다.<br />
-(W+입자는 W-입자의 반입자라 기본입자는 아니다)<br />
-<br />
-그런데, 기본입자는 총 17가지다.<br />
-지금부터는 남은 8가지 기본 입자에 대해 알아보려고 한다.<br />
-<br />
-<br />
-새로운 입자를 연구하기 위해서는 입자가속기가 필요하다.<br />
-양성자를 입자가속기로 가속해서 원자핵과 충돌시키면, 원자핵이 깨지며 입자들이 튀어나온다.<br />
-이때, 더 높은 에너지로 충돌시킬수록 새로운 입자들을 관찰할 수 있다.<br />
-<br />
-이 새로운 입자중 하나가 Muon(뮤온)이다.<br />
-<br />
-<br />
-뮤온은 전자와 질량을 제외한 모든 특성이 동일하다.<br />
-질량은 뮤온이 전자보다 약 200배 무겁다.<br />
-전자: 약 0.511MeV, 뮤온: 약 105.8MeV<br />
-<br />
-그래서, 뮤온의 모든 행동은 전자를 설명하던 기존 이론으로 설명될 수 있다.<br />
-<br />
-광자는 전자와 양전자를 계속해서 만든다고 했는데, 뮤온과 반뮤온을 만들기도 한다.<br />
-W-입자도, 아까는 전자와 반뉴트리노를 만든다고 했지만, 뮤온과 반뮤뉴트리노를 만들기도 한다.<br />
-<br />
-<br />
-전자와 뮤온의 관계처럼, 쿼크 중에서도 u쿼크, d쿼크와 동일한 특성을 갖지만 질량이 더 무거운 쿼크가 발견되었다.<br />
-그것이 c쿼크와 s쿼크다.<br />
-<br />
-s쿼크에서 베타붕괴가 일어날 경우,<br />
-s쿼크는 W-입자를 방출하고 c쿼크로 변한다.<br />
-<br />
-<br />
-이렇게 해서 뮤온, 뮤뉴트리노, s쿼크, c쿼크를 기본 입자에 추가하게 되었다.<br />
-<br />
-<br />
-뮤온이 방출될 때 보다도 훨씬 높은 에너지로 원자핵을 충돌시킬 경우,<br />
-전자와 같은 특성을 갖지만 뮤온보다도 훨씬 무거운 타우입자가 튀어나온다.<br />
-<br />
-타우입자는 약 1800MeV의 질량을 갖는다.<br />
-이 값은 전자 질량의 약 3640배이며, 양성자 질량의 약 2배다.<br />
-<br />
-타우입자에 대해서도 유사하게 타우 뉴트리노가 있으며,<br />
-u쿼크, d쿼크와 동일한 특성을 가지지만 타우입자를 흡수/방출하며 훨씬 무거운 t쿼크, b쿼크가 있다.<br />
-<br />
-그래서 타우입자, 타우 뉴트리노, t쿼크, b쿼크를 기본 입자에 추가하면 총 17개 입자를 포함하는 표가 완성된다.<br />
-<br />
-<br />
-현대 물리학은 이렇게 해서 강한 핵력, 약한 핵력, 전자기력을 설명하고 있다.<br />
-중력을 매개하는 입자(graviton, 중력자)를 찾아 중력을 함께 설명하려는 시도도 존재한다.<br />
-만약 존재한다면 Spin 2 입자일 것으로 예측되지만, 아직 발견된 바는 없다.<br />
-<br />
-<br />
-여기 밑에 입자들 질량, 스핀 정리<br />
-<br />
-아니 u쿼크 d쿼크 질량이 10MeV정도였는데 양성자 질량은 938MeV라고?<br />
-상대성이론 때문이라고 한다. 나중에 다시 확인<br />
-중력자는 Spin 2 입자로 생각하고 있다.<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[원자핵은 양성자와 중성자로 구성되며, 양성자와 중성자는 3개의 쿼크로 이루어져 있다. 양성자 = u쿼크 2개, d쿼크 1개 중성자 = u쿼크 1개, d쿼크 2개 u쿼크는 +2/3 전하, d쿼크는 -1/3 전하를 갖고 있다. 그래서 양성자는 +1 전하, 중성자는 0 전하를 갖는다. 그런데 전자기 이론으로는 전하를 갖는 쿼크들이 양성자, 중성자로 뭉쳐있는 이유를 설명하기 어렵다. 예를 들어 양성자에서는, 양성자 지름보다도 작은 거리에 +2/3 전하를 갖는 u쿼크 2개가 있는 것이다. 전자기 이론에 따르면, 양전하를 갖는 두 입자는 서로를 이미 멀리 밀어냈어야 한다. 쿼크들을 양성자, 중성자로 묶어두는 힘을 Strong Nuclear Force(강한 핵력)라 부른다. 강한 핵력의 매개입자는 gluon(글루온)이다. 글루온은 광자처럼 Spin 1 입자이며, 광자와 같은 확률진폭 계산식을 갖는다. 단, 전자가 광자와 결합할 확률보다 쿼크가 글루온과 결합할 확률이 훨씬 높다. 그래서 강한 핵력의 계산이 전자기력 계산에 비해 훨씬 복잡하다. 결합이 여러번 일어나는 항들을 무시할 수 없기 때문이다. 강한 핵력이 있으니, Weak Nuclear Force(약한 핵력)도 있다. 전자기력, 강한 핵력의 이론대로면 u쿼크는 언제나 u쿼크, d쿼크는 언제나 d쿼크여야 한다. 하지만 베타붕괴가 일어나면, 양성자가 중성자로 변한다. 즉, d쿼크가 u쿼크로 변하는 경우가 발생하는 것이다. 쿼크의 종류가 변하는 현상을 설명하는 힘이 약한 핵력이다. 약한 핵력의 매개입자는 W- Boson, W+ Boson, Z Boson(W-입자, W+입자, Z입자)다. 여기서, W+입자는 W-입자의 반입자다. 베타붕괴가 일어나면, d쿼크가 W-입자를 내놓으며 u쿼크로 변한다. W-입자는 이후 전자와 Anti-Neutrino(반뉴트리노)로 붕괴한다. 베타+붕괴 현상도 있다. 여기서는 u쿼크가 W+입자를 내놓으며 d쿼크로 변한다. W+입자는 이후 양전자와 뉴트리노로 붕괴한다. W-입자, W+입자는 광자, 글루온과는 달리 매우 큰 질량(약 80,000MeV)를 갖는다. 그래서 베타붕괴는 전자와 광자의 상호작용보다 훨씬 느린 속도로 일어난다. 핵자 단위에서 관찰하면, 베타붕괴는 중성자를 양성자로 만들며 전자와 반뉴트리노를 방출하고, 베타+붕괴는 양성자를 중성자로 만들며 양전자와 뉴트리노를 방출한다. 뉴트리노는 전자, 쿼크처럼 Spin 1/2 입자이며, 질량도 전하도 없다. 뉴트리노는 전하가 없기에 광자와 상호작용하지 않으며, 쿼크가 아니기에 글루온과 상호작용하지도 않는다. 뉴트리노와 상호작용하는 입자는 W+입자, W-입자, Z입자 뿐이다. Z입자는 W+입자와 W-입자가 결합할 경우 생기는 입자다. Z입자는 전하가 없어 광자와 상호작용하지는 못하지만, d쿼크, u쿼크, 전자, 뉴트리노 등과 momentum, 에너지 등을 주고받으며 상호작용할 수 있다. W+입자와 W-입자가 결합해 Z입자가 생기는 과정에서, 두 입자가 결합할 확률을 나타내는 결합상수가 전자와 광자의 결합상수와 매우 유사한 값을 가진다. 그래서 3개 입자(W+입자, W-입자, Z입자)가 광자의 다른 모습이라는 이론이 탄생한다. 이것이 전자기력과 약한핵력을 통합하는 Electroweak Theory(전자기약력 이론)이다. 1968년 제시된 전자기약력 이론은 오랫동안 어려움을 겪었는데, 광자는 질량이 없지만 W+입자, W-입자, Z입자는 질량이 있다는 점이 문제였다. 이 문제는 2013년 Higgs Boson(힉스 입자)가 발견되며 해결됐다. 힉스 입자는 기본입자에 질량을 부여하는 입자다. 지금까지 3가지 상호작용과 그 매개입자를 살펴봤다. 전자기력: 광자, 강한 핵력: 글루온, 약한 핵력: W-입자, Z입자 그리고 원자를 구성하는 전자, u쿼크, d쿼크, 약한 핵력의 상호작용에서 발생하는 뉴트리노, 질량을 부여하는 힉스 입자도 살펴봤다. 총 9가지 기본 입자를 확인한 것이다. (W+입자는 W-입자의 반입자라 기본입자는 아니다) 그런데, 기본입자는 총 17가지다. 지금부터는 남은 8가지 기본 입자에 대해 알아보려고 한다. 새로운 입자를 연구하기 위해서는 입자가속기가 필요하다. 양성자를 입자가속기로 가속해서 원자핵과 충돌시키면, 원자핵이 깨지며 입자들이 튀어나온다. 이때, 더 높은 에너지로 충돌시킬수록 새로운 입자들을 관찰할 수 있다. 이 새로운 입자중 하나가 Muon(뮤온)이다. 뮤온은 전자와 질량을 제외한 모든 특성이 동일하다. 질량은 뮤온이 전자보다 약 200배 무겁다. 전자: 약 0.511MeV, 뮤온: 약 105.8MeV 그래서, 뮤온의 모든 행동은 전자를 설명하던 기존 이론으로 설명될 수 있다. 광자는 전자와 양전자를 계속해서 만든다고 했는데, 뮤온과 반뮤온을 만들기도 한다. W-입자도, 아까는 전자와 반뉴트리노를 만든다고 했지만, 뮤온과 반뮤뉴트리노를 만들기도 한다. 전자와 뮤온의 관계처럼, 쿼크 중에서도 u쿼크, d쿼크와 동일한 특성을 갖지만 질량이 더 무거운 쿼크가 발견되었다. 그것이 c쿼크와 s쿼크다. s쿼크에서 베타붕괴가 일어날 경우, s쿼크는 W-입자를 방출하고 c쿼크로 변한다. 이렇게 해서 뮤온, 뮤뉴트리노, s쿼크, c쿼크를 기본 입자에 추가하게 되었다. 뮤온이 방출될 때 보다도 훨씬 높은 에너지로 원자핵을 충돌시킬 경우, 전자와 같은 특성을 갖지만 뮤온보다도 훨씬 무거운 타우입자가 튀어나온다. 타우입자는 약 1800MeV의 질량을 갖는다. 이 값은 전자 질량의 약 3640배이며, 양성자 질량의 약 2배다. 타우입자에 대해서도 유사하게 타우 뉴트리노가 있으며, u쿼크, d쿼크와 동일한 특성을 가지지만 타우입자를 흡수/방출하며 훨씬 무거운 t쿼크, b쿼크가 있다. 그래서 타우입자, 타우 뉴트리노, t쿼크, b쿼크를 기본 입자에 추가하면 총 17개 입자를 포함하는 표가 완성된다. 현대 물리학은 이렇게 해서 강한 핵력, 약한 핵력, 전자기력을 설명하고 있다. 중력을 매개하는 입자(graviton, 중력자)를 찾아 중력을 함께 설명하려는 시도도 존재한다. 만약 존재한다면 Spin 2 입자일 것으로 예측되지만, 아직 발견된 바는 없다. 여기 밑에 입자들 질량, 스핀 정리 아니 u쿼크 d쿼크 질량이 10MeV정도였는데 양성자 질량은 938MeV라고? 상대성이론 때문이라고 한다. 나중에 다시 확인 중력자는 Spin 2 입자로 생각하고 있다.]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
+<p><img src="/public/img/EM6.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Analog - ESD</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html" rel="alternate" type="text/html" title="Analog - ESD" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20ESD</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html"><![CDATA[<p>ESD Test: 정전기 시험</p>
+
+<p>진짜 우리가 아는 정전기 얘기다.
+사람은 정전기에 따끔 하면 끝이지만, IC는 정전기 때문에 치명적인 문제가 생길수도 있다.</p>
+
+<p>그래서 ESD Cell로 정전기가 IC에 영향을 주지 못하게 만들고,
+몇가지 ESD Model로 IC를 테스트한다.</p>
+
+<p>ESD = Electrostatic Discharge</p>
+
+<p>ESD Model:
+HBM : Human Body Model
+MM : Machine Model
+CDM : Charged Device Model</p>
+
+<p>HBM은 인체에 의한 정전기, MM은 기계에 의한 정전기, CDM은 공기중 전하에 의한 정전기 모델이다.</p>
+
+<p>ESD 방지 대책으로는 ESD Cell을 만들어서 붙인다.</p>
+
+<p>ESD Cell: Device에서 Electrostatic Discharge(ESD)가 일어나지 못하도록 하는 protection circuit이다. 여기서 ESD는 전하가 한 곳에 모여있다가 한번에 흐르는 현상이다.<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[ESD Test: 정전기 시험]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
 inductive motor들이 주로 load로 쓰인다.</p>
 
 <p>H-bridge에는 External diodes(Free-wheeling diode 또는 flyback diode라고도 불린다)가 들어가지 않을 때도 있다

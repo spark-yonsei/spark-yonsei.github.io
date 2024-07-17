@@ -101,3 +101,4 @@ data는 어디 안들르고 바로 오지만, clock은 tree처럼 이곳저곳�
 이걸 보상해주기 위해 PLL을 쓸 수 있다.
 
 요즘 많이 쓰는 구조가 charge pump PLL이다.
+

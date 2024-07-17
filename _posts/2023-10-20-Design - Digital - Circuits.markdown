@@ -110,3 +110,16 @@ AES: Advanced Encryption Standard, 암호화 방법
 
 참고자료:
 Reflections on Progress in Digital Circuits, Makoto Ikeda
+
+Logic cell에 쓰이는 라이브러리들:<br>
+RVT: Regular Voltage Threshold<br>
+HVT: High Voltage Threshold<br>
+LVT: Low Voltage Threshold<br>
+SLVT: Super Lowe Voltage Threshold<br>
+<br>
+Threshold가 높으면 속도가 느리지만 leakage가 적고,<br>
+Threshold가 낮으면 속도가 빠르지만 leakage가 많다.<br>
+<br>
+그래서 어디는 HVT, 어디는 LVT로 만들어 최적화할 수 있을 것이다.<br>
+<br>
+그런걸 ‘Multi Threshold Voltage Design’이라 부른다.<br>

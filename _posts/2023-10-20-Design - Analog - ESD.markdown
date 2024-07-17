@@ -25,3 +25,4 @@ HBM은 인체에 의한 정전기, MM은 기계에 의한 정전기, CDM은 공�
 
 ESD 방지 대책으로는 ESD Cell을 만들어서 붙인다.
 
+ESD Cell: Device에서 Electrostatic Discharge(ESD)가 일어나지 못하도록 하는 protection circuit이다. 여기서 ESD는 전하가 한 곳에 모여있다가 한번에 흐르는 현상이다.<br>

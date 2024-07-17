@@ -11,3 +11,5 @@ summation한 data의 noise는 8sqrt7 = 21code. 8 7개를 rms한거다.
 모두 양수였으면 그냥 평균냈겠지만, 음수 양수 섞이면 rms해야 한다.
 
 물론, 각 noise에 correlation이 없다는걸 가정했기에 rms로 구한거다.
+
+White noise 줄이려면 크기랑 전력이 필요하다. 그래서 크기 키우고 전류 높이면 white noise가 줄어든다.<br>
