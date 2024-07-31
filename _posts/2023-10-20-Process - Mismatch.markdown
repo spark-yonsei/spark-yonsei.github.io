@@ -74,7 +74,11 @@ Nwell 농도가 높으면 channel에 hole 모이기 힘들어진다.
 
 그래서 적당히 떨어뜨려줘야 한다.
 
+Well을 만든 뒤 guardring을 쳐두면 WPE 효과가 거의 안보인다. guardring 두께가 있으니까.
+
 Sheet gate Oxide는 고전압 트랜지스터에서 나타나는 현상인데, 비슷한 현상이다.
+
+
 
 
 STI Stress:
@@ -89,3 +93,56 @@ STI에 채워넣는 물질이 active를 미는 힘을 만들어서, active에 �
 이러면 gate length가 줄어들어 leakage current가 증가한다.
 
 이 영향을 줄이기 위해, dummy tr을 추가하거나, array 구조로 active를 계속 연결한다.
+
+Active 없는곳은 다 isolation이다. 여기에는 SiO2가 채워진다.
+이 SiO2가 양옆을 밀어서 STI stress effect가 생긴다.
+
+이 효과에 의해:
+PMOS는 mobility 증가, Vth 증가
+NMOS는 mobility 감소, Vth 증가
+
+여기서 PMOS는 mobility 증가 효과가 커서 전류가 증가하고 빨라진다
+NMOS는 전류가 줄어들고 느려진다
+결국 소자들이 설계랑 다르게 동작하게 되는거다
+
+이 효과를 줄이려면, 채널 방향 Source Drain을 길게 만들거나
+finger를 집어넣어서 가운데 소자에 stress가 잘 안들어가게 해야 한다.
+
+미세 공정에서는 leakage current 문제가 심각하기 때문에,
+STI stress effect를 이용해 Vth를 늘리는 설계 방식이 있다.
+
+MOSFET 양옆에 dummy Poly를 넣어서 STI effect를 주고,
+결과적으로 Vth가 증가해 leakage current가 줄어들게 하는 방식이다.
+
+
+
+
+Mismatch: MonteCarlo simulation에서 볼 수 있는, random variation이다.
+mismatch는 lithography, etching, diffusion, implant 등 과정에서
+제대로 직선이 안그려지고 울퉁불퉁하게 그려져서 문제가 생기는거다
+
+mismatch는 모든 소자에 생긴다.
+이걸 해결하려면 소자 면적을 키우는 수밖에 없다
+소자 면적을 키우면 표준편차가 줄어든다
+
+
+웨이퍼를 잘라서 die를 만들고 그걸 packaging하는데,
+패키징해놓으면 die 가운데에는 압력이 낮고 끄트머리에는 압력이 높게 작용한다.
+
+Silicon은 piezoresistive 효과가 있어서, 압력이 높아지면 저항이 늘어난다.
+그래서 die 가운데에 있는 소자랑 끄트머리에 잇는 소자랑 저항이 다르다.
+
+근데 뭐 사실 이 효과는 크지 않다.
+각 회로들 크기에 비해 die가 아주 커서, gradient 효과가 거의 안보여서 그렇다.
+
+문제는 thermal gradient다.
+회로가 뜨거워지면 뜨거운곳 덜뜨거운곳 소자별로 동작이 달라진다.
+그래서 layout을 할때 common centroid 구조를 쓴다.
+
+1차원 배치: ABBA
+2차원 배치:
+AB ABBA
+BA BAAB
+이런 식으로 한다.
+
+Common mode feedback이 thermal gradient 영향 줄이는데에 도움이 된다?

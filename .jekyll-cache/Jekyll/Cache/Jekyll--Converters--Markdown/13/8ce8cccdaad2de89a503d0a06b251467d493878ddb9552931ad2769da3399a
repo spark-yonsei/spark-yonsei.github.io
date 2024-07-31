@@ -1,9 +1,0 @@
-I"v<p>AHB는 burst가 되는데, APB는 안된다.</p>
-
-<p><br />
-PCI Bus: Peripheral Component Interconnect Bus<br />
-컴퓨터 메인보드에 주변 장치를 장착하는데에 쓰이는 컴퓨터 버스의 일종이다.<br />
-<br />
-PXI: PCI eXtensions for Instrumentation<br />
-여러가지 장비들을 측정, 제어하는데에 사용되는 플랫폼이다.<br /></p>
-:ET

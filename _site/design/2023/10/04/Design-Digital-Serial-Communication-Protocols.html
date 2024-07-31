@@ -41,16 +41,9 @@
  		</li>
 	    
 	    <li>
-	    	<a class="nav-item" href="/category/#History">
-				<span class="name">History</span>
-				<span class="badge">5</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
 	    	<a class="nav-item" href="/category/#Market">
 				<span class="name">Market</span>
-				<span class="badge">18</span>
+				<span class="badge">19</span>
 	    	</a>
  		</li>
 	    
@@ -92,26 +85,47 @@
 		<p>Serial Communication Protocol에는 UART, I2C, SPI가 있다.</p>
 
 <p>UART (Universal Asynchronous Receiver-Transmitter):
-UART는 device간 단거리 통신에 쓰이는 asynchronous serial communication protocol이다.
- ✔ It uses two wires, one for transmitting data (TX) and another for receiving data (RX).
-  ✔ UART does not have a clock signal, so the data is transmitted asynchronously using start and stop bits to mark the beginning and end of each data frame.
-  ✔ It is a straightforward and simple protocol, commonly used in applications like serial communication between a microcontroller and a computer, GPS modules, and Bluetooth modules.</p>
+UART는 device간 단거리 통신에 쓰이는 asynchronous serial communication protocol이다.</p>
 
-<p>🔰 2. SPI (Serial Peripheral Interface):
- ✔ SPI is a synchronous serial communication protocol primarily used for
-communication between microcontrollers and peripheral devices, such as sensors, displays, and memory chips.
- ✔ It requires four wires: a master-out-slave-in (MOSI) line for data transmission, a master-in-slave-out (MISO) line for data reception, a clock (SCK) line for synchronization, and a chip select (CS) line to select the target device.
- ✔ SPI operates in a master-slave configuration, where a master device initiates the communication and controls the data transfer to one or more slave devices.
-  ✔ It supports full-duplex communication, meaning data can be simultaneously transmitted and received.
-   ✔ SPI is known for its high data transfer rates and is commonly used in applications that require fast and efficient data transfer.</p>
+<p>UART 통신은 전선 2개를 사용한다.
+하나는 데이터 송신용(Tx), 하나는 데이터 수신용(Rx)이다.</p>
 
-<p>🔰 3. I2C (Inter-Integrated Circuit):
-   ✔ I2C is a multi-master, multi-slave, and bidirectional serial communication protocol designed for communication between integrated circuits on a circuit board.
- ✔ It uses two wires: a serial data line (SDA) for bidirectional data transfer and a serial clock line (SCL) for synchronization.
-   ✔ I2C allows multiple devices to share the same bus, with each device having a unique address.
-   ✔ It supports both 7-bit and 10-bit addressing modes, providing the capability to connect a large number of devices.
- ✔ I2C is a slower protocol compared to UART and SPI, but it requires fewer wires and is commonly used in applications where simplicity and low pin count are important, such as sensors, EEPROM memory chips, and real-time clocks.
-SDA: bus를 통해 data 전달
+<p>UART 통신은 clock 신호를 사용하지 않는다.
+그래서 각 data frame 앞뒤로 start bit, stop bit가 있어야 한다.</p>
+
+<p>구조가 간단한 통신 방식이다.
+GPS, 블루투스 등에 쓰인다.</p>
+
+<p>SPI (Serial Peripheral Interface):</p>
+
+<p>SPI는 전선 4개를 사용한다.
+MOSI (Master Out Slave In): Data 송신
+MISO (Master In Slave Out): Data 수신
+SCLK (Serial Clock): Clock 신호
+CS (Chip Select): 대상 device 선택</p>
+
+<p>SPI 통신은 master-slave 구조로 진행된다.
+master가 통신을 시작해서, 1개 또는 여러개 slave로 데이터를 전송한다.</p>
+
+<p>Full-duplex 통신을 지원한다. 데이터를 전송하면서 동시에 데이터를 받을 수 있다는 뜻이다.</p>
+
+<p>SPI는 데이터 전송 rate가 높아서,
+빠르고 효율적인 데이터 전송이 필요한 곳에 쓰인다.</p>
+
+<p>I2C (Inter-Integrated Circuit):</p>
+
+<p>I2C는 multi-master, multi-slave, bidirectional이다.</p>
+
+<p>2개 전선을 쓴다.
+SDA (Serial Data Line): 양방향 데이터 송수신
+SCL (Serial Clock Line): Clock 신호</p>
+
+<p>I2C를 쓰면, 서로 다른 address를 쓰는 여러개 device가 1개 bus에 연결될 수 있다.</p>
+
+<p>I2C는 SPI, UART보다 느리지만 더 간단한 구조고 전선도 덜 쓴다.
+그래서 pin이 적어야 하는 센서, EEPROM 메모리칩, real-time clock 등에 쓰인다.</p>
+
+<p>SDA: bus를 통해 data 전달
 SCL: master, slave 사이 data transfer를 synchronize한다.</p>
 
 <p>I2C가 위 2개보다 나은 점:
