@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "스마트폰 - ToF"
+title:  "Smartphone - ToF"
 date:   2023-10-04 19:31:29 +0900
 categories: Market
 order: 5

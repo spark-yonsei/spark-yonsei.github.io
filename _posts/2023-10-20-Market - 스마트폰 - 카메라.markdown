@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "스마트폰 - 카메라"
+title:  "Smartphone - Camera - Overview"
 date:   2023-10-04 19:31:29 +0900
 categories: Market
 order: 1
@@ -49,7 +49,6 @@ order: 1
 <br>
 최근에는 프리즘을 통해 잠망경같은 구조로 거리를 확보하는 스마트폰들이 출시되고 있다.<br>
 이러한 구조를 '폴디드 렌즈' 구조라 부른다.<br>
-![alt text](/public/img/camera1.png)<br>
 하지만 폴디드 렌즈 구조는 상당히 비싸서, 삼성전자는 갤럭시 S시리즈 울트라 모델에만 해당 구조를 적용하고 있다.<br>
 <br>
 <br>

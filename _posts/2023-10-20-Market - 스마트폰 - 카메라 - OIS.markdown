@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "스마트폰 - 카메라 - OIS"
+title:  "Smartphone - Camera - OIS"
 date:   2023-10-04 19:31:29 +0900
 categories: Market
 order: 2

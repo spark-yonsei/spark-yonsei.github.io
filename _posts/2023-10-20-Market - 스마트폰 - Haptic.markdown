@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "스마트폰 - 햅틱"
+title:  "Smartphone - Haptic"
 date:   2023-10-04 19:31:29 +0900
 categories: Market
 order: 4
