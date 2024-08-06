@@ -123,3 +123,7 @@ Threshold가 낮으면 속도가 빠르지만 leakage가 많다.<br>
 그래서 어디는 HVT, 어디는 LVT로 만들어 최적화할 수 있을 것이다.<br>
 <br>
 그런걸 ‘Multi Threshold Voltage Design’이라 부른다.<br>
+
+
+LDO에서 전압이 짧게라도 튀면, 그 짧은 시간동안 device에 stress가 들어간다.
+그래서 튀는 전압은 최대한 줄이는게 좋다.
