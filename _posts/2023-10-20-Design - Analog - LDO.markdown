@@ -6,7 +6,7 @@ categories: Design
 order: 3
 ---
 
-LDO : Low Dropout Regulators<br>
+LDO : Low Dropout Regulator<br>
 <br>
 <br>
 회로가 제대로 동작하기 위해, 일정한 전압 입력이 필요한 경우가 많다.<br>
