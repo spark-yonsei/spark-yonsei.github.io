@@ -137,3 +137,5 @@ Cp가 들어간걸 보면 Cp를 달아놓고 잰 것 같긴 한데, 정확히 �
 Drive level은 crystal 내에서 소모된 전력을 말한다.
 $$DL = 2ESR \left( \pi f \left( C_L+C_o \right)V_{pp} \right)^2
 Vpp는 출력의 peak to peak 전압이다.
+
+TCXO: Temperature Compensated Crystal Oscillator

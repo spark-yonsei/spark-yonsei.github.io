@@ -127,3 +127,33 @@ Threshold가 낮으면 속도가 빠르지만 leakage가 많다.<br>
 
 LDO에서 전압이 짧게라도 튀면, 그 짧은 시간동안 device에 stress가 들어간다.
 그래서 튀는 전압은 최대한 줄이는게 좋다.
+
+MA: Direct Memory Access
+CPU를 통하지 않고도 메모리에 접근할 수 있게 하는 기능.
+이게 있으면, 다른 block이 memory에 접근해야 할때 CPU는 데이터 전송하라고만 해놓고
+다른거 하다가 DMAC(DMA Controller)한테 interrupt 신호 받으면 아 전송 다 끝났구나 한다.
+
+WDT: Watchdog Timer
+비정상 상태, 무한루프 등 이상한 상태에 빠지면 System을 리셋하는 장치
+
+ECC Memory: Error Correction Code Memory
+데이터 손상을 복구하는 메모리.
+우주선 중성자 방사능 때문에 cell에 저장된 정보가 바뀔 수 있어 필요하다.
+이런 에러는 고도가 증가하면 엄청나게 늘어난다.
+ECC Memory가 정보를 복구하는 알고리즘을 ECC logic이라 부른다.
+
+SCU: System Controller Unit
+각 peripheral들이 clock, memory 등 resource를 사용할때, 그걸 관리해준다.
+SCFW(System Controller Firmware)에 의해 동작한다.
+그래서 온갖 subsystem들을 SCU에서 관리한다.
+
+PMU: Power Management Unit
+
+RTC: Real Time Clock
+그냥 시간 재는 회로다.
+
+Boot sequence:
+Power on -> POR/BOR 동작 ->
+HIS OSC켜짐 -> PLL 켜짐 -> PLL Lock까지 대기 -> flash clock 켜짐 ->(Always on Block들)
+flash에서 analog block 읽기(Flash Controller)
+-> AHB prescaler, APB prescaler, Timer prescaler, clock gating 켜짐(clock generatro)
