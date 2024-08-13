@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Analog - Heat Management"
+title:  "Analog - Thermal Consideration"
 date:   2023-10-04 19:31:29 +0900
 categories: Design
 order: 3
@@ -43,3 +43,5 @@ Dvfs 없으면?
 
 온도센서에는 BJT가 들어가는데, 전원전압이 너무 내려가면 쓸 수가 없다.
 그리고 사실 PnR을 위해서는 BJT가 없는게 낫다.
+
+온도가 올라가면 mobility가 감소한다.

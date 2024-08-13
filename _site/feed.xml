@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-30T23:05:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Microscopic Electromagnetics - Basic Particles</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Basic Particles" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Basic%20Particles</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html"><![CDATA[<p>원자핵은 양성자와 중성자로 구성되며,<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-14T00:28:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Microscopic Electromagnetics - Basic Particles</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Basic Particles" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Basic%20Particles</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html"><![CDATA[<p>원자핵은 양성자와 중성자로 구성되며,<br />
 양성자와 중성자는 3개의 쿼크로 이루어져 있다.<br />
 <br />
 양성자 = u쿼크 2개, d쿼크 1개<br />
@@ -393,26 +393,7 @@ Charge Conservation Equation(전하량 보존법칙)이라고도 부르고, Cont
 
 <p>Faraday’s equation, Maxwell-Ampere’s law에 Stokes’ theorem을 적용해서 두 수식을 ‘differential form’이라는 형태로 표현할 수 있다.</p>
 
-<p><img src="/public/img/EM6.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Analog - ESD</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html" rel="alternate" type="text/html" title="Analog - ESD" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20ESD</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html"><![CDATA[<p>ESD Test: 정전기 시험</p>
-
-<p>진짜 우리가 아는 정전기 얘기다.
-사람은 정전기에 따끔 하면 끝이지만, IC는 정전기 때문에 치명적인 문제가 생길수도 있다.</p>
-
-<p>그래서 ESD Cell로 정전기가 IC에 영향을 주지 못하게 만들고,
-몇가지 ESD Model로 IC를 테스트한다.</p>
-
-<p>ESD = Electrostatic Discharge</p>
-
-<p>ESD Model:
-HBM : Human Body Model
-MM : Machine Model
-CDM : Charged Device Model</p>
-
-<p>HBM은 인체에 의한 정전기, MM은 기계에 의한 정전기, CDM은 공기중 전하에 의한 정전기 모델이다.</p>
-
-<p>ESD 방지 대책으로는 ESD Cell을 만들어서 붙인다.</p>
-
-<p>ESD Cell: Device에서 Electrostatic Discharge(ESD)가 일어나지 못하도록 하는 protection circuit이다. 여기서 ESD는 전하가 한 곳에 모여있다가 한번에 흐르는 현상이다.<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[ESD Test: 정전기 시험]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
+<p><img src="/public/img/EM6.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
 inductive motor들이 주로 load로 쓰인다.</p>
 
 <p>H-bridge에는 External diodes(Free-wheeling diode 또는 flyback diode라고도 불린다)가 들어가지 않을 때도 있다
@@ -459,7 +440,125 @@ fast decay mode에서는 전류는 빨리 나가는데, back emf에는 별 조�
 즉 모터가 빠르게 멈춘다.</p>
 
 <p>그니까, slow랑 fast는 inductive load (여기서는 motor winding)에 흐르는 전류가 줄어드는 rate를 말하는거다.
-모터의 각속도 이야기가 아니다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[H-bridge는 4개 FET을 써서 load에다가 전류를 준다. inductive motor들이 주로 load로 쓰인다.]]></summary></entry><entry><title type="html">Analog - Kickback Noise</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Kickback-Noise.html" rel="alternate" type="text/html" title="Analog - Kickback Noise" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Kickback%20Noise</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Kickback-Noise.html"><![CDATA[<p>Kickback noise:<br />
+모터의 각속도 이야기가 아니다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[H-bridge는 4개 FET을 써서 load에다가 전류를 준다. inductive motor들이 주로 load로 쓰인다.]]></summary></entry><entry><title type="html">Analog - LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html" rel="alternate" type="text/html" title="Analog - LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulator<br />
+<br />
+<br />
+회로가 제대로 동작하기 위해, 일정한 전압 입력이 필요한 경우가 많다.<br />
+Op Amp input, MOSFET의 Gate 등은 전류를 소비하지 않기에 BGR(Bandgap Reference) 회로로 전압을 주면 된다.<br />
+하지만 저항, logic cell 등 전류를 크게 소비하는 회로에 일정한 전압을 제공하기 위해서는 LDO 회로를 써야 한다.<br />
+<br />
+<br />
+기본적인 LDO는 Op Amp, BGR, Feedback, Pass Transistor로 구성된다.<br />
+<br />
+Op Amp의 입력에는 BGR 전압, Feedback 전압이 들어온다.<br />
+Op Amp의 출력에는 Pass Transistor의 Gate가 연결되어 있다.<br />
+<br />
+Pass Transistor는 출력 전류를 내보내는 역할을 한다.<br />
+큰 전류를 내보내야 하기에 W/L이 큰 Transistor를 써야 한다.<br />
+<br />
+PMOS를 Pass Transistor로 쓰면 Common Source 구조가 되고,<br />
+NMOS를 Pass Transistor로 쓰면 Source Follower 구조가 된다.<br />
+<br />
+<br />
+Feedback 구조를 사용하는 이상, Frequency Compensation에 신경써야 한다.<br />
+LDO의 Dominant Pole은 출력 node에서 만들어진다.<br />
+<br />
+\(p_0 = \dfrac{1}{R_{out}C_{load}}\)<br />
+\(R_{out}=R_{load}||(R_{F_1}+R_{F_2})||1/gm\)<br />
+<br />
+Dominant pole 식에서 확인할 점은 2가지다.<br />
+<br />
+먼저 LDO 출력 전류를 늘리려고 Pass Transistor W/L를 무작정 늘리면,<br />
+C_load가 지나치게 증가해 dominant pole이 저주파로 이동한다.<br />
+따라서, feedback loop stability를 위해 W/L은 적절한 값으로 설정해줘야 한다.<br />
+<br />
+또한, gm이 증가하면 R_out이 감소함을 확인할 수 있다.<br />
+따라서 Pass Transistor에 큰 전류가 흘러 gm이 증가하면, R_out이 감소해 dominant pole이 고주파로 이동한다.<br />
+<br />
+Feedback loop는 dominant pole이 고주파에 위치할수록 안정하다.<br />
+LDO는 전류를 출력하면 feedback loop가 더 안정해지는 것이다.<br />
+feedback loop가 더 안정해졌음은 phase margin 증가로 확인 가능하다.<br />
+<br />
+<br />
+NMOS LDO의 장점:<br />
+PMOS보다 NMOS의 \(\mu\)가 크기 때문에, gm이 크고 Rout이 작다.<br />
+따라서 dominant pole이 상대적으로 더 높은 주파수에 있다.<br />
+<br />
+NMOS LDO의 단점:<br />
+NMOS에 큰 Vgs를 확보해야 한다.<br />
+큰 Vgs에 의해 LDO의 출력 전압이 제한된다.<br />
+<br />
+<br />
+PMOS LDO의 장점:<br />
+Source가 전원에 연결되어 있기 때문에,<br />
+Vgs가 LDO 출력 전압에 영향을 주지 않는다.<br />
+그래서 Low-Voltage Operation에서 쓰인다.<br />
+<br />
+PMOS LDO의 단점:<br />
+NMOS보다 \(\mu\)가 작기 때문에, gm이 작고 Rout이 크다.<br />
+따라서 dominant pole이 상대적으로 더 낮은 주파수에 있다.<br />
+<br />
+<br />
+LDO 출력 node에는 Capacitor가 달려있는 경우가 많다.<br />
+LDO 출력 전압이 살짝 흔들리더라도, 전하를 저장해둔 Capacitor가 일정한 전압을 유지해주기 때문이다.<br />
+이 목적을 위해서는, LDO 출력에 있는 Capacitance가 클수록 좋다.<br />
+<br />
+그러나 LDO 내 feedback loop의 stability만 생각한다면,<br />
+LDO 출력 node에 아예 Capacitance가 없는 편이 좋을 것이다.<br />
+1/RoutCout인 dominant pole을 매우 높은 주파수로 보내기 위함이다.<br />
+<br />
+<br />
+출력 node에 Capacitor를 달아놓지 않은 LDO를 Capless LDO라 부른다.<br />
+<br />
+Capless LDO의 장점:<br />
+Feedback Loop가 Stable하다(Phase Margin이 크다).<br />
+제조시 Capacitor 값을 아낄 수 있다.<br />
+<br />
+Capless LDO의 단점:<br />
+출력 전압이 비교적 쉽게 흔들린다.<br />
+따라서 설계에 주의를 요한다.<br />
+<br />
+<br />
+LDO는 출력 node에 큰 전류가 흘러야 하는 경우에 쓰인다.<br />
+따라서 전류가 흐르는 경로에도 신경을 써야 한다.<br />
+<br />
+먼저, Layout시 출력 node를 두꺼운 metal로 만들어야 한다.<br />
+저항을 최소화해서, 큰 전류에 의한 전압 강하를 줄이기 위함이다.<br />
+Metal은 저항이 가장 작은 top metal을 쓰는 것이 좋다.<br />
+<br />
+또한 출력 전압이 외부 회로에 전달되는 경로가 최대한 짧도록, IC 내 LDO 배치에 신경써야 한다.<br />
+경로 최소화를 위해 IC 1개 안에 LDO 2개를 넣는 경우도 있는데,<br />
+이때는 두 LDO 사이의 미세한 출력전압 차이가 문제가 되지 않도록 설계해야 한다.<br />
+<br />
+<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulator 회로가 제대로 동작하기 위해, 일정한 전압 입력이 필요한 경우가 많다. Op Amp input, MOSFET의 Gate 등은 전류를 소비하지 않기에 BGR(Bandgap Reference) 회로로 전압을 주면 된다. 하지만 저항, logic cell 등 전류를 크게 소비하는 회로에 일정한 전압을 제공하기 위해서는 LDO 회로를 써야 한다. 기본적인 LDO는 Op Amp, BGR, Feedback, Pass Transistor로 구성된다. Op Amp의 입력에는 BGR 전압, Feedback 전압이 들어온다. Op Amp의 출력에는 Pass Transistor의 Gate가 연결되어 있다. Pass Transistor는 출력 전류를 내보내는 역할을 한다. 큰 전류를 내보내야 하기에 W/L이 큰 Transistor를 써야 한다. PMOS를 Pass Transistor로 쓰면 Common Source 구조가 되고, NMOS를 Pass Transistor로 쓰면 Source Follower 구조가 된다. Feedback 구조를 사용하는 이상, Frequency Compensation에 신경써야 한다. LDO의 Dominant Pole은 출력 node에서 만들어진다. \(p_0 = \dfrac{1}{R_{out}C_{load}}\) \(R_{out}=R_{load}||(R_{F_1}+R_{F_2})||1/gm\) Dominant pole 식에서 확인할 점은 2가지다. 먼저 LDO 출력 전류를 늘리려고 Pass Transistor W/L를 무작정 늘리면, C_load가 지나치게 증가해 dominant pole이 저주파로 이동한다. 따라서, feedback loop stability를 위해 W/L은 적절한 값으로 설정해줘야 한다. 또한, gm이 증가하면 R_out이 감소함을 확인할 수 있다. 따라서 Pass Transistor에 큰 전류가 흘러 gm이 증가하면, R_out이 감소해 dominant pole이 고주파로 이동한다. Feedback loop는 dominant pole이 고주파에 위치할수록 안정하다. LDO는 전류를 출력하면 feedback loop가 더 안정해지는 것이다. feedback loop가 더 안정해졌음은 phase margin 증가로 확인 가능하다. NMOS LDO의 장점: PMOS보다 NMOS의 \(\mu\)가 크기 때문에, gm이 크고 Rout이 작다. 따라서 dominant pole이 상대적으로 더 높은 주파수에 있다. NMOS LDO의 단점: NMOS에 큰 Vgs를 확보해야 한다. 큰 Vgs에 의해 LDO의 출력 전압이 제한된다. PMOS LDO의 장점: Source가 전원에 연결되어 있기 때문에, Vgs가 LDO 출력 전압에 영향을 주지 않는다. 그래서 Low-Voltage Operation에서 쓰인다. PMOS LDO의 단점: NMOS보다 \(\mu\)가 작기 때문에, gm이 작고 Rout이 크다. 따라서 dominant pole이 상대적으로 더 낮은 주파수에 있다. LDO 출력 node에는 Capacitor가 달려있는 경우가 많다. LDO 출력 전압이 살짝 흔들리더라도, 전하를 저장해둔 Capacitor가 일정한 전압을 유지해주기 때문이다. 이 목적을 위해서는, LDO 출력에 있는 Capacitance가 클수록 좋다. 그러나 LDO 내 feedback loop의 stability만 생각한다면, LDO 출력 node에 아예 Capacitance가 없는 편이 좋을 것이다. 1/RoutCout인 dominant pole을 매우 높은 주파수로 보내기 위함이다. 출력 node에 Capacitor를 달아놓지 않은 LDO를 Capless LDO라 부른다. Capless LDO의 장점: Feedback Loop가 Stable하다(Phase Margin이 크다). 제조시 Capacitor 값을 아낄 수 있다. Capless LDO의 단점: 출력 전압이 비교적 쉽게 흔들린다. 따라서 설계에 주의를 요한다. LDO는 출력 node에 큰 전류가 흘러야 하는 경우에 쓰인다. 따라서 전류가 흐르는 경로에도 신경을 써야 한다. 먼저, Layout시 출력 node를 두꺼운 metal로 만들어야 한다. 저항을 최소화해서, 큰 전류에 의한 전압 강하를 줄이기 위함이다. Metal은 저항이 가장 작은 top metal을 쓰는 것이 좋다. 또한 출력 전압이 외부 회로에 전달되는 경로가 최대한 짧도록, IC 내 LDO 배치에 신경써야 한다. 경로 최소화를 위해 IC 1개 안에 LDO 2개를 넣는 경우도 있는데, 이때는 두 LDO 사이의 미세한 출력전압 차이가 문제가 되지 않도록 설계해야 한다.]]></summary></entry><entry><title type="html">Analog - Magnetic Field Sensors</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Magnetic-Field-Sensors.html" rel="alternate" type="text/html" title="Analog - Magnetic Field Sensors" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Magnetic%20Field%20Sensors</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Magnetic-Field-Sensors.html"><![CDATA[<p>Hall Sensor는 작은 signal voltage를 쓰기 때문에, 온도/전압 흔들림이나 기계적 stress에 많이 영향받는다.</p>
+
+<p>TMR Sensor: Tunnel Magnetoresistive Sensor</p>
+
+<p>magnetoresistive effect에 의해, 자기장이 변하면 전기저항이 변하는 현상을 이용한다.
+이때 tunnel effect를 통해, 자기장이 바뀌면 전기저항이 크게 바뀌도록 한 구조가 TMR Sensor다.</p>
+
+<p>TMR Element: 맨 아래 고정된 solid layer, 가운데에 barrier layer, 맨 위에 Free layer가 있다.</p>
+
+<p>외부 자기장에 의해 free layer의 magnetization 방향이 변하는데, solid layer는 영향을 안받아 안변한다.
+그래서 자기장에 의해 2개 layer 사이 magnetization각도가 바뀌고, 그 각도가 저항을 결정한다.</p>
+
+<p>TMR Sensor들은 Wheatstone bridge 형태로 연결해서 쓴다.</p>
+
+<p>Hall Sensor: cost-effective
+TMR Sensor: better SNR, low power consumption</p>
+
+<p>그래서 TMR sensor가 demanding application들에서 더 선호된다.</p>
+
+<p>2가지 sensor를 동시에 쓰기도 한다.
+Hall sensor는 high current detection, TMR sensor는 low current detection에 쓰는 식으로.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Hall Sensor는 작은 signal voltage를 쓰기 때문에, 온도/전압 흔들림이나 기계적 stress에 많이 영향받는다.]]></summary></entry><entry><title type="html">Analog - Noise</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Noise.html" rel="alternate" type="text/html" title="Analog - Noise" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Noise</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Noise.html"><![CDATA[<p>7번 data summation을 하는데, 매번 8code noise가 있다면:
+summation한 data의 noise는 8sqrt7 = 21code. 8 7개를 rms한거다.
+모두 양수였으면 그냥 평균냈겠지만, 음수 양수 섞이면 rms해야 한다.</p>
+
+<p>물론, 각 noise에 correlation이 없다는걸 가정했기에 rms로 구한거다.</p>
+
+<p>White noise 줄이려면 크기랑 전력이 필요하다. 그래서 크기 키우고 전류 높이면 white noise가 줄어든다.<br /></p>
+
+<p>Kickback noise:<br />
 Kickback noise는 Latch에서 발생하는 noise다. Latched comparator는 latch 구조를 포함하는 comparator인데, positive feedback 구조라서 analog signal을 digital signal로 바꾼다.<br />
 <br />
 예를 들어, input이 Vref보다 아주 조금 커도 그 차이가 positive feedback에 의해 증폭돼서 출력이 VDD가 되고, input이 Vref보다 아주 조금 작아도 Output은 VSS가 된다. Positive feedback은 차이가 커지는 방향으로 작용하기 때문이다.<br />
@@ -480,44 +579,4 @@ Kickback noise 해결방법:<br />
 몇가지 방법이 더 있다고는 하는데, 일단 kickback noise가 뭔지는 확인했으니 다음에 더 알아보자. 내용출처는 ‘Kickback noise reduction techniques for CMOS latched comparators’<br /></p>
 
 <p>Layout때문에 kickback noise가 발생하는 경우도 있다.
-이럴땐 Parasitic Capacitance 안생기게 주변을 다 치워버려야 한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Kickback noise: Kickback noise는 Latch에서 발생하는 noise다. Latched comparator는 latch 구조를 포함하는 comparator인데, positive feedback 구조라서 analog signal을 digital signal로 바꾼다. 예를 들어, input이 Vref보다 아주 조금 커도 그 차이가 positive feedback에 의해 증폭돼서 출력이 VDD가 되고, input이 Vref보다 아주 조금 작아도 Output은 VSS가 된다. Positive feedback은 차이가 커지는 방향으로 작용하기 때문이다. 이 positive feedback 때문에, input 전압은 조금만 변해도 output 전압은 크게 변할 수 있다. 이 경우 latch 안 노드들의 dv/dt가 상당히 크다. 이 커다란 dv/dt가 parasitic capacitance에 Cdv/dt만큼 전류가 흐르게 만든다. Input 전압을 인가해주는 회로의 Rout이 0이라면 전류가 흘러들어와도 input 전압에 영향이 있지 않았겠지만, Rout이 0이 아니면 이 전류에 의해 input 전압이 달라진다. 이 현상이 kickback noise다. 빠르고 전력 효율이 좋은 comparator일수록 kickback noise가 크게 생긴다. Kickback noise 해결방법: 1. Preamplifier를 comparator 앞에 붙인다. 근데 이러면 preamplifier가 power를 먹어 전력효율이 떨어진다. 2. Differential pair의 drain들에 스위치를 달고, latch 전압이 바뀌는 동안 스위치를 열어서 전압 변화가 캐패시턴스에 전달 안되게 한다. 이때는 스위치 열면 IDS=0이 되어 MOSFET들이 Triode region에 처박힌다. 그리고 Drain 전압이 어디에도 연결되지 않아서 맘대로 날뛸 수 있다. 3. Differential Pair의 gate들에 스위치를 달아서 input을 sampling해 넣ㄴ느다. 이러면 input에 의한 dV/dt가 전류를 만들 때 스위치가 열려있어 영향이 없다. 하지만 스위치 닫히는게 어차피 input에 영향을 준다. 몇가지 방법이 더 있다고는 하는데, 일단 kickback noise가 뭔지는 확인했으니 다음에 더 알아보자. 내용출처는 ‘Kickback noise reduction techniques for CMOS latched comparators’]]></summary></entry><entry><title type="html">Analog - LDO - Amplifier Design</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html" rel="alternate" type="text/html" title="Analog - LDO - Amplifier Design" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO%20-%20Amplifer%20Design</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO-Amplifer-Design.html"><![CDATA[<p>LDO : Low Dropout Regulators<br />
-<br />
-PMOS를 써서 만들면 Common Source 구조가 되고,<br />
-NMOS를 써서 만들면 Source Follower 구조가 된다.<br />
-<br />
-Low-Dropout이 중요하지 않은 경우엔느 NMOS가 Pass Device로 쓰일 수 있다.<br />
-Gate와 Source 사이에 전압 차이가 필요하긴 한데, Rout이 작아서(아마 NMOS PMOS의 \(\mu\)차이 이야기)<br />
-Compensation이 더 쉽다.<br />
-NMOS를 쓰면 follower configuration이 된다.<br />
-<br />
-근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다.<br />
-그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다.<br />
-<br />
-<img src="/public/img/LDOamp1.png" alt="alt text" /><br />
-<br />
-Low Voltage Operation이 중요할때는 PMOS를 쓴다.<br />
-PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain이든 모두 \(g_m r_{ds}\)다.<br />
-<br />
-그래서, Power line에서 ripple이 들어올 경우, Amp에서도 같은 ripple을 출력해줘야 PMOS 전류가 안흔들린다.<br />
-<br />
-그래서 NMOS에 쓰이는 AMP는 power line의 ripple을 다 없애야 하고,<br />
-PMOS에 쓰이는 amp는 power line의 ripple을 그대로 출력에 전달해야 한다.<br />
-<br />
-Ripple을 그대로 전달하는 구조:<br />
-<br />
-<img src="/public/img/LDOamp2.png" alt="alt text" /><br />
-<br />
-이게 왜 ripple을 그대로 전달하는 구조인가?<br />
-그건 이 모델의 small signal model을 봐야 한다.<br />
-아니면 이렇게 만들어도 된다.<br /></p>
-
-<p><br />
-<img src="/public/img/LDOamp3.png" alt="alt text" /><br />
-<br /></p>
-
-<p><br />
-아니면 이렇게 만들어도 된다.<br /></p>
-
-<p><br />
-<img src="/public/img/LDOamp4.png" alt="alt text" /><br />
-<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulators PMOS를 써서 만들면 Common Source 구조가 되고, NMOS를 써서 만들면 Source Follower 구조가 된다. Low-Dropout이 중요하지 않은 경우엔느 NMOS가 Pass Device로 쓰일 수 있다. Gate와 Source 사이에 전압 차이가 필요하긴 한데, Rout이 작아서(아마 NMOS PMOS의 \(\mu\)차이 이야기) Compensation이 더 쉽다. NMOS를 쓰면 follower configuration이 된다. 근데 이렇게 만들면, NMOS의 gate에 들어오는 ripple이 그대로 souce(출력 노드)로 전해진다. 그래서 NMOS를 쓸거면 Amp에서 Ripple이 거의 안들어오게 해야 한다. Low Voltage Operation이 중요할때는 PMOS를 쓴다. PMOS는 Source에서 Drain으로의 Gain이든, Gate에서 Drain으로의 gain이든 모두 \(g_m r_{ds}\)다. 그래서, Power line에서 ripple이 들어올 경우, Amp에서도 같은 ripple을 출력해줘야 PMOS 전류가 안흔들린다. 그래서 NMOS에 쓰이는 AMP는 power line의 ripple을 다 없애야 하고, PMOS에 쓰이는 amp는 power line의 ripple을 그대로 출력에 전달해야 한다. Ripple을 그대로 전달하는 구조: 이게 왜 ripple을 그대로 전달하는 구조인가? 그건 이 모델의 small signal model을 봐야 한다. 아니면 이렇게 만들어도 된다.]]></summary></entry></feed>
+이럴땐 Parasitic Capacitance 안생기게 주변을 다 치워버려야 한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[7번 data summation을 하는데, 매번 8code noise가 있다면: summation한 data의 noise는 8sqrt7 = 21code. 8 7개를 rms한거다. 모두 양수였으면 그냥 평균냈겠지만, 음수 양수 섞이면 rms해야 한다.]]></summary></entry></feed>

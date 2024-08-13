@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">CV</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+		
+	    <li>
+	    	<a class="nav-item" href="/category/#Design">
+				<span class="name">Design</span>
+				<span class="badge">22</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Market">
+				<span class="name">Market</span>
+				<span class="badge">17</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Process">
+				<span class="name">Process</span>
+				<span class="badge">20</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Electromagnetics">
+				<span class="name">Electromagnetics</span>
+				<span class="badge">6</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			AI Accelerator
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>특정 연산에 특화된 하드웨어를 가속기(Accelerator) 또는 ASIC(Application Specific IC)라 부른다.<br />
+인공지능 가속기 팹리스 업체는 인공지능 연산에 특화된 가속기를 설계하는 업체다.<br />
+<br />
+<br />
+팹리스 업체 입장:<br />
+대표적인 인공지능 가속기 업체로는 엔비디아가 있다.<br />
+엔비디아는 다양한 인공지능 가속기들을 출시했고, 수많은 기업들이 엔비디아의 제품을 사용하고 있다.<br />
+<br />
+엔비디아는 GPU 프로그래밍을 위한 프로그래밍 언어 CUDA도 출시한 바 있다.<br />
+CUDA를 통해 개발자들은 GPU를 그래픽 연산 용도가 아닌 인공지능 연산 용도로 사용할 수 있게 되었다.<br />
+그래서 CUDA를 통해 다양한 인공지능 연산 프로그램과 인공지능 모델이 개발됐다.<br />
+<br />
+그런데, CUDA로 만들어진 프로그램은 엔비디아 제품에서만 실행된다.<br />
+결국 CUDA로 만들어진 인공지능 모델을 사용하려면 엔비디아 제품을 사야 하고,<br />
+엔비디아 제품에서 인공지능 연산 프로그램 및 모델을 개발하려면 CUDA를 써야 한다.<br />
+이렇게 해서 엔비디아는 인공지능 가속기 시장을 강력하게 지배하고 있다.<br />
+<br />
+<br />
+엔비디아 하드웨어와 CUDA를 통해 인공지능이 크게 발전했고, 막대한 연산을 필요로 하는 거대한 모델들이 개발됐다.<br />
+이 거대한 인공지능 모델들은 성능이 좋긴 한데, 연산 과정에서 엄청난 전력을 소비한다.<br />
+그래서 더 효율적인 연산을 하는 하드웨어가 필요하게 됐다.<br />
+<br />
+<br />
+전력 소모를 감당하기 어려워진 거대 클라우드 회사들은 그들 각자의 수요에 맞는 칩을 설계하기 시작했다.<br />
+예를 들어, 구글은 자사의 Tensorflow 라이브러리에 최적화된 TPU(Tensor Processing Unit)를 설계해 자사 데이터센터에 쓰고 있다.<br />
+<br />
+그 외에도 주로 실행하는 연산, 사용하는 인공지능 모델이 있는 기업들은 거기에 특화된 인공지능 가속기를 원하고 있다.<br />
+그래서, 이런 기업들을 위해 특화된 인공지능 가속기를 설계해주는 팹리스 회사들이 생기기 시작했다.<br />
+<br />
+<br />
+인공지능 가속기를 설계할 때에는 latency, throughput, efficiency를 고려해야 한다.<br />
+여기서 latency와 throughput은 성능의 지표고, efficiency는 전력 효율의 지표다.<br />
+일반적으로, 가속기의 성능을 개선하면 전력 효율이 악화되고, 전력 효율을 개선하면 성능이 악화된다.<br />
+<br />
+latency:<br />
+연산에 걸리는 시간<br />
+latency가 작을수록 빠르게 연산을 할 수 있다.<br />
+<br />
+throughput:<br />
+단위시간당 시행하는 연산의 갯수<br />
+throughput이 클수록 많은 수의 연산을 할 수 있다.<br />
+<br />
+<br />
+가속기 내에서 연산 자원을 직렬로 연결하면 latency가 작고, throughput도 작은 가속기가 된다.<br />
+즉 연산은 빠르지만, 동시에 처리할 수 있는 데이터의 수는 작은 가속기가 된다.<br />
+<br />
+연산 자원을 병렬로 연결하면 latency가 크지만, throughput이 큰 가속기가 된다.<br />
+즉 연산은 느리지만, 동시에 처리할 수 있는 데이터의 수가 큰 가속기가 된다.<br />
+<br />
+<br />
+그래서, 인공지능 가속기를 설계하는 팹리스 업체는 고객이 원하는 연산과 모델에 맞게 칩 내에 연산 자원을 배치하고,<br />
+그 칩의 latency, throughput, efficiency를 모두 최적화한 제품을 제공하는 것이 목표다.<br />
+<br />
+예를 들어 한국의 리벨리온은 극히 빠른 AI 기반 금융거래를 위해 latency만을 극도로 낮춘 칩을 개발한 바 있다.<br />
+<br />
+<br />
+인공지능 가속기 팹리스 업체가 해야 하는 일은 이뿐만이 아니다.<br />
+현재 인공지능 가속기 시장은 엔비디아가 지배하고 있기 때문에,<br />
+‘당신들이 주로 하는 연산에서는 엔비디아 제품보다 우리 제품이 더 좋다’고 설득해서 고객을 뺏어와야 한다.<br />
+<br />
+또한, 수많은 인공지능 개발자들이 제품을 사용하게 만들려면 CUDA보다 사용하기 편한 프로그래밍 환경을 제공해야 한다.<br />
+그래서 인공지능 가속기 팹리스 업체들은 컴파일러, 소프트웨어 개발 및 생태계 운영을 위해 노력하고 있다.<br />
+<br />
+인공지능 가속기 칩을 개발할 때에도, 이 업체들은 CUDA로 개발된 인공지능 모델을 자사 소프트웨어로 이식해와야 한다.<br />
+<br />
+인공지능 가속기 칩을 설계한 후에는 안정성 평가가 매우 중요하다.<br />
+현재 인공지능 가속기는 대부분 데이터센터에 쓰이고 있는데,<br />
+데이터센터는 오작동할 경우 고객들에게 막대한 피해보상을 해야 하기 때문이다.<br />
+<br />
+<br />
+메모리 업체 입장:<br />
+연산용 반도체 시장의 중심이 CPU에서 인공지능 가속기로 이동하자, 대규모 병렬 처리가 가능한 메모리가 필요해졌다.<br />
+인공지능 가속기는 CPU보다 훨씬 큰 throughput을 갖기에, 메모리에서 한번에 대량의 데이터를 읽어오기 때문이다.<br />
+<br />
+메모리 업체들은 수요에 호응해 대규모 병렬 처리가 가능한 메모리인 HBM(High Bandwidth Memory)을 개발했다.<br />
+인공지능의 발전과 함께 HBM이 엄청나게 팔려나갔고, 메모리 업체들은 큰 이익을 낼 수 있었다.<br />
+<br />
+<br />
+파운드리 업체 입장:<br />
+많은 인공지능 가속기 팹리스 업체들이 TSMC가 아닌 삼성전자 파운드리를 선택했다.<br />
+위에 언급된 기업들 중에서는 사피온을 제외한 모든 기업이 삼성전자 파운드리를 선택했다.<br />
+<br />
+이 회사들은 삼성전자의 HBM을 원활히 공급받기 위해 삼성전자 파운드리를 선택했다는 이야기도 있다.<br />
+그렇다면 삼성전자 파운드리가 삼성전자로부터 분사되어있지 않은 것이 오히려 장점으로 작용한 상황이다.<br />
+앞으로도 많은 인공지능 가속기 팹리스 기업들이 HBM 수급을 위해 삼성전자 파운드리를 선택할 가능성이 있다.<br /></p>
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>

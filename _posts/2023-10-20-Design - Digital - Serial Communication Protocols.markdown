@@ -7,68 +7,63 @@ order: 6
 ---
 
 
-Serial Communication Protocol에는 UART, I2C, SPI가 있다.
+Serial Communication Protocol에는 UART, I2C, SPI가 있다.<br>
+최근에는 I2C를 개선한 I3C가 도입되고 있다.<br>
+<br>
+<br>
+UART (Universal Asynchronous Receiver-Transmitter):<br>
+UART는 device간 단거리 통신에 쓰이는 asynchronous serial communication protocol이다.<br>
+<br>
+UART 통신은 전선 2개를 사용한다.<br>
+하나는 데이터 송신용(Tx), 하나는 데이터 수신용(Rx)이다.<br>
+<br>
+UART 통신은 clock 신호를 사용하지 않는다.<br>
+그래서 각 data frame 앞뒤로 start bit, stop bit가 있어야 한다.<br>
+<br>
+UART는 구조가 간단한 통신 방식이다.<br>
+GPS, 블루투스 등에 쓰인다.<br>
+<br>
+<br>
+SPI (Serial Peripheral Interface):<br>
+<br>
+SPI는 전선 4개를 사용한다.<br>
+MOSI (Master Out Slave In): Data 송신<br>
+MISO (Master In Slave Out): Data 수신<br>
+SCLK (Serial Clock): Clock 신호<br>
+CS (Chip Select): 대상 device 선택<br>
+<br>
+SPI 통신은 master-slave 구조로 진행된다.<br>
+master가 통신을 시작해서, 1개 또는 여러개 slave로 데이터를 전송한다.<br>
+<br>
+Full-duplex 통신을 지원한다. 데이터를 전송하면서 동시에 데이터를 받을 수 있다는 뜻이다.<br>
+<br>
+SPI는 데이터 전송 rate가 높아서,<br>
+빠르고 효율적인 데이터 전송이 필요한 곳에 쓰인다.<br>
+<br>
+<br>
+I2C (Inter-Integrated Circuit):<br>
+<br>
+I2C는 multi-master, multi-slave 통신이기 때문에 유연한 설계가 가능하다.<br>
+<br>
+I2C는 bidirectional 통신이기 때문에 slave로부터 ACK, NACK 신호를 받아서 통신 성공 여부를 확인할 수 있다.<br>
+통신에 성공했으면 ACK 신호, 실패했으면 NACK 신호가 돌아온다.<br>
+<br>
+<br>
+I2C는 2개 전선을 쓴다.<br>
+SDA (Serial Data Line): 양방향 데이터 송수신<br>
+SCL (Serial Clock Line): Clock 신호<br>
+<br>
+I2C는 addressing을 하기 떄문에, 여러개 device가 1개 bus에 연결될 수 있다.<br>
+<br>
+I2C는 SPI, UART보다 느리지만 더 간단한 구조고 전선도 덜 쓴다.<br>
+그래서 pin이 적어야 하는 센서, EEPROM 메모리칩, real-time clock 등에 쓰인다.<br>
+<br>
+<br>
 
 
-UART (Universal Asynchronous Receiver-Transmitter):
-UART는 device간 단거리 통신에 쓰이는 asynchronous serial communication protocol이다.
-
-UART 통신은 전선 2개를 사용한다.
-하나는 데이터 송신용(Tx), 하나는 데이터 수신용(Rx)이다.
-
-UART 통신은 clock 신호를 사용하지 않는다.
-그래서 각 data frame 앞뒤로 start bit, stop bit가 있어야 한다.
-
-구조가 간단한 통신 방식이다.
-GPS, 블루투스 등에 쓰인다.
 
 
-SPI (Serial Peripheral Interface):
-
-SPI는 전선 4개를 사용한다.
-MOSI (Master Out Slave In): Data 송신
-MISO (Master In Slave Out): Data 수신
-SCLK (Serial Clock): Clock 신호
-CS (Chip Select): 대상 device 선택
-
-SPI 통신은 master-slave 구조로 진행된다.
-master가 통신을 시작해서, 1개 또는 여러개 slave로 데이터를 전송한다.
-
-Full-duplex 통신을 지원한다. 데이터를 전송하면서 동시에 데이터를 받을 수 있다는 뜻이다.
-
-SPI는 데이터 전송 rate가 높아서,
-빠르고 효율적인 데이터 전송이 필요한 곳에 쓰인다.
-
-
-I2C (Inter-Integrated Circuit):
-
-I2C는 multi-master, multi-slave, bidirectional이다.
-
-2개 전선을 쓴다.
-SDA (Serial Data Line): 양방향 데이터 송수신
-SCL (Serial Clock Line): Clock 신호
-
-I2C를 쓰면, 서로 다른 address를 쓰는 여러개 device가 1개 bus에 연결될 수 있다.
-
-I2C는 SPI, UART보다 느리지만 더 간단한 구조고 전선도 덜 쓴다.
-그래서 pin이 적어야 하는 센서, EEPROM 메모리칩, real-time clock 등에 쓰인다.
-
-
-
-SDA: bus를 통해 data 전달
-SCL: master, slave 사이 data transfer를 synchronize한다.
-
-I2C가 위 2개보다 나은 점:
-Flexibility – The I2C protocol supports multi-master, multi-slave communication, which implies you can add a lot of functionality to your design. More than one master IC controlling and communicating with the slave ICs can speed things up and add functionalities to the embedded system.
-
-Addressing feature – Yet another advantage of the I2C protocol lies in its inherent ability to use chip addressing. It means that you can easily add components to the bus without any complexity. It eliminates the necessity of CS (chip select) lines.
-
-Simplicity – I2C protocol doesn’t complicate the design. It requires only two bidirectional signal lines to establish communication among multiple devices. Further, the pin count is low as well.
-
-Better error handling mechanism – To improve the error detection and correction mechanism, the I2C protocol relies on ACK/NACK feature, which is a robust error correction feature. ACK stands for Acknowledgement whereas NACK means No Acknowledgement.
-
-Adaptable – The I2C protocol is adaptable in the sense that it can work well with both slow ICs and fast ICs.
-
+I3C:
 
 I2C가 위 2개보다 안좋은점:
 Conflicts – Due to chip addressing, there’s always a possibility of an address conflict.

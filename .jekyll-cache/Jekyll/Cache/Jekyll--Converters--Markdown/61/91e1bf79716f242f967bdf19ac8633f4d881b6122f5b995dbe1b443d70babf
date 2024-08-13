@@ -1,0 +1,79 @@
+I"l<p>MOSFET은 Vgs가 특정 전압을 넘어서야 켜진다.<br />
+그 특정 전압을 \(V_{th}\)(Threshold Voltage)라 부른다.<br />
+<br />
+NMOS에서는 \(V_{th}\) &gt; 0, PMOS에서는 \(V_{th}\) &lt; 0이다. <br />
+두 경우를 함께 설명하기 위해, 절댓값인 \(|V_{th}|\)값을 기술한다.<br />
+<br />
+<br />
+\(|V_{th}|\)가 높은 소자는 느리지만 leakage current가 적다.<br />
+\(|V_{th}|\)가 낮은 소자는 빠르지만 leakage current가 많다.<br />
+그래서 설계한 회로에 적합한 Vth를 갖는 소자를 사용해야 한다.<br />
+<br />
+<br />
+Vth에 영향을 주는 요소는 상당히 많다.<br />
+<br />
+공정:<br />
+Width가 증가하면 \(|V_{th}|\)가 감소한다.<br />
+Length가 감소하면 \(|V_{th}|\)가 감소한다.<br />
+Oxide가 얇으면 \(|V_{th}|\)가 감소한다.<br />
+<br />
+전압, 온도:<br />
+Vbs가 증가하면 \(|V_{th}|\)가 감소한다(Body Effect).<br />
+Vds가 증가하면 \(|V_{th}|\)가 감소한다(DIBL).<br />
+온도가 증가하면 \(|V_{th}|\)가 감소한다.<br />
+<br />
+시간:<br />
+MOSFET을 오래 사용하면 \(|V_{th}|\)가 증가한다.<br />
+(NBTI, PBTI, HCI)<br />
+<br />
+<br />
+Body Effect:<br />
+Vbs가 증가하면 Body와 Source 사이 depletion region이 넓어진다.<br />
+그 결과 Substrate 내 전자들이 움직이기 힘들어지고, 결국 채널이 형성되기도 어려워 \(|V_{th}|\)가 증가한다.<br />
+<br />
+<br />
+DIBL (Drain Induced Barrier Lowering):<br />
+MOSFET에서는 Drain에 걸어둔 전압에 의해 Drain 주변에 depletion region이 생긴다.<br />
+문제는, depletion region에는 channel이 형성될 수 없다는 점이다.<br />
+<br />
+NMOS의 Length가 길어서 channel이 길게 형성된다면, 이 depletion region이 큰 문제가 되지 않는다.<br />
+하지만 NMOS Length가 짧은 경우에는 depletion region이 Length의 대부분을 뒤덮어서,<br />
+channel이 생길 수 있는 길이가 얼마 남지 않게 된다.<br />
+<br />
+이 경우에는 Gate 전압보다 Drain 전압이 channel 형성에 더 큰 영향을 주게 된다.<br />
+Drain 전압이 증가하면 Channel이 짧아져 \(|V_{th}|\)가 감소하는 것이다.<br />
+이런 효과를 DIBL이라 부른다.<br />
+<br />
+<br />
+NBTI (Negative Bias Temperature Instability):<br />
+PMOS를 오래 쓰면 oxide에 hole이 쌓여서 \(|V_{th}|\)가 증가한다.<br />
+<br />
+PBTI (Positive Bias Temperature Instability):<br />
+NMOS를 오래 쓰면 oxide에 전자가 쌓여서 \(|V_{th}|\)가 증가한다.<br />
+<br />
+<br />
+HCI:<br />
+MOSFET이 작아지면, 작은 소자에 큰 전압이 걸리는 형태가 되어 Drain과 Source 사이 전기장이 강해진다.<br />
+강해진 전기장에 가속된 전자 또는 hole을 ‘hot carrier’라 부른다.<br />
+<br />
+Hot carrier들은 다른 입자와 충돌해 electron-hole pair를 만들기도 한다.<br />
+이 충돌로 생성된 전자와 hole이 oxide에 갇히는 경우가 생긴다.<br />
+또는, 충돌 없이 hot carrier 자체가 oxide에 갇히기도 한다.<br />
+이 현상을 HCI (Hot Carrier Injection)라 부른다.<br />
+<br />
+어느 경우든, MOSFET의 \(|V_{th}|\)가 증가한다.<br />
+NMOS면 전자, PMOS면 hole이 oxide에 갇히기 때문이다.<br />
+<br />
+HCI는 switching 동작을 하는 트랜지스터와 saturation 상태에 있는 트랜지스터에서 발생하기 쉽다.<br />
+그래서 switching 동작을 많이 하는 input/output 트랜지스터에서 HCI가 많이 발생한다.<br />
+<br />
+HCI를 방지하려면, 긴 Length를 갖는 소자를 사용해서 Drain과 Source 사이 전기장을 약하게 만들면 된다.<br />
+그래서, switching 동작을 많이 하는 output 트랜지스터는 HCI를 방지하기 위해 Length가 긴 것이 좋다.<br />
+Satuation 상태 MOSFET의 Drain에 너무 높은 전압은 걸지 않는 것도 HCI를 방지하는 방법이다.<br />
+<br />
+<br />
+위 경향은 모두 Enhancement MOSFET, 즉 흔히 사용하는 MOSFET에 대한 이야기다.<br />
+<br />
+Native MOSFET에서는 모든 경향이 반대로 작용한다.<br />
+예를 들어, 온도가 증가하면 \(|V_{th}|\)가 증가한다.<br /></p>
+:ET

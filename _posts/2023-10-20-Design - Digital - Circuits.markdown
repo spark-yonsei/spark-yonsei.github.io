@@ -6,26 +6,12 @@ categories: Design
 order: 5
 ---
 
+옛날에는 Digital Logic을 하드웨어로 구현할때 BJT를 사용했지만,
+현대에 와서는 CMOS Transistor로 Digital Logic을 구현한다.
 
-RTL: Register Transfer Language
-DTL: Diode-Transistor Logic
-TTL: Transistor-Transistor Logic
 
-RTL은 1961년에 fairchild에서 출시됐다.
-RTL의 input parallel register들에서 발생할 수 있는 short current를 방지하기 위해 parallel diode들을 쓴게 DTL이고,
-그걸 다시 BJT로 대체한게 TTL이다.
-
-처음에는 PMOS, 그 다음에는 NMOS processor들이 따로 출시됐는데,
-1975년에 CMOS processor가 나온 뒤로는 모두 CMOS로 processor를 만들게 됐다.
-
-Digital 회로가 CMOS로 구현될 경우, gate capacitance가 drain current에 의해 충전됐다가 방전됐다가 한다.
-gate capacitance의 충전/방전에 의해 보이는 high/low 전압으로 1 또는 0 정보를 표현하게 되고,
-high와 low를 구분하는 전압 기준을 'logical threshold'라고 부른다.
-
-그리고 logical threshold와 high/low voltage의 차이를 'noise margin'이라 부른다.
-보통 digital 회로들에서 noise margin은 충분히 크기 때문에,
-supply voltage bounce같은 환경 변화에 크게 신경 안써도 된다.
-analog에서는 신경 많이 써야 한다.
+CMOS Logic 회로에서는 MOSFET들의 Gate Capacitance가 Drain Current에 의해 충전/방전된다.
+Gate Capacitance의 충전/방전 여부로 1/0을 판단하게 된다.
 
 digital 회로는 트랜지스터의 on/off characteristic을 이용해 만든거라,
 트랜지스터가 작아지든 새로운 물질로 만들어지든 on/off만 잘 되면 그대로 잘 동작한다.
@@ -157,3 +143,35 @@ Power on -> POR/BOR 동작 ->
 HIS OSC켜짐 -> PLL 켜짐 -> PLL Lock까지 대기 -> flash clock 켜짐 ->(Always on Block들)
 flash에서 analog block 읽기(Flash Controller)
 -> AHB prescaler, APB prescaler, Timer prescaler, clock gating 켜짐(clock generatro)
+
+
+chip이 켜지면 Analog trimming data 등 정보가 들어있는 Flash memory를 읽는데,
+Flash memory를 PLL이 Lock 되기 전에 읽기도 한다. PLL이 Lock되는 데에는 시간이 좀 걸리니까, 시간 아끼기 위해서다.
+
+
+PLL:
+보통 오실레이터에서 출력되는 클락은 8MHz, 12MHz, 16MHz라서 실제 시스템 동작속도보다 느리다
+그래서 PLL은 주파수를 올리고 안정적으로 만든다
+여기서 나온 클락신호가 cpu에 전달된다
+
+Mcu 내의 다른 로직들은 보통 cpu보다 구동 주파수가 낮다. 그래서 prescaler(전치분주기)로 주파수를 내려준다
+
+
+PLL은 lock되면 lock신호가 high가 된다. high가 되면 다른 block들이 동작하면 된다.
+Flash 읽을때, PLL이 lock 되기 전에 읽는 경우도 있다. 시간 아끼기 위해서 이런 동작을 한다. Lock되는데에 시간이 좀 걸리니까.
+
+주파수가 16MHz밖에 안되는데 PLL을 쓰는 경우도 있었다. 이건 jitter 줄이려고 쓴거다.
+
+prescaler: clock을 다른 주파수로 만든다. /2, /4, /8 등.
+clock gating: 안쓰는 block은 clock마저 안들어가게 꺼버리는거. power 아끼려고 쓰는 기술이다.
+
+1/0을 판별하는 기준 전압을 'Logical Threshold'라 부른다.
+
+Digital 회로가 CMOS로 구현될 경우, gate capacitance가 drain current에 의해 충전됐다가 방전됐다가 한다.
+gate capacitance의 충전/방전에 의해 보이는 high/low 전압으로 1 또는 0 정보를 표현하게 되고,
+high와 low를 구분하는 전압 기준을 'logical threshold'라고 부른다.
+
+그리고 logical threshold와 high/low voltage의 차이를 'noise margin'이라 부른다.
+보통 digital 회로들에서 noise margin은 충분히 크기 때문에,
+supply voltage bounce같은 환경 변화에 크게 신경 안써도 된다.
+analog에서는 신경 많이 써야 한다.
