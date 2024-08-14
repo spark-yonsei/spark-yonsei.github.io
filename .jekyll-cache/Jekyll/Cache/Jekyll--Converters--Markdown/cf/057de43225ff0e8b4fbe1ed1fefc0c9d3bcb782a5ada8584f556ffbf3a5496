@@ -1,0 +1,62 @@
+I"4<p>Arrhenius Model에 따르면, IC가 높은 온도에서 오랫동안 동작할 경우 오동작할 가능성이 증가한다.<br />
+따라서 IC의 오동작을 막기 위해서는 온도를 내려줄 방법을 찾아야 한다.<br />
+정확히는, package 안에 포장된 die의 온도를 내려줄 방법을 찾아야 한다.<br />
+<br />
+Package 안 die의 온도를 예측하기 위해, IC의 \(\theta_{JA}\) (thermal resistance) 값이 필요하다.<br />
+Datasheet에서 \(\theta_{JA}\) 값을 확인하고, 다음 식을 사용하면 된다.<br />
+<br />
+\(T_j = T_A + P_D \cdot \theta_{JA}\)<br />
+<br />
+\(T_j\) : Junction Temperature [\(^{\circ}\)C]<br />
+\(T_A\) : Ambient Temperature [\(^{\circ}\)C]<br />
+\(P_D\) : Total Power Dissipation [W]<br />
+\(\theta_{JA}\) : Thermal Resistance [\(^{\circ}\)C/W]<br />
+<br />
+\(T_j\)는 Die와 Package가 만나는 접합부의 온도,<br />
+\(T_A\)는 Package 주변의 온도,<br />
+\(P_D\)는 IC에서 소비하는 총 전력이다.<br />
+<br />
+\(\theta_{JA}\)는 thermal ‘resistance’다.<br />
+즉, 이 값이 작을수록 열 방출이 잘 되고 있는 상황인 것이다.<br />
+<br />
+예를 들어, 주변 온도가 25\(^{\circ}\)C일 때 어떤 IC가 1W를 소비하고 있고, 이 IC의 thermal resistance가 63\(^{\circ}\)C/W라면<br />
+\(T_j = 25^{\circ}C + 63^{\circ}C/W * 1W = 88^{\circ}C\)가 된다.<br />
+즉, 이 경우 Die의 온도는 88\(^{\circ}\)C이다.<br /></p>
+
+<p>TSD: Thermal Shutdown.</p>
+
+<p>외부 온도가 너무 높아지면 TSD 회로가 동작해서 chip을 꺼버린다.</p>
+
+<p>이때, 온도가 왔다갔다하면 chip이 꺼졌다 켜졌다 하는걸 방지하기 위해 on/off 온도에 hysteresis를 준다.</p>
+
+<p>TSD 내부는 어떻게 생겼나?
+BJT 하나 넣어서 CTAT 특성 만들어놓고, CTAT 전압이랑 온도가 변해도 일정한 VREF 전압을 비교한다.
+그리고 그 전압 차이를 온도 차이로 간주해서 온도를 측정하고, 너무 차이나면 꺼지게 만들어둔다.</p>
+
+<p>TSD는 VREF쪽 amp의 matching을 잘 해줘야 한다. 하여간 matching이 좀 중요한 회로다.</p>
+
+<p>Power와 thermal management는 뗄래야 뗄 수 없는 관계다.
+옛날에는 AP정도에만 temp sensor가 들어갔는데, 요즘은 온갖 제품에 temp sensor가 다 들어간다.</p>
+
+<p>Dvfs: dynamic voltage frequency scaling
+동작하다가 너무 뜨거워지면 전압 주파수 내려서 식히고, 적절히 식으면 다시 전압 주파수 올리는 방식</p>
+
+<p>온도와 성능이 모두 일정 범위 내에 있을 수 있도록 하는 기술이다</p>
+
+<p>Dvfs 없으면?
+온도 증가 -&gt; 전류 증가 -&gt; 온도 증가
+이렇게 positive feedback 반복된다</p>
+
+<p>그래서 열관리도 중요한데, 딱히 이런건 전공하는 사람들이 없다</p>
+
+<p>요즘은 soc 안에 hot spot이 여러 곳이라, 온도센서가 여러 곳에 들어가야 한다</p>
+
+<p>근데 온도센서가 크기 때문에 여러개 넣기는 또 어렵다</p>
+
+<p>온도센서 회로가 왜 크냐면, 모든 pvt corner를 버티게 만들어야 하기 때문이다. 산포가 작아야 한다.</p>
+
+<p>온도센서에는 BJT가 들어가는데, 전원전압이 너무 내려가면 쓸 수가 없다.
+그리고 사실 PnR을 위해서는 BJT가 없는게 낫다.</p>
+
+<p>온도가 올라가면 mobility가 감소한다.</p>
+:ET

@@ -175,3 +175,8 @@ high와 low를 구분하는 전압 기준을 'logical threshold'라고 부른다
 보통 digital 회로들에서 noise margin은 충분히 크기 때문에,
 supply voltage bounce같은 환경 변화에 크게 신경 안써도 된다.
 analog에서는 신경 많이 써야 한다.
+
+Dvfs 없으면?
+온도 증가 -> 전류 증가 -> 온도 증가
+이렇게 positive feedback 반복된다
+온도가 올라가면 mobility가 감소한다.
