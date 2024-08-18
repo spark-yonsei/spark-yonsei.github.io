@@ -55,6 +55,7 @@ Drain 전압이 증가하면 Channel이 짧아져 $$|V_{th}|$$가 감소하는 �
 <br>
 NBTI (Negative Bias Temperature Instability):<br>
 PMOS를 오래 쓰면 oxide에 hole이 쌓여서 $$|V_{th}|$$가 증가한다.<br>
+PMOS의 Gate 전압이 높을수록, 온도가 높을수록, oxide 두께가 얇을수록 더 심해진다.<br>
 <br>
 PBTI (Positive Bias Temperature Instability):<br>
 NMOS를 오래 쓰면 oxide에 전자가 쌓여서 $$|V_{th}|$$가 증가한다.<br>

@@ -37,3 +37,87 @@ Kickback noise 해결방법:<br>
 
 Layout때문에 kickback noise가 발생하는 경우도 있다.
 이럴땐 Parasitic Capacitance 안생기게 주변을 다 치워버려야 한다.
+
+
+주변에 의한 noise:
+Power supply noise
+substrate coupling noise
+EMI(Electromagnetic Interference)
+Crosstalk
+
+해결 방법:
+differential circuit,
+Guard ring, shielding 등 layout
+
+소자에 의한 noise:
+Thermal noise - 열에 의해 에너지를 받은 carrier들의 random한 움직임
+Flicker noise - material defect
+RTS noise - material defect
+shot noise - semiconductor junction의 carrier들이 만드는 pulse
+
+해결 방법:
+적절한 회로 구조
+더 많은 power
+
+
+noise는 플러스마이너스 모두로 움직이니까, 제곱으로 표현한다
+noise의 spectral density는 단위가 [V^2/Hz]다
+
+
+회로의 BW가 너무 넓으면, noise가 너무 많이 들어와서 SNR이 안좋아진다.
+
+저항의 thermal noise:
+진짜 저항에서도 발생하고, BJT parasitic resistance, MOSFET channel resistance 등에서도 발생한다.
+
+vn^2 = 4kRT [V^2/Hz]
+
+MOS thermal noise:
+전류 기준: in^2 = 4kT\gamma gm
+전압 기준: vn^2 = 4kT\gamma / gm
+
+NMOS보다 PMOS의 noise가 더 작다.
+
+gamma는 실험적으로 얻게 되는 값이다.
+
+MOSFET을 만들어놓으면 Source, Drain, Gate쪽에 모두 저항 성분이 있는데,
+W가 크다면 Source, Drain쪽 저항은 무시할 정도로 작아진다.
+
+문제는 polysilicon때문에 생기는 gate쪽 저항인데,
+이 저항이 또 noise를 만든다.
+그래서 gate쪽 저항 성분을 layout을 잘 해서 최대한 줄여야 한다.
+
+folding으로 gate 저항 줄이든가,
+양쪽에 contact 꽂아서 gate 저항 줄이든가 해야 한다
+
+substrate 저항에 의해서도 noise가 생긴다.
+substrate 저항은 layout에 영향을 받고,
+substrate contact를 커다란걸 써서 noise를 줄일 수 있다.
+
+MOSFET Flicker noise:
+gate oxide(SiO2)와 silicon substrate(Si) 사이 불안정한 결합을 dangling bond라고 부른다
+이 결합들에 전자들이 갇혔다 풀려났다 하면서 noise가 생긴다
+noise power density가 주파수에 반비례해서 1/f noise라고도 부른다
+
+1/f noise를 줄이려면?
+WL을 키워서 면적을 키우면 줄어든다.
+방식으로는 chopping 등 방식을 쓴다.
+
+
+MOSFET이 amplifier로 쓰인다면,
+gm, WL을 늘려야 한다.
+
+MOSFET이 current source로 쓰인다면,
+gm을 낮추고 WL을 늘려야 한다.
+
+근데:
+gm 늘리려고 전류 늘리면 전력 소모가 늘어난다
+gm 늘리려고 W를 늘리면 MOSFET의 capacitance가 늘어난다
+
+WL 늘리면 MOSFET의 capacitance가 늘어난다
+
+cs amp에서는 R을 늘리면 thermal noise도 늘어나지만 gain 늘어나는 영향이 더 커서 noise가 줄어든다
+
+current mirror에서는 MOSFET들이 current source로 쓰이니까, 둘다 gm이 작아야 noise가 적다
+그래서 W/L이 작아야 gm이 작아 thermal noise가 작은데, 동시에 WL이 커야 1/f noise가 작다.
+
++Radiation Hardening

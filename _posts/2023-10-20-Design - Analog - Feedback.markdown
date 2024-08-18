@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "Analog - Feedback"
+date:   2023-10-04 19:31:29 +0900
+categories: Design
+order: 3
+---
+
+Feedback으로 얻는 효과:
+
+Gain desensitization
+원래 H(s)는 gain값은 큰데 여러가지로 sensitive한 값이라고 하자
+그러면 G(s)를 달아서 개선 가능
+
+H(s): Open Loop Gain
+G(s)H(s): Loop Gain
+
+H(s)는 큰 값이지만 여러 요소에 sensitive하다
+덜 sensitive해지도록 피드백을 달아놓는다
+
+큰 feedback(큰 G)을 달아놓으면 회로 전체 gain이 Amp의 gain이 아니라 1/G로 보이게 된다
+그러면 H가 좀 흔들려도 Gain이 일정하게 1/G로 나온다
+
+근데, 그렇다고 G를 너무 키우면 1/G가 감소해서 gain이 내려간다
+
+cs amp면:
+gain이 gm*ro인데, 이건 PVT variation에 상당히 sensitive한 값이다.
+그래서 feedback을 달아서 gain을 C1/C2 식으로 바꿔놓을 수 있다
+
+캐패시터나 저항의 비율로 정의되는 값으로 gain을 만들어놓으면,
+분자분모가 variation을 같이 먹으니까 비율은 꽤 정확하게 나온다.
+
+feedback을 걸면 BW는 1+LoopGain배, gain은 1/(1+LoopGain)배 된다.
+그래서 GBW는 일정하지만, BW는 늘릴 수 있다
+
+
+amplifier를 쓸 경우:
+BW 10MHz, Gain 100짜리 amp보다
+BW 100MHz, Gain 10짜리 amp 2개 쓰는게 더 빠르다. gain은 동일
+
+이유는 BW가 넓어야 고주파 성분이 더 들어가서 신호가 더 빠르게 움직인다.
+물리적으로 보면, 입력에서 보는 RC가 더 작아서 신호가 더 빠르게 움직인다
+
+feedback을 걸면 linearity도 증가한다.
+feedback에 의해 gain이 1+LoopGain배 되기 때문에,
+gain이 크면 더 큰 비율로 나눠진다
+
+그래서 linearity가 증가한다.
+
+feedback 구조:
+출력 전압을 측정해서 전압을 feedback: 전압입력, 전압출력
+Rout은 1/(1+LoopGain)배, Rin은 1+LoopGain배
+
+출력 전류를 측정해서 전압을 feedback: 전압입력, 전류출력
+Rout, Rin 모두 1+LoopGain배
+
+출력 전압을 측정해서 전류를 feedback: 전류입력, 전압출력
+Rout, Rin 모두 1/(1+LoopGain)배
+
+출력 전류를 측정해서 전류를 feedback: 전류입력, 전류출력
+Rout은 1+LoopGain배, Rin은 1/(1+LoopGain)배
+

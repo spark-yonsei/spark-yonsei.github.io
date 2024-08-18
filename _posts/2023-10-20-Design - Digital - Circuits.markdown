@@ -8,14 +8,16 @@ order: 5
 
 옛날에는 Digital Logic을 하드웨어로 구현할때 BJT를 사용했지만,
 현대에 와서는 CMOS Transistor로 Digital Logic을 구현한다.
+Digital Logic을 구현한 회로를 Logic 회로라고 부른다.
 
 
 CMOS Logic 회로에서는 MOSFET들의 Gate Capacitance가 Drain Current에 의해 충전/방전된다.
 Gate Capacitance의 충전/방전 여부로 1/0을 판단하게 된다.
 
-digital 회로는 트랜지스터의 on/off characteristic을 이용해 만든거라,
+Logic 회로는 트랜지스터의 on/off characteristic을 이용해 만든거라,
 트랜지스터가 작아지든 새로운 물질로 만들어지든 on/off만 잘 되면 그대로 잘 동작한다.
 그래서 Moore's law에 의해 트랜지스터가 작아지면 그게 성능 증가랑 직결됐다.
+같은 면적에 더 많은 트랜지스터를 넣을 수 있으면, 한번에 더 많은 연산을 할 수 있기 때문이다.
 
 근데, 트랜지스터가 작아져서 커다란 digital system들이 한 IC에 들어가게 되자,
 모든 corner에서 chip이 잘 동작하도록 하는 design verification이 복잡해졌다.
@@ -40,6 +42,10 @@ Large-scale function을 combinational logic으로 만들어야 할 때가 있다
 
 요즘 나오는 digital circuit들은 synchronous manner로 동작하게 되어 있다.
 결국 clock based라는 거다.
+
+
+
+
 
 flipflop은 data가 제때 도착하지 않으면 출력에 그 data를 반영하지 못한다. clock에 맞춰 동작하니까.
 그래서, data가 clock보다 느리게 도착하면 전체 회로가 원래 설계와는 다르게 동작할 수 있다.
