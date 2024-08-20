@@ -6,6 +6,11 @@ categories: Design
 order: 6
 ---
 
+기술 발전으로 1개 IC 내에 보다 많은 트랜지스터가 들어갈 수 있게 되면서,
+모든 process corner에서 IC가 잘 동작하는지 검증하는 작업이 어려워졌다.
+이 작업이 design verification이다.
+
+
 Digital 회로 Verification:
 
 일단, RTL로 이루어진 IP들을 다 받아와서, 그걸로 Top module을 만든다.

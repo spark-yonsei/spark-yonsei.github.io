@@ -40,8 +40,6 @@ free run에서 출력주파수 0이면 소비전류가 크다?
 우리는 전류 아끼려고 free run에서 출력주파수가 0이 아니게 만들었다?
 VCO는 온도가 올라가면 인버터 동작이 느려지고 소비전류가 떨어진다.
 
-다른 block들은 온도가 올라가면 전류가 
-
 
 PLL Jitter:
 Input Clock에 섞인 noise에 의한 Jitter
@@ -51,9 +49,24 @@ Input Clock에 noise가 없으면 넓은 Bandwidth,
 noise가 상대적으로 많으면 좁은 Bandwidth로 LF를 만들면 된다.
 
 
+Noise in PLL:
+Reference clock noise,
+PFD+CP noise(CP noise가 대부분)
+Loop Filter 저항에 의한 noise
+VCO phase noise
+Divider Noise
+
+phase noise에 루트씌우면 그게 [rad]로 jitter가 된다.
+
+charge pump의 noise: NMOS, PMOS에 의한 noise
+
+VCO에서는 edge transition이 많을수록 jitter가 많이 생긴다
+한바퀴 안에 인버터 구조를 많이 만날수록 많이 생기는거다
+
 
 Type: loop 내 integrator의 수
 Order: loop 내 pole의 수
 
 언제나 order > type,
 언제나 PLL은 type 1 이상
+

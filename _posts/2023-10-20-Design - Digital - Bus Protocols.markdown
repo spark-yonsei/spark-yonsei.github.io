@@ -16,7 +16,7 @@ PXI: PCI eXtensions for Instrumentation<br>
 여러가지 장비들을 측정, 제어하는데에 사용되는 플랫폼이다.<br>
 
 AMBA(Advanced Microcontroller Bus Architecture):<br>
-ARM사의 BUS protocol을 말한다. AHB, ASB, APB, AXI가 있다.<br>
+ARM에서 정의한 BUS protocol을 말한다. AHB, ASB, APB, AXI가 있다.<br>
 <br>
 AHB(Advanced High Performance Bus):<br>
 고속으로 동작하는 장치들이 연결된 bus<br>

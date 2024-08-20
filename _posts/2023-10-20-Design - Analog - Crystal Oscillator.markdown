@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  "Analog - Crystal Oscillator"
+title:  "Analog - Oscillator"
 date:   2023-10-04 19:31:29 +0900
 categories: Design
 order: 3
 ---
+
+Oscillator:
+
+crystal: low frequency, excellent frequency stability, excellent phase noise.
+대신, cannot be integrated on silicon
+
+tuned oscillators: Clapp, Colpitts, Hartley oscillator
+(LC oscillator)
+Good phase noise, moderate frequency stability
+대신, large chip area
+
+Ring oscillator: Moderate phase noise, poor frequency stability
+하지만! small area
+
+
+
 
 Crystal Oscillator<br>
 1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다.

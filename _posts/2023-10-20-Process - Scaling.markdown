@@ -43,3 +43,12 @@ CPU에 넣어줄 수 있는 전력에는 한계가 있는데, 트랜지스터가
 이렇게 전력을 공급받지 못하는 구역을 ‘Dark Silicon’이라 한다.
 
 다양한 short channel effect들
+
+메모리 칩이나 로직 칩은 L을 무조건 작게 만들려고 하지만, 아날로그 칩은 그렇지 암ㅎ다. 당연히 L이 줄어들면 면적이 줄어드니까 경제적이긴 하지만,<br>
+1\. Mismatch, 1/f noise를 줄이려면 L을 늘려야 한다.<br>
+2\. L<3~4um부터는 L이 조금만 변해도 Vth가 엄청나게 변한다. 즉, process variation이 심해져서 chip간 variation이 심해진다. 그래서 보통 L을 4um 이상 어딘가 variation 적은 곳에 둔다.<br>
+이런 이유로, 아날로그 회로에서는 L을 무작정 줄이지 않는다.<br>
+
+
+트랜지스터가 작아질수록 Vth가 줄어들고 signal swing도 작아져서, analog 회로에서는 충분한 SNR을 만들기가 어렵다.
+대신, 트랜지스터 delay가 줄어들어 timing resolution(sampling rate)은 좋아졌다.
