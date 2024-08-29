@@ -1,10 +1,33 @@
 ---
 layout: post
-title:  "GaAs"
+title:  "Power Semiconductor Materials"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 14
 ---
+
+고전압 회로에서는 소자들에 높은 전압이 걸리기 떄문에,
+leakage current가 발생하기 쉬워진다.
+
+Leakage current를 줄이려면 bandgap이 큰 재료로 소자를 만들어야 한다.
+
+Bandgap이 큰 반도체는 상대적으로 도체보다는 부도체에 가까운 물질이다.
+그래서 더 높은 전압에서도 전류를 흘려보내지 않고 버틸 수 있다.
+
+Bandgap이 큰 반도체로 만든 소자들을 전력반도체 소자라고 부른다.
+
+Bandgap:
+Si: 1.12eV
+InP: 1.35eV
+GaAs: 1.42eV
+SiC: 2.3~3.3eV
+GaN: 3.4~3.5eV
+
+
+
+
+SiC의 장점:
+Si공정을 거의 재활용할 수 있다.
 
 
 GaAs HBT는 90년대 말부터 Cellular Power Amplifier들에 쓰이기 시작했다.
@@ -259,23 +282,6 @@ Free Wheel Diode:
 근데 IGBT에 free wheel diode를 넣을 경우, 웨이퍼 뒷면에 lithography로 n+영역을 만들어줘야 한다.
 그래서 웨이퍼 뒷면에 lithography를 해줘야 하는 경우도 있다!
 
-와이어 본딩:
-머리카락보다 얇은 금 선을 쓴다
-왜 금을 쓰는가? 반응성이 낮고 전기전도도가 높다
-은이 전기전도도 더 높지 않나? 맞는데, 얇은 선으로 가공하기는 금이 더 쉬워서 금을 쓴다.
-금은 연성이 아주 높다.
-
-전력반도체에서도 bonding을 똑같이 하나?
-전력반도체에서는 큰 전류가 흘러야 하기 때문에 두꺼운 bonding wire를 쓴다.
-
-근데 금은 비싸고, 전력반도체는 특히 두껍게 만들어야 하니 더 비싸다.
-그래서 금 말고 알루미늄, 구리를 쓰려고 많이들 노력중이다.
-
-근데 구리는 금보다 부식에 약하다.
-그래서 구리 bonding을 쓸거면 염소(Cl)가 들어가지 않은 에폭시 수지를 쓰는 것이 좋다.
-
-bonding 후에는 에폭시 수지로 웨이퍼랑 bonding wire를 통째로 감싼다.
-전력반도체에서는 에폭시수지의 내열성도 일반 반도체 에폭시수지보다 높아야 한다.
 
 MOSFET은 수MHz수준 고속 스위칭이 가능하다. BJT보다 훨씬 빠르고 소비전력도 낮다.
 근데 MOSFET은 내압을 올리기가 힘들다.
@@ -286,4 +292,51 @@ ON 저항을 감소시키려면 불순물 농도를 높이거나 채널 길이�
 
 SiC, GaN은 내압(MV/cm), Bandgap(eV)이 Si보다 크다.
 
-SiC는 Si공정을 거의 비슷하게 쓸 수 있다는 장점이 있다.
+
+
+SiC: Wide Bandgap semiconductor. 3.26eV
+
+Si는 1.12, GaN은 3.50
+
+Bandgap이 큰 반도체는 상대적으로 도체보다는 부도체에 가까운 물질이다
+그러면 더 높은 전압에서도 전류 안새어나가고 버틸 수 있다
+
+electron Mobility는 크게 떨어지지 않는다.
+Si는 1400, SiC는 900, GaN은 1250 [cm^2/Vs]
+mobility는 switching property를 결정한다. -> 그렇게 떨어지지 않으니, 고주파 switching이 가능하다.
+
+SiC의 장점은 Thermal conductivity가 높다는 점이다.
+Si 1.5, GaN 1.3, SiC 4.9 [W/cm*C]
+그래서 열이 더 빠르게 빠져나간다
+
+SiC로 만든 MOSFET들은 gm이 상대적으로 작다.
+아마 bandgap이 커서 그런 것 같다
+
+Miller Plateau:
+X축을 Gate Charge, Y축을 Vgs로 놓았을때,
+그래프가 linear하게 안올라가고 중간에 잠시 누웠다가 올라간다.
+그 눕는 구간이 Miller Plateau다.
+
+
+
+
+
+
+Bonding:
+반도체 bonding에는 원래 가느다란 금 선이 쓰인다.
+금은 가공하기 쉽고, 전기전도도가 높고, 반응성이 낮은 안정한 금속이라 그렇다.
+금의 단점은 비싸다는 점이다.
+
+전력반도체 bonding에도 금이 쓰이는데,
+전력반도체에서는 큰 전류가 흘러야 하기 때문에 두꺼운 금 선을 써야 한다.
+
+비싼 금으로 두꺼운 선을 만드는 것은 부담되는 일이기에,
+금 말고 알루미늄, 구리를 사용하려는 노력이 진행중이다.
+
+
+Packaging:
+구리는 금보다 부식에 약하기 때문에,
+Bonding에 구리를 사용한다면 염소(Cl)가 들어가지 않은 에폭시 수지를 써야 한다.
+
+bonding 후에는 에폭시 수지로 웨이퍼랑 bonding wire를 통째로 감싼다.
+전력반도체에서는 에폭시수지의 내열성도 일반 반도체 에폭시수지보다 높아야 한다.

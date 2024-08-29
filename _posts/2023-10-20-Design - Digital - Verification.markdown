@@ -28,6 +28,10 @@ DRAM같은거 그냥 넣으면, 그 block 하나가 FPGA 안에서 flipflop 엄�
 말 그대로 time domain이 다른거다.
 이것을 two top structure라 한다.
 
+HDL: Hardware Description Language: SystemVerilog, SystemC
+HVL: Hardware Verification Language
+
+
 테스트벤치는 컴퓨터 CPU의 clock대로 동작하고,
 HDL side는 FPGA에 들어가서 FPGA의 clock대로 동작한다.
 
@@ -184,3 +188,13 @@ Logic을 잘 만들면 어디에서 fault가 발생하든 다 잡아낼 수 있�
 그래서 한 95%정도 잡아낼 수 있게 만들고, 이 수치를 fault coverage라고 부른다.
 이 맥락에서 DFT가 나오면, 그건 Design for Testability다.
 
+
+
+
+Now to the question, why do we need HVLs? This is related to the software domain. As software became more and more complex, people moved from assembly to procedural languages like BASIC and C among others. However, writing and maintaining huge programs was still difficult. This is when people developed the object oriented programming paradigm. OOP is certainly a revolutionary development that has made it possible for computer programs to abstract a real world problem at unprecedented levels. It makes writing a program more efficient and also maintaining and expanding it.
+
+Simulation is essentially a purely software based activity. When we use HDL to write a testbench we have to write precisely every single signal wiggle that must take place and at the time that it must take place. However, if we raise the level of abstraction to say writing a whole word (e.g a byte to data bus) at a time, writing testbench will become a lot quicker and less tedious. We can raise the level of abstraction even more, e.g with ethernet design we can write a whole packet at once and check a whole packet at once rather than single bits.
+
+With HVLs they apply the OOP technique into the domain of hardware verification. They do so by making it possible to verify a design at a higher level of abstraction. At the same time, they contain features that are especially adapter for verification, rather than to write synthesize able code.
+
+e.g SystemVerilog provides 2 important features. These are concurrent assertions and constrained-random testing. Like assertion checks that an expression is true at a give time, a concurrent assertion checks to make sure that a sequence in which signal toggles is correct. Rather than having to write every single piece of stimulus that must be applied to a design under verification, constrained-random testing applies all possible stimulus that fits constraint given by the verification engineer, overtime. This saves a lot of time in writing stimulus.

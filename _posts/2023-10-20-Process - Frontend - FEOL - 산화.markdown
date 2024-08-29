@@ -110,3 +110,5 @@ SNR 개선을 위해 옆 소자와 확실하게 분리되어야 하는 이미지
 
 
 그다음에 다시 oxide를 키워서 nitride 없는 곳에만 SiO2를 만든다.
+
+nitride를 끼우면 유전율은 증가하지만 metal이랑 junction이 안좋아진다?

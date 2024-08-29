@@ -6,6 +6,12 @@ categories: Design
 order: 3
 ---
 
+Amplifier는 동작 방식에 따라 'class'로 구분된다.
+
+
+
+ 전력 효율과 linearity가 
+
 Amplifier에서는 linearity, signal gain, efficiency, power output 등을 생각해줘야 한다.
 다른 특성을 갖는 amplifier들을 구분하기 위해, amplifier class를 사용한다.
 

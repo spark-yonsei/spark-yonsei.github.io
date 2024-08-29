@@ -6,7 +6,7 @@ categories: Design
 order: 5
 ---
 
-
+CPU 동작을 위해서는 그 CPU에 맞는 
 
 RISC CPU
 명령어 수 적음

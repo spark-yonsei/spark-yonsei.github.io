@@ -21,3 +21,9 @@ With appropriate kernel design, WVD provides far more information than Fourier T
 <br>
 ### Analog Circuit Design<br>
 I designed analog blocks including crystal oscillator, charge pump, LDO, and PLL.<br>
+<br>
+32kHz Crystal oscillator, LF6S<br>
+Charge Pump, LF6S<br>
+<br>
+LDO, SMIC40LL<br>
+PLL, SMIC40LL<br>
