@@ -21,3 +21,79 @@ Al: 2.7*10^-6
 N-type Si: 0.25
 SiO2: ~10^14
 
+Sheet resistance variation 원인:
+Doping Concentration, Doping Profile
+Annealing Conditions
+Fluctuation in Film thickness
+
+Dimensional Variance 원인:
+photolithographic inaccuracies
+non-uniform etch rates
+
+온도가 바뀌면 저항값도 바뀐다.
+재료에 따라 저항값이 달라서,
+matching을 하려면 같은 material을 써야 하고
+반대 경향을 갖는 재료 2개를 써서 온도 영향을 줄일수도 있다.
+
+걸리는 전압이 바뀌어도 저항값이 바뀐다.
+Poly resistor는 전압의 영향을 적게 받고,
+Diffusion resistor는 전압의 영향을 크게 받는다.
+
+poly resistor는 parasitic capacitance를 갖는다.
+저항의 W를 늘려야 matching이 더 잘되지만,
+W를 늘리면 parasitic capacitance도 늘어나는 문제가 있다.
+
+Silicide block layer는 option으로 제공된다.
+sheet resistance를 크게 올려준다.
+
+
+MOS resistance:
+MOSFET을 저항으로 쓰려면 MOSFET을 Triode region에 갖다둬야 한다.
+이 경우에는 저항이 1/gm이다.
+
+MOSFET으로 만든 저항은 전압 영향을 많이 받는다.
+
+
+Capacitor:
+
+Capacitor를 IC 안에 집어넣을때는:
+Parallel capacitor(Linear)
+Junction capacitor(Nonlinear) 이렇게 2가지 구조 중 하나를 쓴다.
+
+Poly 2장 사이에 oxide를 끼워서 만들면 Poly-Poly Capacitor
+Metal 2장 사이에 oxide를 끼워서 만들면 Metal-Metal Capacitor
+
+metal을 쓰면 더 linear해지지만 capacitance 밀도는 떨어진다.
+
+MOM(Metal-Oxide-Metal) Capacitor:
+Capacitance를 만들기 위해 lateral field(fringing field)를 쓴다
+high density, good matching
+reasonable accuracy, free in any CMOS technology
+
+density를 늘리기 위해, high level metal들을 많이 쓴다.
+bottom plate parasitic이 존재하니, 사용시 주의해야 한다
+
+Capacitor accuracy:
+Capacitor parasitics, Edge effect, oxide gradient, voltage coefficient, temperature coefficient
+
+Capacitor parasitics:
+top plate와 substrate 사이 capacitance,
+bottom plate와 substrate 사이 capacitance
+
+이렇게 parasitic capacitance가 생기는데, bottom plate가 더 가까우니
+bottom plate쪽 parasitic capacitance가 더 크다.
+
+voltage:
+capacitor는 전압이 바뀌면 depletion width가 바뀐다.
+junction capacitance는 전압 영향을 크게 받고,
+Poly-Poly, MIM capacitance는 전압 영향을 적게 받는다.
+
+MOS Capacitor:
+Poly-N+ capacitor: NMOS capacitor
+Poly-P+ capacitor: PMOS capacitor
+
+Capacitor로 쓸 때는 strong inversion region에 두고 쓴다.
+capacitance density가 높다.
+
+capacitance가 생기려면 밑에 channel이 생겨야 해서 그렇다.
+그래서 전압이 낮으면 capacitance가 없다가 전압이 올라가면 생긴다.
