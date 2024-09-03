@@ -1,0 +1,691 @@
+---
+layout: post
+title:  "Semiconductor Materials"
+date:   2023-10-04 19:31:29 +0900
+categories: Process
+order: 14
+---
+
+고전압 회로에서는 소자들에 높은 전압이 걸리기 떄문에,
+leakage current가 발생하기 쉬워진다.
+
+Leakage current를 줄이려면 bandgap이 큰 재료로 소자를 만들어야 한다.
+
+Bandgap이 큰 반도체는 상대적으로 도체보다는 부도체에 가까운 물질이다.
+그래서 더 높은 전압에서도 전류를 흘려보내지 않고 버틸 수 있다.
+
+Bandgap이 큰 반도체로 만든 소자들을 전력반도체 소자라고 부른다.
+
+Bandgap:
+Si: 1.12eV
+InP: 1.35eV
+GaAs: 1.42eV
+SiC: 2.3~3.3eV
+GaN: 3.4~3.5eV
+
+
+Johnmson Limit:
+
+E: material이 버틸 수 있는 최대 전기장 세기
+vs: carrier의 saturation 상태 속도
+
+전압과 주파수 사이에 반비례 관계가 있다
+
+ft = 1/2pi tau, tau는 소자를 통과하는데에 걸리는 시간
+
+vs=L/tau
+
+E=Vm/L
+
+Vm*ft = E vs/2pi
+
+Power는 주파수의 제곱과 반비례한다
+dB scale로 표현하면 직선으로 보인다
+
+이게 재료에 따라서 소자가 출력할 수 있는 power와 소자가 감당할 수 있는 주파수의 관계다.
+곱한 값이 E vs/2pi로 제한되는 것이다.
+
+
+
+
+SiC의 장점:
+Si공정을 거의 재활용할 수 있다.
+
+
+GaAs HBT는 90년대 말부터 Cellular Power Amplifier들에 쓰이기 시작했다.
+GaAs 산업 자체가 핸드폰과 함께 많이 발전했다.
+
+
+처음에는 commercial wireless communication에 MESFET이 쓰였다.
+
+MESFET을 만들 때에는, 일단 implant를 하든 epitaxially grow를 하든 해서 n-type GaAs channel을 먼저 만든다.
+이 n-type GaAs channel에 Schottky gate를 만들어서 MESFET을 만든다.
+
+GaAs MESFET은 Si MOSFET과 비슷한 구조를 갖는다.
+웨이퍼 표면을 통해 Source와 Drain 사이에 전류가 흐른다.
+구조상 전류는 가로로 흐른다.
+
+HBT는 Emitter와 Collector 사이에 전류가 흐르는데, 구조상 전류가 세로로 흐른다.
+그래서 higher power density가 가능하다고 한다.
+
+HBT는 MESFET에 비해 더 낮은 saturation voltage를 갖는다.
+게다가 bias, 온도가 변해도 linear해서 better linear performance를 갖는다.
+그래서 많이 쓰이게 되었다.
+
+
+GSM, EDGE에서는 Power Amplifier가 Saturated mode에서 동작해야 한다.
+그래서 ruggedness, efficiency, gain 개선이 필요하다.
+
+CDMA, WCDMA에서는 Power Amplifier가 linear mode에서 동작해야 한다.
+그래서 linearity, efficiency 개선이 필요하다.
+
+어느 쪽이든, RF performance와 ruggedness/breakdown voltage 사이의 best tradeoff를 달성하기 위해 emitter layer와 collector layer에 집중했다.
+
+높은 bias 또는 mismatch 상황에서 not-rugged device들이 발생할 수 있다.
+이 경우 device들은 회복하지 못한다.
+
+
+미래 시스템들은 power amplifier를 하나만 요구한다.
+즉, HBT가 2가지 mode에서 모두 동작해야 한다.
+
+요즘은 ruggedness를 한계까지 끌어올릴 필요는 없지만,
+efficiency와 linearity는 언제나 높을수록 좋다.
+
+
+HBT가 많이 쓰이게 된 뒤, HBT와 FET, pHEMT를 한번에 integrate하는 BiFET 공정이 연구되기 시작했다.
+
+Si 기술의 RF application에서 쓰이는 through-substrate via는 GaAs HBT에서는 처음부터 쓰였다.
+
+
+1세대 BiFET integration:
+HBT layer를 활용해서 FET을 만들었다. 그래서 비용이 더 들지는 않았다.
+근데 FET 성능이 좀 애매했다.
+
+2세대 BiFET integration:
+추가 epi layer들과 process들을 감수하고, high performance FET (pHEMT)를 넣는다.
+이 pHEMT 덕분에 high-performance RF switching 구조나 low noise amplifier, high power antenna switch branch를 만들 수 있다.
+
+이런 공정 발전으로, Power amplifier의 linearity, efficiency가 개선될 수 있었다.
+
+HBT는 Passive device로는 MIMCAP, thin film resistor 쓴다.
+
+
+가격 절감:
+비싼 금속을 덜 써야 하고, die 면적을 줄여 한 웨이퍼당 생산되는 die수를 늘려야 한다.
+
+GaAs process들은 contact, wiring에 금을 쓰고 있다.
+
+GaAs MMIC는 gold based contact, wiring 뿐 아니라 through-substrate via와 함께 back side metal에도 gold를 쓴다.
+backside metal을 구리나 은으로 대체하면 가격이 절감될거다.
+
+근데, frontside metal은 backside보다 훨씬 복잡하다. 배선이 있으니까.
+그래서 금 말고 다른걸로 대체할때는 reliability를 잘 따져줘야 한다.
+
+frontside에는:
+gold-based ohmics(HBT emitter, base, collector and FET source, drain),
+Schottky contacts(diode, pHEMT gate),
+multiple wiring layers
+가 있다.
+
+이 중에서 금을 가장 많이 쓰는건 wiring이다.
+그래서 이걸 Al, Cu, AlCu 등으로 대체하려는 연구를 하고 있다.
+
+
+금, 백금을 없애야 싸지는데 이게 쉽지가 않다.
+ohmic contact를 손대기 시작하면 risk가 늘어난다.
+
+
+Die Size:
+더 큰 HBT를 쓰면 cell이 더 적게 필요하다. -> footprint가 줄어든다.
+challenges: self-heating, proximity heating에 의한 junction temp 증가,
+늘어난 parasitic에 의한 performance degradation
+
+Bond pad는 die에서 상당한 면적을 차지한다.
+근데 bond pad 면적을 줄이면 wire bond probe 하기가 어려워져서,
+wafer level die test가 어려워진다.
+
+-> test capability가 발전하면서, bond pad가 더 작아질 수 있었다.
+
+capacitor가 bond pad 다음으로 면적을 많이 먹는다.
+더 얇은 dielectric들이 나오면서 MIM, Stacked capacitor의 밀도가 올라갔다.
+
+면적 아끼려고 bond pad 밑에 capacitor를 넣기 시작했는데,
+이때는 yield, reliability에 신경써줘야 한다.
+
+capacitor 말고 다른것들도 bond pad 밑에 넣으려고 하고 있다. 면적 더 줄일 수 있으니까.
+
+
+인버터 조명:
+교류전원을 직류로 바꾼 뒤, 인버터 회로에서 직류를 50kHz교류로 만들어 형광들을 켠다. 이러면 절대 깜박이는게 안느껴진다
+
+그냥 60Hz 교류로 하면 초당 120번 깜박인다
+
+FZ결정 웨이퍼는 두께 방향으로 불순물 농도가 균일하다.
+
+그냥 mosfet은 전류가 가로로 흐르는데,
+
+전력반도체는 전류가 세로로 흐른다
+
+Ge: carrier mobility가 Si보다 낫다
+Si: 내열성이 좋고, bandgap이 더 크다
+
+옛날에는 수은 정류기라는걸 썼다.
+그 뒤에 si rectifier가 나왔다
+
+고전압: si 결정이 고품질이어야 한다
+대전류: 소자가 커야 한다
+
+IGBT: insulated gate biolar transistor
+가로로는 mosfet, 세로로는 bjt
+고속 스위칭 성능은 mosfet에서,
+대전류 고전압은 bjt에서 얻는다
+
+BiCMOS같은 느낌이다
+
+사이리스터: 고속스위칭 가능
+Gto thyrister : gate turn off
+
+Bjt 전류가 멈추는 원리는 전자랑 정공이 결합하는서다. 이게 turn off 시간을 결정한다. 끄는데에 시간이 걸린다는거다
+
+그래서 mosfet이 더 빠르다.
+
+근데 대전류 고전압이 필요하고, 이건 bjt가 잘하는거다
+
+그래서 수직으로 만들어지는 전력반도체들이 나오고 있다
+
+Igbt: vdmos 밑에 bjt를 붙인 형태다
+Gate 전압 넣으면 mosfet에 전류가 흐르고, 이게 pnp bjt의 base 전류가 되어 bjt가 켜진다
+
+Gate 전압을 끄면 bjt도 꺼진다
+
+사이리스터처럼 껐다끌때 별도의 회로가 필요한 것이 아니고, 그냥 mosfet으로 껐다켰다 가능한게 장점이다
+
+수평형 igbt도 있다. 구조가 좀 더 복잡하지만, 다른 회로와 합쳐 하나로 찍어내기가 편해서 이런 구조도 쓴다.
+
+Igbt의 단점: 공정이 복잡하다, epitaxial 성장층?의 농도 제어가 어렵다
+
+On 저항은 당연히 작음게 좋다. 이상적으로는 0이어야한다. 하지먼 pn junction도 exponential의 역수인거지 0인건 아니다
+
+그래서 (100)기판을 쓴다. (100)기판은 전자 이동도가 높아 on 저항을 낮춘다
+
+Epitaxial wafer를 써서, epitaxial layer의 불순물 농도와 두께로 on저항을 조절할 수 있다.
+
+결국 채널 저항이 낮아야 on 저항이 낮다는 뜻이고, 그래서 짧은 채널 길이와 넓은 채널 폭을 가진 VMOS, DMOS로 구현할 수 있다.
+
+내압은 소자가 버틸 수 있는 전압인데, 높은 내압은 낮은 on저항과 양립할 수 없다. 저항 줄이려고 소자 얇게 만들면 내압이 떨어지기 때문이다
+
+그래서, on저항과 내압에서 한계에 도달한 Si 말고 새로운 재료로 이동하려는 움직임이 있다. 그게 SiC, GaN이다
+
+전력반도체 업체:
+종합전자회사: 도시바, 히타치, 미쓰비시, 르네사스, 인피니언, STM
+전력반도체 전문회사: 후지전기, 신덴겐, 산켄전기, Vishay
+전력반도체 취급 시작한 회사: 로옴, 교세라, 온세미, Nexperia
+
+전압 바꾸려면 교류는 변압기, 직류는 chopper 방식 쓴다
+
+인덕션에 쓰이는 주파수는 수십kHz다.
+
+그래서, 왜 SiC, GaN이 필요한건가?
+전력반도체에서 중요한건 내압이다. 버틸 수 있는 전압이 높아야 한다.
+
+결국 depletion region의 내압이 높아야 하는건데, 이게 Energy band 크기에 비례한다.
+그래서 energy band가 큰 SiC, GaN이 쓰인다.
+
+Bipolar transistor: hole, 전자 모두를 쓰기 때문에 bipolar.
+unipolar transistor: 전력 MOSFET에서는 전자만 쓴다. 그래서 unipolar
+
+Si의 한계:
+on 저항과 내압을 동시에 개선할 수 없다
+
+전력반도체는 웨이퍼 전체를 쓴다. 수직으로 전류가 흐르니까.
+로직 회로는 웨이퍼 위에 쌓여서 만들어진다.
+
+epitaxial: Si 웨이퍼와 같은 결정 방향을 갖는 Si layer를 웨이퍼 위에 만드는 것을 말한다.
+
+옛날에는 epitaxial을 BJT 소자에 주로 사용했다.
+n layer 위에 더 농도가 높은 n+ layer를 쌓거나, p layer 위에 p+ layer를 쌓는 식으로 했다.
+이렇게 해서 collector 저항을 낮췄다.
+
+만들때는 Si가 들어간 기체(SiH4, Si2H6, SiCl4 등)랑 n형이면 PH3, p형이면 B2H6 등을 사용한다.
+온도는 1000도 이상 고온을 사용한다.
+
+이렇게 epitaxial 성장시킨 layer가 있는 웨이퍼를 에피택셜 웨이퍼라고 부른다.
+
+전력반도체에서는 ON저항을 줄이기 위해 epitaxial 성장을 사용할 수 있다.
+epitaxial 층의 불순물 농도와 두께로 ON 저항이 정해지기 때문이다.
+
+MOSFET Body Diode?
+
+Free Wheel Diode:
+전력반도체에서는 흐르는 전류가 크기 때문에, OFF가 되어도 흐르던 carrier들이 Emitter쪽에 과다하게 쌓여있을 수 있다.
+그래서, free wheel diode는 이 전자 또는 hole을 collector쪽으로 이동시켜주는 일을 한다.
+
+근데 IGBT에 free wheel diode를 넣을 경우, 웨이퍼 뒷면에 lithography로 n+영역을 만들어줘야 한다.
+그래서 웨이퍼 뒷면에 lithography를 해줘야 하는 경우도 있다!
+
+
+MOSFET은 수MHz수준 고속 스위칭이 가능하다. BJT보다 훨씬 빠르고 소비전력도 낮다.
+근데 MOSFET은 내압을 올리기가 힘들다.
+
+ON 저항을 감소시키려면 불순물 농도를 높이거나 채널 길이를 짧게 해야 하는데, 이러면 내압이 떨어진다.
+
+->그래서 IGBT가 나왔다.
+
+SiC, GaN은 내압(MV/cm), Bandgap(eV)이 Si보다 크다.
+
+
+
+SiC: Wide Bandgap semiconductor. 3.26eV
+
+Si는 1.12, GaN은 3.50
+
+Bandgap이 큰 반도체는 상대적으로 도체보다는 부도체에 가까운 물질이다
+그러면 더 높은 전압에서도 전류 안새어나가고 버틸 수 있다
+
+electron Mobility는 크게 떨어지지 않는다.
+Si는 1400, SiC는 900, GaN은 1250 [cm^2/Vs]
+mobility는 switching property를 결정한다. -> 그렇게 떨어지지 않으니, 고주파 switching이 가능하다.
+
+SiC의 장점은 Thermal conductivity가 높다는 점이다.
+Si 1.5, GaN 1.3, SiC 4.9 [W/cm*C]
+그래서 열이 더 빠르게 빠져나간다
+
+SiC로 만든 MOSFET들은 gm이 상대적으로 작다.
+아마 bandgap이 커서 그런 것 같다
+
+Miller Plateau:
+X축을 Gate Charge, Y축을 Vgs로 놓았을때,
+그래프가 linear하게 안올라가고 중간에 잠시 누웠다가 올라간다.
+그 눕는 구간이 Miller Plateau다.
+
+
+
+
+
+
+Bonding:
+반도체 bonding에는 원래 가느다란 금 선이 쓰인다.
+금은 가공하기 쉽고, 전기전도도가 높고, 반응성이 낮은 안정한 금속이라 그렇다.
+금의 단점은 비싸다는 점이다.
+
+전력반도체 bonding에도 금이 쓰이는데,
+전력반도체에서는 큰 전류가 흘러야 하기 때문에 두꺼운 금 선을 써야 한다.
+
+비싼 금으로 두꺼운 선을 만드는 것은 부담되는 일이기에,
+금 말고 알루미늄, 구리를 사용하려는 노력이 진행중이다.
+
+
+Packaging:
+구리는 금보다 부식에 약하기 때문에,
+Bonding에 구리를 사용한다면 염소(Cl)가 들어가지 않은 에폭시 수지를 써야 한다.
+
+bonding 후에는 에폭시 수지로 웨이퍼랑 bonding wire를 통째로 감싼다.
+전력반도체에서는 에폭시수지의 내열성도 일반 반도체 에폭시수지보다 높아야 한다.
+
+
+
+
+반도체를 왜 쓰는건가? 스위치를 만들려고. 옛날에는 진공관을 썼는데, 이게 트랜지스터로 대체된거다. 크기도 작고 효율도 좋고 쉽게 깨지지도 않으니까<br>
+<br>
+BJT에서 CMOS로 변하기도 했었다. 이건 기억이 안나네 왜더라<br>
+<br>
+원래 반도체는 Ge를 썼다.<br>
+근데 왜 Si로 넘어갔나? 녹는점 높아서, 더 구하기 쉬워서.<br>
+<br>
+근데 고성능 반도체 소자가 필요해지면서, 다른 반도체 물질을 사용하는 경우가 많이 생겼다.<br>
+<br>
+<br>
+왜 고성능 반도체 소자가 필요해졌나?<br>
+통신 시스템의 요구 조건이 높아졌다.<br>
+<br>
+더 많은 channel -> device당 더 많은 전력 필요 -> linearity가 줄어든다<br>
+symbol constellation이 더 복잡해짐 -> symbol 사이 거리가 줄어든다 -> linearity가 더 중요해진다<br>
+<br>
+무슨 말이냐면, 일단 더 많은 정보를 보낼수록 더 확실한 linearity가 필요하다는거다.<br>
+더 많은 정보를 보낸다는건 constellation들이 더 빽빽하게 모여있다는거라,<br>
+linearity가 충분히 확보돼야 얘네가 안겹친다. linearity가 부족하면 겹친다.<br>
+<br>
+근데, 더 많은 정보를 보낸다는건 device들이 개당 더 많은 에너지를 먹는다는 뜻이다.<br>
+그러면 device의 linearity가 떨어진다.<br>
+<br>
+그래서 채널이 늘어나고 통신량이 늘어나자, device들의 linearity가 문제가 되게 되었다.<br>
+<br>
+Shannon's Capacity Equation:<br>
+C = BW * log2(SNR)<br>
+<br>
+<br>
+그래서 여러가지 재료들이 연구되게 되었다.<br>
+그 중 GaN이 대표적이다.<br>
+<br>
+GaN은 Si보다 큰 Bandgap을 가진다.<br>
+따라서 더 강한 전기장을 만들 수 있다.<br>
+<br>
+GaN은 Si보다 큰 Saturation velocity, high charge capability를 가진다.<br>
+따라서 더 큰 전류를 만들 수 있다.<br>
+<br>
+그리고, 더 강한 전기장과 더 큰 전류는 더 높은 power density를 가능하게 한다.<br>
+power density가 높아지면, 더 작은 device로도 같은 power를 운용할 수 있다.<br>
+<br>
+<br>
+device가 작으면 뭐가 좋은가?<br>
+capacitance가 더 작아지고, insertion loss가 줄어든다.<br>
+<br>
+capacitance가 작아지면 device의 BW가 더 넓어진다.<br>
+또한, capacitance가 작아지면 insertion loss도 감소한다. 그 결과 efficiency가 개선된다.<br>
+<br>
+그리고, 소자가 작으면 웨이퍼마다 소자가 더 많이 생산될 수 있기 때문에 더 경제적이다.<br>
+크기가 작은 IC가 만들어지기 때문에 PCB 면적도 아껴 비용을 절감할 수 있다.<br>
+Smaller die, smaller packaging<br>
+<br>
+<br>
+GaN의 커다란 Bandgap은 강한 전기장을 만드는데에 쓰일 수 있었지만, 동시에 단점의 원인이 되기도 한다.<br>
+GaN은 bandgap이 크다보니 strong ionic bond를 갖는다.<br>
+그래서 chemical etch가 어려워 physical etch를 해야 한다.<br>
+그래서 stop layer etch가 없고, 그렇기에 GaN에서는 좋은 HBT를 만들 수가 없다.<br>
+그리고, ionic bond가 강하다보니 doping도 잘 안된다.<br>
+<br>
+근데, HBT를 쓸 수 있느냐가 사실 엄청 중요하다.<br>
+HBT는 FET보다 효율적이고 linear한 device라 그렇다.<br>
+<br>
+왜 HBT가 FET보다 더 효율적이고 linear한가?<br>
+HBT: Vertical current, FET: Horizontal Current<br>
+그 결과, HBT가 더 작은 Ron을 갖는다.<br>
+<br>
+Ron이 작으면 RF efficiency가 더 좋아지고,<br>
+전류를 미분해보면 HBT의 beta가 FET의 gm보다 더 linear하다.<br>
+<br>
+이 좋은 HBT를 GaN에서는 만들 수 없기에,<br>
+HBT를 만들 수 있는 GaAs가 GaN보다 더 많이 쓰이고 있다.<br>
+<br>
+<br>
+뭐 근데 그렇다고 GaN이 안쓰이는건 아니다.<br>
+power device, RF components, LED 등에 널리 쓰인다.<br>
+<br>
+GaN에서 HBT는 못만들지만, HEMT는 만들 수 있다.<br>
+<br>
+HEMT(High Electron Mobility Transistors)는,<br>
+서로 다른 bandgap을 갖는 2가지 물질의 junction에서 발생하는 2DEG(2-Dimensional Electron Gas)를 이용한 소자다.<br>
+<br>
+GaN based HEMT는 Si 기반 소자들보다 빠른 switching speed, 높은 열전도율, 낮은 on-resistance를 갖는다.<br>
+그래서 GaN transistor, GaN IC를 power conversion system 내 회로에 사용해 efficiency를 늘리고, 크기를 줄이고, 가격을 줄일 수 있다.<br>
+그래서 power쪽에 GaN이 많이 쓰인다.<br>
+<br>
+2DEG 는 어떻게 생기는가?<br>
+GaN 결정 위에 얇은 AlGaN층을 만든다.<br>
+interface에 strain이 발생하고, 그걸 compensate하기 위해 2DEG가 생긴다.<br>
+전기장이 걸리면, 2DEG를 통해 전류가 원활히 흐른다.<br>
+<br>
+어떻게 Efficient conduction이 가능한가?<br>
+2DEG는 전자를 interface의 아주 좁은 영역에 가둬놓고 전류가 흐르게 한다. 이렇게 가둬놓기 때문에 전자의 mobility가 올라간다.<br>
+unstrained GaN에서는 1000cm2/Vs, 2DEG 영역에서는 1500~2000cm2/Vs<br>
+<br>
+GaN 공정은 Si보다 근본적으로 저렴하다.<br>
+각 소자가 Si 소자보다 훨씬 작기 때문에, 각 웨이퍼마다 소자가 더 많이 생산될 수 있다.<br>
+<br>
+<br>
+하여간 GaN HEMT가 빠른 switching을 할 수 있기 때문에,<br>
+4G/LTE base station에서의 RF envelope tracking, 자율주행 LiDAR 등 빠른 동작이 필요한 분야에 쓰이게 됐다.<br>
+<br>
+discrete device들은 점점 높은 power density로 동작하는데,<br>
+원래 얘네는 전류를 외부와 연결된 bump를 통해 끌어와야 한다.<br>
+근데 점점 power density가 높아지면 이게 어려워질 수 있다.<br>
+<br>
+그래서, 한번에 integrated된 solution으로 GaN 소자들이 쓰일 수 있다.<br>
+-> monolithic integration<br>
+<br>
+GaN 시장은 점점 커질 것으로 전망된다.<br>
+fast charger, class-D audio, power bank, ToF센서 등.<br>
+<br>
+<br>
+원래 datacenter에서는:<br>
+backplane에서 48V를 받고, 그걸 12V로 바꿔서 processing board에 주고, 그걸 다시 1V정도로 바꿔서 digital chip들에게 줬다.<br>
+근데 GaN을 쓰면 switching speed가 더 빨라서  48V를 바로 1V로 바꿀 수 있다.<br>
+아마 DC DC converter 원리인듯?<br>
+<br>
+LiDAR에서, 레이저가 더 빠르게 발사될수록 liDAR의 resolution이 올라갈 수 있다.<br>
+GaN소자를 쓰면 Si소자보다 더 빠르게 레이저를 발사할 수 있다.<br>
+GaN FET, IC들은 극히 작은 pulse width를 갖는 high-current pulse를 만들 수 있다.<br>
+그 덕분에 해상도가 높아지고, 측정가능거리가 길어질 수 있다.<br>
+<br>
+신재생에너지가 많이 쓰이게 되면서, ESS 제조사들은 점점 GaN을 쓰고 있다.<br>
+높은 효율, 높은 전력밀도, 개선된 reliability.<br>
+<br>
+medical application에도 많이 쓰인다.<br>
+무선 전력 전송으로 몸 안의 장비를 충전해야 하는 경우가 있다. 여기에 GaN이 쓰인다.<br>
+<br>
+Si MOSFET에서 높은 전력밀도를 쓰려면 비싼 냉각시스템을 써야 했다.<br>
+<br>
+GaN은 microinverter나, 분리된 MPPT/optimizer에 적합하다.<br>
+<br>
+ESS:<br>
+GaN을 쓰면 더 작고 더 낮은 전압을 쓰는 소자를 쓸 수 있다.<br>
+이러면 dV/dt가 줄어들고, equivalent output frequency가 늘어나고,<br>
+결과적으로 더 높은 효율과 밀도를 제공하고<br>
+열 발생을 낮춰 cooling 부담을 덜고 소자들에 들어가는 stress를 줄여 lifetime을 늘린다.<br>
+<br>
+<br>
+GaN과 SiC 모두 wide bandgap semiconductor solution이다.<br>
+high voltage, high frequency에서 동작 가능하다.<br>
+<br>
+SiC는 900V 이상 전압에 적합하고,<br>
+GaN-on-Si는 700V 이하에 적합하다.<br>
+<br>
+격전지는 700V~900V다.<br>
+여기가 전기차용 전자장치들이 쓰이는 영역인데,<br>
+GaN, SiC, Si IGBT들이 싸운다.<br>
+<br>
+<br>
+eGaN: Enhancement mode GaN?<br>
+<br>
+<br>
+![alt text](/public/img/material1.png)<br>
+Common semiconductor material characteristics. [1]<br>
+<br>
+<br>
+Si:<br>
+MOS<br>
+싼 가격, 낮은 주파수<br>
+디지털 시스템과 함께 찍어낼 수 있어, Fabrication 비용이 낮다<br>
+FDSOI, SOI 등으로 RF performance 개선하려고 노력한다.<br>
+FDSOI: Fully Depleted Silicon On Insulator<br>
+<br>
+SiGe:<br>
+HBT<br>
+싼 가격, 낮은 소비전력<br>
+SiGe MMIC는 Si기판 위에 만들 수 있기에, 기존 Si공정에 단계만 추가하면 된다.<br>
+그래서 생산 효율이 높아 가격이 싸다는 장점이 있다.<br>
+<br>
+SiC:<br>
+<br>
+GaAs:<br>
+MESFET, HEMT, HBT<br>
+싼 가격, 고주파<br>
+mHEMT(metamorphic HEMT)를 쓴 GaAs LNA(Low Noise Amplifier) 예시도 있다.<br>
+Si보다 power를 더 크게 낼 수 있고, linearity가 비교적 좋다, noise가 적다<br>
+<br>
+GaN:<br>
+MODFET, HEMT<br>
+고밀도 전력<br>
+Bandgap이 가장 크다.<br>
+GaN MMIC는 전자 이동도는 낮지만 고전압 동작이 가능하고, 높은 전력 밀도를 만들 수 있다.<br>
+GaN은 열 전도도가 Si보다 3배, GaAs보다 7배정도 높아 냉각이 쉽다.<br>
+Si에서는 radiation을 막으려면 특별한 fabrication 방식, 특별한 packaging 방식이 필요하다.<br>
+GaN은 선천적으로 radiation tolerant하다.<br>
+그래서 space application에 아주 적합하다.<br>
+Si보다 power를 더 크게 낼 수 있고, linearity가 비교적 좋다, noise가 적다<br>
+<br>
+GaN 기반 power device들은 Si 기반 power device들보다 훨씬 성능이 좋다.<br>
+high conductivity 덕분에 higher breakdown strength, faster switching speed, higher thermal conductivity and lower on-resistance 덕분이다<br>
+GaN은 다양한 substrate들 위에 만들어질 수 있다.<br>
+사파이어, SiC, Si 등.<br>
+Si 위에 GaN Epi layer를 만들 경우, 기존 Si 생산시설을 활용할 수 있다. 따라서 더 경제적이다.<br>
+<br>
+InP:<br>
+HBT, HEMT<br>
+고속, 초고주파<br>
+InP MMIC는 GaAs MMIC보다 제작 비용이 비싸지만, 주파수 특성이 고주파에 적합하다.<br>
+원래 100GHz 위에서는 InP가 자주 보였는데, 요즘은 다른 technology들도 보인다.<br>
+<br>
+<br>
+![alt text](/public/img/material2.png)<br>
+Comparison of millimeter-wave technology options.<br>
+<br>
+![alt text](/public/img/material4.png)<br>
+HBT vs FET.<br>
+<br>
+[1] SiGe and CMOS Technology for State-of-the-Art Millimeter-Wave Transceivers<br>
+[3] Comparing GaAs and GaN technologies for RF, J. L. Jimenez
+
+
+GaN은 high electric breakdown field, high electron saturation velocity, high mobility in 2DEG channel등 특성을 갖는다.
+
+경쟁 기술: Si Superjunction MOSFET, SiC MOSFET
+
+현재, GaN power electronic device들은 lateral heterojunction을 커다랗고 저렴한 silicon substrate 위에 만든걸 쓴다.
+GaN on Si: 기존 Si fab에서도 만들 수 있어서 경제적이다.
+
+저렴하다는 장점때문에 Si가 Substrate로 쓰인다.
+단점은 GaN과 Si 사이의 thermal mismatch, lattice 문제?
+
+GaN-on-Si 기술은 metal-organic CVD 기술과 실시간 stress/curvature monitoring 기술이 발전하면서 빠르게 발전했다.
+
+GaN power devices: low Ron, low leakage, small dynamic Ron degradation.
+
+EPI growth 기술이 발전하면서, GaN-on-Si 소자들이 많이 쓰이고 있다.
+
+왜 Si를 쓰냐? 싸다. 모래잖아.
+
+Epitaxial growth는 AlN neucleation layer(Si가 GaN epilayer로 diffusion되는걸 막는 역할)을 먼저 깔고,
+transitin layer(stress balance, crystallinity)를 깐다. 이게 충분히 두꺼워야 crack이 안생긴다.
+그 위에 GaN buffer를 깔고, barrier layer를 깐다.
+
+transition layer에는 graded AlGaN layer, AlN/GaN super lattice, multiple AlN stress-release insertion layer 등이 쓰인다.
+
+background impurity(Si, O 등)에 의해 lateral punchthrough가 일어날 수도 있는데,
+이건 transition layer/buffer layer에 compenation doping(C 등)을 해서 방지한다.
+
+근데, compensation을 할때 ron에 영향 안주게 조심해야 한다.
+carbon dopant가 acceptor-like deep center들을 만들 수도 있기 때문이다.
+
+Power switching device면, off 특성이 중요하다.
+GaN device로 off를 만들려면, Enhancement GaN devcie를 쓰든가 Si FET을 같이 써야 한다.
+
+Si FET을 같이 쓸 경우, Si MOSFET의 gate 전압으로 소자를 제어할 수 있다.
+
+power electronics에서는, ringing noise를 줄이고 안전한 동작을 하기 위해 slew rate 조절이 중요하다.
+slew rate 조절을 위해서는 GaN gate를 직접 제어하는게 도움이 된다.
+gate driver에 의해 제어되는 GaN device들이 많이 쓰인다.
+
+high breakdown voltage를 위해, multiple field plates가 사용된다.
+gate와 drain 사이의 depletion region을 넓히는 역할을 한다.
+
+GaN HEMT가 완성되면, Si MOSFET과 cascode로 연결된다.
+MOSFET On -> 이때 보이는 Ron은 HEMT와 MOSFET의 ron 더한 값이다.
+MOSFET off-> GaN HEMT의 pinchoff 전까지는 역전압 다 버틴다.
+
+이 Cascode 구조는 normally off 상태다.
+MOSFET의 threshold를 넘으면 켜지고,
+blocking voltage는 HEMT의 gate-drain breakdown voltage를 따라간다.
+
+HEMT에서, source와 drain의 ohmic contact는 gold-free, Al based metal layer로 만들어진다.
+Si Foundry와의 compatibility를 위해서다.
+
+GaN과 AlGaN의 interface의 piezoelectric, polarization effect로 2DEG가 생긴다.
+
+dielectric은 low gate leakage를 위해 SiO2, Si3N4, high-k 등으로 얇은 dielectric layer를 쓴다.
+
+
+
+GaN device는 dynamic Ron 문제를 겪는다.
+GaN device 구조의 trap들과 large depletion length 때문이다.
+
+수많은 channel electron들이 trapped되어 conduction에 기여하지 못하게 되는데,
+이 trapped되는 시점이 HEMT가 켜지는 시점이다.
+
+결국 dynamic Ron이 static Ron보다 큰 값을 갖게 되고, 이건 power loss로 이어진다.
+
+근데, GaN device들은 high voltage에 쓰이는 소자라 large depletion length가 필요한건 어쩔 수가 없다.
+
+그래서 소자 개발자들은 GaN buffer, interfaces, dielectric layers, field plate 구조 등을 잘 조절해서,
+trap 현상을 최대한 줄이면서도 breakdown voltage는 높게 유지해야 한다.
+
+
+HEMT개발에서, device reliability도 중요하다.
+device는 쓰다보면 특성이 안좋아지니까, 600V rated device더라도 처음에는 1350V정도 버티도록 만들어준다.
+
+Cascode MOSFET을 안쓰고, 그냥 enhancement GaN TR을 쓰기도 한다.
+이때는 cost, size, slew rate, control 등 이유다.
+
+
+normally off device에서 low Ron을 얻고 싶다면,
+source-to-gate access region과 gate-to-drain access region에서 높은 2DEG 밀도를 유지해야 하며,
+zero gate bias에서는 gate 제어 하에 있는 channel이 완전히 depleted되게 해야 한다.
+
+
+Enhancement GaN에서 normally off + low Ron을 얻기 위한 2가지 방법을 소개한다.
+
+p-GaN Gate FET:
+AlGaN barrier layer와 gate electrode 사이에 p-type GaN layer를 끼우는 방식이다.
+p-GaN layer의 doping level과 두께를 잘 조절한다면,
+p-GaN layer에 충분히 많이 존재하는 negative charge들이 그 아래의 2DEG를 deplete시키게 된다.
+이 방식의 예시가 GIT(Gate Injection Transistor)다. EPC(Efficient Power Conversion)에서 만들었다.
+
+GIT(Gate Injection Transistor):
+P-type GaN gate가 gate 아래 heterojunction의 potential을 끌어올린다.
+이걸로 normally off operation이 구현된다.
+
+고밀도 2DEG가 유지되는 곳에는 p-type GaN layer가 영향을 주지 못한다.
+이걸로 low ron, high current driving capability가 구현된다.
+
+그래서 normally off + low ron 둘 다 가져갈 수 있다.
+그럼에도, dynamic ron 문제는 남아있다. ron이 올라가는 문제다.
+이 문제는 current collapse 문제라고도 불린다.
+
+HD-GIT라는게 나왔다.
+Hybrid-drain-embedded GIT
+HD-GIT은 drain electrode 밑에 p-GaN layer를 만들어놓는다.
+
+off state일때, drain쪽 p-GaN layer에서 나오는 hole들이 carrier로 동작하게 된다.
+그래서, 전자가 trap되어 사라지는걸 이 hole injection으로 보상한다?
+
+
+
+p-GaN 소자를 만들때, 공정 안정성을 위해 TRRG(Through Recessed and Regrowth Gate) 방식이 사용된다.
+
+원래, AlGaN/GaN HFET들의 Vth를 조절할 떄는 Recess area 아래의 AlGaN layer 두께 조절이 중요하다.
+
+근데, nm단위 두께 조절은 아주 어려운 일이다. 그래서 두께가 균일하게 잘 안나와서 공정이 불안정했다.
+
+그래서, 그냥 AlGaN 일단 싹 갈아버리고, epitaxial growth로 필요한 만큼 새로 깔게 되었다.
+이랬더니 산포가 훨씬 좋아졌다. 이게 TRRG다.
+
+
+
+MIS-Gate FET:
+MIS = Metal-Insulator-Semiconductor.
+
+gate leakage current를 줄이기 위해, barrier layer를 갈아버리고 insulating dielectric layer로 갈아끼우는 구조다.
+
+이때, barrier layer를 다 갈지는 않고 얇게 조금 남겨둬도 된다.
+gate-controlled channel의 보다 높은 mobility를 위해서다.
+즉, 더 높은 Ron을 얻을 수 있다는 뜻이다.
+
+근데 얇게 남기려고 하면, 또 두께 조절이 어렵다.
+그러면 또 공정이 불안정해져 Vth 산포가 난장판이 된다.
+
+Buried channel은 surface channel보다 Vth thermal stability가 안좋다.
+그래서 fully recessed가 낫다.
+
+Recessed-gate E-mode GaN MIS-FET은 Si, SiC Power MOSFET들에 비해 gate swing이 크고 gate leakage가 더 낮지만,
+Vth 안정성, dielectric reliability가 부족하다.
+
+
+high frequency power switching circuit에서는,
+gate control loop 안의 parasitic L, C때문에 gate ringing이 생겨 gate voltage가 operating bias를 넘어설 수 있다.
+
+
+
+
+
+
+참고자료: 'GaN-on-Si Power Technology: Devices and Applications'
