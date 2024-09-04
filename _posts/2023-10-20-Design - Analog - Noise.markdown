@@ -6,6 +6,30 @@ categories: Design
 order: 3
 ---
 
+IC 내 회로에는 다양한 이유로 noise가 발생한다.
+
+주변 구조에 의한 noise:
+Power supply noise
+substrate coupling noise
+EMI(Electromagnetic Interference)
+Crosstalk
+
+해결 방법:
+differential circuit,
+Guard ring, shielding 등 layout
+
+소자에 의한 noise:
+Thermal noise - 열에 의해 에너지를 받은 carrier들의 random한 움직임
+Flicker noise - material defect
+RTS noise - material defect
+shot noise - semiconductor junction의 carrier들이 만드는 pulse
+
+해결 방법:
+적절한 회로 구조
+더 많은 power
+
+
+
 7번 data summation을 하는데, 매번 8code noise가 있다면:
 summation한 data의 noise는 8sqrt7 = 21code. 8 7개를 rms한거다.
 모두 양수였으면 그냥 평균냈겠지만, 음수 양수 섞이면 rms해야 한다.
@@ -39,25 +63,6 @@ Layout때문에 kickback noise가 발생하는 경우도 있다.
 이럴땐 Parasitic Capacitance 안생기게 주변을 다 치워버려야 한다.
 
 
-주변에 의한 noise:
-Power supply noise
-substrate coupling noise
-EMI(Electromagnetic Interference)
-Crosstalk
-
-해결 방법:
-differential circuit,
-Guard ring, shielding 등 layout
-
-소자에 의한 noise:
-Thermal noise - 열에 의해 에너지를 받은 carrier들의 random한 움직임
-Flicker noise - material defect
-RTS noise - material defect
-shot noise - semiconductor junction의 carrier들이 만드는 pulse
-
-해결 방법:
-적절한 회로 구조
-더 많은 power
 
 
 noise는 플러스마이너스 모두로 움직이니까, 제곱으로 표현한다

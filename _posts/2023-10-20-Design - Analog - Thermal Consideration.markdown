@@ -34,7 +34,7 @@ $$T_j = 25^{\circ}C + 63^{\circ}C/W \cdot 1W = 88^{\circ}C$$가 된다.<br>
 <br>
 <br>
 Package가 낮은 $$\theta_{JA}$$를 갖기 위해서는:<br>
-Die 넓어서 열 방출이 쉬워야 하고,<br>
+Die가 넓어서 열 방출이 쉬워야 하고,<br>
 Pin 갯수가 많아 PCB로의 열 방출이 쉬워야 하고,<br>
 열 방출이 쉬운 물질로 lead frame을 만들어야 한다.<br>
 <br>

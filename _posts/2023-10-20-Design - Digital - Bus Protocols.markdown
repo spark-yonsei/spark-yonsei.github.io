@@ -6,6 +6,10 @@ categories: Design
 order: 6
 ---
 
+하드웨어끼리 데이터를 주고받기 위한 통신 시스템을 bus라고 부른다.
+다양한 통신 방식이 있기에,
+
+
 AHB는 burst가 되는데, APB는 안된다.
 
 <br>

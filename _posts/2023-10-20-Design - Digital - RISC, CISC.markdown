@@ -1,13 +1,27 @@
 ---
 layout: post
-title:  "Digital - RISC, CISC"
+title:  "Digital - ISA"
 date:   2023-10-04 19:31:29 +0900
 categories: Design
 order: 5
 ---
 
-CPU 동작을 위해서는 그 CPU에 맞는 
-
+CPU: Central Processing Unit<br>
+ISA: Instruction Set Architecture<br>
+<br>
+ISA는 CPU에서 사용되는 명령어들의 집합을 말한다.<br>
+정상적인 CPU 동작을 위해서는 그 CPU에 맞는 ISA를 사용해야 한다.<br>
+<br>
+ISA는 크게 RISC 계열과 CISC 계열이 있다.<br>
+ARM CPU는 RISC, x86-64 CPU는 CISC 계열 ISA를 사용한다.<br>
+<br>
+RISC ISA는 명령어 수를 최소화하고, 명령어 크기를 고정한 ISA다.<br>
+각 명령어들의 동작을 최적화해 효율을 높인다.<br>
+<br>
+CISC ISA는 여러 명령어들을 묶은 복합 명령어를 많이 갖고 있는 ISA다.<br>
+그래서 한 개 명령어로 구현할 수 있는 동작이 많다.<br>
+<br>
+<br>
 RISC CPU
 명령어 수 적음
 명령어 크기 고정
@@ -21,11 +35,7 @@ CISC CPU
 1개 명령어 처리속도 명령어마다 다름
 프로그래밍코드 단순
 
-명령어 수가 많으면, 하나의 명령어만 적어서 구현할 수 있는 동작들이 많다. 그래서 Cisc는 복합 명령을 하나의 명령으로 많이 갖고 있다
 
-Risc는 명령어 수를 최소화하고, 명령어 크기를 고정한 상태에서 명령어들의 동작을 최적화해 효율을 높인다
-
-일반적으로 pc계열은 cisc, arm계열은 risc를 쓴다
 
 왜 cisc는 명령어마다 길이가 다르냐?
 여러 명령들을 묶어서 만든 복합 명령들이 많아서 그렇다
