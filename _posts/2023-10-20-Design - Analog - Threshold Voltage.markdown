@@ -85,3 +85,21 @@ Satuation 상태 MOSFET의 Drain에 너무 높은 전압은 걸지 않는 것도
 <br>
 Native MOSFET에서는 모든 경향이 반대로 작용한다.<br>
 예를 들어, 온도가 증가하면 $$|V_{th}|$$가 증가한다.<br>
+
+
+CMP 공정에서, Dense pattern(Active가 dense하게 깔린 곳)과 sparse pattern(Active가 sparse하게 깔린 곳)이 깎이는 정도가 다르다.
+Dense pattern이 있는 곳은 잘 안깎여서 STI가 높게 남아있고, Sparse Pattern이 있는 곳은 잘 깎여서 STI가 낮게 남아있다.
+
+STI가 높으면 그 사이에 있는 MOSFET의 gate L이 늘어나고,
+STI가 낮으면 gate L이 줄어든다.
+polysilicon이 높은곳에서 낮은곳으로 흘러내려서 그렇다.
+
+결국 active dummy pattern이 없으면
+STI가 많이 깎여
+STI가 낮아져서
+gate L이 줄어들어 |Vth|가 변한다.
+
+이때 L이 줄어들면 |Vth|가 줄어드는 트랜지스터였다면, 결국 dummy pattern이 없어서 |Vth|가 줄어 leakage가 늘어나는 상황이 된다.
+감소한 |Vth|에 의한 leakage가 유의미하게 안보이더라도, 온도를 높여보면 leakage가 엄청나게 발생할 수도 있다.
+
+그러니, 중요한 트랜지스터 옆에는 꼭 dummy pattern을 넣어줘야 한다. 그래야 L이 영향을 안받고 |Vth|가 제대로 나온다.

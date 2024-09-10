@@ -154,4 +154,10 @@ Drive level은 crystal 내에서 소모된 전력을 말한다.
 $$DL = 2ESR \left( \pi f \left( C_L+C_o \right)V_{pp} \right)^2
 Vpp는 출력의 peak to peak 전압이다.
 
-TCXO: Temperature Compensated Crystal Oscillator
+TCXO: Temperature Compensated Crystal 
+
+고주파 Oscillator를 만들 경우, layout에서 작은 Capacitance만 생겨도 LPE해보면 출력주파수가 많이 떨어질 수 있다.
+
+Oscillator 주파수는, 온도가 올라가면 주파수가 떨어지는게 좋다.
+온도가 올라가면 소자들이 느려지니까, settling time이 늘어나기 때문이다.
+주파수가 내려가줘야 문제 없이 잘 동작한다.

@@ -43,3 +43,20 @@ DSM은 이 0.75를 꾸준히 샘플하고, 비교기값에 따라 인풋에 feed
 
 
 나무위키 ADC, DAC 문서 정리
+
+Bosor - Wooley Delta Sigma ADC: Non-delayed integrator를 쓰는 ADC.
+이 구조에서는 C가 줄어들면 input->output delay가 크게 감소한다.
+그러면 신호가 한번에 훅 들어와서, quantizer 출력이 이상하게 나올 수 있다.
+
+지금 문제는, C가 f corner일 때 ADC의 ENOB가 상당히 작게 나온다는 것이다.
+결국, C가 작아지면 ENOB가 작게 나온다는 것이다.
+
+앞에서 말한 문제가 맞는지 확인하기 위해, ADC에 집어넣는 전류를 줄여볼 수 있다.
+전류를 줄이면 Amp BW가 줄어들어 Amp가 느려진다.
+이때 출력이 정상적으로 나온다면, Amp가 너무 빨라서 생긴 settling time 문제였던 거다.
+
+
+ADC 입력이 Quantizer로 바로 들어가게 하는 feed-forward 구조도 있고,
+ADC 입력이 Integrator 2로 바로 들어가게 하는 feed-forward 구조도 있다.
+
+Delta Sigma ADC에는 Single Stage Amp 쓰는게 가장 좋다. 2 stage부터는 전류만 많이 쓴다.

@@ -132,3 +132,28 @@ Pass transistor W/L이 늘어나면 load current가 늘어나고, 보상이 어�
 마스크 비용을 아끼기 위해, 3.3V 소자 대신 1.8V 소자 stack과 전류 bias로 회로를 구성할 수도 있는 것이다.<br>
 <br>
 물론 이 경우에는 3.3V 소자를 사용하는 경우보다 소비전류가 많은 회로가 제작된다.<br>
+
+
+LDO Cout에 달린 ESR저항이 zero를 만들어 PM을 개선하는 역할을 하는데,
+이걸로 부족할 경우에는 LDO 출력에 저항이 보이도록 하면 된다.
+ESR과 비슷하게, zero compensation 역할을 한다.
+
+Display driver는 ITO(Indium-Tin-Oxide)가 연결되기 때문에 저항 수옴정도가 보인다.
+그래서 딱히 저항을 달지 않아도 compensation이 된다.
+
+LDO 출력에서 PAD를 통해 전압 출력이 나갈때, PAD까지 가는 배선에 의해 저항이 생긴다.
+내부 Logic 회로 power는 LDO 출력이 PAD까지 가는 배선 위 어딘가에 연결될텐데,
+LDO 출력에 가까운 곳에 해야 배선 저항이 온전히 zero를 만드는데에 쓰인다.
+LDO 출력에서 먼 곳, 아예 PAD쪽에 logic power 배선을 연결하면 배선 저항이 frequency compensation에 도움이 안된다.
+
+
+저항을 이용해 zero를 만들어 PM을 개선할 수 있지만,
+저항이 너무 크거나 전류가 많이 흐를때는 전압강하가 커서 문제가 생긴다.
+
+
+PAD는 옛날에는 stack 구조를 많이 썼지만, 요즘은 Cup 구조를 많이 쓴다.
+PAD는 넓은 도체 판을 올려놓은거라, 저항이 아주 작다.
+
+Pad 위에 Bump를 올리고, RDL을 놓는다.
+RDL은 두꺼운 도체라서 저항이 작고, Bump도 도체 덩어리라서 저항이 작다.
+즉, LDO 출력에 달린 저항 생각할때는 내부 배선 저항만 생각하면 된다.

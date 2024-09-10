@@ -142,3 +142,23 @@ F-35는 그동안 파일럿들이 해온 온갖 페달, 손잡이 조작들을 �
 물론 이 방법도 문제가 있다. 반도체 생산라인 하나당 하루에 10테라바이트씩 데이터가 쌓여서 감당이 안된다.
 
 그렇기에 여러가지 다양한 방법으로 에러를 사전에 포착하려 한다.
+
+
+Layout에서 Active를 깔지 않은 공간은 모두 STI로 채워진다.
+
+CMP 공정에서, Dense pattern(Active가 dense하게 깔린 곳)과 sparse pattern(Active가 sparse하게 깔린 곳)이 깎이는 정도가 다르다.
+Dense pattern이 있는 곳은 잘 안깎여서 STI가 높게 남아있고, Sparse Pattern이 있는 곳은 잘 깎여서 STI가 낮게 남아있다.
+
+STI가 높으면 그 사이에 있는 MOSFET의 gate L이 늘어나고,
+STI가 낮으면 gate L이 줄어든다.
+polysilicon이 높은곳에서 낮은곳으로 흘러내려서 그렇다.
+
+결국 active dummy pattern이 없으면
+STI가 많이 깎여
+STI가 낮아져서
+gate L이 줄어들어 |Vth|가 변한다.
+
+이때 L이 줄어들면 |Vth|가 줄어드는 트랜지스터였다면, 결국 dummy pattern이 없어서 |Vth|가 줄어 leakage가 늘어나는 상황이 된다.
+감소한 |Vth|에 의한 leakage가 유의미하게 안보이더라도, 온도를 높여보면 leakage가 엄청나게 발생할 수도 있다.
+
+그러니, 중요한 트랜지스터 옆에는 꼭 dummy pattern을 넣어줘야 한다. 그래야 L이 영향을 안받고 |Vth|가 제대로 나온다.
