@@ -157,3 +157,29 @@ PAD는 넓은 도체 판을 올려놓은거라, 저항이 아주 작다.
 Pad 위에 Bump를 올리고, RDL을 놓는다.
 RDL은 두꺼운 도체라서 저항이 작고, Bump도 도체 덩어리라서 저항이 작다.
 즉, LDO 출력에 달린 저항 생각할때는 내부 배선 저항만 생각하면 된다.
+
+
+Digital LDO: Pass TR의 Vgs가 아닌 size를 조정한다.
+
+
+NMOS LDO: 더 낮은 Dropout voltage를 갖는다.
+더 낮은 전압에서도 동작할 수 있으니 power efficient하다는거다.
+
+LDO PSRR 개선 방식:
+
+Pre-regulated supply: Cascode TR 구조, Passive LPF 등을 supply와 LDO 사이에 연결한다.
+power가 LDO에 들어오기 전에 noise를 줄여서 집어넣자는건데,
+추가 회로들이 LDO power TR과 직렬로 연결되니, Dropout voltage가 너무 높아질 수 있다.
+dropout voltage가 너무 높으면? 구현 가능한 최대 power efficieny가 낮아진다.
+
+
+FFRC(Feedforward Ripple Cancellation):
+power-LDO출력 사이 feedforward path를 만들어서 supply noise 전달을 줄인다?
+이 방법에서는 전류가 변하면 gain이 비례해서 변해야 하는데, 이걸 넓은 전류 범위에서 만들기 어렵다.
+
+NMOS LDO는 PMOS LDO보다 Rout(1/gm)이 더 작아서,
+load current가 변할때 overshoot/undershoot가 더 작다.
+
+NMOS LDO는 pass TR gate 전압이 LDO 입력 전압을 넘는 상황이 발생할 수도 있다.
+dropout voltage가 낮으니, 낮은 전압 입력을 받을 가능성이 높으니까.
+그러지 않도록, supply voltage를 충분히 높게 걸어줘야 한다.

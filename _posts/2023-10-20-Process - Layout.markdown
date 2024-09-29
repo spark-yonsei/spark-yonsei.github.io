@@ -144,4 +144,30 @@ Rule file과 GDS file을 준비한다.
 마지막이:
 Job deck view
 
-mask 제작 의뢰
+mask 제작 
+
+M1을 세로로 배선했으면 M2 배선은 가로로, M3배선은 세로로 한다.
+metal layer마다 가로세로를 번갈아 하는 것이다.
+바로 다음 layer랑 같은 방향으로 쭉 뻗어있으면 사이에 capacitance가 크게 생겨서 그렇다.
+
+capacitance가 작아야 하는 node는 높은 layer를 쓰기도 한다.
+다른 node들은 metal1,2로 연결하고 중요한 node는 metal4,5로 연결하는 식
+높이 떨어뜨려놔야 사이 거리가 늘어나서 capacitance가 줄어든다.
+
+
+power line 저항을 줄이기 위해 metal 배선을 넓게 하는데, 이걸로도 부족할 수도 있다.
+이럴 때는 Metal 1,2를 둘다 깔아놓고 Via로 쭉 연결해둔다.
+
+
+display driver에는 amp가 1000개씩 들어간다.
+그래서 power line도 길기 때문에 IR drop에 의해 각 amp에 전압이 다르게 들어갈 수 있다.
+Amp 1000개면 LPE도 제대로 못돌린다. 너무 소자가 많으니까.
+
+Digital에서는 IR drop 문제될때가 많다. 한번에 전류를 크게 당기니까 전압이 많이 떨어져서 들어온다.
+그래서 digital block 바로 옆에 decap cell을 달아서 문제를 어느정도 해결한다.
+전류를 decap cell에서 당기면 IR drop이 안보이니까.
+
+PCB에서 IC 바로 옆에 캐패시터 붙이는 것도, PCB 배선에 의한 L,R 최소한으로 보려고 그러는거다.
+
+
+RDL: Redistribution Layer

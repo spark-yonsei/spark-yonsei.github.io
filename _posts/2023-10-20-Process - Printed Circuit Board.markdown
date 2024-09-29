@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "기판"
+title:  "Printed Circuit Board"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 14
@@ -8,6 +8,7 @@ order: 14
 
 PCB 기판
 
+원래 PCB에 쓰는거: FR-4 Fiberglass
 원래는 유기물로 PCB 기판을 만들었는데, 요즘은 유기물 대신 유리로 만들려는 움직임이 있다.
 
 반도체기판은 칩과 컴퓨터 메인보드를 연결하는 부품이다. 현재 플라스틱과 같은 유기소재가 널리 쓰인다. 여러 개의 칩이 하나의 반도체처럼 동작하는 이종집적을 위해선 칩과 유기기판 사이 인터포저(중간 기판)가 필요하다.
@@ -29,7 +30,7 @@ HB테크놀러지: 유리기판 장비
 에프엔에스테크: 식각 공정
 
 
-원래 PCB에 쓰는거: FR-4 Fiberglass
+
 
 유리기판의 장점:
 Thermal conductivity가 높아서, 열을 더 효율적으로 방출할 수 있다.
