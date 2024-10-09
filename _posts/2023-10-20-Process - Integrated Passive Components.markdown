@@ -97,3 +97,17 @@ capacitance density가 높다.
 
 capacitance가 생기려면 밑에 channel이 생겨야 해서 그렇다.
 그래서 전압이 낮으면 capacitance가 없다가 전압이 올라가면 생긴다.
+
+
+
+MIM capacitors: similar to plate capacitors, the capacitance value is more accurate, and the capacitance value does not change with the bias voltage. Generally, mTOP l & mTOP -1 are used in the manufacturing process. The capacitance value can be estimated by the upper board area * unit capacitance value. The upper and lower plate connections are not interchangeable, and are generally used in analog and RF processes.
+
+MOM capacitor: Interdigital capacitor, which uses C between the edges of the same layer of metal. In order to save the area, multiple layers of metal can be stacked, and the number of metal layers in PDK can be selected.
+
+MOM capacitors are generally only used in advanced manufacturing processes of multilayer metals. Because it is realized through the layout of multilayer wiring, the determinism and stability of the capacitance value obtained are not as good as MIM. Generally, it may be used in applications that do not require high capacitance values.
+
+MOS capacitor: MOS transistor with two ends structure, the capacitance value is not accurate. It can realize the capacitance value that changes with the change of the control voltage, and the connection of the upper and lower plates is not interchangeable.
+
+Comparison of the capacitance values of three capacitors with the same area: MIM<MOM, MIM is about 1/3 MOS capacitance value.
+
+The advantage of the MOM capacitor is that no additional mask is required, and MIM requires an additional mask and process to be realized.

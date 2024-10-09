@@ -12,6 +12,11 @@ breakdown voltage도 더 높고, reliability도 더 높다.
 대신 shot noise는 있다
 이건 고주파 noise
 
+BJT는 주파수가 올라가면 burst noise가 증가한다.
+이거 shot noise랑은 또 다른것같은데 확인 필요
+그래서 RF 회로 만들때 BJT보다 CMOS가 낫다는 의견도 있다.
+하지만 꼭 그런건 아니다. source impedance도 영향을 줘서 복잡하다.
+
 온도센서에는 BJT가 들어가는데, 전원전압이 너무 내려가면 쓸 수가 없다.
 그리고 사실 PnR을 위해서는 BJT가 없는게 낫다.
 

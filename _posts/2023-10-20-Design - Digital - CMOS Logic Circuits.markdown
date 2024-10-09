@@ -101,27 +101,3 @@ Verification:
 근데, 트랜지스터가 작아져서 커다란 digital system들이 한 IC에 들어가게 되자,
 모든 process corner에서 chip이 잘 동작하도록 하는 design verification이 복잡해졌다.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
