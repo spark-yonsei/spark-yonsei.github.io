@@ -58,3 +58,5 @@ L이 점점 짧아지면서 leakage가 점점 늘어나 무시하기 어렵게 �
 이 gate current는 BJT의 base current와 유사하지만,
 gate current는 트랜지스터가 꺼져도 흐른다는 문제가 있다.
 
+Comparator Input TR에 BJT를 쓰면 offset, noise가 적다.
+CMOS로 같은 offset, noise 성능을 만들려면 크기를 엄청나게 키워야 한다.
