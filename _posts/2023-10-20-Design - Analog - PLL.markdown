@@ -70,3 +70,5 @@ Order: loop 내 pole의 수
 언제나 order > type,
 언제나 PLL은 type 1 이상
 
+
+요즘은 PLL에도 LDO가 들어간다.

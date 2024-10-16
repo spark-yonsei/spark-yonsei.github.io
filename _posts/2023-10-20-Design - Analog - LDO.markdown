@@ -83,6 +83,12 @@ Feedback Loop가 Stable하다(Phase Margin이 크다).<br>
 Capless LDO의 단점:<br>
 출력 전압이 비교적 쉽게 흔들린다.<br>
 따라서 설계에 주의를 요한다.<br>
+
+
+사실 LDO에 캐패시터 달면 동작상으로는 좋다.
+PSRR 좋아지고, stability 좋아지고, noise 사라진다.
+근데 캐패시터 때문에 면적이 커진다는게 문제다.
+
 <br>
 <br>
 LDO는 출력 node에 큰 전류가 흘러야 하는 경우에 쓰인다.<br>
@@ -103,6 +109,12 @@ LDO가 디지털 회로에 연결될 경우에는 PSRR이 조금 낮아도 동�
 이때는 전압이 짧은 시간동안 튀는 상황을 조심해야 한다.<br>
 그 짧은 시간동안 소자들에 stress가 가해지고, stress가 쌓이면 소자 동작에 문제가 생길 수 있다.<br>
 그래서 튀는 전압을 최대한 줄여야 한다.<br>
+<br>
+LDO가 아날로그 회로에 연결될 경우에는 PSRR이 중요한데,<br>
+고주파에서는 capacitance의 영향으로 loop gain이 부족해 PSRR이 낮아진다.<br>
+<br>
+LDO 설계시 속도 개선을 위해 feed forward path를 만들어 두는 경우가 있는데,<br>
+고주파에서 loop gain을 떨어뜨리기 때문에 PSRR에는 방해가 된다.<br>
 <br>
 <br>
 LDO와 미세공정:<br>
@@ -133,6 +145,10 @@ Pass transistor W/L이 늘어나면 load current가 늘어나고, 보상이 어�
 <br>
 물론 이 경우에는 3.3V 소자를 사용하는 경우보다 소비전류가 많은 회로가 제작된다.<br>
 
+ESR 저항:
+
+
+
 
 LDO Cout에 달린 ESR저항이 zero를 만들어 PM을 개선하는 역할을 하는데,
 이걸로 부족할 경우에는 LDO 출력에 저항이 보이도록 하면 된다.
@@ -160,7 +176,8 @@ RDL은 두꺼운 도체라서 저항이 작고, Bump도 도체 덩어리라서 �
 
 
 Digital LDO: Pass TR의 Vgs가 아닌 size를 조정한다.
-
+Digital LDO를 쓰면 headroom을 크게 개선할 수 있지만, ripple 등 단점이 많다.
+사실 아날로그 LDO가 더 낫긴 하다.
 
 NMOS LDO: 더 낮은 Dropout voltage를 갖는다.
 더 낮은 전압에서도 동작할 수 있으니 power efficient하다는거다.
@@ -183,3 +200,19 @@ load current가 변할때 overshoot/undershoot가 더 작다.
 NMOS LDO는 pass TR gate 전압이 LDO 입력 전압을 넘는 상황이 발생할 수도 있다.
 dropout voltage가 낮으니, 낮은 전압 입력을 받을 가능성이 높으니까.
 그러지 않도록, supply voltage를 충분히 높게 걸어줘야 한다.
+
+
+
+Logic에 연결되면, load가 항상 달려있는 상태가 된다.
+Logic에서 leakage가 계속 새고 있으니까.
+
+
+
+LDO Stability 보상 방식중에, ESR을 쓰는 방식들이 많이 소개되어 있다.
+하지만 요즘은 그런 보상방식을 쓰지 않는다.
+옛날에 탄탈륨 캐패시터 쓸때는 ESR이 좀 돼서 가능했는데,
+요즘은 MLCC를 쓰기 때문에 ESR이 없다.
+
+LDO를 연결하는 도체때문에 인덕턴스가 생길수도 있다.
+입력이든 출력이든 인덕턴스가 생길 수 있는건데,
+이 인덕턴스 때문에 bode plot이 특정 구간에서 튈 수도 있으니 잘 확인해줘야 한다.
