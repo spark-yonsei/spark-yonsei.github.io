@@ -27,7 +27,9 @@ Hard-working LNADC:
 
 
 
-Flash ADC
+Flash ADC:
+
+
 양자화 기준점마다 비교기를 두고 샘플된 인풋에 대해 모든 비교기가 동시에 동작하는 방식의 ADC. 속도가 매우 빠르다는 장점이 있지만 N-bit 변환을 위해 2^N - 1개의 비교기가 필요하므로 고해상도에는 적합하지 않고 전력 소모가 심하다. 보통 5bit 이하에 저해상도이면서 고속 동작을 요구하는 어플리케이션에 이용된다.
 Flash ADCs, also known as parallel ADCs, are among the fastest ADC architectures, making them suitable for high-speed applications such as oscilloscopes and radar systems. A flash ADC consists of a large number of comparators operating in parallel, each comparing the input voltage to a reference voltage. For an n-bit ADC, 2^n−1 comparators are needed, along with a resistive ladder network to generate the reference voltages. Once the input signal is compared to the reference, the comparators generate a corresponding digital code in a single clock cycle.
 

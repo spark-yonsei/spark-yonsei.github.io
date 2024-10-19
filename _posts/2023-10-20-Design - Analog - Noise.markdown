@@ -105,7 +105,14 @@ noise power density가 주파수에 반비례해서 1/f noise라고도 부른다
 
 1/f noise를 줄이려면?
 WL을 키워서 면적을 키우면 줄어든다.
-방식으로는 chopping 등 방식을 쓴다.
+1/f noise를 줄이는 회로 동작 방식으로는 LSE, chopping, CDS가 있다.
+
+LSE(Large Scale Excitation):
+
+
+chopping:
+
+CDS(Correlated Double Sampling):
 
 
 MOSFET이 amplifier로 쓰인다면,
