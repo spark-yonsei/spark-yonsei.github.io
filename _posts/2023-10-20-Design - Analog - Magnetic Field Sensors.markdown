@@ -7,10 +7,12 @@ order: 3
 ---
 
 Magnetic Sensors:
+Magnetic sensor에는 Hall Sensor와 TMR Sensor가 있다.
+
+Hall Sensor:
 Hall Sensor는 작은 signal voltage를 쓰기 때문에, 온도/전압 흔들림이나 기계적 stress에 많이 영향받는다.
 
-TMR Sensor: Tunnel Magnetoresistive Sensor
-
+TMR(Tunnel Magnetoresistive) Sensor:
 magnetoresistive effect에 의해, 자기장이 변하면 전기저항이 변하는 현상을 이용한다.
 이때 tunnel effect를 통해, 자기장이 바뀌면 전기저항이 크게 바뀌도록 한 구조가 TMR Sensor다.
 
@@ -29,6 +31,8 @@ TMR Sensor: better SNR, low power consumption
 
 2가지 sensor를 동시에 쓰기도 한다.
 Hall sensor는 high current detection, TMR sensor는 low current detection에 쓰는 식으로.
+
+
 
 
 

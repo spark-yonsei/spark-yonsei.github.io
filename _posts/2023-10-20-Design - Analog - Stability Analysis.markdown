@@ -50,4 +50,6 @@ Gain Margin이 0dB라면 입력에 입력과 같은 크기의 feedback이 더해
 따라서 회로가 불안정하다.<br>
 <br>
 <br>
-Feedback이 없는 회로에서는 Stability Analysis를 할 필요가 없다.
+Feedback이 없는 회로에서는 Stability Analysis를 통해 안정 불안정을 따지지는 않는다.
+Feedback이 없으면 일단 안정한 회로다.
+대신, Phase Margin을 통해 회로의 반응속도와 Overshoot 사이 tradeoff를 정량적으로 관찰한다.
