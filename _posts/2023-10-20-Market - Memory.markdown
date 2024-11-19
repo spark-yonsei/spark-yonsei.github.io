@@ -208,3 +208,4 @@ HPA: 소자 계면 결함을 제거 -> 신뢰성, 성능 개선
 SSD, DRAMless SSD
 
 NAND, NOR memory
+

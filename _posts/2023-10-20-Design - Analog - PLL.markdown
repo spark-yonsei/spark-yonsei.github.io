@@ -72,3 +72,19 @@ Order: loop 내 pole의 수
 
 
 요즘은 PLL에도 LDO가 들어간다.
+
+
+
+PLL은 Oscillator에서 생성된 신호가 Reference signal에 'phase locked'되도록 만드는 negative feedback system이다.
+
+PLL Applications:
+
+Zero Delay buffer:
+Main Clock이 subblock들에 전달되는데, 이때 block까지의 거리가 모두 제각각이라 도착하는 clock들의 phase도 제각각이다.
+근데, data는 clock이랑 다른 경로로 들어오니까, 도착하면 clock과 data의 phase가 안맞는다. 즉, skew가 안맞는다.
+이때 phase를 맞춰주기 위해 PLL을 쓸 수 있다.
+
+Low-Jitter Sampling Clock:
+PLL로 입력 clock의 low frequency jitter를 없앨 수 있다.
+jitter를 없앤 clock을 sampling 등에 활용할 수 있다.
+
