@@ -57,3 +57,6 @@ Thermal conductivity가 높아서, 열을 더 효율적으로 방출할 수 있�
 
 유리기판 공정에서 필요한 기술은 TGV(Through Glass Via) 기술이다.
 Silicon에 구멍 뚫는 기술인 TSV(Through Silicon Via)와 유사하다.
+
+
+수지다층기판?
