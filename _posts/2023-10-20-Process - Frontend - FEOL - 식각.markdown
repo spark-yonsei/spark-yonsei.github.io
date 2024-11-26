@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Frontend - FEOL - 식각(Etching)"
+title:  "Frontend - FEOL - Etching"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 4

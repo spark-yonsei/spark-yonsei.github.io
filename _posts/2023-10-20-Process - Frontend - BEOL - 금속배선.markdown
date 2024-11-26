@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Frontend - BEOL -  금속 배선(Metallization)"
+title:  "Frontend - BEOL -  Metallization"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 7

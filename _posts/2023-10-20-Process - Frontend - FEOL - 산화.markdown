@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Frontend - FEOL - 산화(Oxidation)"
+title:  "Frontend - FEOL - Oxidation"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 2

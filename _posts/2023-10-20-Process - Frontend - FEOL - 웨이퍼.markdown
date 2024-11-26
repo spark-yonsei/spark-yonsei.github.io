@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Frontend - FEOL - 웨이퍼 제조(Wafer Fabrication)"
+title:  "Frontend - FEOL - Wafer Fabrication"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 1

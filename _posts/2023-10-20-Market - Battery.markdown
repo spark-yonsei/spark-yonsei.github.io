@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lithium-Ion Battery"
+title:  "Battery"
 date:   2023-10-04 19:31:29 +0900
 categories: Market
 order: 12
@@ -134,6 +134,8 @@ Ultracapacitor? 배터리랑 뭐가 다른가
 
 
 
+
+
 나트륨 이온전지:
 리튬보다 매장량도 많고, 채굴과 제련도 쉽다.
 나트륨 반응성이 리튬보다 낮아 전지 내부 안정성이 더 높다
@@ -146,6 +148,9 @@ Ultracapacitor? 배터리랑 뭐가 다른가
 나트륨 이온은 리튬 이온보다 입자가 크기 때문에,
 기존 음극재인 흑연보다 층간 거리가 큰 hard carbon을 써야 한다.
 hard carbon은 자연에 없어 인공으로 만들어야 한다.
+
+
+
 
 리튬이온배터리는 양극-분리막-음극이 겹겹이 쌓인 구조로 되어 있다
 

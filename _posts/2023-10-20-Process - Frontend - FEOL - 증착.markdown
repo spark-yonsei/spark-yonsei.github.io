@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Frontend - FEOL - 증착(Deposition)"
+title:  "Frontend - FEOL - Deposition"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 5

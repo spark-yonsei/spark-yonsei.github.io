@@ -60,3 +60,5 @@ Silicon에 구멍 뚫는 기술인 TSV(Through Silicon Via)와 유사하다.
 
 
 수지다층기판?
+
+FPCB: Flexible PCB
