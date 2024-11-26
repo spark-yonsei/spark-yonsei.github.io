@@ -187,3 +187,12 @@ Key Questions:
 What are the trade-offs between clock speed and power consumption in ADC systems?
 How does interrupt latency affect real-time system performance?
 What are the design considerations for creating an efficient interrupt map in complex IC designs?
+
+
+SAR는 scaling에 좋아서 요즘은 SAR 많이 쓴다
+pipeline은 잘 안쓴다
+
+buffer 만드는게 더 어려워졌따
+GHz Buffer는 만들기가 어렵다
+
+RF Receiver MPAC?
