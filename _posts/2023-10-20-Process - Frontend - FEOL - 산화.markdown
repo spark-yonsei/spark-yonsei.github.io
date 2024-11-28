@@ -116,3 +116,39 @@ nitride를 끼우면 유전율은 증가하지만 metal이랑 junction이 안좋
 
 트랜지스터 mult랑 finger를 다르게 그리는 경우가 있는데,
 두 경우에 STI stress가 다르기 때문에 조심해야 한다.
+
+
+
+
+STI Stress:
+기존에는 active끼리 분리하기 위해 LOCOS(Local Oxidation Of Silicon) 방식을 썼는데,
+이러면 bird's beak 현상때문에 active 영역 면적 손해가 발생했고, 집적도를 높이기도 힘들었다.
+이 현상은 가로방향으로 산화 영역이 늘어나는 현상이다.
+
+이제는 STI(Shallow Trench Isolation) 방식을 쓴다.
+근데 공정이 더 작아지다보니 STI에서도 문제가 생기고 있다.
+STI에 채워넣는 물질이 active를 미는 힘을 만들어서, active에 기계적 stress를 준다.
+
+이러면 gate length가 줄어들어 leakage current가 증가한다.
+
+이 영향을 줄이기 위해, dummy tr을 추가하거나, array 구조로 active를 계속 연결한다.
+
+Active 없는곳은 다 isolation이다. 여기에는 SiO2가 채워진다.
+이 SiO2가 양옆을 밀어서 STI stress effect가 생긴다.
+
+이 효과에 의해:
+PMOS는 mobility 증가, Vth 증가
+NMOS는 mobility 감소, Vth 증가
+
+여기서 PMOS는 mobility 증가 효과가 커서 전류가 증가하고 빨라진다
+NMOS는 전류가 줄어들고 느려진다
+결국 소자들이 설계랑 다르게 동작하게 되는거다
+
+이 효과를 줄이려면, 채널 방향 Source Drain을 길게 만들거나
+finger를 집어넣어서 가운데 소자에 stress가 잘 안들어가게 해야 한다.
+
+미세 공정에서는 leakage current 문제가 심각하기 때문에,
+STI stress effect를 이용해 Vth를 늘리는 설계 방식이 있다.
+
+MOSFET 양옆에 dummy Poly를 넣어서 STI effect를 주고,
+결과적으로 Vth가 증가해 leakage current가 줄어들게 하는 방식이다.

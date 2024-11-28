@@ -220,3 +220,33 @@ Well Proximity Effect:<br>
 근데, 그냥 중요한 MOSFET이면 가장자리에서 멀리 떼어놓는게 좋다.<br>
 
 https://kor-razavai.tistory.com/29
+
+
+
+WPE:
+Nwell을 형성하기 위해 ion implant를 할 떄,
+photoresist 없는 영역에는 이온이 박히고,
+photoresist 있는 영역은 photoresist에 막혀서 이온이 안 박힌다.
+
+이때, 일부 이온이 photoresist에 튕겨져 나와 well에 들어간다.
+그 결과, well의 edge 부분에는 더 많은 이온이 박혀 doping 농도가 증가한다.
+
+이러면 무슨 문제가 생기냐?
+Nwell 위에 PMOS를 만들어야 하는데,
+Nwell 농도가 높으면 channel에 hole 모이기 힘들어진다.
+그래서 channel이 만들어지기 더 힘들게 되어 Vth가 증가한다.
+
+그니까, well의 edge쪽 트랜지스터들은 원래 의도보다 Vth가 높아지는거다.
+이러면 켜지는 전압도 높아지고, 켜졌을때 전류도 줄어든다.
+
+이걸 예방하려면, 소자들은 well edge로부터 멀리 떨어뜨려야 한다.
+
+멀리 떨어뜨리는게 확실해서 좋겠지만,
+너무 멀리 떨어뜨리면 소자들을 연결하는 배선이 길어져 metal 저항이 늘어나고, 전체 layout 크기도 늘어나게 된다.
+
+그래서 적당히 떨어뜨려줘야 한다.
+
+Well을 만든 뒤 guardring을 쳐두면 WPE 효과가 거의 안보인다. guardring 두께가 있으니까.
+
+Sheet gate Oxide는 고전압 트랜지스터에서 나타나는 현상인데, 비슷한 현상이다.
+

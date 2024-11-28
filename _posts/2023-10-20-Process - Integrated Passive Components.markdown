@@ -6,14 +6,27 @@ categories: Process
 order: 14
 ---
 
-Integrated Resistors:
-전도도가 낮은 strip으로 저항을 만든다.
-
-저항값을 결정하는 요소는 두가지다.
-Resistor dimension,
-material composition(resistivity)
-
-저항에 Variation이 일어난다면, 이 두가지 요소가 흔들려서 그렇다.
+IC를 만들기 위해서는 트랜지스터 뿐 아니라 저항, 캐패시터, 인덕터를 웨이퍼 위에 구현해야 한다.<br>
+같은 저항이더라도 어떤 방식으로 구현하느냐에 따라 특성이 크게 변할 수 있다.<br>
+<br>
+<br>
+Integrated Resistors(저항):<br>
+Resistivity가 높은 박막으로 저항을 구현한다.<br>
+<br>
+저항값을 결정하는 요소는 2가지다.<br>
+저항의 가로세로 길이, 저항을 이루는 물질의 Resistivity다.<br>
+구현한 저항값에 편차가 생긴다면, 이 두가지 요소가 흔들린 것이다.<br>
+<br>
+길이 편차의 원인:<br>
+균등하지 않은 etch rate,<br>
+Photolithography 오차<br>
+<br>
+Resistivity 편차의 원인:<br>
+Doping Concentration, Doping Profile<br>
+Annealing Conditions<br>
+Fluctuation in Film thickness<br>
+<br>
+<br>
 
 resistivity[Ohm*cm]
 Cu: 1.7*10^-6
@@ -21,14 +34,7 @@ Al: 2.7*10^-6
 N-type Si: 0.25
 SiO2: ~10^14
 
-Sheet resistance variation 원인:
-Doping Concentration, Doping Profile
-Annealing Conditions
-Fluctuation in Film thickness
 
-Dimensional Variance 원인:
-photolithographic inaccuracies
-non-uniform etch rates
 
 온도가 바뀌면 저항값도 바뀐다.
 재료에 따라 저항값이 달라서,
@@ -45,6 +51,9 @@ W를 늘리면 parasitic capacitance도 늘어나는 문제가 있다.
 
 Silicide block layer는 option으로 제공된다.
 sheet resistance를 크게 올려준다.
+
+
+
 
 
 MOS resistance:
