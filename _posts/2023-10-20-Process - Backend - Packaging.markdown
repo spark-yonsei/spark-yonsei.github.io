@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Backend - 패키징(Packaging)"
+title:  "Backend - Packaging"
 date:   2023-10-04 19:31:29 +0900
 categories: Process
 order: 11
