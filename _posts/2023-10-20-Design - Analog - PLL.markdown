@@ -88,3 +88,5 @@ Low-Jitter Sampling Clock:
 PLL로 입력 clock의 low frequency jitter를 없앨 수 있다.
 jitter를 없앤 clock을 sampling 등에 활용할 수 있다.
 
+
+RF PLL에서는 Spur 없애는게 가장 중요하다.

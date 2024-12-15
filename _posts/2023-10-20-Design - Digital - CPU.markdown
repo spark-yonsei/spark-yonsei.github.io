@@ -1,12 +1,16 @@
 ---
 layout: post
-title:  "Digital - ISA"
+title:  "Digital - CPU"
 date:   2023-10-04 19:31:29 +0900
 categories: Design
 order: 5
 ---
 
 CPU: Central Processing Unit<br>
+
+
+
+
 ISA: Instruction Set Architecture<br>
 <br>
 ISA는 CPU에서 사용되는 명령어들의 집합을 말한다.<br>
@@ -50,3 +54,38 @@ Cisc는 명령어마다 다르다. 복합 명령들이 읶으니까
 Cisc에서 모든 명령을 다 숙지하고 있다면, 딱 적합한 명령어를 써서 프로그래밍을 단순하게 할 수 있다
 
 근데 그렇게 되는거 자체거 힘든 일이라, 꼭 cisc가 risc보다 프로그래밍이 쉽다고는 할 수 없다
+
+
+
+Intel SGX, AMD TrustZone:
+
+CPU: 명령어를 수행하는 역할
+OS: 어떤 시스템이 언제 수행될지 순서, 스케줄링을 해주는 역할
+
+그래서, 사실 CPU는 OS가 없어도 동작할 수 있다.
+명령어랑 메모리만 주어지면 동작한다.
+
+OS로부터 분리된 Enclave라는 곳에 메모리, 명령어를 넣어두면
+OS가 해킹당해도 CPU가 Enclave에 적힌대로 동작할 수 있다.
+
+
+데이터는 SSD에 저장되지만, SSD는 CPU에 비해 너무 느리다.
+그래서 데이터를 RAM에 담아두고, CPU는 RAM과 소통한다.
+
+컴퓨터 내 메모리는 SSD, RAM, Cache, Register가 있다.
+오른쪽으로 갈수록 빠르고, 비싸고, 용량이 작다.
+
+Register는 CPU 내에서 데이터를 잠깐 저장하는 장치다. 얘가 제일 빠르다.
+
+Cache메모리에는 L1 L2 L3이 있다 (Level의 L)
+L1이 제일 빠르고 용량이 작다.
+
+CPU는 필요한 데이터를 L1 L2 L3 RAM 순으로 찾는다
+속도가 빠른 메모리부터 찾아보는 순서다
+
+CPU가 메모리에서 데이터를 읽어올 때,
+16비트면 메모리에서 한번에 16비트, 32비트면 한번에 32비트 데이터를 읽어온다.
+
+CPU의 각 process를 thread라 부른다.
+속도를 높이고 싶다면 core 하나에서 여러개 thread를 실행시키면 될 것이다.
+가능하다면, core 수를 늘려도 CPU 속도가 빨라질 것이다.

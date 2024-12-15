@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Digital - CMOS Logic Circuits"
+title:  "Digital - CMOS Logic Considerations"
 date:   2023-10-04 19:31:29 +0900
 categories: Design
 order: 5
@@ -26,11 +26,14 @@ Logic 회로는 트랜지스터의 on/off characteristic을 이용해 만든거�
 트랜지스터가 작아져서 IC에 더 많은 트랜지스터를 넣을 수 있으면, 더 많은 연산을 할 수 있기 때문이다.<br>
 <br>
 더 작은 트랜지스터를 활용해 IC 하나에 더 많은 logic block들을 넣다보니 새로운 문제들이 발생하게 됐다.<br>
-Delay 관련 문제와 Power 관련 문제다.<br>
+Delay 관련 문제, Power 관련 문제, Verification 관련 문제다.<br>
 <br>
 <br>
 Delay 관련 문제:<br>
 Logic 회로에서 수행해야 하는 function이 복잡해지면서,
+회로가 더 많은 트랜지스터, 더 많은 면적을 필요로 하게 되었다.
+
+
 function 하나를 여러 block들로 쪼개고 
 
 
@@ -76,28 +79,30 @@ local supply voltage bounce나 local hot spot같은 문제로 delay가 변할 �
 
 
 Power 관련 문제:
+트랜지스터 크기가 점점 작아지면서, IC 하나에 더 많은 트랜지스터가 들어가게 되었다.
+IC 하나에 더 많은 트랜지스터가 들어가면 IC에서 소비하는 전력이 늘어나기에,
+늘어난 전력 소비를 줄일 방법이 필요해졌다.
 
-요즘 digital system들은 3D stacking, chiplet같은 상황에서 power consumption을 어떻게 줄여야 할지를 생각해야 한다.
+보통 회로 내 연산을 담당하는 flip flop,
+Clock 신호를 전달하는 clock distribution network가 소비하는 전력 비중이 크다.
+그래서 전력을 아끼는 방식도 여기에 맞춰 생겨났다.
 
-Large-scale digital circuit들에서는 power consumption 줄이는게 아주 중요하다.
-보통 flipflop과 clock distribution network가 소비하는 power의 비중이 크다.
-그래서, data가 안바뀔때는 power 아끼기 위해 clock을 꺼버리는 clock-gating이라는 방법이 있다.
-또는, 안쓰는 block은 꺼두는 것으로 dynamic power를 아낄 수 있다. 이건 power gating
+Power gating: 당장 안쓰는 회로는 꺼두는 것으로 전력 소비를 줄이는 방식
+Clock gating: 당장 회로 입력이 변하지 않을때 clock을 꺼두는 것으로 전력 소비를 줄이는 방식
+DVFS: clock 주파수, 전원 전압을 내려서 전력 소비를 줄이는 방식
+*DVFS: Dynamic Voltage and Frequency Scaling
 
-근데, 이렇게 껐다 켜더라도 memory가 보존되어야 하는 block들이 있다.
-이 경우에는 끄기 전에 어디 다른 곳에 미리 저장해두거나,
-메모리에만 최소한의 전압을 걸어두거나,
-껐다 켜도 데이터가 유지되는 nonvolatile memory를 써야 한다.
+메모리 데이터가 보존되어야 하는 회로에 power gating을 적용할 경우:
+다른 곳에 데이터를 미리 저장해두거나,
+메모리에만 최소한의 전압을 걸어 켜두거나,
+전원이 없어도 데이터가 유지되는 nonvolatile memory를 써야 한다.
 
-DVFS: Dynamic Voltage and Frequency Scaling
-DVFS로 clock frequency, power supply voltage를 내려서 power consumption을 내릴 수 있다.
-
-이거랑 조금 다른 이야기일 수는 있는데, CPU가 과열될 경우 clock, voltage를 강제로 내려서 발열 줄이는게 CPU throttling이다.
-clock gating: 안쓰는 block은 clock마저 안들어가게 꺼버리는거. power 아끼려고 쓰는 기술이다.
-
+CPU에서는 CPU가 과열될 경우 DVFS를 적용해 전력 소비를 줄이고 발열을 줄인다.
+이것을 CPU throttling이라 부른다.
 
 
-Verification:
+
+Verification 관련 문제:
 근데, 트랜지스터가 작아져서 커다란 digital system들이 한 IC에 들어가게 되자,
 모든 process corner에서 chip이 잘 동작하도록 하는 design verification이 복잡해졌다.
 
