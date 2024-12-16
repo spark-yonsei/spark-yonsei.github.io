@@ -9,6 +9,27 @@ order: 3
 PLL : Phase Locked Loop<br>
 <br>
 <br>
+PLL은 생성된 신호가 Reference signal에 'frequency and phase locked'되도록 만드는 negative feedback system이다.
+
+PLL Applications:
+
+Zero Delay buffer:
+Main Clock이 subblock들에 전달되는데, 이때 block까지의 거리가 모두 제각각이라 도착하는 clock들의 phase도 제각각이다.
+근데, data는 clock이랑 다른 경로로 들어오니까, 도착하면 clock과 data의 phase가 안맞는다. 즉, skew가 안맞는다.
+이때 phase를 맞춰주기 위해 PLL을 쓸 수 있다.
+
+Low-Jitter Sampling Clock:
+PLL로 입력 clock의 low frequency jitter를 없앨 수 있다.
+jitter를 없앤 clock을 sampling 등에 활용할 수 있다.
+
+for N bit resolution,
+Jitter < 1/(2^N pi f_in)
+
+PLL은 대부분 CP-PLL 형태로 구현된다.
+PFD, CP는 Digital phase error signal을 analog current로 바꾼다
+Loop filter가 전류를 전압으로 바꾸고, 그 전압이 VCO에 들어간다.
+
+
 PLL은 Clock 신호를 입력받아, 다른 주파수의 Clock 신호를 출력한다.<br>
 Oscillator 회로로는 만들기 어려운 수백MHz, GHz 대역의 Clock 신호를 만드는 데에 쓰인다.<br>
 고주파 Clock이 아니더라도, Clock의 Jitter를 없애기 위해 사용되기도 한다.<br>
@@ -75,18 +96,25 @@ Order: loop 내 pole의 수
 
 
 
-PLL은 Oscillator에서 생성된 신호가 Reference signal에 'phase locked'되도록 만드는 negative feedback system이다.
 
-PLL Applications:
+Spur:
+PD를 만들때, 2-state PD로 만들었을때와 XOR PD를 만들었을때 spur를 비교하려고 한다.
+2-state PD는 입력 주파수의 홀수배에서 spur,
+XOR PD는 입력 주파수의 홀수배 의 두배 주파수에서 spur
 
-Zero Delay buffer:
-Main Clock이 subblock들에 전달되는데, 이때 block까지의 거리가 모두 제각각이라 도착하는 clock들의 phase도 제각각이다.
-근데, data는 clock이랑 다른 경로로 들어오니까, 도착하면 clock과 data의 phase가 안맞는다. 즉, skew가 안맞는다.
-이때 phase를 맞춰주기 위해 PLL을 쓸 수 있다.
-
-Low-Jitter Sampling Clock:
-PLL로 입력 clock의 low frequency jitter를 없앨 수 있다.
-jitter를 없앤 clock을 sampling 등에 활용할 수 있다.
-
+2-state PD가 더 낮은 주파수에도 spur를 만들고 있으니,
+XOR PD가 더 나은 'ripple spur suppression'을 하고 있다고 할 수 있다.
 
 RF PLL에서는 Spur 없애는게 가장 중요하다.
+
+
+
+
+
+Phase Detector Range Extension:
+Frequency divider를 통해 PD range를 넓힐 수 있다.
+
+phase error가 정의되는건 원래 input에서,
+phase error가 측정되는건 divided input에서기 때문이다.
+
+예를 들어, 5ns delay면 
