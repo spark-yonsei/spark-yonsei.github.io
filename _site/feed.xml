@@ -1,446 +1,629 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-15T01:30:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Microscopic Electromagnetics - Basic Particles</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Basic Particles" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Basic%20Particles</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Basic-Particles.html"><![CDATA[<p>원자핵은 양성자와 중성자로 구성되며,<br />
-양성자와 중성자는 3개의 쿼크로 이루어져 있다.<br />
-<br />
-양성자 = u쿼크 2개, d쿼크 1개<br />
-중성자 = u쿼크 1개, d쿼크 2개<br />
-<br />
-u쿼크는 +2/3 전하, d쿼크는 -1/3 전하를 갖고 있다.<br />
-그래서 양성자는 +1 전하, 중성자는 0 전하를 갖는다.<br />
-<br />
-<br />
-그런데 전자기 이론으로는 전하를 갖는 쿼크들이 양성자, 중성자로 뭉쳐있는 이유를 설명하기 어렵다.<br />
-<br />
-예를 들어 양성자에서는, 양성자 지름보다도 작은 거리에 +2/3 전하를 갖는 u쿼크 2개가 있는 것이다.<br />
-전자기 이론에 따르면, 양전하를 갖는 두 입자는 서로를 이미 멀리 밀어냈어야 한다.<br />
-<br />
-<br />
-쿼크들을 양성자, 중성자로 묶어두는 힘을 Strong Nuclear Force(강한 핵력)라 부른다.<br />
-강한 핵력의 매개입자는 gluon(글루온)이다.<br />
-<br />
-글루온은 광자처럼 Spin 1 입자이며, 광자와 같은 확률진폭 계산식을 갖는다.<br />
-단, 전자가 광자와 결합할 확률보다 쿼크가 글루온과 결합할 확률이 훨씬 높다.<br />
-<br />
-그래서 강한 핵력의 계산이 전자기력 계산에 비해 훨씬 복잡하다.<br />
-결합이 여러번 일어나는 항들을 무시할 수 없기 때문이다.<br />
-<br />
-<br />
-강한 핵력이 있으니, Weak Nuclear Force(약한 핵력)도 있다.<br />
-<br />
-전자기력, 강한 핵력의 이론대로면 u쿼크는 언제나 u쿼크, d쿼크는 언제나 d쿼크여야 한다.<br />
-하지만 베타붕괴가 일어나면, 양성자가 중성자로 변한다.<br />
-즉, d쿼크가 u쿼크로 변하는 경우가 발생하는 것이다.<br />
-<br />
-쿼크의 종류가 변하는 현상을 설명하는 힘이 약한 핵력이다.<br />
-약한 핵력의 매개입자는 W- Boson, W+ Boson, Z Boson(W-입자, W+입자, Z입자)다.<br />
-여기서, W+입자는 W-입자의 반입자다.<br />
-<br />
-베타붕괴가 일어나면, d쿼크가 W-입자를 내놓으며 u쿼크로 변한다.<br />
-W-입자는 이후 전자와 Anti-Neutrino(반뉴트리노)로 붕괴한다.<br />
-<br />
-베타+붕괴 현상도 있다.<br />
-여기서는 u쿼크가 W+입자를 내놓으며 d쿼크로 변한다.<br />
-W+입자는 이후 양전자와 뉴트리노로 붕괴한다.<br />
-<br />
-W-입자, W+입자는 광자, 글루온과는 달리 매우 큰 질량(약 80,000MeV)를 갖는다.<br />
-그래서 베타붕괴는 전자와 광자의 상호작용보다 훨씬 느린 속도로 일어난다.<br />
-<br />
-핵자 단위에서 관찰하면,<br />
-베타붕괴는 중성자를 양성자로 만들며 전자와 반뉴트리노를 방출하고,<br />
-베타+붕괴는 양성자를 중성자로 만들며 양전자와 뉴트리노를 방출한다.<br />
-<br />
-<br />
-뉴트리노는 전자, 쿼크처럼 Spin 1/2 입자이며, 질량도 전하도 없다.<br />
-<br />
-뉴트리노는 전하가 없기에 광자와 상호작용하지 않으며,<br />
-쿼크가 아니기에 글루온과 상호작용하지도 않는다.<br />
-뉴트리노와 상호작용하는 입자는 W+입자, W-입자, Z입자 뿐이다.<br />
-<br />
-Z입자는 W+입자와 W-입자가 결합할 경우 생기는 입자다.<br />
-Z입자는 전하가 없어 광자와 상호작용하지는 못하지만,<br />
-d쿼크, u쿼크, 전자, 뉴트리노 등과 momentum, 에너지 등을 주고받으며 상호작용할 수 있다.<br />
-<br />
-<br />
-W+입자와 W-입자가 결합해 Z입자가 생기는 과정에서,<br />
-두 입자가 결합할 확률을 나타내는 결합상수가 전자와 광자의 결합상수와 매우 유사한 값을 가진다.<br />
-<br />
-그래서 3개 입자(W+입자, W-입자, Z입자)가 광자의 다른 모습이라는 이론이 탄생한다.<br />
-이것이 전자기력과 약한핵력을 통합하는 Electroweak Theory(전자기약력 이론)이다.<br />
-<br />
-1968년 제시된 전자기약력 이론은 오랫동안 어려움을 겪었는데,<br />
-광자는 질량이 없지만 W+입자, W-입자, Z입자는 질량이 있다는 점이 문제였다.<br />
-<br />
-이 문제는 2013년 Higgs Boson(힉스 입자)가 발견되며 해결됐다.<br />
-힉스 입자는 기본입자에 질량을 부여하는 입자다.<br />
-<br />
-<br />
-지금까지 3가지 상호작용과 그 매개입자를 살펴봤다.<br />
-전자기력: 광자, 강한 핵력: 글루온, 약한 핵력: W-입자, Z입자<br />
-<br />
-그리고 원자를 구성하는 전자, u쿼크, d쿼크,<br />
-약한 핵력의 상호작용에서 발생하는 뉴트리노,<br />
-질량을 부여하는 힉스 입자도 살펴봤다.<br />
-<br />
-총 9가지 기본 입자를 확인한 것이다.<br />
-(W+입자는 W-입자의 반입자라 기본입자는 아니다)<br />
-<br />
-그런데, 기본입자는 총 17가지다.<br />
-지금부터는 남은 8가지 기본 입자에 대해 알아보려고 한다.<br />
-<br />
-<br />
-새로운 입자를 연구하기 위해서는 입자가속기가 필요하다.<br />
-양성자를 입자가속기로 가속해서 원자핵과 충돌시키면, 원자핵이 깨지며 입자들이 튀어나온다.<br />
-이때, 더 높은 에너지로 충돌시킬수록 새로운 입자들을 관찰할 수 있다.<br />
-<br />
-이 새로운 입자중 하나가 Muon(뮤온)이다.<br />
-<br />
-<br />
-뮤온은 전자와 질량을 제외한 모든 특성이 동일하다.<br />
-질량은 뮤온이 전자보다 약 200배 무겁다.<br />
-전자: 약 0.511MeV, 뮤온: 약 105.8MeV<br />
-<br />
-그래서, 뮤온의 모든 행동은 전자를 설명하던 기존 이론으로 설명될 수 있다.<br />
-<br />
-광자는 전자와 양전자를 계속해서 만든다고 했는데, 뮤온과 반뮤온을 만들기도 한다.<br />
-W-입자도, 아까는 전자와 반뉴트리노를 만든다고 했지만, 뮤온과 반뮤뉴트리노를 만들기도 한다.<br />
-<br />
-<br />
-전자와 뮤온의 관계처럼, 쿼크 중에서도 u쿼크, d쿼크와 동일한 특성을 갖지만 질량이 더 무거운 쿼크가 발견되었다.<br />
-그것이 c쿼크와 s쿼크다.<br />
-<br />
-s쿼크에서 베타붕괴가 일어날 경우,<br />
-s쿼크는 W-입자를 방출하고 c쿼크로 변한다.<br />
-<br />
-<br />
-이렇게 해서 뮤온, 뮤뉴트리노, s쿼크, c쿼크를 기본 입자에 추가하게 되었다.<br />
-<br />
-<br />
-뮤온이 방출될 때 보다도 훨씬 높은 에너지로 원자핵을 충돌시킬 경우,<br />
-전자와 같은 특성을 갖지만 뮤온보다도 훨씬 무거운 타우입자가 튀어나온다.<br />
-<br />
-타우입자는 약 1800MeV의 질량을 갖는다.<br />
-이 값은 전자 질량의 약 3640배이며, 양성자 질량의 약 2배다.<br />
-<br />
-타우입자에 대해서도 유사하게 타우 뉴트리노가 있으며,<br />
-u쿼크, d쿼크와 동일한 특성을 가지지만 타우입자를 흡수/방출하며 훨씬 무거운 t쿼크, b쿼크가 있다.<br />
-<br />
-그래서 타우입자, 타우 뉴트리노, t쿼크, b쿼크를 기본 입자에 추가하면 총 17개 입자를 포함하는 표가 완성된다.<br />
-<br />
-<br />
-현대 물리학은 이렇게 해서 강한 핵력, 약한 핵력, 전자기력을 설명하고 있다.<br />
-중력을 매개하는 입자(graviton, 중력자)를 찾아 중력을 함께 설명하려는 시도도 존재한다.<br />
-만약 존재한다면 Spin 2 입자일 것으로 예측되지만, 아직 발견된 바는 없다.<br />
-<br />
-<br />
-여기 밑에 입자들 질량, 스핀 정리<br />
-<br />
-아니 u쿼크 d쿼크 질량이 10MeV정도였는데 양성자 질량은 938MeV라고?<br />
-상대성이론 때문이라고 한다. 나중에 다시 확인<br />
-중력자는 Spin 2 입자로 생각하고 있다.<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[원자핵은 양성자와 중성자로 구성되며, 양성자와 중성자는 3개의 쿼크로 이루어져 있다. 양성자 = u쿼크 2개, d쿼크 1개 중성자 = u쿼크 1개, d쿼크 2개 u쿼크는 +2/3 전하, d쿼크는 -1/3 전하를 갖고 있다. 그래서 양성자는 +1 전하, 중성자는 0 전하를 갖는다. 그런데 전자기 이론으로는 전하를 갖는 쿼크들이 양성자, 중성자로 뭉쳐있는 이유를 설명하기 어렵다. 예를 들어 양성자에서는, 양성자 지름보다도 작은 거리에 +2/3 전하를 갖는 u쿼크 2개가 있는 것이다. 전자기 이론에 따르면, 양전하를 갖는 두 입자는 서로를 이미 멀리 밀어냈어야 한다. 쿼크들을 양성자, 중성자로 묶어두는 힘을 Strong Nuclear Force(강한 핵력)라 부른다. 강한 핵력의 매개입자는 gluon(글루온)이다. 글루온은 광자처럼 Spin 1 입자이며, 광자와 같은 확률진폭 계산식을 갖는다. 단, 전자가 광자와 결합할 확률보다 쿼크가 글루온과 결합할 확률이 훨씬 높다. 그래서 강한 핵력의 계산이 전자기력 계산에 비해 훨씬 복잡하다. 결합이 여러번 일어나는 항들을 무시할 수 없기 때문이다. 강한 핵력이 있으니, Weak Nuclear Force(약한 핵력)도 있다. 전자기력, 강한 핵력의 이론대로면 u쿼크는 언제나 u쿼크, d쿼크는 언제나 d쿼크여야 한다. 하지만 베타붕괴가 일어나면, 양성자가 중성자로 변한다. 즉, d쿼크가 u쿼크로 변하는 경우가 발생하는 것이다. 쿼크의 종류가 변하는 현상을 설명하는 힘이 약한 핵력이다. 약한 핵력의 매개입자는 W- Boson, W+ Boson, Z Boson(W-입자, W+입자, Z입자)다. 여기서, W+입자는 W-입자의 반입자다. 베타붕괴가 일어나면, d쿼크가 W-입자를 내놓으며 u쿼크로 변한다. W-입자는 이후 전자와 Anti-Neutrino(반뉴트리노)로 붕괴한다. 베타+붕괴 현상도 있다. 여기서는 u쿼크가 W+입자를 내놓으며 d쿼크로 변한다. W+입자는 이후 양전자와 뉴트리노로 붕괴한다. W-입자, W+입자는 광자, 글루온과는 달리 매우 큰 질량(약 80,000MeV)를 갖는다. 그래서 베타붕괴는 전자와 광자의 상호작용보다 훨씬 느린 속도로 일어난다. 핵자 단위에서 관찰하면, 베타붕괴는 중성자를 양성자로 만들며 전자와 반뉴트리노를 방출하고, 베타+붕괴는 양성자를 중성자로 만들며 양전자와 뉴트리노를 방출한다. 뉴트리노는 전자, 쿼크처럼 Spin 1/2 입자이며, 질량도 전하도 없다. 뉴트리노는 전하가 없기에 광자와 상호작용하지 않으며, 쿼크가 아니기에 글루온과 상호작용하지도 않는다. 뉴트리노와 상호작용하는 입자는 W+입자, W-입자, Z입자 뿐이다. Z입자는 W+입자와 W-입자가 결합할 경우 생기는 입자다. Z입자는 전하가 없어 광자와 상호작용하지는 못하지만, d쿼크, u쿼크, 전자, 뉴트리노 등과 momentum, 에너지 등을 주고받으며 상호작용할 수 있다. W+입자와 W-입자가 결합해 Z입자가 생기는 과정에서, 두 입자가 결합할 확률을 나타내는 결합상수가 전자와 광자의 결합상수와 매우 유사한 값을 가진다. 그래서 3개 입자(W+입자, W-입자, Z입자)가 광자의 다른 모습이라는 이론이 탄생한다. 이것이 전자기력과 약한핵력을 통합하는 Electroweak Theory(전자기약력 이론)이다. 1968년 제시된 전자기약력 이론은 오랫동안 어려움을 겪었는데, 광자는 질량이 없지만 W+입자, W-입자, Z입자는 질량이 있다는 점이 문제였다. 이 문제는 2013년 Higgs Boson(힉스 입자)가 발견되며 해결됐다. 힉스 입자는 기본입자에 질량을 부여하는 입자다. 지금까지 3가지 상호작용과 그 매개입자를 살펴봤다. 전자기력: 광자, 강한 핵력: 글루온, 약한 핵력: W-입자, Z입자 그리고 원자를 구성하는 전자, u쿼크, d쿼크, 약한 핵력의 상호작용에서 발생하는 뉴트리노, 질량을 부여하는 힉스 입자도 살펴봤다. 총 9가지 기본 입자를 확인한 것이다. (W+입자는 W-입자의 반입자라 기본입자는 아니다) 그런데, 기본입자는 총 17가지다. 지금부터는 남은 8가지 기본 입자에 대해 알아보려고 한다. 새로운 입자를 연구하기 위해서는 입자가속기가 필요하다. 양성자를 입자가속기로 가속해서 원자핵과 충돌시키면, 원자핵이 깨지며 입자들이 튀어나온다. 이때, 더 높은 에너지로 충돌시킬수록 새로운 입자들을 관찰할 수 있다. 이 새로운 입자중 하나가 Muon(뮤온)이다. 뮤온은 전자와 질량을 제외한 모든 특성이 동일하다. 질량은 뮤온이 전자보다 약 200배 무겁다. 전자: 약 0.511MeV, 뮤온: 약 105.8MeV 그래서, 뮤온의 모든 행동은 전자를 설명하던 기존 이론으로 설명될 수 있다. 광자는 전자와 양전자를 계속해서 만든다고 했는데, 뮤온과 반뮤온을 만들기도 한다. W-입자도, 아까는 전자와 반뉴트리노를 만든다고 했지만, 뮤온과 반뮤뉴트리노를 만들기도 한다. 전자와 뮤온의 관계처럼, 쿼크 중에서도 u쿼크, d쿼크와 동일한 특성을 갖지만 질량이 더 무거운 쿼크가 발견되었다. 그것이 c쿼크와 s쿼크다. s쿼크에서 베타붕괴가 일어날 경우, s쿼크는 W-입자를 방출하고 c쿼크로 변한다. 이렇게 해서 뮤온, 뮤뉴트리노, s쿼크, c쿼크를 기본 입자에 추가하게 되었다. 뮤온이 방출될 때 보다도 훨씬 높은 에너지로 원자핵을 충돌시킬 경우, 전자와 같은 특성을 갖지만 뮤온보다도 훨씬 무거운 타우입자가 튀어나온다. 타우입자는 약 1800MeV의 질량을 갖는다. 이 값은 전자 질량의 약 3640배이며, 양성자 질량의 약 2배다. 타우입자에 대해서도 유사하게 타우 뉴트리노가 있으며, u쿼크, d쿼크와 동일한 특성을 가지지만 타우입자를 흡수/방출하며 훨씬 무거운 t쿼크, b쿼크가 있다. 그래서 타우입자, 타우 뉴트리노, t쿼크, b쿼크를 기본 입자에 추가하면 총 17개 입자를 포함하는 표가 완성된다. 현대 물리학은 이렇게 해서 강한 핵력, 약한 핵력, 전자기력을 설명하고 있다. 중력을 매개하는 입자(graviton, 중력자)를 찾아 중력을 함께 설명하려는 시도도 존재한다. 만약 존재한다면 Spin 2 입자일 것으로 예측되지만, 아직 발견된 바는 없다. 여기 밑에 입자들 질량, 스핀 정리 아니 u쿼크 d쿼크 질량이 10MeV정도였는데 양성자 질량은 938MeV라고? 상대성이론 때문이라고 한다. 나중에 다시 확인 중력자는 Spin 2 입자로 생각하고 있다.]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Special Relativity</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Special-Relativity.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Special Relativity" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Special%20Relativity</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Special-Relativity.html"><![CDATA[<p>맥스웰 방정식은 source에 의해 field가 어떻게 생기는지 알려준다</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-16T23:35:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seil Park</title><subtitle></subtitle><entry><title type="html">Analog-Digital Converter</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-ADC.html" rel="alternate" type="text/html" title="Analog-Digital Converter" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20ADC</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-ADC.html"><![CDATA[<p>Low oversampling에서는 ADC가 circuit imperfection에 엄청 민감해진다.
+32~256정도를 쓰고, 4,8정도가 low oversampling이다.</p>
 
-<p>lorentz force가 알려주는건, field가 어떤 영향을 주는지다</p>
+<p>ADC에서 사용하는 clock이 더 낮아야 interrupt가 덜 걸린다?
+interrupt가 뭐지
+interrupt map은 또 뭐지</p>
 
-<p>상대성이론에서도, 전하, spin, 광속은 일정하다</p>
+<p>The choice of ADC architecture depends heavily on the application’s requirements, particularly concerning speed, resolution, and power efficiency. Flash ADCs offer unmatched speed but at the cost of high complexity and power consumption, while SAR ADCs are ideal for moderate-speed, high-resolution, and power-sensitive designs. Pipelined ADCs strike a balance between speed and resolution, while noise-shaping SAR ADCs improve noise performance in precision systems. Finally, Delta-Sigma ADCs shine in applications requiring the highest resolution and noise immunity but are limited in speed.</p>
 
-<p>Lorentz transform:</p>
+<p>Hard-working LNADC:
+지금까지는 ADC 앞단에 많은 amplifier들이 쓰였고, 이 amplifier들이 power를 엄청나게 먹었다.
+정작 ADC는 power를 거의 안먹었다.</p>
 
-<p>광속은 일정한 채로 시공간 transform을 해야 한다</p>
+<p>여기서 amplifier를 안쓰면? 신호가 작으니 SNR이 아주 안좋게 들어올 것이다.
+이때는 ADC가 먹는 power를 올려서 SNR을 개선해야 한다.</p>
 
-<p>그러다보니 Lorentz transform을 하게 된다</p>
+<p>이러면 또 power가 그게 그거일 수도 있지만, 어쨌든 Amplifier 빼고 ADC만 쓰자는 이야기다.</p>
 
-<p>Lorentz transform을 해보면</p>
+<p>Flash ADC:</p>
 
-<p>이 시공간 개념으로 전자기력을 관찰해볼 수 있다.</p>
+<p>양자화 기준점마다 비교기를 두고 샘플된 인풋에 대해 모든 비교기가 동시에 동작하는 방식의 ADC. 속도가 매우 빠르다는 장점이 있지만 N-bit 변환을 위해 2^N - 1개의 비교기가 필요하므로 고해상도에는 적합하지 않고 전력 소모가 심하다. 보통 5bit 이하에 저해상도이면서 고속 동작을 요구하는 어플리케이션에 이용된다.
+Flash ADCs, also known as parallel ADCs, are among the fastest ADC architectures, making them suitable for high-speed applications such as oscilloscopes and radar systems. A flash ADC consists of a large number of comparators operating in parallel, each comparing the input voltage to a reference voltage. For an n-bit ADC, 2^n−1 comparators are needed, along with a resistive ladder network to generate the reference voltages. Once the input signal is compared to the reference, the comparators generate a corresponding digital code in a single clock cycle.</p>
 
-<p>전기장은 전하에서 나온다.
-그래서 field가 직진하고(div만 있고 curl이 없고),
-field에 의해 특정 방향으로 직진하는 힘을 받는다.</p>
+<p>Advantages:
+Extremely fast conversion speed, often in the GHz range.</p>
 
-<p>자기장은 전하의 움직임에서 나온다.
-그래서 field가 회전하고(curl만 있고 div가 없고),
-field에 의해 특정 방향으로 회전하는 힘을 받는다.</p>
+<p>Disadvantages:
+High power consumption due to the large number of comparators.
+Exponential increase in hardware complexity as resolution increases.</p>
 
-<p>민코프스키공간에서 보면,
-전기력은 Lorentz transform이고, 자기력은 공간 내 회전이다
-그래서 둘 다 회전이라 같은 걸로 볼 수 있다</p>
+<p>Applications:
+High-speed data acquisition systems, digital oscilloscopes, and radar signal processing.</p>
 
-<p>광자의 반입자가 있나?
-있다. 광자의 반입자는 광자다.
-​
-force carriers(전자기력-광자, 약력-z보손, 강력-글루온)들은 입자와 반입자가 같다.</p>
+<p>SAR ADC
+하나의 비교기와 Capacitor [3]-DAC을 이용한 ADC. 샘플된 인풋을 1개의 비교기가 양자화하고, 그 값에 따라 Capacitor-DAC을 스위칭해서 양자화 기준점을 바꾼다. 바뀐 기준점에 대해 비교기는 재귀적으로 동작한다. 따라서 기본적으로 N-bit 변환을 위해 비교기가 N번 동작하는 방식이다. Capacitor-DAC을 스위칭하는 디지털 로직 속도에 변환 속도가 많은 영향을 받기 때문에 공정이 진화해오면서 많은 수혜를 받은 구조이다. Flash보다는 이론적으로 느리지만 단 한개의 비교기만을 이용하기 때문에 전력소모가 매우 적고 고해상도로도 구현 가능하다. 게다가 면적도 적고 비교기 간의 미스매치를 보정해줄 필요도 없어 여러모로 장점이 많다. 어플리케이션에 맞게 속도와 해상도를 조절하기도 좋기 때문에, 폭넓은 분야에 사용된다.
+SAR ADCs are widely used due to their balanced trade-off between speed, resolution, and power efficiency. SAR ADCs work by employing a binary search algorithm. The input signal is compared to a DAC-generated reference voltage at each step, and the most significant bit (MSB) is set or cleared based on whether the input is higher or lower than the reference. This process continues for each bit, achieving a complete conversion in n clock cycles for an n-bit ADC.</p>
 
-<p>반입자는 원래 입자와 charge가 반대지만, 이 force carrier들은 전하가 0이라 반입자도 전하가 0이다.</p>
+<p>Advantages:
+Low power consumption and moderate speed.
+Suitable for medium- to high-resolution applications (typically 8 to 18 bits).</p>
 
-<p>입자의 반입자가 그 자신이려면, 그 입자에서 CPT 대칭이 맞아야 한다.
-Charge Conjugation,
-Parity Inversion,
-Time Inversion</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[맥스웰 방정식은 source에 의해 field가 어떻게 생기는지 알려준다]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Probabilistic View of Photons</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Quantum-Electrodynamics.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Probabilistic View of Photons" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Quantum%20Electrodynamics</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Quantum-Electrodynamics.html"><![CDATA[<p>빛을 유리에 비추면 일부는 반사되고 일부는 통과한다.<br />
-빛을 입자라고 생각한다면, 완벽히 같은 조건에서 발사한 입자 중 일부는 반사되고 일부는 통과한 것이다.<br />
-<br />
-이런 상황은 고전 역학에서 발생할 수가 없다.<br />
-따라서, 과학자들은 빛을 파동으로 생각하기 시작했다.<br />
-빛이 파동이라면 일부는 반사, 일부는 통과할 수 있기 때문이다.<br />
-<br />
-<br />
-그런데, 빛이 파동이라면 설명할 수 없는 현상이 발견되었다.<br />
-광전효과라는 현상이다.<br />
-<br />
-빛을 금속판에 비추면 금속판에서 전자들이 튀어나오는 현상이 광전효과다.<br />
-빛이 입자라면, 더 강한 빛을 비췄을 때 전자들이 더 강한 에너지로 튀어나와야 한다.<br />
-<br />
-그런데, 실제로는 튀어나오는 전자들의 에너지가 빛의 세기와 무관하게 일정했다.<br />
-대신, 빛의 세기가 증가하면 전자의 갯수가 증가했다.<br />
-<br />
-이 현상은 파동이 아닌 입자의 특성이다.<br />
-빛의 세기가 강해지면 파동이 강해지는 것이 아니라, 일정한 에너지를 갖는 입자의 수가 늘어난 것이다.<br />
-그래서 빛의 세기가 변하면 튀어나오는 전자의 에너지가 아닌 갯수가 변하는 것이다.<br />
-<br />
-<br />
-두 현상을 모두 설명하기 위해, 빛을 이루고 있는 입자(광자)를 ‘확률적으로 행동하는 입자’라고 설명하게 되었다.<br />
-확률적으로 행동하는 입자라면 유리 표면에서 일부는 반사되고 일부는 통과할 수 있으며,<br />
-파동이 아닌 입자기 때문에 광전효과를 설명할 수 있다.<br />
-<br />
-즉 빛은 광자로 이루어져 있으며, 광자는 확률적으로 행동하는 입자라는 것이 현대 물리학의 관점이다.<br />
-<br />
-<br />
-광자가 확률적으로 행동한다면, 그 확률을 계산할 방식이 필요할 것이다.<br />
-광자가 특정 이동경로를 선택할 확률은 Probability Amplitude(확률진폭)을 통해 계산한다.<br />
-확률이 아니라 확률진폭으로 표현하는 이유는, 계산 과정에서 확률들이 서로 상쇄될 수 있기 때문이다.<br />
-<br />
-확률진폭을 통한 확률 계산은 물리학의 여러 현상들을 확률의 관점에서 설명할 수 있다.<br />
-<br />
-<br />
-직진하던 빛이 넓게 퍼지는 이유:<br />
-빛은 직진하는 경로를 택할 확률이 가장 높지만, 조금 빗나간 경로를 택할 확률도 존재한다.<br />
-그래서 먼 거리를 이동하는 광자들은 완벽히 직진하지 못하고 조금씩 흩어지게 된다.<br />
-<br />
-빛의 속도가 일정한 이유:<br />
-광자는 c로 이동할 확률이 가장 높지만, c보다 약간 크거나 약간 작은 속도로 이동할 확률도 0이 아니다.<br />
-하지만 이건 아주 짧은 거리에서나 일어나는 이야기고,<br />
-빛이 충분히 긴 거리를 이동하면 모든 광자가 속도 c로 수렴한다.<br />
-<br />
-반사되는 빛의 입사각과 반사각이 같은 이유:<br />
-광자는 입사각과 반사각이 같지 않은 경로를 통해서도 반사될 수도 있지만,<br />
-확률진폭을 통한 계산을 해보면 입사각과 반사각이 같은 경로를 택할 확률밖에 남지 않는다.<br />
-다른 경로를 택할 확률들은 모두 상쇄되어 사라진다.<br />
-<br />
-<br />
-광자가 특정 경로를 택할 확률은 주변 광자에 영향을 받기도 한다.<br />
-대표적인 사례가 Stimulated Emission이다.<br />
-<br />
-광자의 확률진폭 계산에 따르면, 광자는 주변에 광자가 있는 경로를 택할 확률이 높다.<br />
-<br />
-그래서 원자가 광자를 방출하려 할때, 특정 상태에 광자가 존재한다면 방출되는 광자도 그 상태로 갈 확률이 높다.<br />
-이렇게, 다른 광자와 같은 상태로 광자가 방출되는 현상이 Stimulated Emission이며,<br />
-이 현상을 반복적으로 일으켜 레이저를 만든다.<br />
-<br />
-<br />
-전자 또한, 광자처럼 확률적으로 행동하는 입자다.<br />
-전자는 광자와 달리, 주변에 전자가 없는 경로를 택할 확률이 높다.<br />
-그래서 전자는 광자처럼 모이지 못하고 흩어지게 된다.<br />
-<br />
-전자와 광자가 다르게 행동하는 이유는, 두 입자의 Spin이 다르기 때문이다.<br />
-광자는 Spin 1 입자인데, 전자는 Spin 1/2 입자다.<br />
-<br />
-<br />
-Spin 1/2입자라는 것은, Spin 값으로 +1/2 또는 -1/2를 갖는 입자라는 의미다.<br />
-따라서 전자는 Spin 값으로 +1/2 또는 -1/2를 가지며,<br />
-같은 Spin을 갖는 두 입자는 같은 위치에 존재할 수 없다는 내용이 Pauli Exclusion Principle이라는 이름으로 정리되어 있다.<br />
-<br />
-<br />
-전자와 광자는 큰 연관이 없어보일 수 있지만,<br />
-사실 광자는 전자와 전자, 전자와 양전자, 또는 양전자와 양전자 사이의 상호작용을 매개하는 매개입자다.<br />
-<br />
-전자가 전자를 밀어내는 이유는 광자를 그 방향으로 방출해서 그렇다<br />
-전하라는건 광자와 결합할 확률에 비례한다.<br />
-<br />
-전하가 없는 물체가 전자기력을 안받는건, 광자와 결합할 확률이 없어서 그렇다<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[빛을 유리에 비추면 일부는 반사되고 일부는 통과한다. 빛을 입자라고 생각한다면, 완벽히 같은 조건에서 발사한 입자 중 일부는 반사되고 일부는 통과한 것이다. 이런 상황은 고전 역학에서 발생할 수가 없다. 따라서, 과학자들은 빛을 파동으로 생각하기 시작했다. 빛이 파동이라면 일부는 반사, 일부는 통과할 수 있기 때문이다. 그런데, 빛이 파동이라면 설명할 수 없는 현상이 발견되었다. 광전효과라는 현상이다. 빛을 금속판에 비추면 금속판에서 전자들이 튀어나오는 현상이 광전효과다. 빛이 입자라면, 더 강한 빛을 비췄을 때 전자들이 더 강한 에너지로 튀어나와야 한다. 그런데, 실제로는 튀어나오는 전자들의 에너지가 빛의 세기와 무관하게 일정했다. 대신, 빛의 세기가 증가하면 전자의 갯수가 증가했다. 이 현상은 파동이 아닌 입자의 특성이다. 빛의 세기가 강해지면 파동이 강해지는 것이 아니라, 일정한 에너지를 갖는 입자의 수가 늘어난 것이다. 그래서 빛의 세기가 변하면 튀어나오는 전자의 에너지가 아닌 갯수가 변하는 것이다. 두 현상을 모두 설명하기 위해, 빛을 이루고 있는 입자(광자)를 ‘확률적으로 행동하는 입자’라고 설명하게 되었다. 확률적으로 행동하는 입자라면 유리 표면에서 일부는 반사되고 일부는 통과할 수 있으며, 파동이 아닌 입자기 때문에 광전효과를 설명할 수 있다. 즉 빛은 광자로 이루어져 있으며, 광자는 확률적으로 행동하는 입자라는 것이 현대 물리학의 관점이다. 광자가 확률적으로 행동한다면, 그 확률을 계산할 방식이 필요할 것이다. 광자가 특정 이동경로를 선택할 확률은 Probability Amplitude(확률진폭)을 통해 계산한다. 확률이 아니라 확률진폭으로 표현하는 이유는, 계산 과정에서 확률들이 서로 상쇄될 수 있기 때문이다. 확률진폭을 통한 확률 계산은 물리학의 여러 현상들을 확률의 관점에서 설명할 수 있다. 직진하던 빛이 넓게 퍼지는 이유: 빛은 직진하는 경로를 택할 확률이 가장 높지만, 조금 빗나간 경로를 택할 확률도 존재한다. 그래서 먼 거리를 이동하는 광자들은 완벽히 직진하지 못하고 조금씩 흩어지게 된다. 빛의 속도가 일정한 이유: 광자는 c로 이동할 확률이 가장 높지만, c보다 약간 크거나 약간 작은 속도로 이동할 확률도 0이 아니다. 하지만 이건 아주 짧은 거리에서나 일어나는 이야기고, 빛이 충분히 긴 거리를 이동하면 모든 광자가 속도 c로 수렴한다. 반사되는 빛의 입사각과 반사각이 같은 이유: 광자는 입사각과 반사각이 같지 않은 경로를 통해서도 반사될 수도 있지만, 확률진폭을 통한 계산을 해보면 입사각과 반사각이 같은 경로를 택할 확률밖에 남지 않는다. 다른 경로를 택할 확률들은 모두 상쇄되어 사라진다. 광자가 특정 경로를 택할 확률은 주변 광자에 영향을 받기도 한다. 대표적인 사례가 Stimulated Emission이다. 광자의 확률진폭 계산에 따르면, 광자는 주변에 광자가 있는 경로를 택할 확률이 높다. 그래서 원자가 광자를 방출하려 할때, 특정 상태에 광자가 존재한다면 방출되는 광자도 그 상태로 갈 확률이 높다. 이렇게, 다른 광자와 같은 상태로 광자가 방출되는 현상이 Stimulated Emission이며, 이 현상을 반복적으로 일으켜 레이저를 만든다. 전자 또한, 광자처럼 확률적으로 행동하는 입자다. 전자는 광자와 달리, 주변에 전자가 없는 경로를 택할 확률이 높다. 그래서 전자는 광자처럼 모이지 못하고 흩어지게 된다. 전자와 광자가 다르게 행동하는 이유는, 두 입자의 Spin이 다르기 때문이다. 광자는 Spin 1 입자인데, 전자는 Spin 1/2 입자다. Spin 1/2입자라는 것은, Spin 값으로 +1/2 또는 -1/2를 갖는 입자라는 의미다. 따라서 전자는 Spin 값으로 +1/2 또는 -1/2를 가지며, 같은 Spin을 갖는 두 입자는 같은 위치에 존재할 수 없다는 내용이 Pauli Exclusion Principle이라는 이름으로 정리되어 있다. 전자와 광자는 큰 연관이 없어보일 수 있지만, 사실 광자는 전자와 전자, 전자와 양전자, 또는 양전자와 양전자 사이의 상호작용을 매개하는 매개입자다. 전자가 전자를 밀어내는 이유는 광자를 그 방향으로 방출해서 그렇다 전하라는건 광자와 결합할 확률에 비례한다. 전하가 없는 물체가 전자기력을 안받는건, 광자와 결합할 확률이 없어서 그렇다]]></summary></entry><entry><title type="html">Microscopic Electromagnetics - Quantum Computers</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Quantum-Computers.html" rel="alternate" type="text/html" title="Microscopic Electromagnetics - Quantum Computers" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Quantum%20Computers</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Quantum-Computers.html"><![CDATA[<p>양자컴퓨터는 중첩, 얽힘, 간섭 등 양자역학적 특징을 이용하는 컴퓨터다.</p>
+<p>Disadvantages:
+Conversion speed is slower compared to Flash ADCs.</p>
 
-<p>1982년 리처드 파인만이 양자컴퓨터 개념을 제시했다.</p>
+<p>Applications:
+Sensor interfacing, battery-powered devices, and moderate-speed data acquisition systems.</p>
 
-<p>쇼어 알고리즘, 그로버 알고리즘은 양자컴퓨터가 고전 컴퓨터보다 특정 연산에서 빠를 수 있다는걸 증명했다.</p>
+<p>Pipelined ADC
+ADC를 내부적으로 두 개 이상의 스테이지를 구성해서 동작하는 방식. 스테이지간엔 보통 OP-amp와 capacitor를 이용해 이전 스테이지의 전압 정보를 증폭시켜 다음 스테이지로 전달한다. 고속이면서 고해상도를 가지기 위해서 필수적인 구조이다. 최근에는 공정 기술의 발달로 SAR의 속도는 비약적으로 향상된 데 반해, 정통적인 아날로그 회로인 OP-amp는 저전압 구조에도 적합하지 않은데다가 속도 향상도 크지 않아서 속도 향상에 병목이 걸려있다. 그래도 한 개의 스테이지로 구성된 ADC에는 한계가 있기 때문에 연구는 꾸준히 진행되고 있으며, 최근엔 OP-amp를 제거하고 Ring-amp나 Dynamic-Amp를 이용해서 Pipelined 구조를 구성하는 시도도 많이 이루어지고 있다. 또한 각 스테이지의 ADC를 SAR 방식으로 구성한 Pipelined SAR ADC 구조 역시 연구가 활발히 진행중이다.
+Pipelined ADCs offer a compromise between speed and resolution, making them ideal for applications requiring medium-to-high speed with high resolution. The pipelined ADC architecture splits the conversion process into multiple stages. Each stage consists of a low-resolution ADC followed by a DAC. The output of each stage is amplified and passed on to the next stage, correcting errors progressively and refining the digital output. The pipeline architecture allows for concurrent processing of multiple samples, significantly increasing throughput.</p>
 
-<p>결국 양자컴퓨터에서 어려운 것은:
-양자 오류 정정(Quantum Error Correction)을 활용한 Qubit 제어가 어려운 것이다.</p>
+<p>Advantages:
+High speed (faster than SAR ADCs but slower than Flash ADCs).
+Efficient trade-off between speed and resolution, often used for 8 to 16 bits at multi-MSPS rates.</p>
 
-<p>양자컴퓨터 구조:
-Physical Layer와 Logical Layer가 있다.</p>
+<p>Disadvantages:
+Increased complexity compared to SAR ADCs.
+Requires careful calibration to correct for errors across stages.</p>
 
-<p>physical layer:
-Lattice of superconducting qubits and resonators로 만들어진 physical quantum processor가 있고,
-여기에 control을 위한 microwave pulses, readout을 위한 quantum-limited amplifiers가 있고
-quantum error correction을 위한 부분이 있다.</p>
+<p>Applications:
+Imaging, video applications, and communication systems.</p>
 
-<p>Logical layer:
-여기는 Shor, Grover의 quantum simulation들이 돌아간다.</p>
+<p>Noise-Shaping SAR ADC
+SAR의 변환 이후 남은 잔여물을 인풋 쪽으로 피드백시켜서 에러의 양을 최소화 시키는 방식. DSM ADC와 SAR ADC의 장점을 합친 방식이라고 볼 수 있다. 해상도를 높이기 위해선 DSM과 마찬가지로 오버샘플링이 필수적인데, 최근엔 SAR ADC의 변환 속도가 꽤나 빨라지면서 중간 주파수대역에서 고해상도를 가지는 어플리케이션에 주로 이용되고 있다.
+Noise-shaping SAR ADCs combine the benefits of SAR architecture with noise-shaping techniques to achieve higher effective resolution and better performance in noise-sensitive applications. In this hybrid approach, a conventional SAR ADC is used with oversampling and noise-shaping filters to push quantization noise to higher frequencies. This method improves the overall signal-to-noise ratio (SNR) without sacrificing speed or increasing power significantly.</p>
 
-<p>쇼어 알고리즘:
-양자 푸리에 변환을 사용한다.
-빠른 소인수분해로 암호 해독을 빠르게 할 수 있다.</p>
+<p>Advantages:
+Better noise performance than traditional SAR ADCs.
+Efficient for achieving high resolutions while maintaining moderate power consumption.</p>
 
-<p>그로버 알고리즘:
-찾으려는 값의 확률진폭을 키우는 과정을 반복해서, 고전 알고리즘 대비 복잡도를 최대 루트N배 낮출 수 있다.</p>
+<p>Disadvantages:
+More complex architecture due to noise-shaping circuitry.</p>
 
-<p>큐비트를 구현하는 방법은 상당히 다양하다.</p>
+<p>Applications:
+Audio processing, biomedical instrumentation, and precision measurement systems.</p>
 
-<p>반도체 양자점, 초전도 등등</p>
+<p>Single-slope (or dual-slope) ADC
+비교기 인풋에 샘플된 인풋과 ramp 신호를 양자화기준점의 개수 만큼 비교하는 방식. 예를 들어 10bit를 구성하기 위해선 ramp 신호를 비교기 인풋에 인가하고 비교기를 1023번 동작시킨다. Flash ADC보다 나을 게 없어보이지만, 비교기를 한 개만 쓰기 때문에 많은 에러 소스로부터 자유롭다. 따라서 오히려 매우 고해상도를 목표로 하기 적합한 구조이지만, 대신 속도가 매우 느리다는 단점이 있다.</p>
 
-<p>반도체 양자점 큐비트 방식은 양자점으로 양자정보처리를 한다.</p>
+<p>Delta sigma modulator (DSM) ADC
+기존의 ADC는 모두 고정된 양자화 기준점을 가지고 한 번에 샘플된 인풋이 어느 기준점에 가장 가깝냐 판단하는 것으로 변환하였다. 즉 Flash든 SAR든 그 기준점을 어떻게 만드냐만 다를 뿐, 근본적으로 기준점에 갖다 대고 즉각적으로 비교한다는 것은 동일하다. 하지만 DSM은 기존의 ADC들은 한 번만 변환해서 알 값들을 추가적으로 샘플하는 오버샘플링 과정을 갖는다. 이는 샘플링 속도보다 인풋의 속도가 매우 느리다면, 필터링을 통해 양자화 에러를 원래의 고정된 값보다 줄일 수 있기 때문이다. 예를 들어 인풋이 고정된 값이라고 생각해보자. 인풋은 0.75로 꾸준히 유지되고, 양자화 기준점은 0.5 한개밖에 없다. (즉 1bit ADC이다.)
+DSM은 이 0.75를 꾸준히 샘플하고, 비교기값에 따라 인풋에 feedback 한다. 이렇게 되면 비교기의 아웃풋은 111011101110..을 반복하게 된다.(전통적인 1차 DSM이라면) 여기서 1과 0의 개수를 평균낸다면(이는 저역통과 필터를 통과시킨다는 말과 같다.) 어떻게 될까? 평균값은 0.75가 된다. 즉 1bit ADC로도 정확한 input값을 예측할 수 있는 것이다. 이러한 방식의 ADC는 초창기엔 너무 많은 로직들이 필요하고, 속도 제한이 많아서 인정받지 못했지만 지금은 오디오 분야에서 초고해상도 변환을 위해선 필수적인 방법이다.</p>
 
-<p>X게이트, Z게이트: 단일 큐비트 게이트
-CNOT 게이트: 다중 큐비트 게이트
-X게이트는 NOT gate와 같은 역할을 한다.</p>
+<p>Delta-Sigma ADCs use oversampling and noise shaping to achieve very high resolution at relatively lower speeds. The architecture consists of a delta-sigma modulator, which oversamples the input signal and uses feedback to shape the noise spectrum. The high-frequency noise is filtered out, leaving a high-resolution digital representation of the input. ΔΣ ADCs typically require decimation filters to reduce the oversampled data to the desired rate.</p>
 
-<p>양자점을 만들떄:
-AlGaAs, GaAs를 붙여놓고 전압을 걸면, 접합면에서 전자가 전위 우물에 갇혀 양자점이 생긴다.</p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[양자컴퓨터는 중첩, 얽힘, 간섭 등 양자역학적 특징을 이용하는 컴퓨터다.]]></summary></entry><entry><title type="html">Macroscopic Electromagnetics - Vector Calculus</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Electromagnetics-Vector-Calculus.html" rel="alternate" type="text/html" title="Macroscopic Electromagnetics - Vector Calculus" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Electromagnetics%20-%20Vector%20Calculus</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Electromagnetics-Vector-Calculus.html"><![CDATA[<p>Electromagnetics Theory에는 크게 2가지가 있다.<br />
+<p>Advantages:
+Very high resolution (often 20 bits or more).
+Superior noise performance, particularly for low-frequency signals.</p>
+
+<p>Disadvantages:
+Relatively slow conversion speed compared to other ADC types.
+Requires complex digital filtering and processing stages.</p>
+
+<p>Applications:
+Precision measurement, audio applications (high-fidelity audio), and industrial control systems.</p>
+
+<p>나무위키 ADC, DAC 문서 정리</p>
+
+<p>Bosor - Wooley Delta Sigma ADC: Non-delayed integrator를 쓰는 ADC.
+이 구조에서는 C가 줄어들면 input-&gt;output delay가 크게 감소한다.
+그러면 신호가 한번에 훅 들어와서, quantizer 출력이 이상하게 나올 수 있다.</p>
+
+<p>지금 문제는, C가 f corner일 때 ADC의 ENOB가 상당히 작게 나온다는 것이다.
+결국, C가 작아지면 ENOB가 작게 나온다는 것이다.</p>
+
+<p>앞에서 말한 문제가 맞는지 확인하기 위해, ADC에 집어넣는 전류를 줄여볼 수 있다.
+전류를 줄이면 Amp BW가 줄어들어 Amp가 느려진다.
+이때 출력이 정상적으로 나온다면, Amp가 너무 빨라서 생긴 settling time 문제였던 거다.</p>
+
+<p>ADC 입력이 Quantizer로 바로 들어가게 하는 feed-forward 구조도 있고,
+ADC 입력이 Integrator 2로 바로 들어가게 하는 feed-forward 구조도 있다.</p>
+
+<p>Delta Sigma ADC에는 Single Stage Amp 쓰는게 가장 좋다. 2 stage부터는 전류만 많이 쓴다.</p>
+
+<p>RF Amplifiers:
+Gain을 늘리려면 Amp를 직렬로 여러개 연결해야 한다
+출력 Power를 늘리려면 Amp를 병렬로 여러개 연결해야 한다</p>
+
+<p>In digital systems, ADC clock speed plays a role in managing the rate of data conversions, affecting system interrupts and overall processing. Slower ADC clock speeds result in fewer interrupts because conversions occur less frequently, reducing the need for the processor to handle them. Interrupts are signals that alert the processor to execute specific routines when an event occurs, often triggered by hardware like ADCs. In IC design, an interrupt map refers to how interrupts are assigned to different system components, optimizing control and data flow for efficient performance.</p>
+
+<p>Slower ADC Clock and Interrupts
+When the clock speed of an ADC is slower, it means that the conversion process from analog to digital data takes more time. This reduced conversion rate directly impacts the number of interrupts generated by the system because each conversion typically triggers an interrupt to notify the processor that data is ready to be read.</p>
+
+<p>Example:
+High Clock Speed ADC: With fast conversion, an ADC operating at a higher frequency will produce more digital output values per second. This leads to more frequent interrupts, as each completed conversion triggers the system to process the new data.
+Low Clock Speed ADC: A slower ADC clock reduces the rate at which conversions are completed, resulting in fewer interrupts. This can be beneficial when reducing processor load is crucial, especially in power-sensitive systems.
+In summary, slower ADC clocks reduce the number of data conversions, hence generating fewer interrupts. This can be useful in applications where real-time data is not critical, or the system aims to reduce processor workload and power consumption.</p>
+
+<p>Interrupts in IC Design
+An interrupt is a signal sent to the processor by hardware or software that temporarily halts the current operations and shifts the processor’s attention to handle an event (like data being ready from an ADC). Once the interrupt service routine (ISR) is executed to handle the event, the system resumes its prior operations.</p>
+
+<p>Interrupts serve the purpose of:</p>
+
+<p>Efficiently managing events in a non-blocking manner, allowing the CPU to execute other tasks until the event occurs.
+Ensuring timely handling of high-priority tasks or inputs, such as reading sensor data, controlling motors, or responding to user inputs.
+Key Types of Interrupts:</p>
+
+<p>Hardware Interrupts: Triggered by external devices (e.g., ADCs, timers, sensors). For instance, after an ADC completes a conversion, it triggers an interrupt to notify the microcontroller to read the data.
+Software Interrupts: Generated by software instructions, such as requesting a specific operation or handling an error.
+Interrupt Map in IC Design
+An interrupt map in IC design refers to the configuration and assignment of interrupt signals to specific processors or controller units in a system-on-chip (SoC) or microcontroller unit (MCU). It is essentially a table or structure that defines which hardware events are mapped to which interrupt lines or vectors.</p>
+
+<p>Components of an Interrupt Map:
+Interrupt Vector Table: This is a data structure that holds the addresses of interrupt service routines (ISR) for each interrupt request (IRQ). When an interrupt occurs, the CPU uses this table to find the correct ISR to handle the event.
+Interrupt Priority Levels: In many ICs, interrupts are assigned different priority levels. Higher-priority interrupts can preempt lower-priority ones, ensuring that critical tasks are handled first.
+Interrupt Controllers: These manage multiple interrupt sources and prioritize or aggregate them for the processor. They are used to prevent overload by controlling how and when the CPU responds to different interrupt sources.
+For example, in a multi-core IC, different cores might be responsible for handling different types of interrupts based on their role in the system (e.g., core 1 handles sensor data, while core 2 manages network traffic). An efficient interrupt map optimizes the flow of data and minimizes latency by directing interrupts to the appropriate processing unit.</p>
+
+<p>Conclusion
+Slower ADC clock speeds reduce the number of interrupts, lessening the burden on the processor, which can be useful in power-sensitive systems or when real-time processing isn’t critical. Interrupts themselves are mechanisms for handling asynchronous events efficiently, while an interrupt map in IC design optimizes how various interrupts are managed and assigned within the system. A well-designed interrupt map ensures system performance, stability, and responsiveness by prioritizing and organizing interrupt events.</p>
+
+<p>Further Reading Suggestions:
+Microcontroller interrupt handling and design patterns.
+Advanced ADC architectures and their impact on system interrupts.
+Power management techniques in microcontroller-based systems.
+Key Questions:
+What are the trade-offs between clock speed and power consumption in ADC systems?
+How does interrupt latency affect real-time system performance?
+What are the design considerations for creating an efficient interrupt map in complex IC designs?</p>
+
+<p>SAR는 scaling에 좋아서 요즘은 SAR 많이 쓴다
+pipeline은 잘 안쓴다</p>
+
+<p>buffer 만드는게 더 어려워졌따
+GHz Buffer는 만들기가 어렵다</p>
+
+<p>RF Receiver MPAC?</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Low oversampling에서는 ADC가 circuit imperfection에 엄청 민감해진다. 32~256정도를 쓰고, 4,8정도가 low oversampling이다.]]></summary></entry><entry><title type="html">Analog - Amplifier Class</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Amplifier-class.html" rel="alternate" type="text/html" title="Analog - Amplifier Class" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Amplifier%20class</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Amplifier-class.html"><![CDATA[<p>Amplifier는 동작 방식에 따라 ‘class’로 구분된다.<br />
 <br />
-Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다.<br />
-Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다.<br />
-<br />
-Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고,<br />
-그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다.<br />
-<br />
-여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다.<br />
+Amplifier는 동작 방식에 따라 효율이 결정되는데,<br />
+효율이 높은 amplifier는 linearity가 낮고,<br />
+효율이 낮은 amplifier는 linearity가 높다는 특징이 있다.<br />
+즉, amplifier의 class를 확인하면 동작 방식, 효율, linearity를 파악할 수 있다.<br />
 <br />
 <br />
-전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다.<br />
+Class A, B, AB, C:<br />
+Output Stage 트랜지스터들이 gain을 만든다.<br />
+Output Stage 트랜지스터들이 효율을 위해 잠시 꺼졌다 켜지기도 한다.<br />
+효율이 낮지만 linearity가 높다.<br />
 <br />
-좌표계 변환 - 위치:<br />
+Class D, E, F, G, S, T:<br />
+Gain이 전원 전압에 비례한다.<br />
+Output stage TR들이 완전히 껐다 켜지며 PWM(Pulse Width Modulation) 동작을 한다.<br />
+효율이 높지만 linearity가 낮다.<br />
 <br />
-좌표계 변환 - 벡터:<br />
 <br />
-<img src="/public/img/EM1.png" alt="alt text" /><br />
+Class A amplifier:<br />
+Class A amplifier는 Output 트랜지스터 하나가 항상 켜져있는 구조다.<br />
+트랜지스터가 계속 켜진 상태로 gain을 만들기 때문에, gain이 크고 linearity가 높다.<br />
+대신, 항상 켜져있기 때문에 전류 소비도 계속 일어나 전력 효율이 나쁘다.<br />
 <br />
-Vector와 Vector field의 차이<br />
+그래서 high-fidelity audio amplifier 등 고성능 amplifier가 필요한 곳에 쓰이지만,<br />
+효율이 나쁜 만큼 발열이 심해 고전력 회로에서는 사용하기 어렵다.<br />
 <br />
-Gradient가 무엇인가<br /></p>
-
-<p>Gradient는 어떤 Scalar Field의</p>
-
-<p><br />
-좌표계별 Gradient:<br />
 <br />
-Curl이 무엇인가<br />
-<br />
-좌표계별 Curl:<br />
+Class B amplifier:<br />
+Class B amplifier는 Output 트랜지스터 2개가 번갈아 켜지는 구조다.<br />
+input signal이 positive일 때는 위쪽 트랜지스터만, negative일 때는 아래쪽 트랜지스터만 켜지는 구조다.<br />
+이런 구조를 push-pull 구조라고 부른다.<br />
 <br /></p>
 
-<p><br />
-유럽은 Linguistic notation : Curl \(\bar{E}\)<br />
-미국은 Gibbs notation : \(\triangledown  \times \bar{E}\)<br /></p>
+<p>class A amplifier보다는 효율이 높은 구조지만, 새로운 문제가 또 생긴다.</p>
 
+<p>입력 전압이 -0.7V~0.7V동안은 위아래 트랜지스터가 둘 다 꺼져서 출력이 안나온다.</p>
+
+<p>이거때문에 zero-crossing distortion(Crossover distortion이라고도 한다)이 생겨서,
+class B amplifier는 audio amplifier같은 곳에 못쓴다.</p>
+
+<p>Class AB amplifier:
+이름에서 보이듯, Class A랑 Class B를 합친 구조다.
+audio power amplifier design에서 많이 쓰이는 구조다.</p>
+
+<p>class B를 조금 변형한 구조인데, crossover point에서 두 트랜지스터가 꺼지지 않고 켜져있는 구조다.</p>
+
+<p>여기 들어가는 트랜지스터들은 걸려있는 bias voltage가 아주 작다. cutoff point보다 아주 조금 높은 전압이다.
+이렇게 되면 트랜지스터가 조금 더 오래 켜져있다. half cycle보다 조금 더 길게 켜져있다.</p>
+
+<p>Class B는 half cycle보다 짧게, Class A는 항상 켜져있으니 그 사이에 있다는 의미로 class AB라 한다.
+하여간, half cycle보다 길게 켜져있기에, crossover distortion이 일어나지 않는다.
+efficiency는 50~60% 정도다.</p>
+
+<p>Class C amplifier:
+Class C amplifer는 효율이 꽤 높지만, linearity가 많이 떨어진다.
+Class A, AB, B는 linear amplifier로 분류되지만, C는 그렇지 못한다.</p>
+
+<p>Class C amplifier는 절반도 훨씬 안되게, 90도 정도만 켜진다.
+그래서 효율은 80%정도 되긴 하는데, 엄청난 distortion이 생긴다.
+Sine wave가 들어오면 머리만 참수해서 내보내는 수준이니까.</p>
+
+<p>그래서, class C amplifier는 high frequency sine wave oscillator나 RF amplifier에 쓰인다.
+고주파에서는 amplifier에 의해 발생한 current가 LC resonance circuit에 의해 특정 주파수의 sine wave로 바뀔 수 있기 때문이다.</p>
+
+<p>class D~T는 switching operation을 한디.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Amplifier는 동작 방식에 따라 ‘class’로 구분된다. Amplifier는 동작 방식에 따라 효율이 결정되는데, 효율이 높은 amplifier는 linearity가 낮고, 효율이 낮은 amplifier는 linearity가 높다는 특징이 있다. 즉, amplifier의 class를 확인하면 동작 방식, 효율, linearity를 파악할 수 있다. Class A, B, AB, C: Output Stage 트랜지스터들이 gain을 만든다. Output Stage 트랜지스터들이 효율을 위해 잠시 꺼졌다 켜지기도 한다. 효율이 낮지만 linearity가 높다. Class D, E, F, G, S, T: Gain이 전원 전압에 비례한다. Output stage TR들이 완전히 껐다 켜지며 PWM(Pulse Width Modulation) 동작을 한다. 효율이 높지만 linearity가 낮다. Class A amplifier: Class A amplifier는 Output 트랜지스터 하나가 항상 켜져있는 구조다. 트랜지스터가 계속 켜진 상태로 gain을 만들기 때문에, gain이 크고 linearity가 높다. 대신, 항상 켜져있기 때문에 전류 소비도 계속 일어나 전력 효율이 나쁘다. 그래서 high-fidelity audio amplifier 등 고성능 amplifier가 필요한 곳에 쓰이지만, 효율이 나쁜 만큼 발열이 심해 고전력 회로에서는 사용하기 어렵다. Class B amplifier: Class B amplifier는 Output 트랜지스터 2개가 번갈아 켜지는 구조다. input signal이 positive일 때는 위쪽 트랜지스터만, negative일 때는 아래쪽 트랜지스터만 켜지는 구조다. 이런 구조를 push-pull 구조라고 부른다.]]></summary></entry><entry><title type="html">Analog - BGR</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-BGR.html" rel="alternate" type="text/html" title="Analog - BGR" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20BGR</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-BGR.html"><![CDATA[<p>BGR: Bandgap Reference</p>
+
+<p>BGR은 PVT Variation에 영향받지 않고 일정한 전압을 출력하기 위한 회로다.</p>
+
+<p>BGR에는 3종류가 있다.
+BJT BGR,
+MOSFET BGR,
+2TR BGR</p>
+
+<p>BJT BGR:</p>
+
+<p>Parasitic BJT를 쓰는 경우도 많다.</p>
+
+<p>MOSFET BGR:
+Weak inversion region을 쓴다.</p>
+
+<p>2TR BGR:
+Native Transistor를 쓴다.</p>
+
+<p>BJT BGR의 장점:
+Process Variation이 작다.</p>
+
+<p>BJT BGR의 단점:
+BJT, 저항이 쓰이기 때문에 면적이 많이 필요하다. 즉 비싸다.
+matching이 잘 된 저항을 써야 하기 때문에 면적이 많이 필요하다.</p>
+
+<p>MOSFET BGR의 장점:</p>
+
+<p>MOSFET BGR의 단점:
+matching이 잘 된 저항을 써야 하기 때문에 면적이 많이 필요하다.</p>
+
+<p>2TR BGR의 장점:
+구조가 간단하다.</p>
+
+<p>2TR BGR의 단점:
+Process Variation이 크다.</p>
+
+<p>Bandgap Voltage Reference는 PVT variation이나 loading 상황에 관계없이 일정한 전압을 주려고 쓴다.</p>
+
+<p>그리고 noise, precision specification을 원하는 수준까지 올리려면 power가 많이 필요할 수 있다.</p>
+
+<p>bandgap에는 3종류가 있다.
+BJT, MOSFET, 2TR</p>
+
+<p>2TR은 NMOS 2개로 Bandgap을 만든 경우고, power 소비가 적어야 할때 쓴다.</p>
+
+<p>MOSFET으로 bandgap을 만들때에는 weak inversion region을 쓴다. BJT처럼 exponential하니까.</p>
+
+<p>그 외 회로에서도 power를 적게 써야 할 때 가끔 weak inversion region을 쓴다.</p>
+
+<p>weak inversion region은 gm이 부족하지 않나?
+이건 W 키우면 된다.
+그럼 면적 손해가 일어나지 않나?
+L 줄이면 된다.</p>
+
+<p>캐패시턴스가 작을수록 트랜지스터의 f_T가 크다.
+전압을 크게 넣으면 f_T가 커진다는 어조로 적혀있는데, 이거 확인좀</p>
+
+<p>왜 MOS로 bandgap 많이 안만들고 BJT 쓰냐?
+MOS로 만들면 공정 variation이 좀 크다.</p>
+
+<p>Bandgap referenceㄹ르 만드는, 널리 쓰이는 방법중 하나는 parasitic BJT를 쓰는 방식이다.
+이 방식에서는 PTAT 전압과 CTAT 전압을 더해 bandgap reference를 만든다.
+그 외에 PTAT 전류와 CTAT 전류를 더할수도 있고, 뭐 다양한 방법들이 있다.</p>
+
+<p>대부분의 기존 design들은 error correction을 위해 amplifier를 쓴다.
+amplifier를 쓰면 온도랑 supply voltage에 둔감해지긴 하는데,
+amplifier는 power도 많이 먹고 면적도 많이 먹는다.</p>
+
+<p>amplifier를 안쓰는 design들도 있긴 하다.
+이 경우에는 MOSFET을 saturation mode로 쓰기 때문에, MOSFET이 power를 많이 먹는다.</p>
+
+<p>근데, amplifier든 saturated device든 voltage headroom이 필요하다.
+그래서 이런걸 쓰면 supply voltage 내리는 데에 한계가 있다.</p>
+
+<p>게다가, 이런 design들은 온도에 둔감한 전압 출력을 위해 matching이 잘된 저항들을 필요로 하기에,
+면적이 넓은 저항들을 써야 한다. 그래서 면적 손해를 본다.</p>
+
+<p>그래서, 여기서 제시하는 구조는 amp도 없고, saturated device도 없고, 저항도 없는 구조다.
+이 구조는 power consumption이 작기 때문에 power를 아끼기 위한 duty cycling도 필요 없고, startup도 필요 없다.
+는 내용이 ‘A portable 2-Transistor Picowatt Temperature-Compensated Voltage Reference Operating at 0.5V’의 내용이다.</p>
+
+<p>신기하게도 MOSFET 2개만으로 만들 수 있는 Voltage Reference다.<br />
+아무 MOSFET으로나 되는건 아니고, 하나는 Enhancement MOSFET, 하나는 Native 또는 Depletion MOSFET이 필요하다.<br />
+<br />
+2TR BGR 관련 특허들은 일본의 배터리 protection 회로 관련 회사들이 많이 냈다.<br />
+<br />
+Native 또는 Depletion MOSFET을 쓰면 공정시 layer가 하나 더 필요하다.<br />
+Body가 무조건 ground에 연결되어야 하기 때문이다.<br />
+<br />
+두가지 구조가 있다.<br />
+첫번째 구조부터 보면:<br />
+<br /></p>
+<div>
+    <img src="/public/img/2tr1.png" style="width: 15%; height: auto;" alt="my picture" />
+</div>
 <p><br />
-Stokes’ Theorem:<br />
-\(\oint_{c}\bar{F}\cdot d\bar{l}=\iint_{S}\triangledown \times \bar{F}\cdot \hat{n}dS\)<br />
 <br />
-Divergence Theorem:<br />
-\(\oiint_{S}\bar{F}\cdot \hat{n}dS=\iiint_{V}\triangledown \cdot \bar{F}dV\)<br />
+위쪽은 native TR이라, \(V_{th}\)가 0보다 약간 작다.<br />
+그래서 M1은 항상 켜져있다.  \(V_{GS1}\)=0인데 \(V_{th1}\)는 0보다 약간 작으니까.<br />
 <br />
-Div, Curl을 Gibbs notation으로 적을 때는 각각 \(\triangledown \cdot\), \(\triangledown \times\)라고 적는다.<br />
-이때, \(\triangledown \times \bar{F}\)를 \(\triangledown\)와 \(\bar{F}\)를 cross product하는 거라고 해석하는건 일반적으로 틀린 해석이다.<br />
-그런 해석은 Cartesian coordinates에서만 맞는 이야기다. 일반적으로, \(\triangledown \cdot\)와 \(\triangledown \times\)는 그냥 그 자체로 하나로 봐야 한다.<br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[Electromagnetics Theory에는 크게 2가지가 있다. Microscopic Electromagnetics: 슈뢰딩거 방정식으로 표현되며, 원자 또는 분자 수 개의 특성을 설명한다. Macroscopic Electromagnetics: 맥스웰 방정식으로 표현되며, 원자 또는 분자로 이루어진 물질의 통계적인 특성을 설명한다. Macroscopic Electromagnetics는 원자, 분자 수 개에 대해서는 적용할 수 없고, 그 갯수가 아보가드로 수(\(N_A \approx 6.02 \cdot 10^{23}\)) 수준이 되어야 적용할 수 있다. 여기에서 설명하는 전자기학은 Macroscopic Electromagnetics다. 전자기학에서는 3차원 공간을 표현하기 위해 3가지 좌표계(Cartesian, Cylindrical, Spherical)를 사용한다. 좌표계 변환 - 위치: 좌표계 변환 - 벡터: Vector와 Vector field의 차이 Gradient가 무엇인가]]></summary></entry><entry><title type="html">Macroscopic Electromagnetics - Field Quantities</title><link href="http://localhost:4000/electromagnetics/2023/10/24/Physics-Electromagnetics-Field-Quantities.html" rel="alternate" type="text/html" title="Macroscopic Electromagnetics - Field Quantities" /><published>2023-10-24T19:31:29+09:00</published><updated>2023-10-24T19:31:29+09:00</updated><id>http://localhost:4000/electromagnetics/2023/10/24/Physics%20-%20Electromagnetics%20-%20Field%20Quantities</id><content type="html" xml:base="http://localhost:4000/electromagnetics/2023/10/24/Physics-Electromagnetics-Field-Quantities.html"><![CDATA[<p>전자기학에서는 다양한 field들을 다룬다.<br />
 <br />
-Field Quantities:<br />
-\(\bar{E}\) : Electric field intensity [\(V/m\)]<br />
-\(\bar{H}\) : Magnetic field intensity [\(A/m\)]<br />
-\(\bar{D}\) : Electric flux density [\(C/m^2\)]<br />
-\(\bar{B}\) : Magnetic flux density [\(Wb\)]<br />
-\(\bar{J}\) : Electric current density [\(A/m^2\)]<br />
-\(\rho\) : Electric charge density [\(C/m^3\)]<br />
+그리고 2개 트랜지스터에 흐르는 전류는 동일하니까:<br />
+\(I_{1}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_1}{L_1} \left(-V_{th1} \right)^{2}\)<br />
 <br />
-\(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다.<br />
+\(I_{2}=\dfrac{1}{2} \mu_{n} C_{ox} \dfrac{W_2}{L_2} \left(V_{GS2}-V_{th2} \right)^{2}\)<br />
 <br />
-이 물리량들은 모두 시간과 공간에 대한 함수다.<br />
-그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다.<br />
+여기서 \(I_{1}=I_{2}\)으로 놓고 정리하면:<br />
+\(V_{out} = V_{GS2} = V_{th2} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot V_{th1}\)<br />
 <br />
-이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다.<br />
-\(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고,<br />
-\(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.<br />
+우변은 다 트랜지스터 구조에 의해 결정되는 값들이라, 이 구조에서 \(V_{GS2}\)도 하나의 값으로 정해지게 된다.<br />
 <br />
+여기까지는 좋은데, 우린 이걸 BGR로 쓰고싶은거니까 온도가 변해도 전압이 일정하다는걸 확인해야 한다.<br />
+온도가 변하면 \(V_{th1}, V_{th2}\)이 변한다.<br />
+<br />
+\(\dfrac{\partial V_{out}}{\partial T} = \dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}\)<br />
+<br />
+이 회로가 Voltage Reference로 동작하려면, \(\dfrac{\partial V_{out}}{\partial T}=0\)이 되어야 한다.<br />
+즉, \(\dfrac{\partial V_{th2}}{\partial T} - \sqrt{\dfrac{W_1L_2}{L_1W_2}} \cdot \dfrac{\partial V_{th1}}{\partial T}=0\)이 0이 되도록 트랜지스터 크기 \(\left(W_{1}, W_{2}, L_{1}, L_{2}\right)\)를 잘 조절해주면 된다.<br />
+<br />
+잘 조절하면 \(\dfrac{\partial V_{out}}{\partial T}=0\)이 된다.<br />
+이렇게 만들면 된다.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+두번째 구조:<br />
+<br /></p>
+<div>
+    <img src="/public/img/2tr2.png" style="width: 20%; height: auto;" alt="my picture" />
+</div>
+<p><br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[BGR: Bandgap Reference]]></summary></entry><entry><title type="html">Analog - Bipolar Transistors</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Bipolar-Transistors.html" rel="alternate" type="text/html" title="Analog - Bipolar Transistors" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Bipolar%20Transistors</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Bipolar-Transistors.html"><![CDATA[<p>Bipolar transistor들은 CMOS 대비 더 높은 gm, 더 낮은 1/f noise를 갖는다.
+breakdown voltage도 더 높고, reliability도 더 높다.</p>
+
+<p>대신 shot noise는 있다
+이건 고주파 noise</p>
+
+<p>BJT는 주파수가 올라가면 burst noise가 증가한다.
+이거 shot noise랑은 또 다른것같은데 확인 필요
+그래서 RF 회로 만들때 BJT보다 CMOS가 낫다는 의견도 있다.
+하지만 꼭 그런건 아니다. source impedance도 영향을 줘서 복잡하다.</p>
+
+<p>온도센서에는 BJT가 들어가는데, 전원전압이 너무 내려가면 쓸 수가 없다.
+그리고 사실 PnR을 위해서는 BJT가 없는게 낫다.</p>
+
+<p>온도 센서 회로와 TSD 회로 모두 BJT를 사용한다.</p>
+
+<p>TSD 내부는 어떻게 생겼나?
+BJT 하나 넣어서 CTAT 특성 만들어놓고, CTAT 전압이랑 온도가 변해도 일정한 VREF 전압을 비교한다.
+그리고 그 전압 차이를 온도 차이로 간주해서 온도를 측정하고, 너무 차이나면 꺼지게 만들어둔다.</p>
+
+<p>고주파 활용:
+BJT든 MOSFET이든, 소비 전류를 늘리면 동작 속도가 빨라진다.
+전압이 변하는 속도가 증가한다는 뜻이다.</p>
+
+<p>그래서 전류를 올리다보면, 전자들의 이동속도가 vsat에 도달한다.
+여기서 더 빨라지려면?</p>
+
+<p>MOSFET이면 channel length L을 줄여야 하고,
+BJT면 Base width W_B를 줄여야 한다.</p>
+
+<p>IC 집적 기술이 발전하면서 L은 아주 줄어들었지만, Base width는 그러지 못했다.
+그래서 초고주파에서는 CMOS를 써야 한다.</p>
+
+<p>작은 전류에서는 최대 f_t를 Gate capacitance / Base junction capacitance,
+큰 전류에서는 최대 f_t를 vsat/Leff / vsat/WB가 결정한다.</p>
+
+<p>MOSFET은 Ids가 늘어나면 gm/Ids가 줄어드는데, BJT는 일정하다
+그리고 같은 전류라면 BJT가 MOSFET보다 gm이 크다.
+그래서 작은 전류로 큰 gm이 필요한 경우라면 BJT가 유리할 수도 있다.</p>
+
+<p>base current가 흐른다는게 BJT 단점이다</p>
+
+<p>MOSFET이라고 아예 안흐르는건 아니다.
+MOSFET oxide가 얇으면 tunneling에 의해 gate leakage가 발생한다.</p>
+
+<p>이 leakage는 oxide가 얇을수록 증가하는데, tox=L/50정도니까,
+L이 점점 짧아지면서 leakage가 점점 늘어나 무시하기 어렵게 됐다.</p>
+
+<p>이 gate current는 BJT의 base current와 유사하지만,
+gate current는 트랜지스터가 꺼져도 흐른다는 문제가 있다.</p>
+
+<p>Comparator Input TR에 BJT를 쓰면 offset, noise가 적다.
+CMOS로 같은 offset, noise 성능을 만들려면 크기를 엄청나게 키워야 한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Bipolar transistor들은 CMOS 대비 더 높은 gm, 더 낮은 1/f noise를 갖는다. breakdown voltage도 더 높고, reliability도 더 높다.]]></summary></entry><entry><title type="html">Analog - Charge Pump</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html" rel="alternate" type="text/html" title="Analog - Charge Pump" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Charge%20Pump</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Charge-Pump.html"><![CDATA[<p>Charge Pump</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Charge Pump]]></summary></entry><entry><title type="html">Analog - Oscillator</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html" rel="alternate" type="text/html" title="Analog - Oscillator" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Crystal%20Oscillator</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Crystal-Oscillator.html"><![CDATA[<p>Oscillator:</p>
+
+<p>crystal: low frequency, excellent frequency stability, excellent phase noise.
+대신, cannot be integrated on silicon</p>
+
+<p>tuned oscillators: Clapp, Colpitts, Hartley oscillator
+(LC oscillator)
+Good phase noise, moderate frequency stability
+대신, large chip area</p>
+
+<p>Ring oscillator: Moderate phase noise, poor frequency stability
+하지만! small area</p>
+
+<p>Crystal Oscillator<br />
+1912년에 발명됐는데, 그 뒤로 계속 쓰고 있다.
+Crystal oscillator는 mechanical resonance에 의해 진동하고, 그걸 piezoelectric 효과로 전압으로 읽어온다.
+진동이 계속될 수 있도록 전기 회로로 에너지를 넣어주고, 출력을 clock 신호로 사용한다.</p>
+
+<p>quartz crystal은 mechanical, chemical stability가 높아 resonance frequency가 정확하고 안정적으로 나온다.</p>
+
+<p>quartz crystal은 elastic hysteresis가 아주 작기 때문에 Q factor가 크다.
+Q factor가 크다는건, 진동할때마다 날려먹는 에너지가 적다는거다.</p>
+
+<p>Oscillator 종류:<br />
+Rc 발진기<br />
+크리스탈 발진기: 그냥 크리스탈<br />
+크리스탈 오실레이터: 크리스탈 뿐 아니라 오실레이터 구조 전체를 하나의 패키지에 넣어둔것<br />
+그냥 전원만 넣으면 클럭이 출력된다<br />
+<br />
+근데, 크리스탈만 있을때 전압출력은 사인파인데<br />
+크리스탈오실레이터는 전압출력이 완전 네모네모라, pcb 설계시 간섭 노이즈, emi,emc에 주의해서 배선해야 한다<br />
+<br />
+<br />
+Crystal oscillator는:<br />
+항상 켜져있어야 하는 block이라, power 소비가 적어야 한다.<br />
+항상 같은 주파수를 만들어야 하기 때문에, PVT variation에 적게 영향받아야 한다.<br />
+오랫동안 켜둬도 주파수가 일정해야 한다. 즉, Allan Deviation이 작아야 한다.<br />
+<br />
+Allan Deviation:
+예를 들어 t=1s에 측정한 10MHz clock의 Allan deviation이 10^{-9}였으면,
+t=1s에 오차가 10MHz * 10^{-9} = 10mHz만큼 있다는 뜻이다.</p>
+
+<p>Crystal은 항상 켜져있지만, power 많이 먹는 block들은 원래 꺼뒀다가 필요할때만 켠다.
+근데 crystal의 long term stability가 부족하면, crystal만 믿었다가는 시간 측정 잘못해서 block이 필요할때 꺼져있을 수도 있다.
+그래서, guard band를 넣어서 block을 조금 더 미리 켜줘야 한다. 그만큼 power가 더 나간다.</p>
+
+<p>crystal의 long term stability가 높으면 guard band를 더 좁게 가져가도 될거다. 그러면 power을 아낄 수 있다.
+그래서 Crystal의 long term stability가 부족하면, 결국 chip 전체의 power 소모가 늘어나게 된다.</p>
+
+<p>외부에서 Crystal에 넣어줘야 하는 power:<br />
+\(P_{Extr}\): extract oscillation frequency and phase<br />
+\(P_{Ener}\): Inject energy into crystal to compensate loss<br />
+\(P_{Timi}\): Timing control of energy injection<br />
+<br />
+\(P_{XO} = P_{Extr} + P_{Ener} + P_{Timi}\)<br />
+<br />
+그리고 넣어주는 에너지가 소비하는 에너지보다 많아야 한다고 한다? 왜 부등호인지는 생각좀 해봐야겠다<br />
+\(P_{XO} &gt; P_{loss}\)<br />
 <br /></p>
 
-<p>Faraday’s Law:<br />
-어떤 closed contour c에 대해,
-<br /></p>
-
-<p><img src="/public/img/EM2.png" alt="alt text" /><br /></p>
+<div style="float: left">
+    <img src="/public/img/XO1.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
 
 <p><br />
-이때 S는 평면일 필요는 없고, Boundary가 폐곡선 c인 임의의 곡면이면 된다.<br />
+Crystal의 등가회로는 이렇다.<br />
+Co는 전극과 패키징에 의한 캐패시턴스를 표현한거고,<br />
+RLC branch (Rs Ls Cs)는 crystal의 mechanical resonance를 표현한거다<br />
+크리스탈을 패키징할때, 패키징이 작은 Crystal일 수록 ESR이 크고 motional inductance가 크다.
 <br />
-\(\oint_{c}^{}\bar{E}\cdot d\bar{l}\)을 계산할 때는?<br />
-\(\bar{E}\)랑 각 \(d\bar{l}\)들 dot product해서 더한게 \(\oint_{c}^{}\bar{E}\cdot d\bar{l}\)다.<br />
-\(\bar{E}\)의 단위가 [V/m], \(d\bar{l}\)의 단위가 [m]이라 \(\oint_{c}^{}\bar{E}\cdot d\bar{l}\)의 단위는 [V]다.<br />
+Q factor:<br />
+\(Q=2\pi \dfrac{E_{Stored}}{E_{Loss,T}} = 2\pi \dfrac{0.5L_sI^2_{R_s}}{0.5I^2_{R_s}R_sT_{XO}} = \dfrac{\omega_{osc}L_s}{R_s}\)<br /></p>
+
+<p>쓸때는 이렇게 밑에 shunt capacitance를 붙여서 쓴다.<br />
+Cp가 작을때의 장점:
+startup time이 Cp^2에 비례하기 때문에, Cp가 작으면 startup time이 짧다.
+amplitude control loop의 반응 시간이 더 짧다.</p>
+
+<p>Cp가 클 때의 장점:
+RF phase noise가 작다.</p>
+
+<p><br /></p>
+
+<div style="float: left">
+    <img src="/public/img/XO2.png" style="width: 50%; height: auto;" alt="my picture" />
+</div>
+
+<p><br />
+당연히, 이렇게만 둔다고 동작하는건 아니다.<br />
+밖에서 에너지를 넣어줘야 진동을 할거다.<br />
+그 역할을 하는 회로를 붙여줘야 한다.<br />
 <br />
-Maxwell-Ampère’s Law:<br />
+Resonance mode가 2개 있는데,<br />
+Parallel mode가 있고 series mode가 있다.<br />
+<br />
+Parallel mode 진동을 할때는 inverter를 붙여주면 되고,<br />
+Series mode 진동을 할때는 buffer를 붙여주면 된다.<br />
+<br />
+\(f_{series} = \dfrac{1}{2\pi \sqrt{L_sC_s}}\)<br />
+<br />
+<br />
+Parallel mode:<br />
+Ls가 Cs뿐 아니라 Co, Cp의 영향도 받아 진동한다.<br />
+\(f_{parallel}= \dfrac{1}{2\pi \sqrt{L_s\left(C_s||C_L \right)}}  = \dfrac{1}{2\pi \sqrt{L_sC_s}} \sqrt{1+\dfrac{C_s}{C_L}} = f_{series}\sqrt{1+\dfrac{C_s}{C_L}} \approx f_{series}\left(1+\dfrac{C_s}{2C_L} \right)\)<br />
 <br /></p>
 
-<p><img src="/public/img/EM3.png" alt="alt text" /><br /></p>
+<p>\(f_{parallel}\)은 C_L에 대한함수라서 외부에 달아주는 C_p를 바꾸면 f_parallel도 바뀐다.<br />
+근데 f_series는 crystal 내부 수치들에 의해서만 결정된다.<br />
+<br />
+이렇게도 표현할 수 있다:<br />
+\(\dfrac{df_{parallel}}{dC_L}  = -f_{series} \dfrac{C_s}{2C^2_L}\)
+이게 좀 중요해질 수도 있는게, SMD(Surface-Mount Device) 캐패시터는 C가 \(\pm1% ~ \pm5%\)정도의 variation을 갖는다.
+이게 몇 Hz정도의 variation인지 알아야 한다면 이 수식을 쓰면 된다.</p>
 
-<p><br />
-우변 두번째 항이 중요하다. 이게 없으면 Ampère’s Law, 있으면 Maxwell-Ampère’s Law다.<br />
-이 항이 표현하는건 ‘displacement current’다. 왜 displacement냐면, 이 곳이 아닌 다른 곳에서 전류가 생긴다는 뜻으로 생각하면 된다.<br /></p>
+<p>공진 주파수는 온도의 영향도 받는다. 대부분의 32kHz Crystal들은 XY cut인데, 이 경우 oscillation frequency는 온도에 대한 이차함수가 된다.</p>
 
-<p><br />
-Charge Conservation Equation / Continuity Equation:<br />
-Charge Conservation Equation(전하량 보존법칙)이라고도 부르고, Continuity Equation이라고도 부른다.<br />
-<br /></p>
+<p>\(f_{parallel} = f_o\left(1 - \alpha\left(T-T_o \right)^2 \right)\)
+\(T_o\) : Turnover temperature
+\(f_o\) : Oscillation frequency at \(T_o\)
+\(\alpha\): temperature coefficient</p>
 
-<p><img src="/public/img/EM4.png" alt="alt text" /><br />
-여기서 봐야 할 것은, charge가 안움직이면 전류가 생기지 않는다는 점이다.</p>
+<p>Crystal을 직렬 RLC 하나 + C_o로 간단하게 모델링해놨지만, 사실은 f_{parallel}의 harmonic 주파수에 해당하는 진동들도 존재한다.
+그런 진동들을 ‘overtone mode’라고 부른다.</p>
 
-<p>Stokes’ Theorem, Divergence Theorem
-<img src="/public/img/EM5.png" alt="alt text" /><br /></p>
+<p>예를 들어, 32kHz crystal에서는 fundamental frequency의 6배 주파수에 second overtne이 존재한다.</p>
 
-<p>Faraday’s equation, Maxwell-Ampere’s law에 Stokes’ theorem을 적용해서 두 수식을 ‘differential form’이라는 형태로 표현할 수 있다.</p>
+<p>overtone의 영향을 줄이려면, 그 주파수에서의 drive level이나 loop gain이 낮게 나오게 하면 된다.</p>
 
-<p><img src="/public/img/EM6.png" alt="alt text" /><br /></p>]]></content><author><name></name></author><category term="Electromagnetics" /><summary type="html"><![CDATA[전자기학에서는 다양한 field들을 다룬다. Field Quantities: \(\bar{E}\) : Electric field intensity [\(V/m\)] \(\bar{H}\) : Magnetic field intensity [\(A/m\)] \(\bar{D}\) : Electric flux density [\(C/m^2\)] \(\bar{B}\) : Magnetic flux density [\(Wb\)] \(\bar{J}\) : Electric current density [\(A/m^2\)] \(\rho\) : Electric charge density [\(C/m^3\)] \(\bar{E}\)는 Electric field, \(\bar{H}\)는 Magnetic field라고 자주 불리지만, 엄밀한 명칭은 intensity까지 붙인 것이다. 이 물리량들은 모두 시간과 공간에 대한 함수다. 그렇기에 원래는 \(\bar{E}(x,y,z,t)\) 형태지만, 편의를 위해 \((x,y,z,t)\)를 생략하는 경우가 많다. 이 중 \(\rho\)는 scalar field, 나머지 field들은 vector field다. \(\rho\)는 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 scalar 값이 결정되고, \(\bar{E}, \bar{H}\) 등 다른 field들은 \((x,y,z,t)\)에 의해 그 위치, 시간에서의 vector가 결정되는 것이다.]]></summary></entry><entry><title type="html">Analog - H-Bridge</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html" rel="alternate" type="text/html" title="Analog - H-Bridge" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20H-Bridge</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-H-Bridge.html"><![CDATA[<p>H-bridge는 4개 FET을 써서 load에다가 전류를 준다.
-inductive motor들이 주로 load로 쓰인다.</p>
+<p>ESR: Equivalent Series Resistance
+Series resonant frequency에서 crystal이 보여주는 resistance다.
+\(ESR = R_s \left( 1+\dfrac{C_o}{C_p} \right)^2\)
+Cp가 들어간걸 보면 Cp를 달아놓고 잰 것 같긴 한데, 정확히 어떻게 잰건지는 잘 모르겠다.
+어쨌든, 보통 \(C_p&gt;&gt;C_o\)라서 \(ESR \approx R_s\)다.</p>
 
-<p>H-bridge에는 External diodes(Free-wheeling diode 또는 flyback diode라고도 불린다)가 들어가지 않을 때도 있다
-FET의 body diode를 쓸 수도 있기 때문이다.</p>
+<p>Drive level은 crystal 내에서 소모된 전력을 말한다.
+$$DL = 2ESR \left( \pi f \left( C_L+C_o \right)V_{pp} \right)^2
+Vpp는 출력의 peak to peak 전압이다.</p>
 
-<p>H-bridge에서 조심할 점:
-절대 한쪽 FET 2개를 동시에 켜면 안된다. Q1 Q2를 동시에 켜거나 Q3, Q4를 동시에 켜면 안된다는거다.
-이러면 전원에서 ground까지 impedance가 아주 작은 경로가 생겨버려서,
-전류가 엄청나게 흐르고 FET이 damage를 입을 수도 있다.
-이게 shoot through다.</p>
+<p>TCXO: Temperature Compensated Crystal</p>
 
-<p>Fast decay mode랑 slow decay mode가 있는데, 모터 속도 이야기가 아니고 모터 안 인덕터의 전류가 decaying되는 속도 이야기다.
-그래서 fast decay mode를 쓴다고 모터가 빨리 멈추는게 아니다. 실제로는 slow decay mode에서 모터가 더 빨리 멈춘다.</p>
+<p>고주파 Oscillator를 만들 경우, layout에서 작은 Capacitance만 생겨도 LPE해보면 출력주파수가 많이 떨어질 수 있다.</p>
 
-<p>예를 들어, Q1 Q4가 켜져서 motor가 돌고 있다고 해보자. 갑자기 Q1 Q4가 꺼지면?
-모터의 인덕터는 전류가 연속이어야 하니까, 전류는 바로 0이 되지 않고 flyback diode 또는 FET body diode를 통해 흘러나간다.
-이러면 전류가 천천히 0이 될거다.</p>
+<p>Oscillator 주파수는, 온도가 올라가면 주파수가 떨어지는게 좋다.
+온도가 올라가면 소자들이 느려지니까, settling time이 늘어나기 때문이다.
+주파수가 내려가줘야 문제 없이 잘 동작한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Oscillator:]]></summary></entry><entry><title type="html">Analog - ESD</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html" rel="alternate" type="text/html" title="Analog - ESD" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20ESD</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-ESD.html"><![CDATA[<p>ESD = Electrostatic Discharge<br />
+<br />
+사람은 정전기를 만나면 따끔한 정도지만,<br />
+IC는 정전기의 높은 전압때문에 문제가 생길 수도 있다.<br />
+<br />
+그래서 IC에 ESD cell 회로를 넣어 정전기의 영향을 막고,<br />
+ESD test로 IC가 정전기에 버틸 수 있는지 테스트한다.<br />
+<br />
+<br />
+ESD test에서는 정전기 전압을 모델링한 ESD Model을 사용한다.<br />
+<br />
+ESD Model:<br />
+HBM(Human Body Model): 인체에 의한 정전기를 표현한 모델<br />
+MM (Machine Model): 기계에 의한 정전기를 표현한 모델<br />
+CDM(Charged Device Model): 공기 중 전하에 의한 정전기를 표현한 모델<br />
+<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[ESD = Electrostatic Discharge 사람은 정전기를 만나면 따끔한 정도지만, IC는 정전기의 높은 전압때문에 문제가 생길 수도 있다. 그래서 IC에 ESD cell 회로를 넣어 정전기의 영향을 막고, ESD test로 IC가 정전기에 버틸 수 있는지 테스트한다. ESD test에서는 정전기 전압을 모델링한 ESD Model을 사용한다. ESD Model: HBM(Human Body Model): 인체에 의한 정전기를 표현한 모델 MM (Machine Model): 기계에 의한 정전기를 표현한 모델 CDM(Charged Device Model): 공기 중 전하에 의한 정전기를 표현한 모델]]></summary></entry><entry><title type="html">Analog - Feedback</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Feedback.html" rel="alternate" type="text/html" title="Analog - Feedback" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Feedback</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Feedback.html"><![CDATA[<p>Feedback으로 얻는 효과:</p>
 
-<p>여기서, Fast decay mode는 전류 빠질때 diode가 아니라 FET으로 빠지게 하는 방식이다.
-Q1 Q4가 꺼지면 Q2 Q3을 켜는 식이다. 이러면 인덕터에 전압 0이 걸리는게 아니라 -Vpp가 걸려서, 전류가 더 빨리 빠져나간다.
-물론, shoot through가 안일어나도록 잘 제어해줘야 한다.</p>
+<p>Gain desensitization
+원래 H(s)는 gain값은 큰데 여러가지로 sensitive한 값이라고 하자
+그러면 G(s)를 달아서 개선 가능</p>
 
-<p>근데 뭐 모터 멈추는데 있어서 fast decay mode가 꼭 필요한건 아니다.
-fast decay mode는 high inductance motor나 high speed motor 등 전류가 빠르게 변해야 하는 곳에 쓰인다.</p>
+<p>H(s): Open Loop Gain
+G(s)H(s): Loop Gain</p>
 
-<p>그리고, diode에 의한 전압강하보다 FET의 ron에 의한 전압강하가 더 작다면 fast decay mode가 power를 아끼는 데에도 도움이 될 수 있다.</p>
+<p>H(s)는 큰 값이지만 여러 요소에 sensitive하다
+덜 sensitive해지도록 피드백을 달아놓는다</p>
 
-<p>아까처럼, Q1 Q4가 켜진 채로 모터가 돌고 있다고 해보자.
-그냥 모터를 끄려면 Q1 Q4를 끄고,
-fast decay mode로 모터를 끄려면 Q1 Q4를 끄면서 Q2 Q3을 켠다.</p>
+<p>큰 feedback(큰 G)을 달아놓으면 회로 전체 gain이 Amp의 gain이 아니라 1/G로 보이게 된다
+그러면 H가 좀 흔들려도 Gain이 일정하게 1/G로 나온다</p>
 
-<p>slow decay mode로 모터를 끄려면 Q1을 끄면서 Q2를 켜거나 Q4를 끄면서 Q3을 끈다.
-즉, 위쪽 2개나 아래쪽 2개만 켜져있게 한다.</p>
+<p>근데, 그렇다고 G를 너무 키우면 1/G가 감소해서 gain이 내려간다</p>
 
-<p>이렇게 하면, 켜져있는 2개 FET의 ron에 의해 전류가 열로 dissipate되면서 사라진다.
-이 mode는 전류가 줄어드는건 fast decay mode보다 더 느린데, 모터가 멈추는건 더 빠르다.
-이유는 motor의 에너지 관점에서 생각해줘야 한다.</p>
+<p>cs amp면:
+gain이 gm*ro인데, 이건 PVT variation에 상당히 sensitive한 값이다.
+그래서 feedback을 달아서 gain을 C1/C2 식으로 바꿔놓을 수 있다</p>
 
-<p>DC motor가 회전할 경우, back emf가 생긴다.
-fast decay mode에서는 전류는 빨리 나가는데, back emf에는 별 조치가 안돼서 motor가 느리게 멈춘다.</p>
+<p>캐패시터나 저항의 비율로 정의되는 값으로 gain을 만들어놓으면,
+분자분모가 variation을 같이 먹으니까 비율은 꽤 정확하게 나온다.</p>
 
-<p>slow decay mode에서는 back emf의 양단 사이에 ron 저항 2개밖에 없다.
-그래서 거의 short라서, motor에 있던 에너지가 아주 빠르게 열에너지로 바뀌어 사라진다.
-즉 모터가 빠르게 멈춘다.</p>
+<p>feedback을 걸면 BW는 1+LoopGain배, gain은 1/(1+LoopGain)배 된다.
+그래서 GBW는 일정하지만, BW는 늘릴 수 있다</p>
 
-<p>그니까, slow랑 fast는 inductive load (여기서는 motor winding)에 흐르는 전류가 줄어드는 rate를 말하는거다.
-모터의 각속도 이야기가 아니다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[H-bridge는 4개 FET을 써서 load에다가 전류를 준다. inductive motor들이 주로 load로 쓰인다.]]></summary></entry><entry><title type="html">Analog - LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html" rel="alternate" type="text/html" title="Analog - LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulator<br />
+<p>amplifier를 쓸 경우:
+BW 10MHz, Gain 100짜리 amp보다
+BW 100MHz, Gain 10짜리 amp 2개 쓰는게 더 빠르다. gain은 동일</p>
+
+<p>이유는 BW가 넓어야 고주파 성분이 더 들어가서 신호가 더 빠르게 움직인다.
+물리적으로 보면, 입력에서 보는 RC가 더 작아서 신호가 더 빠르게 움직인다</p>
+
+<p>feedback을 걸면 linearity도 증가한다.
+feedback에 의해 gain이 1+LoopGain배 되기 때문에,
+gain이 크면 더 큰 비율로 나눠진다</p>
+
+<p>그래서 linearity가 증가한다.</p>
+
+<p>feedback 구조:
+출력 전압을 측정해서 전압을 feedback: 전압입력, 전압출력
+Rout은 1/(1+LoopGain)배, Rin은 1+LoopGain배</p>
+
+<p>출력 전류를 측정해서 전압을 feedback: 전압입력, 전류출력
+Rout, Rin 모두 1+LoopGain배</p>
+
+<p>출력 전압을 측정해서 전류를 feedback: 전류입력, 전압출력
+Rout, Rin 모두 1/(1+LoopGain)배</p>
+
+<p>출력 전류를 측정해서 전류를 feedback: 전류입력, 전류출력
+Rout은 1+LoopGain배, Rin은 1/(1+LoopGain)배</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Feedback으로 얻는 효과:]]></summary></entry><entry><title type="html">Analog - LDO</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html" rel="alternate" type="text/html" title="Analog - LDO" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20LDO</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-LDO.html"><![CDATA[<p>LDO : Low Dropout Regulator<br />
 <br />
 <br />
 회로가 제대로 동작하기 위해, 일정한 전압 입력이 필요한 경우가 많다.<br />
@@ -516,8 +699,13 @@ Feedback Loop가 Stable하다(Phase Margin이 크다).<br />
 <br />
 Capless LDO의 단점:<br />
 출력 전압이 비교적 쉽게 흔들린다.<br />
-따라서 설계에 주의를 요한다.<br />
-<br />
+따라서 설계에 주의를 요한다.<br /></p>
+
+<p>사실 LDO에 캐패시터 달면 동작상으로는 좋다.
+PSRR 좋아지고, stability 좋아지고, noise 사라진다.
+근데 캐패시터 때문에 면적이 커진다는게 문제다.</p>
+
+<p><br />
 <br />
 LDO는 출력 node에 큰 전류가 흘러야 하는 경우에 쓰인다.<br />
 따라서 전류가 흐르는 경로에도 신경을 써야 한다.<br />
@@ -530,11 +718,116 @@ Metal은 저항이 가장 작은 top metal을 쓰는 것이 좋다.<br />
 경로 최소화를 위해 IC 1개 안에 LDO 2개를 넣는 경우도 있는데,<br />
 이때는 두 LDO 사이의 미세한 출력전압 차이가 문제가 되지 않도록 설계해야 한다.<br />
 <br />
-<br /></p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulator 회로가 제대로 동작하기 위해, 일정한 전압 입력이 필요한 경우가 많다. Op Amp input, MOSFET의 Gate 등은 전류를 소비하지 않기에 BGR(Bandgap Reference) 회로로 전압을 주면 된다. 하지만 저항, logic cell 등 전류를 크게 소비하는 회로에 일정한 전압을 제공하기 위해서는 LDO 회로를 써야 한다. 기본적인 LDO는 Op Amp, BGR, Feedback, Pass Transistor로 구성된다. Op Amp의 입력에는 BGR 전압, Feedback 전압이 들어온다. Op Amp의 출력에는 Pass Transistor의 Gate가 연결되어 있다. Pass Transistor는 출력 전류를 내보내는 역할을 한다. 큰 전류를 내보내야 하기에 W/L이 큰 Transistor를 써야 한다. PMOS를 Pass Transistor로 쓰면 Common Source 구조가 되고, NMOS를 Pass Transistor로 쓰면 Source Follower 구조가 된다. Feedback 구조를 사용하는 이상, Frequency Compensation에 신경써야 한다. LDO의 Dominant Pole은 출력 node에서 만들어진다. \(p_0 = \dfrac{1}{R_{out}C_{load}}\) \(R_{out}=R_{load}||(R_{F_1}+R_{F_2})||1/gm\) Dominant pole 식에서 확인할 점은 2가지다. 먼저 LDO 출력 전류를 늘리려고 Pass Transistor W/L를 무작정 늘리면, C_load가 지나치게 증가해 dominant pole이 저주파로 이동한다. 따라서, feedback loop stability를 위해 W/L은 적절한 값으로 설정해줘야 한다. 또한, gm이 증가하면 R_out이 감소함을 확인할 수 있다. 따라서 Pass Transistor에 큰 전류가 흘러 gm이 증가하면, R_out이 감소해 dominant pole이 고주파로 이동한다. Feedback loop는 dominant pole이 고주파에 위치할수록 안정하다. LDO는 전류를 출력하면 feedback loop가 더 안정해지는 것이다. feedback loop가 더 안정해졌음은 phase margin 증가로 확인 가능하다. NMOS LDO의 장점: PMOS보다 NMOS의 \(\mu\)가 크기 때문에, gm이 크고 Rout이 작다. 따라서 dominant pole이 상대적으로 더 높은 주파수에 있다. NMOS LDO의 단점: NMOS에 큰 Vgs를 확보해야 한다. 큰 Vgs에 의해 LDO의 출력 전압이 제한된다. PMOS LDO의 장점: Source가 전원에 연결되어 있기 때문에, Vgs가 LDO 출력 전압에 영향을 주지 않는다. 그래서 Low-Voltage Operation에서 쓰인다. PMOS LDO의 단점: NMOS보다 \(\mu\)가 작기 때문에, gm이 작고 Rout이 크다. 따라서 dominant pole이 상대적으로 더 낮은 주파수에 있다. LDO 출력 node에는 Capacitor가 달려있는 경우가 많다. LDO 출력 전압이 살짝 흔들리더라도, 전하를 저장해둔 Capacitor가 일정한 전압을 유지해주기 때문이다. 이 목적을 위해서는, LDO 출력에 있는 Capacitance가 클수록 좋다. 그러나 LDO 내 feedback loop의 stability만 생각한다면, LDO 출력 node에 아예 Capacitance가 없는 편이 좋을 것이다. 1/RoutCout인 dominant pole을 매우 높은 주파수로 보내기 위함이다. 출력 node에 Capacitor를 달아놓지 않은 LDO를 Capless LDO라 부른다. Capless LDO의 장점: Feedback Loop가 Stable하다(Phase Margin이 크다). 제조시 Capacitor 값을 아낄 수 있다. Capless LDO의 단점: 출력 전압이 비교적 쉽게 흔들린다. 따라서 설계에 주의를 요한다. LDO는 출력 node에 큰 전류가 흘러야 하는 경우에 쓰인다. 따라서 전류가 흐르는 경로에도 신경을 써야 한다. 먼저, Layout시 출력 node를 두꺼운 metal로 만들어야 한다. 저항을 최소화해서, 큰 전류에 의한 전압 강하를 줄이기 위함이다. Metal은 저항이 가장 작은 top metal을 쓰는 것이 좋다. 또한 출력 전압이 외부 회로에 전달되는 경로가 최대한 짧도록, IC 내 LDO 배치에 신경써야 한다. 경로 최소화를 위해 IC 1개 안에 LDO 2개를 넣는 경우도 있는데, 이때는 두 LDO 사이의 미세한 출력전압 차이가 문제가 되지 않도록 설계해야 한다.]]></summary></entry><entry><title type="html">Analog - Magnetic Field Sensors</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Magnetic-Field-Sensors.html" rel="alternate" type="text/html" title="Analog - Magnetic Field Sensors" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Magnetic%20Field%20Sensors</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Magnetic-Field-Sensors.html"><![CDATA[<p>Hall Sensor는 작은 signal voltage를 쓰기 때문에, 온도/전압 흔들림이나 기계적 stress에 많이 영향받는다.</p>
+<br />
+LDO PSRR:<br />
+LDO가 디지털 회로에 연결될 경우에는 PSRR이 조금 낮아도 동작에 문제가 없다.<br />
+<br />
+이때는 전압이 짧은 시간동안 튀는 상황을 조심해야 한다.<br />
+그 짧은 시간동안 소자들에 stress가 가해지고, stress가 쌓이면 소자 동작에 문제가 생길 수 있다.<br />
+그래서 튀는 전압을 최대한 줄여야 한다.<br />
+<br />
+LDO가 아날로그 회로에 연결될 경우에는 PSRR이 중요한데,<br />
+고주파에서는 capacitance의 영향으로 loop gain이 부족해 PSRR이 낮아진다.<br />
+<br />
+LDO 설계시 속도 개선을 위해 feed forward path를 만들어 두는 경우가 있는데,<br />
+고주파에서 loop gain을 떨어뜨리기 때문에 PSRR에는 방해가 된다.<br />
+<br />
+<br />
+LDO와 미세공정:<br />
+소자가 높은 전압을 버티기 위해서는 크기가 커야 하는데,<br />
+공정이 발전해서 미세한 소자를 사용하면 높은 전압에 견딜 수가 없다.<br />
+따라서, 공정이 미세화되면 회로에 쓰이는 전원 전압이 낮아져야 한다.<br />
+<br />
+LDO 입장에서는 입력 전압은 낮아지고, 출력 전압은 유지해야 하는 상황이다.<br />
+이때는 Pass transistor의 W/L을 늘려야 한다.<br />
+Pass transistor W/L이 늘어나면 load current가 늘어나고, 보상이 어려워지고, 설계가 어려워진다.<br />
+그래서 LDO 설계자 입장에서는 사실 피하고 싶은 상황이다.<br />
+<br />
+<br />
+그래서 설계자들은 다른 방법을 찾게 됐다.<br />
+예를 들어 1.8V 소자밖에 없더라도, 이 소자들을 조합해 3.3V 전압을 버틸 수 있는 회로를 만든다면 높은 전원 전압을 쓸 수 있을 것이다.<br />
+<br />
+발견된 해결책은 1.8V 소자들을 stack으로 쌓고, 전류로 bias를 잡아주는 방식이었다.<br />
+이렇게 하면 1.8V 소자들로 3.3V 전원 전압에서 동작하는 회로를 만들 수 있다.<br />
+단점은, biasing을 위해 전류가 계속 흘러야 해서 전류 소모가 계속 일어난다는 점이다.<br />
+<br />
+현재 첨단 공정인 GAAFET 공정에서는 아예 아날로그 트랜지스터를 만드는 것이 어려워 모든 설계를 이 방식으로 해야 한다.<br />
+그래서 stack에서 지속적으로 전류가 소모되는 점이 문제가 되고 있고, 이 부분은 아직 연구 대상이다.<br />
+<br />
+<br />
+이 방식은 미세공정이 아니어도, 단순히 마스크 값을 아끼기 위해 사용되기도 한다.<br />
+3.3V 소자를 만들기 위해서는 lithography 과정에서 마스크를 더 써야 한다.<br />
+마스크 비용을 아끼기 위해, 3.3V 소자 대신 1.8V 소자 stack과 전류 bias로 회로를 구성할 수도 있는 것이다.<br />
+<br />
+물론 이 경우에는 3.3V 소자를 사용하는 경우보다 소비전류가 많은 회로가 제작된다.<br /></p>
 
-<p>TMR Sensor: Tunnel Magnetoresistive Sensor</p>
+<p>ESR 저항:</p>
 
-<p>magnetoresistive effect에 의해, 자기장이 변하면 전기저항이 변하는 현상을 이용한다.
+<p>LDO Cout에 달린 ESR저항이 zero를 만들어 PM을 개선하는 역할을 하는데,
+이걸로 부족할 경우에는 LDO 출력에 저항이 보이도록 하면 된다.
+ESR과 비슷하게, zero compensation 역할을 한다.</p>
+
+<p>Display driver는 ITO(Indium-Tin-Oxide)가 연결되기 때문에 저항 수옴정도가 보인다.
+그래서 딱히 저항을 달지 않아도 compensation이 된다.</p>
+
+<p>LDO 출력에서 PAD를 통해 전압 출력이 나갈때, PAD까지 가는 배선에 의해 저항이 생긴다.
+내부 Logic 회로 power는 LDO 출력이 PAD까지 가는 배선 위 어딘가에 연결될텐데,
+LDO 출력에 가까운 곳에 해야 배선 저항이 온전히 zero를 만드는데에 쓰인다.
+LDO 출력에서 먼 곳, 아예 PAD쪽에 logic power 배선을 연결하면 배선 저항이 frequency compensation에 도움이 안된다.</p>
+
+<p>저항을 이용해 zero를 만들어 PM을 개선할 수 있지만,
+저항이 너무 크거나 전류가 많이 흐를때는 전압강하가 커서 문제가 생긴다.</p>
+
+<p>PAD는 옛날에는 stack 구조를 많이 썼지만, 요즘은 Cup 구조를 많이 쓴다.
+PAD는 넓은 도체 판을 올려놓은거라, 저항이 아주 작다.</p>
+
+<p>Pad 위에 Bump를 올리고, RDL을 놓는다.
+RDL은 두꺼운 도체라서 저항이 작고, Bump도 도체 덩어리라서 저항이 작다.
+즉, LDO 출력에 달린 저항 생각할때는 내부 배선 저항만 생각하면 된다.</p>
+
+<p>Digital LDO: Pass TR의 Vgs가 아닌 size를 조정한다.
+Digital LDO를 쓰면 headroom을 크게 개선할 수 있지만, ripple 등 단점이 많다.
+사실 아날로그 LDO가 더 낫긴 하다.</p>
+
+<p>NMOS LDO: 더 낮은 Dropout voltage를 갖는다.
+더 낮은 전압에서도 동작할 수 있으니 power efficient하다는거다.</p>
+
+<p>LDO PSRR 개선 방식:</p>
+
+<p>Pre-regulated supply: Cascode TR 구조, Passive LPF 등을 supply와 LDO 사이에 연결한다.
+power가 LDO에 들어오기 전에 noise를 줄여서 집어넣자는건데,
+추가 회로들이 LDO power TR과 직렬로 연결되니, Dropout voltage가 너무 높아질 수 있다.
+dropout voltage가 너무 높으면? 구현 가능한 최대 power efficieny가 낮아진다.</p>
+
+<p>FFRC(Feedforward Ripple Cancellation):
+power-LDO출력 사이 feedforward path를 만들어서 supply noise 전달을 줄인다?
+이 방법에서는 전류가 변하면 gain이 비례해서 변해야 하는데, 이걸 넓은 전류 범위에서 만들기 어렵다.</p>
+
+<p>NMOS LDO는 PMOS LDO보다 Rout(1/gm)이 더 작아서,
+load current가 변할때 overshoot/undershoot가 더 작다.</p>
+
+<p>NMOS LDO는 pass TR gate 전압이 LDO 입력 전압을 넘는 상황이 발생할 수도 있다.
+dropout voltage가 낮으니, 낮은 전압 입력을 받을 가능성이 높으니까.
+그러지 않도록, supply voltage를 충분히 높게 걸어줘야 한다.</p>
+
+<p>Logic에 연결되면, load가 항상 달려있는 상태가 된다.
+Logic에서 leakage가 계속 새고 있으니까.</p>
+
+<p>LDO Stability 보상 방식중에, ESR을 쓰는 방식들이 많이 소개되어 있다.
+하지만 요즘은 그런 보상방식을 쓰지 않는다.
+옛날에 탄탈륨 캐패시터 쓸때는 ESR이 좀 돼서 가능했는데,
+요즘은 MLCC를 쓰기 때문에 ESR이 없다.</p>
+
+<p>LDO를 연결하는 도체때문에 인덕턴스가 생길수도 있다.
+입력이든 출력이든 인덕턴스가 생길 수 있는건데,
+이 인덕턴스 때문에 bode plot이 특정 구간에서 튈 수도 있으니 잘 확인해줘야 한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[LDO : Low Dropout Regulator 회로가 제대로 동작하기 위해, 일정한 전압 입력이 필요한 경우가 많다. Op Amp input, MOSFET의 Gate 등은 전류를 소비하지 않기에 BGR(Bandgap Reference) 회로로 전압을 주면 된다. 하지만 저항, logic cell 등 전류를 크게 소비하는 회로에 일정한 전압을 제공하기 위해서는 LDO 회로를 써야 한다. 기본적인 LDO는 Op Amp, BGR, Feedback, Pass Transistor로 구성된다. Op Amp의 입력에는 BGR 전압, Feedback 전압이 들어온다. Op Amp의 출력에는 Pass Transistor의 Gate가 연결되어 있다. Pass Transistor는 출력 전류를 내보내는 역할을 한다. 큰 전류를 내보내야 하기에 W/L이 큰 Transistor를 써야 한다. PMOS를 Pass Transistor로 쓰면 Common Source 구조가 되고, NMOS를 Pass Transistor로 쓰면 Source Follower 구조가 된다. Feedback 구조를 사용하는 이상, Frequency Compensation에 신경써야 한다. LDO의 Dominant Pole은 출력 node에서 만들어진다. \(p_0 = \dfrac{1}{R_{out}C_{load}}\) \(R_{out}=R_{load}||(R_{F_1}+R_{F_2})||1/gm\) Dominant pole 식에서 확인할 점은 2가지다. 먼저 LDO 출력 전류를 늘리려고 Pass Transistor W/L를 무작정 늘리면, C_load가 지나치게 증가해 dominant pole이 저주파로 이동한다. 따라서, feedback loop stability를 위해 W/L은 적절한 값으로 설정해줘야 한다. 또한, gm이 증가하면 R_out이 감소함을 확인할 수 있다. 따라서 Pass Transistor에 큰 전류가 흘러 gm이 증가하면, R_out이 감소해 dominant pole이 고주파로 이동한다. Feedback loop는 dominant pole이 고주파에 위치할수록 안정하다. LDO는 전류를 출력하면 feedback loop가 더 안정해지는 것이다. feedback loop가 더 안정해졌음은 phase margin 증가로 확인 가능하다. NMOS LDO의 장점: PMOS보다 NMOS의 \(\mu\)가 크기 때문에, gm이 크고 Rout이 작다. 따라서 dominant pole이 상대적으로 더 높은 주파수에 있다. NMOS LDO의 단점: NMOS에 큰 Vgs를 확보해야 한다. 큰 Vgs에 의해 LDO의 출력 전압이 제한된다. PMOS LDO의 장점: Source가 전원에 연결되어 있기 때문에, Vgs가 LDO 출력 전압에 영향을 주지 않는다. 그래서 Low-Voltage Operation에서 쓰인다. PMOS LDO의 단점: NMOS보다 \(\mu\)가 작기 때문에, gm이 작고 Rout이 크다. 따라서 dominant pole이 상대적으로 더 낮은 주파수에 있다. LDO 출력 node에는 Capacitor가 달려있는 경우가 많다. LDO 출력 전압이 살짝 흔들리더라도, 전하를 저장해둔 Capacitor가 일정한 전압을 유지해주기 때문이다. 이 목적을 위해서는, LDO 출력에 있는 Capacitance가 클수록 좋다. 그러나 LDO 내 feedback loop의 stability만 생각한다면, LDO 출력 node에 아예 Capacitance가 없는 편이 좋을 것이다. 1/RoutCout인 dominant pole을 매우 높은 주파수로 보내기 위함이다. 출력 node에 Capacitor를 달아놓지 않은 LDO를 Capless LDO라 부른다. Capless LDO의 장점: Feedback Loop가 Stable하다(Phase Margin이 크다). 제조시 Capacitor 값을 아낄 수 있다. Capless LDO의 단점: 출력 전압이 비교적 쉽게 흔들린다. 따라서 설계에 주의를 요한다.]]></summary></entry><entry><title type="html">Analog - Sensors</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Magnetic-Field-Sensors.html" rel="alternate" type="text/html" title="Analog - Sensors" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Magnetic%20Field%20Sensors</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Magnetic-Field-Sensors.html"><![CDATA[<p>Magnetic Sensors:
+Magnetic sensor에는 Hall Sensor와 TMR Sensor가 있다.</p>
+
+<p>Hall Sensor:
+Hall Sensor는 작은 signal voltage를 쓰기 때문에, 온도/전압 흔들림이나 기계적 stress에 많이 영향받는다.</p>
+
+<p>TMR(Tunnel Magnetoresistive) Sensor:
+magnetoresistive effect에 의해, 자기장이 변하면 전기저항이 변하는 현상을 이용한다.
 이때 tunnel effect를 통해, 자기장이 바뀌면 전기저항이 크게 바뀌도록 한 구조가 TMR Sensor다.</p>
 
 <p>TMR Element: 맨 아래 고정된 solid layer, 가운데에 barrier layer, 맨 위에 Free layer가 있다.</p>
@@ -550,33 +843,15 @@ TMR Sensor: better SNR, low power consumption</p>
 <p>그래서 TMR sensor가 demanding application들에서 더 선호된다.</p>
 
 <p>2가지 sensor를 동시에 쓰기도 한다.
-Hall sensor는 high current detection, TMR sensor는 low current detection에 쓰는 식으로.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Hall Sensor는 작은 signal voltage를 쓰기 때문에, 온도/전압 흔들림이나 기계적 stress에 많이 영향받는다.]]></summary></entry><entry><title type="html">Analog - Noise</title><link href="http://localhost:4000/design/2023/10/04/Design-Analog-Noise.html" rel="alternate" type="text/html" title="Analog - Noise" /><published>2023-10-04T19:31:29+09:00</published><updated>2023-10-04T19:31:29+09:00</updated><id>http://localhost:4000/design/2023/10/04/Design%20-%20Analog%20-%20Noise</id><content type="html" xml:base="http://localhost:4000/design/2023/10/04/Design-Analog-Noise.html"><![CDATA[<p>7번 data summation을 하는데, 매번 8code noise가 있다면:
-summation한 data의 noise는 8sqrt7 = 21code. 8 7개를 rms한거다.
-모두 양수였으면 그냥 평균냈겠지만, 음수 양수 섞이면 rms해야 한다.</p>
+Hall sensor는 high current detection, TMR sensor는 low current detection에 쓰는 식으로.</p>
 
-<p>물론, 각 noise에 correlation이 없다는걸 가정했기에 rms로 구한거다.</p>
+<p>지문센서는 14MHz 초음파를 쓴다
+초음파는 보통 kHz대역이라 14MHz 만드는게 힘들었다</p>
 
-<p>White noise 줄이려면 크기랑 전력이 필요하다. 그래서 크기 키우고 전류 높이면 white noise가 줄어든다.<br /></p>
+<p>TCAD로 소자 만들어서 했었다
+제작은 DB하이텍에 맡겼다</p>
 
-<p>Kickback noise:<br />
-Kickback noise는 Latch에서 발생하는 noise다. Latched comparator는 latch 구조를 포함하는 comparator인데, positive feedback 구조라서 analog signal을 digital signal로 바꾼다.<br />
-<br />
-예를 들어, input이 Vref보다 아주 조금 커도 그 차이가 positive feedback에 의해 증폭돼서 출력이 VDD가 되고, input이 Vref보다 아주 조금 작아도 Output은 VSS가 된다. Positive feedback은 차이가 커지는 방향으로 작용하기 때문이다.<br />
-<br />
-이 positive feedback 때문에, input 전압은 조금만 변해도 output 전압은 크게 변할 수 있다. 이 경우 latch 안 노드들의 dv/dt가 상당히 크다. 이 커다란 dv/dt가 parasitic capacitance에 Cdv/dt만큼 전류가 흐르게 만든다.<br />
-<br />
-Input 전압을 인가해주는 회로의 Rout이 0이라면 전류가 흘러들어와도 input 전압에 영향이 있지 않았겠지만, Rout이 0이 아니면 이 전류에 의해 input 전압이 달라진다. 이 현상이 kickback noise다.<br />
-빠르고 전력 효율이 좋은 comparator일수록 kickback noise가 크게 생긴다.<br />
-<br />
-Kickback noise 해결방법:<br />
-1. Preamplifier를 comparator 앞에 붙인다.<br />
-근데 이러면 preamplifier가 power를 먹어 전력효율이 떨어진다.<br />
-2. Differential pair의 drain들에 스위치를 달고, latch 전압이 바뀌는 동안 스위치를 열어서 전압 변화가 캐패시턴스에 전달 안되게 한다<br />.
-이때는 스위치 열면 IDS=0이 되어 MOSFET들이 Triode region에 처박힌다. 그리고 Drain 전압이 어디에도 연결되지 않아서 맘대로 날뛸 수 있다.<br />
-3. Differential Pair의 gate들에 스위치를 달아서 input을 sampling해 넣ㄴ느다. 이러면 input에 의한 dV/dt가 전류를 만들 때 스위치가 열려있어 영향이 없다.<br />
-하지만 스위치 닫히는게 어차피 input에 영향을 준다.<br />
-<br />
-몇가지 방법이 더 있다고는 하는데, 일단 kickback noise가 뭔지는 확인했으니 다음에 더 알아보자. 내용출처는 ‘Kickback noise reduction techniques for CMOS latched comparators’<br /></p>
+<p>노이즈 없애는게 많이 어려웠다</p>
 
-<p>Layout때문에 kickback noise가 발생하는 경우도 있다.
-이럴땐 Parasitic Capacitance 안생기게 주변을 다 치워버려야 한다.</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[7번 data summation을 하는데, 매번 8code noise가 있다면: summation한 data의 noise는 8sqrt7 = 21code. 8 7개를 rms한거다. 모두 양수였으면 그냥 평균냈겠지만, 음수 양수 섞이면 rms해야 한다.]]></summary></entry></feed>
+<p>캠시스 초음파 지문인식센서 찾아보면 나온다
+유리 밑에 센서 넣어서, 위에 손가락 대면 인식하도록 만들었다</p>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[Magnetic Sensors: Magnetic sensor에는 Hall Sensor와 TMR Sensor가 있다.]]></summary></entry></feed>

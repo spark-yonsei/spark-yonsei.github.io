@@ -1,4 +1,0 @@
-I"�<p>7번 data summation을 하는데, 매번 8code noise가 있다면:
-summation한 data의 noise는 8sqrt7 = 21code. 8 7개를 rms한거다.
-모두 양수였으면 그냥 평균냈겠지만, 음수 양수 섞이면 rms해야 한다.</p>
-:ET

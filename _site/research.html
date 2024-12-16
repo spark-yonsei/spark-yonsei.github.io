@@ -36,28 +36,21 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Design">
 				<span class="name">Design</span>
-				<span class="badge">22</span>
+				<span class="badge">23</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Market">
 				<span class="name">Market</span>
-				<span class="badge">17</span>
+				<span class="badge">20</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Process">
 				<span class="name">Process</span>
-				<span class="badge">20</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">6</span>
+				<span class="badge">18</span>
 	    	</a>
  		</li>
 	    
@@ -81,36 +74,27 @@
 	<div class="post-content">
 		<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<p>I have research experience in signal processing, electromagnetics and circuit design.
+<p>During my undergraduate studies, I had opportunities to experience RF system design.<br />
+During my masters, I studied time-frequency analysis focusing on Wigner-Ville Distribution.<br />
+Currently, I am working as an analog circuit designer to fulfill my military service.<br />
 <br />
-I am looking for opportunties to design an IC.<br /></p>
-
-<p><br /></p>
-<h3 id="time-frequency-analysis">Time-Frequency Analysis</h3>
-<p>Traditional frequency analysis has its background in Fourier Transform.<br />
-\(S(f) =\displaystyle \int_{-\infty}^{\infty}s(t) \, e^{-j2 \pi ft} \, dt\)<br />
-<br />
-하지만 주파수가 여러개인 신호에서는 어떤 주파수가 먼저 존재했는지 알 수가 없다.<br />
-그래서, time domain에서 Window를 움직이며 Fourier Transform을 하는 STFT가 있다.<br />
-Window의 위치가 시간을 말해줄 것이고, STFT의 결과가 그 시점의 주파수 성분을 알려줄 것이다.<br />
-\(STFT_s(\tau,f) =\displaystyle \int_{-\infty}^{\infty}s(t) \, w(\tau - t) \, e^{-j2 \pi ft} \, dt\)<br />
-<br />
-근데 STFT에도 문제가 있다. Window의 영향이 STFT 결과에 나타나는 것이다.<br />
-Window와 Signal이 Convolved되기 때문에 나타나는 문제다.<br />
-<br />
-Window에 의한 왜곡도 없으면서, 각 시간별로 주파수 성분을 보여줄 수 있는 방법으로 Wigner-Ville Distribution이 있다.<br />
-\(WVD_s(t,f) =\displaystyle \int_{-\infty}^{\infty} s\left (t - \frac{\tau}{2}\right ) \, s^*\left (t + \frac{\tau}{2}\right ) \, e^{-j2 \pi f\tau} \, d\tau\)<br />
-<br />
-하지만 WVD는 Cross-term에 의해 또 문제가 생긴다.<br />
-그래서 적절한 LPF(kernel)을 통해, auto-term을 보존하면서 cross-term을 제거한다.<br />
-\(TFD_s(t,f) =\displaystyle \int_{-\infty}^{\infty} s\left (t - \frac{\tau}{2}\right ) \, s^*\left (t + \frac{\tau}{2}\right ) \, e^{-j2 \pi f\tau} \, d\tau\)<br />
-<br />
-kernel은 application specific이다. 상황에 맞는 kernel을 통해 최적의 time-frequency plot을 얻는다.<br />
 <br /></p>
-<h3 id="tfdr-time-frequency-domain-reflectometry">TFDR (Time-Frequency Domain Reflectometry)</h3>
-<p>test</p>
-<h3 id="otfdr-optical-time-frequency-domain-reflectometry">OTFDR (Optical Time-Frequency Domain Reflectometry)</h3>
-<p>test</p>
+<h3 id="rf-system-design">RF System Design<br /></h3>
+<p><br />
+<br /></p>
+<h3 id="time-frequency-analysis">Time-Frequency Analysis<br /></h3>
+<p>Traditional frequency analysis has its background in Fourier Transform, which provides information only on frequency components.<br />
+WVD (Wigner-Ville Distribution) provides joint information on time and frequency.<br />
+With appropriate kernel design, WVD provides far more information than Fourier Transform, without significant loss of information.<br />
+<br /></p>
+<h3 id="analog-circuit-design">Analog Circuit Design<br /></h3>
+<p>I designed analog blocks including crystal oscillator, charge pump, LDO, and PLL.<br />
+<br />
+32kHz Crystal oscillator, LF6S<br />
+Charge Pump, LF6S<br />
+<br />
+LDO, SMIC40LL<br />
+PLL, SMIC40LL<br /></p>
 
 	</div>
 </article>

@@ -1,0 +1,49 @@
+I"�<p>같은 회로를 만들더라도, 더 작은 MOSFET을 쓴다면 더 작게 만들 수 있을 것이다.<br />
+회로를 더 작게 만들 수 있다면, 웨이퍼 1장에 그려넣을 수 있는 회로의 갯수도 증가하고,<br />
+결국 웨이퍼 1장에서 얻을 수 있는 IC의 갯수가 증가한다.<br />
+<br />
+같은 웨이퍼에서 더 많은 IC를 생산할 수 있다면, 원가 절감 효과를 누릴 수 있게 된다.<br />
+더 작은 MOSFET을 쓸 수 있다면, 더 많은 이익을 낼 수 있는 것이다.<br />
+그 외에도, 더 작은 IC로 제품을 소형화하거나 같은 면적에 더 많은 기능을 집어넣을 수 있게 된다.<br />
+<br />
+그래서 웨이퍼 위에 더 작은 MOSFET을 만들기 위한 연구가 지금까지도 진행되고 있고,<br />
+이 접근을 ‘CMOS Scaling’이라 부른다.<br />
+<br />
+<br />
+최근에도 CMOS scaling을 위한 연구는 계속되고 있지만, 여러가지 한계점들이 보이고 있다.<br />
+<br />
+Economic Limit:<br />
+더 작은 MOSFET을 만들기 위해 더 많은 공정 단계와 고도의 기술이 필요해지다 보니,<br />
+20~28nm 이하 공정에서는 원가 절감 효과를 누리기 어려워졌다.<br />
+<br />
+Physical Limit:<br />
+channel length가 5nm보다 짧아지면 전자의 경로를 예측하기 아주 어려워진다.<br />
+더 짧은 channel length는 만들기도 어렵지만, MOSFET의 동작을 예측하기도 더 어렵다.<br />
+웨이퍼를 형성하는 Si 결정의 격자 간격인 0.545nm에 가까워질수록 점점 더 어려워진다.<br />
+<br />
+<br />
+경제적, 물리적 한계점 말고도 설계 관점에서 생각해야 할 부분도 늘어나고 있다.<br />
+<br />
+Heat Dissipation:<br />
+공정이 미세화되면, 열이 빠져나갈 면적은 줄어드는데 발생하는 열은 그대로다.<br />
+여기에 더해 clock 주파수가 더 올라간다면 비례해서 발열도 심해진다.<br />
+즉, 미세 공정이 발전할수록 회로를 식히기 위한 냉각 기술이 중요해진다.<br />
+<br />
+Analog Perspective:<br />
+Logic 회로는 공정 내에서 가능한 한 작은 소자로 구현하지만,<br />
+Analog 회로는 무작정 크기를 줄이면 회로 동작에 문제가 생길 수 있다.<br />
+<br />
+Channel length가 4um보다 짧아지면 Vth가 channel length에 큰 영향을 받아 variation이 커진다.<br />
+Process variation이 심해져서, chip간 variation이 심해지는 것이다.<br />
+그래서 Analog 회로에서는 Vth variation이 작은 값으로 channel length를 설정한다.<br />
+<br />
+또한, channel length가 줄어들면 MOSFET의 mismatch, flicker noise가 증가한다.<br />
+게다가 MOSFET이 작아지면 Vth가 줄어 높은 전압을 견딜 수 없으니 낮은 전압을 사용해야 한다.<br />
+Noise는 늘어나고 signal은 작아지니, 결국 SNR이 떨어지게 된다.<br />
+대신, MOSFET의 delay가 줄어들어 timing resolution(sampling rate)은 좋아진다.<br />
+<br />
+RF 관점에서는 MOSFET 크기가 작아지면 input capacitance가 줄어 성능이 개선되지만,<br />
+동시에 parasitic capacitance, resistance의 영향이 커진다.<br />
+그래서 RF 회로에서는 45nm, 28nm 정도를 MOSFET 성능이 최대가 되는 지점으로 간주한다.<br />
+회로 배선 간 형성되는 capacitance를 줄이기 위해, 낮은 유전율을 갖는 박막으로 배선을 감싸기도 한다.<br /></p>
+:ET

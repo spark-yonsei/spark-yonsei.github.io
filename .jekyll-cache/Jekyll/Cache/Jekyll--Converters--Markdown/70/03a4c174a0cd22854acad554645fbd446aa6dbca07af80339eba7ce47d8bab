@@ -1,0 +1,34 @@
+I"�<p>Amplifier는 동작 방식에 따라 ‘class’로 구분된다.<br />
+<br />
+Amplifier는 동작 방식에 따라 효율이 결정되는데,<br />
+효율이 높은 amplifier는 linearity가 낮고,<br />
+효율이 낮은 amplifier는 linearity가 높다는 특징이 있다.<br />
+즉, amplifier의 class를 확인하면 동작 방식, 효율, linearity를 파악할 수 있다.<br />
+<br />
+<br />
+Class A, B, AB, C:<br />
+Output Stage 트랜지스터들이 gain을 만든다.<br />
+Output Stage 트랜지스터들이 효율을 위해 잠시 꺼졌다 켜지기도 한다.<br />
+효율이 낮지만 linearity가 높다.<br />
+<br />
+Class D, E, F, G, S, T:<br />
+Gain이 전원 전압에 비례한다.<br />
+Output stage TR들이 완전히 껐다 켜지며 PWM(Pulse Width Modulation) 동작을 한다.<br />
+효율이 높지만 linearity가 낮다.<br />
+<br />
+<br />
+Class A amplifier:<br />
+Class A amplifier는 Output 트랜지스터 하나가 항상 켜져있는 구조다.<br />
+트랜지스터가 계속 켜진 상태로 gain을 만들기 때문에, gain이 크고 linearity가 높다.<br />
+대신, 항상 켜져있기 때문에 전류 소비도 계속 일어나 전력 효율이 나쁘다.<br />
+<br />
+그래서 high-fidelity audio amplifier 등 고성능 amplifier가 필요한 곳에 쓰이지만,<br />
+효율이 나쁜 만큼 발열이 심해 고전력 회로에서는 사용하기 어렵다.<br />
+<br />
+<br />
+Class B amplifier:<br />
+Class B amplifier는 Output 트랜지스터 2개가 번갈아 켜지는 구조다.<br />
+input signal이 positive일 때는 위쪽 트랜지스터만, negative일 때는 아래쪽 트랜지스터만 켜지는 구조다.<br />
+이런 구조를 push-pull 구조라고 부른다.<br />
+<br /></p>
+:ET

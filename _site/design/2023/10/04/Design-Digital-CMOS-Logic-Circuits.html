@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">CV</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+		
+	    <li>
+	    	<a class="nav-item" href="/category/#Design">
+				<span class="name">Design</span>
+				<span class="badge">23</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Market">
+				<span class="name">Market</span>
+				<span class="badge">20</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Process">
+				<span class="name">Process</span>
+				<span class="badge">18</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			Digital - CMOS Logic Considerations
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>옛날에는 Digital Logic을 하드웨어로 구현할때 BJT를 사용했지만,<br />
+현대에 와서는 CMOS Transistor로 Digital Logic을 구현한다.<br />
+CMOS transistor로 Digital Logic을 구현한 회로를 CMOS Logic 회로라고 부른다.<br />
+<br />
+<br />
+CMOS Logic 회로에서는 MOSFET들의 Gate Capacitance가 Drain Current에 의해 충전/방전된다.<br />
+Gate Capacitance의 충전/방전 여부로 1/0을 판단하게 된다.<br />
+<br />
+CMOS Logic 회로에 |Vth|가 작은 MOSFET을 쓴다면, 속도는 빠르지만 leakage current가 크다.<br />
+전류가 많이 흘러 Gate Capacitance를 빠르게 충전/방전할 수 있지만, 꺼진 상태에서도 전류가 많이 새기 때문이다.<br />
+반대로 |Vth|가 큰 MOSFET을 쓴다면, 속도는 느리지만 leakage current가 적은 회로가 된다.<br />
+그래서 요구사항에 적합한 Vth를 갖는 트랜지스터를 사용하는 것이 중요하다.<br />
+<br />
+<br />
+Logic 회로는 트랜지스터의 on/off characteristic을 이용해 만든거라,<br />
+트랜지스터가 작아지든 새로운 물질로 만들어지든 on/off만 잘 되면 그대로 잘 동작한다.<br />
+그래서 Moore’s law에 의해 트랜지스터가 작아지면 그게 성능 증가와 직결됐다.<br />
+트랜지스터가 작아져서 IC에 더 많은 트랜지스터를 넣을 수 있으면, 더 많은 연산을 할 수 있기 때문이다.<br />
+<br />
+더 작은 트랜지스터를 활용해 IC 하나에 더 많은 logic block들을 넣다보니 새로운 문제들이 발생하게 됐다.<br />
+Delay 관련 문제, Power 관련 문제, Verification 관련 문제다.<br />
+<br />
+<br />
+Delay 관련 문제:<br />
+Logic 회로에서 수행해야 하는 function이 복잡해지면서,
+회로가 더 많은 트랜지스터, 더 많은 면적을 필요로 하게 되었다.</p>
+
+<p>function 하나를 여러 block들로 쪼개고</p>
+
+<p>Sequential machine은 moore-type 또는 mealy-type state machine으로 구현되며, state-transition diagram으로 표현된다.
+state transition은 보통 clock에 맞춰 발생한다.</p>
+
+<p>Large-scale function을 combinational logic으로 만들어야 할 때가 있다.
+이런 경우, 보통 function을 여러개 block으로 쪼개고 flipflop이나 latch같은 memory component들을 집어넣는다.</p>
+
+<p>이 memory component들은 하나의 clock에 의해 모두 동작한다.
+나눠진 block들이 모두 synchronous하게 동작하도록 하기 위해서다.</p>
+
+<p>이렇게 쪼개고 memory component들을 집어넣으면, temporal parallelsim을 만들어 pipeline같은 성능 개선을 구현할 수 있다.</p>
+
+<p>요즘 나오는 digital circuit들은 synchronous manner로 동작하게 되어 있다.
+결국 clock based라는 거다.</p>
+
+<p>IC 내에서 
+flipflop은 data가 제때 도착하지 않으면 출력에 그 data를 반영하지 못한다. clock에 맞춰 동작하니까.
+그래서, data가 clock보다 느리게 도착하면 전체 회로가 원래 설계와는 다르게 동작할 수 있다.
+그러면 이 느린 data를 위해 clock을 느리게 바꿔줘야 하나? 그러면 또 전체 회로가 느려진다.</p>
+
+<p>커다란 회로들에서는 flipflop들 사이의 delay, clock-skew 등이 문제를 만든다.
+clock-skew는 clock 신호의 시간 차이를 말한다.</p>
+
+<p>flipflop들 사이의 delay든 clock-skew든, 원인은 wiring delay다.
+그래서 PnR할때 clock-skew에 신경써줘야 한다.</p>
+
+<p>clock-skew를 줄이기 위해 ‘clock trees’라는 buffer tree들을 쓰기도 한다.
+이걸로 clock branch들에 동일한 수의 flipflop들이 연결되어 있도록 한다.</p>
+
+<p>equal-length wiring을 통해 wiring delay time이 모두 똑같도록 만들긴 하지만,
+local supply voltage bounce나 local hot spot같은 문제로 delay가 변할 수 있다.</p>
+
+<p>그래서 power consumption을 계산해 어디서 얼마나 supply voltage bounce가 발생할지 예측해야 하고,
+온도 분포 또한 worst case까지 고려해서 timing verification을 해야 한다.</p>
+
+<p>Power 관련 문제:
+트랜지스터 크기가 점점 작아지면서, IC 하나에 더 많은 트랜지스터가 들어가게 되었다.
+IC 하나에 더 많은 트랜지스터가 들어가면 IC에서 소비하는 전력이 늘어나기에,
+늘어난 전력 소비를 줄일 방법이 필요해졌다.</p>
+
+<p>보통 회로 내 연산을 담당하는 flip flop,
+Clock 신호를 전달하는 clock distribution network가 소비하는 전력 비중이 크다.
+그래서 전력을 아끼는 방식도 여기에 맞춰 생겨났다.</p>
+
+<p>Power gating: 당장 안쓰는 회로는 꺼두는 것으로 전력 소비를 줄이는 방식
+Clock gating: 당장 회로 입력이 변하지 않을때 clock을 꺼두는 것으로 전력 소비를 줄이는 방식
+DVFS: clock 주파수, 전원 전압을 내려서 전력 소비를 줄이는 방식
+*DVFS: Dynamic Voltage and Frequency Scaling</p>
+
+<p>메모리 데이터가 보존되어야 하는 회로에 power gating을 적용할 경우:
+다른 곳에 데이터를 미리 저장해두거나,
+메모리에만 최소한의 전압을 걸어 켜두거나,
+전원이 없어도 데이터가 유지되는 nonvolatile memory를 써야 한다.</p>
+
+<p>CPU에서는 CPU가 과열될 경우 DVFS를 적용해 전력 소비를 줄이고 발열을 줄인다.
+이것을 CPU throttling이라 부른다.</p>
+
+<p>Verification 관련 문제:
+근데, 트랜지스터가 작아져서 커다란 digital system들이 한 IC에 들어가게 되자,
+모든 process corner에서 chip이 잘 동작하도록 하는 design verification이 복잡해졌다.</p>
+
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>

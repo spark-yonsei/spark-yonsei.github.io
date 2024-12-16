@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Seil Park" /></head>
+<style>@import url(/public/css/syntax/monokai.css);</style>
+  <title>Seil Park</title>
+  <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="/public/css/style.css" rel="stylesheet">
+  <body>
+  	<div class="container"> 
+		<div class="sidebar">
+			<div class="sidebar-item sidebar-header">
+	<div class='sidebar-brand'>
+		<a href="/">Seil Park</a>
+	</div>
+	<p class="lead"></p></div>
+
+<div class="sidebar-item sidebar-nav">
+	<ul class="nav">
+      <li class="nav-title" style="text-align: center;">Introduction</li>
+	  <li>
+	  	<a class="nav-item" href="/">CV</a>
+	  </li>
+	  <li>
+		<a class="nav-item" href="/research">Research</a>
+	  </li>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-nav">
+  	<ul class="nav">
+			<li class="nav-title" style="text-align: center;">Articles</li>
+		
+	    <li>
+	    	<a class="nav-item" href="/category/#Design">
+				<span class="name">Design</span>
+				<span class="badge">23</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Market">
+				<span class="name">Market</span>
+				<span class="badge">20</span>
+	    	</a>
+ 		</li>
+	    
+	    <li>
+	    	<a class="nav-item" href="/category/#Process">
+				<span class="name">Process</span>
+				<span class="badge">18</span>
+	    	</a>
+ 		</li>
+	    
+	  </nav>
+	</ul>
+</div>
+
+<div class="sidebar-item sidebar-footer">
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+</div>
+
+		</div>
+		<div class="content">
+			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			Cryptocurrency
+		</div>
+		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
+		</time>		
+	</header>
+
+	<div class="post-content">
+		<p>암호화폐는 공개키 암호화를 통해 안전하게 전송하고,
+해시 함수를 통해 소유권을 증명하는 방식의 디지털 자산이다.</p>
+
+<p>최초의 암호화폐는 비트코인이다.
+작업 증명에는 SHA-256 암호화 방식이 사용된다.
+SHA: Secure Hash Algorithm</p>
+
+<p>해시함수는 입력을 받으면 고정된 길이의 고유 문자열을 출력한다.
+이 출력값을 해시값이라 부른다.</p>
+
+<p>Deterministic: 동일한 입력에 대해 항상 같은 값을 출력한다.
+Unique: 다른 입력에 대해 항상 다른 값을 출력한다.
+Fast Computation: 해시값 출력이 빠르다.
+Immutable: 입력값이 아주 조금만 변해도 출력값이 완전히 바뀐다.
+Non-invertible: 출력값에서 입력값을 알아내는 것이 불가능하다.</p>
+
+<p>비트코인은 이걸 이용한다.
+블록 내 데이터가 바뀌면 그 블록의 해시값이 바뀌고, 후속 블록의 모든 해시값이 바뀐다.</p>
+
+<p>그래서 블록체인 데이터를 변경하면:
+그 블록의 해시값을 지켜보고 있던 다른 블록들이 데이터 바뀐걸 알아챈다</p>
+
+<p>거래가 발생한다
+그 거래에 해당하는 블록이 생성된다
+그 블록은 네트워크 내 다른 노드들로 보내진다
+다른 노드들은 그 거래를 확인(validate)하고, 그 대가로 코인을 받는다
+확인된 블록은 블록체인 뒤에 연결되며, 거래가 끝난다.</p>
+
+<p>각 컴퓨터들은 비트코인 거래내역을 해시 함수를 이용해 기록한다.
+기록은 어렵지만 검산은 쉽도록 하기 위해서다.</p>
+
+<p>각 컴퓨터에 기록된 내용은 다를 수 있다.
+하지만 다수결에 근거해서, 50% 이상 컴퓨터에 기록되어 있다면 인정된다.</p>
+
+<p>기록(Block)이 쌓여있으니 Chain을 이루고 있어서, Blockchain이라 부른다.</p>
+
+<p>비트코인은 10분마다 기록한다. block time = 10분
+비트코인 최대 발행량은 2100만개다.</p>
+
+<p>Blockchain으로 거래되는 코인이 화폐로 쓰이기 위해서는 Blockchain Trilemma를 해결해야 한다.<br />
+Trilemma는 3가지 문제가 얽혀 있는 상황을 말한다.<br />
+<br />
+<br />
+Blockchain Trilemma:<br />
+확장성(Scalability),<br />
+탈중앙화(Decentraliztaion),<br />
+보안성(Security) 동시 달성의 어려움<br />
+<br />
+<br />
+확장성(Scalability): 블록체인 네트워크가 초당 처리할 수 있는 데이터 양<br />
+<br />
+탈중앙화(Decentralization):<br />
+모든 참여자들이 데이터를 공유하고 검증해서 트랜잭션을 처리하기 때문에 처리속도가 느리다.<br />
+<br />
+보안성:<br />
+<br />
+참여자가 많아지면 탈중앙화, 보안성 개선, 확장성 악화<br />
+참여자가 줄어들면 중앙집권화, 보안성 악화, 확장성 개선<br />
+<br />
+<br />
+Web3의 목표: 모든 컨텐츠 제작자가 중개비용 없이 모든 권리를 갖는다.<br />
+지금은 유튜브에 영상 올리면 수익을 유튜브랑 나눠먹어야 한다<br />
+<br />
+<br /></p>
+
+<p>비트코인캐시</p>
+
+<p>라이트코인:
+라이트코인은 block time이 2분 30초다. 비트코인의 1/4
+그래서 최대 발행량은 비트코인의 4배인 8400만개다.</p>
+
+<p>라이트코인은 Scrypt라는 채굴 알고리즘을 사용한다.
+한동안 전용 ASIC을 만들 수 없었지만, 2014년 말부터는 ASIC 채굴기가 등장했다.</p>
+
+<p>스택스</p>
+
+<p>이더리움:
+작업증명 -&gt; 지분증명</p>
+
+<p>솔라나</p>
+
+<p>리플</p>
+
+<p>Hedera(헤데라):
+헤데라는 Hashgraph라는 알고리즘을 기반으로 한 암호화폐다.
+해시그래프 알고리즘은 보안, 수수료 등 기존 블록체인들의 문제를 개선할 뿐 아니라
+친환경적이라는 점을 내세운다.</p>
+
+<p>헤데라는 ‘헤데라 거버닝 카운슬’이라는 이사회를 통해 노드가 운영된다.
+여기에는 다양한 기업들 뿐 아니라 영국의 LSE, UCL, 인도의 IIT Mandras 등 대학들도 참여하고 있다.
+한국 기업중에는 LG, 신한은행이 참여하고 있다.</p>
+
+<p>스테이블코인:
+3종류가 있다.</p>
+
+<p>법정화폐 담보 스테이블코인:
+기관이 보유하고 있는 화폐만큼만 스테이블코인을 발행한다.
+하지만 그 기관이 정말 담보를 유지하고 있는지는 확인하기 어렵다.
+USDT, USDC</p>
+
+<p>가상자산 담보 스테이블코인:
+가상자산을 담보로 스테이블코인을 발행한다.
+기관이 발행하는게 아니라서 탈중앙화되어있는 방식이다.
+메이커다오의 DAI</p>
+
+<p>무담보 알고리즘 스테이블코인:
+담보 없이 발행되며, 알고리즘에 기반해 스테이블코인 가격이 떨어질때는 공급량을 감소시키고, 오를때는 공급량을 늘려 가격을 유지한다.
+UST</p>
+
+<p>MakerDao(메이커다오):
+이더리움 담보 대출 서비스다.
+이더리움 코인을 담보로 맡기고, 스테이블 코인 DAI를 대출받는다.</p>
+
+<p>스테이블코인이 제대로 실패한 사례로는 UST(테라)가 있다.</p>
+
+<p>LUNA(루나):
+테라폼랩스가 UST, LUNA를 발행했다.
+이들은 테라 가격 안정화를 위해 채굴 토큰인 루나를 이용했다.</p>
+
+<p>테라가 1달러 아래로 떨어지면:
+루나를 발행해서 그 루나로 테라를 매수해 가격을 올렸다.
+테라가 오르면 테라로 루나를 매수해 가격을 내렸다.</p>
+
+<p>담보가 없는 시스템이라 의혹은 계속 제기됐지만, 시스템은 잘 굴러갔다.
+여기다가 ‘앵커 프로토콜’이라는 디파이 서비스로 연20%씩 보상을 주니, 루나 가격은 계속 올라갔다.</p>
+
+<p>근데 이 시스템이 유지되려면:
+꾸준히 자금이 유입되어 테라 수요가 늘어 루나 가격이 상승하고,
+그 차익으로 수익이 발생해야 지속 가능한 구조다.</p>
+
+<p>코인 시장이 죽어 자금이 유입되지 않자,
+공매도세력이 테라를 대량으로 매도하며 테라 가치가 폭락했다.
+테라가 1달러 밑으로 떨어졌으니 루나를 대량으로 발행해 테라를 사들이려 했는데,
+루나가 갑자기 늘어나니 루나 가치가 폭락해 투자자들이 루나를 다 던져버렸다.
+결국 테라, 루나가 모두 0원이 됐다.</p>
+
+<p>시가총액 50조 정도 하던 코인이 며칠 사이에 0원이 됐으니,
+시장에 충격이 상당했다.</p>
+
+<p>월드코인</p>
+
+<p>알트코인: Alt coin, Alternative Coin</p>
+
+<p>채굴기:
+낮은 전력으로 많은 연산을 할 수 있어야 한다.
+점점 채굴이 어려워지니 옛날 채굴기를 쓰면 손해가 난다.</p>
+
+<p>Bitmain: 암호화폐 채굴용 ASIC 회사다.</p>
+
+<p>비트코인은 원래 탈중앙화를 목표로 만들어진 코인이다.
+근데 중국 채굴업자들이 ASIC 채굴기로 비트코인을 맘대로 해먹으려고 했다.
+그러자 비트코인 측에서는 ASIC 채굴기를 사용할 수 없도록 비트코인을 업데이트하려고 했다.
+이게 세그윗 업데이트다.</p>
+
+<p>그랬더니, 우지한 등 채굴업자들은 거기에 반대하며 비트코인을 하드포크해 비트코인캐시라는 새로운 암호화폐를 만들었다.</p>
+
+<p>사실 비트코인캐시는 조금 위험하다.
+탈중앙화에 반대해서 나온 코인이고,
+중국 채굴자들이 만든거라 공산당 리스크도 있다.</p>
+
+<p>비트코인캐시의 간단한 역사:
+비트코인은 DDos 공격 또는 마이닝풀의 거대화를 막기 위해,
+블록체인에 기록되는 블록의 크기를 1MB로 제한했다.
+1MB는 2100건 정도의 거래를 수용할 수 있었다.</p>
+
+<p>그런데 2013년부터 비트코인 이용량이 늘어나면서 2100건으로는 부족해졌다.
+SegWit 업데이트가 제안되었는데, 찬성측과 반대측이 대립했다.</p>
+
+<p>SegWit:
+블록의 크기는 늘어나지 않지만,
+비트코인 거래에 필수적인 서명 부분을 따로 떼어냄으로써
+그 서명에 해당하는 부분만큼 더 많은 거래를 담을 수 있게 해서
+실질적으로 블록의 크기를 2MB 수준으로 쓰는 것</p>
+
+<p>근데 우지한이 여기에 반대한다. 채굴 수익 저하가 이유였다.</p>
+
+<p>여기에 대한 제안:
+UASF(User Activated Soft Fork)
+UAHF(User Activated Hard Fork)
+Segwit2x</p>
+
+<p>UASF:
+특정 일자에 세그윗을 활성화하고,
+그 세그윗 기능은 지갑 업데이트한 사람들끼리만 사용</p>
+
+<p>UAHF:
+세그윗 활성화 없이 블록 크기를 2MB로 늘림</p>
+
+<p>Sewgit2x:
+특정 일자에 세그윗 활성화,
+동년 11월에 하드포크로 블록크기 2MB로 늘림</p>
+
+<p>이후 UAHF가 활성화되어 비트코인과 비트코인캐시로 쪼개졌다.</p>
+
+<p>이게 2017년 8월 1일이다.
+이때 비트코인을 갖고있던 사람들은 1:1 비율로 비트코인 캐시를 받았다.</p>
+
+<p>양자컴퓨터가 암호를 다 풀어버린다면 비트코인은 쓰레기가 된다.</p>
+
+<p>2018년 7월 비트토렌트 인수</p>
+
+<p>트론은 PoW</p>
+
+<p>비트코인, 이더리움은 거래처리시간이 길고 거래수수료가 높다
+그래서 송금을 위해 트론을 출시했다</p>
+
+<p>BP: 대역폭 포인트
+네트워크가 원활히 동작하기 위해, 트론 네트워크는 BP를 연료로 사용한다
+각 계정은 매일 5천 BP를 받고, TRX를 동결할 경우엔느 더 많은 BP를 얻을 수 있다.
+TRX, TRC-10 토큰 전송은 모두 BP가 드는 트랜잭션이다.
+무슨 활동을 할때마다 BP가 든다.</p>
+
+<p>Block에는 트랜잭션이 기록된다
+블록은 매직넘버, 블록크기, 블록헤더, 트랜잭션 카운터, 트랜잭션 데이터로 구성된다.</p>
+
+<p>TRX: Storage Layer, Core Layer, Application layer</p>
+
+<p>Hash Function: f(x)=y에서, 어떤 x값을 넣어야 이 y값이 나오는지 알아낼 수 없는 함수다.</p>
+
+<p>암호화폐 시가총액이 증가하자, 채굴자들은 점차 중앙화되게 되었다.
+이젠 네트워크 참여 목적을 위해서가 아니라 코인 채굴해서 돈벌 목적이 되었다</p>
+
+<p>채굴에 쓰이는 에너지 낭비 문제를 막기 위해, 지분증명(Proof of Stake)가 제안됐다.
+PoS의 문제는, 코인을 대량으로 비축해둔 사람들이 너무 많은 영향력을 갖는다는 점이다.</p>
+
+
+	</div>
+</article>
+		</div>
+	</div>
+  </body>
+</html>

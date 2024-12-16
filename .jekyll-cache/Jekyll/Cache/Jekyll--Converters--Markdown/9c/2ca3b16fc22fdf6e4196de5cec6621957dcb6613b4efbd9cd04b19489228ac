@@ -1,9 +1,0 @@
-I"}<p>Bipolar transistor들은 CMOS 대비 더 높은 gm, 더 낮은 1/f noise를 갖는다.
-breakdown voltage도 더 높고, reliability도 더 높다.</p>
-
-<p>대신 shot noise는 있다
-이건 고주파 noise</p>
-
-<p>온도센서에는 BJT가 들어가는데, 전원전압이 너무 내려가면 쓸 수가 없다.
-그리고 사실 PnR을 위해서는 BJT가 없는게 낫다.</p>
-:ET

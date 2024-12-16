@@ -36,28 +36,21 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Design">
 				<span class="name">Design</span>
-				<span class="badge">22</span>
+				<span class="badge">23</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Market">
 				<span class="name">Market</span>
-				<span class="badge">17</span>
+				<span class="badge">20</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Process">
 				<span class="name">Process</span>
-				<span class="badge">20</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">6</span>
+				<span class="badge">18</span>
 	    	</a>
  		</li>
 	    
@@ -82,105 +75,27 @@
 	</header>
 
 	<div class="post-content">
-		<p>C, 어셈블리어 등의 언어로 원하는 동작을 구현한 텍스트 파일(코드 적힌 파일)을 만든다. 이게 소스 파일이다.</p>
-
-<p>그리고 소스 파일을 컴파일해서 얻어지는 기계어 명령어 집합을 펌웨어라고 한다?</p>
-
-<p>이 펌웨어를 메모리에 저장해두면, cpu는 그 메모리에서 기계어 명령을 읽고 해석해서 동작을 실행한다.</p>
-
-<p>유명한 펌웨어 규격:</p>
-
-<p>BIOS: Basic Input Output System
-16비트 기반</p>
-
-<p>UEFI: Unified Extensible Firmware Interface
-64비트 기반</p>
-
-<p>펌웨어는 EEPROM이나 플래시메모리에 저장된다.
-이게 손상되면 벽돌이 된다.</p>
-
-<p>임베디드 시스템에서 자주 사용되는 직렬 통신:
-UART, I2C, SPI</p>
-
-<p>CPU에는 cu, alu, register가 있다
-CU: control unit, 제어 유닛
-Cu는 주변 유닛들을 제어해 기계어를 읽어들이고 그걸 시행한다</p>
-
-<p>Alu는 계산을 하는 곳이다</p>
-
-<p>메모리에서 cpu까지 정보를 읽어올때, 연결하는 통신 신호선을 bus라고 부른다. 근데 r,c의 영향으로 신호 전달속도에 한계가 있으니, cpu 안에 레지스터를 만들어놓고 여기다가 정보를 저장한다</p>
-
-<p>Cpu 안 레지스터는 특수 용도 레지스터랑 일반 목적 레지스터가 있다.
-특수 용도 레지스터는 특정 정보를 저장하게 되고,
-일반 목적 레지스터는 그냥 연산 결과, 함수 내 인수 변수 등을 임시 저장하는데에 쓰인다.</p>
-
-<p>어셈블리어로 펌웨어 프로그래밍 해보면, 대부분 동작은 일반 레지스터를 이용해 데이터를 저장하고 사용하게 된다.</p>
-
-<p>Cpu 동작:
-명령어 읽어오기(fetch)
-명령어 분석(decode)
-명령어 실행(execute)</p>
-
-<p>이 3단계를 거치며 동작한다
-각 clock마다 한 단계를 거친다</p>
-
-<p>Pipeline 동작:
-Decode하는 동안 다음 명령어 fetch해오는 방식으로 시간 줄이는 방식
-병렬처리 동작이라고도 한다</p>
-
-<p>RISC CPU
-명령어 수 적음
-명령어 크기 고정
-1개 명령어 처리속도 빠름
-프로그래밍 코드 복잡</p>
-
-<p>CISC CPU
-명령어 수 많음
-명령어 크기 명령어마다 다름
-1개 명령어 처리속도 명령어마다 다름
-프로그래밍코드 단순</p>
-
-<p>명령어 수가 많으면, 하나의 명령어만 적어서 구현할 수 있는 동작들이 많다. 그래서 Cisc는 복합 명령을 하나의 명령으로 많이 갖고 있다</p>
-
-<p>Risc는 명령어 수를 최소화하고, 명령어 크기를 고정한 상태에서 명령어들의 동작을 최적화해 효율을 높인다</p>
-
-<p>일반적으로 pc계열은 cisc, arm계열은 risc를 쓴다</p>
-
-<p>왜 cisc는 명령어마다 길이가 다르냐?
-여러 명령들을 묶어서 만든 복합 명령들이 많아서 그렇다</p>
-
-<p>Risc는 명령 크기를 16비트, 32비트 이런식으로 고정해둔다</p>
-
-<p>처리 속도:
-Risc는 명령어마다 1클럭 또는 2클럭 안에 끝내게 되어 있다
-Cisc는 명령어마다 다르다. 복합 명령들이 읶으니까</p>
-
-<p>프로그래밍 편의:
-Cisc에서 모든 명령을 다 숙지하고 있다면, 딱 적합한 명령어를 써서 프로그래밍을 단순하게 할 수 있다</p>
-
-<p>근데 그렇게 되는거 자체거 힘든 일이라, 꼭 cisc가 risc보다 프로그래밍이 쉽다고는 할 수 없다</p>
-
-<p>C언어 컴파일러로 컴파일하면 어셈블리어, 이걸 어셈블러에 넣으면 기계어(binary file)이 나온다</p>
-
-<p>보통 c언어로 코딩해놓고, 사용할 cpu에 맞는 컴파일러를 가져와서 어셈블리어 기계어로 바꾼다.
-같은 c코드도 컴파일러에 따라 출력되는 어셈블리어, 기계어가 다르다</p>
-
-<p>그래서 c언어로 펌웨어를 만들고, 이걸 컴파일러에 넣어 이진 파일을 만들고, 이 파일을 메모리에 기록해두면 cpu가 이걸 읽고 실행해 원하는 동작을 시행한다</p>
-
-<p>Regulator: 일정한 전압을 만들어주는 소자</p>
-
-<p>Linear regulator, switching regulator
-장단점 정리해두기
-Ldo는 linear regulator
-Buck, boost converter는 switching regulator</p>
-
-<p>오실레이터에서 만들어진 주기적인 진동 파형을 슈미트 트리거로 정확한 구형파형으로 만들어 clock을 만든다
-이걸 cpu에 넣어준다</p>
-
-<p>메모리 구분 표 있는데 이거 참고해서 정리</p>
-
-<p>Firmware: 하드웨어에 내장된 소프트웨어다. 이론적으로 컴퓨터는 CPU와 RAM만 있으면 사용 가능해야 하지만, CPU와 RAM이 서로 제어, 통신을 하려면 펌웨어가 저장된 메모리 모듈이 필요하다. 부품끼리 통신하는 데에 쓰이는 프로토콜은 상당히 복잡하기 때문에, 펌웨어가 그만큼 중요하다.
-옛날에는 펌웨어를 ROM에 저장했어서 수정이 불가능했지만, 요즘은 플래시메모리에 저장하는 경우가 많아져 업데이트나 복구가 더 쉬워졌다. 펌웨어에 문제가 생기면 기기가 벽돌이 되니 조심해야 한다.<br /></p>
+		<p>Firmware는 하드웨어에 내장되어, 하드웨어를 제어하는 소프트웨어다.<br />
+Firmware가 손상됐다면, 하드웨어가 멀쩡하더라도 동작을 할 수가 없다.<br />
+<br />
+Firmware는 과거에는 ROM에 저장됐지만, 최근에는 EEPROM, Flash메모리 등에 저장되기에 업데이트 및 복구가 쉬워졌다.<br />
+<br />
+<br />
+Firmware는 C언어 또는 어셈블리어로 제작한다.<br />
+C언어를 컴파일러에 넣으면 어셈블리어가 되고, 어셈블리어를 어셈블러에 넣으면 기계어가 된다.<br />
+기계어가 적힌 파일은 1과 0밖에 없는 binary file이다.<br />
+<br />
+이때, 같은 C언어 코드도 어떤 컴파일러와 어셈블러를 사용하느냐에 따라 다른 결과가 나온다.<br />
+Firmware를 저장할 하드웨어에 맞는 컴파일러와 어셈블러를 사용해야 한다.<br />
+<br />
+개발자가 적은 C언어 또는 어셈블리어 코드 파일이 Source 파일이고,<br />
+Source 파일에서 얻어지는 기계어 명령어 집합을 Firmware라 부른다.<br />
+하드웨어는 Firmware를 읽고, 해석해서 동작을 행한다.<br />
+<br />
+<br />
+유명한 펌웨어 규격:<br />
+BIOS (Basic Input Output System): 16비트 기반 Firmware<br />
+UEFI (Unified Extensible Firmware Interface): 64비트 기반 Firmware<br /></p>
 
 	</div>
 </article>

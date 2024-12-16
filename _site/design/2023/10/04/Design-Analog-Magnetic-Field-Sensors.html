@@ -36,28 +36,21 @@
 	    <li>
 	    	<a class="nav-item" href="/category/#Design">
 				<span class="name">Design</span>
-				<span class="badge">22</span>
+				<span class="badge">23</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Market">
 				<span class="name">Market</span>
-				<span class="badge">17</span>
+				<span class="badge">20</span>
 	    	</a>
  		</li>
 	    
 	    <li>
 	    	<a class="nav-item" href="/category/#Process">
 				<span class="name">Process</span>
-				<span class="badge">20</span>
-	    	</a>
- 		</li>
-	    
-	    <li>
-	    	<a class="nav-item" href="/category/#Electromagnetics">
-				<span class="name">Electromagnetics</span>
-				<span class="badge">6</span>
+				<span class="badge">18</span>
 	    	</a>
  		</li>
 	    
@@ -75,18 +68,21 @@
 <article class="post">
 	<header class="post-header">
 		<div class="post-title"> 
-			Analog - Magnetic Field Sensors
+			Analog - Sensors
 		</div>
 		<time class="post-date dt-published" datetime="2023-10-04T19:31:29+09:00" itemprop="datePublished">2023/10/04
 		</time>		
 	</header>
 
 	<div class="post-content">
-		<p>Hall Sensor는 작은 signal voltage를 쓰기 때문에, 온도/전압 흔들림이나 기계적 stress에 많이 영향받는다.</p>
+		<p>Magnetic Sensors:
+Magnetic sensor에는 Hall Sensor와 TMR Sensor가 있다.</p>
 
-<p>TMR Sensor: Tunnel Magnetoresistive Sensor</p>
+<p>Hall Sensor:
+Hall Sensor는 작은 signal voltage를 쓰기 때문에, 온도/전압 흔들림이나 기계적 stress에 많이 영향받는다.</p>
 
-<p>magnetoresistive effect에 의해, 자기장이 변하면 전기저항이 변하는 현상을 이용한다.
+<p>TMR(Tunnel Magnetoresistive) Sensor:
+magnetoresistive effect에 의해, 자기장이 변하면 전기저항이 변하는 현상을 이용한다.
 이때 tunnel effect를 통해, 자기장이 바뀌면 전기저항이 크게 바뀌도록 한 구조가 TMR Sensor다.</p>
 
 <p>TMR Element: 맨 아래 고정된 solid layer, 가운데에 barrier layer, 맨 위에 Free layer가 있다.</p>
@@ -104,6 +100,16 @@ TMR Sensor: better SNR, low power consumption</p>
 <p>2가지 sensor를 동시에 쓰기도 한다.
 Hall sensor는 high current detection, TMR sensor는 low current detection에 쓰는 식으로.</p>
 
+<p>지문센서는 14MHz 초음파를 쓴다
+초음파는 보통 kHz대역이라 14MHz 만드는게 힘들었다</p>
+
+<p>TCAD로 소자 만들어서 했었다
+제작은 DB하이텍에 맡겼다</p>
+
+<p>노이즈 없애는게 많이 어려웠다</p>
+
+<p>캠시스 초음파 지문인식센서 찾아보면 나온다
+유리 밑에 센서 넣어서, 위에 손가락 대면 인식하도록 만들었다</p>
 
 	</div>
 </article>
