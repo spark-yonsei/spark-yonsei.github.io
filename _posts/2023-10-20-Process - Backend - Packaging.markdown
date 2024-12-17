@@ -113,3 +113,19 @@ Cpu pin이 메인보드에 달려있으면 LGA, CPU에 달려있으면 PGA, 납�
 
 exposed pad: 패키지 하단에 있는 금속 패드
 기판에 부착되니까 열 방출+기계적 안정성
+
+반도체 패키지 종류:
+Conventional Package: 웨이퍼를 칩 단위로 잘라서 패키징하는 방식
+Wafer Level Package: 패키징 공정 일부 또는 전체를 웨이퍼 레벨에서 진행하고, 나중에 단품으로 자르는 방식
+
+Conventional Package는 패키징하는 재료에 따라 Ceramic Package, Plastic Package로 구분할 수 있다.
+Plastic Package는 잘라진 칩을 부착해 전기적으로 연결하는데,
+칩을 어디에 붙이는지 따라 Leadframe type package, Substrate type package가 있다.
+
+Wafer Level Package는:
+Flip chip package: 칩 위에 RDL, Solder bump를 형성해 패키징하는 방식
+WLCSP(Wafer Level Chip Scale Package): Substrate같은 곳에 붙이지 않고, 웨이퍼 위에 바로 배선, solder ball을 형성해 패키징하는 방식
+TSV package: 쌓여있는 칩들을 TSV로 연결하는 방식
+
+RDL: Re-Distribution Layer
+칩이 외부와 전기적으로 연결되는 곳이 
