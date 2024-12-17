@@ -128,4 +128,122 @@ WLCSP(Wafer Level Chip Scale Package): Substrate같은 곳에 붙이지 않고, 
 TSV package: 쌓여있는 칩들을 TSV로 연결하는 방식
 
 RDL: Re-Distribution Layer
-칩이 외부와 전기적으로 연결되는 곳이 
+칩이 외부와 전기적으로 연결되는 곳이 Pad인데, 이 pad를 재배열해주는 역할
+
+Solder bump:
+칩을 기판에 Flip chip 방식으로 연결하거나
+BGA, CSP 등을 회로 기판에 직접 접촉시키기 위한 전도성 돌기
+
+WLCSP는 다시 2가지로 분류된다.
+Fan-in WLCSP: 웨이퍼 위에 바로 배선, 솔더볼을 부착
+Fan-out WLCSP: 칩을 몰딩웨이퍼로 만들어, 웨이퍼레벨 공정으로 배선, 솔더볼 부착
+
+Fan-in WLCSP를 하면 패키지 크기가 칩 크기와 같고,
+Fan-out WLCSP를 하면 패키지가 칩보다 커진다
+
+
+
+Conventional Package:
+
+Plastic Pacakge는 칩을 둘러싸는 재료로 EMC 등의 플라스틱 재료를 사용하는 방식이다
+이 중 리드프레임 타입 패키지는 칩이 리드프레임에 부착된다
+
+패키지를 PCB에 연결하는 pin이 lead인데, lead를 프레임으로 잡아준 형태라 리드프레임이라 부른다.
+리드프레임은 얇은 금속판에 에칭 등 방법으로 배선이 구현된 형태다.
+
+여러가지 리드프레임 타입 패키지:
+1970년대에는 DIP, ZIP같이 lead를 PCB 구멍에 집어넣는 through hole 형태가 많이 쓰였는데,
+이후 pin 갯수가 많아지고 PCB 디자인이 복잡해지면서 구멍에 집어넣는 구조는 한계가 생겼다
+그래서 TSOP, QFP, SOJ같이 리드가 표면에 붙는 형태가 개발됐다.
+(Surface Mounting Type)
+
+로직 칩 등 I/O pin이 많이 필요한 제품은 QFP처럼 4면에 lead가 있는 패키지가 적용됐다
+
+얇은 패키지가 필요한 경우에는 TQFP, TSOP 등 패키지가 쓰였다
+
+반도체 제품의 고속 동작이 요구되기 시작함에 따라,
+패키지 배선 설계를 다층으로 할 수 있는 substrate type package가 주력 패키지 기술이 되었다.
+
+하지만 TSOP 등 리드프레임 패키지도 아직 많이 쓴다. 왜냐면 저렴하기 때문이다.
+
+
+리드프레임은 금속판에 스탬핑이나 에칭 방식으로 배선을 하기 때문에,
+제조과정이 복잡한 substrate 방식보다 가격이 저렴하다
+
+그래서, 그렇게까지 고속 동작이 필요하지 않은 제품에는 지금도 저렴한 리드프레임 패키지를 쓴다
+
+DIP: Dual In-line Package
+ZIP: Zig-zag In-line Package
+QFP: Quad Flat Package
+TQFP: Thin Quad Flat Package
+TSOP: Thin Small Outline Package
+SOJ: Small Outline J-leaded
+
+Substrate type package:
+Substrate를 사용한 패키징 방식이다.
+
+Substrate는 제조할 때 여러 층의 필름을 써서 만들기도 하기에,
+Laminated type package라고 부르기도 한다.
+
+Laminate: 필름같은 얇은 재료들이 넓게 붙여진 것
+
+Substrate package는 여러 층으로 배선을 만들기 때문에,
+리드프레임 타입 패키지보다 전기적 특성이 우수하고 크기도 더 작게 만들 수 있다.
+
+리드프레임으로는 1층밖에 못만든다.
+substrate는 상황에 따라 적절한 층 수를 쓴다
+
+리드프레임 패키지는 핀이 옆으로밖에 못나오는데,
+substrate package는 아래 면 어디서든 나올 수 있어서 더 많은 수의 핀을 만들 수 있다
+핀이 옆이 아니라 아래로 나오니 핀까지 포함한 면적은 substrate package가 더 작다.
+
+그래서 지금은 substrate type package가 주로 쓰인다.
+
+BGA: Ball Grid Array
+FBGA: Fine pitch Ball Grid Array
+얘네는 Package substrate에 Solder ball이 부착된 형태
+
+LGA: Land Grid Array
+이건 substrate 위에 solder ball이 없는 형태
+
+substrate type package로는 일반적으로 BGA가 사용되지만,
+최근에는 ball 없이 ball land만 갖는 LGA 형태 패키지도 사용되고 있다.
+
+Ceramic Package:
+Ceramic body를 사용하는 패키지다
+열 방출, 신뢰성이 높다
+하지만 세라믹 제조 공정이 비싸다
+
+그래서 높은 신뢰성이 요구되는 로직 반도체에 사용되고,
+CIS용 패키지에서는 검증용으로 사용된다.
+CIS: CMOS Image Sensor
+
+
+Wafer level package는 패키지 공정을 웨이퍼 레벨에서 진행한 패키지다.
+패키지 공정 전체를 웨이퍼 레벨로 진행한 패키지는 WLCSP가 대표적이고,
+일부를 웨이퍼 레벨로 진행하는 패키지는 RDL, TSV를 이용한 패키지들과 Flip chip package 등이 있다.
+
+Fan in WLCSP:
+웨이퍼 바로 위에 패키지용 배선, 절연층, 솔더 볼을 올려둔 패키징
+
+이걸 conventional package랑 비교하면?
+
+장점:
+칩의 크기가 그대로 패키지 크기가 된다. 패키지 크기 최소화 가능
+substrate같은 매개체 없이, 솔더 볼이 칩 위에 바로 붙기에 전류 경로가 짧다 그래서 전기적 특성이 향상된다
+substrate, wire 등 패키징에 쓰이는 추가 재료들이 필요 없다
+
+단점:
+Si 칩이 그대로 패키지가 되기에, 패키지의 물리적,화학적 보호 기능이 약하다
+
+Silicon과 PCB는 열팽창계수 차이가 크다.
+그래서 솔더 연결부의 Solder Joint Reliability가 부족하다
+
+메모리 칩을 개발할 경우, 용량이 같은 칩이더라도 새로운 기술로 칩을 개발하면 칩 크기가 달라진다. 그러면 기존 패키지 테스트 시스템을 사용하지 못하고 새로 다시 다 만들어야 한다
+
+웨이퍼의 칩 수가 적고, 수율이 낮은 경우에는 conventional package보다 비용이 더 많이 든다
+
+
+
+
+Fan-out WLCSP:
