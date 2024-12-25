@@ -247,3 +247,6 @@ Silicon과 PCB는 열팽창계수 차이가 크다.
 
 
 Fan-out WLCSP:
+
+
+https://news.skhynix.co.kr/post/seominsuk-column-types-of-packages-1
