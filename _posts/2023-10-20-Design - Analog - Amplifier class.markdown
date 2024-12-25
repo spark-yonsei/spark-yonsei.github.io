@@ -78,3 +78,99 @@ Sine wave가 들어오면 머리만 참수해서 내보내는 수준이니까.
 고주파에서는 amplifier에 의해 발생한 current가 LC resonance circuit에 의해 특정 주파수의 sine wave로 바뀔 수 있기 때문이다.
 
 class D~T는 switching operation을 한디.
+
+
+
+
+
+Power Amplifiers(PA):
+
+Transmitter의 마지막 stage가 PA다.
+PA는 온갖 무선 시스템에 쓰인다.
+
+PA design은 active circuit, passive network design으로 나뉜다.
+
+active circuit: device performance에 대한 설계
+Device gain, efficiency, linearity
+Operation modes, classes
+harmonics, waveform shaping
+stability and reliability
+
+passive network: impedance matching에 대한 설계
+impedance transformation
+power combining
+harmonics, waveform shaping
+bandwidth and filtering
+
+
+PA performance metrics:
+
+PA power gain: Gp=Pout/Pin
+
+PA Drain Efficiency: DE 또는 eta = Pout/P_DC
+
+Power Added Efficiency: PAE = (Pout - Pin)/P_DC
+
+
+PA Efficiency Fundamental Limit:
+PAPAE = eta_Device * eta_PAmode * eta_PAgain * eta_OutputLoss * eta_ThermalAging
+
+eta_Device:
+Device intrinsic eta.
+Knee voltage, ~(1-Vknee/VDD)
+Large signal output impedance ~Zout/(Zout+ZL)
+
+eta_PAmode:
+PA Classes and Harmonic
+Shaping and termination
+이게 PA Engineer들이 'Waveform Engineer'라고 불리는 이유다.
+
+eta_PAgain
+Input, Output loading을 고려한 Device gain
+= (1-1/Gp)
+
+eta_OutputLoss
+PA output network
+Loss = Pout/P_PA
+Differential Load Balancing
+
+eta_ThermalAging
+device aging, reliability
+
+
+Typical RF and mm-wave PA Power Levels:
+
+PA의 output power, Pout을 제한하는 요소는 Regulation과 Link Budget이다.
+-> Friis Transmission Equation?
+
+Output power:
+LTE: 23dBm, 26dBm
+
+WLAN: 20~26dBm
+
+NB IoT: 14dBm, 20dBm, 23dBm
+
+Bluetooth:
+Class 1: 20dBm,
+Class 2: 4dBm,
+Class 3: 0dBm,
+Class 4: -3dBm
+
+PA의 Pout은 Array 크기와 연관이 깊다.
+작은 array는 높은 Pout을,
+큰 array는 낮은 Pout을 보여준다.
+
+EIRP? 무슨 Radiated Power
+
+PA 설계시,
+저주파에서는 가능한 power(Psat) 상방이 application, regulation에 의해 정해진다.
+주파수가 올라가면, 상방이 device limitation에 의해 막힌다. -> Johnson limit
+
+x축을 주파수, y축을 Psat으로 했을때, Johnson limit는 -20dB/dec 직선으로 나온다.
+Johnson limit는 system level design에서 유용하다. 주어진 주파수에서 얻어낼 수 있는 power를 알려준다.
+
+어쨌든, 높은 주파수에서는 큰 Power를 전달하기 어렵다는걸 보여준다.
+
+위에서는 주파수와 Psat에 대한 이야기였고,
+여기서는 Pout과 Efficiency에 대한 이야기를 하려고 한다.
+
