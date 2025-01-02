@@ -29,3 +29,7 @@ Frontend process와 backend process로 반도체 공정을 나눌 때가 많은�
 반도체의 미세화, 고용량화에 중요한 기능을 한다. 주요 제품은 Si-프리커서, Ti-프리커서, Zr-프리커서, Hf-프리커서 등이다.
 
 Deposition Precursors:
+
+
+passivation layer에는 Si3N4, SiO2가 쓰인다.
+(Silicon Nitride, Silicon Oxide)

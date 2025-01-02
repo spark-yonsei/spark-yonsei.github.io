@@ -133,3 +133,20 @@ current mirror에서는 MOSFET들이 current source로 쓰이니까, 둘다 gm�
 그래서 W/L이 작아야 gm이 작아 thermal noise가 작은데, 동시에 WL이 커야 1/f noise가 작다.
 
 +Radiation Hardening
+
+
+reference에 있는 flicker noise는 chopping으로 잡을 수가 없다.
+flicker noise가 code dependent하게 들어오기 때문이다.
+
+
+Offset cancel을 first stage에 넣을 수도 있고, second stage에 넣을 수도 있다.
+second stage에 넣어야 noise가 second stage gain만 먹는다.
+first stage에 들어가면 noise가 first, second stage gain을 모두 먹는다.
+
+
+audio에서는 full range를 써서 reference noise가 없다?
+
+Amplifier gain, noise:
+총 gain은 그대로라고 할때, first stage gain이 클때 noise가 작다.
+first stage의 noise에 대한 영향이 가장 큰 것이다.
+

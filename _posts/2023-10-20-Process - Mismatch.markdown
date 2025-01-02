@@ -84,3 +84,7 @@ Silicon은 Piezoresistive 효과가 있어서, 압력이 높아지면 저항이 
 <br>
 이 효과는 Common Centroid 구조로 어느정도 방지할 수 있다.<br>
 그만큼 Common Centroid 구조에 신경을 써야 한다.<br>
+
+
+유전체는 압력을 받아도 크기나 유전율이 별로 안변해서 Capacitance는 압력으로 안변한다.
+하지만 저항은 바뀌니까 저항을 신경써주면 된다.

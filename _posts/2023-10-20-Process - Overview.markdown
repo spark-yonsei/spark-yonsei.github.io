@@ -162,3 +162,12 @@ gate L이 줄어들어 |Vth|가 변한다.
 감소한 |Vth|에 의한 leakage가 유의미하게 안보이더라도, 온도를 높여보면 leakage가 엄청나게 발생할 수도 있다.
 
 그러니, 중요한 트랜지스터 옆에는 꼭 dummy pattern을 넣어줘야 한다. 그래야 L이 영향을 안받고 |Vth|가 제대로 나온다.
+
+
+
+Multi랑 finger는 섞어 쓰면 안된다.
+STI Stress때문에 소자 특성이 달라진다.
+
+multi는 STI stress를 모두 균등하게 받지만,
+finger는 가운데랑 끄트머리에 가해지는 STI Stress가 다르다.
+
