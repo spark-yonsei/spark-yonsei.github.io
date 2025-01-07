@@ -196,3 +196,67 @@ buffer 만드는게 더 어려워졌따
 GHz Buffer는 만들기가 어렵다
 
 RF Receiver MPAC?
+
+Delta-sigma: 그 커다랗던 quantization noise가 loop를 돌아돌아 빠지는 구조다.
+
+
+
+Comparator Input TR에 BJT를 쓰면 offset, noise가 적다.
+CMOS로 같은 offset, noise 성능을 만들려면 크기를 엄청나게 키워야 한다.
+
+
+Switched capacitor:
+R: no memory, dissipates power
+C: memory, does not dissipate power
+
+switched capacitor 구조는 capacitor로 저항을 만드는 방식이다.
+switched capacitor, unswitched capacitor를 섞어 RC filter를 만들수도 있다.
+
+switched capacitor 구조의 장점:
+C/gm으로 corner frequency가 정해지는 구조랑 다르게,
+layout과 design만 잘 되어있다면 switched capacitor 구조에서는 corner frequency가 바뀌지 않는다.
+그니까, R, C 모두 C로 구현하면 PVT variation에 적게 영향받는다는 뜻이다.
+
+
+일반적으로, discrete delta-sigma는 switched capacitor 구조를 쓴다.
+continuous delta-sigma는 저항을 쓴다.
+
+continuous delta-sigma에는 RC network를 통해 구성된 oscillator가 있고,
+R를 tuning해서 주파수를 맞춰줘야 한다.
+
+Wideband에서는 Continuous 구조가 많이 쓰이는데,
+또 continuous 구조에서는 SAR이 많이 쓰인다.
+
+근데, SAR 구조는 comparator를 쓰는데,
+comparator는 logic 공정과 함께 scaling되기 아주 쉽다.
+
+다른 analog amp들은 scaling이 어렵다.
+scaling을 하면 Rout이 뚝뚝 떨어지는 문제를 겪는다.
+
+그래서 요즘은 wideband, scaled 상황에서는 SAR이 대부분 쓰인다.
+미세공정에서 많이 쓰인다는 소리고,
+요즘은 SAR로 16bit 이상도 구현해내고 있다.
+
+
+Delta-Sigma Modulator는 OSR을 필요로 한다.
+그래서 Power를 많이 먹는다.
+예를 들어 20MHz 출력에 OSR=32면 640MHz 동작을 해야 하는거다.
+
+Pipelined ADC는 OSR 3~5 정도를 쓴다. 딱 2배 fs를 쓰지는 않는다는거다.
+앞에서 sharp하게 깎아야 하는데, 너무 sharp하게 깎으면 power가 많이 들기 때문이다?
+뭘 sharp하게 깎는건지 확인
+
+Delta sigma에서 OSR을 내리고 싶으면?
+Order를 올리면 된다.
+
+Continuous delta-sigma 구조의 장점:
+buffer 전류 소비가 상대적으로 적다.
+
+continuous라서 buffer 앞에 저항이 달려있다면 buffer가 signal 주파수에서만 동작하면 되는데,
+discrete라서 switched capacitor가 붙어있으면 clock 주파수에서까지 buffer가 동작해야 한다.
+그래서 discrete 구조에서는 buffer가 power를 더 먹는다.
+
+또다른 장점:
+구조상 continuous에는 RC가 붙는데, 이러면 그 자체로 filtering 효과가 있다.
+즉 inherent RC filter가 있는거라, 앞단 filter 차수를 내릴 수 있다.
+

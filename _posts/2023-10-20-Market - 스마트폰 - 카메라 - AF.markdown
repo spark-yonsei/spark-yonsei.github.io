@@ -44,3 +44,6 @@ Driver IC 구조는 OLAF가 가장 간단하고 CLAF가 그 다음, OIS가 가�
 Driver IC 수율은 OLAF가 가장 높고 CLAF가 그 다음, OIS가 가장 낮다.<br>
 Driver IC 가격은 OLAF가 가장 낮고 CLAF가 그 다음, OIS가 가장 높다.<br>
 Driver IC 마진은 OLAF가 가장 낮고 CLAF가 그 다음, OIS가 가장 높다.<br>
+
+메인 카메라에서는 SMA를 쓴다(화웨이, 샤오미 등)
+Tele 카메라는 noise 특성이 중요하다

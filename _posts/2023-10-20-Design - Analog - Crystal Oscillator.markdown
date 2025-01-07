@@ -161,3 +161,7 @@ TCXO: Temperature Compensated Crystal
 Oscillator 주파수는, 온도가 올라가면 주파수가 떨어지는게 좋다.
 온도가 올라가면 소자들이 느려지니까, settling time이 늘어나기 때문이다.
 주파수가 내려가줘야 문제 없이 잘 동작한다.
+
+crystal같은 feedback 기반 oscillator는 Colpitts style이다.
+이런건 고주파나 정교한 주파수 만드는데에 쓰인다.
+충전 방전을 이용하는 oscillator는 relaxation oscillator라 부른다.

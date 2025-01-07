@@ -198,3 +198,11 @@ Simulation is essentially a purely software based activity. When we use HDL to w
 With HVLs they apply the OOP technique into the domain of hardware verification. They do so by making it possible to verify a design at a higher level of abstraction. At the same time, they contain features that are especially adapter for verification, rather than to write synthesize able code.
 
 e.g SystemVerilog provides 2 important features. These are concurrent assertions and constrained-random testing. Like assertion checks that an expression is true at a give time, a concurrent assertion checks to make sure that a sequence in which signal toggles is correct. Rather than having to write every single piece of stimulus that must be applied to a design under verification, constrained-random testing applies all possible stimulus that fits constraint given by the verification engineer, overtime. This saves a lot of time in writing stimulus.
+
+
+HAST: Highly Accelerated Stress Test
+가열해서 테스트하는걸 말한다
+
+PTC: Power and Temperature Cycle
+고온 저온 왔다갔다 하면서 계속 껐다켰다 하는 test
+

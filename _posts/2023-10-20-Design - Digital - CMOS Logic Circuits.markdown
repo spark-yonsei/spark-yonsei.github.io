@@ -106,3 +106,23 @@ Verification 관련 문제:
 근데, 트랜지스터가 작아져서 커다란 digital system들이 한 IC에 들어가게 되자,
 모든 process corner에서 chip이 잘 동작하도록 하는 design verification이 복잡해졌다.
 
+
+
+CTS: Clock Tree Synthesis
+Logic 설계에서, chip 전체에 걸쳐 clock 신호를 분배하는 과정
+
+RTL로 기능설계를 한 다음,
+physical constraints를 적용한 logical synthesis를 하고,
+logical synthesis를 바탕으로 실제 위치에 배치, 배선을 한다. 이걸 P&R이라 부른다.
+그 후에 CTS를 한다.
+
+EDA Tool Vendor마다 각자 CTS Tool이 있다
+
+clock tree의 delay 조절에는 buffer가 아니라 inverter pair가 쓰인다.
+PMOS와 NMOS의 동작속도가 달라서, buffer가 1->0은 빠르고 0->1은 느리기 때문이다.
+
+이 시간차이가 쌓이면 1->0이 0->1보다 훨씬 빨라지고 말 거다.
+
+이걸 방지하기 위해 inverter pair를 쓴다.
+buffer 하나 대신 inverter 2개를 직렬연결하는거다
+

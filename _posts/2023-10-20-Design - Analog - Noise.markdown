@@ -150,3 +150,6 @@ Amplifier gain, noise:
 총 gain은 그대로라고 할때, first stage gain이 클때 noise가 작다.
 first stage의 noise에 대한 영향이 가장 큰 것이다.
 
+
+Mirror된 current를 mirror할 경우에는 flicker noise가 많이 쌓인다.
+이때는 DEM, chopping을 넣어서 flicker noise를 제거해주면 된다.

@@ -153,6 +153,14 @@ WQHD(2560x1440)의 PPI는 490
 
 8K: 7680x4320
 
+CIF, FCIF는 사진 해상도, frame rate, color space, color subsampling 등에 쓰이는 standardized format이다.
+결국 비디오 형식인거다.
+
+Color subsampling of digital video? H.261 standard에서 처음 정의됐다.
+
+
+
+
 Emissive Display:
 발광형 디스플레이, 소자가 직접 빛을 냄
 CRT, PDP, ELD, VFD, LED
